@@ -359,14 +359,12 @@ body.nav-open{overflow:hidden}
   .nav-links{
     display:flex;
     position:fixed;inset:0;z-index:199;
-    background:rgba(29,29,27,0.95);
-    backdrop-filter:blur(24px);
-    -webkit-backdrop-filter:blur(24px);
+    background:#1D1D1B;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     gap:0;
-    padding:40px;
+    padding:40px 40px 120px;
     opacity:0;
     pointer-events:none;
     transition:opacity .35s var(--ease);
@@ -404,18 +402,27 @@ body.nav-open{overflow:hidden}
     border-radius:12px;
   }
 
-  /* Phone number at bottom of mobile nav */
-  .nav-links::after{
-    content:'509 508 210';
+  /* Bottom info in mobile nav */
+  .nav-mobile-bottom{
+    display:none;
     position:absolute;
-    bottom:max(40px, env(safe-area-inset-bottom, 40px));
-    left:50%;
-    transform:translateX(-50%);
-    font-size:.9rem;
-    font-weight:600;
-    color:var(--t-light3);
-    letter-spacing:.04em;
+    bottom:max(32px, env(safe-area-inset-bottom, 32px));
+    left:0;right:0;
+    flex-direction:column;align-items:center;gap:14px;
   }
+  .nav-links.open .nav-mobile-bottom{display:flex}
+  .nav-mobile-bottom a.nav-mobile-phone{
+    font-size:1.1rem;font-weight:700;color:var(--white);
+    display:flex;align-items:center;gap:8px;
+  }
+  .nav-mobile-bottom .nav-mobile-socials{
+    display:flex;gap:16px;
+  }
+  .nav-mobile-bottom .nav-mobile-socials a{
+    color:rgba(255,255,255,.4);display:flex;align-items:center;
+    padding:0;font-size:0;opacity:1;transform:none;transition:color .2s;
+  }
+  .nav-mobile-bottom .nav-mobile-socials a:hover{color:var(--accent)}
 
   .nav-toggle{display:flex;z-index:201}
 
