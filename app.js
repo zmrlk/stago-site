@@ -1,4 +1,4 @@
-/* STAGO — app.js — Premium Edition */
+/* STAGO — app.js — Premium Mobile Edition */
 
 // ── PRODUCT DATA ──
 const products = {
@@ -105,31 +105,142 @@ const toggle = document.getElementById('nav-toggle');
 const links = document.getElementById('nav-links');
 if (toggle && links) {
   toggle.addEventListener('click', () => {
-    links.classList.toggle('open');
+    const isOpen = links.classList.toggle('open');
     toggle.classList.toggle('active');
+    document.body.classList.toggle('nav-open', isOpen);
   });
+
+  // Close on link click
   links.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       links.classList.remove('open');
       toggle.classList.remove('active');
+      document.body.classList.remove('nav-open');
     });
+  });
+
+  // Close on overlay background click (tap outside links area)
+  links.addEventListener('click', (e) => {
+    if (e.target === links) {
+      links.classList.remove('open');
+      toggle.classList.remove('active');
+      document.body.classList.remove('nav-open');
+    }
   });
 }
 
-// ── SCROLL REVEAL ──
-const revealElements = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const parent = entry.target.parentElement;
-      const siblings = parent ? Array.from(parent.querySelectorAll('.reveal')) : [];
-      const idx = siblings.indexOf(entry.target);
-      setTimeout(() => entry.target.classList.add('visible'), idx >= 0 ? idx * 80 : 0);
-      revealObserver.unobserve(entry.target);
+// ── STICKY CTA SCROLL LOGIC ──
+const stickyCta = document.querySelector('.sticky-cta');
+if (stickyCta) {
+  let ticking = false;
+  const showThreshold = 300;
+
+  // Add body class for padding
+  const checkSticky = () => {
+    const shouldShow = window.scrollY > showThreshold;
+    stickyCta.classList.toggle('is-visible', shouldShow);
+    document.body.classList.toggle('has-sticky-cta', shouldShow);
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        checkSticky();
+        ticking = false;
+      });
+      ticking = true;
     }
-  });
-}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-revealElements.forEach(el => revealObserver.observe(el));
+  }, { passive: true });
+
+  // Check on load in case page is already scrolled
+  checkSticky();
+}
+
+// ── SCROLL REVEAL WITH INTERSECTION OBSERVER ──
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const revealElements = document.querySelectorAll('.reveal');
+if (!prefersReducedMotion) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const parent = el.parentElement;
+        const siblings = parent ? Array.from(parent.querySelectorAll(':scope > .reveal')) : [];
+        const idx = siblings.indexOf(el);
+        const delay = idx >= 0 ? idx * 80 : 0;
+        setTimeout(() => el.classList.add('visible'), delay);
+        revealObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+} else {
+  // Immediately reveal all elements if reduced motion is preferred
+  revealElements.forEach(el => el.classList.add('visible'));
+}
+
+// ── COUNT-UP ANIMATION ON TRUST BAR ──
+function animateCountUp(el, target, suffix, duration) {
+  const start = 0;
+  const startTime = performance.now();
+
+  function tick(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    // Ease out cubic
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.round(start + (target - start) * eased);
+
+    if (suffix === '/5') {
+      // For rating: show decimal
+      const val = (start + (5.0 - start) * eased).toFixed(1);
+      el.textContent = val + '/5';
+    } else {
+      el.textContent = current + suffix;
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(tick);
+    }
+  }
+  requestAnimationFrame(tick);
+}
+
+const trustBar = document.querySelector('.trust-bar');
+if (trustBar && !prefersReducedMotion) {
+  let trustAnimated = false;
+  const trustObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !trustAnimated) {
+        trustAnimated = true;
+        const items = trustBar.querySelectorAll('.trust-item strong');
+        items.forEach(item => {
+          const text = item.textContent.trim();
+          if (text.includes('5.0')) {
+            animateCountUp(item, 5, '/5', 1200);
+          } else if (text.includes('50+')) {
+            animateCountUp(item, 50, '+', 1400);
+          } else if (text.includes('4-6')) {
+            // Simple text swap with delay
+            item.textContent = '0';
+            setTimeout(() => { item.textContent = '4-6 tyg.'; }, 800);
+          } else if (text.includes('Cała')) {
+            item.style.opacity = '0';
+            item.style.transition = 'opacity .6s ease';
+            setTimeout(() => {
+              item.textContent = 'Cała PL';
+              item.style.opacity = '1';
+            }, 600);
+          }
+        });
+        trustObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  trustObserver.observe(trustBar);
+}
 
 // ── PRODUCT MODALS ──
 function openModal(id) {
