@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfigurator pawilonu — STAGO</title>
+  <meta name="description" content="Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://stago.com.pl/konfigurator.html">
+  <meta property="og:title" content="Konfigurator pawilonu — STAGO">
+  <meta property="og:description" content="Skonfiguruj swój pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena.">
+  <meta name="theme-color" content="#1D1D1B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/sygnet.png">
+<style>
+/* ── CONFIGURATOR BASE ── */
+body { background: #F8F9FA; padding-bottom: 0; }
+
+/* ── STEP CONTAINER ── */
+.config-wrap {
+  margin-top: 57px;
+  min-height: calc(100vh - 57px - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px 80px;
+}
+
+/* ── STEP PANELS ── */
+.step-panel {
+  display: none;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  animation: stepIn .35s ease both;
+}
+.step-panel.active { display: block; }
+.step-panel.step-wide { max-width: 960px; }
+
+@keyframes stepIn {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── STEP HEADER ── */
+.step-title {
+  font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 6px;
+}
+.step-sub {
+  text-align: center;
+  color: var(--t2);
+  font-size: .92rem;
+  margin-bottom: 28px;
+}
+
+/* ── STEP 1: TYPE CARDS ── */
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.type-card {
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 0;
+  cursor: pointer;
+  transition: all .25s ease;
+  overflow: hidden;
+  text-align: center;
+}
+.type-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  border-color: #ccc;
+}
+.type-card.selected {
+  border-color: var(--accent);
+  background: rgba(232,70,28,.04);
+}
+.type-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+.type-card span {
+  display: block;
+  padding: 12px 8px;
+  font-size: .88rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.social-proof {
+  text-align: center;
+  font-size: .82rem;
+  color: var(--t3);
+  margin-top: 8px;
+}
+.social-proof svg { vertical-align: -2px; margin-right: 4px; }
+
+/* ── STEP 2: DIMENSIONS ── */
+.dim-inputs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.dim-group {
+  flex: 1;
+  max-width: 180px;
+}
+.dim-group label {
+  display: block;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--t3);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 6px;
+}
+.dim-field {
+  position: relative;
+}
+.dim-field input {
+  width: 100%;
+  padding: 12px 36px 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  background: #fff;
+  transition: border-color .2s;
+}
+.dim-field input:focus { border-color: var(--accent); }
+.dim-field .unit {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: .82rem;
+  color: var(--t3);
+  font-weight: 600;
+  pointer-events: none;
+}
+.preset-label {
+  text-align: center;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--t3);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 10px;
+}
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.preset-btn {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: #fff;
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s;
+  color: var(--primary);
+}
+.preset-btn:hover { border-color: var(--accent); color: var(--accent); }
+.preset-btn.selected { border-color: var(--accent); background: rgba(232,70,28,.08); color: var(--accent); }
+
+/* ── STEP 3: FINISH ── */
+.finish-section {
+  margin-bottom: 18px;
+}
+.finish-section:last-child { margin-bottom: 0; }
+.finish-label {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--t3);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 8px;
+}
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pill {
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: #fff;
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s;
+  color: var(--primary);
+}
+.pill:hover { border-color: var(--accent); }
+.pill.selected { border-color: var(--accent); background: rgba(232,70,28,.08); color: var(--accent); }
+
+/* Color swatches */
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: all .2s;
+  position: relative;
+}
+.swatch:hover { transform: scale(1.1); }
+.swatch.selected { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(232,70,28,.25); }
+.swatch[title]::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .65rem;
+  white-space: nowrap;
+  color: var(--t3);
+  font-weight: 600;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.swatch:hover::after, .swatch.selected::after { opacity: 1; }
+
+.finish-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 32px;
+}
+
+/* ── STEP 4: EQUIPMENT ── */
+.equip-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.equip-row label {
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--primary);
+  min-width: 52px;
+}
+.equip-row select {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: .85rem;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+.equip-row select:focus { border-color: var(--accent); }
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--bg-light);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+}
+.qty-btn:hover { background: #e0e0e0; }
+.qty-val {
+  width: 32px;
+  text-align: center;
+  font-size: .88rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.toggles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+.toggle-item:hover { border-color: #ccc; }
+.toggle-item span {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.toggle-switch {
+  width: 40px;
+  height: 22px;
+  border-radius: 100px;
+  background: #ddd;
+  position: relative;
+  transition: background .25s;
+  flex-shrink: 0;
+}
+.toggle-switch::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform .25s;
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+.toggle-item.on .toggle-switch {
+  background: var(--accent);
+}
+.toggle-item.on .toggle-switch::after {
+  transform: translateX(18px);
+}
+.toggle-item.on { border-color: var(--accent); }
+
+/* ── STEP 5: SUMMARY + FORM ── */
+.summary-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.summary-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+.summary-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  font-size: .85rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.summary-row:last-child { border-bottom: none; }
+.summary-row .s-label { color: var(--t3); }
+.summary-row .s-value { font-weight: 600; color: var(--primary); text-align: right; }
+
+.contact-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+.contact-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.cfg-form { display: flex; flex-direction: column; gap: 12px; }
+.cfg-form input, .cfg-form textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: .9rem;
+  outline: none;
+  background: #fff;
+  transition: border-color .2s;
+  color: var(--primary);
+}
+.cfg-form input:focus, .cfg-form textarea:focus { border-color: var(--accent); }
+.cfg-form textarea { resize: vertical; min-height: 60px; }
+.cfg-form .required-note {
+  font-size: .75rem;
+  color: var(--t3);
+}
+.cfg-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: .95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .25s;
+}
+.cfg-submit:hover { background: var(--accent-h); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(232,70,28,.25); }
+.form-promise {
+  text-align: center;
+  font-size: .78rem;
+  color: var(--t3);
+  margin-top: 2px;
+}
+.form-promise svg { vertical-align: -2px; margin-right: 3px; }
+
+/* ── BOTTOM BAR ── */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  background: var(--primary);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 64px;
+}
+.bar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+.bar-step {
+  font-size: .82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.5);
+  white-space: nowrap;
+}
+.bar-chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.bar-chips::-webkit-scrollbar { display: none; }
+.bar-chip {
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.8);
+  font-size: .75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.bar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.bar-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s;
+  border: none;
+  white-space: nowrap;
+}
+.bar-back {
+  background: transparent;
+  color: rgba(255,255,255,.7);
+  border: 1px solid rgba(255,255,255,.2);
+}
+.bar-back:hover { border-color: rgba(255,255,255,.5); color: #fff; }
+.bar-back:disabled { opacity: .3; cursor: default; }
+.bar-next {
+  background: var(--accent);
+  color: #fff;
+}
+.bar-next:hover { background: var(--accent-h); transform: translateY(-1px); }
+.bar-next:disabled { opacity: .4; cursor: default; transform: none; }
+
+/* ── SUCCESS ── */
+.success-screen {
+  display: none;
+  text-align: center;
+  padding: 60px 24px;
+}
+.success-screen.active { display: block; }
+.success-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(232,70,28,.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.success-icon svg { color: var(--accent); }
+.success-screen h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.success-screen p {
+  font-size: .95rem;
+  color: var(--t2);
+  margin-bottom: 6px;
+}
+.success-screen .phone-link {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .type-grid { grid-template-columns: repeat(2, 1fr); }
+  .dim-inputs { flex-direction: column; align-items: stretch; }
+  .dim-group { max-width: 100%; }
+  .finish-grid { grid-template-columns: 1fr; }
+  .toggles-grid { grid-template-columns: 1fr; }
+  .summary-layout { grid-template-columns: 1fr; }
+  .config-wrap { padding: 24px 16px 80px; }
+  .bar-chips { display: none; }
+  .bottom-bar { padding: 10px 16px; }
+}
+@media (max-width: 480px) {
+  .type-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .type-card span { font-size: .8rem; padding: 8px 4px; }
+}
+</style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO" class="nav-logo-img"></a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#produkty">Oferta</a>
+        <a href="index.html#realizacje">Realizacje</a>
+        <a href="konfigurator.html" style="color:var(--accent)">Konfigurator</a>
+        <a href="index.html#kontakt" class="btn btn-nav">Darmowa wycena</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-social">
+          <a href="https://facebook.com/stago" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@stago_pawilony" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48V13a8.28 8.28 0 005.58 2.15V11.7a4.83 4.83 0 01-3.77-1.24V6.69h3.77z"/></svg>
+          </a>
+        </div>
+        <a href="tel:+48509508210" class="nav-phone">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          509 508 210
+        </a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- CONFIGURATOR -->
+  <div class="config-wrap" id="configWrap">
+
+    <!-- STEP 1: PRZEZNACZENIE -->
+    <div class="step-panel active" data-step="1">
+      <h1 class="step-title">Jaki pawilon potrzebujesz?</h1>
+      <p class="step-sub">Wybierz przeznaczenie — dostosujemy resztę do Twoich potrzeb</p>
+      <div class="type-grid">
+        <div class="type-card" data-type="Handlowy" onclick="selectType(this)">
+          <img src="assets/products/handlowy.png" alt="Pawilon handlowy" loading="lazy">
+          <span>Handlowy</span>
+        </div>
+        <div class="type-card" data-type="Biurowy" onclick="selectType(this)">
+          <img src="assets/products/biurowy.png" alt="Pawilon biurowy" loading="lazy">
+          <span>Biurowy</span>
+        </div>
+        <div class="type-card" data-type="Mieszkalny" onclick="selectType(this)">
+          <img src="assets/products/mieszkalny.png" alt="Pawilon mieszkalny" loading="lazy">
+          <span>Mieszkalny</span>
+        </div>
+        <div class="type-card" data-type="Sanitarny" onclick="selectType(this)">
+          <img src="assets/products/sanitarny.png" alt="Pawilon sanitarny" loading="lazy">
+          <span>Sanitarny</span>
+        </div>
+        <div class="type-card" data-type="Magazynowy" onclick="selectType(this)">
+          <img src="assets/products/magazynowy.png" alt="Pawilon magazynowy" loading="lazy">
+          <span>Magazynowy</span>
+        </div>
+        <div class="type-card" data-type="Na zamówienie" onclick="selectType(this)">
+          <img src="assets/products/premium.png" alt="Pawilon na zamówienie" loading="lazy">
+          <span>Na zamówienie</span>
+        </div>
+      </div>
+      <p class="social-proof">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        127 osób skonfigurowało pawilon w tym miesiącu
+      </p>
+    </div>
+
+    <!-- STEP 2: WYMIARY -->
+    <div class="step-panel" data-step="2">
+      <h2 class="step-title">Wymiary pawilonu</h2>
+      <p class="step-sub">Podaj wymiary lub wybierz popularny rozmiar</p>
+      <div class="dim-inputs">
+        <div class="dim-group">
+          <label>Długość</label>
+          <div class="dim-field">
+            <input type="number" id="dimL" step="0.1" min="2" max="18" placeholder="6" oninput="updateDims()">
+            <span class="unit">m</span>
+          </div>
+        </div>
+        <div class="dim-group">
+          <label>Szerokość</label>
+          <div class="dim-field">
+            <input type="number" id="dimW" step="0.1" min="2" max="6" placeholder="3" oninput="updateDims()">
+            <span class="unit">m</span>
+          </div>
+        </div>
+        <div class="dim-group">
+          <label>Wysokość</label>
+          <div class="dim-field">
+            <input type="number" id="dimH" step="0.1" min="2.5" max="4" placeholder="2.8" oninput="updateDims()">
+            <span class="unit">m</span>
+          </div>
+        </div>
+      </div>
+      <p class="preset-label">Popularne rozmiary</p>
+      <div class="presets">
+        <button class="preset-btn" onclick="setPreset(3,2,2.8,this)">3×2 m</button>
+        <button class="preset-btn" onclick="setPreset(4,2.5,2.8,this)">4×2,5 m</button>
+        <button class="preset-btn" onclick="setPreset(6,3,2.8,this)">6×3 m</button>
+        <button class="preset-btn" onclick="setPreset(8,3,2.8,this)">8×3 m</button>
+        <button class="preset-btn" onclick="setPreset(9,3,2.8,this)">9×3 m</button>
+        <button class="preset-btn" onclick="setPreset(12,3,3,this)">12×3 m</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: WYKOŃCZENIE -->
+    <div class="step-panel" data-step="3">
+      <h2 class="step-title">Wykończenie</h2>
+      <p class="step-sub">Profil blachy, kolor i okucia</p>
+      <div class="finish-grid">
+        <div>
+          <div class="finish-section">
+            <div class="finish-label">Profil blachy</div>
+            <div class="pills" data-group="profil">
+              <div class="pill selected" onclick="selectPill(this)">Gładka</div>
+              <div class="pill" onclick="selectPill(this)">Trapez</div>
+              <div class="pill" onclick="selectPill(this)">Mikrofala</div>
+            </div>
+          </div>
+          <div class="finish-section">
+            <div class="finish-label">Kolor ścian</div>
+            <div class="swatches" data-group="kolorScian">
+              <div class="swatch selected" style="background:#fff" title="Biały" onclick="selectSwatch(this)"></div>
+              <div class="swatch" style="background:#3C3C3C" title="Antracyt" onclick="selectSwatch(this)"></div>
+              <div class="swatch" style="background:#1D1D1B" title="Czarny" onclick="selectSwatch(this)"></div>
+              <div class="swatch" style="background:#8B8B8B" title="Szary" onclick="selectSwatch(this)"></div>
+              <div class="swatch" style="background:#5C3A1E" title="Brązowy" onclick="selectSwatch(this)"></div>
+              <div class="swatch" style="background:linear-gradient(135deg,#E8461C,#D03A15)" title="RAL" onclick="selectSwatch(this)"></div>
+            </div>
+          </div>
+          <div class="finish-section">
+            <div class="finish-label">Okucia</div>
+            <div class="pills" data-group="okucia">
+              <div class="pill selected" onclick="selectPill(this)">Podstawowe</div>
+              <div class="pill" onclick="selectPill(this)">Specjalne premium</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="finish-section">
+            <div class="finish-label">Kolor okuć</div>
+            <div class="pills" data-group="kolorOkuc">
+              <div class="pill selected" onclick="selectPill(this)">Biały</div>
+              <div class="pill" onclick="selectPill(this)">Czarny</div>
+              <div class="pill" onclick="selectPill(this)">Antracyt</div>
+              <div class="pill" onclick="selectPill(this)">Złoty dąb</div>
+              <div class="pill" onclick="selectPill(this)">Dąb winchester</div>
+              <div class="pill" onclick="selectPill(this)">Inny</div>
+            </div>
+          </div>
+          <div class="finish-section">
+            <div class="finish-label">Rozmieszczenie okuć</div>
+            <div class="pills" data-group="rozmOkuc">
+              <div class="pill selected" onclick="selectPill(this)">Wszystkie narożniki</div>
+              <div class="pill" onclick="selectPill(this)">Tylko przód</div>
+              <div class="pill" onclick="selectPill(this)">Przód + tył</div>
+              <div class="pill" onclick="selectPill(this)">Tylko boki</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4: WYPOSAŻENIE -->
+    <div class="step-panel" data-step="4">
+      <h2 class="step-title">Wyposażenie</h2>
+      <p class="step-sub">Drzwi, okna i dodatkowe instalacje</p>
+      <div class="equip-row">
+        <label>Drzwi</label>
+        <select id="doorType">
+          <option>Jednoskrzydłowe</option>
+          <option>Dwuskrzydłowe</option>
+          <option>Przesuwne</option>
+          <option>Aluminiowe z naświetlem</option>
+        </select>
+        <div class="qty-control">
+          <button class="qty-btn" onclick="changeQty('doorQty',-1)">−</button>
+          <span class="qty-val" id="doorQty">1</span>
+          <button class="qty-btn" onclick="changeQty('doorQty',1)">+</button>
+        </div>
+      </div>
+      <div class="equip-row">
+        <label>Okna</label>
+        <select id="windowType">
+          <option>Uchylne 80×60 cm</option>
+          <option>Rozwierno-uchylne 120×120 cm</option>
+          <option>Stałe panoramiczne</option>
+          <option>Podawcze (handlowe)</option>
+        </select>
+        <div class="qty-control">
+          <button class="qty-btn" onclick="changeQty('windowQty',-1)">−</button>
+          <span class="qty-val" id="windowQty">2</span>
+          <button class="qty-btn" onclick="changeQty('windowQty',1)">+</button>
+        </div>
+      </div>
+      <div style="margin-top:8px">
+        <div class="finish-label">Dodatkowe wyposażenie</div>
+        <div class="toggles-grid">
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="Klimatyzacja">
+            <span>Klimatyzacja</span>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="Oświetlenie LED">
+            <span>Oświetlenie LED</span>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="Instalacja elektryczna">
+            <span>Instalacja elektryczna</span>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="Rolety zewnętrzne">
+            <span>Rolety zewnętrzne</span>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="Instalacja wod-kan">
+            <span>Instalacja wod-kan</span>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="System alarmowy">
+            <span>System alarmowy</span>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="Ogrzewanie">
+            <span>Ogrzewanie</span>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-item" onclick="toggleItem(this)" data-equip="Podłoga OSB + wykładzina">
+            <span>Podłoga OSB + wykładzina</span>
+            <div class="toggle-switch"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 5: PODSUMOWANIE -->
+    <div class="step-panel step-wide" data-step="5">
+      <h2 class="step-title">Podsumowanie konfiguracji</h2>
+      <p class="step-sub">Sprawdź dane i zostaw kontakt — odezwiemy się z wyceną</p>
+      <div class="summary-layout">
+        <div class="summary-card">
+          <h3>Twój pawilon</h3>
+          <div id="summaryRows"></div>
+        </div>
+        <div class="contact-card">
+          <h3>Dane kontaktowe</h3>
+          <form class="cfg-form" id="cfgForm" onsubmit="submitForm(event)">
+            <input type="text" name="name" placeholder="Imię i nazwisko *" required>
+            <input type="tel" name="phone" placeholder="Telefon *" required>
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)"></textarea>
+            <button type="submit" class="cfg-submit">Wyślij zapytanie</button>
+            <p class="form-promise">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Odpowiadamy w ciągu 24 godzin
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUCCESS -->
+    <div class="success-screen" id="successScreen">
+      <div class="success-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <h2>Zapytanie wysłane!</h2>
+      <p>Odezwiemy się w ciągu 24 godzin z indywidualną wyceną.</p>
+      <p>Masz pilne pytanie? Zadzwoń:</p>
+      <a href="tel:+48509508210" class="phone-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        509 508 210
+      </a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="bottom-bar" id="bottomBar">
+    <div class="bar-left">
+      <span class="bar-step" id="barStep">Krok 1 z 5</span>
+      <div class="bar-chips" id="barChips"></div>
+    </div>
+    <div class="bar-right">
+      <button class="bar-btn bar-back" id="btnBack" onclick="goBack()" disabled>&#8592; Wstecz</button>
+      <button class="bar-btn bar-next" id="btnNext" onclick="goNext()" disabled>Dalej &#8594;</button>
+    </div>
+  </div>
+
+<script>
+// ── STATE ──
+const state = {
+  step: 1,
+  type: '',
+  dimL: '', dimW: '', dimH: '',
+  profil: 'Gładka',
+  kolorScian: 'Biały',
+  okucia: 'Podstawowe',
+  kolorOkuc: 'Biały',
+  rozmOkuc: 'Wszystkie narożniki',
+  doorType: 'Jednoskrzydłowe',
+  doorQty: 1,
+  windowType: 'Uchylne 80×60 cm',
+  windowQty: 2,
+  extras: []
+};
+
+// ── LOAD FROM STORAGE ──
+try {
+  const saved = localStorage.getItem('stago_cfg');
+  if (saved) {
+    const s = JSON.parse(saved);
+    Object.assign(state, s);
+    restoreUI();
+  }
+} catch(e) {}
+
+function saveState() {
+  try { localStorage.setItem('stago_cfg', JSON.stringify(state)); } catch(e) {}
+}
+
+function restoreUI() {
+  // Restore type
+  if (state.type) {
+    document.querySelectorAll('.type-card').forEach(c => {
+      if (c.dataset.type === state.type) c.classList.add('selected');
+    });
+  }
+  // Restore dims
+  if (state.dimL) document.getElementById('dimL').value = state.dimL;
+  if (state.dimW) document.getElementById('dimW').value = state.dimW;
+  if (state.dimH) document.getElementById('dimH').value = state.dimH;
+  // Restore pills
+  restorePills('profil', state.profil);
+  restorePills('okucia', state.okucia);
+  restorePills('kolorOkuc', state.kolorOkuc);
+  restorePills('rozmOkuc', state.rozmOkuc);
+  // Restore swatches
+  document.querySelectorAll('[data-group="kolorScian"] .swatch').forEach(s => {
+    s.classList.toggle('selected', s.title === state.kolorScian);
+  });
+  // Restore equip
+  document.getElementById('doorType').value = state.doorType;
+  document.getElementById('doorQty').textContent = state.doorQty;
+  document.getElementById('windowType').value = state.windowType;
+  document.getElementById('windowQty').textContent = state.windowQty;
+  // Restore toggles
+  document.querySelectorAll('.toggle-item').forEach(t => {
+    if (state.extras.includes(t.dataset.equip)) t.classList.add('on');
+  });
+  // Go to saved step
+  if (state.step > 1) goToStep(state.step);
+  updateBar();
+}
+
+function restorePills(group, val) {
+  document.querySelectorAll(`[data-group="${group}"] .pill`).forEach(p => {
+    p.classList.toggle('selected', p.textContent === val);
+  });
+}
+
+// ── NAV ──
+const panels = document.querySelectorAll('.step-panel');
+const totalSteps = 5;
+
+function goToStep(n) {
+  state.step = n;
+  panels.forEach(p => {
+    p.classList.remove('active');
+    if (parseInt(p.dataset.step) === n) p.classList.add('active');
+  });
+  if (n === 5) buildSummary();
+  updateBar();
+  saveState();
+  window.scrollTo(0, 0);
+}
+
+function goNext() {
+  if (state.step < totalSteps) goToStep(state.step + 1);
+}
+
+function goBack() {
+  if (state.step > 1) goToStep(state.step - 1);
+}
+
+function updateBar() {
+  document.getElementById('barStep').textContent = `Krok ${state.step} z ${totalSteps}`;
+  document.getElementById('btnBack').disabled = state.step === 1;
+
+  // Next button logic
+  const btnNext = document.getElementById('btnNext');
+  if (state.step === 5) {
+    btnNext.style.display = 'none';
+  } else {
+    btnNext.style.display = '';
+    btnNext.disabled = !canProceed();
+  }
+
+  // Chips
+  const chips = [];
+  if (state.type) chips.push(state.type);
+  if (state.dimL && state.dimW) chips.push(`${state.dimL}×${state.dimW} m`);
+  if (state.step >= 3 && state.profil) chips.push(`${state.profil} ${state.kolorScian.toLowerCase()}`);
+  document.getElementById('barChips').innerHTML = chips.map(c => `<span class="bar-chip">${c}</span>`).join('');
+}
+
+function canProceed() {
+  if (state.step === 1) return !!state.type;
+  if (state.step === 2) return state.dimL && state.dimW && state.dimH;
+  return true;
+}
+
+// ── STEP 1 ──
+function selectType(el) {
+  document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.type = el.dataset.type;
+  saveState();
+  updateBar();
+  setTimeout(() => goNext(), 300);
+}
+
+// ── STEP 2 ──
+function updateDims() {
+  state.dimL = document.getElementById('dimL').value;
+  state.dimW = document.getElementById('dimW').value;
+  state.dimH = document.getElementById('dimH').value;
+  // Clear preset selection
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('selected'));
+  saveState();
+  updateBar();
+}
+
+function setPreset(l, w, h, el) {
+  document.getElementById('dimL').value = l;
+  document.getElementById('dimW').value = w;
+  document.getElementById('dimH').value = h;
+  state.dimL = String(l);
+  state.dimW = String(w);
+  state.dimH = String(h);
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+  saveState();
+  updateBar();
+}
+
+// ── STEP 3 ──
+function selectPill(el) {
+  const group = el.parentElement;
+  group.querySelectorAll('.pill').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+  const groupName = group.dataset.group;
+  if (groupName) state[groupName] = el.textContent;
+  saveState();
+}
+
+function selectSwatch(el) {
+  const parent = el.parentElement;
+  parent.querySelectorAll('.swatch').forEach(s => s.classList.remove('selected'));
+  el.classList.add('selected');
+  state.kolorScian = el.title;
+  saveState();
+}
+
+// ── STEP 4 ──
+function changeQty(id, delta) {
+  const el = document.getElementById(id);
+  let val = parseInt(el.textContent) + delta;
+  if (val < 0) val = 0;
+  if (val > 10) val = 10;
+  el.textContent = val;
+  state[id] = val;
+  saveState();
+}
+
+function toggleItem(el) {
+  el.classList.toggle('on');
+  const name = el.dataset.equip;
+  if (el.classList.contains('on')) {
+    if (!state.extras.includes(name)) state.extras.push(name);
+  } else {
+    state.extras = state.extras.filter(e => e !== name);
+  }
+  saveState();
+}
+
+// Sync selects
+document.getElementById('doorType').addEventListener('change', function() {
+  state.doorType = this.value;
+  saveState();
+});
+document.getElementById('windowType').addEventListener('change', function() {
+  state.windowType = this.value;
+  saveState();
+});
+
+// ── STEP 5 ──
+function buildSummary() {
+  const rows = [
+    ['Przeznaczenie', state.type],
+    ['Wymiary', `${state.dimL} × ${state.dimW} × ${state.dimH} m`],
+    ['Profil blachy', state.profil],
+    ['Kolor ścian', state.kolorScian],
+    ['Okucia', state.okucia],
+    ['Kolor okuć', state.kolorOkuc],
+    ['Rozmieszczenie okuć', state.rozmOkuc],
+    ['Drzwi', `${state.doorType} × ${state.doorQty}`],
+    ['Okna', `${state.windowType} × ${state.windowQty}`],
+  ];
+  if (state.extras.length) {
+    rows.push(['Wyposażenie dodatkowe', state.extras.join(', ')]);
+  }
+  document.getElementById('summaryRows').innerHTML = rows.map(([l, v]) =>
+    `<div class="summary-row"><span class="s-label">${l}</span><span class="s-value">${v || '—'}</span></div>`
+  ).join('');
+}
+
+// ── FORM SUBMIT ──
+function submitForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('cfgForm');
+  const fd = new FormData(form);
+  const data = Object.fromEntries(fd.entries());
+  data.config = { ...state };
+
+  // Log (replace with actual endpoint)
+  console.log('STAGO Konfigurator — zapytanie:', data);
+
+  // Show success
+  document.getElementById('configWrap').querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('successScreen').classList.add('active');
+  document.getElementById('bottomBar').style.display = 'none';
+
+  // Clear storage
+  localStorage.removeItem('stago_cfg');
+}
+
+// ── MOBILE NAV ──
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('open');
+});
+
+// ── URL PARAMS (pre-select type, always override) ──
+const urlType = new URLSearchParams(window.location.search).get('type');
+if (urlType) {
+  // Clear old state, start fresh with this type
+  localStorage.removeItem('stago_cfg');
+  state.type = urlType;
+  state.step = 2;
+  state.extras = [];
+  const card = document.querySelector(`.type-card[data-type="${urlType}"]`);
+  if (card) {
+    document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+  }
+  saveState();
+  goToStep(2);
+}
+
+// Init bar
+updateBar();
+</script>
+</body>
+</html>

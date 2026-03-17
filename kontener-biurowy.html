@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontener biurowy — producent STAGO | Biura, portierne, recepcje</title>
+  <meta name="description" content="Kontener biurowy od producenta STAGO. Biura, portierne, recepcje na budowy i firmy. Od 18 000 zł netto. Izolacja PIR, klimatyzacja, pełna elektryka. Gotowe w 4-6 tygodni.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://stago.com.pl/kontener-biurowy.html">
+
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://stago.com.pl/kontener-biurowy.html">
+  <meta property="og:title" content="Kontener biurowy — producent STAGO">
+  <meta property="og:description" content="Kontenery biurowe od producenta. Biura, portierne, recepcje. Od 18 000 zł netto.">
+  <meta property="og:image" content="https://stago.com.pl/assets/products/biurowy.png">
+  <meta property="og:locale" content="pl_PL">
+
+  <meta name="theme-color" content="#1D1D1B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/sygnet.png">
+  <style>
+    .breadcrumbs{padding:100px 0 0;font-size:.82rem;color:var(--t3)}
+    .breadcrumbs a{color:var(--t2);transition:color .2s}
+    .breadcrumbs a:hover{color:var(--accent)}
+    .breadcrumbs span{margin:0 8px;color:var(--t3)}
+
+    .product-hero{padding:32px 0 64px}
+    .product-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+    .product-hero-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#f0f0f0}
+    .product-hero-img img{width:100%;height:100%;object-fit:cover}
+    .product-hero-text h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;letter-spacing:-.03em;line-height:1.12;color:var(--primary);margin-bottom:16px}
+    .product-hero-text .product-subtitle{font-size:1.05rem;color:var(--t2);line-height:1.65;margin-bottom:24px}
+    .product-price-range{font-size:1.2rem;font-weight:800;color:var(--accent);margin-bottom:24px}
+    .product-price-range span{font-size:.85rem;font-weight:400;color:var(--t3)}
+    .product-hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+    .specs-section{padding:64px 0;background:var(--bg-light)}
+    .specs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+    .spec-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;text-align:center;transition:border-color .3s}
+    .spec-card:hover{border-color:var(--accent)}
+    .spec-icon{width:48px;height:48px;border-radius:50%;background:rgba(232,70,28,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--accent)}
+    .spec-card h3{font-size:.85rem;font-weight:700;color:var(--primary);margin-bottom:6px}
+    .spec-card p{font-size:.82rem;color:var(--t2);line-height:1.5}
+
+    .benefits-section{padding:80px 0}
+    .benefits-list{max-width:800px;margin:40px auto 0}
+    .benefit-row{display:flex;gap:20px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--border)}
+    .benefit-row:last-child{border-bottom:none}
+    .benefit-icon{width:40px;height:40px;min-width:40px;border-radius:50%;background:rgba(232,70,28,.08);display:flex;align-items:center;justify-content:center;color:var(--accent)}
+    .benefit-row h3{font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:4px}
+    .benefit-row p{font-size:.9rem;color:var(--t2);line-height:1.6}
+
+    .gallery-section{padding:80px 0;background:var(--bg-light)}
+    .product-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+    .product-gallery-item{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;cursor:pointer}
+    .product-gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+    .product-gallery-item:hover img{transform:scale(1.05)}
+
+    .product-faq{padding:80px 0}
+
+    .product-form-section{padding:80px 0;background:var(--bg-dark)}
+    .product-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px;align-items:start}
+    .product-form{display:flex;flex-direction:column;gap:14px}
+    .product-form input,.product-form select,.product-form textarea{padding:15px 18px;border-radius:var(--r-sm);border:1px solid var(--border-dark);background:rgba(255,255,255,.05);color:var(--white);font-size:.95rem;transition:border-color .2s;outline:none}
+    .product-form input::placeholder,.product-form textarea::placeholder{color:var(--t-light3)}
+    .product-form select{color:var(--t-light3)}
+    .product-form input:focus,.product-form select:focus,.product-form textarea:focus{border-color:var(--accent)}
+    .product-form-info h3{font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:16px}
+    .product-form-info p{font-size:1rem;color:var(--t-light2);line-height:1.7;margin-bottom:24px}
+    .product-form-info ul{list-style:none;padding:0}
+    .product-form-info li{display:flex;align-items:center;gap:12px;font-size:.92rem;color:var(--t-light2);padding:10px 0;border-bottom:1px solid var(--border-dark)}
+    .product-form-info li svg{color:var(--accent);min-width:20px}
+
+    .related-section{padding:80px 0;background:var(--bg-light)}
+
+    @media(max-width:900px){
+      .product-hero-grid{grid-template-columns:1fr;gap:32px}
+      .specs-grid{grid-template-columns:repeat(2,1fr)}
+      .product-form-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:768px){
+      .breadcrumbs{padding:80px 0 0}
+      .specs-grid{grid-template-columns:1fr 1fr}
+      .product-gallery{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:480px){
+      .specs-grid{grid-template-columns:1fr}
+      .product-gallery{grid-template-columns:1fr}
+      .product-hero-cta{flex-direction:column}
+      .product-hero-cta .btn{width:100%;justify-content:center}
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO" class="nav-logo-img"></a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#o-firmie">O firmie</a>
+        <a href="index.html#produkty">Oferta</a>
+        <a href="index.html#realizacje">Realizacje</a>
+        <a href="index.html#proces">Jak działamy</a>
+        <a href="index.html#opinie">Opinie</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="konfigurator.html?type=Biurowy" class="btn btn-nav">Darmowa wycena</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-social">
+          <a href="https://facebook.com/stago" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        </div>
+        <a href="tel:+48509508210" class="nav-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>509 508 210</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="container breadcrumbs">
+    <a href="index.html">Strona główna</a><span>/</span><a href="index.html#produkty">Oferta</a><span>/</span>Kontener biurowy
+  </div>
+
+  <section class="container product-hero">
+    <div class="product-hero-grid">
+      <div class="product-hero-img">
+        <img src="assets/products/biurowy.png" alt="Kontener biurowy STAGO" loading="eager">
+      </div>
+      <div class="product-hero-text">
+        <h1>Kontener biurowy</h1>
+        <p class="product-subtitle">Biuro, portiernia lub recepcja gotowa w 4-6 tygodni. Izolacja PIR, klimatyzacja, pełna instalacja elektryczna, opcjonalna łazienka i aneks kuchenny. Idealne na budowy, place, firmy.</p>
+        <div class="product-price-range">od 18 000 zł netto <span>/ za kontener 2,4x6m</span></div>
+        <div class="product-hero-cta">
+          <a href="konfigurator.html?type=Biurowy" class="btn btn-primary btn-lg">Darmowa wycena</a>
+          <a href="blog/kontener-biurowy-cena.html" class="btn btn-outline-dark">Zobacz cennik &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs-section">
+    <div class="container">
+      <p class="eyebrow">Specyfikacja</p>
+      <h2 class="h2">Co zawiera kontener biurowy?</h2>
+      <div class="specs-grid">
+        <div class="spec-card">
+          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
+          <h3>Wymiary</h3>
+          <p>Od 2,4x6m do 3x12m. Łączenie modułów w większe biura. Wersje piętrowe.</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Izolacja</h3>
+          <p>PIR 40mm (standard), PIR 60/80mm (premium). Komfort termiczny przez cały rok.</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Instalacje</h3>
+          <p>Pełna elektryka, LED, gniazdka, LAN. Opcja: klima, ogrzewanie, łazienka.</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>Realizacja</h3>
+          <p>4-6 tygodni od akceptacji projektu. Transport i montaż w cenie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container">
+      <p class="eyebrow">Dlaczego kontener biurowy?</p>
+      <h2 class="h2">Tańsze niż wynajem biura</h2>
+      <div class="benefits-list">
+        <div class="benefit-row">
+          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h3>Zwrot inwestycji w 2 lata</h3>
+            <p>Kontener biurowy kosztuje tyle, co 1-2 lata wynajmu tradycyjnego biura. Po tym czasie — każdy miesiąc to czysty zysk. <a href="blog/kontener-biurowy-cena.html">Zobacz kalkulator &rarr;</a></p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h3>Spełnia wymagania BHP</h3>
+            <p>Nasze kontenery biurowe spełniają wszystkie wymagania BHP dla stanowisk pracy biurowej — oświetlenie, wentylacja, izolacja termiczna.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h3>Mobilność</h3>
+            <p>Kontener biurowy możesz przenieść w inne miejsce — na następną budowę, do innej lokalizacji firmy. Nie jesteś przywiązany do jednego adresu.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h3>Leasing i jednorazowa amortyzacja</h3>
+            <p>Kontener biurowy do 10 000 EUR można zamortyzować jednorazowo. Leasing operacyjny od 650 zł/miesiąc. Raty w kosztach firmy.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div>
+            <h3>Projekt gratis, montaż w cenie</h3>
+            <p>Wizualizacja 3D, dopasowanie układu pomieszczeń, dostawa i montaż — wszystko w cenie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <p class="eyebrow">Realizacje</p>
+      <h2 class="h2">Nasze kontenery biurowe</h2>
+      <div class="product-gallery">
+        <div class="product-gallery-item"><img src="assets/gallery/k11.png" alt="Kontener biurowy STAGO — realizacja 1" loading="lazy"></div>
+        <div class="product-gallery-item"><img src="assets/gallery/k14.png" alt="Kontener biurowy STAGO — realizacja 2" loading="lazy"></div>
+        <div class="product-gallery-item"><img src="assets/gallery/k16.png" alt="Kontener biurowy STAGO — realizacja 3" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-faq section" id="faq-biurowy">
+    <div class="container">
+      <p class="eyebrow">Pytania i odpowiedzi</p>
+      <h2 class="h2">FAQ — kontenery biurowe</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Ile kosztuje kontener biurowy?</summary>
+          <p>Nowy kontener biurowy w standardowym wyposażeniu zaczyna się od 18 000 zł netto (2,4x6m). Wersja premium z klimatyzacją i lepszą izolacją — od 24 000 zł. Większe moduły 3x12m z łazienką — od 45 000 zł. <a href="blog/kontener-biurowy-cena.html">Pełny cennik &rarr;</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy kontener biurowy spełnia wymagania BHP?</summary>
+          <p>Tak. Nasze kontenery spełniają wymagania BHP: min. 2 m&sup2; na pracownika, oświetlenie 300+ lux, wentylacja naturalna (okna) lub mechaniczna, izolacja termiczna zapewniająca min. 18°C w zimie.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy mogę podłączyć Internet i telefon?</summary>
+          <p>Tak — w wersji premium instalujemy okablowanie LAN (Cat 5e/6). Możesz też używać routera WiFi podłączonego do sieci elektrycznej. Oferujemy również przygotowanie otworów pod kable telekomunikacyjne.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy kontener ma łazienkę?</summary>
+          <p>Opcjonalnie. W wersji premium możemy zamontować łazienkę z WC i umywalką, a nawet aneks kuchenny. Wymaga przyłącza wodno-kanalizacyjnego na miejscu.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy można łączyć kontenery w większe biuro?</summary>
+          <p>Tak — łączymy moduły obok siebie i nad sobą (wersje piętrowe). Biuro modułowe z 2-4 kontenerów to popularne rozwiązanie na budowach i w firmach produkcyjnych.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-form-section section-dark" id="wycena">
+    <div class="container">
+      <p class="eyebrow">Darmowa wycena</p>
+      <h2 class="h2">Zapytaj o kontener biurowy</h2>
+      <div class="product-form-grid">
+        <form class="product-form">
+          <input type="text" name="name" placeholder="Imię i nazwisko" required>
+          <input type="tel" name="phone" placeholder="Telefon" required>
+          <input type="email" name="email" placeholder="Email (opcjonalnie)">
+          <select name="type">
+            <option value="biurowy" selected>Kontener biurowy</option>
+            <option value="handlowy">Pawilon handlowy</option>
+            <option value="magazynowy">Kontener magazynowy</option>
+            <option value="inny">Inny</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Opisz czego potrzebujesz — ile stanowisk, łazienka, lokalizacja..."></textarea>
+          <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie</button>
+          <p class="form-note">Odpowiadamy w ciągu 24 godzin. Wycena jest darmowa i niezobowiązująca.</p>
+        </form>
+        <div class="product-form-info">
+          <h3>Co dostajesz?</h3>
+          <p>Wypełnij formularz lub zadzwoń. Przygotujemy projekt i wycenę bez zobowiązań.</p>
+          <ul>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Indywidualny projekt i wizualizacja 3D</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Szczegółowa wycena z opcjami</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Doradztwo BHP i formalne gratis</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Odpowiedź w 24h</li>
+          </ul>
+          <div style="margin-top:24px">
+            <a href="tel:+48509508210" style="font-size:1.3rem;font-weight:800;color:var(--white);display:block;margin-bottom:8px">509 508 210</a>
+            <p style="font-size:.88rem;color:var(--t-light3)">Pon-Pt: 8:00-16:00 | Sob: 8:00-13:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-section">
+    <div class="container">
+      <p class="eyebrow">Powiązane</p>
+      <h2 class="h2">Artykuły i inne produkty</h2>
+      <div class="blog-grid" style="margin-top:40px">
+        <a href="blog/kontener-biurowy-cena.html" class="blog-card">
+          <div class="blog-img"><img src="assets/gallery/k6.png" alt="Cennik kontenerów biurowych" loading="lazy"></div>
+          <div class="blog-body">
+            <span class="blog-date">10 marca 2026</span>
+            <h3>Kontener biurowy — cena i poradnik zakupu 2026</h3>
+            <p>Cennik, porównanie z wynajmem biura, kalkulator oszczędności.</p>
+          </div>
+        </a>
+        <a href="pawilon-handlowy.html" class="blog-card">
+          <div class="blog-img"><img src="assets/products/handlowy.png" alt="Pawilon handlowy STAGO" loading="lazy"></div>
+          <div class="blog-body">
+            <span class="blog-date">Produkt</span>
+            <h3>Pawilon handlowy</h3>
+            <p>Sklepy, kioski, punkty usługowe. Od 15 000 zł netto.</p>
+          </div>
+        </a>
+        <a href="kontener-magazynowy.html" class="blog-card">
+          <div class="blog-img"><img src="assets/products/magazynowy.png" alt="Kontener magazynowy STAGO" loading="lazy"></div>
+          <div class="blog-body">
+            <span class="blog-date">Produkt</span>
+            <h3>Kontener magazynowy</h3>
+            <p>Magazyny, garaże, pomieszczenia gospodarcze.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-white.png" alt="STAGO" class="footer-logo">
+        <p>Producent pawilonów modułowych.<br>Jędrzejów, woj. świętokrzyskie.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/stago" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://tiktok.com/@stago" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div><h4>Oferta</h4><a href="pawilon-handlowy.html">Handlowe</a><a href="kontener-biurowy.html">Biurowe</a><a href="index.html#produkty">Mieszkalne</a><a href="index.html#produkty">Sanitarne</a><a href="kontener-magazynowy.html">Magazynowe</a></div>
+        <div><h4>Firma</h4><a href="index.html#o-firmie">O firmie</a><a href="index.html#proces">Jak działamy</a><a href="index.html#realizacje">Realizacje</a><a href="index.html#opinie">Opinie</a><a href="index.html#faq">FAQ</a><a href="index.html#blog">Baza wiedzy</a></div>
+        <div><h4>Kontakt</h4><a href="tel:+48509508210">509 508 210</a><a href="mailto:kontakt@stago.com.pl">kontakt@stago.com.pl</a><a href="https://maps.google.com/?q=Jasionka+117+Jędrzejów" target="_blank">Jasionka 117, Jędrzejów</a></div>
+        <div><h4>Obsługujemy</h4><span class="footer-cities">Jędrzejów, Kielce, Kraków, Radom, Częstochowa, Katowice, Łódź i cała Polska</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 STAGO &middot; Stworzone przez <a href="https://isiko.pl" target="_blank">ISIKO</a> z pomocą <a href="https://github.com/zmrlk/bOS" target="_blank">bOS CLI</a></p></div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a href="tel:+48509508210" class="sticky-phone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Zadzwoń</a>
+    <a href="konfigurator.html?type=Biurowy" class="sticky-quote">Darmowa wycena</a>
+  </div>
+
+  <script>document.getElementById('nav-toggle')?.addEventListener('click',function(){document.getElementById('nav-links').classList.toggle('open')});</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kontener biurowy STAGO",
+    "description": "Kontener biurowy od producenta. Biura, portierne, recepcje. Izolacja PIR, klimatyzacja, pełna elektryka. Gotowy w 4-6 tygodni.",
+    "image": "https://stago.com.pl/assets/products/biurowy.png",
+    "brand": {"@type": "Brand", "name": "STAGO"},
+    "manufacturer": {"@type": "Organization", "name": "STAGO", "url": "https://stago.com.pl"},
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "18000",
+      "highPrice": "55000",
+      "priceCurrency": "PLN",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "Organization", "name": "STAGO"}
+    },
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "5"}
+  }
+  </script>
+</body>
+</html>
