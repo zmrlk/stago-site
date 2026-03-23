@@ -1,6 +1,7 @@
 media: assets
 
 content:
+  # ── Strona główna ──
   - name: homepage
     label: Strona główna
     type: file
@@ -11,9 +12,12 @@ content:
         type: object
         fields:
           - { name: phone, label: Telefon, type: string }
+          - { name: phoneLink, label: Telefon (link), type: string }
           - { name: email, label: Email, type: string }
           - { name: address, label: Adres, type: string }
           - { name: city, label: Miasto, type: string }
+          - { name: postalCode, label: Kod pocztowy, type: string }
+          - { name: region, label: Województwo, type: string }
           - { name: hours, label: Godziny (Pon-Pt), type: string }
           - { name: hoursSat, label: Godziny (Sob), type: string }
           - { name: cities, label: Obsługiwane miasta, type: string }
@@ -91,6 +95,7 @@ content:
         label: Historia klienta
         type: object
         fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
           - { name: h2, label: Tytuł, type: string }
           - { name: h2accent, label: Tytuł (akcent), type: string }
           - { name: quote, label: Cytat, type: text }
@@ -102,3 +107,270 @@ content:
             fields:
               - { name: label, label: Etykieta, type: string }
               - { name: text, label: Treść, type: text }
+
+      - name: compare
+        label: Wynajem vs własny
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - { name: sub, label: Podtytuł, type: string }
+          - { name: footnote, label: Przypis, type: string }
+          - name: rent
+            label: Kolumna — Wynajem
+            type: object
+            fields:
+              - { name: label, label: Etykieta, type: string }
+              - { name: price, label: Cena, type: string }
+              - { name: priceSuffix, label: Suffix ceny, type: string }
+          - name: own
+            label: Kolumna — Własny pawilon
+            type: object
+            fields:
+              - { name: label, label: Etykieta, type: string }
+              - { name: price, label: Cena, type: string }
+              - { name: priceSuffix, label: Suffix ceny, type: string }
+
+      - name: process
+        label: Jak działamy (proces)
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - name: steps
+            label: Kroki
+            type: object
+            list: true
+            fields:
+              - { name: num, label: Numer (01/02/03/04), type: string }
+              - { name: title, label: Tytuł, type: string }
+              - { name: text, label: Opis, type: text }
+
+      - name: blog
+        label: Poradniki (lista na głównej)
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: sub, label: Podtytuł, type: string }
+          - name: items
+            label: Artykuły
+            type: object
+            list: true
+            fields:
+              - { name: href, label: Link, type: string }
+              - { name: img, label: Zdjęcie, type: image }
+              - { name: date, label: Etykieta daty, type: string }
+              - { name: title, label: Tytuł, type: string }
+              - { name: desc, label: Opis, type: text }
+
+      - name: contact
+        label: Kontakt / formularz
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - { name: note, label: Notatka, type: text }
+
+  # ── Produkty ──
+  - name: products
+    label: Strony produktowe
+    type: collection
+    path: content
+    match: "{pawilon-handlowy,kontener-biurowy,kontener-magazynowy}.json"
+    fields:
+      - name: meta
+        label: SEO / Meta
+        type: object
+        fields:
+          - { name: title, label: Tytuł strony, type: string }
+          - { name: description, label: Meta description, type: text }
+          - { name: canonical, label: Canonical URL, type: string }
+          - { name: ogTitle, label: OG Title, type: string }
+          - { name: ogDescription, label: OG Description, type: string }
+          - { name: ogImage, label: OG Image URL, type: string }
+
+      - { name: breadcrumb, label: Breadcrumb, type: string }
+      - { name: productType, label: Typ produktu (Handlowy/Biurowy/Magazynowy), type: string }
+
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: img, label: Zdjęcie produktu, type: image }
+          - { name: imgAlt, label: Alt zdjęcia, type: string }
+          - { name: h1, label: Nagłówek H1, type: string }
+          - { name: subtitle, label: Podtytuł, type: text }
+          - { name: price, label: Cena (tekst), type: string }
+          - { name: priceNote, label: Cena (uwaga), type: string }
+          - { name: ctaHref, label: Link CTA, type: string }
+          - { name: articleHref, label: Link do artykułu, type: string }
+          - { name: articleText, label: Tekst linku artykułu, type: string }
+
+      - name: specs
+        label: Specyfikacja
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - name: items
+            label: Karty specyfikacji
+            type: object
+            list: true
+            fields:
+              - { name: h3, label: Tytuł, type: string }
+              - { name: text, label: Opis, type: text }
+
+      - name: benefits
+        label: Korzyści
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - name: items
+            label: Lista korzyści
+            type: object
+            list: true
+            fields:
+              - { name: h3, label: Tytuł, type: string }
+              - { name: text, label: Opis, type: text }
+
+      - name: gallery
+        label: Galeria
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - name: items
+            label: Zdjęcia
+            type: object
+            list: true
+            fields:
+              - { name: img, label: Zdjęcie, type: image }
+              - { name: alt, label: Alt, type: string }
+
+      - name: faq
+        label: FAQ
+        type: object
+        fields:
+          - { name: id, label: ID sekcji, type: string }
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - name: items
+            label: Pytania
+            type: object
+            list: true
+            fields:
+              - { name: q, label: Pytanie, type: string }
+              - { name: a, label: Odpowiedź, type: text }
+
+      - name: form
+        label: Formularz
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: selectedType, label: Domyślny typ, type: string }
+          - { name: textareaPlaceholder, label: Placeholder textarea, type: string }
+          - { name: infoH3, label: Tytuł info, type: string }
+          - { name: infoText, label: Tekst info, type: text }
+          - name: features
+            label: Lista korzyści w formularzu
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Tekst, type: string }
+
+      - name: related
+        label: Powiązane
+        type: object
+        list: true
+        fields:
+          - { name: href, label: Link, type: string }
+          - { name: img, label: Zdjęcie, type: image }
+          - { name: alt, label: Alt, type: string }
+          - { name: label, label: Etykieta, type: string }
+          - { name: h3, label: Tytuł, type: string }
+          - { name: text, label: Opis, type: string }
+
+      - name: jsonLd
+        label: Dane strukturalne (SEO)
+        type: object
+        fields:
+          - { name: name, label: Nazwa produktu, type: string }
+          - { name: description, label: Opis, type: text }
+          - { name: image, label: URL zdjęcia, type: string }
+          - { name: lowPrice, label: Cena od, type: string }
+          - { name: highPrice, label: Cena do, type: string }
+
+  # ── Blog ──
+  - name: blog
+    label: Blog / Artykuły
+    type: collection
+    path: content/blog
+    match: "*.json"
+    fields:
+      - name: meta
+        label: SEO / Meta
+        type: object
+        fields:
+          - { name: title, label: Tytuł strony, type: string }
+          - { name: description, label: Meta description, type: text }
+          - { name: canonical, label: Canonical URL, type: string }
+          - { name: ogTitle, label: OG Title, type: string }
+          - { name: ogDescription, label: OG Description, type: string }
+          - { name: ogImage, label: OG Image URL, type: string }
+
+      - { name: breadcrumb, label: Breadcrumb, type: string }
+
+      - name: hero
+        label: Hero artykułu
+        type: object
+        fields:
+          - { name: h1, label: Nagłówek H1, type: string }
+          - { name: datetime, label: Data (ISO), type: string }
+          - { name: dateDisplay, label: Data (wyświetlana), type: string }
+          - { name: readTime, label: Czas czytania, type: string }
+
+      - name: featuredImg
+        label: Zdjęcie główne
+        type: object
+        fields:
+          - { name: src, label: Ścieżka, type: image }
+          - { name: alt, label: Alt, type: string }
+
+      - { name: body, label: Treść artykułu (HTML), type: rich-text }
+
+      - name: sidebar
+        label: Sidebar
+        type: object
+        fields:
+          - { name: ctaText, label: Tekst CTA, type: string }
+          - name: articles
+            label: Powiązane artykuły
+            type: object
+            list: true
+            fields:
+              - { name: href, label: Link, type: string }
+              - { name: text, label: Tekst, type: string }
+          - name: products
+            label: Produkty
+            type: object
+            list: true
+            fields:
+              - { name: href, label: Link, type: string }
+              - { name: text, label: Tekst, type: string }
+
+      - name: jsonLd
+        label: Dane strukturalne (SEO)
+        type: object
+        fields:
+          - { name: headline, label: Nagłówek, type: string }
+          - { name: description, label: Opis, type: text }
+          - { name: image, label: URL zdjęcia, type: string }
+          - { name: datePublished, label: Data publikacji, type: string }
+          - { name: dateModified, label: Data modyfikacji, type: string }
+          - { name: mainEntityOfPage, label: Canonical URL, type: string }

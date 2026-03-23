@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Kontener biurowy — producent STAGO | Biura, portierne, recepcje",
+    "description": "Kontener biurowy od producenta STAGO. Biura, portierne, recepcje na budowy i firmy. Od 18 000 zł netto. Izolacja PIR, klimatyzacja, pełna elektryka. Gotowe w 4-6 tygodni.",
+    "canonical": "https://stago.com.pl/kontener-biurowy.html",
+    "ogTitle": "Kontener biurowy — producent STAGO",
+    "ogDescription": "Kontenery biurowe od producenta. Biura, portierne, recepcje. Od 18 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/products/biurowy.png"
+  },
+  "breadcrumb": "Kontener biurowy",
+  "productType": "Biurowy",
+  "hero": {
+    "img": "assets/products/biurowy.png",
+    "imgAlt": "Kontener biurowy STAGO",
+    "h1": "Biuro gotowe do pracy. Ciepłe zimą, chłodne latem.",
+    "subtitle": "Potrzebujesz biura na budowie? Albo tańszego lokalu niż wynajem w mieście? Robimy kontener, który wygląda i działa jak normalne biuro. Prąd, ogrzewanie, klimatyzacja, internet — wchodzisz, siadasz, pracujesz. Bez remontu, bez czekania.",
+    "price": "od 18 000 zł netto",
+    "priceNote": "/ kontener 2,4x6m z pełną elektryką",
+    "ctaHref": "konfigurator.html?type=Biurowy",
+    "articleHref": "blog/kontener-biurowy-cena.html",
+    "articleText": "Pierwsza zima w pawilonie &rarr;"
+  },
+  "specs": {
+    "eyebrow": "Z czego to jest",
+    "h2": "Nie blaszak — normalne biuro",
+    "items": [
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "h3": "Od 2,4x6m do 3x12m",
+        "text": "Jeden moduł to biuro na 2-4 osoby. Chcesz więcej? Łączymy moduły obok siebie albo stawiamy piętro."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "PIR 60-80mm",
+        "text": "Ściany z płyty PIR. W styczniu w środku 22°C. W lipcu — nie parzysz się jak w blaszaku. To ta sama izolacja co w domach energooszczędnych."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/></svg>",
+        "h3": "Prąd, LED, LAN",
+        "text": "Gniazdka, oświetlenie LED, tablica rozdzielcza. Okablowanie LAN pod internet. Opcja: klima, ogrzewanie, łazienka z WC."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "h3": "4-6 tygodni",
+        "text": "Od rozmowy do gotowego biura — maksymalnie 6 tygodni. Dowozimy i stawiamy. Ty podłączasz laptopa."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Dlaczego to się opłaca",
+    "h2": "Taniej niż wynajem. I jest Twoje.",
+    "items": [
+      {
+        "h3": "Zwrot po 1-2 latach",
+        "text": "Wynajem biura w mieście — 2 000-4 000 zł miesięcznie. Kontener biurowy kosztuje tyle, co rok-dwa wynajmu. Potem pracujesz za darmo. <a href=\"blog/kontener-biurowy-cena.html\">Policz sam &rarr;</a>"
+      },
+      {
+        "h3": "BHP? Spokojnie — spełnia normy",
+        "text": "Minimum 2 m&sup2; na pracownika — jest. Oświetlenie 300 lux — jest. Wentylacja — okna otwierane albo mechaniczna. Temperatura minimum 18°C zimą — z PIR 60mm i klimą to żaden problem. PIP nie ma się do czego przyczepić."
+      },
+      {
+        "h3": "Przenosisz, kiedy chcesz",
+        "text": "Kończy się budowa? Pakujesz kontener na lawetę i jedziesz na następną. Zmieniasz siedzibę firmy? Biuro jedzie z Tobą. Żadnego szukania nowego lokalu, żadnych umów najmu."
+      },
+      {
+        "h3": "Leasing od 650 zł/miesiąc",
+        "text": "Kontener biurowy do 10 000 EUR — jednorazowa amortyzacja. Leasing operacyjny? Raty wrzucasz w koszty firmy. Księgowa się ucieszy."
+      },
+      {
+        "h3": "Projekt i montaż w cenie",
+        "text": "Rysujemy układ pomieszczeń, pokazujemy wizualizację 3D. Dowozimy, stawiamy, podłączamy. Koszt transportu i montażu jest w cenie. Żadnych dopłat na koniec."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zrobione przez nas",
+    "h2": "Biura, które już pracują",
+    "items": [
+      { "img": "assets/gallery/k11.png", "alt": "Kontener biurowy STAGO — realizacja 1" },
+      { "img": "assets/gallery/k14.png", "alt": "Kontener biurowy STAGO — realizacja 2" },
+      { "img": "assets/gallery/k16.png", "alt": "Kontener biurowy STAGO — realizacja 3" }
+    ]
+  },
+  "faq": {
+    "id": "faq-biurowy",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają ludzie przed zamówieniem",
+    "items": [
+      {
+        "q": "Ile kosztuje kontener biurowy?",
+        "a": "Podstawowy moduł 2,4x6m z elektryką — od 18 000 zł netto. Z klimatyzacją i lepszą izolacją PIR 80mm — od 24 000 zł. Duży kontener 3x12m z łazienką i aneksem kuchennym — od 45 000 zł. Wycenę robię za darmo — zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/kontener-biurowy-cena.html\">Pierwsza zima w pawilonie &rarr;</a>"
+      },
+      {
+        "q": "Mogę postawić go na swojej działce?",
+        "a": "Tak. Kontener do 35 m&sup2; wymaga tylko zgłoszenia — nie pozwolenia na budowę. Potrzebujesz utwardzone podłoże: kostka, beton, płyty. Pomagamy z formalnościami, żebyś nie musiał się z tym męczyć."
+      },
+      {
+        "q": "Ile kosztuje ogrzewanie zimą?",
+        "a": "Przy PIR 60mm i klimatyzacji z pompą ciepła — od 300 do 600 zł miesięcznie za prąd. Zależy od rozmiaru i temperatury, którą lubisz. To nie blaszak — ściany trzymają ciepło jak murówka."
+      },
+      {
+        "q": "Może być łazienka i kuchnia?",
+        "a": "Tak. Montujemy WC, umywalkę, zlewozmywak, czajnik na blacie. Potrzebujesz przyłącze wod-kan na miejscu. Reszta po naszej stronie — rury, odpływy, armatura."
+      },
+      {
+        "q": "Można połączyć kilka kontenerów w jedno biuro?",
+        "a": "Można. Dwa obok siebie — wycinamy ścianę pomiędzy, robisz open space albo dwa osobne pokoje. Stawiamy też piętro — schody wewnętrzne albo zewnętrzne. Na budowach najczęściej łączymy 2-4 moduły."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, jakie biuro potrzebujesz",
+    "selectedType": "biurowy",
+    "textareaPlaceholder": "Ile osób będzie pracować? Potrzebujesz łazienkę? Gdzie ma stać?",
+    "options": [
+      { "value": "biurowy", "label": "Kontener biurowy" },
+      { "value": "handlowy", "label": "Pawilon handlowy" },
+      { "value": "magazynowy", "label": "Kontener magazynowy" },
+      { "value": "inny", "label": "Inny" }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Dzwonisz albo piszesz. Pytamy ile osób, czy potrzebujesz łazienkę, dokąd dowieźć. Rysujemy projekt, podajemy cenę. Bez niespodzianek.",
+    "features": [
+      { "text": "Wizualizacja 3D — zobaczysz układ przed zamówieniem" },
+      { "text": "Cena z transportem, montażem, elektryką" },
+      { "text": "Doradztwo BHP — za darmo" },
+      { "text": "Odpowiedź w ciągu jednego dnia" }
+    ]
+  },
+  "related": [
+    {
+      "href": "blog/kontener-biurowy-cena.html",
+      "img": "assets/gallery/k6.png",
+      "alt": "Cennik kontenerów biurowych",
+      "label": "10 marca 2026",
+      "h3": "Kontener biurowy — ile kosztuje w 2026?",
+      "text": "Cennik, porównanie z wynajmem, kalkulator oszczędności."
+    },
+    {
+      "href": "pawilon-handlowy.html",
+      "img": "assets/products/handlowy.png",
+      "alt": "Pawilon handlowy STAGO",
+      "label": "Produkt",
+      "h3": "Pawilon handlowy",
+      "text": "Sklep, kiosk, punkt gastronomiczny. Gotowy w 5 tygodni."
+    },
+    {
+      "href": "kontener-magazynowy.html",
+      "img": "assets/products/magazynowy.png",
+      "alt": "Kontener magazynowy STAGO",
+      "label": "Produkt",
+      "h3": "Kontener magazynowy",
+      "text": "Magazyn, garaż, schowek. Stal malowana proszkowo, zamek wielopunktowy."
+    }
+  ],
+  "jsonLd": {
+    "name": "Kontener biurowy STAGO",
+    "description": "Kontener biurowy od producenta. Biura, portierne, recepcje. Izolacja PIR, klimatyzacja, pełna elektryka. Gotowy w 4-6 tygodni.",
+    "image": "https://stago.com.pl/assets/products/biurowy.png",
+    "lowPrice": "18000",
+    "highPrice": "55000"
+  }
+}

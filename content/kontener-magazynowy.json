@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Kontener magazynowy — producent STAGO | Magazyny, garaże",
+    "description": "Kontener magazynowy od producenta STAGO. Magazyny, garaże, pomieszczenia gospodarcze. Od 12 000 zł netto. Konstrukcja stalowa malowana proszkowo. Gotowe w 3-4 tygodnie.",
+    "canonical": "https://stago.com.pl/kontener-magazynowy.html",
+    "ogTitle": "Kontener magazynowy — producent STAGO",
+    "ogDescription": "Kontenery magazynowe od producenta. Magazyny, garaże. Od 12 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/products/magazynowy.png"
+  },
+  "breadcrumb": "Kontener magazynowy",
+  "productType": "Magazynowy",
+  "hero": {
+    "img": "assets/products/magazynowy.png",
+    "imgAlt": "Kontener magazynowy STAGO",
+    "h1": "Magazyn, garaż, schowek. Solidny i na lata.",
+    "subtitle": "Masz narzędzia, materiały albo sprzęt, który stoi na dworze? Albo w garażu, który pęka w szwach? Stawiamy kontener. Stal malowana proszkowo, zamek wielopunktowy, podłoga wzmocniona. Wjeżdżasz wózkiem, zamykasz na klucz i masz spokój.",
+    "price": "od 12 000 zł netto",
+    "priceNote": "/ kontener 2,4x6m bez izolacji",
+    "ctaHref": "konfigurator.html?type=Magazynowy",
+    "articleHref": "blog/pawilon-handlowy-cena.html",
+    "articleText": "Jak sprawdzić producenta &rarr;"
+  },
+  "specs": {
+    "eyebrow": "Z czego to jest",
+    "h2": "Nie blaszak z marketu. Spawana stalowa skrzynia.",
+    "items": [
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "h3": "Od 2,4x3m do 3x12m",
+        "text": "Mały schowek albo magazyn na cały sprzęt budowlany. Wersje podwyższone do 3m — wjedzie dostawczak."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Stal malowana proszkowo",
+        "text": "Rama stalowa malowana proszkowo, ściany z blachy trapezowej. Trwałe wykończenie na lata. Chcesz izolację? Dokładamy PIR 40-60mm."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0110 0v4\"/></svg>",
+        "h3": "Zamek wielopunktowy",
+        "text": "Drzwi dwuskrzydłowe ryglowane w trzech punktach. Opcja: brama roletowa, kłódka z atestem, czujnik alarmu."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "h3": "3-4 tygodnie",
+        "text": "Od zamówienia do postawienia na Twojej działce. Dowozimy na lawecie. Ustawiamy. Gotowe."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Do czego się nadaje",
+    "h2": "Ludzie trzymają w nim wszystko",
+    "items": [
+      {
+        "h3": "Magazyn na budowie",
+        "text": "Narzędzia, materiały, rury, kable — wszystko pod kluczem. Drzwi dwuskrzydłowe otwierasz na całą szerokość i załadujesz paletę wózkiem. Wieczorem zamykasz i nic nie znika."
+      },
+      {
+        "h3": "Garaż na maszyny",
+        "text": "Quad, motocykl, kosiarka, traktorek ogrodowy. Wersja podwyższona mieści busa. Wjazd bez progu — nie musisz nic dźwigać. Podłoga ze stali ryflowanej albo OSB, zależy co wolisz."
+      },
+      {
+        "h3": "Magazyn firmowy",
+        "text": "Towar, archiwum, zapasy sezonowe. Z izolacją PIR — wilgoć i mróz nie dostają się do środka. Z elektryką — masz światło i gniazdka, nie szukasz niczego po ciemku."
+      },
+      {
+        "h3": "Schowek przy domu",
+        "text": "Rowery, narty, meble ogrodowe, narzędzia. Tańszy niż murowany garaż. Gotowy w 3 tygodnie, nie w 3 miesiące. Nie trzeba murować, tynkować, czekać na ekipę."
+      },
+      {
+        "h3": "Warsztat",
+        "text": "Dołóż izolację PIR, ogrzewanie i oświetlenie LED — masz warsztat, w którym da się pracować cały rok. Wentylacja mechaniczna na życzenie. Prąd 230V i 400V."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zrobione przez nas",
+    "h2": "Kontenery, które już służą",
+    "items": [
+      { "img": "assets/gallery/k19.png", "alt": "Kontener magazynowy STAGO — realizacja 1" },
+      { "img": "assets/gallery/k21.png", "alt": "Kontener magazynowy STAGO — realizacja 2" },
+      { "img": "assets/gallery/k25.png", "alt": "Kontener magazynowy STAGO — realizacja 3" }
+    ]
+  },
+  "faq": {
+    "id": "faq-magazynowy",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają ludzie przed zakupem",
+    "items": [
+      {
+        "q": "Ile kosztuje kontener magazynowy?",
+        "a": "Podstawowy 2,4x6m bez izolacji — od 12 000 zł netto. Z izolacją PIR 40mm — od 16 000 zł. Duży moduł 3x12m — od 28 000 zł. Wycena za darmo, zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+      },
+      {
+        "q": "Potrzebuję fundament?",
+        "a": "Nie w tradycyjnym sensie. Wystarczy utwardzone podłoże — kostka brukowa, płyty betonowe, nawet dobrze ubity gruz. Kontener stoi na stalowej ramie i nie trzeba go kotwić. Możesz go kiedyś przenieść."
+      },
+      {
+        "q": "Mogę dołożyć izolację później?",
+        "a": "Można, ale wychodzi drożej niż zamówienie od razu. Jeśli wiesz, że będziesz trzymać coś wrażliwego na temperaturę — zamów z PIR od początku. Izolacja 40mm dodaje około 4 000 zł do ceny."
+      },
+      {
+        "q": "Co z kradzieżą? Jak zabezpieczony jest kontener?",
+        "a": "Spawana rama stalowa. Ściany z blachy trapezowej — nie wygniesz ich łomem. Drzwi z zamkiem wielopunktowym, który rygluje w trzech miejscach. Opcjonalnie: kłódka z atestem, czujnik alarmu, brama roletowa z blokadą. Żeby się dostać siłą, potrzebujesz szlifierki i kilkunastu minut. A to robi hałas."
+      },
+      {
+        "q": "Mogę zamówić inne drzwi niż dwuskrzydłowe?",
+        "a": "Tak. Robimy bramę roletową (wygodna, gdy mało miejsca przed kontenerem), bramę segmentową, drzwi boczne osobowe. Możesz mieć drzwi z przodu i z boku jednocześnie. Wszystko do uzgodnienia."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, co chcesz przechowywać",
+    "selectedType": "magazynowy",
+    "textareaPlaceholder": "Co będziesz trzymać? Jaki rozmiar? Potrzebujesz izolację?",
+    "options": [
+      { "value": "magazynowy", "label": "Kontener magazynowy" },
+      { "value": "handlowy", "label": "Pawilon handlowy" },
+      { "value": "biurowy", "label": "Kontener biurowy" },
+      { "value": "inny", "label": "Inny" }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Mówisz, co chcesz trzymać i gdzie ma stać. Dobieramy rozmiar, izolację, typ drzwi. Podajemy cenę. Bez niespodzianek.",
+    "features": [
+      { "text": "Dobór rozmiaru pod Twoje potrzeby" },
+      { "text": "Cena z dostawą i ustawieniem" },
+      { "text": "1 rok gwarancji na kontener" },
+      { "text": "Odpowiedź w ciągu jednego dnia" }
+    ]
+  },
+  "related": [
+    {
+      "href": "pawilon-handlowy.html",
+      "img": "assets/products/handlowy.png",
+      "alt": "Pawilon handlowy STAGO",
+      "label": "Produkt",
+      "h3": "Pawilon handlowy",
+      "text": "Sklep, kiosk, kawiarnia. Gotowy w 5 tygodni, bez pozwolenia."
+    },
+    {
+      "href": "kontener-biurowy.html",
+      "img": "assets/products/biurowy.png",
+      "alt": "Kontener biurowy STAGO",
+      "label": "Produkt",
+      "h3": "Kontener biurowy",
+      "text": "Biuro z prądem, ogrzewaniem i klimą. Taniej niż wynajem."
+    },
+    {
+      "href": "blog/pawilon-bez-pozwolenia.html",
+      "img": "assets/gallery/k9.png",
+      "alt": "Pawilon bez pozwolenia",
+      "label": "12 marca 2026",
+      "h3": "Kontener bez pozwolenia — przepisy 2026",
+      "text": "Kiedy wystarczy zgłoszenie? Aktualne przepisy, proste wyjaśnienie."
+    }
+  ],
+  "jsonLd": {
+    "name": "Kontener magazynowy STAGO",
+    "description": "Kontener magazynowy od producenta. Magazyny, garaże, pomieszczenia gospodarcze. Konstrukcja stalowa malowana proszkowo. Gotowy w 3-4 tygodnie.",
+    "image": "https://stago.com.pl/assets/products/magazynowy.png",
+    "lowPrice": "12000",
+    "highPrice": "45000"
+  }
+}

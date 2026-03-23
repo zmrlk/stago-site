@@ -31,13 +31,28 @@ function escapeHtml(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-// Build
-const content = JSON.parse(fs.readFileSync('content/index.json', 'utf8'));
-const template = fs.readFileSync('templates/index.html', 'utf8');
-const html = render(template, content);
-fs.writeFileSync('index.html', html);
-console.log('Built index.html from template + content');
+// ── Build all pages ──
 
-// Copy static pages (not templated yet)
-const staticPages = ['pawilon-handlowy.html', 'kontener-biurowy.html', 'kontener-magazynowy.html'];
-// These stay as-is for now — can be templated later
+const pages = [
+  // Homepage
+  { content: 'content/index.json', template: 'templates/index.html', output: 'index.html' },
+  // Product pages
+  { content: 'content/pawilon-handlowy.json', template: 'templates/product.html', output: 'pawilon-handlowy.html' },
+  { content: 'content/kontener-biurowy.json', template: 'templates/product.html', output: 'kontener-biurowy.html' },
+  { content: 'content/kontener-magazynowy.json', template: 'templates/product.html', output: 'kontener-magazynowy.html' },
+  // Blog articles
+  { content: 'content/blog/pawilon-handlowy-cena.json', template: 'templates/blog.html', output: 'blog/pawilon-handlowy-cena.html' },
+  { content: 'content/blog/kontener-biurowy-cena.json', template: 'templates/blog.html', output: 'blog/kontener-biurowy-cena.html' },
+  { content: 'content/blog/pawilon-bez-pozwolenia.json', template: 'templates/blog.html', output: 'blog/pawilon-bez-pozwolenia.html' },
+];
+
+pages.forEach(({ content: contentPath, template: templatePath, output }) => {
+  const data = JSON.parse(fs.readFileSync(contentPath, 'utf8'));
+  const tmpl = fs.readFileSync(templatePath, 'utf8');
+  const html = render(tmpl, data);
+  // Ensure output directory exists
+  const outDir = path.dirname(output);
+  if (outDir !== '.') fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(output, html);
+  console.log(`Built ${output}`);
+});

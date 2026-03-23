@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Pawilon handlowy — producent STAGO | Sklepy, kioski, punkty usługowe",
+    "description": "Pawilon handlowy od producenta STAGO. Sklepy, kioski, punkty usługowe. Od 15 000 zł netto. Projekt gratis, montaż w cenie, gotowe w 4-6 tygodni. Darmowa wycena.",
+    "canonical": "https://stago.com.pl/pawilon-handlowy.html",
+    "ogTitle": "Pawilon handlowy — producent STAGO",
+    "ogDescription": "Pawilony handlowe od producenta. Sklepy, kioski, punkty usługowe. Od 15 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/products/handlowy.png"
+  },
+  "breadcrumb": "Pawilon handlowy",
+  "productType": "Handlowy",
+  "hero": {
+    "img": "assets/products/handlowy.png",
+    "imgAlt": "Pawilon handlowy STAGO",
+    "h1": "Otwórz sklep za 5 tygodni. Bez budowy, bez pozwolenia.",
+    "subtitle": "Chcesz sprzedawać, ale nie chcesz czekać rok na budowę? Robimy pawilon. Dowozimy na lawecie. Stawiamy w jeden dzień. Ty wchodzisz z towarem i zaczynasz zarabiać. Okna PCV, drzwi aluminiowe, prąd — wszystko podłączone.",
+    "price": "od 15 000 zł netto",
+    "priceNote": "/ pawilon 3x2m, gotowy do handlu",
+    "ctaHref": "konfigurator.html?type=Handlowy",
+    "articleHref": "blog/pawilon-handlowy-cena.html",
+    "articleText": "Jak sprawdzić producenta &rarr;"
+  },
+  "specs": {
+    "eyebrow": "Z czego to jest",
+    "h2": "Konkretne materiały, konkretne liczby",
+    "items": [
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "h3": "Od 3x2m do 12x4m",
+        "text": "Mały kiosk albo duży sklep — dobieramy rozmiar pod Twój biznes. Można łączyć moduły obok siebie."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Ściany PIR 60mm",
+        "text": "Płyta PIR, nie styropian. Zimą ciepło, latem nie nagrzewa się jak blaszak. Rachunki za prąd? 350-500 zł miesięcznie."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
+        "h3": "Stal malowana proszkowo",
+        "text": "Rama stalowa malowana proszkowo — trwałe, odporne wykończenie. Wykończenie elewacji: blacha, drewno lub płyty HPL."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "h3": "4-6 tygodni",
+        "text": "Tyle trwa od podpisania umowy do momentu, gdy wchodzisz do środka z kluczem. Transport i montaż w cenie."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Co dostajesz",
+    "h2": "Żadnych ukrytych kosztów",
+    "items": [
+      {
+        "h3": "Projekt i wizualizacja za darmo",
+        "text": "Mówisz, czego potrzebujesz. My rysujemy. Dostajesz wizualizację 3D — widzisz, jak to będzie wyglądać, zanim wydasz złotówkę. Nie podoba się? Poprawiamy. Nie ruszamy z produkcją, dopóki nie powiesz \u201Etak\u201D."
+      },
+      {
+        "h3": "Dowozimy i stawiamy — Ty tylko wskazujesz miejsce",
+        "text": "Pawilon jedzie na lawecie prosto z naszego zakładu w Jędrzejowie. Nasz zespół montuje go na miejscu. Potrzebujesz utwardzone podłoże — płyty chodnikowe, kostka lub beton. Reszta po naszej stronie."
+      },
+      {
+        "h3": "2 lata gwarancji na konstrukcję",
+        "text": "Rama stalowa, ściany, dach — 2 lata gwarancji. Instalacja elektryczna — 1 rok. Coś się stanie po gwarancji? Dzwonisz, przyjeżdżamy, naprawiamy. Nie zostawiamy klientów."
+      },
+      {
+        "h3": "Do 35 m&sup2; — bez pozwolenia na budowę",
+        "text": "Pawilon do 35 m&sup2; to tylko zgłoszenie w urzędzie. Żadnych miesięcy czekania na decyzję. Pomagamy wypełnić papiery. <a href=\"blog/pawilon-bez-pozwolenia.html\">Przeczytaj o przepisach &rarr;</a>"
+      },
+      {
+        "h3": "Dowolne miejsce w Polsce",
+        "text": "Jedziemy do Kielc, Krakowa, Warszawy, nad morze — wszędzie. Transport na lawecie, montaż naszą ekipą. Jeden dzień i stoi."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zrobione przez nas",
+    "h2": "Pawilony, które już stoją i zarabiają",
+    "items": [
+      { "img": "assets/gallery/k2.png", "alt": "Pawilon handlowy STAGO — realizacja 1" },
+      { "img": "assets/gallery/k6.png", "alt": "Pawilon handlowy STAGO — realizacja 2" },
+      { "img": "assets/gallery/k9.png", "alt": "Pawilon handlowy STAGO — realizacja 3" }
+    ]
+  },
+  "faq": {
+    "id": "faq-handlowy",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci przed zamówieniem",
+    "items": [
+      {
+        "q": "Ile zapłacę za pawilon handlowy?",
+        "a": "Zależy od rozmiaru i tego, co ma być w środku. Mały kiosk 3x2m — od 15 000 zł netto. Sklep 6x3m — od 28 000 zł. Duży punkt 12x3m z witrynami — od 48 000 zł. Wycena jest za darmo, wystarczy zadzwonić: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/pawilon-handlowy-cena.html\">Jak sprawdzić producenta &rarr;</a>"
+      },
+      {
+        "q": "Potrzebuję pozwolenia na budowę?",
+        "a": "Jeśli pawilon ma do 35 m&sup2; — nie. Wystarczy zgłoszenie. Trwa kilka dni, nie kilka miesięcy. Pomagamy przygotować dokumenty, żebyś nie musiał szukać informacji na własną rękę. <a href=\"blog/pawilon-bez-pozwolenia.html\">Więcej o przepisach &rarr;</a>"
+      },
+      {
+        "q": "Jak ogrzewam pawilon zimą? Ile to kosztuje?",
+        "a": "Większość naszych klientów montuje klimatyzację z pompą ciepła — grzeje zimą, chłodzi latem. Ściany PIR 60mm trzymają ciepło jak murowany budynek. Rachunki? Przy pawilonie 18 m&sup2; to 350-500 zł miesięcznie za prąd w sezonie grzewczym. Nie tysiące."
+      },
+      {
+        "q": "Mogę mieć duże witryny i okno podawcze?",
+        "a": "Tak. Robimy okna panoramiczne na całą ścianę, witryny sklepowe, okna podawcze (jak w food trucku), drzwi przesuwne aluminiowe. Mówisz, co sprzedajesz — my dopasowujemy układ otworów."
+      },
+      {
+        "q": "A jeśli ktoś spróbuje się włamać?",
+        "a": "Stalowa konstrukcja, zamki wielopunktowe, opcjonalne rolety antywłamaniowe. Możesz dołożyć alarm i monitoring. To nie blaszak z marketu — to spawana rama stalowa malowana proszkowo. Bez łomu się nie dostaniesz."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "selectedType": "handlowy",
+    "textareaPlaceholder": "Co chcesz sprzedawać? Jaki rozmiar? Gdzie ma stać?",
+    "options": [
+      { "value": "handlowy", "label": "Pawilon handlowy" },
+      { "value": "biurowy", "label": "Kontener biurowy" },
+      { "value": "magazynowy", "label": "Kontener magazynowy" },
+      { "value": "inny", "label": "Inny" }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o rozmiar, miejsce, przeznaczenie. Rysujemy projekt z wizualizacją. Podajemy cenę. Bez niespodzianek.",
+    "features": [
+      { "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz" },
+      { "text": "Cena z transportem i montażem" },
+      { "text": "Pomoc z dokumentami i zgłoszeniem" },
+      { "text": "Odpowiedź w ciągu jednego dnia" }
+    ]
+  },
+  "related": [
+    {
+      "href": "blog/pawilon-handlowy-cena.html",
+      "img": "assets/gallery/k2.png",
+      "alt": "Cennik pawilonów handlowych",
+      "label": "15 marca 2026",
+      "h3": "Pawilon handlowy — ile kosztuje w 2026?",
+      "text": "Cennik, porównanie z budową tradycyjną, opcje na raty."
+    },
+    {
+      "href": "kontener-biurowy.html",
+      "img": "assets/products/biurowy.png",
+      "alt": "Kontener biurowy STAGO",
+      "label": "Produkt",
+      "h3": "Kontener biurowy",
+      "text": "Biuro na budowie albo przy firmie. Ciepłe, z prądem, gotowe w 5 tygodni."
+    },
+    {
+      "href": "kontener-magazynowy.html",
+      "img": "assets/products/magazynowy.png",
+      "alt": "Kontener magazynowy STAGO",
+      "label": "Produkt",
+      "h3": "Kontener magazynowy",
+      "text": "Magazyn, garaż, schowek. Stal malowana proszkowo, zamek wielopunktowy."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pawilon handlowy STAGO",
+    "description": "Pawilon handlowy od producenta. Sklepy, kioski, punkty usługowe. Konstrukcja stalowa malowana proszkowo, izolacja PIR. Gotowy w 4-6 tygodni.",
+    "image": "https://stago.com.pl/assets/products/handlowy.png",
+    "lowPrice": "15000",
+    "highPrice": "65000"
+  }
+}

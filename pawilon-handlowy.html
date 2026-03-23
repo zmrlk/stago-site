@@ -21,78 +21,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/sygnet.png">
-  <style>
-    .breadcrumbs{padding:100px 0 0;font-size:.82rem;color:var(--t3)}
-    .breadcrumbs a{color:var(--t2);transition:color .2s}
-    .breadcrumbs a:hover{color:var(--accent)}
-    .breadcrumbs span{margin:0 8px;color:var(--t3)}
-
-    .product-hero{padding:32px 0 64px}
-    .product-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-    .product-hero-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#f0f0f0}
-    .product-hero-img img{width:100%;height:100%;object-fit:cover}
-    .product-hero-text h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;letter-spacing:-.03em;line-height:1.12;color:var(--primary);margin-bottom:16px}
-    .product-hero-text .product-subtitle{font-size:1.05rem;color:var(--t2);line-height:1.65;margin-bottom:24px}
-    .product-price-range{font-size:1.2rem;font-weight:800;color:var(--accent);margin-bottom:24px}
-    .product-price-range span{font-size:.85rem;font-weight:400;color:var(--t3)}
-    .product-hero-cta{display:flex;gap:12px;flex-wrap:wrap}
-
-    .specs-section{padding:64px 0;background:var(--bg-light)}
-    .specs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
-    .spec-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;text-align:center;transition:border-color .3s}
-    .spec-card:hover{border-color:var(--accent)}
-    .spec-icon{width:48px;height:48px;border-radius:50%;background:rgba(232,70,28,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--accent)}
-    .spec-card h3{font-size:.85rem;font-weight:700;color:var(--primary);margin-bottom:6px}
-    .spec-card p{font-size:.82rem;color:var(--t2);line-height:1.5}
-
-    .benefits-section{padding:80px 0}
-    .benefits-list{max-width:800px;margin:40px auto 0}
-    .benefit-row{display:flex;gap:20px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--border)}
-    .benefit-row:last-child{border-bottom:none}
-    .benefit-icon{width:40px;height:40px;min-width:40px;border-radius:50%;background:rgba(232,70,28,.08);display:flex;align-items:center;justify-content:center;color:var(--accent)}
-    .benefit-row h3{font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:4px}
-    .benefit-row p{font-size:.9rem;color:var(--t2);line-height:1.6}
-
-    .gallery-section{padding:80px 0;background:var(--bg-light)}
-    .product-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
-    .product-gallery-item{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;cursor:pointer}
-    .product-gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
-    .product-gallery-item:hover img{transform:scale(1.05)}
-
-    .product-faq{padding:80px 0}
-
-    .product-form-section{padding:80px 0;background:var(--bg-dark)}
-    .product-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px;align-items:start}
-    .product-form{display:flex;flex-direction:column;gap:14px}
-    .product-form input,.product-form select,.product-form textarea{padding:15px 18px;border-radius:var(--r-sm);border:1px solid var(--border-dark);background:rgba(255,255,255,.05);color:var(--white);font-size:.95rem;transition:border-color .2s;outline:none}
-    .product-form input::placeholder,.product-form textarea::placeholder{color:var(--t-light3)}
-    .product-form select{color:var(--t-light3)}
-    .product-form input:focus,.product-form select:focus,.product-form textarea:focus{border-color:var(--accent)}
-    .product-form-info h3{font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:16px}
-    .product-form-info p{font-size:1rem;color:var(--t-light2);line-height:1.7;margin-bottom:24px}
-    .product-form-info ul{list-style:none;padding:0}
-    .product-form-info li{display:flex;align-items:center;gap:12px;font-size:.92rem;color:var(--t-light2);padding:10px 0;border-bottom:1px solid var(--border-dark)}
-    .product-form-info li svg{color:var(--accent);min-width:20px}
-
-    .related-section{padding:80px 0;background:var(--bg-light)}
-
-    @media(max-width:900px){
-      .product-hero-grid{grid-template-columns:1fr;gap:32px}
-      .specs-grid{grid-template-columns:repeat(2,1fr)}
-      .product-form-grid{grid-template-columns:1fr}
-    }
-    @media(max-width:768px){
-      .breadcrumbs{padding:80px 0 0}
-      .specs-grid{grid-template-columns:1fr 1fr}
-      .product-gallery{grid-template-columns:1fr 1fr}
-    }
-    @media(max-width:480px){
-      .specs-grid{grid-template-columns:1fr}
-      .product-gallery{grid-template-columns:1fr}
-      .product-hero-cta{flex-direction:column}
-      .product-hero-cta .btn{width:100%;justify-content:center}
-    }
-  </style>
 </head>
 <body>
 
@@ -148,26 +76,31 @@
       <p class="eyebrow">Z czego to jest</p>
       <h2 class="h2">Konkretne materiały, konkretne liczby</h2>
       <div class="specs-grid">
+        
         <div class="spec-card">
           <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
           <h3>Od 3x2m do 12x4m</h3>
           <p>Mały kiosk albo duży sklep — dobieramy rozmiar pod Twój biznes. Można łączyć moduły obok siebie.</p>
         </div>
+        
         <div class="spec-card">
           <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <h3>Ściany PIR 60mm</h3>
           <p>Płyta PIR, nie styropian. Zimą ciepło, latem nie nagrzewa się jak blaszak. Rachunki za prąd? 350-500 zł miesięcznie.</p>
         </div>
+        
         <div class="spec-card">
           <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
           <h3>Stal malowana proszkowo</h3>
           <p>Rama stalowa malowana proszkowo — trwałe, odporne wykończenie. Wykończenie elewacji: blacha, drewno lub płyty HPL.</p>
         </div>
+        
         <div class="spec-card">
           <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <h3>4-6 tygodni</h3>
           <p>Tyle trwa od podpisania umowy do momentu, gdy wchodzisz do środka z kluczem. Transport i montaż w cenie.</p>
         </div>
+        
       </div>
     </div>
   </section>
@@ -178,13 +111,15 @@
       <p class="eyebrow">Co dostajesz</p>
       <h2 class="h2">Żadnych ukrytych kosztów</h2>
       <div class="benefits-list">
+        
         <div class="benefit-row">
           <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
             <h3>Projekt i wizualizacja za darmo</h3>
-            <p>Mówisz, czego potrzebujesz. My rysujemy. Dostajesz wizualizację 3D — widzisz, jak to będzie wyglądać, zanim wydasz złotówkę. Nie podoba się? Poprawiamy. Nie ruszamy z produkcją, dopóki nie powiesz „tak".</p>
+            <p>Mówisz, czego potrzebujesz. My rysujemy. Dostajesz wizualizację 3D — widzisz, jak to będzie wyglądać, zanim wydasz złotówkę. Nie podoba się? Poprawiamy. Nie ruszamy z produkcją, dopóki nie powiesz „tak”.</p>
           </div>
         </div>
+        
         <div class="benefit-row">
           <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
@@ -192,6 +127,7 @@
             <p>Pawilon jedzie na lawecie prosto z naszego zakładu w Jędrzejowie. Nasz zespół montuje go na miejscu. Potrzebujesz utwardzone podłoże — płyty chodnikowe, kostka lub beton. Reszta po naszej stronie.</p>
           </div>
         </div>
+        
         <div class="benefit-row">
           <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
@@ -199,13 +135,15 @@
             <p>Rama stalowa, ściany, dach — 2 lata gwarancji. Instalacja elektryczna — 1 rok. Coś się stanie po gwarancji? Dzwonisz, przyjeżdżamy, naprawiamy. Nie zostawiamy klientów.</p>
           </div>
         </div>
+        
         <div class="benefit-row">
           <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
-            <h3>Do 35 m&sup2; — bez pozwolenia na budowę</h3>
+            <h3>Do 35 m&amp;sup2; — bez pozwolenia na budowę</h3>
             <p>Pawilon do 35 m&sup2; to tylko zgłoszenie w urzędzie. Żadnych miesięcy czekania na decyzję. Pomagamy wypełnić papiery. <a href="blog/pawilon-bez-pozwolenia.html">Przeczytaj o przepisach &rarr;</a></p>
           </div>
         </div>
+        
         <div class="benefit-row">
           <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
@@ -213,6 +151,7 @@
             <p>Jedziemy do Kielc, Krakowa, Warszawy, nad morze — wszędzie. Transport na lawecie, montaż naszą ekipą. Jeden dzień i stoi.</p>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -223,9 +162,13 @@
       <p class="eyebrow">Zrobione przez nas</p>
       <h2 class="h2">Pawilony, które już stoją i zarabiają</h2>
       <div class="product-gallery">
+        
         <div class="product-gallery-item"><img src="assets/gallery/k2.png" alt="Pawilon handlowy STAGO — realizacja 1" loading="lazy"></div>
+        
         <div class="product-gallery-item"><img src="assets/gallery/k6.png" alt="Pawilon handlowy STAGO — realizacja 2" loading="lazy"></div>
+        
         <div class="product-gallery-item"><img src="assets/gallery/k9.png" alt="Pawilon handlowy STAGO — realizacja 3" loading="lazy"></div>
+        
       </div>
     </div>
   </section>
@@ -236,26 +179,32 @@
       <p class="eyebrow">Pytania</p>
       <h2 class="h2">To, o co pytają klienci przed zamówieniem</h2>
       <div class="faq-list">
+        
         <details class="faq-item">
           <summary>Ile zapłacę za pawilon handlowy?</summary>
           <p>Zależy od rozmiaru i tego, co ma być w środku. Mały kiosk 3x2m — od 15 000 zł netto. Sklep 6x3m — od 28 000 zł. Duży punkt 12x3m z witrynami — od 48 000 zł. Wycena jest za darmo, wystarczy zadzwonić: <strong><a href="tel:+48509508210">509 508 210</a></strong>. <a href="blog/pawilon-handlowy-cena.html">Jak sprawdzić producenta &rarr;</a></p>
         </details>
+        
         <details class="faq-item">
           <summary>Potrzebuję pozwolenia na budowę?</summary>
           <p>Jeśli pawilon ma do 35 m&sup2; — nie. Wystarczy zgłoszenie. Trwa kilka dni, nie kilka miesięcy. Pomagamy przygotować dokumenty, żebyś nie musiał szukać informacji na własną rękę. <a href="blog/pawilon-bez-pozwolenia.html">Więcej o przepisach &rarr;</a></p>
         </details>
+        
         <details class="faq-item">
           <summary>Jak ogrzewam pawilon zimą? Ile to kosztuje?</summary>
           <p>Większość naszych klientów montuje klimatyzację z pompą ciepła — grzeje zimą, chłodzi latem. Ściany PIR 60mm trzymają ciepło jak murowany budynek. Rachunki? Przy pawilonie 18 m&sup2; to 350-500 zł miesięcznie za prąd w sezonie grzewczym. Nie tysiące.</p>
         </details>
+        
         <details class="faq-item">
           <summary>Mogę mieć duże witryny i okno podawcze?</summary>
           <p>Tak. Robimy okna panoramiczne na całą ścianę, witryny sklepowe, okna podawcze (jak w food trucku), drzwi przesuwne aluminiowe. Mówisz, co sprzedajesz — my dopasowujemy układ otworów.</p>
         </details>
+        
         <details class="faq-item">
           <summary>A jeśli ktoś spróbuje się włamać?</summary>
           <p>Stalowa konstrukcja, zamki wielopunktowe, opcjonalne rolety antywłamaniowe. Możesz dołożyć alarm i monitoring. To nie blaszak z marketu — to spawana rama stalowa malowana proszkowo. Bez łomu się nie dostaniesz.</p>
         </details>
+        
       </div>
     </div>
   </section>
@@ -270,11 +219,16 @@
           <input type="text" name="name" placeholder="Imię i nazwisko" required>
           <input type="tel" name="phone" placeholder="Telefon" required>
           <input type="email" name="email" placeholder="Email (opcjonalnie)">
-          <select name="type">
-            <option value="handlowy" selected>Pawilon handlowy</option>
+          <select name="type" data-default="handlowy">
+            
+            <option value="handlowy">Pawilon handlowy</option>
+            
             <option value="biurowy">Kontener biurowy</option>
+            
             <option value="magazynowy">Kontener magazynowy</option>
+            
             <option value="inny">Inny</option>
+            
           </select>
           <textarea name="message" rows="4" placeholder="Co chcesz sprzedawać? Jaki rozmiar? Gdzie ma stać?"></textarea>
           <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie</button>
@@ -284,10 +238,15 @@
           <h3>Jak to wygląda?</h3>
           <p>Piszesz lub dzwonisz. Pytamy o rozmiar, miejsce, przeznaczenie. Rysujemy projekt z wizualizacją. Podajemy cenę. Bez niespodzianek.</p>
           <ul>
+            
             <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Wizualizacja 3D — zobaczysz, zanim zamówisz</li>
+            
             <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Cena z transportem i montażem</li>
+            
             <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Pomoc z dokumentami i zgłoszeniem</li>
+            
             <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Odpowiedź w ciągu jednego dnia</li>
+            
           </ul>
           <div style="margin-top:24px">
             <a href="tel:+48509508210" style="font-size:1.3rem;font-weight:800;color:var(--white);display:block;margin-bottom:8px">Zadzwoń: 509 508 210</a>
@@ -304,6 +263,7 @@
       <p class="eyebrow">Może Ci się przydać</p>
       <h2 class="h2">Inne produkty i poradniki</h2>
       <div class="blog-grid" style="margin-top:40px">
+        
         <a href="blog/pawilon-handlowy-cena.html" class="blog-card">
           <div class="blog-img"><img src="assets/gallery/k2.png" alt="Cennik pawilonów handlowych" loading="lazy"></div>
           <div class="blog-body">
@@ -312,6 +272,7 @@
             <p>Cennik, porównanie z budową tradycyjną, opcje na raty.</p>
           </div>
         </a>
+        
         <a href="kontener-biurowy.html" class="blog-card">
           <div class="blog-img"><img src="assets/products/biurowy.png" alt="Kontener biurowy STAGO" loading="lazy"></div>
           <div class="blog-body">
@@ -320,6 +281,7 @@
             <p>Biuro na budowie albo przy firmie. Ciepłe, z prądem, gotowe w 5 tygodni.</p>
           </div>
         </a>
+        
         <a href="kontener-magazynowy.html" class="blog-card">
           <div class="blog-img"><img src="assets/products/magazynowy.png" alt="Kontener magazynowy STAGO" loading="lazy"></div>
           <div class="blog-body">
@@ -328,6 +290,7 @@
             <p>Magazyn, garaż, schowek. Stal malowana proszkowo, zamek wielopunktowy.</p>
           </div>
         </a>
+        
       </div>
     </div>
   </section>
@@ -359,7 +322,10 @@
     <a href="konfigurator.html?type=Handlowy" class="sticky-quote">Darmowa wycena</a>
   </div>
 
-  <script>document.getElementById('nav-toggle')?.addEventListener('click',function(){document.getElementById('nav-links').classList.toggle('open')});</script>
+  <script>
+    document.getElementById('nav-toggle')?.addEventListener('click',function(){document.getElementById('nav-links').classList.toggle('open');});
+    var sel=document.querySelector('select[data-default]');if(sel)sel.value=sel.dataset.default;
+  </script>
 
   <script type="application/ld+json">
   {
@@ -378,11 +344,7 @@
       "availability": "https://schema.org/InStock",
       "seller": {"@type": "Organization", "name": "STAGO"}
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "5"
-    }
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "5"}
   }
   </script>
 </body>

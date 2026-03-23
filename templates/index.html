@@ -11,8 +11,8 @@
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stago.com.pl/">
-  <meta property="og:title" content="STAGO — Własny lokal w 4-6 tygodni. Pod klucz.">
-  <meta property="og:description" content="Producent pawilonów modułowych. Handlowe, biurowe, mieszkalne. Projekt gratis, montaż w cenie, gwarancja 2 lata.">
+  <meta property="og:title" content="STAGO — Twoja przestrzeń. Pod klucz, bez kompromisów.">
+  <meta property="og:description" content="Producent pawilonów modułowych. Handlowe, biurowe, mieszkalne. Darmowa wizualizacja, montaż w cenie, gwarancja 2 lata.">
   <meta property="og:image" content="https://stago.com.pl/assets/og.jpg">
   <meta property="og:locale" content="pl_PL">
 
@@ -97,24 +97,83 @@
     </div>
   </section>
 
-  <!-- O FIRMIE -->
-  <section class="section" id="o-firmie">
+  <!-- CASE STUDY -->
+  <section class="section" id="historia">
     <div class="container">
-      <p class="eyebrow">{{about.eyebrow}}</p>
-      <h2 class="h2">{{{about.h2}}}<br><span class="accent">{{about.h2accent}}</span></h2>
-      <div class="about-features">
-        {{#about.features}}
-        <div class="about-feature reveal">
-          <div class="about-icon">
-            {{{icon}}}
+      <p class="eyebrow">{{caseStudy.eyebrow}}</p>
+      <div class="story-layout reveal">
+        <div class="story-content">
+          <h2 class="story-h2">{{{caseStudy.h2}}}<br><span class="accent">{{caseStudy.h2accent}}</span></h2>
+          <div class="story-timeline">
+            {{#caseStudy.steps}}
+            <div class="story-timeline-step">
+              <div class="story-timeline-dot"></div>
+              <div class="story-timeline-body">
+                <h4>{{label}}</h4>
+                <p>{{{text}}}</p>
+              </div>
+            </div>
+            {{/caseStudy.steps}}
           </div>
+          <blockquote class="story-pullquote">"{{{caseStudy.quote}}}"<cite>{{{caseStudy.cite}}}</cite></blockquote>
+          <a href="konfigurator.html" class="btn btn-primary">Chcę tak samo — wyceń za darmo</a>
+        </div>
+        <div class="story-img">
+          <img src="assets/gallery/2.png" alt="Pawilon handlowy STAGO — realizacja klienta" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CZYNSZ VS WŁASNY (czarne tło) -->
+  <section class="section section-dark" id="porownanie">
+    <div class="container">
+      <p class="eyebrow">{{compare.eyebrow}}</p>
+      <h2 class="h2">{{compare.h2}}<br><span class="accent">{{compare.h2accent}}</span></h2>
+      <p class="sub">{{compare.sub}}</p>
+      <div class="compare-grid">
+        <div class="compare-card compare-bad reveal">
+          <div class="compare-label">{{compare.rent.label}}</div>
+          <div class="compare-price">{{{compare.rent.price}}}<span>{{{compare.rent.priceSuffix}}}</span></div>
+          <ul class="compare-list">
+            <li>36 miesięcy = <strong>108 000 zł</strong></li>
+            <li>Lokal nigdy nie będzie Twój</li>
+            <li>Podwyżka czynszu kiedy chce właściciel</li>
+            <li>Remont? Za Twoje pieniądze, w cudzym lokalu</li>
+            <li>Lokalizacja nie działa? Trudno, umowa wiąże</li>
+          </ul>
+        </div>
+        <div class="compare-card compare-good reveal">
+          <div class="compare-label">{{compare.own.label}}</div>
+          <div class="compare-price">{{{compare.own.price}}}<span>{{{compare.own.priceSuffix}}}</span></div>
+          <ul class="compare-list">
+            <li>Po spłacie = <strong>Twój na zawsze</strong></li>
+            <li>Zero czynszu do końca życia</li>
+            <li>Przenosisz gdzie chcesz — laweta i kilka godzin</li>
+            <li>Sprzedajesz kiedy chcesz, odzyskujesz pieniądze</li>
+            <li>Wygląda i działa jak chcesz — bo to Twoje</li>
+          </ul>
+          <a href="konfigurator.html" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center">Wyceń swój pawilon</a>
+        </div>
+      </div>
+      <p class="compare-footnote reveal">{{compare.footnote}}</p>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="section section-process-bg" id="proces">
+    <div class="container">
+      <p class="eyebrow">{{process.eyebrow}}</p>
+      <h2 class="h2">{{{process.h2}}}<br><span class="accent">{{process.h2accent}}</span></h2>
+      <div class="steps">
+        {{#process.steps}}
+        <div class="step reveal">
+          <div class="step-num">{{num}}</div>
           <h3>{{title}}</h3>
           <p>{{{text}}}</p>
         </div>
-        {{/about.features}}
-      </div>
-      <div class="about-text reveal">
-        <p>{{{about.text}}}</p>
+        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
+        {{/process.steps}}
       </div>
     </div>
   </section>
@@ -188,107 +247,24 @@
     </div>
   </section>
 
-  <!-- CZYNSZ VS WŁASNY -->
-  <section class="section section-light" id="porownanie">
+  <!-- O FIRMIE -->
+  <section class="section section-about-bg" id="o-firmie">
     <div class="container">
-      <p class="eyebrow">{{compare.eyebrow}}</p>
-      <h2 class="h2">{{compare.h2}}<br><span class="accent">{{compare.h2accent}}</span></h2>
-      <p class="sub">{{compare.sub}}</p>
-      <div class="compare-grid">
-        <div class="compare-card compare-bad reveal">
-          <div class="compare-label">{{compare.rent.label}}</div>
-          <div class="compare-price">{{{compare.rent.price}}}<span>{{{compare.rent.priceSuffix}}}</span></div>
-          <ul class="compare-list">
-            <li>36 miesięcy = <strong>108 000 zł</strong></li>
-            <li>Lokal nigdy nie będzie Twój</li>
-            <li>Podwyżka czynszu kiedy chce właściciel</li>
-            <li>Remont? Za Twoje pieniądze, w cudzym lokalu</li>
-            <li>Lokalizacja nie działa? Trudno, umowa wiąże</li>
-          </ul>
-        </div>
-        <div class="compare-card compare-good reveal">
-          <div class="compare-label">{{compare.own.label}}</div>
-          <div class="compare-price">{{{compare.own.price}}}<span>{{{compare.own.priceSuffix}}}</span></div>
-          <ul class="compare-list">
-            <li>Po spłacie = <strong>Twój na zawsze</strong></li>
-            <li>Zero czynszu do końca życia</li>
-            <li>Przenosisz gdzie chcesz — laweta i kilka godzin</li>
-            <li>Sprzedajesz kiedy chcesz, odzyskujesz pieniądze</li>
-            <li>Wygląda i działa jak chcesz — bo to Twoje</li>
-          </ul>
-          <a href="konfigurator.html" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center">Wyceń swój pawilon</a>
-        </div>
-      </div>
-      <p class="compare-footnote reveal">{{compare.footnote}}</p>
-    </div>
-  </section>
-
-  <!-- CASE STUDY -->
-  <section class="section section-dark" id="historia">
-    <div class="container">
-      <p class="eyebrow">{{caseStudy.eyebrow}}</p>
-      <h2 class="h2">{{caseStudy.h2}}<br><span class="accent">{{caseStudy.h2accent}}</span></h2>
-      <div class="story-grid">
-        {{#caseStudy.steps}}
-        <div class="story-step reveal">
-          <div class="story-num">{{label}}</div>
+      <p class="eyebrow">{{about.eyebrow}}</p>
+      <h2 class="h2">{{{about.h2}}}<br><span class="accent">{{about.h2accent}}</span></h2>
+      <div class="about-features">
+        {{#about.features}}
+        <div class="about-feature reveal">
+          <div class="about-icon">
+            {{{icon}}}
+          </div>
+          <h3>{{title}}</h3>
           <p>{{{text}}}</p>
         </div>
-        {{/caseStudy.steps}}
+        {{/about.features}}
       </div>
-      <div class="story-quote reveal">
-        <blockquote>"{{{caseStudy.quote}}}"</blockquote>
-        <cite>{{{caseStudy.cite}}}</cite>
-      </div>
-      <div class="section-cta section-cta-dark reveal">
-        <a href="konfigurator.html" class="btn btn-primary">Chcę tak samo — wyceń za darmo</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCES -->
-  <section class="section" id="proces">
-    <div class="container">
-      <p class="eyebrow">{{process.eyebrow}}</p>
-      <h2 class="h2">{{{process.h2}}}<br><span class="accent">{{process.h2accent}}</span></h2>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step-num">01</div>
-          <h3>Kontakt</h3>
-          <p>Powiedz czego potrzebujesz. Nie musisz znać wymiarów co do centymetra — od tego jesteśmy my.</p>
-        </div>
-        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
-        <div class="step reveal">
-          <div class="step-num">02</div>
-          <h3>Projekt gratis</h3>
-          <p>Narysujemy jak będzie wyglądał, policzymy ile kosztuje. Nie podoba się? Zmieniamy. Za darmo.</p>
-        </div>
-        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
-        <div class="step reveal">
-          <div class="step-num">03</div>
-          <h3>Produkcja</h3>
-          <p>Budujemy u siebie, pod własnym okiem. Możesz przyjechać zobaczyć jak powstaje. 4-6 tygodni.</p>
-        </div>
-        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
-        <div class="step reveal">
-          <div class="step-num">04</div>
-          <h3>Dostawa i montaż</h3>
-          <p>Ładujemy na lawetę, jedziemy do Ciebie, stawiamy. Kilka godzin i gotowe. Wchodzisz z kluczem.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REALIZACJE -->
-  <section class="section section-light" id="realizacje">
-    <div class="container">
-      <p class="eyebrow">{{gallery.eyebrow}}</p>
-      <h2 class="h2">{{gallery.h2}}<br><span class="accent">{{gallery.h2accent}}</span></h2>
-      <p class="sub">{{gallery.sub}}</p>
-      <div class="gallery">
-        {{#gallery.items}}
-        <div class="gallery-item reveal"><img src="{{img}}" alt="{{alt}}" loading="lazy"><div class="gallery-overlay"><span>{{label}}</span></div></div>
-        {{/gallery.items}}
+      <div class="about-text reveal">
+        <p>{{{about.text}}}</p>
       </div>
     </div>
   </section>
@@ -490,7 +466,7 @@
     "openingHours": ["Mo-Fr 08:00-16:00", "Sa 08:00-13:00"],
     "priceRange": "$$",
     "image": "https://stago.com.pl/assets/hero.jpg",
-    "description": "Producent pawilonów modułowych. Pawilony handlowe, biurowe, mieszkalne, sanitarne. Gotowe w 4-6 tygodni. Projekt gratis, montaż w cenie, gwarancja 2 lata. Dostawa w całej Polsce.",
+    "description": "Producent pawilonów modułowych. Pawilony handlowe, biurowe, mieszkalne, sanitarne. Darmowa wizualizacja, montaż w cenie, gwarancja 2 lata. Dostawa w całej Polsce.",
     "areaServed": [
       {"@type": "Country", "name": "Polska"}
     ]
@@ -502,7 +478,7 @@
     "@type": "FAQPage",
     "mainEntity": [
       {"@type":"Question","name":"Ile kosztuje pawilon modułowy?","acceptedAnswer":{"@type":"Answer","text":"Podstawowy pawilon handlowy 3x2m zaczyna się od ok. 15 000 zł netto. Większe modele od 25 000 zł. Wycena darmowa."}},
-      {"@type":"Question","name":"Jak długo trwa realizacja?","acceptedAnswer":{"@type":"Answer","text":"Standardowy pawilon budujemy w 4-6 tygodni."}},
+      {"@type":"Question","name":"Jak długo trwa realizacja?","acceptedAnswer":{"@type":"Answer","text":"Termin ustalamy indywidualnie i go dotrzymujemy. Konkretną datę podajemy przed rozpoczęciem."}},
       {"@type":"Question","name":"Czy potrzebuję pozwolenia na budowę?","acceptedAnswer":{"@type":"Answer","text":"Pawilony do 35m² zazwyczaj nie wymagają pozwolenia — wystarczy zgłoszenie."}},
       {"@type":"Question","name":"Jak wygląda dostawa i montaż?","acceptedAnswer":{"@type":"Answer","text":"Transport specjalistyczny w całej Polsce, montaż w cenie. Trwa kilka godzin. Potrzebne utwardzone podłoże."}},
       {"@type":"Question","name":"Jaka jest gwarancja?","acceptedAnswer":{"@type":"Answer","text":"2 lata gwarancji na konstrukcję, 1 rok na kontener. Serwis posprzedażowy bez limitu czasowego."}},
