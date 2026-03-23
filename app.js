@@ -10,8 +10,8 @@ const products = {
     desc2: 'Każdy pawilon handlowy wyposażamy w okna panoramiczne zapewniające doskonałe doświetlenie i ekspozycję towaru. Standardowo montujemy instalację elektryczną, oświetlenie LED i ogrzewanie. Na życzenie dodajemy klimatyzację, rolety zewnętrzne, podłogę antypoślizgową i system alarmowy.',
     specs: [
       ['Wymiary', 'od 3x2m do 12x3m'],
-      ['Konstrukcja', 'Stal ocynkowana'],
-      ['Izolacja', 'Płyta warstwowa PUR/PIR'],
+      ['Konstrukcja', 'Stal malowana proszkowo'],
+      ['Izolacja', 'Płyta warstwowa PIR'],
       ['Okna', 'PCV, panoramiczne'],
       ['Instalacja', 'Elektryczna + oświetlenie LED'],
       ['Czas realizacji', '4-6 tygodni'],
@@ -21,11 +21,11 @@ const products = {
     title: 'Pawilon biurowy',
     subtitle: 'Biuro, portiernia, recepcja',
     img: 'assets/products/biurowy.png',
-    desc: 'Kontener biurowy to gotowe miejsce pracy — ciepłe zimą, chłodne latem. Stosujemy izolację termiczną z płyty warstwowej PUR o grubości 60-80mm, która zapewnia komfort przez cały rok bez wysokich rachunków za ogrzewanie.',
+    desc: 'Kontener biurowy to gotowe miejsce pracy — ciepłe zimą, chłodne latem. Stosujemy izolację termiczną z płyty warstwowej PIR o grubości 60-80mm, która zapewnia komfort przez cały rok bez wysokich rachunków za ogrzewanie.',
     desc2: 'Idealny jako biuro na budowie, portiernia, punkt ochrony, recepcja lub tymczasowe biuro w trakcie remontu. Montujemy pełną instalację elektryczną, gniazda sieciowe, ogrzewanie elektryczne lub klimatyzację z funkcją grzania. Ściany wewnętrzne wykończone płytą laminowaną — łatwe w utrzymaniu czystości.',
     specs: [
       ['Wymiary', 'od 2.5x2m do 8x3m'],
-      ['Izolacja', 'PUR 60-80mm (U=0.35)'],
+      ['Izolacja', 'PIR 60-80mm (U=0.35)'],
       ['Ogrzewanie', 'Elektryczne / klimatyzacja'],
       ['Instalacja', 'Elektryczna + LAN'],
       ['Podłoga', 'Wykładzina PCV / panele'],
@@ -37,10 +37,10 @@ const products = {
     subtitle: 'Dom modułowy, domek letniskowy',
     img: 'assets/products/mieszkalny.png',
     desc: 'Pawilon mieszkalny to pełnowartościowy budynek do zamieszkania — z łazienką, kuchnią, ogrzewaniem i pełną instalacją. Idealne rozwiązanie na domek letniskowy, mieszkanie tymczasowe, pokój gościnny na działce czy dom dla osoby starszej blisko rodziny.',
-    desc2: 'Montujemy kompletną instalację wodno-kanalizacyjną, elektryczną i grzewczą. Ściany izolowane płytą PUR 80mm zapewniają ciepło nawet w zimie. Wykończenie wewnętrzne do wyboru: płyta meblowa, panele drewniane, tynk. Zewnętrze: blacha, drewno, HPL lub tynk — dostosowane do otoczenia.',
+    desc2: 'Montujemy kompletną instalację wodno-kanalizacyjną, elektryczną i grzewczą. Ściany izolowane płytą PIR 80mm zapewniają ciepło nawet w zimie. Wykończenie wewnętrzne do wyboru: płyta meblowa, panele drewniane, tynk. Zewnętrze: blacha, drewno, HPL lub tynk — dostosowane do otoczenia.',
     specs: [
       ['Wymiary', 'od 6x3m do 12x4m'],
-      ['Izolacja', 'PUR/PIR 80mm'],
+      ['Izolacja', 'PIR 80mm'],
       ['Instalacja wod-kan', 'Pełna (kuchnia + łazienka)'],
       ['Ogrzewanie', 'Elektryczne / pompa ciepła'],
       ['Wykończenie wew.', 'Panele / płyta / tynk'],
@@ -66,11 +66,11 @@ const products = {
     title: 'Kontener magazynowy',
     subtitle: 'Magazyn, garaż, pomieszczenie gospodarcze',
     img: 'assets/products/magazynowy.png',
-    desc: 'Kontener magazynowy to solidne, zamykane pomieszczenie na narzędzia, materiały, sprzęt czy pojazd. Konstrukcja stalowa ocynkowana — odporna na korozję i warunki atmosferyczne. Drzwi dwuskrzydłowe lub roletowe.',
+    desc: 'Kontener magazynowy to solidne, zamykane pomieszczenie na narzędzia, materiały, sprzęt czy pojazd. Konstrukcja stalowa malowana proszkowo — trwałe wykończenie odporne na warunki atmosferyczne. Drzwi dwuskrzydłowe lub roletowe.',
     desc2: 'Stosujemy blachę trapezową o grubości 0.5-0.7mm, podłogę z blachy ryflowanej lub sklejki wodoodpornej. Opcjonalnie: izolacja termiczna, instalacja elektryczna, oświetlenie, wentylacja. Idealny jako garaż, schowek na działce, magazyn na budowie.',
     specs: [
       ['Wymiary', 'od 2x2m do 12x3m'],
-      ['Konstrukcja', 'Stal ocynkowana ogniowo'],
+      ['Konstrukcja', 'Stal malowana proszkowo'],
       ['Pokrycie', 'Blacha trapezowa 0.5-0.7mm'],
       ['Drzwi', 'Dwuskrzydłowe / roletowe'],
       ['Podłoga', 'Blacha ryflowana / sklejka'],
@@ -359,7 +359,7 @@ const articles = {
       <p><strong>Łączenia:</strong> System pióro-wpust zapewnia szczelność. Sprawdź czy producent stosuje uszczelki na łączeniach.</p>
       <p><strong>Certyfikaty:</strong> Płyty powinny mieć deklarację właściwości użytkowych (DoP) i atest higieniczny.</p>
 
-      <p><strong>Nasza rekomendacja:</strong> PUR 60mm dla większości zastosowań. PIR 80mm dla domów modułowych. Unikaj wełny w pawilonach na zewnątrz.</p>
+      <p><strong>Nasza rekomendacja:</strong> PIR 60mm dla większości zastosowań. PIR 80mm dla domów modułowych. Unikaj wełny w pawilonach na zewnątrz.</p>
     `
   },
   dach: {

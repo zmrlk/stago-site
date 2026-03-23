@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAGO — Katalog produktowy 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #1D1D1B;
+      --accent: #E8461C;
+      --bg: #FFFFFF;
+      --light: #F8F9FA;
+      --t2: #555;
+      --t3: #888;
+      --border: #E5E5E5;
+      --r: 16px;
+      --rs: 8px;
+    }
+    @page { size: A4 portrait; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Inter', sans-serif; color: var(--dark); line-height: 1.6; font-size: 10pt; }
+    img { max-width: 100%; display: block; }
+
+    .pg { width: 210mm; min-height: 297mm; position: relative; overflow: hidden; page-break-after: always; background: var(--bg); }
+    .pg:last-child { page-break-after: auto; }
+
+    /* footer bar */
+    .fbar { position: absolute; bottom: 0; left: 0; right: 0; background: var(--dark); padding: 10px 32px; display: flex; justify-content: space-between; align-items: center; }
+    .fbar-page { font-size: 8pt; color: rgba(255,255,255,.4); font-weight: 800; }
+    .fbar-page span { color: var(--accent); }
+    .fbar-url { font-size: 7pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.5); text-decoration: underline; text-underline-offset: 3px; }
+
+    /* eyebrow with line */
+    .ey { display: flex; align-items: center; gap: 10px; font-size: 7pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--t3); margin-bottom: 8px; }
+    .ey::before { content: ''; width: 28px; height: 3px; background: var(--accent); border-radius: 2px; }
+
+    /* top-right logo */
+    .tr-logo { position: absolute; top: 28px; right: 32px; height: 28px; width: auto; object-fit: contain; }
+
+    @media print { body { margin: 0; } .pg { page-break-inside: avoid; } }
+    @media screen { body { background: #ddd; padding: 20px 0; } .pg { margin: 0 auto 20px; box-shadow: 0 8px 40px rgba(0,0,0,.15); } }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ 1: OKŁADKA ═══ -->
+  <div class="pg" style="background:var(--dark)">
+    <div style="padding:32px 32px 0;display:flex;justify-content:space-between;align-items:flex-start">
+      <span style="font-size:7pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Katalog 2026</span>
+      <img src="assets/logo-white.png" alt="STAGO" style="height:32px;width:auto;object-fit:contain">
+    </div>
+    <div style="margin:20px 32px;height:340px;border-radius:var(--r);overflow:hidden">
+      <img src="assets/gallery/k19.png" alt="Pawilon STAGO" style="width:100%;height:100%;object-fit:cover">
+    </div>
+    <div style="padding:0 32px;color:#fff">
+      <h1 style="font-size:36pt;font-weight:900;letter-spacing:-.04em;line-height:1">PAWILONY</h1>
+      <h1 style="font-size:36pt;font-weight:900;letter-spacing:-.04em;line-height:1;color:var(--accent)">MODULOWE</h1>
+      <p style="font-size:8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:12px">Pod klucz · Cała Polska</p>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px">
+        <span style="font-size:6.5pt;font-weight:600;padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:4px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em">Handlowe</span>
+        <span style="font-size:6.5pt;font-weight:600;padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:4px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em">Biurowe</span>
+        <span style="font-size:6.5pt;font-weight:600;padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:4px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em">Mieszkalne</span>
+        <span style="font-size:6.5pt;font-weight:600;padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:4px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em">Magazynowe</span>
+        <span style="font-size:6.5pt;font-weight:600;padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:4px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em">Sanitarne</span>
+        <span style="font-size:6.5pt;font-weight:600;padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:4px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em">Gastronomiczne</span>
+        <span style="font-size:6.5pt;font-weight:600;padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:4px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em">Premium</span>
+      </div>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 32px;display:flex;justify-content:space-between;color:rgba(255,255,255,.25);font-size:7.5pt;font-weight:600;letter-spacing:.08em;text-transform:uppercase">
+      <span>Premium Quality</span>
+      <span style="text-decoration:underline;text-underline-offset:3px">www.stago.com.pl</span>
+      <span>Polska</span>
+    </div>
+  </div>
+
+  <!-- ═══ 2: MISJA ═══ -->
+  <div class="pg">
+    <div style="height:calc(100% - 36px);display:flex;align-items:center;justify-content:center">
+      <div style="max-width:420px;text-align:center;padding:40px;border:1px solid var(--border);border-radius:var(--r)">
+        <img src="assets/logo.png" alt="STAGO" style="height:28px;width:auto;object-fit:contain;margin:0 auto 36px">
+        <p style="font-size:15pt;line-height:1.55;color:var(--dark)">Nie budujemy kontenerów.<br>Budujemy <strong>architekturę</strong>, która pracuje na Twój <span style="color:var(--accent);font-weight:800">sukces</span> od pierwszego dnia otwarcia.</p>
+        <div style="width:40px;height:3px;background:var(--accent);margin:28px auto;border-radius:2px"></div>
+        <p style="font-size:8pt;color:var(--t3);letter-spacing:.12em;text-transform:uppercase;font-weight:700">Zespół STAGO</p>
+      </div>
+    </div>
+    <div class="fbar"><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 3: SPIS TREŚCI ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:32px 32px 60px">
+      <div class="ey">Pawilony modulowe / Katalog 2026</div>
+      <h2 style="font-size:42pt;font-weight:900;letter-spacing:-.04em;line-height:1;margin-bottom:4px">SPIS</h2>
+      <h2 style="font-size:42pt;font-weight:900;letter-spacing:-.04em;line-height:1;color:var(--accent)">TREŚCI</h2>
+
+      <div style="display:flex;gap:48px;margin-top:36px">
+        <!-- kolumna lewa -->
+        <div style="flex:1">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Sekcja 01</p>
+          <h3 style="font-size:13pt;font-weight:900;margin-bottom:16px">WSTĘP I MARKA</h3>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Słowo od zarządu</span><span style="font-weight:800;color:var(--dark)">02</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Dla kogo jest ten katalog?</span><span style="font-weight:800;color:var(--dark)">04</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>FAQ — pytania i odpowiedzi</span><span style="font-weight:800;color:var(--dark)">05</span></div>
+          </div>
+
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:28px 0 4px">Sekcja 02</p>
+          <h3 style="font-size:13pt;font-weight:900;margin-bottom:16px">HANDLOWE</h3>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Pawilon handlowy</span><span style="font-weight:800;color:var(--dark)">07</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t3)"><span>Karta produktu / specyfikacja</span><span style="font-weight:800;color:var(--t3);font-style:italic">08</span></div>
+          </div>
+
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:28px 0 4px">Sekcja 03</p>
+          <h3 style="font-size:13pt;font-weight:900;margin-bottom:16px">BIUROWE</h3>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Kontener biurowy</span><span style="font-weight:800;color:var(--dark)">09</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t3)"><span>Karta produktu / specyfikacja</span><span style="font-weight:800;color:var(--t3);font-style:italic">10</span></div>
+          </div>
+        </div>
+
+        <!-- kolumna prawa -->
+        <div style="flex:1">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Sekcja 04</p>
+          <h3 style="font-size:13pt;font-weight:900;margin-bottom:16px">MIESZKALNE</h3>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Pawilon mieszkalny</span><span style="font-weight:800;color:var(--dark)">11</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t3)"><span>Karta produktu / specyfikacja</span><span style="font-weight:800;color:var(--t3);font-style:italic">12</span></div>
+          </div>
+
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:28px 0 4px">Sekcja 05</p>
+          <h3 style="font-size:13pt;font-weight:900;margin-bottom:16px">DODATKI I KONTAKT</h3>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Najczęściej wybierane dodatki</span><span style="font-weight:800;color:var(--dark)">13</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Czynsz vs własny lokal</span><span style="font-weight:800;color:var(--dark)">14</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Historia klienta</span><span style="font-weight:800;color:var(--dark)">15</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;letter-spacing:.06em;color:var(--t2)"><span>Dane kontaktowe</span><span style="font-weight:800;color:var(--dark)">16</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fbar"><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 4: DLA KOGO + HARMONOGRAM + 6 KROKÓW ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:28px 32px 60px">
+      <h2 style="font-size:28pt;font-weight:900;letter-spacing:-.03em;line-height:1.05">DLA KOGO JEST <span style="color:var(--accent)">TEN<br>KATALOG?</span></h2>
+      <p style="font-size:9.5pt;color:var(--t2);line-height:1.6;margin-top:12px;max-width:440px">Ten katalog przygotowaliśmy dla inwestorów planujących otwarcie własnego punktu — handlowego, usługowego, gastronomicznego lub biurowego. Prezentujemy sprawdzone modele <strong>STAGO</strong>.</p>
+
+      <p style="font-size:7.5pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);text-align:center;margin:28px 0 12px">Harmonogram realizacji</p>
+      <div style="display:flex;justify-content:space-between;position:relative;margin:0 20px 28px">
+        <div style="position:absolute;top:8px;left:10%;right:10%;height:2px;background:var(--border);border-radius:1px"></div>
+        <div style="text-align:center;position:relative;z-index:1;flex:1"><div style="width:16px;height:16px;background:var(--accent);border-radius:50%;margin:0 auto 8px"></div><h4 style="font-size:9pt;font-weight:800">Tydzień 1</h4><p style="font-size:7.5pt;color:var(--t3)">Projekt i dobór materiałów</p></div>
+        <div style="text-align:center;position:relative;z-index:1;flex:1"><div style="width:16px;height:16px;background:var(--accent);border-radius:50%;margin:0 auto 8px"></div><h4 style="font-size:9pt;font-weight:800">Tydzień 2-4</h4><p style="font-size:7.5pt;color:var(--t3)">Budowa ramy i poszycia</p></div>
+        <div style="text-align:center;position:relative;z-index:1;flex:1"><div style="width:16px;height:16px;background:var(--accent);border-radius:50%;margin:0 auto 8px"></div><h4 style="font-size:9pt;font-weight:800">Tydzień 4-5</h4><p style="font-size:7.5pt;color:var(--t3)">Instalacje i stolarka</p></div>
+        <div style="text-align:center;position:relative;z-index:1;flex:1"><div style="width:16px;height:16px;background:var(--accent);border-radius:50%;margin:0 auto 8px"></div><h4 style="font-size:9pt;font-weight:800">Tydzień 5-6</h4><p style="font-size:7.5pt;color:var(--t3)">Odbiór i transport</p></div>
+      </div>
+      <p style="font-size:8pt;color:var(--t3);text-align:center;font-style:italic;margin-bottom:24px">Realizujemy również projekty indywidualne na podstawie Twoich szkiców lub opisu.</p>
+
+      <p style="font-size:7.5pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);text-align:center;margin-bottom:16px">6 kroków do własnego biznesu</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+        <div style="text-align:center;padding:16px 12px;border:1px solid var(--border);border-radius:var(--rs)"><div style="font-size:20pt;font-weight:900;color:var(--accent);line-height:1;margin-bottom:4px">1</div><h4 style="font-size:8pt;font-weight:800;margin-bottom:2px;color:var(--accent)">Wybór modelu</h4><p style="font-size:7pt;color:var(--t2);line-height:1.4">Handlowy, biurowy, mieszkalny — wybierz bazę.</p></div>
+        <div style="text-align:center;padding:16px 12px;border:1px solid var(--border);border-radius:var(--rs)"><div style="font-size:20pt;font-weight:900;color:var(--accent);line-height:1;margin-bottom:4px">2</div><h4 style="font-size:8pt;font-weight:800;margin-bottom:2px;color:var(--accent)">Wycena</h4><p style="font-size:7pt;color:var(--t2);line-height:1.4">Indywidualna kalkulacja kosztów.</p></div>
+        <div style="text-align:center;padding:16px 12px;border:1px solid var(--border);border-radius:var(--rs)"><div style="font-size:20pt;font-weight:900;color:var(--accent);line-height:1;margin-bottom:4px">3</div><h4 style="font-size:8pt;font-weight:800;margin-bottom:2px;color:var(--accent)">Umowa</h4><p style="font-size:7pt;color:var(--t2);line-height:1.4">Gwarancja terminów i standardów.</p></div>
+        <div style="text-align:center;padding:16px 12px;border:1px solid var(--border);border-radius:var(--rs)"><div style="font-size:20pt;font-weight:900;color:var(--accent);line-height:1;margin-bottom:4px">4</div><h4 style="font-size:8pt;font-weight:800;margin-bottom:2px;color:var(--accent)">Produkcja</h4><p style="font-size:7pt;color:var(--t2);line-height:1.4">Precyzyjne wykonanie w naszym zakładzie.</p></div>
+        <div style="text-align:center;padding:16px 12px;border:1px solid var(--border);border-radius:var(--rs)"><div style="font-size:20pt;font-weight:900;color:var(--accent);line-height:1;margin-bottom:4px">5</div><h4 style="font-size:8pt;font-weight:800;margin-bottom:2px;color:var(--accent)">Transport</h4><p style="font-size:7pt;color:var(--t2);line-height:1.4">Logistyka prosto na plac budowy.</p></div>
+        <div style="text-align:center;padding:16px 12px;border:1px solid var(--border);border-radius:var(--rs)"><div style="font-size:20pt;font-weight:900;color:var(--accent);line-height:1;margin-bottom:4px">6</div><h4 style="font-size:8pt;font-weight:800;margin-bottom:2px;color:var(--accent)">Start biznesu</h4><p style="font-size:7pt;color:var(--t2);line-height:1.4">Klucze do Twojej nowej inwestycji.</p></div>
+      </div>
+    </div>
+    <div class="fbar"><div class="fbar-page"><span>04</span> Strona</div><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 5: FAQ ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:28px 32px 60px">
+      <div class="ey">Najczęściej zadawane pytania</div>
+      <h2 style="font-size:36pt;font-weight:900;letter-spacing:-.03em;font-style:italic;margin-bottom:20px">FAQ</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">1. Transport i montaż</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Zapewniamy pełną logistykę własną flotą z HDS. Nie szukasz podwykonawców — dostarczamy i rozładowujemy pawilon precyzyjnie we wskazanym miejscu.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">2. Gwarancja i serwis</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Każdy moduł posiada pełną dokumentację i oficjalną gwarancję. 2 lata konstrukcja, 1 rok kontener. Reagujemy błyskawicznie.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">3. Finansowanie i płatności</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Pomagamy w uzyskaniu leasingu lub kredytu na uproszczonych zasadach. Startujemy po wpłacie 40% zaliczki, reszta przed dostawą.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">4. Personalizacja wnętrza</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Układ ścian, strefy sprzedaży i zaplecze projektujemy pod Twój biznes. Ty decydujesz, gdzie znajdzie się kasa, a gdzie zaplecze.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">5. Formalności i zgłoszenia</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Pawilony do 35 m² zazwyczaj nie wymagają pozwolenia — wystarczy zgłoszenie. Pomagamy przejść procedurę i dostarczamy dokumentację.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">6. Media i podłoże</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Pawilony mają gotowe podejścia wod-kan i elektryczne. Wymagamy jedynie wypoziomowanego i stabilnego gruntu.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">7. Media i instalacje</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Pawilony oddajemy z kompletną instalacją wewnętrzną (prąd). Dostarczasz tylko media do wyznaczonych punktów wyjścia na zewnątrz.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">8. Warunki płatności</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Czysty układ — 40% zaliczki przy zleceniu, reszta tuż przed dostawą. Żadnych ukrytych kosztów, jasny harmonogram finansowy.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">9. Wsparcie urzędowe</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Przygotowujemy pełną dokumentację techniczną pod zgłoszenie. Pomagamy przejść przez proces administracyjny.</p></div>
+        <div style="padding:14px 16px;border:1px solid var(--border);border-radius:var(--rs)"><h4 style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-bottom:4px">10. Wizyta w zakładzie</h4><p style="font-size:7.5pt;color:var(--t2);line-height:1.5">Mamy własny zakład w Jasionce k. Jędrzejowa. Możesz przyjechać na każdym etapie i zobaczyć jak powstaje Twój pawilon.</p></div>
+      </div>
+    </div>
+    <div class="fbar"><div class="fbar-page"><span>05</span> Strona</div><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 6: DIVIDER — HANDLOWE ═══ -->
+  <div class="pg">
+    <div style="height:50%">
+      <img src="assets/gallery/k2.png" alt="Pawilon handlowy" style="width:100%;height:100%;object-fit:cover">
+      <img src="assets/logo-white.png" alt="STAGO" style="position:absolute;top:20px;right:24px;height:28px;width:auto;object-fit:contain">
+    </div>
+    <div style="background:var(--accent);padding:10px 32px">
+      <p style="font-size:7pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);display:inline">Linia produktowa </p>
+      <p style="font-size:11pt;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#fff;display:inline">Pawilony handlowe</p>
+    </div>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px">
+      <div>
+        <h2 style="font-size:22pt;font-weight:400;line-height:1.3;color:var(--dark)">Własny sklep zamiast<br><span style="color:var(--accent);font-weight:800;font-style:italic">czynszu.</span></h2>
+        <div style="width:40px;height:3px;background:var(--accent);margin:20px auto;border-radius:2px"></div>
+        <p style="font-size:9pt;color:var(--t3);font-style:italic;max-width:380px;margin:0 auto">"Projektujemy przestrzenie, które stają się fundamentem sukcesu naszych klientów."</p>
+        <p style="font-size:7.5pt;color:var(--t3);letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-top:24px">Gwarancja jakości i terminowości</p>
+      </div>
+    </div>
+    <div class="fbar"><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 7: PRODUKT — HANDLOWY ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:28px 32px 60px">
+      <div class="ey">Katalog pawilonów</div>
+      <h2 style="font-size:30pt;font-weight:900;letter-spacing:-.03em;line-height:1">STAGO <span style="color:var(--accent)">HANDLOWY</span></h2>
+
+      <div style="margin:16px 0;height:220px;border-radius:var(--r);overflow:hidden;border:1px solid var(--border)">
+        <img src="assets/products/handlowy.png" alt="Pawilon handlowy" style="width:100%;height:100%;object-fit:cover">
+      </div>
+      <p style="font-size:7.5pt;color:var(--t3)">Wariant wykończenia: <strong style="color:var(--dark)">Standard Premium</strong></p>
+
+      <div style="display:flex;gap:16px;margin-top:12px">
+        <div style="width:48%;height:120px;border-radius:var(--rs);overflow:hidden;border:1px solid var(--border)">
+          <img src="assets/gallery/k9.png" alt="Wariant" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="width:52%;padding:14px 18px;border:1px solid var(--border);border-radius:var(--rs)">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Cena modelu bazowego 6×3m</p>
+          <p style="font-size:26pt;font-weight:900;letter-spacing:-.03em;line-height:1;color:var(--dark)">30 700 <span style="font-size:12pt;font-weight:700;color:var(--accent)">zł</span></p>
+          <p style="font-size:7pt;color:var(--t3);margin-top:4px">Netto / wyposażenie w standardzie Premium</p>
+          <p style="font-size:7pt;font-weight:700;font-style:italic;margin-top:8px;border-top:1px solid var(--border);padding-top:8px">Specyfikacja techniczna</p>
+          <div style="font-size:7.5pt;line-height:1.8;color:var(--t2)">
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Konstrukcja</span><span style="font-weight:600">Rama stalowa 100×50×3</span></div>
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Ocieplenie</span><span style="font-weight:600">Płyta PIR 100mm</span></div>
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Podłoże</span><span style="font-weight:600">Cetris + wykładzina</span></div>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:7pt;color:var(--t3);margin-top:6px">Wariant wykończenia: <strong style="color:var(--dark)">Premium Wood</strong></p>
+
+      <p style="font-size:7pt;font-weight:700;font-style:italic;margin-top:12px;color:var(--dark)">Dostępne warianty rozmiarowe</p>
+      <div style="display:flex;flex-direction:column;gap:0;margin-top:6px">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:8pt"><div><strong>Model 4 × 3 m</strong> <span style="color:var(--t3);font-size:7pt">Powierzchnia 12 m²</span></div><span style="background:var(--accent);color:#fff;font-weight:800;font-size:8pt;padding:3px 10px;border-radius:4px">24 900 zł</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:8pt"><div><strong>Model 5 × 3 m</strong> <span style="color:var(--t3);font-size:7pt">Powierzchnia 15 m²</span></div><span style="background:var(--accent);color:#fff;font-weight:800;font-size:8pt;padding:3px 10px;border-radius:4px">27 700 zł</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:8pt"><div><strong>Model 7 × 3 m</strong> <span style="color:var(--t3);font-size:7pt">Powierzchnia 21 m²</span></div><span style="background:var(--accent);color:#fff;font-weight:800;font-size:8pt;padding:3px 10px;border-radius:4px">33 700 zł</span></div>
+      </div>
+    </div>
+    <div class="fbar"><div class="fbar-page"><span>07</span> Strona</div><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 8: DIVIDER — BIUROWE ═══ -->
+  <div class="pg">
+    <div style="height:50%">
+      <img src="assets/gallery/k6.png" alt="Kontener biurowy" style="width:100%;height:100%;object-fit:cover">
+      <img src="assets/logo-white.png" alt="STAGO" style="position:absolute;top:20px;right:24px;height:28px;width:auto;object-fit:contain">
+    </div>
+    <div style="background:var(--accent);padding:10px 32px">
+      <p style="font-size:7pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);display:inline">Linia produktowa </p>
+      <p style="font-size:11pt;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#fff;display:inline">Kontenery biurowe</p>
+    </div>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px">
+      <div>
+        <h2 style="font-size:22pt;font-weight:400;line-height:1.3;color:var(--dark)">Biuro na działce zamiast<br><span style="color:var(--accent);font-weight:800;font-style:italic">czynszu w mieście.</span></h2>
+        <div style="width:40px;height:3px;background:var(--accent);margin:20px auto;border-radius:2px"></div>
+        <p style="font-size:9pt;color:var(--t3);font-style:italic;max-width:380px;margin:0 auto">"Rozwiązania modułowe dla biznesu, który nie zna kompromisów."</p>
+        <p style="font-size:7.5pt;color:var(--t3);letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-top:24px">Gwarancja jakości i terminowości</p>
+      </div>
+    </div>
+    <div class="fbar"><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 9: PRODUKT — BIUROWY ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:28px 32px 60px">
+      <div class="ey">Katalog pawilonów</div>
+      <h2 style="font-size:30pt;font-weight:900;letter-spacing:-.03em;line-height:1">STAGO <span style="color:var(--accent)">BIUROWY</span></h2>
+
+      <div style="margin:16px 0;height:220px;border-radius:var(--r);overflow:hidden;border:1px solid var(--border)">
+        <img src="assets/products/biurowy.png" alt="Kontener biurowy" style="width:100%;height:100%;object-fit:cover">
+      </div>
+
+      <div style="display:flex;gap:16px;margin-top:12px">
+        <div style="width:48%;height:120px;border-radius:var(--rs);overflow:hidden;border:1px solid var(--border)">
+          <img src="assets/gallery/k11.png" alt="Wariant" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="width:52%;padding:14px 18px;border:1px solid var(--border);border-radius:var(--rs)">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Cena modelu bazowego 6×3m</p>
+          <p style="font-size:26pt;font-weight:900;letter-spacing:-.03em;line-height:1;color:var(--dark)">30 700 <span style="font-size:12pt;font-weight:700;color:var(--accent)">zł</span></p>
+          <p style="font-size:7pt;color:var(--t3);margin-top:4px">Netto / wyposażenie w standardzie Premium</p>
+          <p style="font-size:7pt;font-weight:700;font-style:italic;margin-top:8px;border-top:1px solid var(--border);padding-top:8px">Specyfikacja techniczna</p>
+          <div style="font-size:7.5pt;line-height:1.8;color:var(--t2)">
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Konstrukcja</span><span style="font-weight:600">Rama stalowa 100×50×3</span></div>
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Ocieplenie</span><span style="font-weight:600">Płyta PIR 100mm</span></div>
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Podłoże</span><span style="font-weight:600">Cetris + wykładzina PCV</span></div>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:7pt;font-weight:700;font-style:italic;margin-top:14px;color:var(--dark)">Dostępne warianty rozmiarowe</p>
+      <div style="display:flex;flex-direction:column;gap:0;margin-top:6px">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:8pt"><div><strong>Model 3 × 2.5 m</strong> <span style="color:var(--t3);font-size:7pt">Powierzchnia 7.5 m²</span></div><span style="background:var(--accent);color:#fff;font-weight:800;font-size:8pt;padding:3px 10px;border-radius:4px">od 22 000 zł</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:8pt"><div><strong>Model 4 × 3 m</strong> <span style="color:var(--t3);font-size:7pt">Powierzchnia 12 m²</span></div><span style="background:var(--accent);color:#fff;font-weight:800;font-size:8pt;padding:3px 10px;border-radius:4px">24 900 zł</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:8pt"><div><strong>Model 6 × 3 m</strong> <span style="color:var(--t3);font-size:7pt">Powierzchnia 18 m²</span></div><span style="background:var(--accent);color:#fff;font-weight:800;font-size:8pt;padding:3px 10px;border-radius:4px">30 700 zł</span></div>
+      </div>
+    </div>
+    <div class="fbar"><div class="fbar-page"><span>09</span> Strona</div><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 10: DIVIDER — MIESZKALNE ═══ -->
+  <div class="pg">
+    <div style="height:50%">
+      <img src="assets/gallery/k14.png" alt="Pawilon mieszkalny" style="width:100%;height:100%;object-fit:cover">
+      <img src="assets/logo-white.png" alt="STAGO" style="position:absolute;top:20px;right:24px;height:28px;width:auto;object-fit:contain">
+    </div>
+    <div style="background:var(--accent);padding:10px 32px">
+      <p style="font-size:7pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);display:inline">Linia produktowa </p>
+      <p style="font-size:11pt;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#fff;display:inline">Pawilony mieszkalne</p>
+    </div>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px">
+      <div>
+        <h2 style="font-size:22pt;font-weight:400;line-height:1.3;color:var(--dark)">Własne M bez<br><span style="color:var(--accent);font-weight:800;font-style:italic">kredytu na 30 lat.</span></h2>
+        <div style="width:40px;height:3px;background:var(--accent);margin:20px auto;border-radius:2px"></div>
+        <p style="font-size:9pt;color:var(--t3);font-style:italic;max-width:380px;margin:0 auto">"Gotowe do zamieszkania od dnia dostawy. Łazienka, kuchnia, ogrzewanie — wszystko w środku."</p>
+        <p style="font-size:7.5pt;color:var(--t3);letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-top:24px">Gwarancja jakości i terminowości</p>
+      </div>
+    </div>
+    <div class="fbar"><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 11: PRODUKT — MIESZKALNY ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:28px 32px 60px">
+      <div class="ey">Katalog pawilonów</div>
+      <h2 style="font-size:30pt;font-weight:900;letter-spacing:-.03em;line-height:1">STAGO <span style="color:var(--accent)">MIESZKALNY</span></h2>
+
+      <div style="margin:16px 0;height:220px;border-radius:var(--r);overflow:hidden;border:1px solid var(--border)">
+        <img src="assets/products/mieszkalny.png" alt="Pawilon mieszkalny" style="width:100%;height:100%;object-fit:cover">
+      </div>
+
+      <div style="display:flex;gap:16px;margin-top:12px">
+        <div style="width:48%;height:120px;border-radius:var(--rs);overflow:hidden;border:1px solid var(--border)">
+          <img src="assets/gallery/k21.png" alt="Wariant" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="width:52%;padding:14px 18px;border:1px solid var(--border);border-radius:var(--rs)">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Cena modelu bazowego 6×3m</p>
+          <p style="font-size:26pt;font-weight:900;letter-spacing:-.03em;line-height:1;color:var(--dark)">35 000 <span style="font-size:12pt;font-weight:700;color:var(--accent)">zł</span></p>
+          <p style="font-size:7pt;color:var(--t3);margin-top:4px">Netto / z łazienką, kuchnią, ogrzewaniem</p>
+          <p style="font-size:7pt;font-weight:700;font-style:italic;margin-top:8px;border-top:1px solid var(--border);padding-top:8px">Specyfikacja techniczna</p>
+          <div style="font-size:7.5pt;line-height:1.8;color:var(--t2)">
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Konstrukcja</span><span style="font-weight:600">Rama stalowa 100×50×3</span></div>
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Ocieplenie</span><span style="font-weight:600">PIR 100mm — całoroczna</span></div>
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Łazienka</span><span style="font-weight:600">Prysznic + WC + umywalka</span></div>
+            <div style="display:flex;justify-content:space-between"><span style="color:var(--t3);text-transform:uppercase;letter-spacing:.04em;font-size:7pt">Kuchnia</span><span style="font-weight:600">Aneks kuchenny</span></div>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:7pt;font-weight:700;font-style:italic;margin-top:14px;color:var(--dark)">Dostępne warianty</p>
+      <div style="display:flex;flex-direction:column;gap:0;margin-top:6px">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:8pt"><div><strong>Model 6 × 3 m</strong> <span style="color:var(--t3);font-size:7pt">Powierzchnia 18 m²</span></div><span style="background:var(--accent);color:#fff;font-weight:800;font-size:8pt;padding:3px 10px;border-radius:4px">od 35 000 zł</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:8pt"><div><strong>Moduły łączone</strong> <span style="color:var(--t3);font-size:7pt">Dowolna konfiguracja</span></div><span style="background:var(--dark);color:#fff;font-weight:800;font-size:7pt;padding:3px 10px;border-radius:4px;letter-spacing:.06em">WYCENA INDYWIDUALNA</span></div>
+      </div>
+    </div>
+    <div class="fbar"><div class="fbar-page"><span>11</span> Strona</div><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 12: CENNIK DODATKÓW ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:28px 32px 60px">
+      <div class="ey">Katalog pawilonów</div>
+      <h2 style="font-size:26pt;font-weight:900;letter-spacing:-.03em;line-height:1.05">NAJCZĘŚCIEJ WYBIERANE<br>DODATKI DO <span style="color:var(--accent)">PAWILONÓW</span></h2>
+
+      <table style="width:100%;border-collapse:collapse;margin-top:20px;font-size:8pt">
+        <tr><th style="text-align:left;padding:7px 10px;background:var(--dark);color:#fff;font-size:7pt;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:var(--rs) var(--rs) 0 0">Nazwa elementu</th><th style="text-align:right;padding:7px 10px;background:var(--dark);color:#fff;font-size:7pt;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:0 0 0 0">Cena netto</th></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border)">Klimatyzacja 3.4 kW z funkcją grzania z montażem</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700">+ 3 200 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);background:var(--light)">Łazienka kompletna (ścianka, drzwi, WC, szafka, umywalka, bateria, wod-kan, podgrzewacz)</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700;background:var(--light)">+ 5 000 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border)">Okno podawcze — przesuwne ALU 200 × 100 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700">+ 3 500 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);background:var(--light)">Roleta gastronomiczna elektryczna 300 × 100 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700;background:var(--light)">+ 3 700 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border)">Drzwi przeszklone aluminiowe + pochwyt + samodomykacz 110 × 210 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700">+ 2 800 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);background:var(--light)">Drzwi stalowe Artemida 90 × 200 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700;background:var(--light)">+ 1 200 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border)">Witryna ALU nieotwierana 100 × 210 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700">+ 1 300 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);background:var(--light)">Witryna ALU otwierana 100 × 210 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700;background:var(--light)">+ 2 400 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border)">Okno uchylne 110 × 60 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700">+ 1 300 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);background:var(--light)">Markiza z silnikiem i pilotem 300 × 150 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700;background:var(--light)">+ 6 500 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border)">Ścianka działowa 3mb + drzwi pokojowe 80 cm</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700">+ 2 200 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);background:var(--light)">Dodatkowy punkt elektryczny (sztuka)</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700;background:var(--light)">+ 400 zł</td></tr>
+        <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border)">Wyprowadzenie wod-kan + podgrzewacz wody</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;font-weight:700">+ 1 100 zł</td></tr>
+        <tr><td style="padding:7px 10px;background:var(--light);color:var(--accent);font-weight:700">Wentylacja mechaniczna</td><td style="padding:7px 10px;text-align:right;font-weight:700;background:var(--light);color:var(--accent)">+ 400 zł</td></tr>
+      </table>
+
+      <div style="margin-top:12px;padding:10px 14px;background:var(--dark);border-radius:var(--rs);display:flex;gap:12px">
+        <div style="flex:1"><p style="font-size:7pt;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px">Opcja: poszerzenie do 4m</p><p style="font-size:7pt;color:rgba(255,255,255,.5);line-height:1.5">5×4m: +9 000 · 6×4m: +10 000 · 7×4m: +11 000 · 8-12×4m: od +12 000 zł</p></div>
+        <div style="width:1px;background:rgba(255,255,255,.1)"></div>
+        <div style="flex:1"><p style="font-size:7pt;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px">Standard STAGO</p><p style="font-size:7pt;color:rgba(255,255,255,.5);line-height:1.5">Wszystkie pawilony: PIR 100mm, Cetris, kompletna elektryka. Ceny netto.</p></div>
+      </div>
+    </div>
+    <div class="fbar"><div class="fbar-page"><span>12</span> Strona</div><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 13: CZYNSZ VS WŁASNY ═══ -->
+  <div class="pg">
+    <img src="assets/logo.png" alt="STAGO" class="tr-logo">
+    <div style="padding:28px 32px 60px">
+      <div class="ey">Czynsz vs własny lokal</div>
+      <h2 style="font-size:26pt;font-weight:900;letter-spacing:-.03em;line-height:1.05">ILE PIENIĘDZY ZOSTAWIASZ<br>U <span style="color:var(--accent)">KOGOŚ INNEGO?</span></h2>
+
+      <div style="display:flex;gap:16px;margin-top:24px">
+        <div style="flex:1;padding:24px;background:var(--light);border:1px solid var(--border);border-radius:var(--r)">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin-bottom:8px">Wynajmujesz</p>
+          <p style="font-size:24pt;font-weight:900;color:var(--t3);text-decoration:line-through;text-decoration-color:rgba(200,60,60,.4);line-height:1">3 000 zł<span style="font-size:9pt;font-weight:400;opacity:.5"> /msc</span></p>
+          <ul style="margin-top:16px;display:flex;flex-direction:column;gap:6px;list-style:none">
+            <li style="font-size:8pt;color:var(--t2);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:#ccc">—</span>36 msc = <strong>108 000 zł</strong> wyrzucone</li>
+            <li style="font-size:8pt;color:var(--t2);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:#ccc">—</span>Lokal nigdy nie będzie Twój</li>
+            <li style="font-size:8pt;color:var(--t2);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:#ccc">—</span>Podwyżka czynszu kiedy chce właściciel</li>
+            <li style="font-size:8pt;color:var(--t2);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:#ccc">—</span>Remont za Twoje pieniądze, w cudzym lokalu</li>
+          </ul>
+        </div>
+        <div style="flex:1;padding:24px;background:var(--dark);border:2px solid var(--accent);border-radius:var(--r);color:rgba(255,255,255,.88)">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:8px">Masz swój pawilon</p>
+          <p style="font-size:24pt;font-weight:900;color:#fff;line-height:1">~1 200 zł<span style="font-size:9pt;font-weight:400;opacity:.5"> /msc raty</span></p>
+          <ul style="margin-top:16px;display:flex;flex-direction:column;gap:6px;list-style:none">
+            <li style="font-size:8pt;color:rgba(255,255,255,.65);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:var(--accent)">✓</span>Po spłacie = <strong style="color:#fff">Twój na zawsze</strong></li>
+            <li style="font-size:8pt;color:rgba(255,255,255,.65);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:var(--accent)">✓</span>Zero czynszu do końca życia</li>
+            <li style="font-size:8pt;color:rgba(255,255,255,.65);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:var(--accent)">✓</span>Przenosisz gdzie chcesz</li>
+            <li style="font-size:8pt;color:rgba(255,255,255,.65);padding-left:14px;position:relative"><span style="position:absolute;left:0;color:var(--accent)">✓</span>Sprzedajesz kiedy chcesz</li>
+          </ul>
+        </div>
+      </div>
+      <p style="font-size:7pt;color:var(--t3);text-align:center;margin-top:12px">Rata leasingowa orientacyjna, przy pawilonie ~35 000 zł netto na 36 miesięcy. Ofertę finansowania dobieramy indywidualnie.</p>
+
+      <div style="margin-top:20px;text-align:center;padding:20px;border:1px solid var(--border);border-radius:var(--r)">
+        <p style="font-size:8pt;color:var(--t2);line-height:1.6"><strong>Tomek</strong> prowadzi sklep z częściami w Busku-Zdroju. Przez 3 lata wynajmował lokal za 2 500 zł/msc — razem 90 000 zł. 4 miesiące temu zamówił u nas pawilon 6×3m za 38 000 zł. Rata leasingowa: 1 150 zł/msc. Za 33 miesiące — jego na zawsze.</p>
+        <p style="font-size:8.5pt;font-weight:800;color:var(--accent);margin-top:8px;font-style:italic">"Żałuję tylko, że nie zrobiłem tego 3 lata temu."</p>
+      </div>
+    </div>
+    <div class="fbar"><div class="fbar-page"><span>13</span> Strona</div><span class="fbar-url">www.stago.com.pl</span></div>
+  </div>
+
+  <!-- ═══ 14: KONTAKT ═══ -->
+  <div class="pg" style="background:var(--dark)">
+    <div style="height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:40px">
+      <img src="assets/logo-white.png" alt="STAGO" style="height:48px;width:auto;object-fit:contain;margin-bottom:80px">
+      <div style="display:flex;gap:60px;margin-bottom:40px">
+        <div style="text-align:left">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin-bottom:6px">Lokalizacja</p>
+          <p style="font-size:12pt;font-weight:800">STAGO GROUP</p>
+          <p style="font-size:9pt;color:rgba(255,255,255,.5);margin-top:4px">ul. Jasionka 117,<br>28-300 Jędrzejów</p>
+        </div>
+        <div style="text-align:left">
+          <p style="font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin-bottom:6px">Kontakt</p>
+          <p style="font-size:12pt;font-weight:800;color:var(--accent)">+48 509 508 210</p>
+          <p style="font-size:9pt;color:rgba(255,255,255,.5);margin-top:4px">kontakt@stago.com.pl</p>
+        </div>
+      </div>
+      <div style="width:100%;max-width:360px;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin-bottom:32px"></div>
+      <div style="font-size:7pt;color:rgba(255,255,255,.25);line-height:1.8">
+        <p>NIP: 6562357986 | REGON: 543942575</p>
+        <p>© 2026 STAGO GROUP. Wszelkie prawa zastrzeżone.</p>
+      </div>
+      <p style="font-size:8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:40px;text-decoration:underline;text-underline-offset:4px">www.stago.com.pl</p>
+    </div>
+  </div>
+
+</body>
+</html>
