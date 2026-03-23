@@ -56,10 +56,10 @@
     "items": [
       { "name": "Handlowy", "desc": "Własny sklep zamiast wynajmu. Witryny, elektryka, klimatyzacja — wchodzisz z towarem i otwierasz.", "price": "od 24 000 zł netto", "href": "pawilon-handlowy.html", "img": "assets/products/handlowy.png" },
       { "name": "Biurowy", "desc": "Biuro na działce zamiast czynszu w mieście. Izolacja PIR — ciepło zimą, chłodno latem. Podłączasz prąd i pracujesz.", "price": "od 22 000 zł netto", "href": "kontener-biurowy.html", "img": "assets/products/biurowy.png" },
-      { "name": "Mieszkalny", "desc": "Własne M bez kredytu na 30 lat. Łazienka, kuchnia, ogrzewanie w środku. Gotowy do zamieszkania od dnia dostawy.", "price": "od 35 000 zł netto", "href": "konfigurator.html?type=Mieszkalny", "img": "assets/products/mieszkalny.png" },
-      { "name": "Sanitarny", "desc": "Toalety, prysznice, szatnie — gotowe od razu. Na budowę, event, obiekt publiczny. Podłączasz wodę i działa.", "price": "od 20 000 zł netto", "href": "konfigurator.html?type=Sanitarny", "img": "assets/products/sanitarny.png" },
+      { "name": "Mieszkalny", "desc": "Własne M bez kredytu na 30 lat. Łazienka, kuchnia, ogrzewanie w środku. Gotowy do zamieszkania od dnia dostawy.", "price": "od 35 000 zł netto", "href": "pawilon-mieszkalny.html", "img": "assets/products/mieszkalny.png" },
+      { "name": "Sanitarny", "desc": "Toalety, prysznice, szatnie — gotowe od razu. Na budowę, event, obiekt publiczny. Podłączasz wodę i działa.", "price": "od 20 000 zł netto", "href": "kontener-sanitarny.html", "img": "assets/products/sanitarny.png" },
       { "name": "Magazynowy", "desc": "Solidny, zamykany magazyn na działce. Narzędzia, materiał, sprzęt — wszystko pod kluczem, bez czynszu.", "price": "od 15 000 zł netto", "href": "kontener-magazynowy.html", "img": "assets/products/magazynowy.png" },
-      { "name": "Premium / Custom", "desc": "Nietypowy wymiar, piętrowy, łączone moduły. Twój pomysł — nasza realizacja. Jeśli da się zbudować, zbudujemy.", "price": "wycena indywidualna", "href": "konfigurator.html?type=Premium", "img": "assets/products/premium.png" }
+      { "name": "Premium / Custom", "desc": "Nietypowy wymiar, piętrowy, łączone moduły. Twój pomysł — nasza realizacja. Jeśli da się zbudować, zbudujemy.", "price": "wycena indywidualna", "href": "pawilon-premium.html", "img": "assets/products/premium.png" }
     ]
   },
   "compare": {

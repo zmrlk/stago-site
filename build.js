@@ -40,6 +40,9 @@ const pages = [
   { content: 'content/products/pawilon-handlowy.json', template: 'templates/product.html', output: 'pawilon-handlowy.html' },
   { content: 'content/products/kontener-biurowy.json', template: 'templates/product.html', output: 'kontener-biurowy.html' },
   { content: 'content/products/kontener-magazynowy.json', template: 'templates/product.html', output: 'kontener-magazynowy.html' },
+  { content: 'content/products/pawilon-mieszkalny.json', template: 'templates/product.html', output: 'pawilon-mieszkalny.html' },
+  { content: 'content/products/kontener-sanitarny.json', template: 'templates/product.html', output: 'kontener-sanitarny.html' },
+  { content: 'content/products/pawilon-premium.json', template: 'templates/product.html', output: 'pawilon-premium.html' },
   // Blog articles
   { content: 'content/blog/pawilon-handlowy-cena.json', template: 'templates/blog.html', output: 'blog/pawilon-handlowy-cena.html' },
   { content: 'content/blog/kontener-biurowy-cena.json', template: 'templates/blog.html', output: 'blog/kontener-biurowy-cena.html' },
