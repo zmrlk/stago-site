@@ -106,9 +106,10 @@ button{-webkit-tap-highlight-color:transparent}
 /* ── TRUST BAR ── */
 .trust-bar{background:var(--primary);padding:22px 0}
 .trust-inner{display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap}
-.trust-item{text-align:center;color:var(--white)}
+.trust-item{text-align:center;color:var(--white);position:relative}
 .trust-item strong{font-size:1.3rem;font-weight:800;display:block;color:var(--accent)}
 .trust-item span{font-size:.75rem;color:var(--t-light3);text-transform:uppercase;letter-spacing:.06em}
+.trust-item+.trust-item::before{content:'';position:absolute;left:-18px;top:50%;transform:translateY(-50%);width:1px;height:36px;background:rgba(255,255,255,.1)}
 .trust-sep{width:1px;height:36px;background:rgba(255,255,255,.1)}
 
 /* ── SECTIONS ── */

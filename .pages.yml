@@ -1,0 +1,104 @@
+media: assets
+
+content:
+  - name: homepage
+    label: Strona główna
+    type: file
+    path: content/index.json
+    fields:
+      - name: site
+        label: Dane firmowe
+        type: object
+        fields:
+          - { name: phone, label: Telefon, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: address, label: Adres, type: string }
+          - { name: city, label: Miasto, type: string }
+          - { name: hours, label: Godziny (Pon-Pt), type: string }
+          - { name: hoursSat, label: Godziny (Sob), type: string }
+          - { name: cities, label: Obsługiwane miasta, type: string }
+
+      - name: hero
+        label: Hero (nagłówek)
+        type: object
+        fields:
+          - { name: badge, label: Badge (nad tytułem), type: string }
+          - { name: h1, label: Tytuł, type: string }
+          - { name: h1accent, label: Tytuł (akcent), type: string }
+          - { name: sub, label: Podtytuł, type: text }
+
+      - name: trust
+        label: Pasek zaufania
+        type: object
+        list: true
+        fields:
+          - { name: value, label: Wartość, type: string }
+          - { name: label, label: Opis, type: string }
+
+      - name: about
+        label: O firmie
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - { name: text, label: Tekst pod kartami, type: text }
+          - name: features
+            label: Karty
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Tytuł, type: string }
+              - { name: text, label: Opis, type: text }
+
+      - name: products
+        label: Produkty
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - { name: sub, label: Podtytuł, type: string }
+
+      - name: reviews
+        label: Opinie
+        type: object
+        fields:
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - name: items
+            label: Opinie
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Treść opinii, type: text }
+              - { name: author, label: Autor, type: string }
+              - { name: source, label: Źródło, type: string }
+
+      - name: faq
+        label: FAQ
+        type: object
+        fields:
+          - name: items
+            label: Pytania
+            type: object
+            list: true
+            fields:
+              - { name: q, label: Pytanie, type: string }
+              - { name: a, label: Odpowiedź, type: text }
+
+      - name: caseStudy
+        label: Historia klienta
+        type: object
+        fields:
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - { name: quote, label: Cytat, type: text }
+          - { name: cite, label: Autor cytatu, type: string }
+          - name: steps
+            label: Kroki historii
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Etykieta, type: string }
+              - { name: text, label: Treść, type: text }

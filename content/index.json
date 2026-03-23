@@ -1,0 +1,174 @@
+{
+  "site": {
+    "title": "STAGO — Pawilony modułowe, kontenery, budynki pod klucz",
+    "description": "STAGO — producent pawilonów modułowych. Sklep, biuro, dom — pod klucz w 4-6 tygodni. Projekt gratis, montaż w cenie, gwarancja 2 lata. Dostawa w całej Polsce.",
+    "phone": "509 508 210",
+    "phoneLink": "+48509508210",
+    "email": "kontakt@stago.com.pl",
+    "address": "Jasionka 117",
+    "city": "Jędrzejów",
+    "postalCode": "28-300",
+    "region": "woj. świętokrzyskie",
+    "hours": "Pon-Pt: 8:00-16:00",
+    "hoursSat": "Sob: 8:00-13:00",
+    "cities": "Kielce, Kraków, Radom, Częstochowa, Katowice, Łódź i cała Polska"
+  },
+  "hero": {
+    "badge": "Producent pawilonów modułowych &middot; Dostawa w całej Polsce",
+    "h1": "Twój pawilon.",
+    "h1accent": "Gotowy w 4-6 tygodni.",
+    "sub": "Sklep, biuro, dom — pod klucz. Projekt gratis, montaż w cenie, gwarancja 2 lata. A rata leasingowa wychodzi taniej niż czynsz za wynajem."
+  },
+  "trust": [
+    { "value": "5.0/5", "label": "Google Reviews" },
+    { "value": "Własny zakład", "label": "Produkcja pod kontrolą" },
+    { "value": "4-6 tyg.", "label": "Od zamówienia do klucza" },
+    { "value": "Cała PL", "label": "Transport + montaż w cenie" }
+  ],
+  "about": {
+    "eyebrow": "Własna produkcja",
+    "h2": "Od spawu do montażu —",
+    "h2accent": "wszystko pod jednym dachem.",
+    "features": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"M9 12l2 2 4-4\"/></svg>",
+        "title": "Stal malowana proszkowo, PIR, PCV",
+        "text": "Rama stalowa, ściany z płytą PIR, okna PCV, podłoga OSB. Nie oszczędzamy na materiałach — bo potem to widać. Dla Ciebie to niższe rachunki za ogrzewanie i pawilon, który wygląda dobrze po latach."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "title": "Każdy pawilon jest inny",
+        "text": "Kiosk na rynku, biuro na budowie, dom na działce — każdy klient miał inny pomysł. Dlatego nie robimy z katalogu. Rysujemy od zera, pod konkretną potrzebę. Wymiar, układ, kolor — wszystko do ustalenia."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Jeden wykonawca, jedna cena",
+        "text": "Nie szukasz osobno projektanta, producenta i ekipy montażowej. Dzwonisz raz. Dostajesz wizualizację, podpisujesz umowę, za 5 tygodni stoi. Jedna cena, jeden termin, jeden kontakt."
+      }
+    ],
+    "text": "Wszystko robimy u siebie — od pierwszej spawki do ostatniej śruby. Nie podzlecamy, nie szukamy ekip na telefon. Możesz przyjechać do zakładu i zobaczyć jak Twój pawilon powstaje. Większość klientów to robi."
+  },
+  "products": {
+    "eyebrow": "Co budujemy",
+    "h2": "Gdzie postawisz",
+    "h2accent": "swój pawilon?",
+    "sub": "Sklep przy drodze, biuro przy firmie, dom na działce — każdy pawilon robimy pod konkretny pomysł.",
+    "items": [
+      { "name": "Handlowy", "desc": "Własny sklep zamiast wynajmu. Witryny, elektryka, klimatyzacja — wchodzisz z towarem i otwierasz.", "price": "od 24 000 zł netto", "href": "pawilon-handlowy.html", "img": "assets/products/handlowy.png" },
+      { "name": "Biurowy", "desc": "Biuro na działce zamiast czynszu w mieście. Izolacja PIR — ciepło zimą, chłodno latem. Podłączasz prąd i pracujesz.", "price": "od 22 000 zł netto", "href": "kontener-biurowy.html", "img": "assets/products/biurowy.png" },
+      { "name": "Mieszkalny", "desc": "Własne M bez kredytu na 30 lat. Łazienka, kuchnia, ogrzewanie w środku. Gotowy do zamieszkania od dnia dostawy.", "price": "od 35 000 zł netto", "href": "", "modal": "mieszkalny", "img": "assets/products/mieszkalny.png" },
+      { "name": "Sanitarny", "desc": "Toalety, prysznice, szatnie — gotowe od razu. Na budowę, event, obiekt publiczny. Podłączasz wodę i działa.", "price": "od 20 000 zł netto", "href": "", "modal": "sanitarny", "img": "assets/products/sanitarny.png" },
+      { "name": "Magazynowy", "desc": "Solidny, zamykany magazyn na działce. Narzędzia, materiał, sprzęt — wszystko pod kluczem, bez czynszu.", "price": "od 15 000 zł netto", "href": "kontener-magazynowy.html", "img": "assets/products/magazynowy.png" },
+      { "name": "Premium / Custom", "desc": "Nietypowy wymiar, piętrowy, łączone moduły. Twój pomysł — nasza realizacja. Jeśli da się zbudować, zbudujemy.", "price": "wycena indywidualna", "href": "", "modal": "premium", "img": "assets/products/premium.png" }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Czynsz vs własny lokal",
+    "h2": "Wynajem czy własny pawilon?",
+    "h2accent": "Policz sam.",
+    "sub": "Większość naszych klientów wcześniej wynajmowała. Potem policzyli.",
+    "rent": {
+      "label": "Wynajmujesz",
+      "price": "3 000 zł",
+      "priceSuffix": "/msc",
+      "items": [
+        "36 miesięcy = <strong>108 000 zł</strong>",
+        "Lokal nigdy nie będzie Twój",
+        "Podwyżka czynszu kiedy chce właściciel",
+        "Remont? Za Twoje pieniądze, w cudzym lokalu",
+        "Lokalizacja nie działa? Trudno, umowa wiąże"
+      ]
+    },
+    "own": {
+      "label": "Masz swój pawilon",
+      "price": "~1 200 zł",
+      "priceSuffix": "/msc raty",
+      "items": [
+        "Po spłacie = <strong>Twój na zawsze</strong>",
+        "Zero czynszu do końca życia",
+        "Przenosisz gdzie chcesz — laweta i kilka godzin",
+        "Sprzedajesz kiedy chcesz, odzyskujesz pieniądze",
+        "Wygląda i działa jak chcesz — bo to Twoje"
+      ]
+    },
+    "footnote": "Rata leasingowa orientacyjna, przy pawilonie ~35 000 zł netto na 36 miesięcy. Dokładną ofertę finansowania dobieramy indywidualnie."
+  },
+  "caseStudy": {
+    "eyebrow": "Historia klienta",
+    "h2": "Tomek otworzył sklep",
+    "h2accent": "bez czynszu.",
+    "steps": [
+      { "label": "Problem", "text": "Tomek prowadzi sklep z częściami samochodowymi w Busku-Zdroju. Przez 3 lata wynajmował lokal za 2 500 zł miesięcznie. Policzyło się 90 000 zł — i lokal nadal nie jego. Właściciel podniósł czynsz. Tomek zaczął szukać innego wyjścia." },
+      { "label": "Decyzja", "text": "4 miesiące temu zamówił u nas pawilon handlowy 6&times;3 m z witryną i zapleczem. Wybrał kolory, dopasował układ półek. Projekt narysowaliśmy za darmo, zmieniliśmy 2 razy, bo Tomek miał swoje pomysły. Żaden problem." },
+      { "label": "Efekt", "text": "Pawilon postawiliśmy w 5 tygodni. Koszt: 38 000 zł netto. Rata leasingowa: 1 150 zł/msc — mniej niż połowa dawnego czynszu. Za 33 miesiące pawilon będzie w całości jego. Od dnia otwarcia nie płaci nikomu za prawo do pracy we własnym sklepie." }
+    ],
+    "quote": "Żałuję tylko, że nie zrobiłem tego 3 lata temu. Te 90 tysięcy to była czysta strata.",
+    "cite": "— Tomek, sklep z częściami, Busko-Zdrój"
+  },
+  "process": {
+    "eyebrow": "Jak działamy",
+    "h2": "Od telefonu do klucza —",
+    "h2accent": "cztery kroki.",
+    "steps": [
+      { "num": "01", "title": "Kontakt", "text": "Powiedz czego potrzebujesz. Nie musisz znać wymiarów co do centymetra — od tego jesteśmy my." },
+      { "num": "02", "title": "Projekt gratis", "text": "Narysujemy jak będzie wyglądał, policzymy ile kosztuje. Nie podoba się? Zmieniamy. Za darmo." },
+      { "num": "03", "title": "Produkcja", "text": "Budujemy u siebie, pod własnym okiem. Możesz przyjechać zobaczyć jak powstaje. 4-6 tygodni." },
+      { "num": "04", "title": "Dostawa i montaż", "text": "Ładujemy na lawetę, jedziemy do Ciebie, stawiamy. Kilka godzin i gotowe. Wchodzisz z kluczem." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Realizacje",
+    "h2": "Pawilony,",
+    "h2accent": "które już stoją.",
+    "sub": "Każdy inny, każdy pod klienta. Kliknij żeby powiększyć.",
+    "items": [
+      { "img": "assets/gallery/k2.png", "alt": "Kiosk handlowy STAGO", "label": "Kiosk handlowy, blacha antracyt" },
+      { "img": "assets/gallery/k6.png", "alt": "Biuro kontenerowe STAGO", "label": "Biuro 6×3m, okna panoramiczne" },
+      { "img": "assets/gallery/k9.png", "alt": "Pawilon usługowy STAGO", "label": "Pawilon usługowy, okno podawcze" },
+      { "img": "assets/gallery/k11.png", "alt": "Kontener biurowy STAGO", "label": "Kontener biurowy, elewacja HPL" },
+      { "img": "assets/gallery/k14.png", "alt": "Pawilon z drewnem STAGO", "label": "Pawilon z okładziną drewnianą" },
+      { "img": "assets/gallery/k16.png", "alt": "Kontener z akcentem drewnianym STAGO", "label": "Kontener z akcentem drewnianym" },
+      { "img": "assets/gallery/k19.png", "alt": "Kontener grafitowy STAGO", "label": "Magazyn 6×2,4m, blacha grafitowa" },
+      { "img": "assets/gallery/k21.png", "alt": "Pawilon z elewacją drewnianą STAGO", "label": "Pawilon z pełną elewacją drewnianą" },
+      { "img": "assets/gallery/k25.png", "alt": "Kontener modułowy STAGO", "label": "Moduły łączone, biuro + magazyn" }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Opinie klientów",
+    "h2": "5.0 na Google.",
+    "h2accent": "My nie musimy mówić.",
+    "items": [
+      { "text": "Bardzo miła atmosfera, wspaniała obsługa, szybki czas realizacji. Polecam każdemu!", "author": "Kacper Z.", "source": "Google Reviews" },
+      { "text": "Miła profesjonalna obsługa. Oprócz porady dostałem materiał do wypróbowania własnego pomysłu. Rewelacja.", "author": "Nikodem S.", "source": "Google Reviews" },
+      { "text": "Solidna firma, dotrzymują terminów. Pawilon wygląda dokładnie jak na wizualizacji. Zero niespodzianek.", "author": "Marek W.", "source": "Google Reviews" }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Poradniki",
+    "h2": "Zanim kupisz — przeczytaj.",
+    "sub": "Podrzucamy kilka rzeczy, które warto wiedzieć. Niezależnie od tego, u kogo zamówisz.",
+    "items": [
+      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.png", "date": "Poradnik", "title": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę", "desc": "7 konkretnych rzeczy do sprawdzenia. Spawy, izolacja, dach, ukryte koszty. Zanim wyślesz przelew — przeczytaj." },
+      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.png", "date": "Poradnik", "title": "Odebrałeś pawilon. I co teraz? Kontrola jakości krok po kroku.", "desc": "Pawilon przyjechał na lawecie. Co sprawdzić zanim podpiszesz protokół? Dach, spawy, okna, podłoga — checklista." },
+      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.png", "date": "Poradnik", "title": "Pierwsza zima w pawilonie — czego nikt Ci nie powie", "desc": "Izolacja, ogrzewanie, wilgoć, rachunki. Prawdziwe liczby i porady od kogoś, kto widział nie jedną zimę." }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Pytania i odpowiedzi",
+    "h2": "Najczęściej zadawane pytania",
+    "items": [
+      { "q": "Ile kosztuje pawilon modułowy?", "a": "Cena zależy od rozmiaru, wykończenia i wyposażenia. Podstawowy pawilon handlowy 3x2m zaczyna się od ok. 15 000 zł netto. Większe i bardziej zaawansowane modele — od 25 000 zł. Każdy projekt wyceniamy indywidualnie — wycena jest darmowa." },
+      { "q": "Jak długo trwa realizacja?", "a": "Standardowy pawilon budujemy w 4-6 tygodni od akceptacji projektu. Termin ustalamy przed rozpoczęciem produkcji i go dotrzymujemy." },
+      { "q": "Czy potrzebuję pozwolenia na budowę?", "a": "Pawilony do 35m² zazwyczaj nie wymagają pozwolenia — wystarczy zgłoszenie. Dla większych obiektów pomagamy w przygotowaniu dokumentacji. Doradzimy na etapie projektowania." },
+      { "q": "Jak wygląda dostawa i montaż?", "a": "Dostarczamy pawilon transportem specjalistycznym w całej Polsce — transport i montaż w cenie. Montaż trwa zazwyczaj kilka godzin. Potrzebne jest utwardzone podłoże (beton, kostka, płyty)." },
+      { "q": "Jaka jest gwarancja?", "a": "Na każdy pawilon udzielamy 2 lata gwarancji na konstrukcję i 1 rok gwarancji na kontener. Serwis posprzedażowy bez limitu czasowego — dzwonisz, pomagamy." },
+      { "q": "Czy mogę zamówić pawilon w niestandardowym rozmiarze?", "a": "Tak — produkujemy pawilony na zamówienie w dowolnych wymiarach. Robimy też łączenia modułów, piętrowe rozwiązania i nietypowe wykończenia. Jeśli da się to zbudować — zbudujemy." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Darmowa wycena",
+    "h2": "Napisz czego potrzebujesz.",
+    "h2accent": "Oddzwonimy w 24h.",
+    "formNote": "Odpowiadamy w ciągu 24 godzin. Wycena jest darmowa i niezobowiązująca."
+  }
+}
