@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Konfigurator pawilonu — STAGO</title>
-  <meta name="description" content="Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h.">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://stago.com.pl/konfigurator.html">
-  <meta property="og:title" content="Konfigurator pawilonu — STAGO">
-  <meta property="og:description" content="Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h.">
+  <meta property="og:title" content="{{meta.title}}">
+  <meta property="og:description" content="{{meta.description}}">
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -618,51 +618,26 @@ body { background: #F8F9FA; padding-bottom: 0; }
 
     <!-- STEP 1: PRZEZNACZENIE -->
     <div class="step-panel active" data-step="1">
-      <h1 class="step-title">Jaki pawilon potrzebujesz?</h1>
-      <p class="step-sub">Wybierz przeznaczenie — dostosujemy resztę do Twoich potrzeb</p>
+      <h1 class="step-title">{{step1.title}}</h1>
+      <p class="step-sub">{{step1.sub}}</p>
       <div class="type-grid">
-        
-        <div class="type-card" data-type="Handlowy" onclick="selectType(this)">
-          <img src="assets/products/handlowy.png" alt="Handlowy" loading="lazy">
-          <span>Handlowy</span>
+        {{#step1.types}}
+        <div class="type-card" data-type="{{name}}" onclick="selectType(this)">
+          <img src="{{img}}" alt="{{name}}" loading="lazy">
+          <span>{{name}}</span>
         </div>
-        
-        <div class="type-card" data-type="Biurowy" onclick="selectType(this)">
-          <img src="assets/products/biurowy.png" alt="Biurowy" loading="lazy">
-          <span>Biurowy</span>
-        </div>
-        
-        <div class="type-card" data-type="Mieszkalny" onclick="selectType(this)">
-          <img src="assets/products/mieszkalny.png" alt="Mieszkalny" loading="lazy">
-          <span>Mieszkalny</span>
-        </div>
-        
-        <div class="type-card" data-type="Sanitarny" onclick="selectType(this)">
-          <img src="assets/products/sanitarny.png" alt="Sanitarny" loading="lazy">
-          <span>Sanitarny</span>
-        </div>
-        
-        <div class="type-card" data-type="Magazynowy" onclick="selectType(this)">
-          <img src="assets/products/magazynowy.png" alt="Magazynowy" loading="lazy">
-          <span>Magazynowy</span>
-        </div>
-        
-        <div class="type-card" data-type="Na zamówienie" onclick="selectType(this)">
-          <img src="assets/products/premium.png" alt="Na zamówienie" loading="lazy">
-          <span>Na zamówienie</span>
-        </div>
-        
+        {{/step1.types}}
       </div>
       <p class="social-proof">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-        127 osób skonfigurowało pawilon w tym miesiącu
+        {{step1.socialProof}}
       </p>
     </div>
 
     <!-- STEP 2: WYMIARY -->
     <div class="step-panel" data-step="2">
-      <h2 class="step-title">Wymiary pawilonu</h2>
-      <p class="step-sub">Podaj wymiary lub wybierz popularny rozmiar</p>
+      <h2 class="step-title">{{step2.title}}</h2>
+      <p class="step-sub">{{step2.sub}}</p>
       <div class="dim-inputs">
         <div class="dim-group">
           <label>Długość</label>
@@ -686,28 +661,18 @@ body { background: #F8F9FA; padding-bottom: 0; }
           </div>
         </div>
       </div>
-      <p class="preset-label">Popularne rozmiary</p>
+      <p class="preset-label">{{step2.presetLabel}}</p>
       <div class="presets">
-        
-        <button class="preset-btn" onclick="setPreset(3,2,2.8,this)">3×2 m</button>
-        
-        <button class="preset-btn" onclick="setPreset(4,2.5,2.8,this)">4×2,5 m</button>
-        
-        <button class="preset-btn" onclick="setPreset(6,3,2.8,this)">6×3 m</button>
-        
-        <button class="preset-btn" onclick="setPreset(8,3,2.8,this)">8×3 m</button>
-        
-        <button class="preset-btn" onclick="setPreset(9,3,2.8,this)">9×3 m</button>
-        
-        <button class="preset-btn" onclick="setPreset(12,3,3,this)">12×3 m</button>
-        
+        {{#step2.presets}}
+        <button class="preset-btn" onclick="setPreset({{l}},{{w}},{{h}},this)">{{label}}</button>
+        {{/step2.presets}}
       </div>
     </div>
 
     <!-- STEP 3: WYKOŃCZENIE -->
     <div class="step-panel" data-step="3">
-      <h2 class="step-title">Wykończenie</h2>
-      <p class="step-sub">Profil blachy, kolor i okucia</p>
+      <h2 class="step-title">{{step3.title}}</h2>
+      <p class="step-sub">{{step3.sub}}</p>
       <div class="finish-grid">
         <div>
           <div class="finish-section">
@@ -764,8 +729,8 @@ body { background: #F8F9FA; padding-bottom: 0; }
 
     <!-- STEP 4: WYPOSAŻENIE -->
     <div class="step-panel" data-step="4">
-      <h2 class="step-title">Wyposażenie</h2>
-      <p class="step-sub">Drzwi, okna i dodatkowe instalacje</p>
+      <h2 class="step-title">{{step4.title}}</h2>
+      <p class="step-sub">{{step4.sub}}</p>
       <div class="equip-row">
         <label>Drzwi</label>
         <select id="doorType">
@@ -835,24 +800,24 @@ body { background: #F8F9FA; padding-bottom: 0; }
 
     <!-- STEP 5: PODSUMOWANIE -->
     <div class="step-panel step-wide" data-step="5">
-      <h2 class="step-title">Podsumowanie konfiguracji</h2>
-      <p class="step-sub">Sprawdź dane i zostaw kontakt — odezwiemy się z wyceną</p>
+      <h2 class="step-title">{{step5.title}}</h2>
+      <p class="step-sub">{{step5.sub}}</p>
       <div class="summary-layout">
         <div class="summary-card">
-          <h3>Twój pawilon</h3>
+          <h3>{{step5.summaryHeading}}</h3>
           <div id="summaryRows"></div>
         </div>
         <div class="contact-card">
-          <h3>Dane kontaktowe</h3>
+          <h3>{{step5.contactHeading}}</h3>
           <form class="cfg-form" id="cfgForm" onsubmit="submitForm(event)">
             <input type="text" name="name" placeholder="Imię i nazwisko *" required>
             <input type="tel" name="phone" placeholder="Telefon *" required>
             <input type="email" name="email" placeholder="Email">
             <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)"></textarea>
-            <button type="submit" class="cfg-submit">Wyślij zapytanie</button>
+            <button type="submit" class="cfg-submit">{{step5.submitLabel}}</button>
             <p class="form-promise">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              Odpowiadamy w ciągu 24 godzin
+              {{step5.formPromise}}
             </p>
           </form>
         </div>
@@ -864,12 +829,12 @@ body { background: #F8F9FA; padding-bottom: 0; }
       <div class="success-icon">
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
-      <h2>Zapytanie wysłane!</h2>
-      <p>Odezwiemy się w ciągu 24 godzin z indywidualną wyceną.</p>
-      <p>Masz pilne pytanie? Zadzwoń:</p>
-      <a href="tel:+48509508210" class="phone-link">
+      <h2>{{success.heading}}</h2>
+      <p>{{success.text}}</p>
+      <p>{{success.subtext}}</p>
+      <a href="tel:{{success.phoneLink}}" class="phone-link">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        509 508 210
+        {{success.phone}}
       </a>
     </div>
 

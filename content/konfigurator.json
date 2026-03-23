@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Konfigurator pawilonu — STAGO",
+    "description": "Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h."
+  },
+  "step1": {
+    "title": "Jaki pawilon potrzebujesz?",
+    "sub": "Wybierz przeznaczenie — dostosujemy resztę do Twoich potrzeb",
+    "socialProof": "127 osób skonfigurowało pawilon w tym miesiącu",
+    "types": [
+      { "name": "Handlowy", "img": "assets/products/handlowy.png" },
+      { "name": "Biurowy", "img": "assets/products/biurowy.png" },
+      { "name": "Mieszkalny", "img": "assets/products/mieszkalny.png" },
+      { "name": "Sanitarny", "img": "assets/products/sanitarny.png" },
+      { "name": "Magazynowy", "img": "assets/products/magazynowy.png" },
+      { "name": "Na zamówienie", "img": "assets/products/premium.png" }
+    ]
+  },
+  "step2": {
+    "title": "Wymiary pawilonu",
+    "sub": "Podaj wymiary lub wybierz popularny rozmiar",
+    "presetLabel": "Popularne rozmiary",
+    "presets": [
+      { "label": "3×2 m", "l": "3", "w": "2", "h": "2.8" },
+      { "label": "4×2,5 m", "l": "4", "w": "2.5", "h": "2.8" },
+      { "label": "6×3 m", "l": "6", "w": "3", "h": "2.8" },
+      { "label": "8×3 m", "l": "8", "w": "3", "h": "2.8" },
+      { "label": "9×3 m", "l": "9", "w": "3", "h": "2.8" },
+      { "label": "12×3 m", "l": "12", "w": "3", "h": "3" }
+    ]
+  },
+  "step3": {
+    "title": "Wykończenie",
+    "sub": "Profil blachy, kolor i okucia",
+    "profiles": ["Gładka", "Trapez", "Mikrofala"],
+    "wallColors": [
+      { "color": "#fff", "name": "Biały" },
+      { "color": "#3C3C3C", "name": "Antracyt" },
+      { "color": "#1D1D1B", "name": "Czarny" },
+      { "color": "#8B8B8B", "name": "Szary" },
+      { "color": "#5C3A1E", "name": "Brązowy" },
+      { "color": "linear-gradient(135deg,#E8461C,#D03A15)", "name": "RAL" }
+    ],
+    "fittingTypes": ["Podstawowe", "Specjalne premium"],
+    "fittingColors": ["Biały", "Czarny", "Antracyt", "Złoty dąb", "Dąb winchester", "Inny"],
+    "fittingPlacement": ["Wszystkie narożniki", "Tylko przód", "Przód + tył", "Tylko boki"]
+  },
+  "step4": {
+    "title": "Wyposażenie",
+    "sub": "Drzwi, okna i dodatkowe instalacje",
+    "doorTypes": ["Jednoskrzydłowe", "Dwuskrzydłowe", "Przesuwne", "Aluminiowe z naświetlem"],
+    "windowTypes": ["Uchylne 80×60 cm", "Rozwierno-uchylne 120×120 cm", "Stałe panoramiczne", "Podawcze (handlowe)"],
+    "extras": [
+      "Klimatyzacja",
+      "Oświetlenie LED",
+      "Instalacja elektryczna",
+      "Rolety zewnętrzne",
+      "Instalacja wod-kan",
+      "System alarmowy",
+      "Ogrzewanie",
+      "Podłoga OSB + wykładzina"
+    ]
+  },
+  "step5": {
+    "title": "Podsumowanie konfiguracji",
+    "sub": "Sprawdź dane i zostaw kontakt — odezwiemy się z wyceną",
+    "summaryHeading": "Twój pawilon",
+    "contactHeading": "Dane kontaktowe",
+    "submitLabel": "Wyślij zapytanie",
+    "formPromise": "Odpowiadamy w ciągu 24 godzin"
+  },
+  "success": {
+    "heading": "Zapytanie wysłane!",
+    "text": "Odezwiemy się w ciągu 24 godzin z indywidualną wyceną.",
+    "subtext": "Masz pilne pytanie? Zadzwoń:",
+    "phone": "509 508 210",
+    "phoneLink": "+48509508210"
+  }
+}

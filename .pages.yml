@@ -197,6 +197,86 @@ content:
           - { name: h2accent, label: Tytuł (akcent), type: string }
           - { name: note, label: Notatka, type: text }
 
+  # ── Konfigurator ──
+  - name: configurator
+    label: Konfigurator
+    type: file
+    path: content/konfigurator.json
+    fields:
+      - name: meta
+        label: SEO
+        type: object
+        fields:
+          - { name: title, label: Tytuł strony, type: string }
+          - { name: description, label: Meta description, type: string }
+
+      - name: step1
+        label: "Krok 1: Typ pawilonu"
+        type: object
+        fields:
+          - { name: title, label: Nagłówek, type: string }
+          - { name: sub, label: Podtytuł, type: string }
+          - { name: socialProof, label: Social proof, type: string }
+          - name: types
+            label: Typy pawilonów
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+              - { name: img, label: Zdjęcie, type: image }
+
+      - name: step2
+        label: "Krok 2: Wymiary"
+        type: object
+        fields:
+          - { name: title, label: Nagłówek, type: string }
+          - { name: sub, label: Podtytuł, type: string }
+          - { name: presetLabel, label: Etykieta presetów, type: string }
+          - name: presets
+            label: Popularne rozmiary
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Etykieta (np. 6×3 m), type: string }
+              - { name: l, label: Długość, type: string }
+              - { name: w, label: Szerokość, type: string }
+              - { name: h, label: Wysokość, type: string }
+
+      - name: step3
+        label: "Krok 3: Wykończenie"
+        type: object
+        fields:
+          - { name: title, label: Nagłówek, type: string }
+          - { name: sub, label: Podtytuł, type: string }
+
+      - name: step4
+        label: "Krok 4: Wyposażenie"
+        type: object
+        fields:
+          - { name: title, label: Nagłówek, type: string }
+          - { name: sub, label: Podtytuł, type: string }
+
+      - name: step5
+        label: "Krok 5: Podsumowanie"
+        type: object
+        fields:
+          - { name: title, label: Nagłówek, type: string }
+          - { name: sub, label: Podtytuł, type: string }
+          - { name: summaryHeading, label: Tytuł podsumowania, type: string }
+          - { name: contactHeading, label: Tytuł formularza, type: string }
+          - { name: submitLabel, label: Tekst przycisku, type: string }
+          - { name: formPromise, label: Obietnica, type: string }
+
+      - name: success
+        label: Ekran sukcesu
+        type: object
+        fields:
+          - { name: heading, label: Nagłówek, type: string }
+          - { name: text, label: Tekst, type: string }
+          - { name: subtext, label: Podtekst, type: string }
+          - { name: phone, label: Telefon, type: string }
+          - { name: phoneLink, label: Telefon (link), type: string }
+
   # ── Produkty ──
   - name: products
     label: Strony produktowe
