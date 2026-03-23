@@ -63,6 +63,16 @@ content:
           - { name: h2, label: Tytuł, type: string }
           - { name: h2accent, label: Tytuł (akcent), type: string }
           - { name: sub, label: Podtytuł, type: string }
+          - name: items
+            label: Karty produktów
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+              - { name: desc, label: Opis, type: text }
+              - { name: price, label: Cena, type: string }
+              - { name: href, label: Link, type: string }
+              - { name: img, label: Zdjęcie, type: image }
 
       - name: reviews
         label: Opinie
@@ -124,6 +134,12 @@ content:
               - { name: label, label: Etykieta, type: string }
               - { name: price, label: Cena, type: string }
               - { name: priceSuffix, label: Suffix ceny, type: string }
+              - name: items
+                label: Punkty
+                type: object
+                list: true
+                fields:
+                  - { name: text, label: Tekst, type: string }
           - name: own
             label: Kolumna — Własny pawilon
             type: object
@@ -131,6 +147,12 @@ content:
               - { name: label, label: Etykieta, type: string }
               - { name: price, label: Cena, type: string }
               - { name: priceSuffix, label: Suffix ceny, type: string }
+              - name: items
+                label: Punkty
+                type: object
+                list: true
+                fields:
+                  - { name: text, label: Tekst, type: string }
 
       - name: process
         label: Jak działamy (proces)
