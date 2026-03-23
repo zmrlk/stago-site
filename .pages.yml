@@ -248,6 +248,37 @@ content:
         fields:
           - { name: title, label: Nagłówek, type: string }
           - { name: sub, label: Podtytuł, type: string }
+          - name: profiles
+            label: Profile blachy
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+          - name: wallColors
+            label: Kolory ścian
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+              - { name: color, label: Kolor CSS, type: string }
+          - name: fittingTypes
+            label: Typy okuć
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+          - name: fittingColors
+            label: Kolory okuć
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+          - name: fittingPlacement
+            label: Rozmieszczenie okuć
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
 
       - name: step4
         label: "Krok 4: Wyposażenie"
@@ -255,6 +286,24 @@ content:
         fields:
           - { name: title, label: Nagłówek, type: string }
           - { name: sub, label: Podtytuł, type: string }
+          - name: doorTypes
+            label: Typy drzwi
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+          - name: windowTypes
+            label: Typy okien
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
+          - name: extras
+            label: Dodatkowe wyposażenie
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Nazwa, type: string }
 
       - name: step5
         label: "Krok 5: Podsumowanie"

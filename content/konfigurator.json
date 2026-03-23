@@ -32,7 +32,11 @@
   "step3": {
     "title": "Wykończenie",
     "sub": "Profil blachy, kolor i okucia",
-    "profiles": ["Gładka", "Trapez", "Mikrofala"],
+    "profiles": [
+      { "name": "Gładka" },
+      { "name": "Trapez" },
+      { "name": "Mikrofala" }
+    ],
     "wallColors": [
       { "color": "#fff", "name": "Biały" },
       { "color": "#3C3C3C", "name": "Antracyt" },
@@ -41,24 +45,49 @@
       { "color": "#5C3A1E", "name": "Brązowy" },
       { "color": "linear-gradient(135deg,#E8461C,#D03A15)", "name": "RAL" }
     ],
-    "fittingTypes": ["Podstawowe", "Specjalne premium"],
-    "fittingColors": ["Biały", "Czarny", "Antracyt", "Złoty dąb", "Dąb winchester", "Inny"],
-    "fittingPlacement": ["Wszystkie narożniki", "Tylko przód", "Przód + tył", "Tylko boki"]
+    "fittingTypes": [
+      { "name": "Podstawowe" },
+      { "name": "Specjalne premium" }
+    ],
+    "fittingColors": [
+      { "name": "Biały" },
+      { "name": "Czarny" },
+      { "name": "Antracyt" },
+      { "name": "Złoty dąb" },
+      { "name": "Dąb winchester" },
+      { "name": "Inny" }
+    ],
+    "fittingPlacement": [
+      { "name": "Wszystkie narożniki" },
+      { "name": "Tylko przód" },
+      { "name": "Przód + tył" },
+      { "name": "Tylko boki" }
+    ]
   },
   "step4": {
     "title": "Wyposażenie",
     "sub": "Drzwi, okna i dodatkowe instalacje",
-    "doorTypes": ["Jednoskrzydłowe", "Dwuskrzydłowe", "Przesuwne", "Aluminiowe z naświetlem"],
-    "windowTypes": ["Uchylne 80×60 cm", "Rozwierno-uchylne 120×120 cm", "Stałe panoramiczne", "Podawcze (handlowe)"],
+    "doorTypes": [
+      { "name": "Jednoskrzydłowe" },
+      { "name": "Dwuskrzydłowe" },
+      { "name": "Przesuwne" },
+      { "name": "Aluminiowe z naświetlem" }
+    ],
+    "windowTypes": [
+      { "name": "Uchylne 80×60 cm" },
+      { "name": "Rozwierno-uchylne 120×120 cm" },
+      { "name": "Stałe panoramiczne" },
+      { "name": "Podawcze (handlowe)" }
+    ],
     "extras": [
-      "Klimatyzacja",
-      "Oświetlenie LED",
-      "Instalacja elektryczna",
-      "Rolety zewnętrzne",
-      "Instalacja wod-kan",
-      "System alarmowy",
-      "Ogrzewanie",
-      "Podłoga OSB + wykładzina"
+      { "name": "Klimatyzacja" },
+      { "name": "Oświetlenie LED" },
+      { "name": "Instalacja elektryczna" },
+      { "name": "Rolety zewnętrzne" },
+      { "name": "Instalacja wod-kan" },
+      { "name": "System alarmowy" },
+      { "name": "Ogrzewanie" },
+      { "name": "Podłoga OSB + wykładzina" }
     ]
   },
   "step5": {
