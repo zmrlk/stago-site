@@ -37,9 +37,9 @@ const pages = [
   // Homepage
   { content: 'content/index.json', template: 'templates/index.html', output: 'index.html' },
   // Product pages
-  { content: 'content/pawilon-handlowy.json', template: 'templates/product.html', output: 'pawilon-handlowy.html' },
-  { content: 'content/kontener-biurowy.json', template: 'templates/product.html', output: 'kontener-biurowy.html' },
-  { content: 'content/kontener-magazynowy.json', template: 'templates/product.html', output: 'kontener-magazynowy.html' },
+  { content: 'content/products/pawilon-handlowy.json', template: 'templates/product.html', output: 'pawilon-handlowy.html' },
+  { content: 'content/products/kontener-biurowy.json', template: 'templates/product.html', output: 'kontener-biurowy.html' },
+  { content: 'content/products/kontener-magazynowy.json', template: 'templates/product.html', output: 'kontener-magazynowy.html' },
   // Blog articles
   { content: 'content/blog/pawilon-handlowy-cena.json', template: 'templates/blog.html', output: 'blog/pawilon-handlowy-cena.html' },
   { content: 'content/blog/kontener-biurowy-cena.json', template: 'templates/blog.html', output: 'blog/kontener-biurowy-cena.html' },

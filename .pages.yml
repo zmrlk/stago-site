@@ -179,8 +179,10 @@ content:
   - name: products
     label: Strony produktowe
     type: collection
-    path: content
-    match: "{pawilon-handlowy,kontener-biurowy,kontener-magazynowy}.json"
+    path: content/products
+    filename: "{primary}.json"
+    format: json
+    subfolders: false
     fields:
       - name: meta
         label: SEO / Meta
@@ -311,7 +313,9 @@ content:
     label: Blog / Artykuły
     type: collection
     path: content/blog
-    match: "*.json"
+    filename: "{primary}.json"
+    format: json
+    subfolders: false
     fields:
       - name: meta
         label: SEO / Meta
