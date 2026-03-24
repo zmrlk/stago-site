@@ -207,6 +207,8 @@ function extractFormData(form) {
     'wiadomosc': 'description',
     'tresc': 'description',
     'opis': 'description',
+    'notes': 'description',
+    'uwagi': 'description',
   };
 
   for (const [key, value] of formData.entries()) {
@@ -261,6 +263,23 @@ async function handleFormSubmit(event) {
   if (errors.length > 0) {
     showMessage(form, 'error', errors[0]);
     return;
+  }
+
+  // 5b. Konfigurator — dołącz state do description
+  if (form.id === 'cfgForm' && typeof state !== 'undefined') {
+    const cfgLines = [];
+    if (state.type) cfgLines.push('Typ: ' + state.type);
+    if (state.dimL && state.dimW) cfgLines.push('Wymiary: ' + state.dimL + ' × ' + state.dimW + ' × ' + (state.dimH || '2.8') + ' m');
+    if (state.profil) cfgLines.push('Profil blachy: ' + state.profil);
+    if (state.kolorScian) cfgLines.push('Kolor ścian: ' + state.kolorScian);
+    if (state.okucia) cfgLines.push('Okucia: ' + state.okucia);
+    if (state.kolorOkuc) cfgLines.push('Kolor okuć: ' + state.kolorOkuc);
+    if (state.doorType) cfgLines.push('Drzwi: ' + state.doorType + ' × ' + (state.doorQty || 1));
+    if (state.windowType) cfgLines.push('Okna: ' + state.windowType + ' × ' + (state.windowQty || 2));
+    if (state.extras && state.extras.length) cfgLines.push('Wyposażenie: ' + state.extras.join(', '));
+    if (data.description) cfgLines.push('Uwagi: ' + data.description);
+    data.description = cfgLines.join('\n');
+    data.container_type = state.type || data.container_type;
   }
 
   // 6. Build lead object
