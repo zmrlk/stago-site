@@ -119,26 +119,30 @@ async function insertLead(leadData) {
 // ===================== POWIADOMIENIE EMAIL =====================
 
 async function notifyNewLead(leadData) {
-  if (!CONFIG.NOTIFY_ENDPOINT) return;
+  if (!CONFIG.NOTIFY_ENDPOINT) {
+    // Fallback: bezpośredni INSERT jeśli Edge Function nie skonfigurowana
+    await insertLead(leadData);
+    return;
+  }
 
-  try {
-    await fetch(CONFIG.NOTIFY_ENDPOINT, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
-      },
-      body: JSON.stringify({
-        name: leadData.name,
-        email: leadData.email || '',
-        phone: leadData.phone || '',
-        containerType: leadData.container_type || null,
-        message: leadData.description || '',
-        language: document.documentElement.lang || 'pl',
-      }),
-    });
-  } catch (err) {
-    console.warn('[STAGO] Powiadomienie email nie wysłane:', err.message);
+  const res = await fetch(CONFIG.NOTIFY_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
+    },
+    body: JSON.stringify({
+      name: leadData.name,
+      email: leadData.email || '',
+      phone: leadData.phone || '',
+      containerType: leadData.container_type || null,
+      message: leadData.description || '',
+      language: document.documentElement.lang || 'pl',
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Edge Function error: ${res.status}`);
   }
 }
 
@@ -276,13 +280,10 @@ async function handleFormSubmit(event) {
   setSubmitting(form, true);
 
   try {
-    // 7. Insert do Supabase
-    await insertLead(leadData);
+    // 7. Edge Function tworzy leada + wysyła email (jeden endpoint, zero duplikatów)
+    await notifyNewLead(leadData);
 
-    // 8. Powiadomienie email (fire & forget)
-    notifyNewLead(leadData);
-
-    // 9. Success
+    // 8. Success
     showMessage(form, 'success', 'Dziękujemy! Skontaktujemy się z Tobą w ciągu 24 godzin.');
     form.reset();
 
