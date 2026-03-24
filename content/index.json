@@ -27,8 +27,8 @@
   ],
   "about": {
     "eyebrow": "Własna produkcja",
-    "h2": "Robimy u siebie —",
-    "h2accent": "od projektu do montażu.",
+    "h2": "Wszystko pod jednym dachem.",
+    "h2accent": "",
     "features": [
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"M9 12l2 2 4-4\"/></svg>",
@@ -96,18 +96,18 @@
   "caseStudy": {
     "eyebrow": "Historia klienta",
     "intro": "Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Tomek.",
-    "h2": "Tomek otworzył swój sklep.",
+    "h2": "Tomek przeniósł sklep.",
     "h2accent": "Na swoich zasadach.",
     "steps": [
-      { "label": "Sytuacja", "text": "Prowadził sklep z częściami samochodowymi. Przez lata wynajmował lokal — płacił czynsz, który nie budował niczego jego. Właściciel podniósł stawkę. Zdecydował, że czas na zmianę." },
+      { "label": "Sytuacja", "text": "Klient prowadził sklep z częściami samochodowymi. Przez lata wynajmował lokal — płacił czynsz, który nie budował niczego jego. Właściciel podniósł stawkę." },
       { "label": "Jeden telefon", "text": "Zadzwonił do nas. Narysowaliśmy wizualizację pawilonu z witryną i zapleczem. Miał swoje pomysły na układ — zmieniliśmy projekt, dopasowaliśmy kolory. Dwa spotkania i gotowe." },
-      { "label": "Efekt", "text": "Dziś ma własny sklep — na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Za kilka lat pawilon będzie w całości jego." }
+      { "label": "Efekt", "text": "Dziś ma własny — na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Za kilka lat pawilon będzie w całości jego." }
     ],
     "quote": "Żałuję tylko jednego — że nie zadzwoniłem wcześniej.",
     "cite": "— Tomek, sklep z częściami, Busko-Zdrój"
   },
   "financing": {
-    "eyebrow": "Finanse",
+    "eyebrow": "Finanse?",
     "h2": "Mamy na to",
     "h2accent": "sposoby.",
     "sub": "Finanse nie muszą być przeszkodą. Jeśli potrzebujesz — pomożemy ogarnąć finansowanie.",
@@ -131,8 +131,8 @@
   },
   "process": {
     "eyebrow": "Jak działamy",
-    "h2": "Twój jeden telefon —",
-    "h2accent": "nasza realizacja.",
+    "h2": "Po Twojej stronie jest tylko telefon.",
+    "h2accent": "Resztę zostaw nam.",
     "steps": [
       { "num": "01", "title": "Kontakt", "text": "Powiedz czego potrzebujesz. Nie musisz znać wymiarów co do centymetra — od tego jesteśmy my. Doradzimy, zaproponujemy rozwiązanie." },
       { "num": "02", "title": "Darmowa wizualizacja", "text": "Narysujemy jak będzie wyglądał Twój pawilon. Zobaczysz go w 3D zanim wydasz złotówkę. Nie podoba się? Zmieniamy. Tyle razy ile trzeba." },
@@ -169,8 +169,8 @@
   },
   "blog": {
     "eyebrow": "Poradniki",
-    "h2": "Zanim kupisz — przeczytaj.",
-    "sub": "Podrzucamy kilka rzeczy, które warto wiedzieć. Niezależnie od tego, u kogo zamówisz.",
+    "h2": "Kupujesz pawilon?",
+    "sub": "Pomożemy. Podrzucamy kilka rzeczy, które warto wiedzieć — niezależnie od tego, u kogo zamówisz.",
     "items": [
       { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.png", "date": "Poradnik", "title": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę", "desc": "7 konkretnych rzeczy do sprawdzenia. Spawy, izolacja, dach, ukryte koszty. Zanim wyślesz przelew — przeczytaj." },
       { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.png", "date": "Poradnik", "title": "Odebrałeś pawilon. I co teraz? Kontrola jakości krok po kroku.", "desc": "Pawilon przyjechał na lawecie. Co sprawdzić zanim podpiszesz protokół? Dach, spawy, okna, podłoga — checklista." },
@@ -178,8 +178,8 @@
     ]
   },
   "faq": {
-    "eyebrow": "Pytania i odpowiedzi",
-    "h2": "Najczęściej zadawane pytania",
+    "eyebrow": "FAQ",
+    "h2": "Masz pytania?",
     "items": [
       { "q": "Ile kosztuje pawilon modułowy?", "a": "Cena zależy od rozmiaru, wykończenia i wyposażenia. Podstawowy pawilon handlowy 3x2m zaczyna się od ok. 15 000 zł netto. Większe i bardziej zaawansowane modele — od 25 000 zł. Każdy projekt wyceniamy indywidualnie — wycena jest darmowa." },
       { "q": "Jak długo trwa realizacja?", "a": "Termin ustalamy indywidualnie przy podpisaniu umowy — i go dotrzymujemy. Zależy od rozmiaru i specyfikacji. Konkretną datę podajemy zanim zaczniesz cokolwiek płacić." },
