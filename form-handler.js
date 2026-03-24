@@ -12,7 +12,7 @@
 
   // ─── CONFIG ───────────────────────────────────────────────────────
   var CONFIG = {
-    ENDPOINT: 'https://zrdlyhizxkqxpzqdogyr.supabase.co/functions/v1/send-contact-email',
+    ENDPOINT: 'https://qbsordlpomgyedvrkxck.supabase.co/functions/v1/send-contact-email',
     RATE_LIMIT_MS: 30000,
     MAX_MESSAGE_LENGTH: 2000,
     HONEYPOT_FIELD: 'website_url',
