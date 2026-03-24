@@ -142,6 +142,28 @@
     </div>
   </section>
 
+  <!-- FINANSOWANIE -->
+  <section class="section" id="finansowanie">
+    <div class="container">
+      <p class="eyebrow">{{financing.eyebrow}}</p>
+      <h2 class="h2">{{{financing.h2}}}<br><span class="accent">{{financing.h2accent}}</span></h2>
+      <p class="sub">{{{financing.sub}}}</p>
+      <div class="financing-grid">
+        {{#financing.options}}
+        <div class="financing-card reveal">
+          <div class="financing-icon">{{{icon}}}</div>
+          <h3>{{title}}</h3>
+          <p>{{{text}}}</p>
+        </div>
+        {{/financing.options}}
+      </div>
+      <div class="section-cta reveal">
+        <a href="#kontakt" class="btn btn-primary">{{financing.cta}}</a>
+        <a href="tel:{{site.phoneLink}}" class="btn btn-outline-dark">Zadzwoń: {{site.phone}}</a>
+      </div>
+    </div>
+  </section>
+
   <!-- PROCES -->
   <section class="section section-process-bg" id="proces">
     <div class="container">

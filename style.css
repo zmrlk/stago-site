@@ -189,6 +189,13 @@ button{-webkit-tap-highlight-color:transparent}
 .story-pullquote{font-size:1.1rem;font-style:italic;color:var(--primary);line-height:1.6;border-left:4px solid var(--accent);padding:16px 0 16px 20px;margin:0;background:none;flex:1;min-width:280px}
 .story-pullquote cite{display:block;font-size:.82rem;color:var(--t3);font-style:normal;margin-top:8px}
 
+/* ── FINANCING ── */
+.financing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px}
+.financing-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:32px 28px;text-align:center}
+.financing-icon{width:56px;height:56px;border-radius:50%;background:rgba(232,70,28,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--accent)}
+.financing-card h3{font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:12px}
+.financing-card p{font-size:.9rem;color:var(--t2);line-height:1.65}
+
 /* ── PROCES z tłem ── */
 .section-process-bg{position:relative;overflow:hidden}
 .section-process-bg::before{content:'';position:absolute;inset:0;background:url('assets/kontener-hero.webp') center 30%/cover no-repeat;opacity:.12;z-index:0}

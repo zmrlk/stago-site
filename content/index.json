@@ -106,6 +106,30 @@
     "quote": "Żałuję tylko jednego — że nie zadzwoniłem wcześniej.",
     "cite": "— Tomek, sklep z częściami, Busko-Zdrój"
   },
+  "financing": {
+    "eyebrow": "Finansowanie",
+    "h2": "Pomożemy Ci to",
+    "h2accent": "sfinansować.",
+    "sub": "Nie musisz płacić za wszystko od razu. Pomagamy dobrać najlepszą formę finansowania — żebyś mógł zacząć działać szybciej.",
+    "cta": "Zapytaj o finansowanie",
+    "options": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M2 10h20\"/></svg>",
+        "title": "Leasing",
+        "text": "Rata od 650 zł miesięcznie. Wrzucasz w koszty firmy, odliczasz VAT. Po spłacie — pawilon jest Twój. Współpracujemy z firmami leasingowymi, pomagamy z dokumentami."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6\"/></svg>",
+        "title": "Raty",
+        "text": "Rozkładamy płatność na wygodne raty. Ustalamy harmonogram indywidualnie — dopasowany do Twoich możliwości. Bez banku, bez BIK."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Dofinansowania",
+        "text": "Są programy, z których możesz dostać dotację na pawilon — zwłaszcza jeśli prowadzisz firmę. Podpowiemy które wchodzą w grę i pomożemy przygotować wniosek."
+      }
+    ]
+  },
   "process": {
     "eyebrow": "Jak działamy",
     "h2": "Twój jeden telefon —",

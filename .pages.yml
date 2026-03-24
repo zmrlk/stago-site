@@ -156,6 +156,23 @@ content:
                 fields:
                   - { name: text, label: Tekst, type: string }
 
+      - name: financing
+        label: Finansowanie
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: h2, label: Tytuł, type: string }
+          - { name: h2accent, label: Tytuł (akcent), type: string }
+          - { name: sub, label: Podtytuł, type: text }
+          - { name: cta, label: Tekst CTA, type: string }
+          - name: options
+            label: Opcje finansowania
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Nazwa, type: string }
+              - { name: text, label: Opis, type: text }
+
       - name: process
         label: Jak działamy (proces)
         type: object
