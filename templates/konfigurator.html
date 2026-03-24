@@ -773,7 +773,9 @@ body { background: #F8F9FA; padding-bottom: 0; }
             <input type="tel" name="phone" placeholder="Telefon *" required>
             <input type="email" name="email" placeholder="Email">
             <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)"></textarea>
+            <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
             <button type="submit" class="cfg-submit">{{step5.submitLabel}}</button>
+            <p class="form-error" id="cfgForm-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:8px"></p>
             <p class="form-promise">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               {{step5.formPromise}}
@@ -1098,5 +1100,6 @@ updateBar();
     ]
   }
   </script>
+  <script src="form-handler.js"></script>
 </body>
 </html>

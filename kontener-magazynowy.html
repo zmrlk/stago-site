@@ -219,7 +219,7 @@
       <p class="eyebrow">Zaczynamy</p>
       <h2 class="h2">Powiedz, co chcesz przechowywać</h2>
       <div class="product-form-grid">
-        <form class="product-form" id="product-form">
+        <form class="product-form" id="product-form" novalidate>
           <input type="text" name="name" placeholder="Imię i nazwisko" required>
           <input type="tel" name="phone" placeholder="Telefon" required>
           <input type="email" name="email" placeholder="Email (opcjonalnie)">
@@ -235,8 +235,12 @@
             
           </select>
           <textarea name="message" rows="4" placeholder="Co będziesz trzymać? Jaki rozmiar? Potrzebujesz izolację?"></textarea>
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <label class="form-consent"><input type="checkbox" name="consent" required> Wyrażam zgodę na przetwarzanie danych osobowych. <a href="polityka-prywatnosci.html" target="_blank">Polityka prywatności</a></label>
           <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie</button>
           <p class="form-note">Oddzwaniamy w ciągu 24 godzin. Wycena za darmo, bez zobowiązań.</p>
+          <p class="form-success" id="product-form-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">Wysłano! Odezwiemy się w ciągu 24 godzin.</p>
+          <p class="form-error" id="product-form-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:12px"></p>
         </form>
         <div class="product-form-info">
           <h3>Jak to wygląda?</h3>
@@ -362,5 +366,6 @@
     "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "5"}
   }
   </script>
+  <script src="form-handler.js"></script>
 </body>
 </html>
