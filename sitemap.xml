@@ -76,4 +76,42 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- CENNIK + REGIONALNE -->
+  <url>
+    <loc>https://stago.com.pl/blog/cennik-pawilonow-2026.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://stago.com.pl/blog/pawilony-modulowe-kielce.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stago.com.pl/blog/pawilony-modulowe-krakow.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stago.com.pl/blog/pawilony-modulowe-katowice.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stago.com.pl/blog/pawilony-modulowe-warszawa.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stago.com.pl/blog/pawilony-modulowe-lodz.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

@@ -49,6 +49,12 @@ const pages = [
   { content: 'content/blog/pawilon-handlowy-cena.json', template: 'templates/blog.html', output: 'blog/pawilon-handlowy-cena.html' },
   { content: 'content/blog/kontener-biurowy-cena.json', template: 'templates/blog.html', output: 'blog/kontener-biurowy-cena.html' },
   { content: 'content/blog/pawilon-bez-pozwolenia.json', template: 'templates/blog.html', output: 'blog/pawilon-bez-pozwolenia.html' },
+  { content: 'content/blog/cennik-pawilonow-2026.json', template: 'templates/blog.html', output: 'blog/cennik-pawilonow-2026.html' },
+  { content: 'content/blog/pawilony-modulowe-kielce.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-kielce.html' },
+  { content: 'content/blog/pawilony-modulowe-krakow.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-krakow.html' },
+  { content: 'content/blog/pawilony-modulowe-katowice.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-katowice.html' },
+  { content: 'content/blog/pawilony-modulowe-warszawa.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-warszawa.html' },
+  { content: 'content/blog/pawilony-modulowe-lodz.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-lodz.html' },
 ];
 
 pages.forEach(({ content: contentPath, template: templatePath, output }) => {
