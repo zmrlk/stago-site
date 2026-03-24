@@ -169,8 +169,8 @@
   },
   "blog": {
     "eyebrow": "Poradniki",
-    "h2": "Kupujesz pawilon?",
-    "sub": "Pomożemy. Podrzucamy kilka rzeczy, które warto wiedzieć — niezależnie od tego, u kogo zamówisz.",
+    "h2": "O czym powinieneś wiedzieć",
+    "sub": "przed zakupem.",
     "items": [
       { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.png", "date": "Poradnik", "title": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę", "desc": "7 konkretnych rzeczy do sprawdzenia. Spawy, izolacja, dach, ukryte koszty. Zanim wyślesz przelew — przeczytaj." },
       { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.png", "date": "Poradnik", "title": "Odebrałeś pawilon. I co teraz? Kontrola jakości krok po kroku.", "desc": "Pawilon przyjechał na lawecie. Co sprawdzić zanim podpiszesz protokół? Dach, spawy, okna, podłoga — checklista." },
@@ -179,7 +179,7 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "h2": "Masz pytania?",
+    "h2": "Klienci często pytają nas o:",
     "items": [
       { "q": "Ile kosztuje pawilon modułowy?", "a": "Cena zależy od rozmiaru, wykończenia i wyposażenia. Podstawowy pawilon handlowy 3x2m zaczyna się od ok. 15 000 zł netto. Większe i bardziej zaawansowane modele — od 25 000 zł. Każdy projekt wyceniamy indywidualnie — wycena jest darmowa." },
       { "q": "Jak długo trwa realizacja?", "a": "Termin ustalamy indywidualnie przy podpisaniu umowy — i go dotrzymujemy. Zależy od rozmiaru i specyfikacji. Konkretną datę podajemy zanim zaczniesz cokolwiek płacić." },
