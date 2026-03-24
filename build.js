@@ -55,6 +55,12 @@ const pages = [
   { content: 'content/blog/pawilony-modulowe-katowice.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-katowice.html' },
   { content: 'content/blog/pawilony-modulowe-warszawa.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-warszawa.html' },
   { content: 'content/blog/pawilony-modulowe-lodz.json', template: 'templates/blog.html', output: 'blog/pawilony-modulowe-lodz.html' },
+  // Use-case SEO landing pages
+  { content: 'content/blog/pawilon-handlowy-producent.json', template: 'templates/blog.html', output: 'blog/pawilon-handlowy-producent.html' },
+  { content: 'content/blog/kontener-biurowy-producent.json', template: 'templates/blog.html', output: 'blog/kontener-biurowy-producent.html' },
+  { content: 'content/blog/pawilon-gastronomiczny.json', template: 'templates/blog.html', output: 'blog/pawilon-gastronomiczny.html' },
+  { content: 'content/blog/kontener-uslugowy.json', template: 'templates/blog.html', output: 'blog/kontener-uslugowy.html' },
+  { content: 'content/blog/dom-modulowy-producent.json', template: 'templates/blog.html', output: 'blog/dom-modulowy-producent.html' },
 ];
 
 pages.forEach(({ content: contentPath, template: templatePath, output }) => {

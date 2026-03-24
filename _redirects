@@ -1,0 +1,19 @@
+# Przekierowania starych URL-i → strona główna
+# Format: /stara-sciezka /nowa-sciezka kod
+# 301 = permanent redirect (SEO juice transfer)
+
+# Stare strony z obecnej stago.com.pl (Lovable)
+/kontakty                    / 301
+/o-nas                       / 301
+/oferta                      / 301
+/galeria                     / 301
+/realizacje                  / 301
+/produkty                    / 301
+/kontener-handlowy           / 301
+/kontener-handlowy.html      /pawilon-handlowy.html 301
+/pawilon-modulowy            / 301
+/pawilony                    / 301
+/cennik                      /blog/cennik-pawilonow-2026.html 301
+
+# Catch-all: nieistniejące strony → strona główna
+/*                           /index.html 200
