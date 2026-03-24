@@ -1,354 +1,345 @@
 /**
- * STAGO - Centralny Form Handler
- * Wersja: 1.0 | Kompatybilny ze wszystkimi 17 stronami
+ * STAGO Form Handler v2.0 — Production
  * 
- * Funkcje:
- * - Honeypot anti-bot
- * - Rate limiting 30s
- * - Walidacja + sanityzacja
- * - RODO consent checkbox
- * - INSERT do Supabase (tabela leads)
- * - Opcjonalne powiadomienie email (Edge Function)
- * - Fallback: console.log gdy Supabase niedostępne
+ * Wysyła dane formularza TYLKO do Edge Function send-contact-email.
+ * Zero bezpośrednich INSERT do REST API = zero duplikatów.
+ * 
+ * Użycie: <script src="/form-handler.js"></script>
+ * Formularz musi mieć atrybut data-contact-form lub id="contactForm"
  */
+(function () {
+  'use strict';
 
-const CONFIG = {
-  SUPABASE_URL: 'https://zrdlyhizxkqxpzqdogyr.supabase.co',
-  SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpyZGx5aGl6eGtxeHB6cWRvZ3lyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk5NTgzNjIsImV4cCI6MjA4NTUzNDM2Mn0.sUyVFPgSKv5N0j3PuXcQkRmoLWyseKGY1Lk8IU65h9k',
-  LEADS_TABLE: 'leads',
-  NOTIFY_ENDPOINT: 'https://zrdlyhizxkqxpzqdogyr.supabase.co/functions/v1/send-contact-email',
-  RATE_LIMIT_MS: 30000,
-  MAX_FIELD_LENGTH: 2000,
-};
-
-// ===================== SANITYZACJA =====================
-
-function sanitize(str, maxLen) {
-  if (!str) return '';
-  return str
-    .replace(/<[^>]*>/g, '')        // strip HTML
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#x27;')
-    .replace(/javascript:/gi, '')
-    .replace(/on\w+=/gi, '')
-    .trim()
-    .slice(0, maxLen || CONFIG.MAX_FIELD_LENGTH);
-}
-
-function sanitizePhone(phone) {
-  if (!phone) return '';
-  return phone.replace(/[^\d\s+\-()]/g, '').trim().slice(0, 30);
-}
-
-function sanitizeEmail(email) {
-  if (!email) return '';
-  return email.replace(/[<>'"\\]/g, '').trim().toLowerCase().slice(0, 255);
-}
-
-// ===================== WALIDACJA =====================
-
-function validateForm(data) {
-  const errors = [];
-
-  if (!data.name || data.name.length < 2) {
-    errors.push('Imię musi mieć co najmniej 2 znaki');
-  }
-  if (data.name && data.name.length > 100) {
-    errors.push('Imię nie może przekraczać 100 znaków');
-  }
-
-  if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-    errors.push('Nieprawidłowy adres email');
-  }
-
-  if (data.phone && data.phone.length < 9) {
-    errors.push('Numer telefonu musi mieć co najmniej 9 znaków');
-  }
-  if (data.phone && !/^[\d\s+\-()]+$/.test(data.phone)) {
-    errors.push('Nieprawidłowy format telefonu');
-  }
-
-  if (data.message && data.message.length < 10) {
-    errors.push('Wiadomość musi mieć co najmniej 10 znaków');
-  }
-
-  return errors;
-}
-
-// ===================== RATE LIMITING =====================
-
-const lastSubmitTimes = {};
-
-function isRateLimited(formId) {
-  const now = Date.now();
-  const last = lastSubmitTimes[formId] || 0;
-  if (now - last < CONFIG.RATE_LIMIT_MS) {
-    return true;
-  }
-  lastSubmitTimes[formId] = now;
-  return false;
-}
-
-// ===================== SUPABASE INSERT =====================
-
-async function insertLead(leadData) {
-  const url = `${CONFIG.SUPABASE_URL}/rest/v1/${CONFIG.LEADS_TABLE}`;
-
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'apikey': CONFIG.SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
-      'Prefer': 'return=minimal',
-    },
-    body: JSON.stringify(leadData),
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Supabase error ${response.status}: ${errorText}`);
-  }
-
-  return true;
-}
-
-// ===================== POWIADOMIENIE EMAIL =====================
-
-async function notifyNewLead(leadData) {
-  if (!CONFIG.NOTIFY_ENDPOINT) {
-    // Fallback: bezpośredni INSERT jeśli Edge Function nie skonfigurowana
-    await insertLead(leadData);
-    return;
-  }
-
-  const res = await fetch(CONFIG.NOTIFY_ENDPOINT, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
-    },
-    body: JSON.stringify({
-      name: leadData.name,
-      email: leadData.email || '',
-      phone: leadData.phone || '',
-      containerType: leadData.container_type || null,
-      message: leadData.description || '',
-      language: document.documentElement.lang || 'pl',
-    }),
-  });
-
-  if (!res.ok) {
-    throw new Error(`Edge Function error: ${res.status}`);
-  }
-}
-
-// ===================== UI HELPERS =====================
-
-function showMessage(form, type, text) {
-  // Usuń poprzednie komunikaty
-  const existing = form.querySelectorAll('.form-message');
-  existing.forEach(el => el.remove());
-
-  const msg = document.createElement('div');
-  msg.className = `form-message form-message--${type}`;
-  msg.setAttribute('role', 'alert');
-  msg.textContent = text;
-
-  // Style inline (fallback jeśli brak CSS)
-  msg.style.cssText = type === 'success'
-    ? 'padding:16px;margin-top:16px;background:#059669;color:#fff;border-radius:8px;font-weight:600;text-align:center;'
-    : 'padding:16px;margin-top:16px;background:#dc2626;color:#fff;border-radius:8px;font-weight:600;text-align:center;';
-
-  form.appendChild(msg);
-
-  // Auto-ukryj po 8s
-  setTimeout(() => msg.remove(), 8000);
-}
-
-function setSubmitting(form, isSubmitting) {
-  const btn = form.querySelector('button[type="submit"], input[type="submit"]');
-  if (btn) {
-    btn.disabled = isSubmitting;
-    if (isSubmitting) {
-      btn.dataset.originalText = btn.textContent;
-      btn.textContent = 'Wysyłanie...';
-    } else {
-      btn.textContent = btn.dataset.originalText || 'Wyślij';
-    }
-  }
-}
-
-// ===================== GŁÓWNA LOGIKA =====================
-
-function extractFormData(form) {
-  const formData = new FormData(form);
-  const data = {};
-
-  // Mapowanie pól formularza → kolumny w tabeli leads
-  const fieldMap = {
-    'name': 'name',
-    'imie': 'name',
-    'nazwisko': 'name',       // jeśli osobne pole
-    'email': 'email',
-    'e-mail': 'email',
-    'phone': 'phone',
-    'telefon': 'phone',
-    'tel': 'phone',
-    'company': 'company',
-    'firma': 'company',
-    'container_type': 'container_type',
-    'typ': 'container_type',
-    'typ-kontenera': 'container_type',
-    'message': 'description',
-    'wiadomosc': 'description',
-    'tresc': 'description',
-    'opis': 'description',
-    'notes': 'description',
-    'uwagi': 'description',
+  // ─── CONFIG ───────────────────────────────────────────────────────
+  var CONFIG = {
+    ENDPOINT: 'https://zrdlyhizxkqxpzqdogyr.supabase.co/functions/v1/send-contact-email',
+    RATE_LIMIT_MS: 30000,
+    MAX_MESSAGE_LENGTH: 2000,
+    HONEYPOT_FIELD: 'website_url',
+    SUCCESS_REDIRECT: null // null = pokaż komunikat inline
   };
 
-  for (const [key, value] of formData.entries()) {
-    const normalizedKey = key.toLowerCase().replace(/[\s_-]+/g, '-');
-    const mappedField = fieldMap[normalizedKey] || fieldMap[key.toLowerCase()];
+  // ─── STATE ────────────────────────────────────────────────────────
+  var lastSubmitTime = 0;
 
-    if (mappedField && typeof value === 'string' && value.trim()) {
-      if (mappedField === 'email') {
-        data[mappedField] = sanitizeEmail(value);
-      } else if (mappedField === 'phone') {
-        data[mappedField] = sanitizePhone(value);
+  // ─── LANGUAGE DETECTION ───────────────────────────────────────────
+  function detectLanguage() {
+    var lang = document.documentElement.lang || '';
+    if (lang.startsWith('cs') || lang.startsWith('cz')) return 'cz';
+    if (lang.startsWith('sk')) return 'sk';
+    if (lang.startsWith('en')) return 'en';
+    if (lang.startsWith('pl')) return 'pl';
+
+    var path = window.location.pathname.toLowerCase();
+    if (path.indexOf('/cz/') !== -1 || path.indexOf('/cs/') !== -1) return 'cz';
+    if (path.indexOf('/sk/') !== -1) return 'sk';
+    if (path.indexOf('/en/') !== -1) return 'en';
+
+    return 'pl';
+  }
+
+  // ─── MESSAGES ─────────────────────────────────────────────────────
+  var MESSAGES = {
+    pl: {
+      success: 'Dziękujemy! Wiadomość została wysłana. Odezwiemy się jak najszybciej.',
+      error: 'Wystąpił błąd. Spróbuj ponownie lub zadzwoń do nas.',
+      rateLimit: 'Proszę poczekać 30 sekund przed ponownym wysłaniem.',
+      invalidEmail: 'Proszę podać poprawny adres e-mail.',
+      sending: 'Wysyłanie...'
+    },
+    cz: {
+      success: 'Děkujeme! Zpráva byla odeslána. Ozveme se co nejdříve.',
+      error: 'Došlo k chybě. Zkuste to znovu nebo nám zavolejte.',
+      rateLimit: 'Počkejte prosím 30 sekund před dalším odesláním.',
+      invalidEmail: 'Zadejte prosím platnou e-mailovou adresu.',
+      sending: 'Odesílání...'
+    },
+    sk: {
+      success: 'Ďakujeme! Správa bola odoslaná. Ozveme sa čo najskôr.',
+      error: 'Vyskytla sa chyba. Skúste to znova alebo nám zavolajte.',
+      rateLimit: 'Počkajte prosím 30 sekúnd pred ďalším odoslaním.',
+      invalidEmail: 'Zadajte prosím platnú e-mailovú adresu.',
+      sending: 'Odosielanie...'
+    },
+    en: {
+      success: 'Thank you! Your message has been sent. We\'ll get back to you soon.',
+      error: 'Something went wrong. Please try again or call us.',
+      rateLimit: 'Please wait 30 seconds before submitting again.',
+      invalidEmail: 'Please enter a valid email address.',
+      sending: 'Sending...'
+    }
+  };
+
+  // ─── SANITIZATION ────────────────────────────────────────────────
+  function sanitize(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/<[^>]*>/g, '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#x27;')
+      .replace(/javascript:/gi, '')
+      .replace(/on\w+=/gi, '')
+      .trim()
+      .substring(0, CONFIG.MAX_MESSAGE_LENGTH);
+  }
+
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  // ─── FIELD MAPPER ─────────────────────────────────────────────────
+  var FIELD_MAP = {
+    name: [
+      'imię', 'imie', 'imię i nazwisko', 'name', 'your name', 'full name',
+      'jméno', 'meno', 'imię*', 'imie*'
+    ],
+    email: [
+      'email', 'e-mail', 'adres e-mail', 'adres email', 'your email',
+      'e-mailová adresa', 'email*', 'e-mail*'
+    ],
+    phone: [
+      'telefon', 'phone', 'numer telefonu', 'nr telefonu', 'your phone',
+      'telefón', 'telefonní číslo', 'telefon*'
+    ],
+    message: [
+      'wiadomość', 'wiadomosc', 'message', 'treść', 'tresc', 'your message',
+      'twoja wiadomość', 'zpráva', 'správa', 'wiadomość*'
+    ],
+    containerType: [
+      'typ kontenera', 'container type', 'rodzaj kontenera', 'typ kontejneru',
+      'typ kontajnera', 'typ kontenera*'
+    ]
+  };
+
+  function mapFormFields(form) {
+    var data = {};
+    var inputs = form.querySelectorAll('input, textarea, select');
+
+    for (var i = 0; i < inputs.length; i++) {
+      var input = inputs[i];
+      var value = (input.value || '').trim();
+      if (!value) continue;
+
+      // Skip honeypot, hidden, submit, checkbox, button
+      if (input.name === CONFIG.HONEYPOT_FIELD) continue;
+      if (input.type === 'hidden' || input.type === 'submit' || input.type === 'button') continue;
+      if (input.type === 'checkbox') continue;
+
+      // Try matching by name attribute first
+      var fieldName = (input.name || '').toLowerCase().trim();
+      var label = '';
+
+      // Try to get label text
+      if (input.id) {
+        var labelEl = form.querySelector('label[for="' + input.id + '"]');
+        if (labelEl) label = (labelEl.textContent || '').toLowerCase().trim();
+      }
+      if (!label && input.placeholder) {
+        label = input.placeholder.toLowerCase().trim();
+      }
+
+      // Remove asterisks from label for matching
+      var cleanLabel = label.replace(/\*/g, '').trim();
+      var cleanFieldName = fieldName.replace(/\*/g, '').trim();
+
+      var matched = false;
+      for (var key in FIELD_MAP) {
+        if (data[key]) continue; // already mapped
+        var aliases = FIELD_MAP[key];
+        for (var j = 0; j < aliases.length; j++) {
+          var alias = aliases[j].replace(/\*/g, '').trim();
+          if (cleanFieldName === alias || cleanLabel === alias || fieldName === key) {
+            data[key] = sanitize(value);
+            matched = true;
+            break;
+          }
+        }
+        if (matched) break;
+      }
+
+      // Fallback: map by input type
+      if (!matched) {
+        if (input.type === 'email' && !data.email) {
+          data.email = sanitize(value);
+        } else if (input.type === 'tel' && !data.phone) {
+          data.phone = sanitize(value);
+        } else if (input.tagName === 'TEXTAREA' && !data.message) {
+          data.message = sanitize(value);
+        }
+      }
+    }
+
+    return data;
+  }
+
+  // ─── UI FEEDBACK ──────────────────────────────────────────────────
+  function showMessage(form, text, isError) {
+    // Remove existing message
+    var existing = form.querySelector('.form-handler-msg');
+    if (existing) existing.remove();
+
+    var div = document.createElement('div');
+    div.className = 'form-handler-msg';
+    div.style.cssText = 'padding:12px 16px;margin-top:12px;border-radius:8px;font-size:14px;line-height:1.5;';
+    div.style.backgroundColor = isError ? '#fef2f2' : '#f0fdf4';
+    div.style.color = isError ? '#991b1b' : '#166534';
+    div.style.border = '1px solid ' + (isError ? '#fecaca' : '#bbf7d0');
+    div.textContent = text;
+    form.appendChild(div);
+
+    // Auto-remove after 8s
+    setTimeout(function () {
+      if (div.parentNode) div.remove();
+    }, 8000);
+  }
+
+  function setSubmitButton(form, loading, lang) {
+    var btn = form.querySelector('button[type="submit"], input[type="submit"]');
+    if (!btn) return;
+
+    if (loading) {
+      btn._originalText = btn.textContent || btn.value;
+      var loadingText = (MESSAGES[lang] || MESSAGES.pl).sending;
+      if (btn.tagName === 'INPUT') {
+        btn.value = loadingText;
       } else {
-        data[mappedField] = sanitize(value, mappedField === 'description' ? 5000 : 100);
+        btn.textContent = loadingText;
+      }
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+    } else {
+      if (btn._originalText) {
+        if (btn.tagName === 'INPUT') {
+          btn.value = btn._originalText;
+        } else {
+          btn.textContent = btn._originalText;
+        }
+      }
+      btn.disabled = false;
+      btn.style.opacity = '1';
+    }
+  }
+
+  // ─── SUBMIT HANDLER ──────────────────────────────────────────────
+  function handleSubmit(e) {
+    e.preventDefault();
+    var form = e.target;
+    var lang = detectLanguage();
+    var msgs = MESSAGES[lang] || MESSAGES.pl;
+
+    // Honeypot check
+    var honeypot = form.querySelector('[name="' + CONFIG.HONEYPOT_FIELD + '"]');
+    if (honeypot && honeypot.value) {
+      // Bot detected — silently pretend success
+      showMessage(form, msgs.success, false);
+      return;
+    }
+
+    // Rate limiting
+    var now = Date.now();
+    if (now - lastSubmitTime < CONFIG.RATE_LIMIT_MS) {
+      showMessage(form, msgs.rateLimit, true);
+      return;
+    }
+
+    // Map fields
+    var data = mapFormFields(form);
+
+    // Validate required fields
+    if (!data.email || !isValidEmail(data.email)) {
+      showMessage(form, msgs.invalidEmail, true);
+      return;
+    }
+
+    // Set loading state
+    lastSubmitTime = now;
+    setSubmitButton(form, true, lang);
+
+    // Konfigurator — dołącz state do message
+    if ((form.id === 'cfgForm' || form.classList.contains('cfg-form')) && typeof state !== 'undefined') {
+      var cfgLines = [];
+      if (state.type) cfgLines.push('Typ: ' + state.type);
+      if (state.dimL && state.dimW) cfgLines.push('Wymiary: ' + state.dimL + ' × ' + state.dimW + ' × ' + (state.dimH || '2.8') + ' m');
+      if (state.profil) cfgLines.push('Profil blachy: ' + state.profil);
+      if (state.kolorScian) cfgLines.push('Kolor ścian: ' + state.kolorScian);
+      if (state.okucia) cfgLines.push('Okucia: ' + state.okucia);
+      if (state.kolorOkuc) cfgLines.push('Kolor okuć: ' + state.kolorOkuc);
+      if (state.doorType) cfgLines.push('Drzwi: ' + state.doorType + ' × ' + (state.doorQty || 1));
+      if (state.windowType) cfgLines.push('Okna: ' + state.windowType + ' × ' + (state.windowQty || 2));
+      if (state.extras && state.extras.length) cfgLines.push('Wyposażenie: ' + state.extras.join(', '));
+      if (data.message) cfgLines.push('Uwagi: ' + data.message);
+      data.message = cfgLines.join('\n');
+      data.containerType = state.type || data.containerType;
+    }
+
+    // Build payload
+    var payload = {
+      name: data.name || '',
+      email: data.email,
+      phone: data.phone || '',
+      message: data.message || '',
+      containerType: data.containerType || '',
+      language: lang
+    };
+
+    // Send to Edge Function ONLY — no direct REST API insert
+    fetch(CONFIG.ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status);
+        }
+        return response.json();
+      })
+      .then(function () {
+        setSubmitButton(form, false, lang);
+        form.reset();
+        showMessage(form, msgs.success, false);
+
+        if (CONFIG.SUCCESS_REDIRECT) {
+          setTimeout(function () {
+            window.location.href = CONFIG.SUCCESS_REDIRECT;
+          }, 1500);
+        }
+      })
+      .catch(function (err) {
+        console.error('[STAGO] Form submission error:', err);
+        setSubmitButton(form, false, lang);
+        showMessage(form, msgs.error, true);
+      });
+  }
+
+  // ─── INIT ─────────────────────────────────────────────────────────
+  function init() {
+    var forms = document.querySelectorAll('[data-contact-form], [data-stago-form], #contactForm, #contact-form, #product-form, #cfgForm, form.contact-form, form.product-form, form.cfg-form');
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener('submit', handleSubmit);
+    }
+
+    // Inject honeypot field into forms that don't have it
+    for (var j = 0; j < forms.length; j++) {
+      if (!forms[j].querySelector('[name="' + CONFIG.HONEYPOT_FIELD + '"]')) {
+        var hp = document.createElement('input');
+        hp.type = 'text';
+        hp.name = CONFIG.HONEYPOT_FIELD;
+        hp.tabIndex = -1;
+        hp.autocomplete = 'off';
+        hp.style.cssText = 'position:absolute;left:-9999px;top:-9999px;opacity:0;height:0;width:0;';
+        forms[j].appendChild(hp);
       }
     }
   }
 
-  return data;
-}
-
-async function handleFormSubmit(event) {
-  event.preventDefault();
-  const form = event.target;
-  const formId = form.id || form.action || 'default';
-
-  // 1. Honeypot check
-  const honeypot = form.querySelector('[name="website"], [name="url"], [name="hp_field"]');
-  if (honeypot && honeypot.value) {
-    // Bot detected — fake success
-    showMessage(form, 'success', 'Dziękujemy! Skontaktujemy się wkrótce.');
-    return;
+  // Run on DOMContentLoaded or immediately if already loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
-
-  // 2. RODO consent check
-  const consent = form.querySelector('[name="gdpr"], [name="consent"], [name="rodo"], [id*="gdpr"], [id*="consent"], [id*="rodo"]');
-  if (consent && !consent.checked) {
-    showMessage(form, 'error', 'Proszę zaakceptować zgodę na przetwarzanie danych osobowych.');
-    return;
-  }
-
-  // 3. Rate limiting
-  if (isRateLimited(formId)) {
-    showMessage(form, 'error', 'Proszę poczekać 30 sekund przed ponownym wysłaniem.');
-    return;
-  }
-
-  // 4. Extract & sanitize
-  const data = extractFormData(form);
-
-  // 5. Validate
-  const errors = validateForm(data);
-  if (errors.length > 0) {
-    showMessage(form, 'error', errors[0]);
-    return;
-  }
-
-  // 5b. Konfigurator — dołącz state do description
-  if (form.id === 'cfgForm' && typeof state !== 'undefined') {
-    const cfgLines = [];
-    if (state.type) cfgLines.push('Typ: ' + state.type);
-    if (state.dimL && state.dimW) cfgLines.push('Wymiary: ' + state.dimL + ' × ' + state.dimW + ' × ' + (state.dimH || '2.8') + ' m');
-    if (state.profil) cfgLines.push('Profil blachy: ' + state.profil);
-    if (state.kolorScian) cfgLines.push('Kolor ścian: ' + state.kolorScian);
-    if (state.okucia) cfgLines.push('Okucia: ' + state.okucia);
-    if (state.kolorOkuc) cfgLines.push('Kolor okuć: ' + state.kolorOkuc);
-    if (state.doorType) cfgLines.push('Drzwi: ' + state.doorType + ' × ' + (state.doorQty || 1));
-    if (state.windowType) cfgLines.push('Okna: ' + state.windowType + ' × ' + (state.windowQty || 2));
-    if (state.extras && state.extras.length) cfgLines.push('Wyposażenie: ' + state.extras.join(', '));
-    if (data.description) cfgLines.push('Uwagi: ' + data.description);
-    data.description = cfgLines.join('\n');
-    data.container_type = state.type || data.container_type;
-  }
-
-  // 6. Build lead object
-  const leadData = {
-    name: data.name,
-    email: data.email || null,
-    phone: data.phone || null,
-    company: data.company || null,
-    container_type: data.container_type || null,
-    description: data.description || null,
-    source: 'website',
-    // Pola z defaults w bazie:
-    // id, created_at, updated_at, priority, is_archived — automatyczne
-    // status_id — NULL, zostanie ustawiony ręcznie w CRM
-  };
-
-  setSubmitting(form, true);
-
-  try {
-    // 7. Edge Function tworzy leada + wysyła email (jeden endpoint, zero duplikatów)
-    await notifyNewLead(leadData);
-
-    // 8. Success
-    showMessage(form, 'success', 'Dziękujemy! Skontaktujemy się z Tobą w ciągu 24 godzin.');
-    form.reset();
-
-  } catch (err) {
-    console.error('[STAGO] Form submit error:', err);
-
-    // 10. Fallback — loguj dane (nie giną)
-    console.warn('[STAGO] Fallback — dane formularza:', JSON.stringify(leadData));
-
-    // Pokaż error ale z numerem telefonu
-    showMessage(form, 'error', 
-      'Wystąpił błąd. Spróbuj ponownie lub zadzwoń: +48 509 508 210');
-
-  } finally {
-    setSubmitting(form, false);
-  }
-}
-
-// ===================== AUTO-INIT =====================
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Znajdź wszystkie formularze z atrybutem data-stago-form lub klasą .stago-form
-  const forms = document.querySelectorAll('[data-stago-form], .stago-form, form[action*="stago"]');
-
-  forms.forEach(function(form) {
-    form.addEventListener('submit', handleFormSubmit);
-
-    // Dodaj honeypot (ukryte pole)
-    if (!form.querySelector('[name="hp_field"]')) {
-      const hp = document.createElement('input');
-      hp.type = 'text';
-      hp.name = 'hp_field';
-      hp.tabIndex = -1;
-      hp.autocomplete = 'off';
-      hp.style.cssText = 'position:absolute;left:-9999px;opacity:0;height:0;width:0;';
-      hp.setAttribute('aria-hidden', 'true');
-      form.insertBefore(hp, form.firstChild);
-    }
-  });
-
-  if (forms.length > 0) {
-    console.log(`[STAGO] Form handler aktywny na ${forms.length} formularzach`);
-  }
-});
-
-// Eksport dla modułów ES
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { handleFormSubmit, insertLead, CONFIG };
-}
+})();
