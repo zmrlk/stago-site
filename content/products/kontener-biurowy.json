@@ -31,7 +31,7 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "PIR 60-80mm",
+        "h3": "PIR 100mm",
         "text": "Ściany z płyty PIR. W styczniu w środku 22°C. W lipcu — nie parzysz się jak w blaszaku. To ta sama izolacja co w domach energooszczędnych."
       },
       {
@@ -56,7 +56,7 @@
       },
       {
         "h3": "BHP? Spokojnie — spełnia normy",
-        "text": "Minimum 2 m&sup2; na pracownika — jest. Oświetlenie 300 lux — jest. Wentylacja — okna otwierane albo mechaniczna. Temperatura minimum 18°C zimą — z PIR 60mm i klimą to żaden problem. PIP nie ma się do czego przyczepić."
+        "text": "Minimum 2 m&sup2; na pracownika — jest. Oświetlenie 300 lux — jest. Wentylacja — okna otwierane albo mechaniczna. Temperatura minimum 18°C zimą — z PIR 100mm i klimą to żaden problem. PIP nie ma się do czego przyczepić."
       },
       {
         "h3": "Przenosisz, kiedy chcesz",
@@ -88,7 +88,7 @@
     "items": [
       {
         "q": "Ile kosztuje kontener biurowy?",
-        "a": "Podstawowy moduł 2,4x6m z elektryką — od 18 000 zł netto. Z klimatyzacją i lepszą izolacją PIR 80mm — od 24 000 zł. Duży kontener 3x12m z łazienką i aneksem kuchennym — od 45 000 zł. Wycenę robię za darmo — zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/kontener-biurowy-cena.html\">Pierwsza zima w pawilonie &rarr;</a>"
+        "a": "Podstawowy moduł 2,4x6m z elektryką — od 18 000 zł netto. Z klimatyzacją i izolacją PIR 100mm — od 24 000 zł. Duży kontener 3x12m z łazienką i aneksem kuchennym — od 45 000 zł. Wycenę robię za darmo — zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/kontener-biurowy-cena.html\">Pierwsza zima w pawilonie &rarr;</a>"
       },
       {
         "q": "Mogę postawić go na swojej działce?",
@@ -96,7 +96,7 @@
       },
       {
         "q": "Ile kosztuje ogrzewanie zimą?",
-        "a": "Przy PIR 60mm i klimatyzacji z pompą ciepła — od 300 do 600 zł miesięcznie za prąd. Zależy od rozmiaru i temperatury, którą lubisz. To nie blaszak — ściany trzymają ciepło jak murówka."
+        "a": "Przy PIR 100mm i klimatyzacji z pompą ciepła — od 300 do 600 zł miesięcznie za prąd. Zależy od rozmiaru i temperatury, którą lubisz. To nie blaszak — ściany trzymają ciepło jak murówka."
       },
       {
         "q": "Może być łazienka i kuchnia?",

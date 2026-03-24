@@ -32,7 +32,7 @@
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Stal malowana proszkowo",
-        "text": "Rama stalowa malowana proszkowo, ściany z blachy trapezowej. Trwałe wykończenie na lata. Chcesz izolację? Dokładamy PIR 40-60mm."
+        "text": "Rama stalowa malowana proszkowo, ściany z blachy trapezowej. Trwałe wykończenie na lata. Izolacja PIR 100mm w standardzie."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0110 0v4\"/></svg>",
@@ -88,7 +88,7 @@
     "items": [
       {
         "q": "Ile kosztuje kontener magazynowy?",
-        "a": "Podstawowy 2,4x6m bez izolacji — od 12 000 zł netto. Z izolacją PIR 40mm — od 16 000 zł. Duży moduł 3x12m — od 28 000 zł. Wycena za darmo, zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Podstawowy 2,4x6m bez izolacji — od 12 000 zł netto. Z izolacją PIR 100mm — od 16 000 zł. Duży moduł 3x12m — od 28 000 zł. Wycena za darmo, zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Potrzebuję fundament?",
@@ -96,7 +96,7 @@
       },
       {
         "q": "Mogę dołożyć izolację później?",
-        "a": "Można, ale wychodzi drożej niż zamówienie od razu. Jeśli wiesz, że będziesz trzymać coś wrażliwego na temperaturę — zamów z PIR od początku. Izolacja 40mm dodaje około 4 000 zł do ceny."
+        "a": "Można, ale wychodzi drożej niż zamówienie od razu. Jeśli wiesz, że będziesz trzymać coś wrażliwego na temperaturę — zamów z PIR od początku. Izolacja PIR 100mm jest w standardzie."
       },
       {
         "q": "Co z kradzieżą? Jak zabezpieczony jest kontener?",
