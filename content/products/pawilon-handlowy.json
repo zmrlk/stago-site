@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Pawilony, które już stoją i zarabiają",
     "items": [
-      { "img": "assets/gallery/k2.png", "alt": "Pawilon handlowy STAGO — realizacja 1" },
-      { "img": "assets/gallery/k6.png", "alt": "Pawilon handlowy STAGO — realizacja 2" },
-      { "img": "assets/gallery/k9.png", "alt": "Pawilon handlowy STAGO — realizacja 3" }
+      { "img": "assets/gallery/k2.png", "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej, witryna przeszklona" },
+      { "img": "assets/gallery/k6.png", "alt": "Pawilon handlowy STAGO — sklep modułowy z oknami panoramicznymi" },
+      { "img": "assets/gallery/k9.png", "alt": "Pawilon handlowy STAGO — punkt usługowy z oknem podawczym" }
     ]
   },
   "faq": {

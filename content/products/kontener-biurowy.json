@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Biura, które już pracują",
     "items": [
-      { "img": "assets/gallery/k11.png", "alt": "Kontener biurowy STAGO — realizacja 1" },
-      { "img": "assets/gallery/k14.png", "alt": "Kontener biurowy STAGO — realizacja 2" },
-      { "img": "assets/gallery/k16.png", "alt": "Kontener biurowy STAGO — realizacja 3" }
+      { "img": "assets/gallery/k11.png", "alt": "Kontener biurowy STAGO — elewacja HPL, stolarka aluminiowa" },
+      { "img": "assets/gallery/k14.png", "alt": "Kontener biurowy STAGO — okładzina drewniana, izolacja PIR" },
+      { "img": "assets/gallery/k16.png", "alt": "Kontener biurowy STAGO — moduł z akcentem drewnianym i oknami" }
     ]
   },
   "faq": {

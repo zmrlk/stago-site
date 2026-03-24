@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://stago.com.pl/sitemap.xml
+Sitemap: https://stago.com.pl/sitemap-images.xml

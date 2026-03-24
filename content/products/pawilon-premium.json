@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Realizacje, które zaczęły się od \"czy da się...\"",
     "items": [
-      { "img": "assets/gallery/k6.png", "alt": "Pawilon premium STAGO — realizacja 1" },
-      { "img": "assets/gallery/k9.png", "alt": "Pawilon premium STAGO — realizacja 2" },
-      { "img": "assets/gallery/k22.png", "alt": "Pawilon premium STAGO — realizacja 3" }
+      { "img": "assets/gallery/k6.png", "alt": "Pawilon premium STAGO — moduł z oknami panoramicznymi, elewacja custom" },
+      { "img": "assets/gallery/k9.png", "alt": "Pawilon premium STAGO — punkt usługowy z oknem podawczym, projekt indywidualny" },
+      { "img": "assets/gallery/k22.png", "alt": "Pawilon premium STAGO — łączone moduły, konstrukcja piętrowa" }
     ]
   },
   "faq": {

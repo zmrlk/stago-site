@@ -122,15 +122,15 @@
     "h2accent": "co robimy.",
     "sub": "Każdy projekt inny — każdy pod klienta. Kliknij żeby powiększyć.",
     "items": [
-      { "img": "assets/gallery/k2.png", "alt": "Projekt STAGO #1", "label": "STAGO #1" },
-      { "img": "assets/gallery/k6.png", "alt": "Projekt STAGO #2", "label": "STAGO #2" },
-      { "img": "assets/gallery/k9.png", "alt": "Projekt STAGO #3", "label": "STAGO #3" },
-      { "img": "assets/gallery/k11.png", "alt": "Projekt STAGO #4", "label": "STAGO #4" },
-      { "img": "assets/gallery/k14.png", "alt": "Projekt STAGO #5", "label": "STAGO #5" },
-      { "img": "assets/gallery/k16.png", "alt": "Projekt STAGO #6", "label": "STAGO #6" },
-      { "img": "assets/gallery/k19.png", "alt": "Projekt STAGO #7", "label": "STAGO #7" },
-      { "img": "assets/gallery/k21.png", "alt": "Projekt STAGO #8", "label": "STAGO #8" },
-      { "img": "assets/gallery/k25.png", "alt": "Projekt STAGO #9", "label": "STAGO #9" }
+      { "img": "assets/gallery/k2.png", "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej", "label": "Kiosk handlowy, blacha antracyt" },
+      { "img": "assets/gallery/k6.png", "alt": "Kontener biurowy STAGO — moduł z oknami panoramicznymi", "label": "Biuro 6×3m, okna panoramiczne" },
+      { "img": "assets/gallery/k9.png", "alt": "Pawilon usługowy STAGO — punkt z oknem podawczym", "label": "Punkt usługowy, okno podawcze" },
+      { "img": "assets/gallery/k11.png", "alt": "Kontener biurowy STAGO — elewacja HPL", "label": "Kontener biurowy, elewacja HPL" },
+      { "img": "assets/gallery/k14.png", "alt": "Pawilon modułowy STAGO — okładzina drewniana", "label": "Pawilon z okładziną drewnianą" },
+      { "img": "assets/gallery/k16.png", "alt": "Kontener modułowy STAGO — akcent drewniany", "label": "Kontener z akcentem drewnianym" },
+      { "img": "assets/gallery/k19.png", "alt": "Kontener magazynowy STAGO — blacha grafitowa", "label": "Magazyn 6×2,4m, blacha grafitowa" },
+      { "img": "assets/gallery/k21.png", "alt": "Pawilon modułowy STAGO — pełna elewacja drewniana", "label": "Pawilon z pełną elewacją drewnianą" },
+      { "img": "assets/gallery/k25.png", "alt": "Moduły łączone STAGO — biuro i magazyn", "label": "Moduły łączone, biuro + magazyn" }
     ]
   },
   "reviews": {

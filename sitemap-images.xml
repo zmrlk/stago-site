@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Strona glowna -->
+  <url>
+    <loc>https://stago.com.pl/</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/hero.webp</image:loc>
+      <image:title>STAGO — producent pawilonow modulowych, budynki pod klucz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k2.png</image:loc>
+      <image:title>Pawilon handlowy STAGO — realizacja kiosku z blachy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k6.png</image:loc>
+      <image:title>Pawilon modulowy STAGO — realizacja sklepu</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k9.png</image:loc>
+      <image:title>Pawilon modulowy STAGO — realizacja punktu uslugowego</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k11.png</image:loc>
+      <image:title>Kontener biurowy STAGO — biuro modulowe na budowe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k14.png</image:loc>
+      <image:title>Kontener biurowy STAGO — realizacja biura przy firmie</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k16.png</image:loc>
+      <image:title>Pawilon modulowy STAGO — nowoczesna realizacja</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k19.png</image:loc>
+      <image:title>Kontener magazynowy STAGO — realizacja magazynu stalowego</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k21.png</image:loc>
+      <image:title>Pawilon mieszkalny STAGO — dom modulowy na dzialce</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k25.png</image:loc>
+      <image:title>Kontener sanitarny STAGO — zaplecze sanitarne</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/handlowy.png</image:loc>
+      <image:title>Pawilon handlowy STAGO — sklep modulowy od producenta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/biurowy.png</image:loc>
+      <image:title>Kontener biurowy STAGO — biuro modulowe od producenta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/mieszkalny.png</image:loc>
+      <image:title>Pawilon mieszkalny STAGO — dom modulowy od producenta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/sanitarny.png</image:loc>
+      <image:title>Kontener sanitarny STAGO — toalety i prysznice modulowe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/magazynowy.png</image:loc>
+      <image:title>Kontener magazynowy STAGO — magazyn stalowy od producenta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/premium.png</image:loc>
+      <image:title>Pawilon premium STAGO — projekt indywidualny, nietypowe wymiary</image:title>
+    </image:image>
+  </url>
+
+  <!-- Pawilon handlowy -->
+  <url>
+    <loc>https://stago.com.pl/pawilon-handlowy.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/handlowy.png</image:loc>
+      <image:title>Pawilon handlowy STAGO — sklep modulowy, kiosk od producenta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k2.png</image:loc>
+      <image:title>Pawilon handlowy STAGO — realizacja sklepu z witryna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k6.png</image:loc>
+      <image:title>Pawilon handlowy STAGO — gotowy punkt handlowy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k9.png</image:loc>
+      <image:title>Pawilon handlowy STAGO — kiosk modulowy z blachy</image:title>
+    </image:image>
+  </url>
+
+  <!-- Kontener biurowy -->
+  <url>
+    <loc>https://stago.com.pl/kontener-biurowy.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/biurowy.png</image:loc>
+      <image:title>Kontener biurowy STAGO — biuro modulowe z izolacja PIR</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k11.png</image:loc>
+      <image:title>Kontener biurowy STAGO — realizacja biura na budowie</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k14.png</image:loc>
+      <image:title>Kontener biurowy STAGO — biuro przy firmie z klimatyzacja</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k16.png</image:loc>
+      <image:title>Kontener biurowy STAGO — nowoczesne biuro modulowe</image:title>
+    </image:image>
+  </url>
+
+  <!-- Pawilon mieszkalny -->
+  <url>
+    <loc>https://stago.com.pl/pawilon-mieszkalny.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/mieszkalny.png</image:loc>
+      <image:title>Pawilon mieszkalny STAGO — dom modulowy z lazienka i kuchnia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k14.png</image:loc>
+      <image:title>Dom modulowy STAGO — realizacja pawilonu mieszkalnego</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k16.png</image:loc>
+      <image:title>Dom modulowy STAGO — pawilon mieszkalny calorocznie</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k21.png</image:loc>
+      <image:title>Dom modulowy STAGO — domek letniskowy na dzialce</image:title>
+    </image:image>
+  </url>
+
+  <!-- Kontener sanitarny -->
+  <url>
+    <loc>https://stago.com.pl/kontener-sanitarny.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/sanitarny.png</image:loc>
+      <image:title>Kontener sanitarny STAGO — toalety, prysznice, szatnie modulowe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k11.png</image:loc>
+      <image:title>Kontener sanitarny STAGO — zaplecze sanitarne na budowe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k19.png</image:loc>
+      <image:title>Kontener sanitarny STAGO — WC i prysznice modulowe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k25.png</image:loc>
+      <image:title>Kontener sanitarny STAGO — realizacja wezla sanitarnego</image:title>
+    </image:image>
+  </url>
+
+  <!-- Kontener magazynowy -->
+  <url>
+    <loc>https://stago.com.pl/kontener-magazynowy.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/magazynowy.png</image:loc>
+      <image:title>Kontener magazynowy STAGO — magazyn stalowy, garaz od producenta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k19.png</image:loc>
+      <image:title>Kontener magazynowy STAGO — realizacja magazynu na budowie</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k21.png</image:loc>
+      <image:title>Kontener magazynowy STAGO — magazyn firmowy stalowy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k25.png</image:loc>
+      <image:title>Kontener magazynowy STAGO — schowek na narzedzia i sprzet</image:title>
+    </image:image>
+  </url>
+
+  <!-- Pawilon premium -->
+  <url>
+    <loc>https://stago.com.pl/pawilon-premium.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/products/premium.png</image:loc>
+      <image:title>Pawilon premium STAGO — projekt indywidualny, nietypowe wymiary</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k6.png</image:loc>
+      <image:title>Pawilon premium STAGO — realizacja nietypowego projektu</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k9.png</image:loc>
+      <image:title>Pawilon premium STAGO — budynek modulowy laczone moduly</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k22.png</image:loc>
+      <image:title>Pawilon premium STAGO — pietrowy budynek modulowy</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog: Jak sprawdzic producenta pawilonow -->
+  <url>
+    <loc>https://stago.com.pl/blog/pawilon-handlowy-cena.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k2.png</image:loc>
+      <image:title>Jak sprawdzic producenta pawilonow — wizyta w zakladzie STAGO</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog: Odbior pawilonu — kontrola jakosci -->
+  <url>
+    <loc>https://stago.com.pl/blog/pawilon-bez-pozwolenia.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k9.png</image:loc>
+      <image:title>Odbior pawilonu modulowego — kontrola jakosci krok po kroku</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog: Pierwsza zima w pawilonie -->
+  <url>
+    <loc>https://stago.com.pl/blog/kontener-biurowy-cena.html</loc>
+    <image:image>
+      <image:loc>https://stago.com.pl/assets/gallery/k6.png</image:loc>
+      <image:title>Pawilon modulowy zima — ogrzewanie i izolacja PIR</image:title>
+    </image:image>
+  </url>
+
+</urlset>
