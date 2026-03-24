@@ -77,23 +77,10 @@
       <p class="hero-sub">{{{hero.sub}}}</p>
       <div class="hero-cta">
         <a href="konfigurator.html" class="btn btn-primary">Darmowa wycena</a>
-        <a href="#o-firmie" class="btn btn-outline-light">Poznaj nas</a>
       </div>
     </div>
     <div class="hero-scroll">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-    </div>
-  </section>
-
-  <!-- TRUST BAR -->
-  <section class="trust-bar">
-    <div class="container trust-inner">
-      {{#trust}}
-      <div class="trust-item">
-        <strong>{{value}}</strong>
-        <span>{{label}}</span>
-      </div>
-      {{/trust}}
     </div>
   </section>
 
@@ -103,15 +90,13 @@
       <p class="eyebrow">{{caseStudy.eyebrow}}</p>
       <div class="story-layout reveal">
         <div class="story-content">
+          <p class="story-intro">{{{caseStudy.intro}}}</p>
           <h2 class="story-h2">{{{caseStudy.h2}}}<br><span class="accent">{{caseStudy.h2accent}}</span></h2>
-          <div class="story-timeline">
+          <div class="story-steps">
             {{#caseStudy.steps}}
-            <div class="story-timeline-step">
-              <div class="story-timeline-dot"></div>
-              <div class="story-timeline-body">
-                <h4>{{label}}</h4>
-                <p>{{{text}}}</p>
-              </div>
+            <div class="story-card">
+              <h4>{{label}}</h4>
+              <p>{{{text}}}</p>
             </div>
             {{/caseStudy.steps}}
           </div>
@@ -184,7 +169,7 @@
             <h3>{{name}}</h3>
             <p>{{desc}}</p>
             <span class="product-price">{{price}}</span>
-            <span class="product-cta">Zobacz szczegóły &rarr;</span>
+            <span class="product-cta">{{cta}}</span>
           </div>
         </a>
         {{/products.items}}

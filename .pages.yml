@@ -68,11 +68,12 @@ content:
             type: object
             list: true
             fields:
-              - { name: name, label: Nazwa, type: string }
+              - { name: name, label: Nazwa modelu, type: string }
               - { name: desc, label: Opis, type: text }
               - { name: price, label: Cena, type: string }
               - { name: href, label: Link, type: string }
               - { name: img, label: Zdjęcie, type: image }
+              - { name: cta, label: Tekst CTA, type: string }
 
       - name: reviews
         label: Opinie
@@ -106,6 +107,7 @@ content:
         type: object
         fields:
           - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: intro, label: Intro (nad tytułem), type: text }
           - { name: h2, label: Tytuł, type: string }
           - { name: h2accent, label: Tytuł (akcent), type: string }
           - { name: quote, label: Cytat, type: text }
