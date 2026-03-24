@@ -458,17 +458,21 @@ body.nav-open{overflow:hidden}
 @media(max-width:768px){
   /* ── Mobile nav overlay ── */
   .nav-links{
-    display:none;
-    position:fixed;inset:0;z-index:199;
+    display:none !important;
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    width:100vw;height:100vh;height:100dvh;
+    z-index:250;
     background:#1D1D1B;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     gap:0;
     padding:40px 40px 120px;
+    overflow-y:auto;
   }
   .nav-links.open{
-    display:flex;
+    display:flex !important;
   }
   .nav-links a{
     font-size:1.5rem;
@@ -506,7 +510,7 @@ body.nav-open{overflow:hidden}
   }
   .nav-mobile-bottom .nav-mobile-socials a:hover{color:var(--accent)}
 
-  .nav-toggle{display:flex;z-index:201}
+  .nav-toggle{display:flex;z-index:260;position:relative}
 
   /* Hamburger → X animation */
   .nav-toggle.active span:nth-child(1){
