@@ -25,10 +25,12 @@
 </head>
 <body>
 
+  <a href="#historia" class="skip-link">Przejdź do treści</a>
+
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo"><img src="assets/logo.png" alt="STAGO" class="nav-logo-img"></a>
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO — strona główna" class="nav-logo-img"></a>
       <div class="nav-links" id="nav-links">
         <a href="#produkty">Modele</a>
         <a href="#proces">Jak działamy</a>
@@ -429,20 +431,22 @@
       <div class="contact-grid">
         <form class="contact-form" id="contact-form">
           <div class="form-row">
-            <input type="text" name="name" placeholder="Imię i nazwisko" required>
-            <input type="tel" name="phone" placeholder="Telefon" required>
+            <input type="text" name="name" placeholder="Imię i nazwisko" required aria-label="Imię i nazwisko">
+            <input type="tel" name="phone" placeholder="Telefon" required aria-label="Telefon">
           </div>
-          <input type="email" name="email" placeholder="Email (opcjonalnie)">
-          <select name="type">
-            <option value="">Wybierz typ pawilonu</option>
-            <option value="handlowy">Handlowy (sklep, kiosk, punkt)</option>
-            <option value="biurowy">Biurowy (biuro, portiernia)</option>
-            <option value="mieszkalny">Mieszkalny (dom, domek letniskowy)</option>
-            <option value="sanitarny">Sanitarny (toalety, prysznice)</option>
-            <option value="magazynowy">Magazynowy (magazyn, garaż)</option>
+          <input type="email" name="email" placeholder="Email (opcjonalnie)" aria-label="Email">
+          <select name="type" aria-label="Typ pawilonu">
+            <option value="">Wybierz model</option>
+            <option value="model-s">Model S</option>
+            <option value="model-m">Model M</option>
+            <option value="model-l">Model L</option>
+            <option value="model-sanitar">Model Sanitar</option>
+            <option value="model-box">Model Box</option>
+            <option value="model-glass">Model Glass</option>
             <option value="inny">Inny / niestandardowy</option>
           </select>
-          <textarea name="message" rows="4" placeholder="Opisz swoje potrzeby — wymiary, lokalizacja, przeznaczenie..."></textarea>
+          <textarea name="message" rows="4" placeholder="Opisz swoje potrzeby — wymiary, lokalizacja, przeznaczenie..." aria-label="Wiadomość"></textarea>
+          <label class="form-consent"><input type="checkbox" name="consent" required> Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie. <a href="polityka-prywatnosci.html" target="_blank">Polityka prywatności</a></label>
           <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie</button>
           <p class="form-note">Odpowiadamy w ciągu 24 godzin. Wycena jest darmowa i niezobowiązująca.</p>
         </form>
@@ -489,12 +493,13 @@
       </div>
       <div class="footer-cols">
         <div>
-          <h4>Oferta</h4>
-          <a href="pawilon-handlowy.html">Handlowe</a>
-          <a href="kontener-biurowy.html">Biurowe</a>
-          <a href="#produkty">Mieszkalne</a>
-          <a href="#produkty">Sanitarne</a>
-          <a href="kontener-magazynowy.html">Magazynowe</a>
+          <h4>Modele</h4>
+          <a href="pawilon-handlowy.html">Model S</a>
+          <a href="kontener-biurowy.html">Model M</a>
+          <a href="pawilon-mieszkalny.html">Model L</a>
+          <a href="kontener-sanitarny.html">Model Sanitar</a>
+          <a href="kontener-magazynowy.html">Model Box</a>
+          <a href="pawilon-premium.html">Model Glass</a>
         </div>
         <div>
           <h4>Firma</h4>
@@ -512,8 +517,9 @@
           <a href="https://maps.google.com/?q=Jasionka+117+Jędrzejów" target="_blank">Jasionka 117, Jędrzejów</a>
         </div>
         <div>
-          <h4>Obsługujemy</h4>
-          <span class="footer-cities">Kielce, Kraków, Radom, Częstochowa, Katowice, Łódź i cała Polska</span>
+          <h4>Prawne</h4>
+          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+          <a href="regulamin.html">Regulamin</a>
         </div>
       </div>
     </div>
