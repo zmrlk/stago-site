@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Kontener biurowy — producent STAGO | Biura, portierne, recepcje",
-    "description": "Kontener biurowy od producenta STAGO. Biura, portierne, recepcje na budowy i firmy. Od 18 000 zł netto. Izolacja PIR, klimatyzacja, pełna elektryka. Gotowe w 4-6 tygodni.",
+    "title": "Model M — pawilon modułowy STAGO | Minimalizm, panoramiczne okna",
+    "description": "Model M od producenta STAGO. Szara elewacja, panoramiczne okna, czysta forma. Moduł do pracy, sprzedaży, obsługi klientów — wypełnisz go po swojemu. Od 18 000 zł netto.",
     "canonical": "https://stago.com.pl/kontener-biurowy.html",
-    "ogTitle": "Kontener biurowy — producent STAGO",
+    "ogTitle": "Model M — pawilon modułowy STAGO | Minimalizm, panoramiczne okna",
     "ogDescription": "Kontenery biurowe od producenta. Biura, portierne, recepcje. Od 18 000 zł netto.",
     "ogImage": "https://stago.com.pl/assets/products/biurowy.png"
   },
-  "breadcrumb": "Kontener biurowy",
+  "breadcrumb": "Model M",
   "productType": "Biurowy",
   "hero": {
     "img": "assets/products/biurowy.png",
     "imgAlt": "Kontener biurowy STAGO",
-    "h1": "Biuro gotowe do pracy. Ciepłe zimą, chłodne latem.",
-    "subtitle": "Potrzebujesz biura na budowie? Albo tańszego lokalu niż wynajem w mieście? Robimy kontener, który wygląda i działa jak normalne biuro. Prąd, ogrzewanie, klimatyzacja, internet — wchodzisz, siadasz, pracujesz. Bez remontu, bez czekania.",
+    "h1": "Model M — czysty minimalizm. Zero bałaganu.",
+    "subtitle": "Szara elewacja, panoramiczne okna z boku, żadnych zbędnych detali. Wchodzisz i od razu czujesz — tu się pracuje. Albo sprzedaje. Albo przyjmuje klientów. Model M to czysta forma, którą wypełnisz po swojemu.",
     "price": "od 18 000 zł netto",
     "priceNote": "/ kontener 2,4x6m z pełną elektryką",
     "ctaHref": "konfigurator.html?type=Biurowy",

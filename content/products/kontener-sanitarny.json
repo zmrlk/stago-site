@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Kontener sanitarny — toalety, prysznice, szatnie | Producent STAGO",
-    "description": "Kontener sanitarny od producenta STAGO. Toalety, prysznice, szatnie. Od 20 000 zł netto. Gotowe przyłącza wod-kan, wentylacja mechaniczna. Darmowa wycena.",
+    "title": "Model Sanitar — pawilon modułowy STAGO | Antracyt, drewno, wiele wejść",
+    "description": "Model Sanitar od producenta STAGO. Antracyt z jasnym drewnem, kilka osobnych wejść. Moduł zaprojektowany na dużo ludzi naraz — kabiny, prysznice, szatnie. Od 20 000 zł netto.",
     "canonical": "https://stago.com.pl/kontener-sanitarny.html",
-    "ogTitle": "Kontener sanitarny — producent STAGO",
+    "ogTitle": "Model Sanitar — pawilon modułowy STAGO | Antracyt, drewno, wiele wejść",
     "ogDescription": "Kontenery sanitarne od producenta. Toalety, prysznice, szatnie. Od 20 000 zł netto.",
     "ogImage": "https://stago.com.pl/assets/products/sanitarny.png"
   },
-  "breadcrumb": "Kontener sanitarny",
+  "breadcrumb": "Model Sanitar",
   "productType": "Sanitarny",
   "hero": {
     "img": "assets/products/sanitarny.png",
     "imgAlt": "Kontener sanitarny STAGO",
-    "h1": "Toalety i prysznice gotowe od razu. Podłączasz wodę i działa.",
-    "subtitle": "Na budowę, event, basen, obiekt publiczny — kontener sanitarny z pełną instalacją hydrauliczną. WC, prysznice, umywalki, podgrzewacz wody. Przyjeżdża na lawecie, podłączasz wodę i kanalizację. Spełnia normy sanitarne.",
+    "h1": "Model Sanitar — zbudowany, żeby obsłużyć tłum.",
+    "subtitle": "Antracyt z jasnym drewnem, kilka osobnych wejść. Zaprojektowany tak, żeby dużo ludzi mogło korzystać jednocześnie bez czekania w kolejce. Kabiny, prysznice, szatnie — konfiguracja pod Twoje potrzeby.",
     "price": "od 20 000 zł netto",
     "priceNote": "/ kontener sanitarny 2,4x3m z 2 kabinami WC",
     "ctaHref": "konfigurator.html?type=Sanitarny",

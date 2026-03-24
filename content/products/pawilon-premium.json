@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Premium / Custom — nietypowe pawilony i kontenery | Producent STAGO",
-    "description": "Pawilony i kontenery premium od producenta STAGO. Nietypowe wymiary, piętrowe, łączone moduły, elewacje HPL/drewno/blacha. Indywidualna wycena.",
+    "title": "Model Glass — pawilon modułowy STAGO | Lustrzane przeszklenia, szklana fasada",
+    "description": "Model Glass — nasz top model. Lustrzane przeszklenia od podłogi do sufitu, stalowa konstrukcja, efekt wow. Wycena indywidualna.",
     "canonical": "https://stago.com.pl/pawilon-premium.html",
-    "ogTitle": "Premium / Custom — producent STAGO",
+    "ogTitle": "Model Glass — pawilon modułowy STAGO | Szklana fasada",
     "ogDescription": "Nietypowe pawilony i kontenery od producenta. Dowolny wymiar, piętrowe, łączone moduły. Wycena indywidualna.",
     "ogImage": "https://stago.com.pl/assets/products/premium.png"
   },
-  "breadcrumb": "Premium / Custom",
-  "productType": "Premium",
+  "breadcrumb": "Model Glass",
+  "productType": "Glass",
   "hero": {
     "img": "assets/products/premium.png",
-    "imgAlt": "Pawilon premium STAGO — realizacja nietypowa",
-    "h1": "Twój projekt, nasze wykonanie. Bez kompromisów na wymiarach.",
-    "subtitle": "Nietypowy kształt? Dwa piętra? Trzy moduły połączone w jeden budynek? Robimy to. Konstrukcja stalowa wzmocniona, izolacja PIR, stolarka aluminiowa premium, dowolna elewacja. Mówisz, co potrzebujesz — my projektujemy i budujemy.",
+    "imgAlt": "Model Glass STAGO — pawilon z lustrzaną fasadą",
+    "h1": "Model Glass — nasz top. Szkło od podłogi do sufitu.",
+    "subtitle": "Lustrzane przeszklenia, stalowa konstrukcja, elewacja która odbija otoczenie. Wygląda jak z innej ligi — bo jest z innej ligi. Stawiasz go gdziekolwiek i ludzie się zatrzymują. To nie jest kolejny kontener. To jest statement.",
     "price": "wycena indywidualna",
     "priceNote": "/ każdy projekt wyceniamy osobno",
     "ctaHref": "konfigurator.html?type=Premium",

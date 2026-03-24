@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Pawilon handlowy — producent STAGO | Sklepy, kioski, punkty usługowe",
-    "description": "Pawilon handlowy od producenta STAGO. Sklepy, kioski, punkty usługowe. Od 15 000 zł netto. Projekt gratis, montaż w cenie, gotowe w 4-6 tygodni. Darmowa wycena.",
+    "title": "Model S — pawilon modułowy STAGO | Czarna stal, drewno, przeszklenia",
+    "description": "Model S od producenta STAGO. Czarna stal, drewniane lamele, przeszklony front aluminiowy. Kompaktowy moduł z charakterem — do sklepu, biura, kawiarni. Od 15 000 zł netto.",
     "canonical": "https://stago.com.pl/pawilon-handlowy.html",
-    "ogTitle": "Pawilon handlowy — producent STAGO",
+    "ogTitle": "Model S — pawilon modułowy STAGO | Czarna stal, drewno, przeszklenia",
     "ogDescription": "Pawilony handlowe od producenta. Sklepy, kioski, punkty usługowe. Od 15 000 zł netto.",
     "ogImage": "https://stago.com.pl/assets/products/handlowy.png"
   },
-  "breadcrumb": "Pawilon handlowy",
+  "breadcrumb": "Model S",
   "productType": "Handlowy",
   "hero": {
     "img": "assets/products/handlowy.png",
     "imgAlt": "Pawilon handlowy STAGO",
-    "h1": "Otwórz sklep za 5 tygodni. Bez budowy, bez pozwolenia.",
-    "subtitle": "Chcesz sprzedawać, ale nie chcesz czekać rok na budowę? Robimy pawilon. Dowozimy na lawecie. Stawiamy w jeden dzień. Ty wchodzisz z towarem i zaczynasz zarabiać. Okna PCV, drzwi aluminiowe, prąd — wszystko podłączone.",
+    "h1": "Model S — nasz klasyk, którego wszyscy chcą.",
+    "subtitle": "Czarna stal, drewniane lamele i duży przeszklony front aluminiowy. Kompaktowy moduł, który wygląda jak z zachodnioeuropejskiego miasta. Otwierasz sklep, robisz biuro, stawiasz kawiarenkę — co chcesz. Model S się sprawdzi.",
     "price": "od 15 000 zł netto",
     "priceNote": "/ pawilon 3x2m, gotowy do handlu",
     "ctaHref": "konfigurator.html?type=Handlowy",

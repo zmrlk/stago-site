@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Kontener magazynowy — producent STAGO | Magazyny, garaże",
-    "description": "Kontener magazynowy od producenta STAGO. Magazyny, garaże, pomieszczenia gospodarcze. Od 12 000 zł netto. Konstrukcja stalowa malowana proszkowo. Gotowe w 3-4 tygodnie.",
+    "title": "Model Box — kontener stalowy STAGO | Czarny, masywny, bezpieczny",
+    "description": "Model Box od producenta STAGO. Cały czarny, spawana stalowa konstrukcja, zamek wielopunktowy. Masywne przeszklenia z przodu, opcjonalna izolacja. Od 12 000 zł netto.",
     "canonical": "https://stago.com.pl/kontener-magazynowy.html",
-    "ogTitle": "Kontener magazynowy — producent STAGO",
+    "ogTitle": "Model Box — kontener stalowy STAGO | Czarny, masywny, bezpieczny",
     "ogDescription": "Kontenery magazynowe od producenta. Magazyny, garaże. Od 12 000 zł netto.",
     "ogImage": "https://stago.com.pl/assets/products/magazynowy.png"
   },
-  "breadcrumb": "Kontener magazynowy",
+  "breadcrumb": "Model Box",
   "productType": "Magazynowy",
   "hero": {
     "img": "assets/products/magazynowy.png",
     "imgAlt": "Kontener magazynowy STAGO",
-    "h1": "Magazyn, garaż, schowek. Solidny i na lata.",
-    "subtitle": "Masz narzędzia, materiały albo sprzęt, który stoi na dworze? Albo w garażu, który pęka w szwach? Stawiamy kontener. Stal malowana proszkowo, zamek wielopunktowy, podłoga wzmocniona. Wjeżdżasz wózkiem, zamykasz na klucz i masz spokój.",
+    "h1": "Model Box — zamykasz na klucz i śpisz spokojnie.",
+    "subtitle": "Cały czarny, masywne przeszklenia z przodu, spawana stalowa konstrukcja. Wygląda poważnie — bo taki jest. Zamek wielopunktowy, opcjonalna izolacja. Trzymasz w nim co chcesz — narzędzia, towar, sprzęt. Nikt się nie dostanie.",
     "price": "od 12 000 zł netto",
     "priceNote": "/ kontener 2,4x6m bez izolacji",
     "ctaHref": "konfigurator.html?type=Magazynowy",
