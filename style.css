@@ -85,7 +85,7 @@ button{-webkit-tap-highlight-color:transparent}
 
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0;animation:heroPan 20s ease-in-out infinite alternate}
+.hero-bg{position:absolute;inset:-15%;background-size:cover;background-position:center 40%;z-index:0;animation:heroPan 20s ease-in-out infinite alternate}
 @keyframes heroPan{
   0%{background-position:50% 50%;transform:scale(1)}
   100%{background-position:55% 45%;transform:scale(1.05)}
@@ -162,17 +162,20 @@ button{-webkit-tap-highlight-color:transparent}
 .section-dark .compare-footnote{color:var(--t-light3)}
 
 /* ── STORY (case study) ── */
-.story-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:32px}
-.story-h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-.03em;line-height:1.12;color:var(--primary);margin-bottom:32px}
+.story-hero-block{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;margin-bottom:48px}
+.story-hero-img{border-radius:var(--r);overflow:hidden;aspect-ratio:16/10}
+.story-hero-img img{width:100%;height:100%;object-fit:cover}
+.story-hero-text .eyebrow{text-align:left}
+.story-intro{font-size:1.15rem;color:var(--t2);line-height:1.65;margin-bottom:20px}
+.story-h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-.03em;line-height:1.12;color:var(--primary);margin-bottom:0}
 .story-h2 .accent{color:var(--accent)}
-.story-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3}
-.story-img img{width:100%;height:100%;object-fit:cover}
-.story-intro{font-size:1.05rem;color:var(--t2);line-height:1.65;margin-bottom:24px}
-.story-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
-.story-card{padding:24px 20px;background:var(--bg-light);border:1px solid var(--border);border-radius:var(--r)}
-.story-card h4{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
-.story-card p{font-size:.88rem;line-height:1.6;color:var(--t2);margin:0}
-.story-pullquote{font-size:1.1rem;font-style:italic;color:var(--primary);line-height:1.6;border-left:4px solid var(--accent);padding:16px 0 16px 20px;margin:0 0 28px;background:none}
+.story-narrative{display:flex;flex-direction:column;gap:0;margin-bottom:40px}
+.story-chapter{display:grid;grid-template-columns:140px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--border);align-items:baseline}
+.story-chapter:last-child{border-bottom:none}
+.story-chapter-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.story-chapter p{font-size:1rem;line-height:1.7;color:var(--t2);margin:0}
+.story-bottom{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.story-pullquote{font-size:1.1rem;font-style:italic;color:var(--primary);line-height:1.6;border-left:4px solid var(--accent);padding:16px 0 16px 20px;margin:0;background:none;flex:1;min-width:280px}
 .story-pullquote cite{display:block;font-size:.82rem;color:var(--t3);font-style:normal;margin-top:8px}
 
 /* ── PROCES z tłem ── */
@@ -221,7 +224,7 @@ button{-webkit-tap-highlight-color:transparent}
 .section-dark .benefit-check{background:rgba(232,70,28,.15)}
 
 /* ── STEPS ── */
-.steps{display:flex;align-items:flex-start;gap:0;margin-top:48px}
+.steps{display:flex;align-items:stretch;gap:0;margin-top:48px}
 .step{flex:1;text-align:center;padding:32px 24px;border:1px solid var(--border);border-radius:var(--r);background:var(--white);display:flex;flex-direction:column;align-items:center}
 .step-num{font-size:2rem;font-weight:900;color:var(--accent);margin-bottom:14px}
 .step h3{font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:10px}
@@ -593,9 +596,8 @@ body.nav-open{overflow:hidden}
   .compare-card{padding:28px 24px}
 
   /* ── Story ── */
-  .story-layout{grid-template-columns:1fr;gap:32px}
-  .story-img{order:-1}
-  .story-steps{grid-template-columns:1fr}
+  .story-hero-block{grid-template-columns:1fr;gap:24px}
+  .story-chapter{grid-template-columns:1fr;gap:8px}
 
   /* ── Scope ── */
   .scope-grid{grid-template-columns:1fr}

@@ -87,25 +87,27 @@
   <!-- CASE STUDY -->
   <section class="section" id="historia">
     <div class="container">
-      <p class="eyebrow">{{caseStudy.eyebrow}}</p>
-      <div class="story-layout reveal">
-        <div class="story-content">
-          <p class="story-intro">{{{caseStudy.intro}}}</p>
-          <h2 class="story-h2">{{{caseStudy.h2}}}<br><span class="accent">{{caseStudy.h2accent}}</span></h2>
-          <div class="story-steps">
-            {{#caseStudy.steps}}
-            <div class="story-card">
-              <h4>{{label}}</h4>
-              <p>{{{text}}}</p>
-            </div>
-            {{/caseStudy.steps}}
-          </div>
-          <blockquote class="story-pullquote">"{{{caseStudy.quote}}}"<cite>{{{caseStudy.cite}}}</cite></blockquote>
-          <a href="konfigurator.html" class="btn btn-primary">Chcę tak samo — wyceń za darmo</a>
-        </div>
-        <div class="story-img">
+      <div class="story-hero-block reveal">
+        <div class="story-hero-img">
           <img src="assets/gallery/2.png" alt="Pawilon handlowy STAGO — realizacja klienta" loading="lazy">
         </div>
+        <div class="story-hero-text">
+          <p class="eyebrow">{{caseStudy.eyebrow}}</p>
+          <p class="story-intro">{{{caseStudy.intro}}}</p>
+          <h2 class="story-h2">{{{caseStudy.h2}}}<br><span class="accent">{{caseStudy.h2accent}}</span></h2>
+        </div>
+      </div>
+      <div class="story-narrative">
+        {{#caseStudy.steps}}
+        <div class="story-chapter reveal">
+          <div class="story-chapter-label">{{label}}</div>
+          <p>{{{text}}}</p>
+        </div>
+        {{/caseStudy.steps}}
+      </div>
+      <div class="story-bottom reveal">
+        <blockquote class="story-pullquote">"{{{caseStudy.quote}}}"<cite>{{{caseStudy.cite}}}</cite></blockquote>
+        <a href="konfigurator.html" class="btn btn-primary">Chcę tak samo — wyceń za darmo</a>
       </div>
     </div>
   </section>
