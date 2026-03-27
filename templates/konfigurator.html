@@ -1074,9 +1074,10 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
 });
 
 // ── URL PARAMS (pre-select type, always override) ──
-const urlType = new URLSearchParams(window.location.search).get('type');
+const typeMap = {Handlowy:'Model S',Biurowy:'Model M',Mieszkalny:'Model L',Sanitarny:'Model T',Magazynowy:'Model X',Premium:'Model Glass'};
+let urlType = new URLSearchParams(window.location.search).get('type');
 if (urlType) {
-  // Clear old state, start fresh with this type
+  urlType = typeMap[urlType] || urlType;
   localStorage.removeItem('stago_cfg');
   state.type = urlType;
   state.step = 2;

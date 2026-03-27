@@ -25,7 +25,8 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/sygnet.webp">
 <style>
@@ -600,7 +601,7 @@ body { background: #F8F9FA; padding-bottom: 0; }
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="assets/logo.webp" alt="STAGO" class="nav-logo-img"></a>
+      <a href="index.html" class="nav-logo"><img src="assets/logo.webp" alt="STAGO" class="nav-logo-img" width="400" height="89"></a>
       <div class="nav-links" id="nav-links">
         <a href="index.html#produkty">Modele</a>
         <a href="konfigurator.html" style="color:var(--accent)">Konfigurator</a>
@@ -632,40 +633,40 @@ body { background: #F8F9FA; padding-bottom: 0; }
 
     <!-- STEP 1: PRZEZNACZENIE -->
     <div class="step-panel active" data-step="1">
-      <h1 class="step-title">Jaki pawilon potrzebujesz?</h1>
-      <p class="step-sub">Wybierz przeznaczenie — dostosujemy resztę do Twoich potrzeb</p>
+      <h1 class="step-title">Wybierz model</h1>
+      <p class="step-sub">Przeznaczenie dopasujesz sam — każdy model konfigurujesz pod siebie</p>
       <div class="type-grid">
-        
-        <div class="type-card" data-type="Handlowy" onclick="selectType(this)">
-          <img src="assets/products/handlowy.webp" alt="Handlowy" loading="lazy">
-          <span>Handlowy</span>
+
+        <div class="type-card" data-type="Model S" onclick="selectType(this)">
+          <img src="assets/products/magazynowy.webp" alt="Model S" loading="lazy">
+          <span>Model S</span>
         </div>
-        
-        <div class="type-card" data-type="Biurowy" onclick="selectType(this)">
-          <img src="assets/products/biurowy.webp" alt="Biurowy" loading="lazy">
-          <span>Biurowy</span>
+
+        <div class="type-card" data-type="Model M" onclick="selectType(this)">
+          <img src="assets/products/biurowy.webp" alt="Model M" loading="lazy">
+          <span>Model M</span>
         </div>
-        
-        <div class="type-card" data-type="Mieszkalny" onclick="selectType(this)">
-          <img src="assets/products/mieszkalny.webp" alt="Mieszkalny" loading="lazy">
-          <span>Mieszkalny</span>
+
+        <div class="type-card" data-type="Model L" onclick="selectType(this)">
+          <img src="assets/products/handlowy.webp" alt="Model L" loading="lazy">
+          <span>Model L</span>
         </div>
-        
-        <div class="type-card" data-type="Sanitarny" onclick="selectType(this)">
-          <img src="assets/products/sanitarny.webp" alt="Sanitarny" loading="lazy">
-          <span>Sanitarny</span>
+
+        <div class="type-card" data-type="Model T" onclick="selectType(this)">
+          <img src="assets/products/sanitarny.webp" alt="Model T" loading="lazy">
+          <span>Model T</span>
         </div>
-        
-        <div class="type-card" data-type="Magazynowy" onclick="selectType(this)">
-          <img src="assets/products/magazynowy.webp" alt="Magazynowy" loading="lazy">
-          <span>Magazynowy</span>
+
+        <div class="type-card" data-type="Model X" onclick="selectType(this)">
+          <img src="assets/products/box.webp" alt="Model X" loading="lazy">
+          <span>Model X</span>
         </div>
-        
-        <div class="type-card" data-type="Na zamówienie" onclick="selectType(this)">
-          <img src="assets/products/premium.webp" alt="Na zamówienie" loading="lazy">
-          <span>Na zamówienie</span>
+
+        <div class="type-card" data-type="Model Glass" onclick="selectType(this)">
+          <img src="assets/products/glass.webp" alt="Model Glass" loading="lazy">
+          <span>Model Glass</span>
         </div>
-        
+
       </div>
       <p class="social-proof">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
@@ -1144,9 +1145,10 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
 });
 
 // ── URL PARAMS (pre-select type, always override) ──
-const urlType = new URLSearchParams(window.location.search).get('type');
+const typeMap = {Handlowy:'Model S',Biurowy:'Model M',Mieszkalny:'Model L',Sanitarny:'Model T',Magazynowy:'Model X',Premium:'Model Glass'};
+let urlType = new URLSearchParams(window.location.search).get('type');
 if (urlType) {
-  // Clear old state, start fresh with this type
+  urlType = typeMap[urlType] || urlType;
   localStorage.removeItem('stago_cfg');
   state.type = urlType;
   state.step = 2;

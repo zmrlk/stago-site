@@ -29,7 +29,8 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
   <link rel="preload" as="image" href="assets/hero1.webp" type="image/webp">
   <link rel="icon" type="image/webp" href="assets/sygnet.webp">
@@ -43,7 +44,7 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="assets/logo.webp" alt="STAGO — strona główna" class="nav-logo-img"></a>
+      <a href="index.html" class="nav-logo"><img src="assets/logo.webp" alt="STAGO" class="nav-logo-img" width="400" height="89"></a>
       <div class="nav-links" id="nav-links">
         <a href="#produkty">Modele</a>
         <a href="#proces">Jak działamy</a>
@@ -545,7 +546,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="assets/logo-white.webp" alt="STAGO" class="footer-logo">
+        <img src="assets/logo-white.webp" alt="STAGO" class="footer-logo" width="400" height="88">
         <p>Producent pawilonów modułowych.<br>Dostawa i montaż w całej Polsce.</p>
         <div class="footer-social">
           <a href="https://facebook.com/stago" target="_blank" rel="noopener" aria-label="Facebook">
@@ -605,7 +606,7 @@
     <a href="konfigurator.html" class="sticky-quote">Darmowa wycena</a>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 
   <script type="application/ld+json">
   {

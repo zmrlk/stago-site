@@ -4,16 +4,16 @@
     "description": "Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h."
   },
   "step1": {
-    "title": "Jaki pawilon potrzebujesz?",
-    "sub": "Wybierz przeznaczenie — dostosujemy resztę do Twoich potrzeb",
+    "title": "Wybierz model",
+    "sub": "Przeznaczenie dopasujesz sam — każdy model konfigurujesz pod siebie",
     "socialProof": "127 osób skonfigurowało pawilon w tym miesiącu",
     "types": [
-      { "name": "Handlowy", "img": "assets/products/handlowy.webp" },
-      { "name": "Biurowy", "img": "assets/products/biurowy.webp" },
-      { "name": "Mieszkalny", "img": "assets/products/mieszkalny.webp" },
-      { "name": "Sanitarny", "img": "assets/products/sanitarny.webp" },
-      { "name": "Magazynowy", "img": "assets/products/magazynowy.webp" },
-      { "name": "Na zamówienie", "img": "assets/products/premium.webp" }
+      { "name": "Model S", "img": "assets/products/magazynowy.webp" },
+      { "name": "Model M", "img": "assets/products/biurowy.webp" },
+      { "name": "Model L", "img": "assets/products/handlowy.webp" },
+      { "name": "Model T", "img": "assets/products/sanitarny.webp" },
+      { "name": "Model X", "img": "assets/products/box.webp" },
+      { "name": "Model Glass", "img": "assets/products/glass.webp" }
     ]
   },
   "step2": {
