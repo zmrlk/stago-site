@@ -729,6 +729,16 @@ body.nav-open{overflow:hidden}
 .product-gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .product-gallery-item:hover img{transform:scale(1.05)}
 
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+.lightbox.active{opacity:1;pointer-events:auto}
+.lightbox img{max-width:90vw;max-height:90vh;border-radius:8px;object-fit:contain;transform:scale(.95);transition:transform .3s var(--ease)}
+.lightbox.active img{transform:scale(1)}
+.lightbox-close{position:absolute;top:20px;right:24px;color:#fff;font-size:2rem;cursor:pointer;background:none;border:none;line-height:1;padding:8px}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:2.5rem;cursor:pointer;background:rgba(255,255,255,.1);border:none;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.lightbox-nav:hover{background:rgba(255,255,255,.2)}
+.lightbox-prev{left:16px}
+.lightbox-next{right:16px}
+
 .product-faq{padding:80px 0}
 
 .product-form-section{padding:80px 0;background:var(--bg-dark)}
