@@ -96,7 +96,7 @@ button{-webkit-tap-highlight-color:transparent}
 
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:-5%;width:110%;height:110%;object-fit:cover;z-index:0;will-change:transform;animation:heroPan 20s ease-in-out infinite alternate}
+.hero-bg{position:absolute;inset:-15%;background-size:cover;background-position:center 40%;z-index:0;will-change:transform;animation:heroPan 20s ease-in-out infinite alternate}
 @keyframes heroPan{
   0%{transform:scale(1) translate(0,0)}
   100%{transform:scale(1.03) translate(-0.5%,0.5%)}
