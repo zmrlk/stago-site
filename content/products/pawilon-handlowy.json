@@ -5,12 +5,12 @@
     "canonical": "https://stago.com.pl/pawilon-handlowy.html",
     "ogTitle": "Model S — pawilon modułowy STAGO | Czarna stal, drewno, przeszklenia",
     "ogDescription": "Pawilony handlowe od producenta. Sklepy, kioski, punkty usługowe. Od 15 000 zł netto.",
-    "ogImage": "https://stago.com.pl/assets/products/handlowy.png"
+    "ogImage": "https://stago.com.pl/assets/products/handlowy.webp"
   },
   "breadcrumb": "Model S",
   "productType": "Handlowy",
   "hero": {
-    "img": "assets/products/handlowy.png",
+    "img": "assets/products/handlowy.webp",
     "imgAlt": "Pawilon handlowy STAGO",
     "h1": "Model S — nasz klasyk, którego wszyscy chcą.",
     "subtitle": "Czarna stal, drewniane lamele i duży przeszklony front aluminiowy. Kompaktowy moduł, który wygląda jak z zachodnioeuropejskiego miasta. Otwierasz sklep, robisz biuro, stawiasz kawiarenkę — co chcesz. Model S się sprawdzi.",
@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Pawilony, które już stoją i zarabiają",
     "items": [
-      { "img": "assets/gallery/k2.png", "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej, witryna przeszklona" },
-      { "img": "assets/gallery/k6.png", "alt": "Pawilon handlowy STAGO — sklep modułowy z oknami panoramicznymi" },
-      { "img": "assets/gallery/k9.png", "alt": "Pawilon handlowy STAGO — punkt usługowy z oknem podawczym" }
+      { "img": "assets/gallery/k2.webp", "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej, witryna przeszklona" },
+      { "img": "assets/gallery/k6.webp", "alt": "Pawilon handlowy STAGO — sklep modułowy z oknami panoramicznymi" },
+      { "img": "assets/gallery/k9.webp", "alt": "Pawilon handlowy STAGO — punkt usługowy z oknem podawczym" }
     ]
   },
   "faq": {
@@ -131,7 +131,7 @@
   "related": [
     {
       "href": "blog/pawilon-handlowy-cena.html",
-      "img": "assets/gallery/k2.png",
+      "img": "assets/gallery/k2.webp",
       "alt": "Cennik pawilonów handlowych",
       "label": "15 marca 2026",
       "h3": "Pawilon handlowy — ile kosztuje w 2026?",
@@ -139,7 +139,7 @@
     },
     {
       "href": "kontener-biurowy.html",
-      "img": "assets/products/biurowy.png",
+      "img": "assets/products/biurowy.webp",
       "alt": "Kontener biurowy STAGO",
       "label": "Produkt",
       "h3": "Kontener biurowy",
@@ -147,7 +147,7 @@
     },
     {
       "href": "kontener-magazynowy.html",
-      "img": "assets/products/magazynowy.png",
+      "img": "assets/products/magazynowy.webp",
       "alt": "Kontener magazynowy STAGO",
       "label": "Produkt",
       "h3": "Kontener magazynowy",
@@ -157,7 +157,7 @@
   "jsonLd": {
     "name": "Pawilon handlowy STAGO",
     "description": "Pawilon handlowy od producenta. Sklepy, kioski, punkty usługowe. Konstrukcja stalowa malowana proszkowo, izolacja PIR. Gotowy w 4-6 tygodni.",
-    "image": "https://stago.com.pl/assets/products/handlowy.png",
+    "image": "https://stago.com.pl/assets/products/handlowy.webp",
     "lowPrice": "15000",
     "highPrice": "65000"
   }

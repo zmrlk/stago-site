@@ -8,12 +8,12 @@
     "sub": "Wybierz przeznaczenie — dostosujemy resztę do Twoich potrzeb",
     "socialProof": "127 osób skonfigurowało pawilon w tym miesiącu",
     "types": [
-      { "name": "Handlowy", "img": "assets/products/handlowy.png" },
-      { "name": "Biurowy", "img": "assets/products/biurowy.png" },
-      { "name": "Mieszkalny", "img": "assets/products/mieszkalny.png" },
-      { "name": "Sanitarny", "img": "assets/products/sanitarny.png" },
-      { "name": "Magazynowy", "img": "assets/products/magazynowy.png" },
-      { "name": "Na zamówienie", "img": "assets/products/premium.png" }
+      { "name": "Handlowy", "img": "assets/products/handlowy.webp" },
+      { "name": "Biurowy", "img": "assets/products/biurowy.webp" },
+      { "name": "Mieszkalny", "img": "assets/products/mieszkalny.webp" },
+      { "name": "Sanitarny", "img": "assets/products/sanitarny.webp" },
+      { "name": "Magazynowy", "img": "assets/products/magazynowy.webp" },
+      { "name": "Na zamówienie", "img": "assets/products/premium.webp" }
     ]
   },
   "step2": {

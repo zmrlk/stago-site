@@ -5,12 +5,12 @@
     "canonical": "https://stago.com.pl/pawilon-premium.html",
     "ogTitle": "Model Glass — pawilon modułowy STAGO | Szklana fasada",
     "ogDescription": "Nietypowe pawilony i kontenery od producenta. Dowolny wymiar, piętrowe, łączone moduły. Wycena indywidualna.",
-    "ogImage": "https://stago.com.pl/assets/products/premium.png"
+    "ogImage": "https://stago.com.pl/assets/products/premium.webp"
   },
   "breadcrumb": "Model Glass",
   "productType": "Glass",
   "hero": {
-    "img": "assets/products/glass.png",
+    "img": "assets/products/glass.webp",
     "imgAlt": "Model Glass STAGO — pawilon z lustrzaną szklaną fasadą i drewnianymi akcentami",
     "h1": "Model Glass — nasz top. Szkło od podłogi do sufitu.",
     "subtitle": "Lustrzane przeszklenia, stalowa konstrukcja, elewacja która odbija otoczenie. Wygląda jak z innej ligi — bo jest z innej ligi. Stawiasz go gdziekolwiek i ludzie się zatrzymują. To nie jest kolejny kontener. To jest statement.",
@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Realizacje, które zaczęły się od \"czy da się...\"",
     "items": [
-      { "img": "assets/gallery/k6.png", "alt": "Pawilon premium STAGO — moduł z oknami panoramicznymi, elewacja custom" },
-      { "img": "assets/gallery/k9.png", "alt": "Pawilon premium STAGO — punkt usługowy z oknem podawczym, projekt indywidualny" },
-      { "img": "assets/gallery/k22.png", "alt": "Pawilon premium STAGO — łączone moduły, konstrukcja piętrowa" }
+      { "img": "assets/gallery/k6.webp", "alt": "Pawilon premium STAGO — moduł z oknami panoramicznymi, elewacja custom" },
+      { "img": "assets/gallery/k9.webp", "alt": "Pawilon premium STAGO — punkt usługowy z oknem podawczym, projekt indywidualny" },
+      { "img": "assets/gallery/k22.webp", "alt": "Pawilon premium STAGO — łączone moduły, konstrukcja piętrowa" }
     ]
   },
   "faq": {
@@ -133,7 +133,7 @@
   "related": [
     {
       "href": "pawilon-handlowy.html",
-      "img": "assets/products/handlowy.png",
+      "img": "assets/products/handlowy.webp",
       "alt": "Pawilon handlowy STAGO",
       "label": "Produkt",
       "h3": "Pawilon handlowy",
@@ -141,7 +141,7 @@
     },
     {
       "href": "pawilon-mieszkalny.html",
-      "img": "assets/products/mieszkalny.png",
+      "img": "assets/products/mieszkalny.webp",
       "alt": "Pawilon mieszkalny STAGO",
       "label": "Produkt",
       "h3": "Pawilon mieszkalny",
@@ -149,7 +149,7 @@
     },
     {
       "href": "blog/pawilon-handlowy-cena.html",
-      "img": "assets/gallery/k6.png",
+      "img": "assets/gallery/k6.webp",
       "alt": "Cennik pawilonów STAGO",
       "label": "Blog",
       "h3": "Pawilon handlowy — ile kosztuje w 2026?",
@@ -159,7 +159,7 @@
   "jsonLd": {
     "name": "Pawilon premium STAGO — projekt indywidualny",
     "description": "Nietypowe pawilony i kontenery od producenta. Dowolny wymiar, piętrowe, łączone moduły, elewacje HPL/drewno/blacha. Konstrukcja stalowa wzmocniona, izolacja PIR 100mm.",
-    "image": "https://stago.com.pl/assets/products/premium.png",
+    "image": "https://stago.com.pl/assets/products/premium.webp",
     "lowPrice": "45000",
     "highPrice": "200000"
   }

@@ -5,12 +5,12 @@
     "canonical": "https://stago.com.pl/kontener-biurowy.html",
     "ogTitle": "Model M — pawilon modułowy STAGO | Minimalizm, panoramiczne okna",
     "ogDescription": "Kontenery biurowe od producenta. Biura, portierne, recepcje. Od 18 000 zł netto.",
-    "ogImage": "https://stago.com.pl/assets/products/biurowy.png"
+    "ogImage": "https://stago.com.pl/assets/products/biurowy.webp"
   },
   "breadcrumb": "Model M",
   "productType": "Biurowy",
   "hero": {
-    "img": "assets/products/biurowy.png",
+    "img": "assets/products/biurowy.webp",
     "imgAlt": "Kontener biurowy STAGO",
     "h1": "Model M — czysty minimalizm. Zero bałaganu.",
     "subtitle": "Szara elewacja, panoramiczne okna z boku, żadnych zbędnych detali. Wchodzisz i od razu czujesz — tu się pracuje. Albo sprzedaje. Albo przyjmuje klientów. Model M to czysta forma, którą wypełnisz po swojemu.",
@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Biura, które już pracują",
     "items": [
-      { "img": "assets/gallery/k11.png", "alt": "Kontener biurowy STAGO — elewacja HPL, stolarka aluminiowa" },
-      { "img": "assets/gallery/k14.png", "alt": "Kontener biurowy STAGO — okładzina drewniana, izolacja PIR" },
-      { "img": "assets/gallery/k16.png", "alt": "Kontener biurowy STAGO — moduł z akcentem drewnianym i oknami" }
+      { "img": "assets/gallery/k11.webp", "alt": "Kontener biurowy STAGO — elewacja HPL, stolarka aluminiowa" },
+      { "img": "assets/gallery/k14.webp", "alt": "Kontener biurowy STAGO — okładzina drewniana, izolacja PIR" },
+      { "img": "assets/gallery/k16.webp", "alt": "Kontener biurowy STAGO — moduł z akcentem drewnianym i oknami" }
     ]
   },
   "faq": {
@@ -131,7 +131,7 @@
   "related": [
     {
       "href": "blog/kontener-biurowy-cena.html",
-      "img": "assets/gallery/k6.png",
+      "img": "assets/gallery/k6.webp",
       "alt": "Cennik kontenerów biurowych",
       "label": "10 marca 2026",
       "h3": "Kontener biurowy — ile kosztuje w 2026?",
@@ -139,7 +139,7 @@
     },
     {
       "href": "pawilon-handlowy.html",
-      "img": "assets/products/handlowy.png",
+      "img": "assets/products/handlowy.webp",
       "alt": "Pawilon handlowy STAGO",
       "label": "Produkt",
       "h3": "Pawilon handlowy",
@@ -147,7 +147,7 @@
     },
     {
       "href": "kontener-magazynowy.html",
-      "img": "assets/products/magazynowy.png",
+      "img": "assets/products/magazynowy.webp",
       "alt": "Kontener magazynowy STAGO",
       "label": "Produkt",
       "h3": "Kontener magazynowy",
@@ -157,7 +157,7 @@
   "jsonLd": {
     "name": "Kontener biurowy STAGO",
     "description": "Kontener biurowy od producenta. Biura, portierne, recepcje. Izolacja PIR, klimatyzacja, pełna elektryka. Gotowy w 4-6 tygodni.",
-    "image": "https://stago.com.pl/assets/products/biurowy.png",
+    "image": "https://stago.com.pl/assets/products/biurowy.webp",
     "lowPrice": "18000",
     "highPrice": "55000"
   }

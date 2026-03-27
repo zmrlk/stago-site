@@ -5,12 +5,12 @@
     "canonical": "https://stago.com.pl/kontener-sanitarny.html",
     "ogTitle": "Model T — pawilon modułowy STAGO | Antracyt, drewno, wiele wejść",
     "ogDescription": "Kontenery sanitarne od producenta. Toalety, prysznice, szatnie. Od 20 000 zł netto.",
-    "ogImage": "https://stago.com.pl/assets/products/sanitarny.png"
+    "ogImage": "https://stago.com.pl/assets/products/sanitarny.webp"
   },
   "breadcrumb": "Model T",
   "productType": "Sanitarny",
   "hero": {
-    "img": "assets/products/sanitarny.png",
+    "img": "assets/products/sanitarny.webp",
     "imgAlt": "Kontener sanitarny STAGO",
     "h1": "Model T — zbudowany, żeby obsłużyć tłum.",
     "subtitle": "Antracyt z jasnym drewnem, kilka osobnych wejść. Zaprojektowany tak, żeby dużo ludzi mogło korzystać jednocześnie bez czekania w kolejce. Kabiny, prysznice, szatnie — konfiguracja pod Twoje potrzeby.",
@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Kontenery sanitarne, które już działają",
     "items": [
-      { "img": "assets/gallery/k11.png", "alt": "Kontener sanitarny STAGO — moduł z kabinami WC i prysznicami" },
-      { "img": "assets/gallery/k19.png", "alt": "Kontener sanitarny STAGO — zaplecze socjalne na budowę" },
-      { "img": "assets/gallery/k25.png", "alt": "Kontener sanitarny STAGO — łączone moduły toalet i szatni" }
+      { "img": "assets/gallery/k11.webp", "alt": "Kontener sanitarny STAGO — moduł z kabinami WC i prysznicami" },
+      { "img": "assets/gallery/k19.webp", "alt": "Kontener sanitarny STAGO — zaplecze socjalne na budowę" },
+      { "img": "assets/gallery/k25.webp", "alt": "Kontener sanitarny STAGO — łączone moduły toalet i szatni" }
     ]
   },
   "faq": {
@@ -133,7 +133,7 @@
   "related": [
     {
       "href": "kontener-biurowy.html",
-      "img": "assets/products/biurowy.png",
+      "img": "assets/products/biurowy.webp",
       "alt": "Kontener biurowy STAGO",
       "label": "Produkt",
       "h3": "Kontener biurowy",
@@ -141,7 +141,7 @@
     },
     {
       "href": "kontener-magazynowy.html",
-      "img": "assets/products/magazynowy.png",
+      "img": "assets/products/magazynowy.webp",
       "alt": "Kontener magazynowy STAGO",
       "label": "Produkt",
       "h3": "Kontener magazynowy",
@@ -149,7 +149,7 @@
     },
     {
       "href": "blog/pawilon-bez-pozwolenia.html",
-      "img": "assets/gallery/k11.png",
+      "img": "assets/gallery/k11.webp",
       "alt": "Pawilon bez pozwolenia na budowę",
       "label": "Blog",
       "h3": "Pawilon bez pozwolenia — przepisy 2026",
@@ -159,7 +159,7 @@
   "jsonLd": {
     "name": "Kontener sanitarny STAGO",
     "description": "Kontener sanitarny od producenta. Toalety, prysznice, szatnie. Pełna instalacja wod-kan, wentylacja mechaniczna, podłoga antypoślizgowa.",
-    "image": "https://stago.com.pl/assets/products/sanitarny.png",
+    "image": "https://stago.com.pl/assets/products/sanitarny.webp",
     "lowPrice": "20000",
     "highPrice": "55000"
   }

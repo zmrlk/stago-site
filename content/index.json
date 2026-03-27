@@ -54,12 +54,12 @@
     "h2accent": "Przeznaczenie dopasujesz sam.",
     "sub": "Każdy model możesz skonfigurować pod siebie — wymiar, kolor, wykończenie, wyposażenie.",
     "items": [
-      { "name": "Model S", "desc": "Cały czarny, masywne przeszklenia z przodu. Poważny wygląd, solidna konstrukcja. Stawiasz i robisz wrażenie.", "price": "od 15 000 zł netto", "href": "pawilon-handlowy.html", "img": "assets/products/magazynowy.png", "cta": "Zobacz Model S &rarr;" },
-      { "name": "Model M", "desc": "Minimalizm w najczystszej formie. Szara elewacja, panoramiczne okna z boku, zero zbędnych detali. Wchodzisz i od razu czujesz przestrzeń.", "price": "od 22 000 zł netto", "href": "kontener-biurowy.html", "img": "assets/products/biurowy.png", "cta": "Zobacz Model M &rarr;" },
-      { "name": "Model L", "desc": "Czarna blacha, drewniane lamele i duże przeszklenia aluminiowe. Nasz klasyk — wygląda jak z Berlina. Elegancki, ciepły, gotowy od razu.", "price": "od 35 000 zł netto", "href": "pawilon-mieszkalny.html", "img": "assets/products/handlowy.png", "cta": "Zobacz Model L &rarr;" },
-      { "name": "Model T", "desc": "Antracyt z jasnym drewnem, dużo wejść. Zaprojektowany tak, żeby dużo osób mogło korzystać jednocześnie. Solidny, funkcjonalny, łatwy w utrzymaniu.", "price": "od 20 000 zł netto", "href": "kontener-sanitarny.html", "img": "assets/products/sanitarny.png", "cta": "Zobacz Model T &rarr;" },
-      { "name": "Model X", "desc": "Cały czarny, masywne przeszklenia. Wygląda poważnie — bo taki jest. Stalowa skrzynia, zamek wielopunktowy, opcjonalna izolacja. Zamykasz na klucz i masz spokój.", "price": "od 12 000 zł netto", "href": "kontener-magazynowy.html", "img": "assets/products/box.png", "cta": "Zobacz Model X &rarr;" },
-      { "name": "Model Glass", "desc": "Nasz top model. Lustrzane przeszklenia od podłogi do sufitu — wygląda jak z innej ligi. Szklana fasada, stalowa konstrukcja, efekt wow gwarantowany. Reszta do ustalenia.", "price": "wycena indywidualna", "href": "pawilon-premium.html", "img": "assets/products/glass.png", "cta": "Zapytaj o wycenę &rarr;" }
+      { "name": "Model S", "desc": "Cały czarny, masywne przeszklenia z przodu. Poważny wygląd, solidna konstrukcja. Stawiasz i robisz wrażenie.", "price": "od 15 000 zł netto", "href": "pawilon-handlowy.html", "img": "assets/products/magazynowy.webp", "cta": "Zobacz Model S &rarr;" },
+      { "name": "Model M", "desc": "Minimalizm w najczystszej formie. Szara elewacja, panoramiczne okna z boku, zero zbędnych detali. Wchodzisz i od razu czujesz przestrzeń.", "price": "od 22 000 zł netto", "href": "kontener-biurowy.html", "img": "assets/products/biurowy.webp", "cta": "Zobacz Model M &rarr;" },
+      { "name": "Model L", "desc": "Czarna blacha, drewniane lamele i duże przeszklenia aluminiowe. Nasz klasyk — wygląda jak z Berlina. Elegancki, ciepły, gotowy od razu.", "price": "od 35 000 zł netto", "href": "pawilon-mieszkalny.html", "img": "assets/products/handlowy.webp", "cta": "Zobacz Model L &rarr;" },
+      { "name": "Model T", "desc": "Antracyt z jasnym drewnem, dużo wejść. Zaprojektowany tak, żeby dużo osób mogło korzystać jednocześnie. Solidny, funkcjonalny, łatwy w utrzymaniu.", "price": "od 20 000 zł netto", "href": "kontener-sanitarny.html", "img": "assets/products/sanitarny.webp", "cta": "Zobacz Model T &rarr;" },
+      { "name": "Model X", "desc": "Cały czarny, masywne przeszklenia. Wygląda poważnie — bo taki jest. Stalowa skrzynia, zamek wielopunktowy, opcjonalna izolacja. Zamykasz na klucz i masz spokój.", "price": "od 12 000 zł netto", "href": "kontener-magazynowy.html", "img": "assets/products/box.webp", "cta": "Zobacz Model X &rarr;" },
+      { "name": "Model Glass", "desc": "Nasz top model. Lustrzane przeszklenia od podłogi do sufitu — wygląda jak z innej ligi. Szklana fasada, stalowa konstrukcja, efekt wow gwarantowany. Reszta do ustalenia.", "price": "wycena indywidualna", "href": "pawilon-premium.html", "img": "assets/products/glass.webp", "cta": "Zapytaj o wycenę &rarr;" }
     ]
   },
   "compare": {
@@ -146,15 +146,15 @@
     "h2accent": "co robimy.",
     "sub": "Każdy projekt inny — każdy pod klienta. Kliknij żeby powiększyć.",
     "items": [
-      { "img": "assets/gallery/k2.png", "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej", "label": "Kiosk handlowy, blacha antracyt" },
-      { "img": "assets/gallery/k6.png", "alt": "Kontener biurowy STAGO — moduł z oknami panoramicznymi", "label": "Biuro 6×3m, okna panoramiczne" },
-      { "img": "assets/gallery/k9.png", "alt": "Pawilon usługowy STAGO — punkt z oknem podawczym", "label": "Punkt usługowy, okno podawcze" },
-      { "img": "assets/gallery/k11.png", "alt": "Kontener biurowy STAGO — elewacja HPL", "label": "Kontener biurowy, elewacja HPL" },
-      { "img": "assets/gallery/k14.png", "alt": "Pawilon modułowy STAGO — okładzina drewniana", "label": "Pawilon z okładziną drewnianą" },
-      { "img": "assets/gallery/k16.png", "alt": "Kontener modułowy STAGO — akcent drewniany", "label": "Kontener z akcentem drewnianym" },
-      { "img": "assets/gallery/k19.png", "alt": "Kontener magazynowy STAGO — blacha grafitowa", "label": "Magazyn 6×2,4m, blacha grafitowa" },
-      { "img": "assets/gallery/k21.png", "alt": "Pawilon modułowy STAGO — pełna elewacja drewniana", "label": "Pawilon z pełną elewacją drewnianą" },
-      { "img": "assets/gallery/k25.png", "alt": "Moduły łączone STAGO — biuro i magazyn", "label": "Moduły łączone, biuro + magazyn" }
+      { "img": "assets/gallery/k2.webp", "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej", "label": "Kiosk handlowy, blacha antracyt" },
+      { "img": "assets/gallery/k6.webp", "alt": "Kontener biurowy STAGO — moduł z oknami panoramicznymi", "label": "Biuro 6×3m, okna panoramiczne" },
+      { "img": "assets/gallery/k9.webp", "alt": "Pawilon usługowy STAGO — punkt z oknem podawczym", "label": "Punkt usługowy, okno podawcze" },
+      { "img": "assets/gallery/k11.webp", "alt": "Kontener biurowy STAGO — elewacja HPL", "label": "Kontener biurowy, elewacja HPL" },
+      { "img": "assets/gallery/k14.webp", "alt": "Pawilon modułowy STAGO — okładzina drewniana", "label": "Pawilon z okładziną drewnianą" },
+      { "img": "assets/gallery/k16.webp", "alt": "Kontener modułowy STAGO — akcent drewniany", "label": "Kontener z akcentem drewnianym" },
+      { "img": "assets/gallery/k19.webp", "alt": "Kontener magazynowy STAGO — blacha grafitowa", "label": "Magazyn 6×2,4m, blacha grafitowa" },
+      { "img": "assets/gallery/k21.webp", "alt": "Pawilon modułowy STAGO — pełna elewacja drewniana", "label": "Pawilon z pełną elewacją drewnianą" },
+      { "img": "assets/gallery/k25.webp", "alt": "Moduły łączone STAGO — biuro i magazyn", "label": "Moduły łączone, biuro + magazyn" }
     ]
   },
   "reviews": {
@@ -172,9 +172,9 @@
     "h2": "O czym powinieneś wiedzieć",
     "sub": "przed zakupem.",
     "items": [
-      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.png", "date": "Poradnik", "title": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę", "desc": "7 konkretnych rzeczy do sprawdzenia. Spawy, izolacja, dach, ukryte koszty. Zanim wyślesz przelew — przeczytaj." },
-      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.png", "date": "Poradnik", "title": "Odebrałeś pawilon. I co teraz? Kontrola jakości krok po kroku.", "desc": "Pawilon przyjechał na lawecie. Co sprawdzić zanim podpiszesz protokół? Dach, spawy, okna, podłoga — checklista." },
-      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.png", "date": "Poradnik", "title": "Pierwsza zima w pawilonie — czego nikt Ci nie powie", "desc": "Izolacja, ogrzewanie, wilgoć, rachunki. Prawdziwe liczby i porady od kogoś, kto widział nie jedną zimę." }
+      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.webp", "date": "Poradnik", "title": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę", "desc": "7 konkretnych rzeczy do sprawdzenia. Spawy, izolacja, dach, ukryte koszty. Zanim wyślesz przelew — przeczytaj." },
+      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.webp", "date": "Poradnik", "title": "Odebrałeś pawilon. I co teraz? Kontrola jakości krok po kroku.", "desc": "Pawilon przyjechał na lawecie. Co sprawdzić zanim podpiszesz protokół? Dach, spawy, okna, podłoga — checklista." },
+      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.webp", "date": "Poradnik", "title": "Pierwsza zima w pawilonie — czego nikt Ci nie powie", "desc": "Izolacja, ogrzewanie, wilgoć, rachunki. Prawdziwe liczby i porady od kogoś, kto widział nie jedną zimę." }
     ]
   },
   "faq": {

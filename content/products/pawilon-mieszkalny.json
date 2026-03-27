@@ -5,12 +5,12 @@
     "canonical": "https://stago.com.pl/pawilon-mieszkalny.html",
     "ogTitle": "Model L — pawilon modułowy STAGO | Drewniana elewacja, przytulny, pod klucz",
     "ogDescription": "Domy modułowe od producenta. Całoroczne, z łazienką i kuchnią. Od 35 000 zł netto.",
-    "ogImage": "https://stago.com.pl/assets/products/mieszkalny.png"
+    "ogImage": "https://stago.com.pl/assets/products/mieszkalny.webp"
   },
   "breadcrumb": "Model L",
   "productType": "Mieszkalny",
   "hero": {
-    "img": "assets/products/mieszkalny.png",
+    "img": "assets/products/mieszkalny.webp",
     "imgAlt": "Pawilon mieszkalny STAGO — dom modułowy",
     "h1": "Model L — Twoje własne miejsce. W końcu.",
     "subtitle": "Cały owinięty drewnem. Ciepły, przytulny, z dużymi oknami i drzwiami tarasowymi. Wygląda jak domek z magazynu wnętrzarskiego, a w środku masz wszystko co trzeba — od łazienki po ogrzewanie. Stawiasz na działce i mieszkasz.",
@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Domy modułowe, w których już się mieszka",
     "items": [
-      { "img": "assets/gallery/k14.png", "alt": "Dom modułowy STAGO — pawilon mieszkalny z okładziną drewnianą" },
-      { "img": "assets/gallery/k16.png", "alt": "Dom modułowy STAGO — kontener mieszkalny z akcentem drewnianym" },
-      { "img": "assets/gallery/k21.png", "alt": "Dom modułowy STAGO — pawilon całoroczny z pełną elewacją drewnianą" }
+      { "img": "assets/gallery/k14.webp", "alt": "Dom modułowy STAGO — pawilon mieszkalny z okładziną drewnianą" },
+      { "img": "assets/gallery/k16.webp", "alt": "Dom modułowy STAGO — kontener mieszkalny z akcentem drewnianym" },
+      { "img": "assets/gallery/k21.webp", "alt": "Dom modułowy STAGO — pawilon całoroczny z pełną elewacją drewnianą" }
     ]
   },
   "faq": {
@@ -133,7 +133,7 @@
   "related": [
     {
       "href": "pawilon-handlowy.html",
-      "img": "assets/products/handlowy.png",
+      "img": "assets/products/handlowy.webp",
       "alt": "Pawilon handlowy STAGO",
       "label": "Produkt",
       "h3": "Pawilon handlowy",
@@ -141,7 +141,7 @@
     },
     {
       "href": "kontener-biurowy.html",
-      "img": "assets/products/biurowy.png",
+      "img": "assets/products/biurowy.webp",
       "alt": "Kontener biurowy STAGO",
       "label": "Produkt",
       "h3": "Kontener biurowy",
@@ -149,7 +149,7 @@
     },
     {
       "href": "blog/kontener-biurowy-cena.html",
-      "img": "assets/gallery/k14.png",
+      "img": "assets/gallery/k14.webp",
       "alt": "Cennik domów modułowych",
       "label": "Blog",
       "h3": "Kontener biurowy — ile kosztuje w 2026?",
@@ -159,7 +159,7 @@
   "jsonLd": {
     "name": "Pawilon mieszkalny STAGO — dom modułowy",
     "description": "Dom modułowy od producenta. Całoroczny, z łazienką, kuchnią i ogrzewaniem. Izolacja PIR 100mm, konstrukcja stalowa, stolarka aluminiowa.",
-    "image": "https://stago.com.pl/assets/products/mieszkalny.png",
+    "image": "https://stago.com.pl/assets/products/mieszkalny.webp",
     "lowPrice": "35000",
     "highPrice": "120000"
   }

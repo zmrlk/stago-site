@@ -5,12 +5,12 @@
     "canonical": "https://stago.com.pl/kontener-magazynowy.html",
     "ogTitle": "Model X — kontener stalowy STAGO | Czarny, masywny, bezpieczny",
     "ogDescription": "Kontenery magazynowe od producenta. Magazyny, garaże. Od 12 000 zł netto.",
-    "ogImage": "https://stago.com.pl/assets/products/magazynowy.png"
+    "ogImage": "https://stago.com.pl/assets/products/magazynowy.webp"
   },
   "breadcrumb": "Model X",
   "productType": "Magazynowy",
   "hero": {
-    "img": "assets/products/magazynowy.png",
+    "img": "assets/products/magazynowy.webp",
     "imgAlt": "Kontener magazynowy STAGO",
     "h1": "Model X — zamykasz na klucz i śpisz spokojnie.",
     "subtitle": "Cały czarny, masywne przeszklenia z przodu, spawana stalowa konstrukcja. Wygląda poważnie — bo taki jest. Zamek wielopunktowy, opcjonalna izolacja. Trzymasz w nim co chcesz — narzędzia, towar, sprzęt. Nikt się nie dostanie.",
@@ -76,9 +76,9 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Kontenery, które już służą",
     "items": [
-      { "img": "assets/gallery/k19.png", "alt": "Kontener magazynowy STAGO — blacha grafitowa, drzwi dwuskrzydłowe" },
-      { "img": "assets/gallery/k21.png", "alt": "Kontener magazynowy STAGO — elewacja drewniana, konstrukcja stalowa" },
-      { "img": "assets/gallery/k25.png", "alt": "Kontener magazynowy STAGO — moduły łączone, biuro i magazyn" }
+      { "img": "assets/gallery/k19.webp", "alt": "Kontener magazynowy STAGO — blacha grafitowa, drzwi dwuskrzydłowe" },
+      { "img": "assets/gallery/k21.webp", "alt": "Kontener magazynowy STAGO — elewacja drewniana, konstrukcja stalowa" },
+      { "img": "assets/gallery/k25.webp", "alt": "Kontener magazynowy STAGO — moduły łączone, biuro i magazyn" }
     ]
   },
   "faq": {
@@ -131,7 +131,7 @@
   "related": [
     {
       "href": "pawilon-handlowy.html",
-      "img": "assets/products/handlowy.png",
+      "img": "assets/products/handlowy.webp",
       "alt": "Pawilon handlowy STAGO",
       "label": "Produkt",
       "h3": "Pawilon handlowy",
@@ -139,7 +139,7 @@
     },
     {
       "href": "kontener-biurowy.html",
-      "img": "assets/products/biurowy.png",
+      "img": "assets/products/biurowy.webp",
       "alt": "Kontener biurowy STAGO",
       "label": "Produkt",
       "h3": "Kontener biurowy",
@@ -147,7 +147,7 @@
     },
     {
       "href": "blog/pawilon-bez-pozwolenia.html",
-      "img": "assets/gallery/k9.png",
+      "img": "assets/gallery/k9.webp",
       "alt": "Pawilon bez pozwolenia",
       "label": "12 marca 2026",
       "h3": "Kontener bez pozwolenia — przepisy 2026",
@@ -157,7 +157,7 @@
   "jsonLd": {
     "name": "Kontener magazynowy STAGO",
     "description": "Kontener magazynowy od producenta. Magazyny, garaże, pomieszczenia gospodarcze. Konstrukcja stalowa malowana proszkowo. Gotowy w 3-4 tygodnie.",
-    "image": "https://stago.com.pl/assets/products/magazynowy.png",
+    "image": "https://stago.com.pl/assets/products/magazynowy.webp",
     "lowPrice": "12000",
     "highPrice": "45000"
   }
