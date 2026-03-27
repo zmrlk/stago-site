@@ -96,15 +96,15 @@
   "caseStudy": {
     "eyebrow": "Historia klienta",
     "intro": "Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Tomek.",
-    "h2": "Tomek przeniósł sklep.",
+    "h2": "Tomek przeniósł warzywniak.",
     "h2accent": "Na swoich zasadach.",
     "steps": [
-      { "label": "Sytuacja", "text": "Klient prowadził sklep z częściami samochodowymi. Przez lata wynajmował lokal — płacił czynsz, który nie budował niczego jego. Właściciel podniósł stawkę." },
-      { "label": "Jeden telefon", "text": "Zadzwonił do nas. Narysowaliśmy wizualizację pawilonu z witryną i zapleczem. Miał swoje pomysły na układ — zmieniliśmy projekt, dopasowaliśmy kolory. Dwa spotkania i gotowe." },
-      { "label": "Efekt", "text": "Dziś ma własny — na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Za kilka lat pawilon będzie w całości jego." }
+      { "label": "Sytuacja", "text": "Tomek prowadził warzywniak w wynajętym lokalu. Przez lata płacił czynsz, który nie budował niczego jego. Pewnego dnia właściciel podniósł stawkę — i Tomek zaczął szukać innego wyjścia." },
+      { "label": "Jeden telefon", "text": "Zadzwonił do nas. Narysowaliśmy pawilon z dużą witryną na wystawkę owoców i zapleczem chłodniczym. Tomek miał swoje pomysły — zmieniliśmy układ, dobraliśmy kolory. Dwa spotkania i gotowe." },
+      { "label": "Efekt", "text": "Dziś stoi na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Klienci mówią, że wygląda lepiej niż połowa sklepów w mieście. Za kilka lat pawilon będzie w całości jego." }
     ],
     "quote": "Żałuję tylko jednego — że nie zadzwoniłem wcześniej.",
-    "cite": "— Tomek, sklep z częściami, Busko-Zdrój"
+    "cite": "— Tomek, warzywniak, Busko-Zdrój"
   },
   "financing": {
     "eyebrow": "Finanse?",
