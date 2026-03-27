@@ -24,6 +24,8 @@
 
   var limg=document.createElement('img');
   limg.alt='Realizacja STAGO';
+  limg.width=1000;
+  limg.height=750;
 
   box.appendChild(closeBtn);
   box.appendChild(prevBtn);
