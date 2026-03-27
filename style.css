@@ -262,12 +262,16 @@ button{-webkit-tap-highlight-color:transparent}
 
 /* ── REVIEWS ── */
 .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
-.review-card{background:rgba(255,255,255,.04);border:1px solid var(--border-dark);border-radius:var(--r);padding:32px;transition:border-color .3s}
+.review-card{background:rgba(255,255,255,.04);border:1px solid var(--border-dark);border-radius:var(--r);padding:32px;transition:border-color .3s;display:flex;flex-direction:column}
 .review-card:hover{border-color:rgba(232,70,28,.3)}
 .review-stars{color:var(--accent);font-size:1.2rem;margin-bottom:16px;letter-spacing:2px}
-.review-text{font-size:.95rem;color:var(--t-light2);line-height:1.65;margin-bottom:20px;font-style:italic}
+.review-text{font-size:.95rem;color:var(--t-light2);line-height:1.65;margin-bottom:20px;font-style:italic;flex:1}
+.review-author{margin-top:auto}
 .review-author strong{display:block;color:var(--white);font-size:.9rem}
 .review-author span{font-size:.78rem;color:var(--t-light3)}
+.reviews-cta{text-align:center;margin-top:32px}
+.reviews-cta a{color:var(--accent);font-weight:600;font-size:.95rem;text-decoration:none;transition:opacity .2s}
+.reviews-cta a:hover{opacity:.8}
 
 /* ── BLOG ── */
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}

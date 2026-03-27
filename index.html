@@ -367,9 +367,9 @@
   <section class="section section-dark" id="opinie">
     <div class="container">
       <p class="eyebrow">Opinie klientów</p>
-      <h2 class="h2">5.0 na Google.<br><span class="accent">To nie my — to nasi klienci.</span></h2>
-      <div class="reviews">
-        
+      <h2 class="h2">5.0 na Google. <span class="review-count">5 opinii</span><br><span class="accent">To nie my — to nasi klienci.</span></h2>
+      <div class="reviews" id="google-reviews">
+        <!-- Fallback — wyświetlane gdy API niedostępne -->
         <div class="review-card reveal">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p class="review-text">"Bardzo miła atmosfera, wspaniała obsługa, szybki czas realizacji. Polecam każdemu!"</p>
@@ -378,7 +378,6 @@
             <span>Google Reviews</span>
           </div>
         </div>
-        
         <div class="review-card reveal">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p class="review-text">"Miła profesjonalna obsługa. Oprócz porady dostałem materiał do wypróbowania własnego pomysłu. Rewelacja."</p>
@@ -387,7 +386,6 @@
             <span>Google Reviews</span>
           </div>
         </div>
-        
         <div class="review-card reveal">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p class="review-text">"Solidna firma, dotrzymują terminów. Pawilon wygląda dokładnie jak na wizualizacji. Zero niespodzianek."</p>
@@ -396,7 +394,9 @@
             <span>Google Reviews</span>
           </div>
         </div>
-        
+      </div>
+      <div class="reviews-cta">
+        <a href="https://www.google.com/maps/place/STAGO+-+producent+pawilon%C3%B3w/@50.6419,20.2861,17z/data=!4m8!3m7!1s0x4717995597c7bb63:0x9cbdd08b66cf7187!8m2!3d50.6419!4d20.2861!9m1!1b1!16s" target="_blank" rel="noopener">Zobacz wszystkie opinie na Google &rarr;</a>
       </div>
     </div>
   </section>
@@ -716,5 +716,11 @@
   </script>
   <script src="form-handler.js"></script>
   <script src="lightbox.js"></script>
+  <script>
+    // Google Reviews — uzupełnij klucz API i Place ID
+    window.STAGO_GOOGLE_API_KEY = 'AIzaSyDdd5Kkz7Thbzuq5swgHX7vfn41Nr63Now';
+    window.STAGO_PLACE_ID = 'ChIJY7vHl1WZF0cRh3HPZovQvZw';
+  </script>
+  <script src="reviews.js"></script>
 </body>
 </html>
