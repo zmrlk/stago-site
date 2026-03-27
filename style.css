@@ -203,7 +203,7 @@ button{-webkit-tap-highlight-color:transparent}
 
 /* ── O FIRMIE z tłem ── */
 .section-about-bg{position:relative;overflow:hidden}
-.section-about-bg::before{content:'';position:absolute;inset:0;background:url('assets/hero1.webp') center/cover no-repeat;opacity:.08;z-index:0}
+.section-about-bg::before{content:'';position:absolute;inset:0;background:url('assets/warsztat-bg.webp') center/cover no-repeat;opacity:.08;z-index:0}
 .section-about-bg .container{position:relative;z-index:1}
 
 /* ── SCOPE (co jest w cenie) ── */
