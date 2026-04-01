@@ -1,5 +1,112 @@
 /* STAGO — app.js — Premium Mobile Edition */
 
+// ── CASE STUDY ROTATION ──
+const stories = [
+  {
+    id: 'tomek',
+    img: 'assets/warzywniak-tomek.webp',
+    alt: 'Warzywniak Tomka — pawilon STAGO, Busko-Zdrój',
+    intro: 'Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Tomek.',
+    h2: 'Tomek przeniósł warzywniak. <span class="accent">Na swoich zasadach.</span>',
+    chapters: [
+      {
+        label: 'Sytuacja',
+        text: 'Tomek prowadził warzywniak w wynajętym lokalu na rynku. Przez kilka lat płacił czynsz, który nie budował niczego jego — ani metra kwadratowego, ani jednej ściany. Właściciel lokalu podniósł stawkę z dnia na dzień. Tomek zaczął liczyć i szukać wyjścia. Nie chciał kolejnego wynajmu — chciał czegoś, co będzie jego.'
+      },
+      {
+        label: 'Jeden telefon',
+        text: 'Zadzwonił do nas i opowiedział, co mu chodzi po głowie. Narysowaliśmy pawilon z dużą witryną przeszkloną — żeby owoce i warzywa były widoczne z ulicy — i zapleczem chłodniczym z tyłu. Tomek miał swoje pomysły na układ, kolory elewacji. Nie musieliśmy go przekonywać — po prostu dopasowaliśmy projekt do tego, co sobie wyobraził. Dwa spotkania, kilka poprawek i projekt był gotowy.'
+      },
+      {
+        label: 'Efekt',
+        text: 'Dziś Tomek stoi na własnej działce, we własnym pawilonie, na własnych zasadach. Rata leasingowa wychodzi go mniej niż dawny czynsz — a za kilka lat pawilon będzie w całości jego. Klienci mówią, że jego warzywniak wygląda lepiej niż połowa sklepów w mieście. Tomek mówi, że żałuje tylko jednego.'
+      }
+    ],
+    quote: 'Żałuję tylko jednego — że nie zadzwoniłem wcześniej.',
+    cite: '— Tomek, warzywniak, Busko-Zdrój'
+  },
+  {
+    id: 'marek',
+    img: 'assets/historia-marek.webp',
+    alt: 'Nowy pawilon STAGO z płytą PIR — wymiana starego obiektu',
+    intro: 'Stary pawilon, który więcej kosztuje niż zarabia? Marek znał to aż za dobrze.',
+    h2: 'Marek wymienił pawilon. <span class="accent">Rachunki spadły o połowę.</span>',
+    chapters: [
+      {
+        label: 'Sytuacja',
+        text: 'Marek prowadził punkt usługowy w pawilonie, który kupił lata temu od innej firmy. Ściany z cienkiej blachy, izolacja praktycznie żadna. Zimą klimatyzacja na full, a w środku i tak zimno — klienci wchodzili w kurtkach. Latem odwrotnie: blaszany piec nie do wytrzymania. Rachunki za prąd rosły z roku na rok, a pawilon wyglądał coraz gorzej. Marek wiedział, że łatanie nie ma sensu — ale bał się, że wymiana to skomplikowana sprawa.'
+      },
+      {
+        label: 'Jeden telefon',
+        text: 'Zadzwonił, opowiedział sytuację. Przyjechaliśmy, obejrzeliśmy stary pawilon, zmierzyliśmy działkę. Zaproponowaliśmy nowy obiekt z płytą warstwową PIR 10 cm — to izolacja, która trzyma ciepło zimą i chłód latem, bez mostków termicznych, bez dokładania dodatkowego ocieplenia. Marek wybrał układ zbliżony do starego, żeby nie zmieniać przyzwyczajeń klientów — ale z lepszą stolarką aluminiową i porządnym zapleczem. Stary pawilon zdemontowaliśmy, nowy postawiliśmy w tym samym miejscu.'
+      },
+      {
+        label: 'Efekt',
+        text: 'Pierwszy rachunek za prąd po wymianie — Marek nie wierzył. Klima na minimum, a w środku ciepło i przyjemnie. Klienci zaczęli zostawać dłużej. Pawilon wygląda jak nowy lokal — bo to jest nowy lokal. Marek mówi, że gdyby wiedział wcześniej, ile traci na ogrzewaniu starego blaszaka, nie czekałby ani dnia.'
+      }
+    ],
+    quote: 'Powinienem to zrobić trzy zimy temu. Tyle pieniędzy poszło w błoto.',
+    cite: '— Marek, punkt usługowy, Radomsko'
+  },
+  {
+    id: 'jan',
+    img: 'assets/historia-jan.webp',
+    alt: 'Serwis rowerowy Jana — pawilon STAGO z witryną',
+    intro: 'Garaż pękał w szwach? Jan postanowił wyjść z garażu — dosłownie.',
+    h2: 'Jan otworzył serwis rowerowy. <span class="accent">W prawdziwym lokalu.</span>',
+    chapters: [
+      {
+        label: 'Sytuacja',
+        text: 'Jan naprawiał rowery w garażu przy domu. Zaczynał hobbystycznie, ale z czasem klientów przybywało. Problem: w garażu nie było miejsca na porządny warsztat, nie mówiąc o części klienckiej. Rowery stały jeden na drugim, narzędzia leżały gdzie popadnie. Klienci wchodzili bokiem między pudłami. Jan wiedział, że jeśli chce traktować to poważnie — potrzebuje prawdziwego lokalu. Ale wynajem w mieście? Za drogo. Budowa murowana? Za długo.'
+      },
+      {
+        label: 'Jeden telefon',
+        text: 'Zadzwonił do nas. Opowiedzieliśmy mu, że pawilon modułowy to coś pomiędzy — własny lokal, ale bez pozwolenia na budowę do 35 m², bez fundamentów, bez czekania miesiącami. Zaprojektowaliśmy układ: z przodu część kliencka z ladą i wystawą akcesoriów, z tyłu warsztat z porządnym oświetleniem i miejscem na stojaki. Jan chciał duże przeszklenie od frontu — żeby ludzie widzieli, że to profesjonalny serwis, nie garaż. Dobraliśmy ciemną elewację z pomarańczowym akcentem, żeby pasowało do jego logo.'
+      },
+      {
+        label: 'Efekt',
+        text: 'Dziś Jan ma lokal, który wygląda jak prawdziwy sklep — bo to jest prawdziwy sklep. Klienci przychodzą z ulicy, bo widzą witrynę. Ma miejsce na wszystko: narzędzia poukładane, rowery na stojakach, a nie na podłodze. Mówi, że od kiedy wyprowadził się z garażu, klienci zaczęli go traktować inaczej — bardziej poważnie, częściej wracają, częściej polecają.'
+      }
+    ],
+    quote: 'W garażu byłem gościem, który naprawia rowery. Teraz mam serwis.',
+    cite: '— Jan, serwis rowerowy, Wieluń'
+  },
+];
+
+// Pick random story and render (data is hardcoded above, not user input)
+(function initStory() {
+  const el = {
+    img: document.getElementById('story-img'),
+    intro: document.getElementById('story-intro'),
+    h2: document.getElementById('story-h2'),
+    narrative: document.getElementById('story-narrative'),
+    quote: document.getElementById('story-quote'),
+    cite: document.getElementById('story-cite')
+  };
+  if (!el.img || !el.narrative) return;
+
+  const story = stories[Math.floor(Math.random() * stories.length)];
+
+  el.img.src = story.img;
+  el.img.alt = story.alt;
+  el.intro.textContent = story.intro;
+  el.h2.innerHTML = story.h2;
+
+  el.narrative.innerHTML = story.chapters.map(ch => `
+    <div class="story-chapter reveal">
+      <div class="story-chapter-label">${ch.label}</div>
+      <p>${ch.text}</p>
+    </div>
+  `).join('');
+
+  // Update quote text (first text node) and cite separately
+  const citeEl = el.quote.querySelector('cite');
+  // Clear and rebuild blockquote content
+  el.quote.textContent = `\u201C${story.quote}\u201D`;
+  citeEl.textContent = story.cite;
+  el.quote.appendChild(citeEl);
+})();
+
 // ── PRODUCT DATA ──
 const products = {
   handlowy: {
