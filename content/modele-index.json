@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Modele pawilonów STAGO — 12 wzorów do wyboru",
+    "description": "12 modeli pawilonów modułowych STAGO. Drewno, grafit, mix. Wybierz wzór — wymiar, kolor, stolarkę i wnętrze dopasujemy pod Twoją sytuację.",
+    "canonical": "https://stago.com.pl/modele.html",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "hero": {
+    "eyebrow": "Nasze modele",
+    "h1": "Wybierz wzór.",
+    "h1accent": "Resztę dopasujemy.",
+    "sub": "12 modeli to punkt wyjścia — inspiracja formą i charakterem. Wymiar, kolor, stolarka, wnętrze, wyposażenie — wszystko projektujemy od nowa pod Ciebie. Każdy pawilon inny, każdy pod konkretną sytuację."
+  },
+  "models": [
+    { "code": "ATRI", "name": "ATRI", "img": "assets/modele/atri.webp", "alt": "Pawilon ATRI — jasny dąb, otwarte wnętrze", "desc": "Jasne drewniane lamele, dużo szkła, przesuwne drzwi. Otwarte, przytulne atrium.", "href": "modele/atri.html" },
+    { "code": "MILA", "name": "MILA", "img": "assets/modele/mila.webp", "alt": "Pawilon MILA — skandynawski spokój w drewnie", "desc": "Pełna drewniana elewacja w jasnym odcieniu. Spokój i ciepło bez zbędnych detali.", "href": "modele/mila.html" },
+    { "code": "ICON", "name": "ICON", "img": "assets/modele/icon.webp", "alt": "Pawilon ICON — drewniany loft premium", "desc": "Drewniana elewacja, wielkie narożne szkła. Studio architekta w pełnej krasie.", "href": "modele/icon.html" },
+    { "code": "RYTM", "name": "RYTM", "img": "assets/modele/rytm.webp", "alt": "Pawilon RYTM — drewniana ramka, symetryczny front", "desc": "Pionowe drewniane lamele w ramce, czarny front, symetryczne drzwi.", "href": "modele/rytm.html" },
+    { "code": "NORD", "name": "NORD", "img": "assets/modele/nord.webp", "alt": "Pawilon NORD — antracyt z drewnianymi akcentami", "desc": "Antracyt + drewno w narożnikach + ogromne narożne szklenia. Skandynawski premium.", "href": "modele/nord.html" },
+    { "code": "LOFT", "name": "LOFT", "img": "assets/modele/loft.webp", "alt": "Pawilon LOFT — drewno, grafit, ogromne witryny", "desc": "Pionowe drewniane lamele, grafitowy dach, trzy duże witryny. Showroom-feel.", "href": "modele/loft.html" },
+    { "code": "SAGA", "name": "SAGA", "img": "assets/modele/saga.webp", "alt": "Pawilon SAGA — drewniana góra, grafitowy front", "desc": "Drewniana elewacja górna, grafit na dole, trzy duże witryny. Gotowy pod gastro.", "href": "modele/saga.html" },
+    { "code": "VIEW", "name": "VIEW", "img": "assets/modele/view.webp", "alt": "Pawilon VIEW — drewno, grafit, narożne szkła", "desc": "Drewniany pas górny, grafitowy korpus, panoramiczne narożne szklenia.", "href": "modele/view.html" },
+    { "code": "DUET", "name": "DUET", "img": "assets/modele/duet.webp", "alt": "Pawilon DUET — grafit z drewnianymi akcentami", "desc": "Grafitowy korpus, drewniane lamele po bokach, trzy duże witryny frontowe.", "href": "modele/duet.html" },
+    { "code": "CUBE", "name": "CUBE", "img": "assets/modele/cube.webp", "alt": "Pawilon CUBE — czarny kubik z drewnianą wstawką", "desc": "Czarny modułowy kubik, drewniana wstawka jako akcent. Czysta geometria.", "href": "modele/cube.html" },
+    { "code": "NOIR", "name": "NOIR", "img": "assets/modele/noir.webp", "alt": "Pawilon NOIR — czarne lamele, mroczny minimalizm", "desc": "Pionowe czarne lamele, podłużne okna, butikowy charakter jak z Berlina.", "href": "modele/noir.html" },
+    { "code": "KIOS", "name": "KIOS", "img": "assets/modele/kios.webp", "alt": "Pawilon KIOS — mały, czarny, gotowy do handlu", "desc": "Kompaktowy czarny pawilon z dużą szklaną witryną. Mały footprint, duży charakter.", "href": "modele/kios.html" }
+  ],
+  "cta": {
+    "h2": "Nie wiesz, który wybrać?",
+    "sub": "Powiedz nam, do czego ma być. Zaproponujemy 2-3 modele i zrobimy darmową wizualizację."
+  }
+}

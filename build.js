@@ -36,13 +36,7 @@ function escapeHtml(s) {
 const pages = [
   // Homepage
   { content: 'content/index.json', template: 'templates/index.html', output: 'index.html' },
-  // Product pages
-  { content: 'content/products/pawilon-handlowy.json', template: 'templates/product.html', output: 'pawilon-handlowy.html' },
-  { content: 'content/products/kontener-biurowy.json', template: 'templates/product.html', output: 'kontener-biurowy.html' },
-  { content: 'content/products/kontener-magazynowy.json', template: 'templates/product.html', output: 'kontener-magazynowy.html' },
-  { content: 'content/products/pawilon-mieszkalny.json', template: 'templates/product.html', output: 'pawilon-mieszkalny.html' },
-  { content: 'content/products/kontener-sanitarny.json', template: 'templates/product.html', output: 'kontener-sanitarny.html' },
-  { content: 'content/products/pawilon-premium.json', template: 'templates/product.html', output: 'pawilon-premium.html' },
+  // (Stare product pages usunięte — _redirects 301 → /zastosowania/* + /modele/*)
   // Konfigurator
   { content: 'content/konfigurator.json', template: 'templates/konfigurator.html', output: 'konfigurator.html' },
   // Blog articles
@@ -61,6 +55,16 @@ const pages = [
   { content: 'content/blog/pawilon-gastronomiczny.json', template: 'templates/blog.html', output: 'blog/pawilon-gastronomiczny.html' },
   { content: 'content/blog/kontener-uslugowy.json', template: 'templates/blog.html', output: 'blog/kontener-uslugowy.html' },
   { content: 'content/blog/dom-modulowy-producent.json', template: 'templates/blog.html', output: 'blog/dom-modulowy-producent.html' },
+  // Modele hub + 15 modeli
+  { content: 'content/modele-index.json', template: 'templates/modele-hub.html', output: 'modele.html' },
+  ...['atri','mila','icon','rytm','nord','loft','saga','view','duet','cube','noir','kios'].map(s => ({
+    content: `content/modele/${s}.json`, template: 'templates/model.html', output: `modele/${s}.html`
+  })),
+  // Zastosowania hub + 7 zastosowań
+  { content: 'content/zastosowania-index.json', template: 'templates/zastosowania-hub.html', output: 'zastosowania.html' },
+  ...['handlowy','gastronomiczny','biurowy','uslugowy','socjalny','mieszkalny','specjalny'].map(s => ({
+    content: `content/zastosowania/${s}.json`, template: 'templates/zastosowanie.html', output: `zastosowania/${s}.html`
+  })),
 ];
 
 pages.forEach(({ content: contentPath, template: templatePath, output }) => {

@@ -600,9 +600,10 @@ body { background: #F8F9FA; padding-bottom: 0; }
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO" class="nav-logo-img"></a>
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO" class="nav-logo-img" width="130" height="29"></a>
       <div class="nav-links" id="nav-links">
-        <a href="index.html#produkty">Modele</a>
+        <a href="modele.html">Modele</a>
+        <a href="zastosowania.html">Zastosowania</a>
         <a href="konfigurator.html" style="color:var(--accent)">Konfigurator</a>
         <a href="index.html#kontakt" class="btn btn-nav">Darmowa wycena</a>
       </div>
@@ -641,6 +642,9 @@ body { background: #F8F9FA; padding-bottom: 0; }
           <span>{{name}}</span>
         </div>
         {{/step1.types}}
+      </div>
+      <div style="text-align:center;margin:20px 0 8px">
+        <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
       </div>
       <p class="social-proof">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
@@ -780,7 +784,7 @@ body { background: #F8F9FA; padding-bottom: 0; }
             <input type="tel" name="phone" placeholder="Telefon *" required>
             <input type="email" name="email" placeholder="Email">
             <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)"></textarea>
-            <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+            <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
             <button type="submit" class="cfg-submit">{{step5.submitLabel}}</button>
             <p class="form-error" id="cfgForm-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:8px"></p>
             <p class="form-promise">
@@ -1074,8 +1078,9 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
 });
 
 // ── URL PARAMS (pre-select type, always override) ──
-const typeMap = {Handlowy:'Model S',Biurowy:'Model M',Mieszkalny:'Model L',Sanitarny:'Model T',Magazynowy:'Model X',Premium:'Model Glass'};
-let urlType = new URLSearchParams(window.location.search).get('type');
+const typeMap = {Handlowy:'NORD',Biurowy:'CUBE',Mieszkalny:'MILA',Sanitarny:'CUBE',Magazynowy:'KIOS',Premium:'ICON'};
+const params = new URLSearchParams(window.location.search);
+let urlType = params.get('type') || (params.get('model') ? params.get('model').toUpperCase() : null);
 if (urlType) {
   urlType = typeMap[urlType] || urlType;
   localStorage.removeItem('stago_cfg');

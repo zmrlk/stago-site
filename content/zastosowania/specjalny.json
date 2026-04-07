@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pawilon nietypowy — gabinet medyczny, stróżówka, kasa | STAGO",
+    "description": "Pawilony pod nietypowe zastosowania. Gabinet medyczny, stróżówka, kasa biletowa, info point, GOK. Pod konkretne wymogi i przepisy.",
+    "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
+    "ogTitle": "Pawilon nietypowy — gabinet medyczny, stróżówka, kasa | STAGO",
+    "ogDescription": "Pawilony pod nietypowe zastosowania. Gabinet medyczny, stróżówka, kasa biletowa, info point, GOK. Pod konkretne wymogi i przepisy.",
+    "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
+  },
+  "breadcrumb": "Specjalne",
+  "productType": "specjalny",
+  "hero": {
+    "img": "../assets/modele/noir.webp",
+    "imgAlt": "Pawilon nietypowy STAGO — bryła NOIR",
+    "h1": "Pawilon nietypowy.",
+    "subtitle": "Gabinet medyczny, stróżówka, kasa biletowa, punkt informacyjny dla miasta, mała biblioteka, wiejski dom kultury. Każdy taki projekt wymaga rozmowy ze specjalistą — przepisów, norm, wyposażenia. Realizujemy je regularnie, więc po prostu powiedz nam, czego potrzebujesz.",
+    "price": "wycena indywidualna",
+    "priceNote": "/ projekt powstaje pod Twoje wymagania",
+    "ctaHref": "../konfigurator.html?type=specjalny",
+    "articleHref": "../modele.html",
+    "articleText": "Zobacz wszystkie 12 modeli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Polecane bryły",
+    "h2": "Modele wyjściowe — punkt do dalszej rozmowy",
+    "sub": "Przy nietypowych projektach zaczynamy od wybranej bryły, ale od początku projektujemy ją pod Twoje konkretne wymagania.",
+    "items": [
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Wydłużony monolit z lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pawilon STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modułowy kubik z wyrazistą wstawką",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pawilon STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Premium bryła z narożnymi oknami",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pawilon STAGO NORD",
+        "href": "../modele/nord.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompaktowa bryła z pełną witryną",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pawilon STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Bryła z panoramicznymi narożnikami",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pawilon STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pod tę branżę",
+    "h2": "Co robimy przy nietypowych projektach",
+    "sub": "Każdy taki projekt to osobna historia — przepisy, normy, kontakt z urzędami. Mamy do tego sprawdzone procedury.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Zgodność z konkretnymi przepisami",
+        "text": "Gabinet medyczny — spełniamy wymogi rozporządzenia Ministerstwa Zdrowia. Kasa biletowa dla PKP — realizujemy zgodnie ze specyfikacją zamawiającego. Powiedz nam, co ma powstać, a zaprojektujemy pawilon pod konkretną normę."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Nietypowe wymiary i układy",
+        "text": "Stróżówka 2×2 m, punkt informacyjny 8×4 m z dachem nad strefą oczekiwania, mała biblioteka z czytelnią — wymiary i układ wnętrza projektujemy pod konkretną sytuację, a nie pod sztywny katalog."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Specjalistyczne instalacje",
+        "text": "Gazy medyczne, sterylizatory, wzmocniona instalacja elektryczna, nagłośnienie, monitoring, klimatyzacja precyzyjna — czego potrzebujesz, to podłączymy."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16\"/></svg>",
+        "h3": "Współpraca z urzędami i samorządami",
+        "text": "Wystawiamy faktury z VAT, pomagamy w przygotowaniu dokumentacji i realizujemy projekty pod przetargi publiczne. Współpracujemy z samorządami w całej Polsce."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "W cenie",
+    "h2": "Co dostajesz od STAGO",
+    "items": [
+      {
+        "h3": "Darmowa wizualizacja 3D",
+        "text": "Mówisz, czego potrzebujesz. Rysujemy. Zobaczysz pawilon w 3D zanim wydasz złotówkę. Zmieniamy póki nie powiesz „tak\"."
+      },
+      {
+        "h3": "Transport i montaż w cenie",
+        "text": "Pawilon jedzie na lawecie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+      },
+      {
+        "h3": "2 lata gwarancji + serwis",
+        "text": "Konstrukcja, ściany, dach — 2 lata gwarancji. Po gwarancji też nie zostawiamy klientów. Mamy własnych ludzi, nie szukamy na telefon."
+      },
+      {
+        "h3": "Pomoc z dokumentami",
+        "text": "Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zobacz na żywo",
+    "h2": "Tak wyglądają nasze realizacje",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Pawilon nietypowy STAGO — realizacja 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Pawilon nietypowy STAGO — realizacja 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Pawilon nietypowy STAGO — realizacja 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-specjalny",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci z tej branży",
+    "items": [
+      {
+        "q": "Czy realizujecie pawilony pod przetargi publiczne?",
+        "a": "Tak. Mamy doświadczenie we współpracy z samorządami, szpitalami i kolejami. Wystawiamy faktury z VAT, dostarczamy pełną dokumentację techniczną oraz realizujemy projekty zgodnie z SIWZ."
+      },
+      {
+        "q": "Ile kosztuje gabinet medyczny?",
+        "a": "Cena zależy od specyfikacji. Mały gabinet zabiegowy zaczyna się od 35 000 zł netto. Pełny moduł medyczny z poczekalnią, gabinetem i sterylizatornią — 80 000–150 000 zł. Ostateczna wycena powstaje po rozmowie ze specjalistą."
+      },
+      {
+        "q": "Czy możecie zrealizować punkt informacyjny dla miasta?",
+        "a": "Tak. Mamy na koncie tablice informacyjne, kasy biletowe oraz punkty informacji turystycznej. Wystarczy, że powiesz nam, gdzie ma stanąć, jak długo będzie pracować i ile osób ma obsługiwać — resztę zaprojektujemy."
+      },
+      {
+        "q": "Czy macie wymagane atesty i dokumenty?",
+        "a": "Tak. Konstrukcja stalowa jest zgodna z normami PN-EN, izolacja PIR ma certyfikat ognioodporności, a wybrane materiały są dopuszczone do kontaktu z żywnością tam, gdzie jest to wymagane. Każdy projekt otrzymuje pełną dokumentację techniczną."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "textareaPlaceholder": "Co chcesz zrobić? Jaki rozmiar? Gdzie ma stać?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pawilon do handlu"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pawilon pod gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener pod biuro"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pawilon usługowy"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontener na budowę"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Domek całoroczny"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pawilon nietypowy"
+      }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły. Rysujemy projekt z wizualizacją 3D. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
+    "features": [
+      {
+        "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Cena z transportem i montażem"
+      },
+      {
+        "text": "Pomoc z dokumentami i zgłoszeniem"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
+    ],
+    "selectedType": "specjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/noir.webp",
+      "alt": "Wszystkie modele",
+      "label": "Modele",
+      "h3": "Zobacz wszystkie 12 modeli",
+      "text": "Każdy model dopasujesz pod swoje zastosowanie. Przejrzyj cały katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Zastosowania",
+      "label": "Zastosowania",
+      "h3": "Inne zastosowania",
+      "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cennik 2026",
+      "label": "Poradnik",
+      "h3": "Cennik pawilonów 2026",
+      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pawilon nietypowy STAGO",
+    "description": "Pawilony pod nietypowe zastosowania. Gabinet medyczny, stróżówka, kasa biletowa, info point, GOK. Pod konkretne wymogi i przepisy.",
+    "image": "https://stago.com.pl/assets/modele/noir.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

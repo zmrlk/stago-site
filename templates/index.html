@@ -42,14 +42,14 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO — strona główna" class="nav-logo-img"></a>
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO — strona główna" class="nav-logo-img" width="130" height="29"></a>
       <div class="nav-links" id="nav-links">
-        <a href="#produkty">Modele</a>
-        <a href="#proces">Jak działamy</a>
-        <a href="#o-firmie">O firmie</a>
-        <a href="#opinie">Opinie</a>
-        <a href="#faq">FAQ</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="modele.html">Modele</a>
+        <a href="zastosowania.html">Zastosowania</a>
+        <a href="realizacje.html">Realizacje</a>
+        <a href="finansowanie.html">Finansowanie</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
         <a href="konfigurator.html" class="btn btn-nav">Darmowa wycena</a>
         <div class="nav-mobile-bottom">
           <a href="tel:{{site.phoneLink}}" class="nav-mobile-phone">
@@ -83,7 +83,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg" style="background-image:url(assets/hero.webp)"></div>
+    <div class="hero-bg" style="background-image:url(assets/hero1.webp)"></div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
       <p class="hero-badge">{{{hero.badge}}}</p>
@@ -104,7 +104,7 @@
     <div class="container">
       <div class="story-hero-block reveal">
         <div class="story-hero-img">
-          <img src="assets/gallery/2.png" alt="Pawilon handlowy STAGO — realizacja klienta" loading="lazy">
+          <img src="assets/warzywniak-tomek.webp" alt="Warzywniak Tomka — pawilon handlowy STAGO" loading="lazy">
         </div>
         <div class="story-hero-text">
           <p class="eyebrow">{{caseStudy.eyebrow}}</p>
@@ -169,6 +169,10 @@
         </div>
         {{/financing.options}}
       </div>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="pawilon-vs-najem.html" class="btn btn-primary">Policz swoją oszczędność &rarr;</a>
+        <a href="finansowanie.html" class="btn btn-outline-dark">Pełne finansowanie &rarr;</a>
+      </div>
     </div>
   </section>
 
@@ -186,6 +190,9 @@
         </div>
         <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
         {{/process.steps}}
+      </div>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="jak-kupic.html" class="btn btn-primary">Cały proces krok po kroku &rarr;</a>
       </div>
     </div>
   </section>
@@ -210,7 +217,8 @@
         {{/products.items}}
       </div>
       <div class="section-cta reveal">
-        <a href="konfigurator.html" class="btn btn-primary">Wyceń swój pawilon</a>
+        <a href="modele.html" class="btn btn-primary">Zobacz wszystkie 12 modeli</a>
+        <a href="konfigurator.html" class="btn btn-outline-dark">Wyceń swój pawilon</a>
         <a href="tel:{{site.phoneLink}}" class="btn btn-outline-dark">Zadzwoń: {{site.phone}}</a>
       </div>
     </div>
@@ -232,8 +240,8 @@
         </div>
         {{/about.features}}
       </div>
-      <div class="about-text reveal">
-        <p>{{{about.text}}}</p>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="technologia.html" class="btn btn-primary">Poznaj nas bliżej &rarr;</a>
       </div>
     </div>
   </section>
@@ -254,6 +262,23 @@
           </div>
         </div>
         {{/reviews.items}}
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP REALIZACJE -->
+  <section class="section section-light" id="top-realizacje">
+    <div class="container">
+      <p class="eyebrow">Nasze realizacje</p>
+      <h2 class="h2">Pawilony, które już stoją <span class="accent">i zarabiają.</span></h2>
+      <p class="sub">Wybrane realizacje z ostatniego sezonu. Każdy pawilon inny — każdy pod konkretnego klienta.</p>
+      <div class="realizacje-grid" style="margin-top:40px">
+        <div class="realizacja-card"><img src="assets/gallery/realizacje/r2.webp" alt="Tywent — pawilon handlowy STAGO" loading="lazy"><div class="realizacja-label">Tywent &middot; salon firmowy</div></div>
+        <div class="realizacja-card"><img src="assets/gallery/realizacje/r5.webp" alt="Lemon Vape — pawilon handlowy STAGO" loading="lazy"><div class="realizacja-label">Lemon Vape &middot; pawilon handlowy</div></div>
+        <div class="realizacja-card"><img src="assets/gallery/realizacje/r1.webp" alt="Biuro miejskie — pawilon STAGO" loading="lazy"><div class="realizacja-label">Biuro miejskie &middot; czarna elewacja + drewno</div></div>
+      </div>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="realizacje.html" class="btn btn-primary">Zobacz wszystkie realizacje &rarr;</a>
       </div>
     </div>
   </section>
@@ -319,7 +344,7 @@
           </select>
           <textarea name="message" rows="4" placeholder="Opisz swoje potrzeby — wymiary, lokalizacja, przeznaczenie..." aria-label="Wiadomość"></textarea>
           <!-- Honeypot — ukryte pole, boty je wypełniają -->
-          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie. <a href="polityka-prywatnosci.html" target="_blank">Polityka prywatności</a></label>
           <button type="submit" class="btn btn-primary btn-full" id="contact-submit">Wyślij zapytanie</button>
           <p class="form-note">{{contact.formNote}}</p>
@@ -353,54 +378,24 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="assets/logo-white.png" alt="STAGO" class="footer-logo">
-        <p>Producent pawilonów modułowych.<br>Dostawa i montaż w całej Polsce.</p>
+        <img src="assets/logo-white.png" alt="STAGO" class="footer-logo" width="140" height="31" loading="lazy">
+        <p>Producent pawilonów modułowych.<br>Jędrzejów, woj. świętokrzyskie.</p>
         <div class="footer-social">
-          <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/></svg>
-          </a>
+          <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/></svg></a>
         </div>
       </div>
       <div class="footer-cols">
-        <div>
-          <h4>Modele</h4>
-          <a href="pawilon-handlowy.html">Model S</a>
-          <a href="kontener-biurowy.html">Model M</a>
-          <a href="pawilon-mieszkalny.html">Model L</a>
-          <a href="kontener-sanitarny.html">Model T</a>
-          <a href="kontener-magazynowy.html">Model X</a>
-          <a href="pawilon-premium.html">Model Glass</a>
-        </div>
-        <div>
-          <h4>Firma</h4>
-          <a href="#o-firmie">O firmie</a>
-          <a href="#proces">Jak działamy</a>
-          <a href="#opinie">Opinie</a>
-          <a href="#blog">Poradniki</a>
-          <a href="#faq">FAQ</a>
-          <a href="#kontakt">Kontakt</a>
-        </div>
-        <div>
-          <h4>Kontakt</h4>
-          <a href="tel:{{site.phoneLink}}">{{site.phone}}</a>
-          <a href="mailto:{{site.email}}">{{site.email}}</a>
-          <a href="https://maps.google.com/?q=Jasionka+117+Jędrzejów" target="_blank">{{site.address}}, {{site.city}}</a>
-        </div>
-        <div>
-          <h4>Prawne</h4>
-          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-          <a href="regulamin.html">Regulamin</a>
-        </div>
+        <div><h4>Modele</h4><a href="modele.html">Wszystkie 12 modeli</a><a href="modele/nord.html">NORD</a><a href="modele/loft.html">LOFT</a><a href="modele/duet.html">DUET</a><a href="modele/icon.html">ICON</a><a href="modele/mila.html">MILA</a></div>
+        <div><h4>Zastosowania</h4><a href="zastosowania.html">Wszystkie</a><a href="zastosowania/handlowy.html">Handlowe</a><a href="zastosowania/biurowy.html">Biurowe</a><a href="zastosowania/gastronomiczny.html">Gastronomiczne</a><a href="zastosowania/uslugowy.html">Usługowe</a><a href="zastosowania/mieszkalny.html">Mieszkalne</a></div>
+        <div><h4>Firma</h4><a href="jak-kupic.html">Jak kupić</a><a href="technologia.html">Technologia</a><a href="finansowanie.html">Finansowanie</a><a href="pawilon-vs-najem.html">Pawilon vs najem</a><a href="realizacje.html">Realizacje</a><a href="dostepne-od-reki.html">Dostępne od ręki</a><a href="faq.html">FAQ</a></div>
+        <div><h4>Kontakt</h4><a href="tel:+48509508210">+48 509 508 210</a><a href="tel:+48509508110">+48 509 508 110</a><a href="mailto:kontakt@stago.com.pl">kontakt@stago.com.pl</a><a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Jasionka 117, Jędrzejów</a><a href="kontakt.html">Strona kontaktu &rarr;</a></div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 STAGO &middot; Stworzone przez <a href="https://isiko.pl" target="_blank">ISIKO</a> z pomocą <a href="https://github.com/zmrlk/bOS" target="_blank">bOS CLI</a></p>
+    <div class="container footer-bottom">
+      <div class="footer-legal"><a href="polityka-prywatnosci.html">Polityka prywatności</a><a href="regulamin.html">Regulamin</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Zgody cookies</a></div>
+      <p>&copy; 2026 STAGO &middot; Stworzone przez <a href="https://isiko.pl" target="_blank">ISIKO</a></p>
     </div>
   </footer>
 

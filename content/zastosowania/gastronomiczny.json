@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pawilon pod gastro — kawiarnia, lodziarnia, food truck | STAGO",
+    "description": "Pawilony gastronomiczne pod klucz. Kawiarnia, lodziarnia, food truck, bar. Wentylacja, okno podawcze, wykończenia HACCP. Od producenta z Jędrzejowa.",
+    "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
+    "ogTitle": "Pawilon pod gastro — kawiarnia, lodziarnia, food truck | STAGO",
+    "ogDescription": "Pawilony gastronomiczne pod klucz. Kawiarnia, lodziarnia, food truck, bar. Wentylacja, okno podawcze, wykończenia HACCP. Od producenta z Jędrzejowa.",
+    "ogImage": "https://stago.com.pl/assets/modele/saga.webp"
+  },
+  "breadcrumb": "Gastronomiczne",
+  "productType": "gastronomiczny",
+  "hero": {
+    "img": "../assets/modele/saga.webp",
+    "imgAlt": "Pawilon pod gastro STAGO — bryła SAGA",
+    "h1": "Pawilon pod gastronomię.",
+    "subtitle": "Kawiarnia, lodziarnia, food truck, mała kuchnia, bar. Znamy specyfikę branży — wentylację, wymogi sanepidu, układ z oknem podawczym. Wiemy też, że w sezonie nie ma czasu na poprawki, dlatego wszystko ma działać od pierwszego dnia. Powiedz nam, co podajesz, a dopasujemy resztę.",
+    "price": "od 22 000 zł netto",
+    "priceNote": "/ moduł gastronomiczny 4×2,4 m, gotowy do otwarcia",
+    "ctaHref": "../konfigurator.html?type=gastronomiczny",
+    "articleHref": "../modele.html",
+    "articleText": "Zobacz wszystkie 12 modeli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Polecane bryły",
+    "h2": "Modele, które dobrze wyglądają z kawą w ręku",
+    "sub": "Te bryły mają charakter, jakiego klient szuka kupując kawę czy lody — i jednocześnie układ, który sprawdzi się w codziennej pracy za ladą.",
+    "items": [
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Wydłużona bryła z frontem witrynowym",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pawilon STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Front showroomowy z trzema witrynami",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pawilon STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Bryła z bocznymi akcentami i frontem",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Pawilon STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Bryła z panoramicznymi narożnikami",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pawilon STAGO VIEW",
+        "href": "../modele/view.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Premium loft z narożnym przeszkleniem",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pawilon STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pod tę branżę",
+    "h2": "Co przygotowujemy pod gastronomię",
+    "sub": "Wszystko zgodne z wymogami sanepidu i HACCP. Nie musisz walczyć z normami — to nasze zadanie.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Wentylacja gastronomiczna",
+        "text": "Okap, wentylator, wyciąg dymu i pary. Projektujemy ją pod konkretne urządzenia, które masz lub planujesz kupić. Powietrze jest świeże nawet w środku najgorętszego sezonu."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Okno podawcze",
+        "text": "Klasyczne okno w stylu food trucka — duże, otwierane do góry, z półką ekspozycyjną. Klient obsługiwany z zewnątrz, Ty pracujesz w komfortowych warunkach w środku. Możemy też zrobić pełne wejście dla siedzących gości — wybór należy do Ciebie."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Wykończenia zgodne z HACCP",
+        "text": "Ściany i podłoga w materiałach łatwych do mycia, dopuszczonych do kontaktu z żywnością. Sanepid wchodzi, sprawdza, podpisuje protokół — bez stresu i bez improwizacji w ostatniej chwili."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Instalacje pod sprzęt",
+        "text": "Wzmocniona instalacja elektryczna pod ekspres, lodówki i witryny chłodnicze. Doprowadzenie wody i odpływ. Powiedz nam, jaki sprzęt stawiasz, a my przygotujemy podpięcia w odpowiednich miejscach."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "W cenie",
+    "h2": "Co dostajesz od STAGO",
+    "items": [
+      {
+        "h3": "Darmowa wizualizacja 3D",
+        "text": "Mówisz, czego potrzebujesz. Rysujemy. Zobaczysz pawilon w 3D zanim wydasz złotówkę. Zmieniamy póki nie powiesz „tak\"."
+      },
+      {
+        "h3": "Transport i montaż w cenie",
+        "text": "Pawilon jedzie na lawecie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+      },
+      {
+        "h3": "2 lata gwarancji + serwis",
+        "text": "Konstrukcja, ściany, dach — 2 lata gwarancji. Po gwarancji też nie zostawiamy klientów. Mamy własnych ludzi, nie szukamy na telefon."
+      },
+      {
+        "h3": "Pomoc z dokumentami",
+        "text": "Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zobacz na żywo",
+    "h2": "Tak wyglądają nasze realizacje",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Pawilon pod gastro STAGO — realizacja 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Pawilon pod gastro STAGO — realizacja 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Pawilon pod gastro STAGO — realizacja 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-gastronomiczny",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci z tej branży",
+    "items": [
+      {
+        "q": "Ile kosztuje pawilon gastronomiczny?",
+        "a": "Mały moduł na kawę zaczyna się od 22 000 zł netto. Większa lodziarnia z zapleczem chłodniczym — 40 000–60 000 zł. Bar z pełną kuchnią — od 70 000 zł. Każdą wycenę przygotowujemy bezpłatnie po krótkiej rozmowie."
+      },
+      {
+        "q": "Czy mogę mieć okno podawcze i jednocześnie miejsce dla klientów w środku?",
+        "a": "Tak, oba rozwiązania można połączyć w jednym pawilonie. Okno podawcze dla klientów obsługiwanych na zewnątrz oraz pełne wejście dla gości siedzących wewnątrz. Możemy także zaprojektować strefę zewnętrzną ze stolikami i parasolami."
+      },
+      {
+        "q": "Co z wymogami sanepidu?",
+        "a": "Pawilony wykonujemy zgodnie z systemem HACCP: ściany zmywalne, podłoga antypoślizgowa, wentylacja mechaniczna, dostęp do wody i kanalizacji. Pomagamy także z dokumentacją niezbędną do zgłoszenia sanitarnego."
+      },
+      {
+        "q": "Czy mogę przewieźć pawilon w inne miejsce na sezon?",
+        "a": "Tak — wielu naszych klientów właśnie tak działa. Latem nad morzem, jesienią w mieście, zimą bezpiecznie zaparkowany na działce lub u znajomego. Wystarczy załadować pawilon na lawetę i przewieźć w nową lokalizację."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "textareaPlaceholder": "Co chcesz zrobić? Jaki rozmiar? Gdzie ma stać?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pawilon do handlu"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pawilon pod gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener pod biuro"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pawilon usługowy"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontener na budowę"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Domek całoroczny"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pawilon nietypowy"
+      }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły. Rysujemy projekt z wizualizacją 3D. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
+    "features": [
+      {
+        "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Cena z transportem i montażem"
+      },
+      {
+        "text": "Pomoc z dokumentami i zgłoszeniem"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
+    ],
+    "selectedType": "gastronomiczny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/saga.webp",
+      "alt": "Wszystkie modele",
+      "label": "Modele",
+      "h3": "Zobacz wszystkie 12 modeli",
+      "text": "Każdy model dopasujesz pod swoje zastosowanie. Przejrzyj cały katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Zastosowania",
+      "label": "Zastosowania",
+      "h3": "Inne zastosowania",
+      "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cennik 2026",
+      "label": "Poradnik",
+      "h3": "Cennik pawilonów 2026",
+      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pawilon pod gastro STAGO",
+    "description": "Pawilony gastronomiczne pod klucz. Kawiarnia, lodziarnia, food truck, bar. Wentylacja, okno podawcze, wykończenia HACCP. Od producenta z Jędrzejowa.",
+    "image": "https://stago.com.pl/assets/modele/saga.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

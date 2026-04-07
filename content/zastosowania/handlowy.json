@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pawilon do handlu — sklep, kiosk, punkt sprzedaży | STAGO",
+    "description": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 15 000 zł netto.",
+    "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
+    "ogTitle": "Pawilon do handlu — sklep, kiosk, punkt sprzedaży | STAGO",
+    "ogDescription": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 15 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
+  },
+  "breadcrumb": "Handlowe",
+  "productType": "handlowy",
+  "hero": {
+    "img": "../assets/modele/loft.webp",
+    "imgAlt": "Pawilon do handlu STAGO — bryła LOFT",
+    "h1": "Pawilon do handlu.",
+    "subtitle": "Sklep, kiosk, punkt sprzedaży na rynku, ryneczek warzywny. Wiemy, że klient decyduje o wejściu w kilka sekund — dlatego projektujemy witryny pod ekspozycję, oświetlenie wydobywające produkt i wygodne wejście. Powiedz nam, co sprzedajesz — zaproponujemy układ, który pracuje na sprzedaż.",
+    "price": "od 15 000 zł netto",
+    "priceNote": "/ pawilon 3×2m gotowy do handlu",
+    "ctaHref": "../konfigurator.html?type=handlowy",
+    "articleHref": "../modele.html",
+    "articleText": "Zobacz wszystkie 12 modeli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Polecane bryły",
+    "h2": "Modele, które robią dobre pierwsze wrażenie",
+    "sub": "Pierwsze wrażenie zostaje w pamięci klienta na długo. Te bryły sprawdzają się w handlu najlepiej — choć każdą z nich dopasujemy do Twojego pomysłu.",
+    "items": [
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Front showroomowy z trzema witrynami",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pawilon STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Wydłużona bryła z frontem witrynowym",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pawilon STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Bryła z bocznymi akcentami i frontem",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Pawilon STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompaktowa bryła z pełną witryną",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pawilon STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Bryła z panoramicznymi narożnikami",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pawilon STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pod tę branżę",
+    "h2": "Co przygotowujemy pod handel",
+    "sub": "Każdy element jest pomyślany z myślą o sprzedaży — nie pożyczony z innej kategorii pawilonów.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Witryny pod Twój asortyment",
+        "text": "Duże okna panoramiczne, witryny narożne, okno podawcze. Mówisz nam, co sprzedajesz, a my projektujemy układ otworów pod konkretny towar. Ekspozycja widoczna z chodnika to połowa sukcesu."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0012 2z\"/></svg>",
+        "h3": "Oświetlenie pod ekspozycję",
+        "text": "Oświetlenie LED rozplanowane tak, żeby produkt wyglądał świeżo i atrakcyjnie. Dodatkowo instalacja przygotowana pod kasę fiskalną i terminal płatniczy — bez improwizacji w dniu otwarcia."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Wygodne wejście dla klienta",
+        "text": "Aluminiowe drzwi przesuwne, podest, pochylnia dla wózków. Klient wchodzi w naturalny sposób — bez zastanawiania się, gdzie i w którą stronę otworzyć drzwi."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0110 0v4\"/></svg>",
+        "h3": "Bezpieczeństwo po godzinach",
+        "text": "Stalowa rama, zamki wielopunktowe, opcjonalne rolety antywłamaniowe. Zamykasz pawilon na klucz i śpisz spokojnie — żaden przygodny włamywacz nie poradzi sobie bez ciężkiego sprzętu."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "W cenie",
+    "h2": "Co dostajesz od STAGO",
+    "items": [
+      {
+        "h3": "Darmowa wizualizacja 3D",
+        "text": "Mówisz, czego potrzebujesz. Rysujemy. Zobaczysz pawilon w 3D zanim wydasz złotówkę. Zmieniamy póki nie powiesz „tak\"."
+      },
+      {
+        "h3": "Transport i montaż w cenie",
+        "text": "Pawilon jedzie na lawecie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+      },
+      {
+        "h3": "2 lata gwarancji + serwis",
+        "text": "Konstrukcja, ściany, dach — 2 lata gwarancji. Po gwarancji też nie zostawiamy klientów. Mamy własnych ludzi, nie szukamy na telefon."
+      },
+      {
+        "h3": "Pomoc z dokumentami",
+        "text": "Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zobacz na żywo",
+    "h2": "Tak wyglądają nasze realizacje",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Pawilon do handlu STAGO — realizacja 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Pawilon do handlu STAGO — realizacja 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Pawilon do handlu STAGO — realizacja 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-handlowy",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci z tej branży",
+    "items": [
+      {
+        "q": "Ile kosztuje pawilon do handlu?",
+        "a": "Mały kiosk 3×2 m zaczyna się od 15 000 zł netto. Sklep 6×3 m — od 28 000 zł. Większy punkt 12×3 m z witrynami i zapleczem — od 48 000 zł. Każdą wycenę przygotowujemy indywidualnie i bezpłatnie: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+      },
+      {
+        "q": "Czy potrzebuję pozwolenia na pawilon handlowy?",
+        "a": "W przypadku pawilonów do 35 m² wystarczy zgłoszenie w urzędzie — pełne pozwolenie na budowę nie jest potrzebne. Procedura trwa kilka dni. Pomagamy przygotować dokumenty: wzory, wnioski, instrukcje, co i gdzie wpisać."
+      },
+      {
+        "q": "Czy mogę mieć okno podawcze i jednocześnie miejsce dla klientów w środku?",
+        "a": "Oczywiście. Wykonujemy okna podawcze do obsługi z zewnątrz, pełnowymiarowe witryny sklepowe oraz drzwi z roletami antywłamaniowymi — w dowolnej konfiguracji. Powiedz nam, jak wyobrażasz sobie obsługę klienta, a układ otworów dopasujemy do Twojego pomysłu."
+      },
+      {
+        "q": "Jak ogrzewam pawilon zimą i ile to kosztuje?",
+        "a": "Najpopularniejsze rozwiązanie to klimatyzacja z pompą ciepła — grzeje zimą i chłodzi latem. Ściany z izolacją PIR 100 mm trzymają ciepło jak murowany budynek. Przy małym pawilonie miesięczny rachunek za ogrzewanie w sezonie zimowym to zwykle 350–500 zł."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "textareaPlaceholder": "Co chcesz zrobić? Jaki rozmiar? Gdzie ma stać?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pawilon do handlu"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pawilon pod gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener pod biuro"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pawilon usługowy"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontener na budowę"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Domek całoroczny"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pawilon nietypowy"
+      }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły. Rysujemy projekt z wizualizacją 3D. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
+    "features": [
+      {
+        "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Cena z transportem i montażem"
+      },
+      {
+        "text": "Pomoc z dokumentami i zgłoszeniem"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
+    ],
+    "selectedType": "handlowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/loft.webp",
+      "alt": "Wszystkie modele",
+      "label": "Modele",
+      "h3": "Zobacz wszystkie 12 modeli",
+      "text": "Każdy model dopasujesz pod swoje zastosowanie. Przejrzyj cały katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Zastosowania",
+      "label": "Zastosowania",
+      "h3": "Inne zastosowania",
+      "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cennik 2026",
+      "label": "Poradnik",
+      "h3": "Cennik pawilonów 2026",
+      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pawilon do handlu STAGO",
+    "description": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 15 000 zł netto.",
+    "image": "https://stago.com.pl/assets/modele/loft.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

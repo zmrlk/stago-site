@@ -22,13 +22,28 @@
   "sidebar": {
     "ctaText": "Sprawdzimy formalności i wycenimy pawilon w 24h. Bez zobowiązań.",
     "articles": [
-      { "href": "pawilon-handlowy-cena.html", "text": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę" },
-      { "href": "kontener-biurowy-cena.html", "text": "Pierwsza zima w pawilonie — czego nikt Ci nie powie" }
+      {
+        "href": "pawilon-handlowy-cena.html",
+        "text": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę"
+      },
+      {
+        "href": "kontener-biurowy-cena.html",
+        "text": "Pierwsza zima w pawilonie — czego nikt Ci nie powie"
+      }
     ],
     "products": [
-      { "href": "../pawilon-handlowy.html", "text": "Pawilon handlowy &rarr;" },
-      { "href": "../kontener-biurowy.html", "text": "Kontener biurowy &rarr;" },
-      { "href": "../kontener-magazynowy.html", "text": "Kontener magazynowy &rarr;" }
+      {
+        "href": "../zastosowania/handlowy.html",
+        "text": "Pawilon do handlu &rarr;"
+      },
+      {
+        "href": "../zastosowania/biurowy.html",
+        "text": "Kontener pod biuro &rarr;"
+      },
+      {
+        "href": "../modele.html",
+        "text": "Wszystkie 12 modeli &rarr;"
+      }
     ]
   },
   "jsonLd": {

@@ -5,15 +5,40 @@
 # Stare strony z obecnej stago.com.pl (Lovable)
 /kontakty                    / 301
 /o-nas                       / 301
-/oferta                      / 301
+/oferta                      /zastosowania.html 301
 /galeria                     / 301
 /realizacje                  / 301
-/produkty                    / 301
-/kontener-handlowy           / 301
-/kontener-handlowy.html      /pawilon-handlowy.html 301
-/pawilon-modulowy            / 301
-/pawilony                    / 301
+/produkty                    /modele.html 301
+/kontener-handlowy           /zastosowania/handlowy.html 301
+/kontener-handlowy.html      /zastosowania/handlowy.html 301
+/pawilon-modulowy            /modele.html 301
+/pawilony                    /modele.html 301
 /cennik                      /blog/cennik-pawilonow-2026.html 301
+
+# Stare modele S01-S15 → hub modeli
+/modele/s01.html             /modele.html 301
+/modele/s02.html             /modele.html 301
+/modele/s03.html             /modele.html 301
+/modele/s04.html             /modele.html 301
+/modele/s05.html             /modele/nord.html 301
+/modele/s06.html             /modele.html 301
+/modele/s07.html             /modele.html 301
+/modele/s08.html             /modele/loft.html 301
+/modele/s09.html             /modele.html 301
+/modele/s10.html             /modele/duet.html 301
+/modele/s11.html             /modele.html 301
+/modele/s12.html             /modele.html 301
+/modele/s13.html             /modele.html 301
+/modele/s14.html             /modele.html 301
+/modele/s15.html             /modele.html 301
+
+# Stare strony produktowe → nowe zastosowania
+/pawilon-handlowy.html       /zastosowania/handlowy.html 301
+/pawilon-mieszkalny.html     /zastosowania/mieszkalny.html 301
+/pawilon-premium.html        /zastosowania/specjalny.html 301
+/kontener-biurowy.html       /zastosowania/biurowy.html 301
+/kontener-magazynowy.html    /zastosowania/socjalny.html 301
+/kontener-sanitarny.html     /zastosowania/specjalny.html 301
 
 # Catch-all: nieistniejące strony → strona główna
 /*                           /index.html 200

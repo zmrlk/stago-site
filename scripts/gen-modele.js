@@ -1,0 +1,245 @@
+// Generator 12 plików content/modele/{nazwa}.json
+// Run: node scripts/gen-modele.js
+const fs = require('fs');
+const path = require('path');
+
+// Każdy model: h1 + subtitle skupia się na BRYLE/KSZTAŁCIE/PROPORCJACH
+// Materiał wymieniony jako WYBÓR klienta (nie cecha modelu)
+const models = [
+  {
+    code: 'ATRI',
+    h1: 'ATRI — otwarta bryła z dużym przeszkleniem.',
+    subtitle: 'Kompaktowa forma z wyraźnym wejściem przesuwnym i panoramicznym oknem. Otwarty układ, dużo światła w środku. Wykończenie elewacji — drewno, blacha, HPL — wybierasz Ty.',
+    uses: ['mieszkalny','biurowy','uslugowy','specjalny'],
+    priceFrom: 25000, priceHigh: 80000,
+  },
+  {
+    code: 'MILA',
+    h1: 'MILA — bryła w klasycznym układzie.',
+    subtitle: 'Kompaktowa forma, symetryczne proporcje, duże drzwi wejściowe po środku. Uniwersalny układ, który pasuje pod każde przeznaczenie. Wykończenie — drewno, blacha, HPL albo panele kompozytowe — wybierasz Ty.',
+    uses: ['mieszkalny','biurowy','uslugowy'],
+    priceFrom: 25000, priceHigh: 85000,
+  },
+  {
+    code: 'ICON',
+    h1: 'ICON — premium loft z narożnym przeszkleniem.',
+    subtitle: 'Wyrazista bryła z dużymi narożnymi oknami od podłogi po sufit. Charakter studio architekta — otwarte, premium, zaprojektowane żeby robić wrażenie. Wykończenie elewacji wybierasz Ty.',
+    uses: ['gastronomiczny','uslugowy','biurowy','specjalny'],
+    priceFrom: 35000, priceHigh: 120000,
+  },
+  {
+    code: 'RYTM',
+    h1: 'RYTM — drewniana ramka z symetrycznym frontem.',
+    subtitle: 'Bryła z wyraźną ramką dookoła i szerokim frontem ze szklanymi drzwiami pośrodku. Symetria, czystość proporcji, klasyczny rytm. Materiał ramki i wypełnienia ustalamy z Tobą.',
+    uses: ['gastronomiczny','biurowy','handlowy','uslugowy'],
+    priceFrom: 25000, priceHigh: 90000,
+  },
+  {
+    code: 'NORD',
+    h1: 'NORD — premium bryła z narożnymi oknami.',
+    subtitle: 'Mocna forma z akcentami w narożnikach i ogromnymi narożnymi szkleniami. Skandynawski charakter premium — bryła, którą się pamięta. Materiał elewacji i akcentów ustalamy razem.',
+    uses: ['biurowy','gastronomiczny','uslugowy','specjalny'],
+    priceFrom: 30000, priceHigh: 110000,
+  },
+  {
+    code: 'LOFT',
+    h1: 'LOFT — front showroomowy z trzema witrynami.',
+    subtitle: 'Wydłużona bryła z trzema dużymi witrynami frontowymi i drzwiami pośrodku. Showroom-feel — w środku jasno, na zewnątrz wow. Materiał elewacji wybierasz Ty.',
+    uses: ['gastronomiczny','handlowy','uslugowy','biurowy'],
+    priceFrom: 28000, priceHigh: 95000,
+  },
+  {
+    code: 'SAGA',
+    h1: 'SAGA — wydłużona bryła z frontem witrynowym.',
+    subtitle: 'Długa, niska forma z trzema dużymi witrynami i centralnym wejściem. Idealna pod gastro i sprzedaż — klient widzi wszystko z chodnika. Wykończenie elewacji wybierasz Ty.',
+    uses: ['gastronomiczny','handlowy','uslugowy'],
+    priceFrom: 28000, priceHigh: 100000,
+  },
+  {
+    code: 'VIEW',
+    h1: 'VIEW — bryła z panoramicznymi narożnikami.',
+    subtitle: 'Dynamiczna forma z ogromnymi narożnymi szkleniami w skośnym układzie. Panoramiczny widok z wnętrza, mocna obecność z zewnątrz. Materiał górnego pasa i korpusu wybierasz Ty.',
+    uses: ['gastronomiczny','handlowy','uslugowy'],
+    priceFrom: 30000, priceHigh: 110000,
+  },
+  {
+    code: 'DUET',
+    h1: 'DUET — bryła z bocznymi akcentami i frontem.',
+    subtitle: 'Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Dwa elementy w równowadze — mocny korpus i ciepłe akcenty. Materiały dwóch stref ustalamy razem.',
+    uses: ['gastronomiczny','handlowy','biurowy','uslugowy'],
+    priceFrom: 25000, priceHigh: 95000,
+  },
+  {
+    code: 'CUBE',
+    h1: 'CUBE — modułowy kubik z wyrazistą wstawką.',
+    subtitle: 'Czysta geometryczna forma z wyraźną panelową wstawką jako akcentem. Łatwo łączy się w większe układy. Solidny, funkcjonalny, bezpretensjonalny. Wykończenie panelu i wstawki wybierasz Ty.',
+    uses: ['biurowy','mieszkalny','socjalny','specjalny'],
+    priceFrom: 22000, priceHigh: 85000,
+  },
+  {
+    code: 'NOIR',
+    h1: 'NOIR — wydłużony monolit z lamelami.',
+    subtitle: 'Smukła, wydłużona bryła z pionowymi lamelami i podłużnymi oknami. Butikowy charakter, bez zbędnych detali. Materiał lameli i kolorystykę ustalamy z Tobą.',
+    uses: ['handlowy','biurowy','uslugowy','specjalny'],
+    priceFrom: 25000, priceHigh: 90000,
+  },
+  {
+    code: 'KIOS',
+    h1: 'KIOS — kompaktowa bryła z pełną witryną.',
+    subtitle: 'Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.',
+    uses: ['handlowy','uslugowy','specjalny'],
+    priceFrom: 18000, priceHigh: 60000,
+  },
+];
+
+const useLabels = {
+  handlowy: { title: 'Pawilon handlowy', text: 'Sklep, kiosk, punkt sprzedaży. Witryny, oświetlenie, wygodne wejście — wszystko żeby sprzedawać.' },
+  gastronomiczny: { title: 'Pawilon gastronomiczny', text: 'Kawiarnia, lodziarnia, food truck, bar. Okno podawcze, wentylacja, wykończenia HACCP.' },
+  biurowy: { title: 'Kontener biurowy', text: 'Biuro sprzedaży, recepcja, biuro na budowie. Ciepło, cicho, gotowe do pracy od pierwszego dnia.' },
+  uslugowy: { title: 'Pawilon usługowy', text: 'Salon, kosmetyka, serwis, pralnia. Woda, kanalizacja, prąd — wszystko podłączone.' },
+  socjalny: { title: 'Kontener socjalny', text: 'Zaplecze budowy, szatnia, stołówka, sanitarki. Solidne, mobilne, wytrzymałe.' },
+  mieszkalny: { title: 'Domek mieszkalny', text: 'Domek całoroczny, ADU, holiday house. PIR 100mm, łazienka, kuchnia, wszystko gotowe.' },
+  specjalny: { title: 'Pawilon specjalny', text: 'Gabinet medyczny, stróżówka, kasa biletowa, info point. Pod konkretne wymogi i przepisy.' },
+};
+
+const sharedCustomization = {
+  eyebrow: 'Pod Twoje ręce',
+  h2: 'Ta bryła. Twoje wykończenie.',
+  sub: '__MODEL__ to kształt i proporcje — nie gotowy produkt. Wszystko, co widzisz na renderze, to jeden z wariantów. Wymiar, materiał elewacji, kolor, stolarkę, wnętrze — projektujemy od nowa pod Ciebie. Mów jak ma wyglądać, my rysujemy.',
+  items: [
+    { icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>', title: 'Wymiary', text: 'Od 3×2m (kompakt) do 12×4m (duży moduł). Łączymy moduły obok siebie, jeśli potrzebujesz większej powierzchni. Wysokość standardowa lub podwyższona.' },
+    { icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>', title: 'Materiał i kolor elewacji', text: 'Drewno (jasny dąb, orzech, heban), blacha trapezowa, płyty HPL, panele kompozytowe. Cała paleta RAL dla kolorów. Pokazujemy próbki przed zamówieniem.' },
+    { icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>', title: 'Stolarka i okna', text: 'Drzwi przesuwne, klasyczne, techniczne. Okna panoramiczne, narożne, podawcze. Układ otworów pod Twoje przeznaczenie — mówisz, gdzie czego potrzebujesz.' },
+    { icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>', title: 'Wnętrze i wyposażenie', text: 'Pod mieszkanie (łazienka, kuchnia, sypialnia), pod biuro (instalacje, oświetlenie), pod usługi (umywalki, woda, kanalizacja). Wykończenia, podłogi, meble — wszystko projektujemy razem z Tobą.' },
+  ],
+};
+
+const sharedSpecs = {
+  eyebrow: 'Konstrukcja',
+  h2: 'Co jest stałe — niezależnie od wykończenia',
+  items: [
+    { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>', h3: 'Spawana rama stalowa', text: 'Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą.' },
+    { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>', h3: 'Izolacja PIR 100mm', text: 'Płyta PIR 100 mm na ścianach, dachu i podłodze. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak.' },
+    { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>', h3: 'Stolarka aluminiowa', text: 'Okna i drzwi aluminiowe z przekładką termiczną. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta.' },
+    { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>', h3: 'Instalacje pod zamówienie', text: 'Elektryka, oświetlenie LED, rozdzielnia — w standardzie. Woda, kanalizacja, wentylacja, klimatyzacja — według Twojego przeznaczenia. Gotowe do podłączenia na działce.' },
+  ],
+};
+
+const sharedBenefits = {
+  eyebrow: 'W cenie',
+  h2: 'Co dostajesz od STAGO',
+  items: [
+    { h3: 'Darmowa wizualizacja 3D', text: 'Rysujemy pawilon w 3D zanim cokolwiek podpisujesz. Zmieniamy tyle razy, ile trzeba — póki nie powiesz „tak". Darmowa, bez zobowiązań.' },
+    { h3: 'Transport i montaż z Jędrzejowa', text: 'Pawilon jedzie na lawecie z naszego zakładu. Nasza ekipa stawia go na Twojej działce. W cenie — bez dopłat za kilometry, bez ukrytych kosztów.' },
+    { h3: '2 lata gwarancji + serwis', text: 'Gwarancja na konstrukcję i instalacje. Po gwarancji też nie zostawiamy klientów — dzwonisz i przyjeżdżamy. Mamy własnych ludzi, nie szukamy na telefon.' },
+    { h3: 'Pomoc z dokumentami', text: 'Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie. Szybciej, sprawniej, bez stresu.' },
+  ],
+};
+
+const buildFaq = (code) => ({
+  eyebrow: 'Pytania',
+  h2: 'To, o co pytają klienci',
+  items: [
+    { q: `Czy muszę wybrać taką elewację jak na renderze?`, a: `Nie. Render pokazuje jeden z wariantów wykończenia. ${code} jako bryła przyjmuje dowolną elewację — drewno w kilku odcieniach, blachę trapezową, płyty HPL, panele kompozytowe. Mówisz, jak ma wyglądać, my proponujemy materiały i pokazujemy próbki.` },
+    { q: `Mogę zmienić wymiar tej bryły?`, a: `Tak. Bryła jest elastyczna — od 3×2m do 12×4m. Można też łączyć moduły obok siebie dla większych powierzchni. Proporcje zachowujemy, żeby charakter ${code} był zachowany, ale wielkość dostosowujemy pod Twoją sytuację.` },
+    { q: 'Ile to kosztuje?', a: 'Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href="tel:+48509508210">509 508 210</a></strong>.' },
+    { q: 'Jak długo czekam?', a: 'Standardowo 4-6 tygodni od akceptacji projektu do dostawy na działkę. Konkretną datę odbioru znasz zanim wpłacisz zaliczkę — w umowie, nie ustnie.' },
+  ],
+});
+
+const sharedForm = {
+  eyebrow: 'Zaczynamy',
+  h2: 'Powiedz, czego potrzebujesz',
+  selectedType: 'inny',
+  textareaPlaceholder: 'Jaki rozmiar, jaki materiał elewacji, gdzie ma stać, do czego ma być?',
+  options: [
+    { value: 'handlowy', label: 'Pawilon handlowy' },
+    { value: 'gastronomiczny', label: 'Pawilon gastronomiczny' },
+    { value: 'biurowy', label: 'Kontener biurowy' },
+    { value: 'uslugowy', label: 'Pawilon usługowy' },
+    { value: 'mieszkalny', label: 'Domek mieszkalny' },
+    { value: 'inny', label: 'Inny' },
+  ],
+  infoH3: 'Jak to wygląda?',
+  infoText: 'Piszesz lub dzwonisz. Pytamy o szczegóły — wymiar, materiał, przeznaczenie, lokalizacja. Rysujemy wizualizację 3D. Podajemy cenę finalną z transportem i montażem. Bez niespodzianek.',
+  features: [
+    { text: 'Wizualizacja 3D — zobaczysz, zanim zamówisz' },
+    { text: 'Cena z transportem i montażem' },
+    { text: 'Pomoc z dokumentami i zgłoszeniem' },
+    { text: 'Odpowiedź w ciągu jednego dnia' },
+  ],
+};
+
+const outDir = path.join(__dirname, '..', 'content', 'modele');
+fs.mkdirSync(outDir, { recursive: true });
+
+models.forEach(m => {
+  const code = m.code;
+  const slug = code.toLowerCase();
+  const customization = JSON.parse(JSON.stringify(sharedCustomization));
+  customization.sub = customization.sub.replace('__MODEL__', code);
+
+  const data = {
+    meta: {
+      title: `${code} — ${m.h1.replace(`${code} — `, '').replace(/\.$/, '')} | Pawilon modułowy STAGO`,
+      description: `${code} STAGO — ${m.subtitle.split('.')[0]}. Wymiar, materiał elewacji, kolor i wnętrze dopasujesz pod siebie. Darmowa wycena.`,
+      canonical: `https://stago.com.pl/modele/${slug}.html`,
+      ogTitle: m.h1.replace(/\.$/, ''),
+      ogDescription: m.subtitle,
+      ogImage: `https://stago.com.pl/assets/modele/${slug}.webp`,
+    },
+    breadcrumb: code,
+    productType: code,
+    hero: {
+      img: `../assets/modele/${slug}.webp`,
+      imgAlt: `Pawilon modułowy STAGO ${code} — ${m.h1.replace(`${code} — `, '').replace(/\.$/, '')}`,
+      h1: m.h1,
+      subtitle: m.subtitle,
+      price: `od ${m.priceFrom.toLocaleString('pl-PL')} zł netto`,
+      priceNote: '/ wycena indywidualna pod Twój projekt',
+      ctaHref: `../konfigurator.html?model=${slug}`,
+      articleHref: '../modele.html',
+      articleText: 'Zobacz wszystkie modele &rarr;',
+    },
+    usecases: {
+      eyebrow: 'Do czego pasuje',
+      h2: `Gdzie ${code} sprawdza się najlepiej`,
+      sub: 'Ta bryła jest uniwersalna — działa w kilku głównych kierunkach. Ale nie ogranicza się do nich. Każdy pawilon projektujemy pod konkretną sytuację klienta.',
+      items: m.uses.slice(0, 3).map(u => ({
+        title: useLabels[u].title,
+        text: useLabels[u].text,
+        href: `../zastosowania/${u}.html`,
+      })),
+    },
+    customization,
+    specs: sharedSpecs,
+    benefits: sharedBenefits,
+    gallery: {
+      eyebrow: 'Zobacz na żywo',
+      h2: 'Tak wyglądają nasze realizacje',
+      items: [
+        { img: '../assets/gallery/realizacje/r1.webp', alt: `Pawilon STAGO ${code} — realizacja 1` },
+        { img: '../assets/gallery/realizacje/r2.webp', alt: `Pawilon STAGO ${code} — realizacja 2` },
+        { img: '../assets/gallery/realizacje/r3.webp', alt: `Pawilon STAGO ${code} — realizacja 3` },
+      ],
+    },
+    faq: { id: `faq-${slug}`, ...buildFaq(code) },
+    form: sharedForm,
+    related: [
+      { href: '../modele.html', img: '../assets/modele/nord.webp', alt: 'Wszystkie modele STAGO', label: 'Modele', h3: 'Zobacz wszystkie 12 modeli', text: 'Przejrzyj cały katalog wzorów. Każdy dopasujesz pod siebie.' },
+      { href: '../zastosowania.html', img: '../assets/gallery/realizacje/r5.webp', alt: 'Zastosowania pawilonów', label: 'Zastosowania', h3: 'Do czego można użyć?', text: 'Sklep, biuro, kawiarnia, dom — pokażemy, który model do czego.' },
+      { href: '../blog/cennik-pawilonow-2026.html', img: '../assets/gallery/realizacje/r6.webp', alt: 'Cennik pawilonów', label: 'Poradnik', h3: 'Cennik pawilonów 2026', text: 'Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz.' },
+    ],
+    jsonLd: {
+      name: `Pawilon modułowy STAGO ${code}`,
+      description: `${code}. ${m.subtitle}`,
+      image: `https://stago.com.pl/assets/modele/${slug}.webp`,
+      lowPrice: String(m.priceFrom),
+      highPrice: String(m.priceHigh),
+    },
+  };
+  fs.writeFileSync(path.join(outDir, `${slug}.json`), JSON.stringify(data, null, 2));
+  console.log(`Generated ${slug}.json`);
+});
+
+console.log(`\nDone — ${models.length} model files generated.`);

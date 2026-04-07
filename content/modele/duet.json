@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "DUET — bryła z bocznymi akcentami i frontem | Pawilon modułowy STAGO",
+    "description": "DUET STAGO — Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Wymiar, materiał elewacji, kolor i wnętrze dopasujesz pod siebie. Darmowa wycena.",
+    "canonical": "https://stago.com.pl/modele/duet.html",
+    "ogTitle": "DUET — bryła z bocznymi akcentami i frontem",
+    "ogDescription": "Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Dwa elementy w równowadze — mocny korpus i ciepłe akcenty. Materiały dwóch stref ustalamy razem.",
+    "ogImage": "https://stago.com.pl/assets/modele/duet.webp"
+  },
+  "breadcrumb": "DUET",
+  "productType": "DUET",
+  "hero": {
+    "img": "../assets/modele/duet.webp",
+    "imgAlt": "Pawilon modułowy STAGO DUET — bryła z bocznymi akcentami i frontem",
+    "h1": "DUET — bryła z bocznymi akcentami i frontem.",
+    "subtitle": "Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Dwa elementy w równowadze — mocny korpus i ciepłe akcenty. Materiały dwóch stref ustalamy razem.",
+    "price": "od 25 000 zł netto",
+    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "ctaHref": "../konfigurator.html?model=duet",
+    "articleHref": "../modele.html",
+    "articleText": "Zobacz wszystkie modele &rarr;"
+  },
+  "usecases": {
+    "eyebrow": "Do czego pasuje",
+    "h2": "Gdzie DUET sprawdza się najlepiej",
+    "sub": "Ta bryła jest uniwersalna — działa w kilku głównych kierunkach. Ale nie ogranicza się do nich. Każdy pawilon projektujemy pod konkretną sytuację klienta.",
+    "items": [
+      {
+        "title": "Pawilon gastronomiczny",
+        "text": "Kawiarnia, lodziarnia, food truck, bar. Okno podawcze, wentylacja, wykończenia HACCP.",
+        "href": "../zastosowania/gastronomiczny.html"
+      },
+      {
+        "title": "Pawilon handlowy",
+        "text": "Sklep, kiosk, punkt sprzedaży. Witryny, oświetlenie, wygodne wejście — wszystko żeby sprzedawać.",
+        "href": "../zastosowania/handlowy.html"
+      },
+      {
+        "title": "Kontener biurowy",
+        "text": "Biuro sprzedaży, recepcja, biuro na budowie. Ciepło, cicho, gotowe do pracy od pierwszego dnia.",
+        "href": "../zastosowania/biurowy.html"
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Pod Twoje ręce",
+    "h2": "Ta bryła. Twoje wykończenie.",
+    "sub": "DUET to kształt i proporcje — nie gotowy produkt. Wszystko, co widzisz na renderze, to jeden z wariantów. Wymiar, materiał elewacji, kolor, stolarkę, wnętrze — projektujemy od nowa pod Ciebie. Mów jak ma wyglądać, my rysujemy.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "title": "Wymiary",
+        "text": "Od 3×2m (kompakt) do 12×4m (duży moduł). Łączymy moduły obok siebie, jeśli potrzebujesz większej powierzchni. Wysokość standardowa lub podwyższona."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
+        "title": "Materiał i kolor elewacji",
+        "text": "Drewno (jasny dąb, orzech, heban), blacha trapezowa, płyty HPL, panele kompozytowe. Cała paleta RAL dla kolorów. Pokazujemy próbki przed zamówieniem."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M9 3v18M3 9h6M3 15h6\"/></svg>",
+        "title": "Stolarka i okna",
+        "text": "Drzwi przesuwne, klasyczne, techniczne. Okna panoramiczne, narożne, podawcze. Układ otworów pod Twoje przeznaczenie — mówisz, gdzie czego potrzebujesz."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
+        "title": "Wnętrze i wyposażenie",
+        "text": "Pod mieszkanie (łazienka, kuchnia, sypialnia), pod biuro (instalacje, oświetlenie), pod usługi (umywalki, woda, kanalizacja). Wykończenia, podłogi, meble — wszystko projektujemy razem z Tobą."
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Konstrukcja",
+    "h2": "Co jest stałe — niezależnie od wykończenia",
+    "items": [
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
+        "h3": "Spawana rama stalowa",
+        "text": "Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Izolacja PIR 100mm",
+        "text": "Płyta PIR 100 mm na ścianach, dachu i podłodze. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "h3": "Stolarka aluminiowa",
+        "text": "Okna i drzwi aluminiowe z przekładką termiczną. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
+        "h3": "Instalacje pod zamówienie",
+        "text": "Elektryka, oświetlenie LED, rozdzielnia — w standardzie. Woda, kanalizacja, wentylacja, klimatyzacja — według Twojego przeznaczenia. Gotowe do podłączenia na działce."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "W cenie",
+    "h2": "Co dostajesz od STAGO",
+    "items": [
+      {
+        "h3": "Darmowa wizualizacja 3D",
+        "text": "Rysujemy pawilon w 3D zanim cokolwiek podpisujesz. Zmieniamy tyle razy, ile trzeba — póki nie powiesz „tak\". Darmowa, bez zobowiązań."
+      },
+      {
+        "h3": "Transport i montaż z Jędrzejowa",
+        "text": "Pawilon jedzie na lawecie z naszego zakładu. Nasza ekipa stawia go na Twojej działce. W cenie — bez dopłat za kilometry, bez ukrytych kosztów."
+      },
+      {
+        "h3": "2 lata gwarancji + serwis",
+        "text": "Gwarancja na konstrukcję i instalacje. Po gwarancji też nie zostawiamy klientów — dzwonisz i przyjeżdżamy. Mamy własnych ludzi, nie szukamy na telefon."
+      },
+      {
+        "h3": "Pomoc z dokumentami",
+        "text": "Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie. Szybciej, sprawniej, bez stresu."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zobacz na żywo",
+    "h2": "Tak wyglądają nasze realizacje",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Pawilon STAGO DUET — realizacja 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Pawilon STAGO DUET — realizacja 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Pawilon STAGO DUET — realizacja 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-duet",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci",
+    "items": [
+      {
+        "q": "Czy muszę wybrać taką elewację jak na renderze?",
+        "a": "Nie. Render pokazuje jeden z wariantów wykończenia. DUET jako bryła przyjmuje dowolną elewację — drewno w kilku odcieniach, blachę trapezową, płyty HPL, panele kompozytowe. Mówisz, jak ma wyglądać, my proponujemy materiały i pokazujemy próbki."
+      },
+      {
+        "q": "Mogę zmienić wymiar tej bryły?",
+        "a": "Tak. Bryła jest elastyczna — od 3×2m do 12×4m. Można też łączyć moduły obok siebie dla większych powierzchni. Proporcje zachowujemy, żeby charakter DUET był zachowany, ale wielkość dostosowujemy pod Twoją sytuację."
+      },
+      {
+        "q": "Ile to kosztuje?",
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+      },
+      {
+        "q": "Jak długo czekam?",
+        "a": "Standardowo 4-6 tygodni od akceptacji projektu do dostawy na działkę. Konkretną datę odbioru znasz zanim wpłacisz zaliczkę — w umowie, nie ustnie."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "selectedType": "inny",
+    "textareaPlaceholder": "Jaki rozmiar, jaki materiał elewacji, gdzie ma stać, do czego ma być?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pawilon handlowy"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pawilon gastronomiczny"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener biurowy"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pawilon usługowy"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Domek mieszkalny"
+      },
+      {
+        "value": "inny",
+        "label": "Inny"
+      }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły — wymiar, materiał, przeznaczenie, lokalizacja. Rysujemy wizualizację 3D. Podajemy cenę finalną z transportem i montażem. Bez niespodzianek.",
+    "features": [
+      {
+        "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Cena z transportem i montażem"
+      },
+      {
+        "text": "Pomoc z dokumentami i zgłoszeniem"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
+    ]
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/nord.webp",
+      "alt": "Wszystkie modele STAGO",
+      "label": "Modele",
+      "h3": "Zobacz wszystkie 12 modeli",
+      "text": "Przejrzyj cały katalog wzorów. Każdy dopasujesz pod siebie."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Zastosowania pawilonów",
+      "label": "Zastosowania",
+      "h3": "Do czego można użyć?",
+      "text": "Sklep, biuro, kawiarnia, dom — pokażemy, który model do czego."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cennik pawilonów",
+      "label": "Poradnik",
+      "h3": "Cennik pawilonów 2026",
+      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pawilon modułowy STAGO DUET",
+    "description": "DUET. Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Dwa elementy w równowadze — mocny korpus i ciepłe akcenty. Materiały dwóch stref ustalamy razem.",
+    "image": "https://stago.com.pl/assets/modele/duet.webp",
+    "lowPrice": "25000",
+    "highPrice": "95000"
+  }
+}

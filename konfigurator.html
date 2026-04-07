@@ -25,10 +25,9 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="assets/sygnet.webp">
+  <link rel="icon" type="image/png" href="assets/sygnet.png">
 <style>
 /* ── CONFIGURATOR BASE ── */
 body { background: #F8F9FA; padding-bottom: 0; }
@@ -601,9 +600,10 @@ body { background: #F8F9FA; padding-bottom: 0; }
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="assets/logo.webp" alt="STAGO" class="nav-logo-img" width="108" height="24"></a>
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO" class="nav-logo-img" width="130" height="29"></a>
       <div class="nav-links" id="nav-links">
-        <a href="index.html#produkty">Modele</a>
+        <a href="modele.html">Modele</a>
+        <a href="zastosowania.html">Zastosowania</a>
         <a href="konfigurator.html" style="color:var(--accent)">Konfigurator</a>
         <a href="index.html#kontakt" class="btn btn-nav">Darmowa wycena</a>
       </div>
@@ -634,39 +634,72 @@ body { background: #F8F9FA; padding-bottom: 0; }
     <!-- STEP 1: PRZEZNACZENIE -->
     <div class="step-panel active" data-step="1">
       <h1 class="step-title">Wybierz model</h1>
-      <p class="step-sub">Przeznaczenie dopasujesz sam — każdy model konfigurujesz pod siebie</p>
+      <p class="step-sub">12 brył do wyboru — wymiar, materiał i wnętrze dopasujemy w kolejnych krokach</p>
       <div class="type-grid">
-
-        <div class="type-card" data-type="Model S" onclick="selectType(this)">
-          <img src="assets/products/magazynowy.webp" alt="Model S" loading="lazy">
-          <span>Model S</span>
+        
+        <div class="type-card" data-type="ATRI" onclick="selectType(this)">
+          <img src="assets/modele/atri.webp" alt="ATRI" loading="lazy">
+          <span>ATRI</span>
         </div>
-
-        <div class="type-card" data-type="Model M" onclick="selectType(this)">
-          <img src="assets/products/biurowy.webp" alt="Model M" loading="lazy">
-          <span>Model M</span>
+        
+        <div class="type-card" data-type="MILA" onclick="selectType(this)">
+          <img src="assets/modele/mila.webp" alt="MILA" loading="lazy">
+          <span>MILA</span>
         </div>
-
-        <div class="type-card" data-type="Model L" onclick="selectType(this)">
-          <img src="assets/products/handlowy.webp" alt="Model L" loading="lazy">
-          <span>Model L</span>
+        
+        <div class="type-card" data-type="ICON" onclick="selectType(this)">
+          <img src="assets/modele/icon.webp" alt="ICON" loading="lazy">
+          <span>ICON</span>
         </div>
-
-        <div class="type-card" data-type="Model T" onclick="selectType(this)">
-          <img src="assets/products/sanitarny.webp" alt="Model T" loading="lazy">
-          <span>Model T</span>
+        
+        <div class="type-card" data-type="RYTM" onclick="selectType(this)">
+          <img src="assets/modele/rytm.webp" alt="RYTM" loading="lazy">
+          <span>RYTM</span>
         </div>
-
-        <div class="type-card" data-type="Model X" onclick="selectType(this)">
-          <img src="assets/products/box.webp" alt="Model X" loading="lazy">
-          <span>Model X</span>
+        
+        <div class="type-card" data-type="NORD" onclick="selectType(this)">
+          <img src="assets/modele/nord.webp" alt="NORD" loading="lazy">
+          <span>NORD</span>
         </div>
-
-        <div class="type-card" data-type="Model Glass" onclick="selectType(this)">
-          <img src="assets/products/glass.webp" alt="Model Glass" loading="lazy">
-          <span>Model Glass</span>
+        
+        <div class="type-card" data-type="LOFT" onclick="selectType(this)">
+          <img src="assets/modele/loft.webp" alt="LOFT" loading="lazy">
+          <span>LOFT</span>
         </div>
-
+        
+        <div class="type-card" data-type="SAGA" onclick="selectType(this)">
+          <img src="assets/modele/saga.webp" alt="SAGA" loading="lazy">
+          <span>SAGA</span>
+        </div>
+        
+        <div class="type-card" data-type="VIEW" onclick="selectType(this)">
+          <img src="assets/modele/view.webp" alt="VIEW" loading="lazy">
+          <span>VIEW</span>
+        </div>
+        
+        <div class="type-card" data-type="DUET" onclick="selectType(this)">
+          <img src="assets/modele/duet.webp" alt="DUET" loading="lazy">
+          <span>DUET</span>
+        </div>
+        
+        <div class="type-card" data-type="CUBE" onclick="selectType(this)">
+          <img src="assets/modele/cube.webp" alt="CUBE" loading="lazy">
+          <span>CUBE</span>
+        </div>
+        
+        <div class="type-card" data-type="NOIR" onclick="selectType(this)">
+          <img src="assets/modele/noir.webp" alt="NOIR" loading="lazy">
+          <span>NOIR</span>
+        </div>
+        
+        <div class="type-card" data-type="KIOS" onclick="selectType(this)">
+          <img src="assets/modele/kios.webp" alt="KIOS" loading="lazy">
+          <span>KIOS</span>
+        </div>
+        
+      </div>
+      <div style="text-align:center;margin:20px 0 8px">
+        <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
       </div>
       <p class="social-proof">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
@@ -851,7 +884,7 @@ body { background: #F8F9FA; padding-bottom: 0; }
             <input type="tel" name="phone" placeholder="Telefon *" required>
             <input type="email" name="email" placeholder="Email">
             <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)"></textarea>
-            <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+            <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
             <button type="submit" class="cfg-submit">Wyślij zapytanie</button>
             <p class="form-error" id="cfgForm-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:8px"></p>
             <p class="form-promise">
@@ -1145,8 +1178,9 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
 });
 
 // ── URL PARAMS (pre-select type, always override) ──
-const typeMap = {Handlowy:'Model S',Biurowy:'Model M',Mieszkalny:'Model L',Sanitarny:'Model T',Magazynowy:'Model X',Premium:'Model Glass'};
-let urlType = new URLSearchParams(window.location.search).get('type');
+const typeMap = {Handlowy:'NORD',Biurowy:'CUBE',Mieszkalny:'MILA',Sanitarny:'CUBE',Magazynowy:'KIOS',Premium:'ICON'};
+const params = new URLSearchParams(window.location.search);
+let urlType = params.get('type') || (params.get('model') ? params.get('model').toUpperCase() : null);
 if (urlType) {
   urlType = typeMap[urlType] || urlType;
   localStorage.removeItem('stago_cfg');

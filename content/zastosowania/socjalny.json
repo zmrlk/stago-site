@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Kontener na budowę — szatnia, stołówka, sanitariaty | STAGO",
+    "description": "Kontenery socjalne dla budów i firm. Szatnia, stołówka, kontener sanitarny. Solidne, mobilne, gotowe od ręki. Od 12 000 zł netto.",
+    "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
+    "ogTitle": "Kontener na budowę — szatnia, stołówka, sanitariaty | STAGO",
+    "ogDescription": "Kontenery socjalne dla budów i firm. Szatnia, stołówka, kontener sanitarny. Solidne, mobilne, gotowe od ręki. Od 12 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
+  },
+  "breadcrumb": "Socjalne",
+  "productType": "socjalny",
+  "hero": {
+    "img": "../assets/modele/cube.webp",
+    "imgAlt": "Kontener na budowę STAGO — bryła CUBE",
+    "h1": "Kontener na budowę.",
+    "subtitle": "Szatnia, stołówka, sanitariaty, zaplecze dla brygady. Solidne, mobilne i gotowe do przewiezienia na kolejny plac, gdy bieżąca inwestycja dobiega końca. Ekipa ma gdzie się przebrać, zjeść i odpocząć — a Ty masz święty spokój.",
+    "price": "od 12 000 zł netto",
+    "priceNote": "/ kontener socjalny 6×2,4 m",
+    "ctaHref": "../konfigurator.html?type=socjalny",
+    "articleHref": "../modele.html",
+    "articleText": "Zobacz wszystkie 12 modeli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Polecane bryły",
+    "h2": "Modele, które wytrzymują warunki budowy",
+    "sub": "Solidne i funkcjonalne, bez zbędnych ozdobników. Wytrzymują codzienne użytkowanie na placu budowy i nawet po latach wyglądają porządnie.",
+    "items": [
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modułowy kubik z wyrazistą wstawką",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pawilon STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Wydłużony monolit z lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pawilon STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompaktowa bryła z pełną witryną",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pawilon STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Drewniana ramka, symetryczny front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pawilon STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Premium bryła z narożnymi oknami",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pawilon STAGO NORD",
+        "href": "../modele/nord.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pod tę branżę",
+    "h2": "Co przygotowujemy pod warunki budowy",
+    "sub": "Bez ozdobników. Solidnie, mobilnie i na lata — bo plac budowy wybacza tylko mocnym konstrukcjom.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Wytrzymały na warunki budowy",
+        "text": "Stalowa rama, blacha trapezowa, wzmocnione narożniki. Bez problemu wytrzymuje załadunek dźwigiem, transport po nierównych drogach i codzienne użytkowanie przez ekipę w roboczych ubraniach."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
+        "h3": "Szybki transport między budowami",
+        "text": "Standardowe wymiary dopasowane do lawet. Załadunek, przewóz i rozładunek zajmują kilka godzin — i kontener już pracuje w nowym miejscu. Jeden taki obiekt potrafi obsłużyć trzy lub cztery budowy w ciągu roku."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Wyposażenie dopasowane do ekipy",
+        "text": "Szafki ubraniowe, ławki, stoły, umywalki, prysznice — w konfiguracji, jakiej potrzebujesz. Pełna szatnia, samodzielny węzeł sanitarny albo jedno i drugie połączone w jednym module."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
+        "h3": "Ogrzewanie i prąd",
+        "text": "Grzejnik elektryczny lub piec, pełna instalacja elektryczna i oświetlenie. Ekipa pracuje w komfortowych warunkach przez cały rok — także w środku zimy."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "W cenie",
+    "h2": "Co dostajesz od STAGO",
+    "items": [
+      {
+        "h3": "Darmowa wizualizacja 3D",
+        "text": "Mówisz, czego potrzebujesz. Rysujemy. Zobaczysz pawilon w 3D zanim wydasz złotówkę. Zmieniamy póki nie powiesz „tak\"."
+      },
+      {
+        "h3": "Transport i montaż w cenie",
+        "text": "Pawilon jedzie na lawecie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+      },
+      {
+        "h3": "2 lata gwarancji + serwis",
+        "text": "Konstrukcja, ściany, dach — 2 lata gwarancji. Po gwarancji też nie zostawiamy klientów. Mamy własnych ludzi, nie szukamy na telefon."
+      },
+      {
+        "h3": "Pomoc z dokumentami",
+        "text": "Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zobacz na żywo",
+    "h2": "Tak wyglądają nasze realizacje",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r6.webp",
+        "alt": "Kontener na budowę STAGO — realizacja 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Kontener na budowę STAGO — realizacja 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Kontener na budowę STAGO — realizacja 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-socjalny",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci z tej branży",
+    "items": [
+      {
+        "q": "Ile kosztuje kontener socjalny?",
+        "a": "Podstawowy moduł 6×2,4 m zaczyna się od 12 000 zł netto. Z pełnym wyposażeniem (szatnia i węzeł sanitarny) — 25 000–35 000 zł. To tańsze rozwiązanie niż wynajem na pół roku, a po zapłacie kontener pozostaje Twoją własnością."
+      },
+      {
+        "q": "Czy mogę go wziąć w leasing zamiast kupować od razu?",
+        "a": "Tak. Współpracujemy z firmami leasingowymi i pomagamy ułożyć finansowanie tak, by rata wchodziła w koszty firmy, a po jej spłacie kontener stawał się Twoją własnością."
+      },
+      {
+        "q": "Czy można podłączyć do niego wodę i kanalizację?",
+        "a": "Tak. Kontenery sanitarne mają umywalki, prysznice i toalety. Wymagają doprowadzenia wody oraz odpływu na placu budowy — pomagamy zaplanować przyłącza, ale ich wykonanie należy do hydraulika lub elektryka po Twojej stronie."
+      },
+      {
+        "q": "Jak długo posłuży kontener?",
+        "a": "Dobrze utrzymany kontener pracuje 15–20 lat. Wielu klientów z branży budowlanej używa jednego obiektu z powodzeniem na kilkudziesięciu kolejnych budowach."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "textareaPlaceholder": "Co chcesz zrobić? Jaki rozmiar? Gdzie ma stać?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pawilon do handlu"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pawilon pod gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener pod biuro"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pawilon usługowy"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontener na budowę"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Domek całoroczny"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pawilon nietypowy"
+      }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły. Rysujemy projekt z wizualizacją 3D. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
+    "features": [
+      {
+        "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Cena z transportem i montażem"
+      },
+      {
+        "text": "Pomoc z dokumentami i zgłoszeniem"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
+    ],
+    "selectedType": "socjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/cube.webp",
+      "alt": "Wszystkie modele",
+      "label": "Modele",
+      "h3": "Zobacz wszystkie 12 modeli",
+      "text": "Każdy model dopasujesz pod swoje zastosowanie. Przejrzyj cały katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Zastosowania",
+      "label": "Zastosowania",
+      "h3": "Inne zastosowania",
+      "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cennik 2026",
+      "label": "Poradnik",
+      "h3": "Cennik pawilonów 2026",
+      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+    }
+  ],
+  "jsonLd": {
+    "name": "Kontener na budowę STAGO",
+    "description": "Kontenery socjalne dla budów i firm. Szatnia, stołówka, kontener sanitarny. Solidne, mobilne, gotowe od ręki. Od 12 000 zł netto.",
+    "image": "https://stago.com.pl/assets/modele/cube.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

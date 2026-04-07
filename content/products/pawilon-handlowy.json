@@ -36,8 +36,8 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
-        "h3": "Stal malowana proszkowo",
-        "text": "Rama stalowa malowana proszkowo — trwałe, odporne wykończenie. Wykończenie elewacji: blacha, drewno lub płyty HPL."
+        "h3": "Stal z zabezpieczeniem antykorozyjnym",
+        "text": "Rama stalowa z zabezpieczeniem antykorozyjnym — trwałe, odporne wykończenie. Wykończenie elewacji: blacha, drewno lub płyty HPL."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
@@ -104,7 +104,7 @@
       },
       {
         "q": "A jeśli ktoś spróbuje się włamać?",
-        "a": "Stalowa konstrukcja, zamki wielopunktowe, opcjonalne rolety antywłamaniowe. Możesz dołożyć alarm i monitoring. To nie blaszak z marketu — to spawana rama stalowa malowana proszkowo. Bez łomu się nie dostaniesz."
+        "a": "Stalowa konstrukcja, zamki wielopunktowe, opcjonalne rolety antywłamaniowe. Możesz dołożyć alarm i monitoring. To nie blaszak z marketu — to spawana rama stalowa z zabezpieczeniem antykorozyjnym. Bez łomu się nie dostaniesz."
       }
     ]
   },
@@ -151,12 +151,12 @@
       "alt": "Kontener magazynowy STAGO",
       "label": "Produkt",
       "h3": "Kontener magazynowy",
-      "text": "Magazyn, garaż, schowek. Stal malowana proszkowo, zamek wielopunktowy."
+      "text": "Magazyn, garaż, schowek. Stal z zabezpieczeniem antykorozyjnym, zamek wielopunktowy."
     }
   ],
   "jsonLd": {
     "name": "Pawilon handlowy STAGO",
-    "description": "Pawilon handlowy od producenta. Sklepy, kioski, punkty usługowe. Konstrukcja stalowa malowana proszkowo, izolacja PIR. Gotowy w 4-6 tygodni.",
+    "description": "Pawilon handlowy od producenta. Sklepy, kioski, punkty usługowe. Konstrukcja stalowa z zabezpieczeniem antykorozyjnym, izolacja PIR. Gotowy w 4-6 tygodni.",
     "image": "https://stago.com.pl/assets/products/handlowy.webp",
     "lowPrice": "15000",
     "highPrice": "65000"

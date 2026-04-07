@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawilon vs najem — co się bardziej opłaca? | STAGO</title>
+  <meta name="description" content="Wynajmujesz lokal? Policz, ile zapłacisz przez 3 lata. Własny pawilon = niższe koszty, brak czynszu, lokal jest Twój. Konkretne liczby, bez ściemy.">
+  <link rel="canonical" href="https://stago.com.pl/pawilon-vs-najem.html">
+  <meta name="theme-color" content="#1D1D1B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/sygnet.png">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="STAGO" class="nav-logo-img" width="130" height="29"></a>
+      <div class="nav-links" id="nav-links">
+        <a href="modele.html">Modele</a>
+        <a href="zastosowania.html">Zastosowania</a>
+        <a href="realizacje.html">Realizacje</a>
+        <a href="finansowanie.html">Finansowanie</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="konfigurator.html" class="btn btn-nav">Darmowa wycena</a>
+      </div>
+      <div class="nav-right">
+        <a href="tel:+48509508210" class="nav-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>509 508 210</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="container breadcrumbs">
+    <a href="index.html">Strona główna</a><span>/</span>Pawilon vs najem
+  </div>
+
+  <section class="container hub-hero">
+    <p class="eyebrow">Czynsz vs własny lokal</p>
+    <h1 class="h1">Wynajem czy własny pawilon? <span class="accent">Policz sam.</span></h1>
+    <p class="hub-sub">Większość naszych klientów wcześniej wynajmowała. Płacili 2-4 tysiące czynszu miesięcznie za lokal, który nigdy nie miał być ich. Potem zrobili kalkulację — i zadzwonili do nas.</p>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="compare-grid">
+        <div class="compare-card compare-bad">
+          <p class="compare-label">Wynajmujesz</p>
+          <div class="compare-price">3 000 zł<span>/msc</span></div>
+          <ul class="compare-list">
+            <li>36 miesięcy = <strong>108 000 zł</strong></li>
+            <li>Lokal nigdy nie będzie Twój</li>
+            <li>Podwyżka czynszu kiedy chce właściciel</li>
+            <li>Remont? Za Twoje pieniądze, w cudzym lokalu</li>
+            <li>Lokalizacja nie działa? Trudno — umowa wiąże</li>
+            <li>Po 36 miesiącach — wracasz do punktu zero</li>
+          </ul>
+        </div>
+        <div class="compare-card compare-good">
+          <p class="compare-label">Masz swój pawilon</p>
+          <div class="compare-price">~1 200 zł<span>/msc raty</span></div>
+          <ul class="compare-list">
+            <li>Po spłacie = <strong>Twój na zawsze</strong></li>
+            <li>Zero czynszu do końca życia</li>
+            <li>Przenosisz gdzie chcesz — laweta i kilka godzin</li>
+            <li>Sprzedajesz kiedy chcesz, odzyskujesz pieniądze</li>
+            <li>Wygląda i działa jak chcesz — bo to Twoje</li>
+            <li>Po 36 miesiącach — masz kapitał, nie kwit</li>
+          </ul>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--t2);font-size:.9rem;margin-top:24px">Rata leasingowa orientacyjna, przy pawilonie ~35 000 zł netto na 36 miesięcy. Dokładną ofertę finansowania dobieramy indywidualnie.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Policz to dokładnie</p>
+      <h2 class="h2">Kalkulator oszczędności</h2>
+      <p class="section-sub">Wpisz, ile teraz płacisz czynszu i przez ile miesięcy. Pokażemy, ile zaoszczędzisz, jeśli zamiast wynajmować — kupisz własny pawilon na leasing.</p>
+
+      <div class="calc-card">
+        <div class="calc-inputs">
+          <label class="calc-input">
+            <span>Twój czynsz miesięczny</span>
+            <div class="calc-input-row">
+              <input type="number" id="calcRent" value="3000" min="500" max="20000" step="100">
+              <span class="calc-unit">zł</span>
+            </div>
+            <input type="range" id="calcRentSlider" min="500" max="10000" step="100" value="3000">
+          </label>
+          <label class="calc-input">
+            <span>Cena pawilonu</span>
+            <div class="calc-input-row">
+              <input type="number" id="calcPrice" value="35000" min="10000" max="200000" step="1000">
+              <span class="calc-unit">zł netto</span>
+            </div>
+            <input type="range" id="calcPriceSlider" min="10000" max="100000" step="1000" value="35000">
+          </label>
+          <label class="calc-input">
+            <span>Okres porównania</span>
+            <div class="calc-input-row">
+              <input type="number" id="calcMonths" value="36" min="12" max="120" step="1">
+              <span class="calc-unit">miesięcy</span>
+            </div>
+            <input type="range" id="calcMonthsSlider" min="12" max="84" step="1" value="36">
+          </label>
+        </div>
+
+        <div class="calc-results">
+          <div class="calc-result calc-result-bad">
+            <span class="calc-result-label">Wynajem przez cały okres</span>
+            <span class="calc-result-value" id="resRent">108 000 zł</span>
+            <span class="calc-result-note">Pieniądze, które tracisz na zawsze</span>
+          </div>
+          <div class="calc-result calc-result-good">
+            <span class="calc-result-label">Pawilon na leasing (rata mies.)</span>
+            <span class="calc-result-value" id="resLease">~1 200 zł</span>
+            <span class="calc-result-note">Suma rat: <strong id="resLeaseTotal">42 000 zł</strong> &middot; Po spłacie pawilon Twój</span>
+          </div>
+          <div class="calc-result calc-result-savings">
+            <span class="calc-result-label">Oszczędzasz</span>
+            <span class="calc-result-value" id="resSavings">66 000 zł</span>
+            <span class="calc-result-note">+ pawilon, który zostaje z Tobą</span>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:32px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+          <a href="konfigurator.html" class="btn btn-primary btn-lg">Wyceń mój pawilon</a>
+          <a href="finansowanie.html" class="btn btn-outline-dark">Zobacz finansowanie</a>
+        </div>
+        <p style="text-align:center;font-size:.82rem;color:var(--t2);margin-top:20px">Kalkulacja orientacyjna. Rata leasingowa liczona jako (cena pawilonu × 1,2) ÷ liczba miesięcy. Faktyczna rata zależy od leasingodawcy, wkładu własnego i Twojej zdolności kredytowej.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <p class="eyebrow">Historia klienta</p>
+      <h2 class="h2">Tomek przeniósł warzywniak. <span class="accent">Na swoich zasadach.</span></h2>
+      <div style="max-width:780px;margin:40px auto;display:flex;flex-direction:column;gap:24px">
+        <div class="story-step"><strong>Sytuacja:</strong> Tomek prowadził warzywniak w wynajętym lokalu. Przez lata płacił czynsz, który nie budował niczego jego. Pewnego dnia właściciel podniósł stawkę — i Tomek zaczął szukać innego wyjścia.</div>
+        <div class="story-step"><strong>Jeden telefon:</strong> Zadzwonił do nas. Narysowaliśmy pawilon z dużą witryną na wystawkę owoców i zapleczem chłodniczym. Tomek miał swoje pomysły — zmieniliśmy układ, dobraliśmy kolory. Dwa spotkania i gotowe.</div>
+        <div class="story-step"><strong>Efekt:</strong> Dziś stoi na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Klienci mówią, że wygląda lepiej niż połowa sklepów w mieście. Za kilka lat pawilon będzie w całości jego.</div>
+        <blockquote style="font-size:1.3rem;font-weight:700;color:var(--primary);text-align:center;padding:32px 0;border-left:4px solid var(--accent);padding-left:24px;margin:20px 0">
+          „Żałuję tylko jednego — że nie zadzwoniłem wcześniej."<br>
+          <span style="font-size:.9rem;font-weight:500;color:var(--t2)">— Tomek, warzywniak, Busko-Zdrój</span>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container" style="text-align:center">
+      <p class="eyebrow">Twoja kolej</p>
+      <h2 class="h2">Policzysz to z nami. <span class="accent">Bezpłatnie.</span></h2>
+      <p style="color:var(--t-light2);font-size:1.05rem;max-width:600px;margin:16px auto 32px">Powiedz, ile teraz płacisz czynszu i czego potrzebujesz. Pokażemy Ci, ile by kosztował Twój własny pawilon i jak to wychodzi w skali 3-5 lat.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="konfigurator.html" class="btn btn-primary btn-lg">Wyceń mój pawilon</a>
+        <a href="tel:+48509508210" class="btn btn-outline-light">Zadzwoń: 509 508 210</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-white.png" alt="STAGO" class="footer-logo" width="140" height="31" loading="lazy">
+        <p>Producent pawilonów modułowych.<br>Jędrzejów, woj. świętokrzyskie.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div><h4>Modele</h4><a href="modele.html">Wszystkie 12 modeli</a><a href="modele/nord.html">NORD</a><a href="modele/loft.html">LOFT</a><a href="modele/duet.html">DUET</a><a href="modele/icon.html">ICON</a><a href="modele/mila.html">MILA</a></div>
+        <div><h4>Zastosowania</h4><a href="zastosowania.html">Wszystkie</a><a href="zastosowania/handlowy.html">Handlowe</a><a href="zastosowania/biurowy.html">Biurowe</a><a href="zastosowania/gastronomiczny.html">Gastronomiczne</a><a href="zastosowania/uslugowy.html">Usługowe</a><a href="zastosowania/mieszkalny.html">Mieszkalne</a></div>
+        <div><h4>Firma</h4><a href="jak-kupic.html">Jak kupić</a><a href="technologia.html">Technologia</a><a href="finansowanie.html">Finansowanie</a><a href="pawilon-vs-najem.html">Pawilon vs najem</a><a href="realizacje.html">Realizacje</a><a href="dostepne-od-reki.html">Dostępne od ręki</a><a href="faq.html">FAQ</a></div>
+        <div><h4>Kontakt</h4><a href="tel:+48509508210">+48 509 508 210</a><a href="tel:+48509508110">+48 509 508 110</a><a href="mailto:kontakt@stago.com.pl">kontakt@stago.com.pl</a><a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Jasionka 117, Jędrzejów</a><a href="kontakt.html">Strona kontaktu &rarr;</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-legal"><a href="polityka-prywatnosci.html">Polityka prywatności</a><a href="regulamin.html">Regulamin</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Zgody cookies</a></div>
+      <p>&copy; 2026 STAGO &middot; Stworzone przez <a href="https://isiko.pl" target="_blank">ISIKO</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle')?.addEventListener('click',function(){document.getElementById('nav-links').classList.toggle('open');});
+
+    // ─── Kalkulator oszczędności ───
+    function fmt(n){return new Intl.NumberFormat('pl-PL').format(Math.round(n))+' zł'}
+    function recalc(){
+      const rent = +document.getElementById('calcRent').value || 0;
+      const price = +document.getElementById('calcPrice').value || 0;
+      const months = +document.getElementById('calcMonths').value || 1;
+      const totalRent = rent * months;
+      const leaseRate = (price * 1.2) / months;
+      const totalLease = leaseRate * months;
+      const savings = Math.max(0, totalRent - totalLease);
+      document.getElementById('resRent').textContent = fmt(totalRent);
+      document.getElementById('resLease').textContent = '~' + fmt(leaseRate) + '/msc';
+      document.getElementById('resLeaseTotal').textContent = fmt(totalLease);
+      document.getElementById('resSavings').textContent = fmt(savings);
+    }
+    function syncSlider(inputId, sliderId){
+      const input = document.getElementById(inputId);
+      const slider = document.getElementById(sliderId);
+      input.addEventListener('input',()=>{slider.value=input.value;recalc();});
+      slider.addEventListener('input',()=>{input.value=slider.value;recalc();});
+    }
+    syncSlider('calcRent','calcRentSlider');
+    syncSlider('calcPrice','calcPriceSlider');
+    syncSlider('calcMonths','calcMonthsSlider');
+    recalc();
+  </script>
+  <script src="cookies.js"></script>
+</body>
+</html>

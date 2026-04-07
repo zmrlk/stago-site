@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Domek całoroczny — dom, ADU, holiday house | STAGO",
+    "description": "Domki modułowe całoroczne. Mały dom na działce, ADU, holiday house, gabinet w ogrodzie. PIR 100mm, łazienka, kuchnia. Od 45 000 zł netto.",
+    "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
+    "ogTitle": "Domek całoroczny — dom, ADU, holiday house | STAGO",
+    "ogDescription": "Domki modułowe całoroczne. Mały dom na działce, ADU, holiday house, gabinet w ogrodzie. PIR 100mm, łazienka, kuchnia. Od 45 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
+  },
+  "breadcrumb": "Mieszkalne",
+  "productType": "mieszkalny",
+  "hero": {
+    "img": "../assets/modele/mila.webp",
+    "imgAlt": "Domek całoroczny STAGO — bryła MILA",
+    "h1": "Domek całoroczny.",
+    "subtitle": "Mały dom na działce, dom dla teściowej, gabinet w ogrodzie, domek wakacyjny nad jeziorem. Pełne ściany z izolacją PIR 100 mm, łazienka, aneks kuchenny — pełnowartościowe miejsce do mieszkania, a nie tymczasowy barakowóz.",
+    "price": "od 45 000 zł netto",
+    "priceNote": "/ domek 6×3 m z łazienką",
+    "ctaHref": "../konfigurator.html?type=mieszkalny",
+    "articleHref": "../modele.html",
+    "articleText": "Zobacz wszystkie 12 modeli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Polecane bryły",
+    "h2": "Modele, które wyglądają jak prawdziwy dom",
+    "sub": "Spokojne, ciepłe, drewniane bryły — takie, by każdy odwiedzający Twój domek poczuł, że jest u kogoś w domu, a nie w kontenerze.",
+    "items": [
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasyczny układ, symetryczne proporcje",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pawilon STAGO MILA",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "ATRI",
+        "name": "ATRI",
+        "desc": "Otwarta bryła z dużym przeszkleniem",
+        "img": "../assets/modele/atri.webp",
+        "alt": "Pawilon STAGO ATRI",
+        "href": "../modele/atri.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Drewniana ramka, symetryczny front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pawilon STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modułowy kubik z wyrazistą wstawką",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pawilon STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Premium loft z narożnym przeszkleniem",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pawilon STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pod tę branżę",
+    "h2": "Co przygotowujemy pod całoroczne mieszkanie",
+    "sub": "Pełnowymiarowe ściany, prawdziwa izolacja termiczna i normalna łazienka. Mieszkasz w nim cały rok, nie tylko latem.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Izolacja jak w domach energooszczędnych",
+        "text": "Ściany z izolacją PIR 100 mm, ocieplony dach i podłoga z izolacją termiczną. Zimą jest ciepło, latem przyjemnie chłodno. Miesięczny rachunek za prąd w sezonie zimowym mieści się zwykle w przedziale 250–450 zł."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Pełna łazienka i aneks kuchenny",
+        "text": "Łazienka z prysznicem, toaletą i umywalką. Aneks kuchenny ze zlewem, blatem oraz miejscem na lodówkę i kuchenkę. Wszystko jest gotowe — wprowadzasz się i mieszkasz od pierwszego dnia."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Stolarka aluminiowa",
+        "text": "Okna i drzwi aluminiowe — energooszczędne, ciche, z przekładką termiczną. Już samo otwieranie i zamykanie pokazuje, że to nie prowizorka. Bez parowania szyb i bez przeciągów nawet w środku zimy."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Bez pozwolenia na budowę (do 35 m²)",
+        "text": "Dla domków do 35 m² wystarczy zgłoszenie w urzędzie — pełne pozwolenie na budowę nie jest potrzebne. Kilka dni formalności zamiast miesięcy. Pomagamy z dokumentami od pierwszego wniosku po finał."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "W cenie",
+    "h2": "Co dostajesz od STAGO",
+    "items": [
+      {
+        "h3": "Darmowa wizualizacja 3D",
+        "text": "Mówisz, czego potrzebujesz. Rysujemy. Zobaczysz pawilon w 3D zanim wydasz złotówkę. Zmieniamy póki nie powiesz „tak\"."
+      },
+      {
+        "h3": "Transport i montaż w cenie",
+        "text": "Pawilon jedzie na lawecie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+      },
+      {
+        "h3": "2 lata gwarancji + serwis",
+        "text": "Konstrukcja, ściany, dach — 2 lata gwarancji. Po gwarancji też nie zostawiamy klientów. Mamy własnych ludzi, nie szukamy na telefon."
+      },
+      {
+        "h3": "Pomoc z dokumentami",
+        "text": "Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zobacz na żywo",
+    "h2": "Tak wyglądają nasze realizacje",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Domek całoroczny STAGO — realizacja 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Domek całoroczny STAGO — realizacja 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Domek całoroczny STAGO — realizacja 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-mieszkalny",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci z tej branży",
+    "items": [
+      {
+        "q": "Ile kosztuje domek całoroczny?",
+        "a": "Domek 6×3 m z łazienką zaczyna się od 45 000 zł netto. Większy domek 8×4 m z kuchnią i sypialnią — 65 000–90 000 zł. Wykończenia premium wyceniamy indywidualnie."
+      },
+      {
+        "q": "Czy mogę w nim mieszkać przez cały rok?",
+        "a": "Tak. Nasi klienci mieszkają w domkach STAGO przez cały rok — z izolacją PIR 100 mm, ogrzewaniem (klimatyzacja z pompą ciepła, piec lub kominek) oraz pełną instalacją wodno-kanalizacyjną. To pełnowartościowy dom, a nie tymczasowy barakowóz."
+      },
+      {
+        "q": "Czy potrzebuję pozwolenia na budowę?",
+        "a": "W przypadku domków do 35 m² wystarczy zgłoszenie w urzędzie. Powyżej tej powierzchni potrzebne jest pełne pozwolenie. Pomagamy przygotować dokumenty w obu wariantach."
+      },
+      {
+        "q": "Czy mogę dobudować taras albo dodatkowy moduł?",
+        "a": "Tak. Stawiamy tarasy drewniane lub kompozytowe i łączymy kilka modułów w jeden większy dom — na przykład z dwiema sypialniami, salonem i osobną łazienką. Powiedz nam, czego potrzebujesz, a projekt powstanie wspólnie."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "textareaPlaceholder": "Co chcesz zrobić? Jaki rozmiar? Gdzie ma stać?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pawilon do handlu"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pawilon pod gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener pod biuro"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pawilon usługowy"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontener na budowę"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Domek całoroczny"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pawilon nietypowy"
+      }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły. Rysujemy projekt z wizualizacją 3D. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
+    "features": [
+      {
+        "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Cena z transportem i montażem"
+      },
+      {
+        "text": "Pomoc z dokumentami i zgłoszeniem"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
+    ],
+    "selectedType": "mieszkalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/mila.webp",
+      "alt": "Wszystkie modele",
+      "label": "Modele",
+      "h3": "Zobacz wszystkie 12 modeli",
+      "text": "Każdy model dopasujesz pod swoje zastosowanie. Przejrzyj cały katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Zastosowania",
+      "label": "Zastosowania",
+      "h3": "Inne zastosowania",
+      "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cennik 2026",
+      "label": "Poradnik",
+      "h3": "Cennik pawilonów 2026",
+      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+    }
+  ],
+  "jsonLd": {
+    "name": "Domek całoroczny STAGO",
+    "description": "Domki modułowe całoroczne. Mały dom na działce, ADU, holiday house, gabinet w ogrodzie. PIR 100mm, łazienka, kuchnia. Od 45 000 zł netto.",
+    "image": "https://stago.com.pl/assets/modele/mila.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

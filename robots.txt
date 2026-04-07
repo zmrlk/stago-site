@@ -1,5 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /content/
+Disallow: /templates/
+Disallow: /build.js
+Disallow: /package.json
+
+# Allow obrazki, CSS, JS w głównych zasobach
+Allow: /assets/
+Allow: /style.css
+Allow: /app.js
+Allow: /form-handler.js
+
+User-agent: Googlebot-Image
+Allow: /assets/
 
 Sitemap: https://stago.com.pl/sitemap.xml
 Sitemap: https://stago.com.pl/sitemap-images.xml

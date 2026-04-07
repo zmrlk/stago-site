@@ -5,15 +5,21 @@
   },
   "step1": {
     "title": "Wybierz model",
-    "sub": "Przeznaczenie dopasujesz sam — każdy model konfigurujesz pod siebie",
+    "sub": "12 brył do wyboru — wymiar, materiał i wnętrze dopasujemy w kolejnych krokach",
     "socialProof": "127 osób skonfigurowało pawilon w tym miesiącu",
     "types": [
-      { "name": "Model S", "img": "assets/products/magazynowy.webp" },
-      { "name": "Model M", "img": "assets/products/biurowy.webp" },
-      { "name": "Model L", "img": "assets/products/handlowy.webp" },
-      { "name": "Model T", "img": "assets/products/sanitarny.webp" },
-      { "name": "Model X", "img": "assets/products/box.webp" },
-      { "name": "Model Glass", "img": "assets/products/glass.webp" }
+      { "name": "ATRI", "img": "assets/modele/atri.webp" },
+      { "name": "MILA", "img": "assets/modele/mila.webp" },
+      { "name": "ICON", "img": "assets/modele/icon.webp" },
+      { "name": "RYTM", "img": "assets/modele/rytm.webp" },
+      { "name": "NORD", "img": "assets/modele/nord.webp" },
+      { "name": "LOFT", "img": "assets/modele/loft.webp" },
+      { "name": "SAGA", "img": "assets/modele/saga.webp" },
+      { "name": "VIEW", "img": "assets/modele/view.webp" },
+      { "name": "DUET", "img": "assets/modele/duet.webp" },
+      { "name": "CUBE", "img": "assets/modele/cube.webp" },
+      { "name": "NOIR", "img": "assets/modele/noir.webp" },
+      { "name": "KIOS", "img": "assets/modele/kios.webp" }
     ]
   },
   "step2": {

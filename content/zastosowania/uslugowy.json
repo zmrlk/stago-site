@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pawilon usługowy — salon, kosmetyka, serwis | STAGO",
+    "description": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
+    "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
+    "ogTitle": "Pawilon usługowy — salon, kosmetyka, serwis | STAGO",
+    "ogDescription": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
+  },
+  "breadcrumb": "Usługowe",
+  "productType": "uslugowy",
+  "hero": {
+    "img": "../assets/modele/icon.webp",
+    "imgAlt": "Pawilon usługowy STAGO — bryła ICON",
+    "h1": "Pawilon usługowy.",
+    "subtitle": "Salon fryzjerski, gabinet kosmetyczny, serwis, pralnia, punkt naprawczy. Każda branża ma swoje wymagania — wodę, kanalizację, wentylację, mocniejszą instalację elektryczną, czasem konkretne certyfikaty. Powiedz nam, czym się zajmujesz, a przygotujemy pawilon tak, żeby sanepid przeszedł bez problemu.",
+    "price": "od 25 000 zł netto",
+    "priceNote": "/ pawilon usługowy 5×3 m, instalacje w cenie",
+    "ctaHref": "../konfigurator.html?type=uslugowy",
+    "articleHref": "../modele.html",
+    "articleText": "Zobacz wszystkie 12 modeli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Polecane bryły",
+    "h2": "Modele, które wyglądają tak, jak chciałby Twój klient",
+    "sub": "Decyzja o powrocie do salonu często zapada już przy pierwszej wizycie. Te bryły pomagają ją podjąć w odpowiednią stronę.",
+    "items": [
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Premium loft z narożnym przeszkleniem",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pawilon STAGO ICON",
+        "href": "../modele/icon.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Front showroomowy z trzema witrynami",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pawilon STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Drewniana ramka, symetryczny front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pawilon STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Wydłużony monolit z lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pawilon STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasyczny układ, symetryczne proporcje",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pawilon STAGO MILA",
+        "href": "../modele/mila.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pod tę branżę",
+    "h2": "Co przygotowujemy pod usługi",
+    "sub": "Każda branża rządzi się własnymi prawami — i każdy nasz pawilon projektujemy pod konkretne urządzenia oraz konkretne przepisy.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Woda i kanalizacja",
+        "text": "Doprowadzenie wody, umywalki, odpływ — wszystko zgodne z normami sanitarnymi. Niezależnie od branży, sanepid przechodzi przez taki pawilon bez przeszkód."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Instalacja elektryczna pod sprzęt",
+        "text": "Wzmocniona instalacja przygotowana pod suszarki, lampy zabiegowe, sterylizatory czy pralki przemysłowe. Powiedz nam, jaki sprzęt planujesz wstawić, a dobierzemy obwody pod konkretne urządzenia."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Wentylacja mechaniczna",
+        "text": "Wentylacja z odprowadzeniem oparów i zapachów chemicznych. Ty pracujesz w czystym powietrzu, a klient czeka w komfortowych warunkach — bez duszności i nieprzyjemnych aromatów."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Wykończenia łatwe w utrzymaniu",
+        "text": "Podłoga antypoślizgowa, ściany zmywalne, blaty odporne na środki chemiczne. Codzienna dezynfekcja zajmuje minuty, a nie godziny."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "W cenie",
+    "h2": "Co dostajesz od STAGO",
+    "items": [
+      {
+        "h3": "Darmowa wizualizacja 3D",
+        "text": "Mówisz, czego potrzebujesz. Rysujemy. Zobaczysz pawilon w 3D zanim wydasz złotówkę. Zmieniamy póki nie powiesz „tak\"."
+      },
+      {
+        "h3": "Transport i montaż w cenie",
+        "text": "Pawilon jedzie na lawecie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+      },
+      {
+        "h3": "2 lata gwarancji + serwis",
+        "text": "Konstrukcja, ściany, dach — 2 lata gwarancji. Po gwarancji też nie zostawiamy klientów. Mamy własnych ludzi, nie szukamy na telefon."
+      },
+      {
+        "h3": "Pomoc z dokumentami",
+        "text": "Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Zobacz na żywo",
+    "h2": "Tak wyglądają nasze realizacje",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Pawilon usługowy STAGO — realizacja 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Pawilon usługowy STAGO — realizacja 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Pawilon usługowy STAGO — realizacja 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-uslugowy",
+    "eyebrow": "Pytania",
+    "h2": "To, o co pytają klienci z tej branży",
+    "items": [
+      {
+        "q": "Ile kosztuje pawilon usługowy?",
+        "a": "Moduł 5×3 m z podstawowymi instalacjami zaczyna się od 25 000 zł netto. Większy salon z dwoma stanowiskami — 40 000–55 000 zł. Ostateczna cena zależy od ilości sprzętu, podpięć i wykończenia wnętrza."
+      },
+      {
+        "q": "Czy pawilon spełnia wymogi sanepidu?",
+        "a": "Tak. Projektujemy go zgodnie z wymogami obowiązującymi w danej branży. Sanepid wchodzi, sprawdza i podpisuje protokół. Kilkudziesięciu naszych klientów prowadzi już salony i serwisy w pawilonach STAGO."
+      },
+      {
+        "q": "Czy mogę mieć więcej niż jedno stanowisko pracy?",
+        "a": "Tak. Łączymy moduły obok siebie, dzięki czemu powstają większe pawilony — 8×3 m lub 12×3 m — z dwoma lub trzema stanowiskami. Powiedz nam tylko, ile osób ma pracować jednocześnie, a zaproponujemy odpowiedni układ."
+      },
+      {
+        "q": "A jeśli nie mam jeszcze pomysłu na układ wnętrza?",
+        "a": "Pomożemy go ułożyć. Projekt powstaje wspólnie — pytamy o to, czego potrzebujesz, i podpowiadamy, gdzie warto umieścić umywalkę, fotel czy toaletę. Nasza rola nie kończy się na produkcji pawilonu."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Zaczynamy",
+    "h2": "Powiedz, czego potrzebujesz",
+    "textareaPlaceholder": "Co chcesz zrobić? Jaki rozmiar? Gdzie ma stać?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pawilon do handlu"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pawilon pod gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener pod biuro"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pawilon usługowy"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontener na budowę"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Domek całoroczny"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pawilon nietypowy"
+      }
+    ],
+    "infoH3": "Jak to wygląda?",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły. Rysujemy projekt z wizualizacją 3D. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
+    "features": [
+      {
+        "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Cena z transportem i montażem"
+      },
+      {
+        "text": "Pomoc z dokumentami i zgłoszeniem"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
+    ],
+    "selectedType": "uslugowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/icon.webp",
+      "alt": "Wszystkie modele",
+      "label": "Modele",
+      "h3": "Zobacz wszystkie 12 modeli",
+      "text": "Każdy model dopasujesz pod swoje zastosowanie. Przejrzyj cały katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Zastosowania",
+      "label": "Zastosowania",
+      "h3": "Inne zastosowania",
+      "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cennik 2026",
+      "label": "Poradnik",
+      "h3": "Cennik pawilonów 2026",
+      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pawilon usługowy STAGO",
+    "description": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
+    "image": "https://stago.com.pl/assets/modele/icon.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}
