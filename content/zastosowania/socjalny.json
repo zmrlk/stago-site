@@ -80,7 +80,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
         "h3": "Szybki transport między budowami",
-        "text": "Standardowe wymiary dopasowane do lawet. Załadunek, przewóz i rozładunek zajmują kilka godzin — i kontener już pracuje w nowym miejscu. Jeden taki obiekt potrafi obsłużyć trzy lub cztery budowy w ciągu roku."
+        "text": "Standardowe wymiary dopasowane do naczep. Załadunek, przewóz i rozładunek zajmują kilka godzin — i kontener już pracuje w nowym miejscu. Jeden taki obiekt potrafi obsłużyć trzy lub cztery budowy w ciągu roku."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
@@ -104,7 +104,7 @@
       },
       {
         "h3": "Transport i montaż w cenie",
-        "text": "Pawilon jedzie na lawecie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
       },
       {
         "h3": "2 lata gwarancji + serwis",

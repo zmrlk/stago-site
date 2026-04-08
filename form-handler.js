@@ -330,6 +330,8 @@
         hp.name = CONFIG.HONEYPOT_FIELD;
         hp.tabIndex = -1;
         hp.autocomplete = 'off';
+        hp.setAttribute('aria-hidden', 'true');
+        hp.setAttribute('aria-label', 'Pole pomocnicze');
         hp.style.cssText = 'position:absolute;left:-9999px;top:-9999px;opacity:0;height:0;width:0;';
         forms[j].appendChild(hp);
       }
