@@ -1,5 +1,5 @@
 (function(){
-  var imgs=document.querySelectorAll('.product-gallery-item img');
+  var imgs=document.querySelectorAll('.product-gallery-item img, .realizacja-card img');
   if(!imgs.length)return;
   var allSrcs=[].map.call(imgs,function(i){return i.src});
   var idx=0;

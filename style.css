@@ -133,7 +133,7 @@ button{-webkit-tap-highlight-color:transparent}
 .about-features{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;margin-bottom:48px;align-items:stretch}
 .about-feature{text-align:center;padding:32px 24px;display:flex;flex-direction:column;align-items:center;height:100%;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
 .about-icon{width:64px;height:64px;border-radius:50%;background:rgba(232,70,28,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--accent);flex-shrink:0}
-.about-feature h3{font-size:1.05rem;font-weight:700;margin-bottom:10px;color:var(--primary)}
+.about-feature h3{font-size:1.05rem;font-weight:700;margin-bottom:10px;color:var(--primary);min-height:2.6em;display:flex;align-items:center;justify-content:center;text-align:center}
 .about-feature p{font-size:.88rem;color:var(--t2);line-height:1.6;flex:1}
 .about-text{max-width:720px;margin:0 auto 32px;text-align:center}
 .about-text p{font-size:1rem;color:var(--t2);line-height:1.7}
