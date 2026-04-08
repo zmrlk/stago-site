@@ -65,12 +65,27 @@
   var url = 'https://places.googleapis.com/v1/places/' + PLACE_ID +
     '?fields=reviews,rating,userRatingCount&languageCode=pl&key=' + encodeURIComponent(API_KEY);
 
-  fetch(url)
-    .then(function(res) { return res.json(); })
-    .then(function(data) {
-      if (data.reviews && data.reviews.length) {
-        renderReviews(data.reviews, data.rating, data.userRatingCount);
+  function loadReviews() {
+    fetch(url)
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        if (data.reviews && data.reviews.length) {
+          renderReviews(data.reviews, data.rating, data.userRatingCount);
+        }
+      })
+      .catch(function() { /* fallback zostaje */ });
+  }
+
+  // Lazy: ladujemy dopiero gdy sekcja opinii jest blisko viewportu
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        io.disconnect();
+        loadReviews();
       }
-    })
-    .catch(function() { /* fallback zostaje */ });
+    }, { rootMargin: '500px' });
+    io.observe(container);
+  } else {
+    loadReviews();
+  }
 })();

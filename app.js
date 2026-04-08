@@ -236,31 +236,20 @@ if (toggle && links) {
   });
 }
 
-// ── STICKY CTA SCROLL LOGIC ──
+// ── STICKY CTA — IntersectionObserver (zero forced reflow) ──
 const stickyCta = document.querySelector('.sticky-cta');
-if (stickyCta) {
-  let ticking = false;
-  const showThreshold = 300;
-
-  // Add body class for padding
-  const checkSticky = () => {
-    const shouldShow = window.scrollY > showThreshold;
-    stickyCta.classList.toggle('is-visible', shouldShow);
-    document.body.classList.toggle('has-sticky-cta', shouldShow);
-  };
-
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        checkSticky();
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
-
-  // Check on load in case page is already scrolled
-  checkSticky();
+if (stickyCta && 'IntersectionObserver' in window) {
+  // Sentinel ~300px od gory; gdy znika z viewportu => pokaz CTA
+  const sentinel = document.createElement('div');
+  sentinel.setAttribute('aria-hidden', 'true');
+  sentinel.style.cssText = 'position:absolute;top:300px;left:0;width:1px;height:1px;pointer-events:none';
+  document.body.appendChild(sentinel);
+  const io = new IntersectionObserver((entries) => {
+    const visible = !entries[0].isIntersecting;
+    stickyCta.classList.toggle('is-visible', visible);
+    document.body.classList.toggle('has-sticky-cta', visible);
+  }, { threshold: 0 });
+  io.observe(sentinel);
 }
 
 // ── SCROLL REVEAL WITH INTERSECTION OBSERVER ──

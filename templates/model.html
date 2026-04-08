@@ -2,11 +2,8 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WNJQZHX6');</script>
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');</script>
+  <!-- GTM + GA4 (deferred until interaction or 3s) -->
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{meta.title}}</title>
   <meta name="description" content="{{meta.description}}">
@@ -28,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css"></noscript><style>body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
   <link rel="icon" type="image/png" href="../assets/sygnet.png">
 </head>
 <body>
@@ -38,7 +35,7 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo"><img src="../assets/logo.png" alt="STAGO" class="nav-logo-img" width="130" height="29"></a>
+      <a href="../index.html" class="nav-logo"><img src="../assets/logo.webp" alt="STAGO" class="nav-logo-img" width="130" height="29"></a>
       <div class="nav-links" id="nav-links">
         <a href="../modele.html">Modele</a>
         <a href="../zastosowania.html">Zastosowania</a>
@@ -250,7 +247,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="../assets/logo-white.png" alt="STAGO" class="footer-logo" width="140" height="31" loading="lazy">
+        <img src="../assets/logo-white.webp" alt="STAGO" class="footer-logo" width="140" height="31" loading="lazy">
         <p>Producent pawilonów modułowych.<br>Jędrzejów, woj. świętokrzyskie.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
