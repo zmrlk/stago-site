@@ -250,8 +250,8 @@
   <section class="section section-dark" id="opinie">
     <div class="container">
       <p class="eyebrow">{{reviews.eyebrow}}</p>
-      <h2 class="h2">{{reviews.h2}}<br><span class="accent">{{reviews.h2accent}}</span></h2>
-      <div class="reviews">
+      <h2 class="h2">{{reviews.h2}} <span class="review-count">5 opinii</span><br><span class="accent">{{reviews.h2accent}}</span></h2>
+      <div class="reviews" id="google-reviews">
         {{#reviews.items}}
         <div class="review-card reveal">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -262,6 +262,9 @@
           </div>
         </div>
         {{/reviews.items}}
+      </div>
+      <div class="reviews-cta">
+        <a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Zobacz wszystkie opinie na Google &rarr;</a>
       </div>
     </div>
   </section>
@@ -518,6 +521,11 @@
     ]
   }
   </script>
+  <script>
+    window.STAGO_GOOGLE_API_KEY = 'AIzaSyDdd5Kkz7Thbzuq5swgHX7vfn41Nr63Now';
+    window.STAGO_PLACE_ID = 'ChIJY7vHl1WZF0cRh3HPZovQvZw';
+  </script>
+  <script src="reviews.js"></script>
   <script src="form-handler.js"></script>
 </body>
 </html>
