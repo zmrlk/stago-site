@@ -1,0 +1,97 @@
+{
+  "lang": "hu",
+  "locale": "hu_HU",
+  "langName": "Magyar",
+  "flag": "🇭🇺",
+  "baseUrl": "https://stago.com.pl/hu",
+  "email": "kontakt@stago.com.pl",
+  "emailExport": "kontakt@stago.com.pl",
+  "skipLink": "Ugrás a tartalomhoz",
+  "nav": {
+    "modele": "Modellek",
+    "zastosowania": "Alkalmazások",
+    "realizacje": "Referenciák",
+    "finansowanie": "Finanszírozás",
+    "faq": "GYIK",
+    "kontakt": "Kapcsolat",
+    "cta": "Ingyenes árajánlat"
+  },
+  "breadcrumb": {
+    "home": "Kezdőlap",
+    "modele": "Modellek",
+    "zastosowania": "Alkalmazások"
+  },
+  "hub": {
+    "see": "Megtekintés &rarr;",
+    "seeModel": "Modell megtekintése &rarr;",
+    "seeAll": "Összes megtekintése &rarr;",
+    "allModels": "Mind a 12 modell",
+    "allModelsH3": "Mind a 12 modell megtekintése",
+    "allModelsDesc": "Minden forma kiindulópont. Megmutatjuk a teljes katalógust.",
+    "allModelsCode": "Összes",
+    "allUses": "Minden alkalmazás",
+    "allUsesDesc": "7 irány, mindegyik ajánlott modellekkel. Tekintse meg az összeset a legjobb megoldás kiválasztásához.",
+    "allUsesArrow": "Összes megtekintése &rarr;"
+  },
+  "cta": {
+    "freeQuote": "Ingyenes árajánlat",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Ajánlatkérés",
+    "call": "Hívás",
+    "callLabel": "Hívás: 509 508 210"
+  },
+  "form": {
+    "name": "Név",
+    "phone": "Telefon",
+    "email": "E-mail (opcionális)",
+    "consent": "Hozzájárulok személyes adataim kezeléséhez.",
+    "privacyLink": "Adatvédelem",
+    "submit": "Ajánlatkérés küldése",
+    "note": "24 órán belül visszahívjuk. Az árajánlat ingyenes és kötelezettségmentes.",
+    "success": "Elküldve! 24 órán belül jelentkezünk.",
+    "honeypot": "Segédmező (ne töltse ki)",
+    "hours": "H-P: 7:00-20:00 | Szo: 8:00-14:00",
+    "message": "Üzenet",
+    "messagePlaceholder": "Írja le igényeit — méretek, helyszín, felhasználás..."
+  },
+  "related": {
+    "eyebrow": "Hasznos lehet",
+    "h2": "További termékek és útmutatók"
+  },
+  "footer": {
+    "tagline": "Moduláris pavilonok gyártója.",
+    "location": "Jędrzejów, Lengyelország.",
+    "modele": "Modellek",
+    "zastosowania": "Alkalmazások",
+    "allModels": "Mind a 12 modell",
+    "all": "Összes",
+    "handlowe": "Kereskedelmi",
+    "biurowe": "Irodai",
+    "gastronomiczne": "Gasztronómia",
+    "uslugowe": "Szolgáltatások",
+    "mieszkalne": "Lakó",
+    "firma": "Cég",
+    "jakKupic": "Hogyan vásároljon",
+    "technologia": "Technológia",
+    "finansowanie": "Finanszírozás",
+    "pawilonVsNajem": "Pavilon vs. bérlés",
+    "realizacje": "Referenciák",
+    "dostepne": "Azonnal elérhető",
+    "faq": "GYIK",
+    "kontakt": "Kapcsolat",
+    "contactPage": "Kapcsolat oldal &rarr;",
+    "privacy": "Adatvédelem",
+    "terms": "ÁSZF",
+    "cookies": "Cookie-beállítások",
+    "madeBy": "Készítette"
+  },
+  "index": {
+    "seeMore": "Tovább",
+    "wantSame": "Én is ilyet akarok — ingyenes árajánlat",
+    "quotePavillon": "Pavilon árajánlat",
+    "calcSavings": "Számítsa ki a megtakarítást &rarr;",
+    "fullFinancing": "Teljes finanszírozás &rarr;",
+    "fullProcess": "A teljes folyamat lépésről lépésre &rarr;",
+    "meetUs": "Ismerjen meg minket közelebbről &rarr;",
+    "visitUs": "Látogasson el hozzánk"
+  }
+}

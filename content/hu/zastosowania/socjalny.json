@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Építkezési konténer — öltöző, étkezde, szanitér | STAGO",
+    "description": "Szociális konténerek építkezésekhez és cégekhez. Öltöző, étkezde, szanitér konténer. Stabil, mobilis, azonnal kész. Kb. 2 760 € nettó-tól.",
+    "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
+    "ogTitle": "Építkezési konténer — öltöző, étkezde, szanitér | STAGO",
+    "ogDescription": "Szociális konténerek építkezésekhez és cégekhez. Öltöző, étkezde, szanitér konténer. Stabil, mobilis, azonnal kész. Kb. 2 760 € nettó-tól.",
+    "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
+  },
+  "breadcrumb": "Szociális",
+  "productType": "socjalny",
+  "hero": {
+    "img": "../assets/modele/cube.webp",
+    "imgAlt": "STAGO építkezési konténer — CUBE forma",
+    "h1": "Építkezési konténer.",
+    "subtitle": "Öltöző, étkezde, szanitér, brigád háttere. Stabil, mobilis és kész a következő építkezésre szállításra, amikor a jelenlegi beruházás véget ér. A csapatnak van hol átöltözni, enni és pihenni — Önnek pedig nyugalma van.",
+    "price": "kb. 2 760 € nettó-tól",
+    "priceNote": "/ 6×2,4 m-es szociális konténer",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Építkezési%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Tekintse meg mind a 12 modellt &rarr;"
+  },
+  "models": {
+    "eyebrow": "Ajánlott formák",
+    "h2": "Modellek, amelyek bírják az építkezési körülményeket",
+    "sub": "Stabil és funkcionális, felesleges díszek nélkül. Bírják az építkezési napi használatot és évek múlva is rendesen néznek ki.",
+    "items": [
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Moduláris kocka markáns betéttel",
+        "img": "../assets/modele/cube.webp",
+        "alt": "STAGO CUBE pavilon",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Nyújtott monolit lamellákkal",
+        "img": "../assets/modele/noir.webp",
+        "alt": "STAGO NOIR pavilon",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompakt forma teljes kirakattal",
+        "img": "../assets/modele/kios.webp",
+        "alt": "STAGO KIOS pavilon",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Fa keret, szimmetrikus front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "STAGO RYTM pavilon",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Prémium forma sarokablakokkal",
+        "img": "../assets/modele/nord.webp",
+        "alt": "STAGO NORD pavilon",
+        "href": "../modele/nord.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Ehhez az iparághoz",
+    "h2": "Amit az építkezési körülményekhez készítünk",
+    "sub": "Díszek nélkül. Stabilan, mobilisan és évekre — mert az építkezés csak az erős szerkezeteknek bocsát meg.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Bírja az építkezési körülményeket",
+        "text": "Acélváz, trapézlemez, megerősített sarkok. Probléma nélkül bírja a darus felrakást, egyenetlen utakon szállítást és a munkaruhás csapat napi használatát."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
+        "h3": "Gyors szállítás építkezések között",
+        "text": "Félpótkocsihoz igazított standard méretek. A felrakás, szállítás és lerakás néhány órát vesz igénybe — és a konténer már az új helyen dolgozik. Egy ilyen objektum évente három-négy építkezést tud kiszolgálni."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "A csapathoz igazított felszereltség",
+        "text": "Ruhásszekrények, padok, asztalok, mosdók, zuhanyzók — az Ön igényeinek megfelelő konfigurációban. Teljes öltöző, önálló szanitér egység vagy mindkettő egyetlen modulban kombinálva."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
+        "h3": "Fűtés és áram",
+        "text": "Elektromos fűtőtest vagy kályha, teljes elektromos hálózat és világítás. A csapat kényelmes körülmények között dolgozik egész évben — a tél közepén is."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Az árban",
+    "h2": "Mit kap a STAGO-tól",
+    "items": [
+      {
+        "h3": "Ingyenes 3D látványterv",
+        "text": "Mondja el, mire van szüksége. Megrajzoljuk. 3D-ben láthatja a pavilont, mielőtt egyetlen eurót kiadna. Módosítjuk, amíg nem mondja, hogy \"igen\"."
+      },
+      {
+        "h3": "Szállítás és telepítés az árban",
+        "text": "A pavilon félpótkocsin érkezik üzemünkből Jędrzejówból. Csapatunk felállítja a helyszínen. Szállítás Magyarországra. Ön megmutatja, hol álljon."
+      },
+      {
+        "h3": "2 év garancia + szerviz",
+        "text": "Szerkezet, falak, tető — 2 év garancia. A garancia után sem hagyjuk magukra ügyfeleinket. Saját embereink vannak, nem keresünk senkit telefonon."
+      },
+      {
+        "h3": "Segítség a dokumentációval",
+        "text": "Segítünk az export dokumentáció és a helyi engedélyezési eljárás előkészítésében. Gyorsabban, hatékonyabban, stressz nélkül."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nézze meg élőben",
+    "h2": "Így néznek ki megvalósításaink",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r6.webp",
+        "alt": "STAGO építkezési konténer — megvalósítás 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "STAGO építkezési konténer — megvalósítás 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "STAGO építkezési konténer — megvalósítás 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-socjalny",
+    "eyebrow": "Kérdések",
+    "h2": "Amit az iparág ügyfelei kérdeznek",
+    "items": [
+      {
+        "q": "Mennyibe kerül egy szociális konténer?",
+        "a": "Egy alapkivitelű 6×2,4 m-es modul kb. 2 760 € nettó-tól indul. Teljes felszereléssel (öltöző és szanitér egység) — 5 750–8 050 €. Ez olcsóbb megoldás, mint a féléves bérlet, és a fizetés után a konténer az Ön tulajdona marad."
+      },
+      {
+        "q": "Lízingelhetek is ahelyett, hogy azonnal megvásárolnám?",
+        "a": "Igen. Lízingcégekkel dolgozunk együtt és segítünk úgy összeállítani a finanszírozást, hogy a részlet a cég költségei közé tartozzon, és a törlesztés után a konténer az Ön tulajdonába kerüljön."
+      },
+      {
+        "q": "Csatlakoztatható hozzá víz és csatorna?",
+        "a": "Igen. A szanitér konténerek mosdókkal, zuhanyzókkal és WC-vel rendelkeznek. Vízbekötés és elvezetés szükséges az építkezésen — segítünk megtervezni a csatlakozásokat, de a kivitelezés az Ön vízvezeték- vagy villanyszerelőjének feladata."
+      },
+      {
+        "q": "Mennyi ideig szolgál a konténer?",
+        "a": "Jól karbantartva 15-20 évig dolgozik. Sok építőipari ügyfelünk egyetlen objektumot használ sikeresen több tucatnyi egymást követő építkezésen."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Kezdjük",
+    "h2": "Mondja el, mire van szüksége",
+    "textareaPlaceholder": "Mit szeretne csinálni? Milyen méret? Hol fog állni?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Kereskedelmi pavilon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Vendéglátó pavilon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Irodakonténer"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Szolgáltatási pavilon"
+      },
+      {
+        "value": "socjalny",
+        "label": "Építkezési konténer"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Egész éves házikó"
+      },
+      {
+        "value": "specjalny",
+        "label": "Különleges pavilon"
+      }
+    ],
+    "infoH3": "Hogyan működik?",
+    "infoText": "Ír vagy hív. Megkérdezzük a részleteket. Elkészítjük a 3D látványtervet. Megadjuk az árat szállítással és telepítéssel. Meglepetések nélkül.",
+    "features": [
+      {
+        "text": "3D látványterv — megnézheti, mielőtt megrendelné"
+      },
+      {
+        "text": "Ár szállítással és telepítéssel"
+      },
+      {
+        "text": "Segítség a dokumentációval"
+      },
+      {
+        "text": "Válasz egy munkanapon belül"
+      }
+    ],
+    "selectedType": "socjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/cube.webp",
+      "alt": "Összes modell",
+      "label": "Modellek",
+      "h3": "Tekintse meg mind a 12 modellt",
+      "text": "Minden modellt az Ön igényeihez igazítunk. Böngéssze végig a teljes katalógust."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Felhasználás",
+      "label": "Felhasználás",
+      "h3": "Egyéb felhasználások",
+      "text": "Nézze meg, mit csinálunk még — bolt, iroda, lakás, vendéglátás, rendelő."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Árlista 2026",
+      "label": "Útmutató",
+      "h3": "Pavilon árlista 2026",
+      "text": "Konkrét összegek, ködösítés nélkül. Nézze meg, mennyit fizet."
+    }
+  ],
+  "jsonLd": {
+    "name": "STAGO építkezési konténer",
+    "description": "Szociális konténerek építkezésekhez és cégekhez. Öltöző, étkezde, szanitér konténer. Stabil, mobilis, azonnal kész. Kb. 2 760 € nettó-tól.",
+    "image": "https://stago.com.pl/assets/modele/cube.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

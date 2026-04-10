@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pabellón de hostelería — cafetería, heladería, food truck | STAGO",
+    "description": "Pabellones de hostelería llave en mano. Cafetería, heladería, food truck, bar. Ventilación, ventana de despacho, acabados conformes con normativa sanitaria. Del fabricante.",
+    "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
+    "ogTitle": "Pabellón de hostelería — cafetería, heladería, food truck | STAGO",
+    "ogDescription": "Pabellones de hostelería llave en mano. Cafetería, heladería, food truck, bar. Ventilación, ventana de despacho, acabados conformes con normativa sanitaria. Del fabricante.",
+    "ogImage": "https://stago.com.pl/assets/modele/saga.webp"
+  },
+  "breadcrumb": "Hostelería",
+  "productType": "gastronomiczny",
+  "hero": {
+    "img": "../assets/modele/saga.webp",
+    "imgAlt": "Pabellón de hostelería STAGO — modelo SAGA",
+    "h1": "Pabellón de hostelería.",
+    "subtitle": "Cafetería, heladería, food truck, cocina pequeña, bar. Conocemos la especificidad del sector — ventilación, requisitos sanitarios, distribución con ventana de despacho. Sabemos también que en temporada no hay tiempo para correcciones, por eso todo debe funcionar desde el primer día. Díganos qué sirve y adaptamos el resto.",
+    "price": "desde 5 060 € neto",
+    "priceNote": "/ módulo de hostelería 4×2,4 m, listo para abrir",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Hosteler%C3%ADa",
+    "articleHref": "../modele.html",
+    "articleText": "Ver los 12 modelos &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelos recomendados",
+    "h2": "Modelos que lucen bien con un café en la mano",
+    "sub": "Estos modelos tienen el carácter que busca el cliente al comprar un café o un helado — y a la vez la distribución que funciona en el trabajo diario tras la barra.",
+    "items": [
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Volumen alargado con frente de vitrinas",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pabellón STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Frente de showroom con tres vitrinas",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pabellón STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Volumen con acentos laterales y frente",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Pabellón STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Volumen con esquinas panorámicas",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pabellón STAGO VIEW",
+        "href": "../modele/view.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Loft premium con acristalamiento en esquina",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pabellón STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Para este sector",
+    "h2": "Lo que preparamos para la hostelería",
+    "sub": "Todo conforme a la normativa sanitaria. No tiene que luchar con las normas — eso es tarea nuestra.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Ventilación de hostelería",
+        "text": "Campana, ventilador, extractor de humos y vapor. La diseñamos para los equipos concretos que tiene o planea comprar. El aire se mantiene fresco incluso en plena temporada."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Ventana de despacho",
+        "text": "Ventana clásica estilo food truck — grande, que se abre hacia arriba, con repisa de exposición. Cliente atendido desde el exterior, usted trabaja cómodamente dentro. También podemos hacer una entrada completa para comensales sentados — la elección es suya."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Acabados conformes con normativa sanitaria",
+        "text": "Paredes y suelo en materiales fáciles de lavar, aptos para contacto con alimentos. La inspección sanitaria entra, comprueba, firma el acta — sin estrés ni improvisaciones de última hora."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Instalaciones para equipos",
+        "text": "Instalación eléctrica reforzada para cafetera, frigoríficos y vitrinas refrigeradas. Acometida de agua y desagüe. Díganos qué equipos instala y preparamos las conexiones en los lugares adecuados."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluido",
+    "h2": "Lo que recibe de STAGO",
+    "items": [
+      {
+        "h3": "Visualización 3D gratuita",
+        "text": "Díganos qué necesita. Dibujamos. Verá el pabellón en 3D antes de gastar un céntimo. Lo cambiamos hasta que diga \"sí\"."
+      },
+      {
+        "h3": "Transporte y montaje incluidos",
+        "text": "El pabellón viaja en camión desde nuestra fábrica en Jędrzejów. Nuestro equipo lo instala in situ. Usted indica dónde debe ir. Entrega en España."
+      },
+      {
+        "h3": "2 años de garantía + servicio",
+        "text": "Estructura, paredes, cubierta — 2 años de garantía. Después de la garantía tampoco abandonamos a nuestros clientes. Tenemos nuestro propio equipo."
+      },
+      {
+        "h3": "Ayuda con la documentación",
+        "text": "Le asesoramos sobre la normativa local y le ayudamos a preparar la documentación necesaria."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Véalo en persona",
+    "h2": "Así son nuestras realizaciones",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Pabellón de hostelería STAGO — realización 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Pabellón de hostelería STAGO — realización 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Pabellón de hostelería STAGO — realización 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-gastronomiczny",
+    "eyebrow": "Preguntas",
+    "h2": "Lo que preguntan los clientes de este sector",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta un pabellón de hostelería?",
+        "a": "Un módulo pequeño para café empieza desde 5 060 € neto. Una heladería mayor con trastienda refrigerada — 9 200–13 800 €. Un bar con cocina completa — desde 16 100 €. Cada presupuesto lo preparamos gratis tras una breve conversación."
+      },
+      {
+        "q": "¿Puedo tener ventana de despacho y a la vez sitio para clientes dentro?",
+        "a": "Sí, ambas soluciones se pueden combinar en un mismo pabellón. Ventana de despacho para clientes atendidos desde fuera y entrada completa para comensales sentados dentro. También podemos diseñar una zona exterior con mesas y sombrillas."
+      },
+      {
+        "q": "¿Qué pasa con los requisitos sanitarios?",
+        "a": "Fabricamos los pabellones conforme al sistema APPCC: paredes lavables, suelo antideslizante, ventilación mecánica, acceso a agua y saneamiento. También ayudamos con la documentación necesaria para el registro sanitario."
+      },
+      {
+        "q": "¿Puedo trasladar el pabellón a otro sitio en temporada?",
+        "a": "Sí — muchos de nuestros clientes hacen exactamente eso. En verano en la costa, en otoño en la ciudad, en invierno guardado en una parcela. Basta con cargar el pabellón en un camión y trasladarlo a la nueva ubicación."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Empecemos",
+    "h2": "Díganos qué necesita",
+    "textareaPlaceholder": "¿Qué quiere hacer? ¿Qué tamaño? ¿Dónde debe estar?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pabellón comercial"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pabellón de hostelería"
+      },
+      {
+        "value": "biurowy",
+        "label": "Contenedor de oficina"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pabellón de servicios"
+      },
+      {
+        "value": "socjalny",
+        "label": "Contenedor para obra"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casita residencial"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pabellón especial"
+      }
+    ],
+    "infoH3": "¿Cómo funciona?",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
+    "features": [
+      {
+        "text": "Visualización 3D — véalo antes de encargar"
+      },
+      {
+        "text": "Precio con transporte y montaje incluidos"
+      },
+      {
+        "text": "Ayuda con documentación y trámites"
+      },
+      {
+        "text": "Respuesta en un día laborable"
+      }
+    ],
+    "selectedType": "gastronomiczny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/saga.webp",
+      "alt": "Todos los modelos",
+      "label": "Modelos",
+      "h3": "Vea los 12 modelos",
+      "text": "Cada modelo lo adaptamos a su uso. Explore todo el catálogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Aplicaciones",
+      "label": "Aplicaciones",
+      "h3": "Otras aplicaciones",
+      "text": "Vea qué más hacemos — tienda, oficina, vivienda, hostelería, gabinete."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Precios 2026",
+      "label": "Guía",
+      "h3": "Precios de pabellones 2026",
+      "text": "Cifras concretas, sin rodeos. Vea cuánto pagará."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pabellón de hostelería STAGO",
+    "description": "Pabellones de hostelería llave en mano. Cafetería, heladería, food truck, bar. Ventilación, ventana de despacho, acabados conformes con normativa sanitaria. Del fabricante.",
+    "image": "https://stago.com.pl/assets/modele/saga.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

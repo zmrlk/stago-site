@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Contenedor para obra — vestuario, comedor, sanitarios | STAGO",
+    "description": "Contenedores sociales para obras y empresas. Vestuario, comedor, contenedor sanitario. Sólidos, móviles, disponibles de inmediato. Desde 2 760 € neto.",
+    "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
+    "ogTitle": "Contenedor para obra — vestuario, comedor, sanitarios | STAGO",
+    "ogDescription": "Contenedores sociales para obras y empresas. Vestuario, comedor, contenedor sanitario. Sólidos, móviles, disponibles de inmediato. Desde 2 760 € neto.",
+    "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
+  },
+  "breadcrumb": "Obra",
+  "productType": "socjalny",
+  "hero": {
+    "img": "../assets/modele/cube.webp",
+    "imgAlt": "Contenedor para obra STAGO — modelo CUBE",
+    "h1": "Contenedor para obra.",
+    "subtitle": "Vestuario, comedor, sanitarios, instalaciones para el equipo. Sólidos, móviles y listos para trasladar a la siguiente obra cuando la actual termine. El equipo tiene dónde cambiarse, comer y descansar — y usted tiene tranquilidad.",
+    "price": "desde 2 760 € neto",
+    "priceNote": "/ contenedor social 6×2,4 m",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Contenedor%20Obra",
+    "articleHref": "../modele.html",
+    "articleText": "Ver los 12 modelos &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelos recomendados",
+    "h2": "Modelos que aguantan las condiciones de obra",
+    "sub": "Sólidos y funcionales, sin adornos innecesarios. Soportan el uso diario en obra y tras años siguen teniendo buen aspecto.",
+    "items": [
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Cubo modular con inserto destacado",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pabellón STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Monolito alargado con lamas",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pabellón STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Volumen compacto con vitrina completa",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pabellón STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Marco de madera, frente simétrico",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pabellón STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Volumen premium con ventanas en esquina",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pabellón STAGO NORD",
+        "href": "../modele/nord.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Para este sector",
+    "h2": "Lo que preparamos para condiciones de obra",
+    "sub": "Sin adornos. Sólido, móvil y para años — porque la obra solo perdona a las construcciones fuertes.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Resistente a condiciones de obra",
+        "text": "Bastidor de acero, chapa trapezoidal, esquinas reforzadas. Soporta sin problemas la carga con grúa, el transporte por caminos irregulares y el uso diario de un equipo con ropa de trabajo."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
+        "h3": "Transporte rápido entre obras",
+        "text": "Dimensiones estándar adaptadas a camiones. Carga, transporte y descarga en unas horas — y el contenedor ya trabaja en el nuevo sitio. Un solo módulo puede atender tres o cuatro obras al año."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Equipamiento adaptado al equipo",
+        "text": "Taquillas, bancos, mesas, lavabos, duchas — en la configuración que necesite. Vestuario completo, módulo sanitario independiente o ambos combinados en un solo módulo."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
+        "h3": "Calefacción y electricidad",
+        "text": "Radiador eléctrico o estufa, instalación eléctrica completa e iluminación. El equipo trabaja en condiciones confortables todo el año — también en pleno invierno."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluido",
+    "h2": "Lo que recibe de STAGO",
+    "items": [
+      {
+        "h3": "Visualización 3D gratuita",
+        "text": "Díganos qué necesita. Dibujamos. Verá el pabellón en 3D antes de gastar un céntimo. Lo cambiamos hasta que diga \"sí\"."
+      },
+      {
+        "h3": "Transporte y montaje incluidos",
+        "text": "El pabellón viaja en camión desde nuestra fábrica en Jędrzejów. Nuestro equipo lo instala in situ. Usted indica dónde debe ir. Entrega en España."
+      },
+      {
+        "h3": "2 años de garantía + servicio",
+        "text": "Estructura, paredes, cubierta — 2 años de garantía. Después de la garantía tampoco abandonamos a nuestros clientes. Tenemos nuestro propio equipo."
+      },
+      {
+        "h3": "Ayuda con la documentación",
+        "text": "Le asesoramos sobre la normativa local y le ayudamos a preparar la documentación necesaria."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Véalo en persona",
+    "h2": "Así son nuestras realizaciones",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r6.webp",
+        "alt": "Contenedor para obra STAGO — realización 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Contenedor para obra STAGO — realización 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Contenedor para obra STAGO — realización 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-socjalny",
+    "eyebrow": "Preguntas",
+    "h2": "Lo que preguntan los clientes de este sector",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta un contenedor social?",
+        "a": "Un módulo básico de 6×2,4 m empieza desde 2 760 € neto. Con equipamiento completo (vestuario y módulo sanitario) — 5 750–8 050 €. Es una solución más económica que el alquiler a medio año, y tras el pago el contenedor sigue siendo suyo."
+      },
+      {
+        "q": "¿Puedo financiarlo con leasing en vez de comprarlo al contado?",
+        "a": "Sí. Colaboramos con compañías de leasing y le ayudamos a organizar la financiación de modo que la cuota entre como gasto empresarial y, tras el pago, el contenedor sea de su propiedad."
+      },
+      {
+        "q": "¿Se puede conectar agua y saneamiento?",
+        "a": "Sí. Los contenedores sanitarios tienen lavabos, duchas e inodoros. Requieren acometida de agua y desagüe en la obra — le ayudamos a planificar las conexiones, pero su ejecución corre de su parte."
+      },
+      {
+        "q": "¿Cuánto dura un contenedor?",
+        "a": "Un contenedor bien mantenido funciona 15-20 años. Muchos clientes del sector de la construcción usan un mismo módulo con éxito en decenas de obras consecutivas."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Empecemos",
+    "h2": "Díganos qué necesita",
+    "textareaPlaceholder": "¿Qué quiere hacer? ¿Qué tamaño? ¿Dónde debe estar?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pabellón comercial"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pabellón de hostelería"
+      },
+      {
+        "value": "biurowy",
+        "label": "Contenedor de oficina"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pabellón de servicios"
+      },
+      {
+        "value": "socjalny",
+        "label": "Contenedor para obra"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casita residencial"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pabellón especial"
+      }
+    ],
+    "infoH3": "¿Cómo funciona?",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
+    "features": [
+      {
+        "text": "Visualización 3D — véalo antes de encargar"
+      },
+      {
+        "text": "Precio con transporte y montaje incluidos"
+      },
+      {
+        "text": "Ayuda con documentación y trámites"
+      },
+      {
+        "text": "Respuesta en un día laborable"
+      }
+    ],
+    "selectedType": "socjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/cube.webp",
+      "alt": "Todos los modelos",
+      "label": "Modelos",
+      "h3": "Vea los 12 modelos",
+      "text": "Cada modelo lo adaptamos a su uso. Explore todo el catálogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Aplicaciones",
+      "label": "Aplicaciones",
+      "h3": "Otras aplicaciones",
+      "text": "Vea qué más hacemos — tienda, oficina, vivienda, hostelería, gabinete."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Precios 2026",
+      "label": "Guía",
+      "h3": "Precios de pabellones 2026",
+      "text": "Cifras concretas, sin rodeos. Vea cuánto pagará."
+    }
+  ],
+  "jsonLd": {
+    "name": "Contenedor para obra STAGO",
+    "description": "Contenedores sociales para obras y empresas. Vestuario, comedor, contenedor sanitario. Sólidos, móviles, disponibles de inmediato. Desde 2 760 € neto.",
+    "image": "https://stago.com.pl/assets/modele/cube.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Netypický pavilón — ambulancia, vrátnica, pokladňa | STAGO",
+    "description": "Pavilóny pre netypické použitie. Lekárska ambulancia, vrátnica, pokladňa, info point, dom kultúry. Podľa konkrétnych požiadaviek a predpisov. Dodávka na Slovensko.",
+    "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
+    "ogTitle": "Netypický pavilón — ambulancia, vrátnica, pokladňa | STAGO",
+    "ogDescription": "Pavilóny pre netypické použitie. Lekárska ambulancia, vrátnica, pokladňa, info point, dom kultúry. Podľa konkrétnych požiadaviek a predpisov. Dodávka na Slovensko.",
+    "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
+  },
+  "breadcrumb": "Špeciálne",
+  "productType": "specjalny",
+  "hero": {
+    "img": "../assets/modele/noir.webp",
+    "imgAlt": "Netypický pavilón STAGO — hmota NOIR",
+    "h1": "Netypický pavilón.",
+    "subtitle": "Lekárska ambulancia, vrátnica, pokladňa, informačný bod pre mesto, malá knižnica, vidiecky dom kultúry. Každý takýto projekt vyžaduje rozhovor so špecialistom — predpisy, normy, vybavenie. Realizujeme ich pravidelne, tak nám jednoducho povedzte, čo potrebujete.",
+    "price": "individuálna cenová ponuka",
+    "priceNote": "/ projekt vzniká podľa Vašich požiadaviek",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Specialny%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Pozrite si všetkých 12 modelov &rarr;"
+  },
+  "models": {
+    "eyebrow": "Odporúčané hmoty",
+    "h2": "Východiskové modely — bod pre ďalší rozhovor",
+    "sub": "Pri netypických projektoch začíname od vybranej hmoty, ale od začiatku ju navrhujeme podľa Vašich konkrétnych požiadaviek.",
+    "items": [
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Predĺžený monolit s lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pavilón STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modulárny kubík s výraznou vložkou",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pavilón STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Prémiová hmota s rohovými oknami",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pavilón STAGO NORD",
+        "href": "../modele/nord.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompaktná hmota s celovýkladom",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pavilón STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Hmota s panoramatickými rohmi",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pavilón STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pre tento odbor",
+    "h2": "Čo robíme pri netypických projektoch",
+    "sub": "Každý takýto projekt je samostatný príbeh — predpisy, normy, kontakt s úradmi. Máme na to overené postupy.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Súlad s konkrétnymi predpismi",
+        "text": "Lekárska ambulancia — spĺňame požiadavky Ministerstva zdravotníctva. Pokladňa pre železnice — realizujeme podľa špecifikácie objednávateľa. Povedzte nám, čo má vzniknúť, a navrhneme pavilón podľa konkrétnej normy."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Netypické rozmery a usporiadania",
+        "text": "Vrátnica 2x2 m, informačný bod 8x4 m so strechou nad čakacou zónou, malá knižnica s čitárňou — rozmery a usporiadanie interiéru navrhujeme podľa konkrétnej situácie, nie podľa pevného katalógu."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Špeciálne inštalácie",
+        "text": "Lekárske plyny, sterilizátory, zosilnená elektrická inštalácia, ozvučenie, monitoring, presná klimatizácia — čo potrebujete, to pripojíme."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16\"/></svg>",
+        "h3": "Spolupráca s úradmi a samosprávami",
+        "text": "Vystavujeme faktúry s DPH, pomáhame s prípravou dokumentácie a realizujeme projekty pre verejné súťaže. Spolupracujeme so samosprávami v celom Poľsku a dodávame aj na Slovensko."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V cene",
+    "h2": "Čo dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizácia",
+        "text": "Poviete, čo potrebujete. Nakreslíme. Uvidíte pavilón v 3D skôr, než miniete euro. Meníme, kým nepoviete \"áno\"."
+      },
+      {
+        "h3": "Doprava a montáž v cene",
+        "text": "Pavilón ide na návese z nášho závodu. Náš tím ho postaví na mieste. Vy ukážete, kde má stáť. Dodávka na Slovensko v cene."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konštrukcia, steny, strecha — 2 roky záruky. Po záruke tiež neopúšťame zákazníkov. Máme vlastných ľudí, nehľadáme na telefón."
+      },
+      {
+        "h3": "Pomoc s dokumentmi",
+        "text": "Do 35 m² stačí ohlásenie, nie povolenie. Pomôžeme vyplniť papiere, aby ste nemuseli hľadať vzory po internete."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Pozrite naživo",
+    "h2": "Takto vyzerajú naše realizácie",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Netypický pavilón STAGO — realizácia 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Netypický pavilón STAGO — realizácia 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Netypický pavilón STAGO — realizácia 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-specjalny",
+    "eyebrow": "Otázky",
+    "h2": "Na čo sa pýtajú zákazníci z tohto odboru",
+    "items": [
+      {
+        "q": "Realizujete pavilóny pre verejné súťaže?",
+        "a": "Áno. Máme skúsenosti so spoluprácou so samosprávami, nemocnicami a železnicami. Vystavujeme faktúry s DPH, dodávame kompletnú technickú dokumentáciu a realizujeme projekty podľa zadávacích podmienok."
+      },
+      {
+        "q": "Koľko stojí lekárska ambulancia?",
+        "a": "Cena závisí od špecifikácie. Malá zákroková ambulancia začína od 8 000 € netto. Kompletný lekársky modul s čakárňou, ambulanciou a sterilizáciou — 18 500–35 000 €. Konečná cenová ponuka vzniká po rozhovore so špecialistom."
+      },
+      {
+        "q": "Môžete realizovať informačný bod pre mesto?",
+        "a": "Áno. Máme za sebou informačné tabule, pokladne a body turistickej informácie. Stačí, ak nám poviete, kde to má stáť, ako dlho to bude fungovať a koľko ľudí má obsluhovať — zvyšok navrhneme."
+      },
+      {
+        "q": "Máte požadované atesty a dokumenty?",
+        "a": "Áno. Oceľová konštrukcia je v súlade s normami PN-EN, izolácia PIR má certifikát protipožiarnej odolnosti a vybrané materiály sú povolené pre styk s potravinami tam, kde je to vyžadované. Každý projekt dostane kompletnú technickú dokumentáciu."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začíname",
+    "h2": "Povedzte, čo potrebujete",
+    "textareaPlaceholder": "Čo chcete urobiť? Aký rozmer? Kde to má stáť?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodný pavilón"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pavilón pre gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontajner pre kanceláriu"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Prevádzkový pavilón"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontajner na stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoročný domček"
+      },
+      {
+        "value": "specjalny",
+        "label": "Netypický pavilón"
+      }
+    ],
+    "infoH3": "Ako to prebieha?",
+    "infoText": "Napíšete alebo zavoláte. Opýtame sa na detaily. Nakreslíme projekt s 3D vizualizáciou. Uvedieme cenu s dopravou a montážou. Bez prekvapení.",
+    "features": [
+      {
+        "text": "3D vizualizácia — uvidíte, skôr než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montážou"
+      },
+      {
+        "text": "Pomoc s dokumentmi a ohlásením"
+      },
+      {
+        "text": "Odpoveď do jedného dňa"
+      }
+    ],
+    "selectedType": "specjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/noir.webp",
+      "alt": "Všetky modely",
+      "label": "Modely",
+      "h3": "Pozrite si všetkých 12 modelov",
+      "text": "Každý model prispôsobíte podľa svojho použitia. Prezrite si celý katalóg."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Použitie",
+      "label": "Použitie",
+      "h3": "Ďalšie použitie",
+      "text": "Pozrite, čo ešte robíme — obchod, kancelária, dom, gastro, kabinét."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cenník 2026",
+      "label": "Poradňa",
+      "h3": "Cenník pavilónov 2026",
+      "text": "Konkrétne sumy, bez zavádzania. Zistite, koľko zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Netypický pavilón STAGO",
+    "description": "Pavilóny pre netypické použitie. Lekárska ambulancia, vrátnica, pokladňa, info point, dom kultúry. Podľa konkrétnych požiadaviek a predpisov. Dodávka na Slovensko.",
+    "image": "https://stago.com.pl/assets/modele/noir.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

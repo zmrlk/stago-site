@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Padiglione servizi — salone, estetica, officina | STAGO",
+    "description": "Padiglioni per servizi dal produttore. Salone di parrucchiere, estetica, officina, lavanderia. Acqua, corrente, fognatura — tutto pronto. Da 5 750 € netto.",
+    "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
+    "ogTitle": "Padiglione servizi — salone, estetica, officina | STAGO",
+    "ogDescription": "Padiglioni per servizi dal produttore. Salone di parrucchiere, estetica, officina, lavanderia. Acqua, corrente, fognatura — tutto pronto. Da 5 750 € netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
+  },
+  "breadcrumb": "Servizi",
+  "productType": "uslugowy",
+  "hero": {
+    "img": "../assets/modele/icon.webp",
+    "imgAlt": "Padiglione servizi STAGO — modello ICON",
+    "h1": "Padiglione servizi.",
+    "subtitle": "Salone di parrucchiere, studio estetico, officina, lavanderia, punto riparazioni. Ogni settore ha le sue esigenze — acqua, fognatura, ventilazione, impianto elettrico potenziato, a volte certificazioni specifiche. Dicci di cosa ti occupi e prepariamo il padiglione in modo che l'ispezione sanitaria passi senza problemi.",
+    "price": "da 5 750 € netto",
+    "priceNote": "/ padiglione servizi 5×3 m, impianti inclusi",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Servizi%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i 12 modelli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelli consigliati",
+    "h2": "Modelli che appaiono come il tuo cliente desidera",
+    "sub": "La decisione di tornare al salone spesso viene presa già alla prima visita. Queste forme aiutano a prenderla nella direzione giusta.",
+    "items": [
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Loft premium con vetrata angolare",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Padiglione STAGO ICON",
+        "href": "../modele/icon.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Fronte showroom con tre vetrine",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Padiglione STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Cornice in legno, fronte simmetrico",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Padiglione STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Monolite allungato con listelli",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Padiglione STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Layout classico, proporzioni simmetriche",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Padiglione STAGO MILA",
+        "href": "../modele/mila.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Per questo settore",
+    "h2": "Cosa prepariamo per i servizi",
+    "sub": "Ogni settore ha le sue regole — e ogni nostro padiglione lo progettiamo per attrezzature specifiche e normative specifiche.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Acqua e fognatura",
+        "text": "Allacciamento acqua, lavandini, scarico — tutto conforme alle norme sanitarie. Indipendentemente dal settore, l'ispezione sanitaria passa senza ostacoli."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Impianto elettrico per le attrezzature",
+        "text": "Impianto rinforzato predisposto per asciugacapelli, lampade per trattamenti, sterilizzatrici o lavatrici industriali. Dicci quali attrezzature prevedi e dimensioniamo i circuiti per le apparecchiature specifiche."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Ventilazione meccanica",
+        "text": "Ventilazione con estrazione vapori e odori chimici. Tu lavori in aria pulita e il cliente aspetta in condizioni confortevoli — senza afa e odori sgradevoli."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Finiture facili da mantenere",
+        "text": "Pavimento antiscivolo, pareti lavabili, piani resistenti ai prodotti chimici. La disinfezione quotidiana richiede minuti, non ore."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Struttura, pareti, tetto — 2 anni di garanzia. Anche dopo la garanzia non abbandoniamo i clienti. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Padiglione servizi STAGO — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Padiglione servizi STAGO — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Padiglione servizi STAGO — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-uslugowy",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti di questo settore",
+    "items": [
+      {
+        "q": "Quanto costa un padiglione servizi?",
+        "a": "Un modulo 5×3 m con impianti base parte da 5 750 € netto. Un salone più grande con due postazioni — 9 200-12 650 €. Il prezzo finale dipende dalla quantità di attrezzature, allacciamenti e finiture interne."
+      },
+      {
+        "q": "Il padiglione soddisfa i requisiti sanitari?",
+        "a": "Sì. Lo progettiamo conformemente ai requisiti vigenti nel settore specifico. L'ispezione sanitaria entra, controlla e firma il verbale. Decine di nostri clienti gestiscono già saloni e officine in padiglioni STAGO."
+      },
+      {
+        "q": "Posso avere più di una postazione di lavoro?",
+        "a": "Sì. Colleghiamo moduli affiancati, ottenendo padiglioni più grandi — 8×3 m o 12×3 m — con due o tre postazioni. Dicci solo quante persone devono lavorare contemporaneamente e proporremo il layout adatto."
+      },
+      {
+        "q": "E se non ho ancora un'idea per il layout interno?",
+        "a": "Ti aiutiamo a definirlo. Il progetto nasce insieme — chiediamo di cosa hai bisogno e suggeriamo dove posizionare lavandino, poltrona o bagno. Il nostro ruolo non finisce con la produzione del padiglione."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "textareaPlaceholder": "Cosa vuoi fare? Quali dimensioni? Dove deve stare?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "socjalny",
+        "label": "Container per cantiere"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta tutto l'anno"
+      },
+      {
+        "value": "specjalny",
+        "label": "Padiglione speciale"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ],
+    "selectedType": "uslugowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/icon.webp",
+      "alt": "Tutti i modelli",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Ogni modello lo adatti alla tua destinazione. Sfoglia l'intero catalogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni",
+      "label": "Applicazioni",
+      "h3": "Altre applicazioni",
+      "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino 2026",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Padiglione servizi STAGO",
+    "description": "Padiglioni per servizi dal produttore. Salone di parrucchiere, estetica, officina, lavanderia. Acqua, corrente, fognatura — tutto pronto. Da 5 750 € netto.",
+    "image": "https://stago.com.pl/assets/modele/icon.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "site": {
+    "title": "STAGO — Modulpavillons, Container, schlüsselfertige Gebäude",
+    "description": "STAGO — Hersteller von Modulpavillons. Geschäft, Büro, Haus — schlüsselfertig. Kostenlose Visualisierung, Montage inklusive, 2 Jahre Garantie. Lieferung nach Deutschland.",
+    "phone": "509 508 210",
+    "phoneLink": "+48509508210",
+    "email": "kontakt@stago.com.pl",
+    "address": "Jasionka 117",
+    "city": "Jędrzejów",
+    "postalCode": "28-300",
+    "region": "Woiwodschaft Świętokrzyskie, Polen",
+    "hours": "Mo-Fr: 7:00-20:00",
+    "hoursSat": "Sa: 8:00-14:00",
+    "cities": "Lieferung nach Deutschland, Österreich und in die gesamte EU"
+  },
+  "hero": {
+    "badge": "Hersteller von Modulpavillons &middot; Lieferung nach Deutschland",
+    "h1": "Ihr Raum.",
+    "h1accent": "Ohne Kompromisse.",
+    "sub": "Wir entwerfen und bauen nach Ihren Wünschen. Kostenlose Visualisierung, Montage inklusive, 2 Jahre Garantie."
+  },
+  "trust": [
+    { "value": "5.0/5", "label": "Google Reviews" },
+    { "value": "Eigene Fabrik", "label": "Produktion unter Kontrolle" },
+    { "value": "Schlüsselfertig", "label": "Einziehen und loslegen" },
+    { "value": "Ganz DE", "label": "Transport + Montage inklusive" }
+  ],
+  "about": {
+    "eyebrow": "Eigene Produktion",
+    "h2": "Alles unter einem Dach.",
+    "h2accent": "",
+    "features": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"M9 12l2 2 4-4\"/></svg>",
+        "title": "Wir fertigen alles selbst",
+        "text": "Die Konstruktion schweißen wir selbst, in unserem Werk bei Jędrzejów. Wände aus PIR 100 mm, Aluminium-Fenster und -Türen, alles solide verarbeitet. Im Winter hält es warm, im Sommer heizt es sich nicht auf wie ein Blechcontainer — und die Heizkosten bleiben deutlich niedriger, als man denkt."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "title": "Jeder Pavillon ist anders",
+        "text": "Weil jeder Kunde eine andere Vorstellung hat. Einer braucht einen Kiosk am Marktplatz, der andere ein Büro auf der Baustelle, der dritte ein Häuschen auf dem Grundstück. Deshalb verkaufen wir keine Standardlösungen — wir setzen uns mit Ihnen zusammen, fragen nach Details und entwerfen das Projekt von Grund auf. Falls Sie noch keine genaue Vorstellung haben, zeigen wir Ihnen Vorschläge zur Auswahl."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Ein Anruf genügt",
+        "text": "Sie müssen nicht einzeln zum Planer, zum Hersteller und zum Montageteam laufen. Sie rufen uns einmal an — wir besprechen alles, erstellen eine Visualisierung, kalkulieren, bauen und stellen den Pavillon auf Ihrem Grundstück auf. Vom ersten Gespräch bis zur Schlüsselübergabe kümmern wir uns um alles."
+      }
+    ],
+    "text": "Alles fertigen wir selbst in unserem Werk bei Jędrzejów — vom ersten Schweißpunkt bis zur letzten Schraube. Wir vergeben nichts an Subunternehmer, wir suchen keine Teams auf Zuruf. Deshalb kontrollieren wir die Qualität in jeder Phase. Sie können unser Werk besuchen und mit eigenen Augen sehen, wie Ihr Pavillon entsteht. Die meisten Kunden tun das — und gehen beruhigter nach Hause."
+  },
+  "products": {
+    "eyebrow": "Unsere Modelle",
+    "h2": "Wählen Sie ein Design.",
+    "h2accent": "Den Verwendungszweck bestimmen Sie selbst.",
+    "sub": "Jedes Design passen wir an Ihre Bedürfnisse an — Maße, Material, Farbe, Fenster und Innenausstattung. Unten die sechs beliebtesten Modelle unserer Kunden.",
+    "items": [
+      { "name": "NORD", "desc": "Anthrazit mit Holzakzenten in den Ecken, riesige Eckverglasung. Skandinavisches Premium. Ein Baukörper, den man nach dem ersten Blick nicht vergisst.", "price": "ab 6 900 € netto", "href": "modele/nord.html", "img": "assets/modele/nord.webp", "cta": "NORD ansehen &rarr;" },
+      { "name": "LOFT", "desc": "Holzlamellen, Graphitdach, drei große Frontvitrinen. Showroom-Feeling — Kunden kommen rein, weil sie sehen müssen, was drin ist.", "price": "ab 5 100 € netto", "href": "modele/loft.html", "img": "assets/modele/loft.webp", "cta": "LOFT ansehen &rarr;" },
+      { "name": "DUET", "desc": "Graphitkorpus, Holzlamellen an den Seiten, drei Vitrinen mit Türen. Universelles Design für Gastro, Handel und Büro.", "price": "ab 5 100 € netto", "href": "modele/duet.html", "img": "assets/modele/duet.webp", "cta": "DUET ansehen &rarr;" },
+      { "name": "ICON", "desc": "Holzfassade, riesige Eckverglasungen vom Boden bis zur Decke. Sieht aus wie ein Architektenstudio. Für Premium-Unternehmen.", "price": "individuelle Kalkulation", "href": "modele/icon.html", "img": "assets/modele/icon.webp", "cta": "ICON ansehen &rarr;" },
+      { "name": "MILA", "desc": "Vollständige Holzfassade in hellem Ton. Skandinavische Ruhe. Ideal als Praxis, Häuschen oder Büro in warmem Stil.", "price": "ab 5 800 € netto", "href": "modele/mila.html", "img": "assets/modele/mila.webp", "cta": "MILA ansehen &rarr;" },
+      { "name": "NOIR", "desc": "Vertikale schwarze Lamellen, Längsfenster, Boutique-Charakter wie aus Berlin. Für Unternehmen, die Premium aussehen wollen.", "price": "ab 6 400 € netto", "href": "modele/noir.html", "img": "assets/modele/noir.webp", "cta": "NOIR ansehen &rarr;" }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Miete vs. Eigentum",
+    "h2": "Mieten oder eigener Pavillon?",
+    "h2accent": "Rechnen Sie selbst.",
+    "sub": "Die meisten unserer Kunden haben vorher gemietet. Dann haben sie gerechnet.",
+    "rent": {
+      "label": "Sie mieten",
+      "price": "700 €",
+      "priceSuffix": "/Monat",
+      "items": [
+        { "text": "36 Monate = <strong>25 200 €</strong>" },
+        { "text": "Das Objekt wird nie Ihres sein" },
+        { "text": "Mieterhöhung nach Belieben des Eigentümers" },
+        { "text": "Renovierung? Auf Ihre Kosten, in fremden Räumen" },
+        { "text": "Standort funktioniert nicht? Pech, der Vertrag bindet" }
+      ]
+    },
+    "own": {
+      "label": "Sie haben Ihren Pavillon",
+      "price": "~280 €",
+      "priceSuffix": "/Monat Rate",
+      "items": [
+        { "text": "Nach Tilgung = <strong>Für immer Ihres</strong>" },
+        { "text": "Null Miete — ein Leben lang" },
+        { "text": "Umzug wohin Sie wollen — Auflieger und ein paar Stunden" },
+        { "text": "Verkaufen Sie, wann Sie wollen, und holen Ihr Geld zurück" },
+        { "text": "Sieht aus und funktioniert, wie Sie es wollen — denn es gehört Ihnen" }
+      ]
+    },
+    "footnote": "Orientierungsrate bei einem Pavillon ~8 000 € netto auf 36 Monate Leasing. Den genauen Finanzierungsvorschlag erstellen wir individuell."
+  },
+  "caseStudy": {
+    "eyebrow": "Kundengeschichte",
+    "intro": "Zahlen Sie Miete für Räume, die nie Ihnen gehören werden? Vielleicht ist es Zeit für eine Veränderung — so wie bei Tomek.",
+    "h2": "Tomek hat seinen Gemüseladen verlegt.",
+    "h2accent": "Zu seinen eigenen Bedingungen.",
+    "steps": [
+      { "label": "Ausgangslage", "text": "Tomek betrieb einen Gemüseladen in gemieteten Räumen. Jahrelang zahlte er Miete, die nichts aufbaute, das ihm gehörte. Eines Tages erhöhte der Vermieter den Preis — und Tomek suchte nach einer Alternative." },
+      { "label": "Ein Anruf", "text": "Er rief uns an. Wir entwarfen einen Pavillon mit großer Vitrine für die Obstauslage und einem Kühlraum. Tomek hatte eigene Ideen — wir änderten den Grundriss, wählten Farben aus. Zwei Treffen und fertig." },
+      { "label": "Ergebnis", "text": "Heute steht er auf seinem eigenen Grundstück, zu seinen eigenen Bedingungen. Die Leasingrate ist niedriger als die frühere Miete. Kunden sagen, es sieht besser aus als die Hälfte der Geschäfte in der Stadt. In ein paar Jahren gehört der Pavillon komplett ihm." }
+    ],
+    "quote": "Ich bedauere nur eines — dass ich nicht früher angerufen habe.",
+    "cite": "— Tomek, Gemüseladen, Busko-Zdrój"
+  },
+  "financing": {
+    "eyebrow": "Finanzierung?",
+    "h2": "Wir haben dafür",
+    "h2accent": "Lösungen.",
+    "sub": "Wir helfen bei der Finanzierung, damit die Rate niedriger ist als die bisherige Miete. Drei Wege — Sie wählen den, der zu Ihrer Situation passt.",
+    "options": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M2 10h20\"/></svg>",
+        "title": "Leasing",
+        "text": "Wir arbeiten mit Leasinggesellschaften zusammen. Die Rate ist Betriebsausgabe, MwSt. absetzbar. Nach Tilgung gehört der Pavillon Ihnen. Wir helfen bei den Formalitäten."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg>",
+        "title": "Ratenzahlung",
+        "text": "Kein Unternehmen? Wir arbeiten mit Banken zusammen, die Ratenkredite für Privatpersonen anbieten. Antrag über uns, Entscheidung innerhalb von Stunden."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Fördermittel",
+        "text": "Für deutsche Kunden prüfen wir gerne Finanzierungsmöglichkeiten über regionale Förderprogramme. Sprechen Sie uns an — wir beraten individuell."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Wie wir arbeiten",
+    "h2": "Alles, was Sie tun müssen, ist anrufen.",
+    "h2accent": "Den Rest überlassen Sie uns.",
+    "steps": [
+      { "num": "01", "title": "Kontakt", "text": "Sagen Sie uns, was Sie brauchen. Sie müssen keine zentimetergenauen Maße kennen — dafür sind wir da. Wir beraten und schlagen Lösungen vor." },
+      { "num": "02", "title": "Kostenlose Visualisierung", "text": "Wir zeichnen, wie Ihr Pavillon aussehen wird. Sie sehen ihn in 3D, bevor Sie einen Cent ausgeben. Gefällt es nicht? Wir ändern es. So oft wie nötig." },
+      { "num": "03", "title": "Produktion", "text": "Wir bauen in unserem eigenen Werk, unter eigener Aufsicht. Wir kontrollieren jede Phase — vom Schweißen der Konstruktion bis zur Montage der Fenster. Sie können vorbeikommen und den Fortschritt sehen." },
+      { "num": "04", "title": "Lieferung und Montage", "text": "Wir laden auf den Auflieger, fahren zu Ihnen und stellen den Pavillon vor Ort auf. Ein paar Stunden und fertig. Sie betreten mit dem Schlüssel Ihren eigenen Raum." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Unsere Projekte",
+    "h2": "Sehen Sie,",
+    "h2accent": "was wir bauen.",
+    "sub": "Jedes Projekt anders — jedes für den Kunden maßgeschneidert. Zum Vergrößern klicken.",
+    "items": [
+      { "img": "assets/gallery/k2.webp", "alt": "STAGO Handelspavillon — Kiosk aus Anthrazitblech", "label": "Handelskiosk, Anthrazitblech" },
+      { "img": "assets/gallery/k6.webp", "alt": "STAGO Bürocontainer — Modul mit Panoramafenstern", "label": "Büro 6×3m, Panoramafenster" },
+      { "img": "assets/gallery/k9.webp", "alt": "STAGO Dienstleistungspavillon — Punkt mit Durchreichefenster", "label": "Dienstleistungspunkt, Durchreichefenster" },
+      { "img": "assets/gallery/k11.webp", "alt": "STAGO Bürocontainer — HPL-Fassade", "label": "Bürocontainer, HPL-Fassade" },
+      { "img": "assets/gallery/k14.webp", "alt": "STAGO Modulpavillon — Holzverkleidung", "label": "Pavillon mit Holzverkleidung" },
+      { "img": "assets/gallery/k16.webp", "alt": "STAGO Modulcontainer — Holzakzent", "label": "Container mit Holzakzent" },
+      { "img": "assets/gallery/k19.webp", "alt": "STAGO Lagercontainer — Graphitblech", "label": "Lager 6×2,4m, Graphitblech" },
+      { "img": "assets/gallery/k21.webp", "alt": "STAGO Modulpavillon — vollständige Holzfassade", "label": "Pavillon mit vollständiger Holzfassade" },
+      { "img": "assets/gallery/k25.webp", "alt": "STAGO Verbundmodule — Büro und Lager", "label": "Verbundmodule, Büro + Lager" }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Kundenbewertungen",
+    "h2": "5.0 auf Google.",
+    "h2accent": "Nicht wir — unsere Kunden.",
+    "items": [
+      { "text": "Sehr angenehme Atmosphäre, hervorragender Service, schnelle Umsetzung. Kann ich jedem empfehlen!", "author": "Kacper Z.", "source": "Google Reviews" },
+      { "text": "Freundliche, professionelle Beratung. Neben dem Rat bekam ich Material zum Ausprobieren meiner eigenen Idee. Erstklassig.", "author": "Nikodem S.", "source": "Google Reviews" },
+      { "text": "Solides Unternehmen, halten Termine ein. Der Pavillon sieht genau so aus wie in der Visualisierung. Keine Überraschungen.", "author": "Marek W.", "source": "Google Reviews" }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Ratgeber",
+    "h2": "Was Sie wissen sollten",
+    "sub": "vor dem Kauf.",
+    "items": [
+      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.webp", "date": "Ratgeber", "title": "Wie Sie einen Pavillonhersteller prüfen, bevor Sie unterschreiben", "desc": "7 konkrete Dinge zum Prüfen. Schweißnähte, Isolierung, Dach, versteckte Kosten. Bevor Sie überweisen — lesen Sie." },
+      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.webp", "date": "Ratgeber", "title": "Pavillon erhalten. Was nun? Qualitätskontrolle Schritt für Schritt.", "desc": "Der Pavillon kam auf dem Auflieger. Was prüfen, bevor Sie das Protokoll unterschreiben? Dach, Schweißnähte, Fenster, Boden — Checkliste." },
+      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.webp", "date": "Ratgeber", "title": "Der erste Winter im Pavillon — was Ihnen keiner sagt", "desc": "Isolierung, Heizung, Feuchtigkeit, Rechnungen. Echte Zahlen und Tipps von jemandem, der schon einige Winter gesehen hat." }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "h2": "Kunden fragen uns häufig:",
+    "items": [
+      { "q": "Was kostet das?", "a": "Hängt vom Modell, der Größe und der Innenausstattung ab. Zur Orientierung — das einfachste Modul beginnt ab ca. 2 800 € netto, größere schlüsselfertige Module liegen bei 8 000–11 500 €. Jedes Projekt kalkulieren wir individuell und immer kostenlos. Schreiben Sie an kontakt@stago.com.pl — wir nennen Ihnen einen konkreten Preis, bevor Sie sich entscheiden." },
+      { "q": "Wie lange dauert es bis zum fertigen Pavillon?", "a": "Den Termin legen wir bei Vertragsschluss fest — und halten ihn ein. Einfachere Module schneller, aufwendigere brauchen mehr Zeit. Das konkrete Lieferdatum kennen Sie, bevor Sie eine Anzahlung leisten — im Vertrag, nicht mündlich." },
+      { "q": "Brauche ich eine Baugenehmigung?", "a": "Die Genehmigungsanforderungen variieren je nach Bundesland. In vielen Fällen ist ein Pavillon unter 50 m² genehmigungsfrei oder nur anzeigepflichtig. Wir beraten Sie gerne zur Situation an Ihrem Standort." },
+      { "q": "Liefern Sie nach Deutschland?", "a": "Ja. Der Pavillon wird auf einem Sattelauflieger direkt aus unserem Werk bei Jędrzejów geliefert. Unser Team montiert ihn vor Ort — Sie benötigen einen befestigten Untergrund (Pflaster, Beton, Platten). Transport und Montage sind im Preis enthalten. Lieferung nach Deutschland und in die gesamte EU." },
+      { "q": "Wie ist es im Winter? Ist der Pavillon warm?", "a": "Unsere Pavillons haben eine PIR-Isolierung — das ist dieselbe Isolierung wie in Niedrigenergiehäusern. Im Winter ist es drinnen warm, im Sommer heizt es sich nicht auf wie ein Blechcontainer. Kunden mit Klimaanlage und Wärmepumpe zahlen 50–100 € monatlich für die Heizung. Das ist keine Provisorium — das ist ein vollwertiger Raum für das ganze Jahr." },
+      { "q": "Was ist mit der Garantie?", "a": "2 Jahre Garantie auf die Konstruktion, ein Jahr auf die Installation. Aber Garantie ist das eine — wichtiger ist, dass wir unsere Kunden nach dem Verkauf nicht im Stich lassen. Etwas passiert? Sie rufen an, wir kommen und reparieren. Wir haben ein eigenes Werk und eigene Leute — wir suchen niemanden auf die Schnelle." },
+      { "q": "Kann ich vorbeikommen und sehen, wie Sie arbeiten?", "a": "Ja — und wir ermutigen Sie dazu. Unser Werk ist in Jasionka bei Jędrzejów, Polen. Sie können vorbeikommen, sehen, wie wir die Konstruktion schweißen, Materialien anfassen und mit dem Team sprechen. Die meisten Kunden tun das und gehen beruhigter nach Hause." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kostenloses Angebot",
+    "h2": "Schreiben Sie, was Sie brauchen.",
+    "h2accent": "Wir melden uns innerhalb von 24h.",
+    "formNote": "Wir antworten innerhalb von 24 Stunden. Das Angebot ist kostenlos und unverbindlich."
+  }
+}

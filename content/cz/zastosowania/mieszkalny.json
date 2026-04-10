@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Celoroční domek — dům, ADU, holiday house | STAGO",
+    "description": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100mm, koupelna, kuchyň. Od 10 400 € netto.",
+    "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
+    "ogTitle": "Celoroční domek — dům, ADU, holiday house | STAGO",
+    "ogDescription": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100mm, koupelna, kuchyň. Od 10 400 € netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
+  },
+  "breadcrumb": "Obytné",
+  "productType": "mieszkalny",
+  "hero": {
+    "img": "../assets/modele/mila.webp",
+    "imgAlt": "Celoroční domek STAGO — tvar MILA",
+    "h1": "Celoroční domek.",
+    "subtitle": "Malý dům na pozemku, dům pro babičku, pracovna na zahradě, rekreační chata u jezera. Plné stěny s izolací PIR 100 mm, koupelna, kuchyňský kout — plnohodnotné místo k bydlení, ne dočasný barák.",
+    "price": "od 10 400 € netto",
+    "priceNote": "/ domek 6×3 m s koupelnou",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Domek%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Zobrazit všech 12 modelů &rarr;"
+  },
+  "models": {
+    "eyebrow": "Doporučené tvary",
+    "h2": "Modely, které vypadají jako skutečný dům",
+    "sub": "Klidné, teplé, dřevěné tvary — takové, aby každý návštěvník vašeho domku cítil, že je u někoho doma, ne v kontejneru.",
+    "items": [
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasické uspořádání, symetrické proporce",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pavilon STAGO MILA",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "ATRI",
+        "name": "ATRI",
+        "desc": "Otevřený tvar s velkým prosklením",
+        "img": "../assets/modele/atri.webp",
+        "alt": "Pavilon STAGO ATRI",
+        "href": "../modele/atri.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Dřevěný rám, symetrický front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pavilon STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modulární kostka s výraznou vložkou",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pavilon STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Prémiový loft s rohovým prosklením",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pavilon STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pro tuto branži",
+    "h2": "Co připravujeme pro celoroční bydlení",
+    "sub": "Plnohodnotné stěny, skutečná tepelná izolace a normální koupelna. Bydlíte v něm celý rok, ne jen v létě.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Izolace jako v nízkoenergetických domech",
+        "text": "Stěny s izolací PIR 100 mm, zateplená střecha a podlaha s tepelnou izolací. V zimě je teplo, v létě příjemně chladně. Měsíční účet za elektřinu v zimní sezóně se obvykle vejde do 60–100 €."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Plná koupelna a kuchyňský kout",
+        "text": "Koupelna se sprchou, toaletou a umyvadlem. Kuchyňský kout s dřezem, pracovní deskou a místem pro lednici a sporák. Vše je připraveno — nastěhujete se a bydlíte od prvního dne."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Hliníkové výplně",
+        "text": "Hliníková okna a dveře — energeticky úsporné, tiché, s tepelným přerušením. Už samotné otvírání a zavírání ukazuje, že to není provizórium. Bez zamlžení skel a bez průvanu i uprostřed zimy."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Bez stavebního povolení (do 35 m²)",
+        "text": "Pro domky do 35 m² stačí ohlášení na úřadě — plné stavební povolení není potřeba. Pár dnů formalit místo měsíců. Pomůžeme s dokumenty od první žádosti po finále."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V ceně",
+    "h2": "Co dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizace",
+        "text": "Řeknete, co potřebujete. Nakreslíme. Uvidíte pavilon ve 3D dříve, než utratíte korunu. Měníme, dokud neřeknete \"ano\"."
+      },
+      {
+        "h3": "Doprava a montáž v ceně",
+        "text": "Pavilon jede na návěsu z naší dílny v Jędrzejově (Polsko). Dodávka do České republiky. Náš tým ho postaví na místě. Vy jen ukážete, kde má stát."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konstrukce, stěny, střecha — 2 roky záruky. Po záruce zákazníky také neopouštíme. Máme vlastní lidi, nehledáme nikoho na telefon."
+      },
+      {
+        "h3": "Pomoc s dokumenty",
+        "text": "Pro pavilony do 35 m² stačí ohlášení, ne povolení. Pomůžeme vám s papíry, abyste nemuseli hledat formuláře na internetu."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Podívejte se naživo",
+    "h2": "Tak vypadají naše realizace",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Celoroční domek STAGO — realizace 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Celoroční domek STAGO — realizace 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Celoroční domek STAGO — realizace 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-mieszkalny",
+    "eyebrow": "Dotazy",
+    "h2": "Na co se ptají zákazníci z této branže",
+    "items": [
+      {
+        "q": "Kolik stojí celoroční domek?",
+        "a": "Domek 6×3 m s koupelnou začíná od 10 400 € netto. Větší domek 8×4 m s kuchyní a ložnicí — 15 000–20 700 €. Prémiové provedení oceňujeme individuálně."
+      },
+      {
+        "q": "Mohu v něm bydlet celý rok?",
+        "a": "Ano. Naši zákazníci bydlí v domcích STAGO po celý rok — s izolací PIR 100 mm, vytápěním (klimatizace s tepelným čerpadlem, kamna nebo krb) a plnou vodovodní a kanalizační instalací. Je to plnohodnotný dům, ne dočasný barák."
+      },
+      {
+        "q": "Potřebuji stavební povolení?",
+        "a": "Pro domky do 35 m² stačí ohlášení na úřadě. Nad touto plochou je potřeba plné povolení. Pomůžeme připravit dokumenty v obou variantách."
+      },
+      {
+        "q": "Mohu přistavět terasu nebo další modul?",
+        "a": "Ano. Stavíme dřevěné nebo kompozitní terasy a spojujeme několik modulů v jeden větší dům — například se dvěma ložnicemi, obývacím pokojem a samostatnou koupelnou. Řekněte nám, co potřebujete, a projekt vznikne společně."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začínáme",
+    "h2": "Řekněte, co potřebujete",
+    "textareaPlaceholder": "Co chcete udělat? Jaký rozměr? Kde má stát?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodní pavilon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Gastronomický pavilon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kancelářský kontejner"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Servisní pavilon"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontejner pro stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoroční domek"
+      },
+      {
+        "value": "specjalny",
+        "label": "Speciální pavilon"
+      }
+    ],
+    "infoH3": "Jak to probíhá?",
+    "infoText": "Napíšete nebo zavoláte. Zeptáme se na detaily. Nakreslíme projekt s 3D vizualizací. Uvedeme cenu s dopravou a montáží. Bez překvapení.",
+    "features": [
+      {
+        "text": "3D vizualizace — uvidíte, než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montáží"
+      },
+      {
+        "text": "Pomoc s dokumenty a ohlášením"
+      },
+      {
+        "text": "Odpověď do jednoho dne"
+      }
+    ],
+    "selectedType": "mieszkalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/mila.webp",
+      "alt": "Všechny modely",
+      "label": "Modely",
+      "h3": "Zobrazit všech 12 modelů",
+      "text": "Každý model přizpůsobíte svému účelu. Prohlédněte si celý katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Využití",
+      "label": "Využití",
+      "h3": "Další využití",
+      "text": "Podívejte se, co ještě děláme — obchod, kancelář, dům, gastro, ordinace."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Ceník 2026",
+      "label": "Poradce",
+      "h3": "Ceník pavilonů 2026",
+      "text": "Konkrétní částky, bez vytáček. Zjistěte, kolik zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Celoroční domek STAGO",
+    "description": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100mm, koupelna, kuchyň. Od 10 400 € netto.",
+    "image": "https://stago.com.pl/assets/modele/mila.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "STAGO Pavillonmodelle — 12 Designs zur Auswahl",
+    "description": "12 Modulpavillon-Modelle von STAGO. Holz, Graphit, Mix. Wählen Sie ein Design — Maße, Farbe, Fenster und Innenausstattung passen wir an Ihre Situation an.",
+    "canonical": "https://stago.com.pl/modele.html",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "hero": {
+    "eyebrow": "Unsere Modelle",
+    "h1": "Wählen Sie ein Design.",
+    "h1accent": "Den Rest passen wir an.",
+    "sub": "12 Modelle sind der Ausgangspunkt — Inspiration für Form und Charakter. Maße, Farbe, Fenster, Innenraum, Ausstattung — alles entwerfen wir neu für Sie. Jeder Pavillon anders, jeder für eine konkrete Situation."
+  },
+  "models": [
+    { "code": "ATRI", "name": "ATRI", "img": "assets/modele/atri.webp", "alt": "Pavillon ATRI — helle Eiche, offener Innenraum", "desc": "Helle Holzlamellen, viel Glas, Schiebetüren. Offenes, gemütliches Atrium.", "href": "modele/atri.html" },
+    { "code": "MILA", "name": "MILA", "img": "assets/modele/mila.webp", "alt": "Pavillon MILA — skandinavische Ruhe in Holz", "desc": "Vollständige Holzfassade in hellem Ton. Ruhe und Wärme ohne überflüssige Details.", "href": "modele/mila.html" },
+    { "code": "ICON", "name": "ICON", "img": "assets/modele/icon.webp", "alt": "Pavillon ICON — Holz-Loft Premium", "desc": "Holzfassade, riesige Eckverglasungen. Architektenstudio in voller Pracht.", "href": "modele/icon.html" },
+    { "code": "RYTM", "name": "RYTM", "img": "assets/modele/rytm.webp", "alt": "Pavillon RYTM — Holzrahmen, symmetrische Front", "desc": "Vertikale Holzlamellen im Rahmen, schwarze Front, symmetrische Türen.", "href": "modele/rytm.html" },
+    { "code": "NORD", "name": "NORD", "img": "assets/modele/nord.webp", "alt": "Pavillon NORD — Anthrazit mit Holzakzenten", "desc": "Anthrazit + Holz in den Ecken + riesige Eckverglasungen. Skandinavisches Premium.", "href": "modele/nord.html" },
+    { "code": "LOFT", "name": "LOFT", "img": "assets/modele/loft.webp", "alt": "Pavillon LOFT — Holz, Graphit, große Vitrinen", "desc": "Vertikale Holzlamellen, Graphitdach, drei große Vitrinen. Showroom-Feeling.", "href": "modele/loft.html" },
+    { "code": "SAGA", "name": "SAGA", "img": "assets/modele/saga.webp", "alt": "Pavillon SAGA — Holz oben, Graphitfront", "desc": "Holzfassade oben, Graphit unten, drei große Vitrinen. Fertig für Gastronomie.", "href": "modele/saga.html" },
+    { "code": "VIEW", "name": "VIEW", "img": "assets/modele/view.webp", "alt": "Pavillon VIEW — Holz, Graphit, Eckverglasungen", "desc": "Holzband oben, Graphitkorpus, panoramische Eckverglasungen.", "href": "modele/view.html" },
+    { "code": "DUET", "name": "DUET", "img": "assets/modele/duet.webp", "alt": "Pavillon DUET — Graphit mit Holzakzenten", "desc": "Graphitkorpus, Holzlamellen an den Seiten, drei große Frontvitrinen.", "href": "modele/duet.html" },
+    { "code": "CUBE", "name": "CUBE", "img": "assets/modele/cube.webp", "alt": "Pavillon CUBE — schwarzer Kubus mit Holzeinsatz", "desc": "Schwarzer modularer Kubus, Holzeinsatz als Akzent. Klare Geometrie.", "href": "modele/cube.html" },
+    { "code": "NOIR", "name": "NOIR", "img": "assets/modele/noir.webp", "alt": "Pavillon NOIR — schwarze Lamellen, dunkler Minimalismus", "desc": "Vertikale schwarze Lamellen, Längsfenster, Boutique-Charakter wie aus Berlin.", "href": "modele/noir.html" },
+    { "code": "KIOS", "name": "KIOS", "img": "assets/modele/kios.webp", "alt": "Pavillon KIOS — klein, schwarz, handelsfertig", "desc": "Kompakter schwarzer Pavillon mit großer Glasvitrine. Kleiner Footprint, großer Charakter.", "href": "modele/kios.html" }
+  ],
+  "cta": {
+    "h2": "Nicht sicher, welches Modell?",
+    "sub": "Sagen Sie uns, wofür es sein soll. Wir schlagen 2–3 Modelle vor und erstellen eine kostenlose Visualisierung."
+  }
+}

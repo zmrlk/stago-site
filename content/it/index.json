@@ -1,0 +1,199 @@
+{
+  "site": {
+    "title": "STAGO — Padiglioni modulari, container, edifici chiavi in mano",
+    "description": "STAGO — produttore di padiglioni modulari. Negozio, ufficio, casa — chiavi in mano. Visualizzazione gratuita, montaggio incluso, 2 anni di garanzia. Consegna in Italia.",
+    "phone": "509 508 210",
+    "phoneLink": "+48509508210",
+    "email": "kontakt@stago.com.pl",
+    "address": "Jasionka 117",
+    "city": "Jędrzejów",
+    "postalCode": "28-300",
+    "region": "Polonia",
+    "hours": "Lun-Ven: 7:00-20:00",
+    "hoursSat": "Sab: 8:00-14:00",
+    "cities": "Consegna in tutta Italia — Milano, Roma, Napoli, Torino, Bologna e oltre"
+  },
+  "hero": {
+    "badge": "Produttore di padiglioni modulari &middot; Consegna in Italia",
+    "h1": "Il tuo spazio.",
+    "h1accent": "Senza compromessi.",
+    "sub": "Progettiamo e costruiamo su misura per te. Visualizzazione gratuita, montaggio incluso, 2 anni di garanzia."
+  },
+  "trust": [
+    { "value": "5.0/5", "label": "Google Reviews" },
+    { "value": "Produzione propria", "label": "Tutto sotto controllo" },
+    { "value": "Chiavi in mano", "label": "Entri e inizi" },
+    { "value": "Tutta Italia", "label": "Trasporto + montaggio inclusi" }
+  ],
+  "about": {
+    "eyebrow": "Produzione propria",
+    "h2": "Tutto sotto lo stesso tetto.",
+    "h2accent": "",
+    "features": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"M9 12l2 2 4-4\"/></svg>",
+        "title": "Facciamo tutto internamente",
+        "text": "Saldiamo la struttura nel nostro stabilimento vicino a Jędrzejów, in Polonia. Pareti in PIR da 100 mm, infissi in alluminio — tutto fatto a regola d'arte. D'inverno mantieni il calore, d'estate niente surriscaldamento come nei container in lamiera — e le bollette restano sorprendentemente basse."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "title": "Ogni padiglione è diverso",
+        "text": "Perché ogni cliente ha un'idea diversa. Uno vuole un chiosco in piazza, un altro un ufficio in cantiere, un terzo una casetta sul terreno. Per questo non proponiamo soluzioni standard — ci sediamo con te, chiediamo i dettagli e progettiamo da zero. E se non sai ancora come deve essere, ti mostriamo diverse proposte tra cui scegliere."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Una sola telefonata e basta",
+        "text": "Non devi correre separatamente dal progettista, dal produttore e dalla squadra di montaggio. Ci chiami una volta — parliamo, disegniamo la visualizzazione, facciamo il preventivo, costruiamo e installiamo sul tuo terreno. Dalla prima conversazione alla consegna delle chiavi, ci occupiamo di tutto noi."
+      }
+    ],
+    "text": "Facciamo tutto internamente nel nostro stabilimento vicino a Jędrzejów — dalla prima saldatura all'ultimo bullone. Non subappaltiamo, non cerchiamo squadre esterne. Per questo controlliamo la qualità in ogni fase. Puoi venire a visitare lo stabilimento e vedere con i tuoi occhi come nasce il tuo padiglione. La maggior parte dei clienti lo fa — e se ne vanno più tranquilli."
+  },
+  "products": {
+    "eyebrow": "I nostri modelli",
+    "h2": "Scegli il design.",
+    "h2accent": "La destinazione la decidi tu.",
+    "sub": "Ogni design lo adattiamo su misura per te — dimensioni, materiale, colore, infissi e interni. Ecco i sei più scelti dai nostri clienti.",
+    "items": [
+      { "name": "NORD", "desc": "Antracite con accenti in legno sugli angoli, enormi vetrate angolari. Premium scandinavo. Una forma che si ricorda al primo sguardo.", "price": "da 5 750 € netto", "href": "modele/nord.html", "img": "assets/modele/nord.webp", "cta": "Scopri NORD &rarr;" },
+      { "name": "LOFT", "desc": "Listelli in legno, tetto grafite, tre grandi vetrine frontali. Effetto showroom — i clienti entrano perché devono vedere cosa c'è dentro.", "price": "da 5 060 € netto", "href": "modele/loft.html", "img": "assets/modele/loft.webp", "cta": "Scopri LOFT &rarr;" },
+      { "name": "DUET", "desc": "Corpo grafite, listelli in legno sui lati, tre vetrine con porte. Design universale per gastronomia, commercio e ufficio.", "price": "da 5 060 € netto", "href": "modele/duet.html", "img": "assets/modele/duet.webp", "cta": "Scopri DUET &rarr;" },
+      { "name": "ICON", "desc": "Facciata in legno, enormi vetrate angolari dal pavimento al soffitto. Sembra uno studio di architettura. Per attività premium.", "price": "preventivo individuale", "href": "modele/icon.html", "img": "assets/modele/icon.webp", "cta": "Scopri ICON &rarr;" },
+      { "name": "MILA", "desc": "Facciata interamente in legno chiaro. Tranquillità scandinava. Ideale per studio, casetta, ufficio dai toni caldi.", "price": "da 5 750 € netto", "href": "modele/mila.html", "img": "assets/modele/mila.webp", "cta": "Scopri MILA &rarr;" },
+      { "name": "NOIR", "desc": "Listelli verticali neri, finestre allungate, carattere boutique berlinese. Per attività che vogliono apparire premium.", "price": "da 6 440 € netto", "href": "modele/noir.html", "img": "assets/modele/noir.webp", "cta": "Scopri NOIR &rarr;" }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Affitto vs proprietà",
+    "h2": "Affittare o avere il proprio padiglione?",
+    "h2accent": "Fai il conto.",
+    "sub": "La maggior parte dei nostri clienti prima affittava. Poi hanno fatto i conti.",
+    "rent": {
+      "label": "Affitti",
+      "price": "700 €",
+      "priceSuffix": "/mese",
+      "items": [
+        { "text": "36 mesi = <strong>25 200 €</strong>" },
+        { "text": "Il locale non sarà mai tuo" },
+        { "text": "Aumento dell'affitto quando vuole il proprietario" },
+        { "text": "Ristrutturazione? Con i tuoi soldi, nel locale di un altro" },
+        { "text": "La posizione non funziona? Peccato, il contratto ti vincola" }
+      ]
+    },
+    "own": {
+      "label": "Hai il tuo padiglione",
+      "price": "~280 €",
+      "priceSuffix": "/mese rate",
+      "items": [
+        { "text": "Dopo il saldo = <strong>tuo per sempre</strong>" },
+        { "text": "Zero affitto per tutta la vita" },
+        { "text": "Lo sposti dove vuoi — un rimorchio e qualche ora" },
+        { "text": "Lo vendi quando vuoi, recuperi il denaro" },
+        { "text": "Ha l'aspetto e funziona come vuoi tu — perché è tuo" }
+      ]
+    },
+    "footnote": "Rata di leasing indicativa, per un padiglione da ~8 000 € netto su 36 mesi. L'offerta di finanziamento esatta la studiamo su misura."
+  },
+  "caseStudy": {
+    "eyebrow": "Storia di un cliente",
+    "intro": "Paghi l'affitto per un locale che non sarà mai tuo? Forse è ora di cambiare — come ha fatto Tomek.",
+    "h2": "Tomek ha spostato il suo negozio di frutta.",
+    "h2accent": "Alle sue condizioni.",
+    "steps": [
+      { "label": "Situazione", "text": "Tomek gestiva un negozio di frutta in un locale in affitto. Per anni ha pagato un canone che non costruiva nulla di suo. Un giorno il proprietario ha alzato il prezzo — e Tomek ha iniziato a cercare un'alternativa." },
+      { "label": "Una telefonata", "text": "Ci ha chiamato. Abbiamo disegnato un padiglione con una grande vetrina per esporre frutta e un retro refrigerato. Tomek aveva le sue idee — abbiamo cambiato il layout, scelto i colori. Due incontri e fatto." },
+      { "label": "Risultato", "text": "Oggi è sul suo terreno, alle sue condizioni. La rata del leasing è più bassa del vecchio affitto. I clienti dicono che è più bello della metà dei negozi in città. Tra qualche anno il padiglione sarà interamente suo." }
+    ],
+    "quote": "Rimpiango solo una cosa — di non aver chiamato prima.",
+    "cite": "— Tomek, fruttivendolo, Busko-Zdrój, Polonia"
+  },
+  "financing": {
+    "eyebrow": "Finanze?",
+    "h2": "Abbiamo le",
+    "h2accent": "soluzioni.",
+    "sub": "Ti aiutiamo a organizzare il finanziamento in modo che la rata sia più bassa del vecchio affitto. Tre percorsi — scegli quello che si adatta alla tua situazione.",
+    "options": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M2 10h20\"/></svg>",
+        "title": "Leasing",
+        "text": "Collaboriamo con società di leasing. La rata entra nei costi aziendali, deduci l'IVA. Dopo il saldo — il padiglione è tuo. Ti aiutiamo con le pratiche."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg>",
+        "title": "Rate",
+        "text": "Non hai un'azienda? Collaboriamo con banche che offrono credito rateale per privati. La domanda tramite noi, la decisione in poche ore."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Finanziamenti agevolati",
+        "text": "Contributi fino a 30 000 PLN, micro-contributi comunali, programmi UE. Ti consigliamo cosa è possibile nella tua situazione."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Come lavoriamo",
+    "h2": "Da parte tua serve solo una telefonata.",
+    "h2accent": "Il resto lascialo a noi.",
+    "steps": [
+      { "num": "01", "title": "Contatto", "text": "Dicci di cosa hai bisogno. Non devi conoscere le misure al centimetro — per quello ci siamo noi. Ti consigliamo e proponiamo una soluzione." },
+      { "num": "02", "title": "Visualizzazione gratuita", "text": "Disegniamo come sarà il tuo padiglione. Lo vedrai in 3D prima di spendere un centesimo. Non ti piace? Lo modifichiamo. Quante volte serve." },
+      { "num": "03", "title": "Produzione", "text": "Costruiamo nel nostro stabilimento, sotto i nostri occhi. Controlliamo ogni fase — dalla saldatura della struttura al montaggio degli infissi. Puoi venire a vedere i progressi dei lavori." },
+      { "num": "04", "title": "Consegna e montaggio", "text": "Carichiamo sul rimorchio, arriviamo da te, installiamo sul posto. Poche ore e tutto è pronto. Entri con la chiave nel tuo spazio. Consegna in Italia." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "I nostri progetti",
+    "h2": "Guarda",
+    "h2accent": "cosa facciamo.",
+    "sub": "Ogni progetto è diverso — ogni progetto è su misura del cliente. Clicca per ingrandire.",
+    "items": [
+      { "img": "assets/gallery/k2.webp", "alt": "Padiglione commerciale STAGO — chiosco in lamiera antracite", "label": "Chiosco commerciale, lamiera antracite" },
+      { "img": "assets/gallery/k6.webp", "alt": "Container ufficio STAGO — modulo con finestre panoramiche", "label": "Ufficio 6×3m, finestre panoramiche" },
+      { "img": "assets/gallery/k9.webp", "alt": "Padiglione servizi STAGO — punto con finestra di servizio", "label": "Punto servizi, finestra di servizio" },
+      { "img": "assets/gallery/k11.webp", "alt": "Container ufficio STAGO — facciata HPL", "label": "Container ufficio, facciata HPL" },
+      { "img": "assets/gallery/k14.webp", "alt": "Padiglione modulare STAGO — rivestimento in legno", "label": "Padiglione con rivestimento in legno" },
+      { "img": "assets/gallery/k16.webp", "alt": "Container modulare STAGO — accento in legno", "label": "Container con accento in legno" },
+      { "img": "assets/gallery/k19.webp", "alt": "Container magazzino STAGO — lamiera grafite", "label": "Magazzino 6×2,4m, lamiera grafite" },
+      { "img": "assets/gallery/k21.webp", "alt": "Padiglione modulare STAGO — facciata interamente in legno", "label": "Padiglione con facciata in legno" },
+      { "img": "assets/gallery/k25.webp", "alt": "Moduli collegati STAGO — ufficio e magazzino", "label": "Moduli collegati, ufficio + magazzino" }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Recensioni clienti",
+    "h2": "5.0 su Google.",
+    "h2accent": "Non siamo noi — sono i nostri clienti.",
+    "items": [
+      { "text": "Atmosfera molto piacevole, assistenza eccellente, tempi di realizzazione rapidi. Consiglio a tutti!", "author": "Kacper Z.", "source": "Google Reviews" },
+      { "text": "Assistenza professionale e cordiale. Oltre alla consulenza ho ricevuto materiale per provare la mia idea. Eccezionale.", "author": "Nikodem S.", "source": "Google Reviews" },
+      { "text": "Azienda seria, rispettano le scadenze. Il padiglione è esattamente come nella visualizzazione. Zero sorprese.", "author": "Marek W.", "source": "Google Reviews" }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Guide",
+    "h2": "Cosa dovresti sapere",
+    "sub": "prima dell'acquisto.",
+    "items": [
+      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.webp", "date": "Guida", "title": "Come verificare un produttore di padiglioni prima di firmare il contratto", "desc": "7 cose concrete da controllare. Saldature, isolamento, tetto, costi nascosti. Prima di inviare il bonifico — leggi questo." },
+      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.webp", "date": "Guida", "title": "Hai ricevuto il padiglione. E adesso? Controllo qualità passo dopo passo.", "desc": "Il padiglione è arrivato sul rimorchio. Cosa controllare prima di firmare il verbale? Tetto, saldature, finestre, pavimento — checklist." },
+      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.webp", "date": "Guida", "title": "Il primo inverno nel padiglione — quello che nessuno ti dice", "desc": "Isolamento, riscaldamento, umidità, bollette. Numeri reali e consigli da chi ha visto più di un inverno." }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "h2": "I clienti ci chiedono spesso:",
+    "items": [
+      { "q": "Quanto costa?", "a": "Dipende dal modello, dalle dimensioni e da cosa deve esserci all'interno. Per darti un'idea — il modulo più semplice parte da circa 2 760 € netto, mentre quelli più grandi, finiti chiavi in mano, si aggirano tra gli 8 000 e gli 11 500 €. Ogni progetto lo preventivamo individualmente e sempre gratuitamente. Chiamaci o scrivici — ti daremo una cifra precisa prima che tu decida qualsiasi cosa." },
+      { "q": "Quanto tempo si aspetta per il padiglione?", "a": "Il termine lo stabiliamo alla firma del contratto — e lo rispettiamo. Dipende da cosa costruiamo. Un modulo più semplice è più veloce, uno più complesso richiede più tempo. La data precisa di consegna la conosci prima di versare l'acconto — nel contratto, non a voce." },
+      { "q": "Ho bisogno del permesso di costruire?", "a": "Se il padiglione è fino a 35 m² — di solito basta la semplice comunicazione, non il permesso. È questione di pochi giorni, non di mesi. Per edifici più grandi aiutiamo a preparare i documenti. Ti consigliamo cosa serve nella tua situazione — così non devi occupartene da solo." },
+      { "q": "Consegnate in Italia? Dove montate?", "a": "Consegniamo in tutta Italia. Il padiglione viaggia su rimorchio direttamente dal nostro stabilimento vicino a Jędrzejów, in Polonia. La nostra squadra lo monta sul posto — serve un fondo solido (massetto, cemento, lastre). Trasporto e montaggio sono inclusi nel prezzo. Tu indichi solo dove deve stare." },
+      { "q": "E d'inverno? Il padiglione è caldo?", "a": "I nostri padiglioni hanno isolamento PIR — lo stesso isolamento delle case ad alta efficienza energetica. D'inverno dentro è caldo, d'estate non si surriscalda come un container in lamiera. I clienti con climatizzatore a pompa di calore pagano per il riscaldamento 50-100 € al mese. Non è una struttura provvisoria — è uno spazio completo per tutto l'anno." },
+      { "q": "E la garanzia?", "a": "2 anni di garanzia sulla struttura, un anno sugli impianti. Ma la garanzia è una cosa — più importante è che non abbandoniamo i clienti dopo la vendita. Succede qualcosa? Chiami, arriviamo, ripariamo. Abbiamo il nostro stabilimento e i nostri tecnici — non cerchiamo qualcuno all'ultimo minuto." },
+      { "q": "Posso venire a vedere come lavorate?", "a": "Sì — e lo incoraggiamo. Il nostro stabilimento è a Jasionki, vicino a Jędrzejów, in Polonia. Puoi venire, vedere come saldiamo la struttura, toccare i materiali, parlare con la squadra. La maggior parte dei clienti lo fa e se ne va più tranquilla. Non serve appuntamento — ma se chiami prima, ci prepariamo per la tua visita." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Preventivo gratuito",
+    "h2": "Scrivi di cosa hai bisogno.",
+    "h2accent": "Ti richiamiamo entro 24h.",
+    "formNote": "Rispondiamo entro 24 ore. Il preventivo è gratuito e senza impegno."
+  }
+}

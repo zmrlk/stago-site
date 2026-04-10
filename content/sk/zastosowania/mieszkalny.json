@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Celoročný domček — dom, ADU, holiday house | STAGO",
+    "description": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100mm, kúpeľňa, kuchyňa. Od 10 400 € netto. Dodávka na Slovensko.",
+    "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
+    "ogTitle": "Celoročný domček — dom, ADU, holiday house | STAGO",
+    "ogDescription": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100mm, kúpeľňa, kuchyňa. Od 10 400 € netto. Dodávka na Slovensko.",
+    "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
+  },
+  "breadcrumb": "Obytné",
+  "productType": "mieszkalny",
+  "hero": {
+    "img": "../assets/modele/mila.webp",
+    "imgAlt": "Celoročný domček STAGO — hmota MILA",
+    "h1": "Celoročný domček.",
+    "subtitle": "Malý dom na pozemku, dom pre svokru, pracovňa v záhrade, dovolenkový domček pri jazere. Plné steny s izoláciou PIR 100 mm, kúpeľňa, kuchynský kút — plnohodnotné miesto na bývanie, nie dočasný barák.",
+    "price": "od 10 400 € netto",
+    "priceNote": "/ domček 6x3 m s kúpeľňou",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Domcek%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Pozrite si všetkých 12 modelov &rarr;"
+  },
+  "models": {
+    "eyebrow": "Odporúčané hmoty",
+    "h2": "Modely, ktoré vyzerajú ako skutočný dom",
+    "sub": "Pokojné, teplé, drevené hmoty — také, aby každý návštevník Vášho domčeka cítil, že je u niekoho doma, nie v kontajneri.",
+    "items": [
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasické usporiadanie, symetrické proporcie",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pavilón STAGO MILA",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "ATRI",
+        "name": "ATRI",
+        "desc": "Otvorená hmota s veľkým zasklením",
+        "img": "../assets/modele/atri.webp",
+        "alt": "Pavilón STAGO ATRI",
+        "href": "../modele/atri.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Drevený rám, symetrický front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pavilón STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modulárny kubík s výraznou vložkou",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pavilón STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Prémiový loft s rohovým zasklením",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pavilón STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pre tento odbor",
+    "h2": "Čo pripravíme pre celoročné bývanie",
+    "sub": "Plnorozmerné steny, skutočná tepelná izolácia a normálna kúpeľňa. Bývate v ňom celý rok, nielen v lete.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Izolácia ako v energeticky úsporných domoch",
+        "text": "Steny s izoláciou PIR 100 mm, zateplená strecha a podlaha s tepelnou izoláciou. V zime je teplo, v lete príjemne chladno. Mesačný účet za elektriku v zimnej sezóne sa zvyčajne zmestí do 60–105 €."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Plná kúpeľňa a kuchynský kút",
+        "text": "Kúpeľňa so sprchou, toaletou a umývadlom. Kuchynský kút s drezom, pracovnou doskou a miestom na chladničku a sporák. Všetko je pripravené — nasťahujete sa a bývate od prvého dňa."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Hliníkové výplne",
+        "text": "Hliníkové okná a dvere — energeticky úsporné, tiché, s termickým prerušením. Samotné otváranie a zatváranie ukazuje, že to nie je provizórium. Bez rosenia skiel a bez prievanu aj v strede zimy."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Bez stavebného povolenia (do 35 m²)",
+        "text": "Pre domčeky do 35 m² stačí ohlásenie na úrade — stavebné povolenie nie je potrebné. Pár dní formalít namiesto mesiacov. Pomôžeme s dokumentmi od prvej žiadosti po finál."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V cene",
+    "h2": "Čo dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizácia",
+        "text": "Poviete, čo potrebujete. Nakreslíme. Uvidíte pavilón v 3D skôr, než miniete euro. Meníme, kým nepoviete \"áno\"."
+      },
+      {
+        "h3": "Doprava a montáž v cene",
+        "text": "Pavilón ide na návese z nášho závodu. Náš tím ho postaví na mieste. Vy ukážete, kde má stáť. Dodávka na Slovensko v cene."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konštrukcia, steny, strecha — 2 roky záruky. Po záruke tiež neopúšťame zákazníkov. Máme vlastných ľudí, nehľadáme na telefón."
+      },
+      {
+        "h3": "Pomoc s dokumentmi",
+        "text": "Do 35 m² stačí ohlásenie, nie povolenie. Pomôžeme vyplniť papiere, aby ste nemuseli hľadať vzory po internete."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Pozrite naživo",
+    "h2": "Takto vyzerajú naše realizácie",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Celoročný domček STAGO — realizácia 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Celoročný domček STAGO — realizácia 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Celoročný domček STAGO — realizácia 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-mieszkalny",
+    "eyebrow": "Otázky",
+    "h2": "Na čo sa pýtajú zákazníci z tohto odboru",
+    "items": [
+      {
+        "q": "Koľko stojí celoročný domček?",
+        "a": "Domček 6x3 m s kúpeľňou začína od 10 400 € netto. Väčší domček 8x4 m s kuchyňou a spálňou — 15 000–20 700 €. Prémiové dokončenia oceníme individuálne."
+      },
+      {
+        "q": "Môžem v ňom bývať po celý rok?",
+        "a": "Áno. Naši zákazníci bývajú v domčekoch STAGO po celý rok — s izoláciou PIR 100 mm, kúrením (klimatizácia s tepelným čerpadlom, piecka alebo krb) a plnou vodovodnou a kanalizačnou inštaláciou. Je to plnohodnotný dom, nie dočasný barák."
+      },
+      {
+        "q": "Potrebujem stavebné povolenie?",
+        "a": "V prípade domčekov do 35 m² stačí ohlásenie na úrade. Nad touto plochou je potrebné stavebné povolenie. Pomôžeme pripraviť dokumenty v oboch variantoch."
+      },
+      {
+        "q": "Môžem pristaviť terasu alebo ďalší modul?",
+        "a": "Áno. Staviame drevené alebo kompozitné terasy a spájame niekoľko modulov do jedného väčšieho domu — napríklad s dvomi spálňami, obývačkou a samostatnou kúpeľňou. Povedzte nám, čo potrebujete, a projekt vznikne spoločne."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začíname",
+    "h2": "Povedzte, čo potrebujete",
+    "textareaPlaceholder": "Čo chcete urobiť? Aký rozmer? Kde to má stáť?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodný pavilón"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pavilón pre gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontajner pre kanceláriu"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Prevádzkový pavilón"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontajner na stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoročný domček"
+      },
+      {
+        "value": "specjalny",
+        "label": "Netypický pavilón"
+      }
+    ],
+    "infoH3": "Ako to prebieha?",
+    "infoText": "Napíšete alebo zavoláte. Opýtame sa na detaily. Nakreslíme projekt s 3D vizualizáciou. Uvedieme cenu s dopravou a montážou. Bez prekvapení.",
+    "features": [
+      {
+        "text": "3D vizualizácia — uvidíte, skôr než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montážou"
+      },
+      {
+        "text": "Pomoc s dokumentmi a ohlásením"
+      },
+      {
+        "text": "Odpoveď do jedného dňa"
+      }
+    ],
+    "selectedType": "mieszkalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/mila.webp",
+      "alt": "Všetky modely",
+      "label": "Modely",
+      "h3": "Pozrite si všetkých 12 modelov",
+      "text": "Každý model prispôsobíte podľa svojho použitia. Prezrite si celý katalóg."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Použitie",
+      "label": "Použitie",
+      "h3": "Ďalšie použitie",
+      "text": "Pozrite, čo ešte robíme — obchod, kancelária, dom, gastro, kabinét."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cenník 2026",
+      "label": "Poradňa",
+      "h3": "Cenník pavilónov 2026",
+      "text": "Konkrétne sumy, bez zavádzania. Zistite, koľko zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Celoročný domček STAGO",
+    "description": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100mm, kúpeľňa, kuchyňa. Od 10 400 € netto. Dodávka na Slovensko.",
+    "image": "https://stago.com.pl/assets/modele/mila.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

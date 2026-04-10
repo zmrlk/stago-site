@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Applicazioni dei padiglioni STAGO — commercio, ufficio, gastronomia, casa",
+    "description": "Padiglioni modulari per ogni attività. Negozio, ufficio, caffetteria, studio, casa, base cantiere. Ognuno dei 12 modelli lo adatti alla tua destinazione.",
+    "canonical": "https://stago.com.pl/zastosowania.html"
+  },
+  "hero": {
+    "eyebrow": "A cosa serve un padiglione",
+    "h1": "Per ogni attività.",
+    "h1accent": "Per ogni idea.",
+    "sub": "Negozio, ufficio, caffetteria, salone di bellezza, casa sul terreno, base cantiere — è solo l'inizio. Scegli l'applicazione che ti interessa di più e ti mostreremo le forme che funzionano meglio."
+  },
+  "uses": [
+    { "name": "Commercio", "desc": "Negozio, chiosco, punto vendita in piazza. Vetrine per l'esposizione, illuminazione che valorizza il prodotto, ingresso comodo per ogni cliente.", "href": "zastosowania/handlowy.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l1.5-5h15L21 9M3 9v11a1 1 0 001 1h16a1 1 0 001-1V9M3 9h18M9 14h6\"/></svg>" },
+    { "name": "Gastronomia", "desc": "Caffetteria, gelateria, food truck, bar. Finestra di servizio, ventilazione gastronomica e finiture conformi ai requisiti HACCP.", "href": "zastosowania/gastronomiczny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3\"/></svg>" },
+    { "name": "Ufficio", "desc": "Ufficio vendite, reception aziendale, ufficio temporaneo in cantiere, studio di consulenza. Caldo, silenzioso e pronto a lavorare dal primo giorno.", "href": "zastosowania/biurowy.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 21V9\"/></svg>" },
+    { "name": "Servizi", "desc": "Salone di parrucchiere, studio estetico, officina, lavanderia. Acqua, fognatura e corrente preparati per le attrezzature specifiche del tuo settore.", "href": "zastosowania/uslugowy.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z\"/></svg>" },
+    { "name": "Cantiere", "desc": "Base per la squadra, spogliatoio, mensa, servizi igienici. Solidi, mobili, pronti per essere spostati al prossimo cantiere.", "href": "zastosowania/socjalny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75\"/></svg>" },
+    { "name": "Abitazione", "desc": "Casetta tutto l'anno, piccola casa per la famiglia, studio in giardino, casa vacanze. Pareti piene, vero isolamento e bagno normale.", "href": "zastosowania/mieszkalny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>" },
+    { "name": "Progetti speciali", "desc": "Studio medico, guardiola, biglietteria, punto informazioni, piccolo centro culturale. Ogni progetto nasce secondo normative e regolamenti specifici.", "href": "zastosowania/specjalny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"/></svg>" }
+  ],
+  "cta": {
+    "h2": "La tua idea non rientra in nessuna categoria?",
+    "sub": "Chiamaci, parliamone. Realizziamo anche progetti atipici — per l'agricoltura, enti locali, ferrovie, porti. Dicci cosa hai in mente e verificheremo come possiamo aiutarti."
+  }
+}

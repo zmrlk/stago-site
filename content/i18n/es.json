@@ -1,0 +1,97 @@
+{
+  "lang": "es",
+  "locale": "es_ES",
+  "langName": "Español",
+  "flag": "🇪🇸",
+  "baseUrl": "https://stago.com.pl/es",
+  "email": "kontakt@stago.com.pl",
+  "emailExport": "kontakt@stago.com.pl",
+  "skipLink": "Ir al contenido",
+  "nav": {
+    "modele": "Modelos",
+    "zastosowania": "Aplicaciones",
+    "realizacje": "Realizaciones",
+    "finansowanie": "Financiación",
+    "faq": "FAQ",
+    "kontakt": "Contacto",
+    "cta": "Presupuesto gratis"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "modele": "Modelos",
+    "zastosowania": "Aplicaciones"
+  },
+  "hub": {
+    "see": "Ver &rarr;",
+    "seeModel": "Ver modelo &rarr;",
+    "seeAll": "Ver todos &rarr;",
+    "allModels": "Los 12 modelos",
+    "allModelsH3": "Ver los 12 modelos",
+    "allModelsDesc": "Cada forma es un punto de partida. Le mostramos el catálogo completo.",
+    "allModelsCode": "Todos",
+    "allUses": "Todas las aplicaciones",
+    "allUsesDesc": "7 direcciones, cada una con modelos recomendados. Vea todo para elegir la mejor solución.",
+    "allUsesArrow": "Ver todas &rarr;"
+  },
+  "cta": {
+    "freeQuote": "Presupuesto gratis",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Presupuesto",
+    "call": "Llamar",
+    "callLabel": "Llamar: 509 508 210"
+  },
+  "form": {
+    "name": "Nombre y apellidos",
+    "phone": "Teléfono",
+    "email": "E-mail (opcional)",
+    "consent": "Acepto el tratamiento de mis datos personales.",
+    "privacyLink": "Política de privacidad",
+    "submit": "Enviar solicitud",
+    "note": "Le llamamos en 24 horas. Presupuesto gratis y sin compromiso.",
+    "success": "¡Enviado! Le contactaremos en 24 horas.",
+    "honeypot": "Campo auxiliar (no rellenar)",
+    "hours": "Lun-Vie: 7:00-20:00 | Sáb: 8:00-14:00",
+    "message": "Mensaje",
+    "messagePlaceholder": "Describa sus necesidades — dimensiones, ubicación, uso..."
+  },
+  "related": {
+    "eyebrow": "Puede ser útil",
+    "h2": "Otros productos y guías"
+  },
+  "footer": {
+    "tagline": "Fabricante de pabellones modulares.",
+    "location": "Jędrzejów, Polonia.",
+    "modele": "Modelos",
+    "zastosowania": "Aplicaciones",
+    "allModels": "Los 12 modelos",
+    "all": "Todas",
+    "handlowe": "Comerciales",
+    "biurowe": "Oficinas",
+    "gastronomiczne": "Gastronomía",
+    "uslugowe": "Servicios",
+    "mieszkalne": "Residenciales",
+    "firma": "Empresa",
+    "jakKupic": "Cómo comprar",
+    "technologia": "Tecnología",
+    "finansowanie": "Financiación",
+    "pawilonVsNajem": "Pabellón vs. alquiler",
+    "realizacje": "Realizaciones",
+    "dostepne": "Disponibles de inmediato",
+    "faq": "FAQ",
+    "kontakt": "Contacto",
+    "contactPage": "Página de contacto &rarr;",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones",
+    "cookies": "Ajustes de cookies",
+    "madeBy": "Creado por"
+  },
+  "index": {
+    "seeMore": "Ver más",
+    "wantSame": "Yo también quiero — presupuesto gratis",
+    "quotePavillon": "Calcular mi pabellón",
+    "calcSavings": "Calcula tu ahorro &rarr;",
+    "fullFinancing": "Todas las opciones de financiación &rarr;",
+    "fullProcess": "Todo el proceso paso a paso &rarr;",
+    "meetUs": "Conózcanos mejor &rarr;",
+    "visitUs": "Visítenos"
+  }
+}

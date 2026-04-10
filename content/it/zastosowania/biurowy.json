@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Container ufficio — ufficio vendite, reception, ufficio cantiere | STAGO",
+    "description": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
+    "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
+    "ogTitle": "Container ufficio — ufficio vendite, reception, ufficio cantiere | STAGO",
+    "ogDescription": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "breadcrumb": "Uffici",
+  "productType": "biurowy",
+  "hero": {
+    "img": "../assets/modele/nord.webp",
+    "imgAlt": "Container ufficio STAGO — modello NORD",
+    "h1": "Container ufficio.",
+    "subtitle": "Ufficio vendite, reception aziendale, ufficio temporaneo in cantiere, studio di consulenza. Caldo d'inverno, silenzioso tutto l'anno, corrente e internet dal primo giorno. Entri con il laptop e inizi subito a lavorare — senza mesi di ristrutturazione e senza compromessi.",
+    "price": "da 5 060 € netto",
+    "priceNote": "/ container ufficio 6×2,4 m, pronto a lavorare",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Ufficio%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i 12 modelli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelli consigliati",
+    "h2": "Modelli che costruiscono fiducia nel cliente",
+    "sub": "Il cliente che entra nel tuo ufficio deve sentire fin dalla soglia di essere in un'azienda seria. Queste forme curano la prima impressione.",
+    "items": [
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Forma premium con finestre angolari",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Padiglione STAGO NORD",
+        "href": "../modele/nord.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Cubo modulare con inserto espressivo",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Padiglione STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Layout classico, proporzioni simmetriche",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Padiglione STAGO MILA",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Cornice in legno, fronte simmetrico",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Padiglione STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Monolite allungato con listelli",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Padiglione STAGO NOIR",
+        "href": "../modele/noir.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Per questo settore",
+    "h2": "Cosa prepariamo per l'ufficio",
+    "sub": "Entri, colleghi corrente e internet, inizi a lavorare. Il resto è pronto.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
+        "h3": "Comfort termico tutto l'anno",
+        "text": "Pareti con isolamento PIR 100 mm e climatizzatore con pompa di calore. Lavori a 21°C costanti indipendentemente che fuori ci siano -15°C o +35°C."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6\"/></svg>",
+        "h3": "Silenzio che favorisce la concentrazione",
+        "text": "Struttura in acciaio con riempimento PIR che attenua efficacemente i rumori dall'esterno. Dentro si sente solo quello che succede alla scrivania — nessun rumore stradale né squadra del cantiere vicino."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Corrente, internet, illuminazione",
+        "text": "Impianto elettrico completo, prese posizionate per le scrivanie, illuminazione LED e posto predisposto per il router. Internet via cavo o wireless LTE — la scelta è tua."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Bagno e angolo cucina (opzionale)",
+        "text": "Possiamo aggiungere un blocco sanitario completo, lavandino e angolo cucina. Così ottieni un vero ufficio per il lavoro quotidiano, non solo una sala riunioni. L'opzione richiede l'allacciamento dell'acqua sul terreno."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Struttura, pareti, tetto — 2 anni di garanzia. Anche dopo la garanzia non abbandoniamo i clienti. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Container ufficio STAGO — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Container ufficio STAGO — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r6.webp",
+        "alt": "Container ufficio STAGO — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-biurowy",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti di questo settore",
+    "items": [
+      {
+        "q": "Quanto costa un container ufficio?",
+        "a": "Un singolo modulo 6×2,4 m parte da 5 060 € netto. Un ufficio più grande con bagno e angolo cucina — 8 050-11 500 €. Se hai bisogno di più superficie, colleghiamo moduli affiancati in un unico edificio più grande."
+      },
+      {
+        "q": "Posso avere il bagno all'interno?",
+        "a": "Sì. Possiamo installare un blocco sanitario con lavandino e scaldabagno. È necessario l'allacciamento dell'acqua e dello scarico — ti aiutiamo a pianificare gli attacchi, ma la loro realizzazione sul terreno è a tuo carico."
+      },
+      {
+        "q": "Quanto dura un container ufficio?",
+        "a": "La struttura è in acciaio, protetta con trattamento anticorrosivo, con isolamento PIR completo e tetto con deflusso dell'acqua piovana. Molti dei nostri clienti utilizzano uffici nei nostri container da 10-15 anni senza grandi interventi."
+      },
+      {
+        "q": "Posso trasportare il container in un altro cantiere?",
+        "a": "Sì, è uno dei suoi maggiori vantaggi. Caricamento sul rimorchio, trasporto, posizionamento nel nuovo luogo — e il container lavora di nuovo. Molti dei nostri clienti dell'edilizia servono così tre o quattro cantieri all'anno."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "textareaPlaceholder": "Cosa vuoi fare? Quali dimensioni? Dove deve stare?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "socjalny",
+        "label": "Container per cantiere"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta tutto l'anno"
+      },
+      {
+        "value": "specjalny",
+        "label": "Padiglione speciale"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ],
+    "selectedType": "biurowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/nord.webp",
+      "alt": "Tutti i modelli",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Ogni modello lo adatti alla tua destinazione. Sfoglia l'intero catalogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni",
+      "label": "Applicazioni",
+      "h3": "Altre applicazioni",
+      "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino 2026",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Container ufficio STAGO",
+    "description": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
+    "image": "https://stago.com.pl/assets/modele/nord.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

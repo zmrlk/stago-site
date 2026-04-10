@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pavilón pre gastro — kaviareň, zmrzlináreň, food truck | STAGO",
+    "description": "Gastronomické pavilóny na kľúč. Kaviareň, zmrzlináreň, food truck, bar. Ventilácia, podávacie okno, povrchy HACCP. Od výrobcu z Poľska. Dodávka na Slovensko.",
+    "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
+    "ogTitle": "Pavilón pre gastro — kaviareň, zmrzlináreň, food truck | STAGO",
+    "ogDescription": "Gastronomické pavilóny na kľúč. Kaviareň, zmrzlináreň, food truck, bar. Ventilácia, podávacie okno, povrchy HACCP. Od výrobcu z Poľska. Dodávka na Slovensko.",
+    "ogImage": "https://stago.com.pl/assets/modele/saga.webp"
+  },
+  "breadcrumb": "Gastronomické",
+  "productType": "gastronomiczny",
+  "hero": {
+    "img": "../assets/modele/saga.webp",
+    "imgAlt": "Pavilón pre gastro STAGO — hmota SAGA",
+    "h1": "Pavilón pre gastronómiu.",
+    "subtitle": "Kaviareň, zmrzlináreň, food truck, malá kuchyňa, bar. Poznáme špecifiká odboru — ventiláciu, požiadavky hygieny, usporiadanie s podávacím oknom. Vieme aj, že v sezóne nie je čas na opravy, preto všetko musí fungovať od prvého dňa. Povedzte nám, čo podávate, a zvyšok prispôsobíme.",
+    "price": "od 5 100 € netto",
+    "priceNote": "/ gastronomický modul 4x2,4 m, pripravený na otvorenie",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Gastro%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Pozrite si všetkých 12 modelov &rarr;"
+  },
+  "models": {
+    "eyebrow": "Odporúčané hmoty",
+    "h2": "Modely, ktoré dobre vyzerajú s kávou v ruke",
+    "sub": "Tieto hmoty majú charakter, aký zákazník hľadá pri kúpe kávy či zmrzliny — a zároveň usporiadanie, ktoré sa osvedčí v každodennej práci za barom.",
+    "items": [
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Predĺžená hmota s výkladným frontom",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pavilón STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Showroomový front s tromi výkladmi",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pavilón STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Hmota s bočnými akcentmi a frontom",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Pavilón STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Hmota s panoramatickými rohmi",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pavilón STAGO VIEW",
+        "href": "../modele/view.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Prémiový loft s rohovým zasklením",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pavilón STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pre tento odbor",
+    "h2": "Čo pripravíme pre gastronómiu",
+    "sub": "Všetko v súlade s požiadavkami hygieny a HACCP. Nemusíte bojovať s normami — to je naša úloha.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Gastronomická ventilácia",
+        "text": "Digestor, ventilátor, odsávanie dymu a pary. Navrhujeme ju pre konkrétne zariadenia, ktoré máte alebo plánujete kúpiť. Vzduch je svieži aj v strede najhorúcejšej sezóny."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Podávacie okno",
+        "text": "Klasické okno v štýle food trucku — veľké, otvárateľné nahor, s expozičnou poličkou. Zákazník obslúžený zvonku, Vy pracujete v komfortných podmienkach vnútri. Môžeme tiež urobiť plný vstup pre sediacich hostí — výber je na Vás."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Povrchy v súlade s HACCP",
+        "text": "Steny a podlaha z materiálov ľahko umývateľných, povolených pre styk s potravinami. Hygiena príde, skontroluje, podpíše protokol — bez stresu a bez improvizácie na poslednú chvíľu."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Inštalácie pre zariadenia",
+        "text": "Zosilnená elektrická inštalácia pre kávovar, chladničky a chladiace vitríny. Prívod vody a odtok. Povedzte nám, aké zariadenia staviate, a my pripravíme prípojky na správnych miestach."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V cene",
+    "h2": "Čo dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizácia",
+        "text": "Poviete, čo potrebujete. Nakreslíme. Uvidíte pavilón v 3D skôr, než miniete euro. Meníme, kým nepoviete \"áno\"."
+      },
+      {
+        "h3": "Doprava a montáž v cene",
+        "text": "Pavilón ide na návese z nášho závodu. Náš tím ho postaví na mieste. Vy ukážete, kde má stáť. Dodávka na Slovensko v cene."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konštrukcia, steny, strecha — 2 roky záruky. Po záruke tiež neopúšťame zákazníkov. Máme vlastných ľudí, nehľadáme na telefón."
+      },
+      {
+        "h3": "Pomoc s dokumentmi",
+        "text": "Do 35 m² stačí ohlásenie, nie povolenie. Pomôžeme vyplniť papiere, aby ste nemuseli hľadať vzory po internete."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Pozrite naživo",
+    "h2": "Takto vyzerajú naše realizácie",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Gastronomický pavilón STAGO — realizácia 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Gastronomický pavilón STAGO — realizácia 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Gastronomický pavilón STAGO — realizácia 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-gastronomiczny",
+    "eyebrow": "Otázky",
+    "h2": "Na čo sa pýtajú zákazníci z tohto odboru",
+    "items": [
+      {
+        "q": "Koľko stojí gastronomický pavilón?",
+        "a": "Malý modul na kávu začína od 5 100 € netto. Väčšia zmrzlináreň s chladiarenským zázemím — 9 200–14 000 €. Bar s plnou kuchyňou — od 16 000 €. Každú cenovú ponuku pripravíme bezplatne po krátkom rozhovore."
+      },
+      {
+        "q": "Môžem mať podávacie okno a zároveň miesto pre hostí vnútri?",
+        "a": "Áno, obe riešenia sa dajú spojiť v jednom pavilóne. Podávacie okno pre zákazníkov obslúžených vonku aj plný vstup pre sediacich hostí. Môžeme tiež navrhnúť vonkajšiu zónu so stolíkmi a slnečníkmi."
+      },
+      {
+        "q": "Čo s požiadavkami hygieny?",
+        "a": "Pavilóny zhotovujeme v súlade so systémom HACCP: umývateľné steny, protišmyková podlaha, mechanická ventilácia, prístup k vode a kanalizácii. Pomôžeme aj s dokumentáciou potrebnou pre hygienické ohlásenie."
+      },
+      {
+        "q": "Môžem previezť pavilón na iné miesto na sezónu?",
+        "a": "Áno — veľa našich zákazníkov takto funguje. V lete pri mori, na jeseň v meste, v zime bezpečne zaparkovaný na pozemku. Stačí naložiť pavilón na náves a previezť na novú lokalizáciu."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začíname",
+    "h2": "Povedzte, čo potrebujete",
+    "textareaPlaceholder": "Čo chcete urobiť? Aký rozmer? Kde to má stáť?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodný pavilón"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pavilón pre gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontajner pre kanceláriu"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Prevádzkový pavilón"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontajner na stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoročný domček"
+      },
+      {
+        "value": "specjalny",
+        "label": "Netypický pavilón"
+      }
+    ],
+    "infoH3": "Ako to prebieha?",
+    "infoText": "Napíšete alebo zavoláte. Opýtame sa na detaily. Nakreslíme projekt s 3D vizualizáciou. Uvedieme cenu s dopravou a montážou. Bez prekvapení.",
+    "features": [
+      {
+        "text": "3D vizualizácia — uvidíte, skôr než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montážou"
+      },
+      {
+        "text": "Pomoc s dokumentmi a ohlásením"
+      },
+      {
+        "text": "Odpoveď do jedného dňa"
+      }
+    ],
+    "selectedType": "gastronomiczny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/saga.webp",
+      "alt": "Všetky modely",
+      "label": "Modely",
+      "h3": "Pozrite si všetkých 12 modelov",
+      "text": "Každý model prispôsobíte podľa svojho použitia. Prezrite si celý katalóg."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Použitie",
+      "label": "Použitie",
+      "h3": "Ďalšie použitie",
+      "text": "Pozrite, čo ešte robíme — obchod, kancelária, dom, gastro, kabinét."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cenník 2026",
+      "label": "Poradňa",
+      "h3": "Cenník pavilónov 2026",
+      "text": "Konkrétne sumy, bez zavádzania. Zistite, koľko zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Gastronomický pavilón STAGO",
+    "description": "Gastronomické pavilóny na kľúč. Kaviareň, zmrzlináreň, food truck, bar. Ventilácia, podávacie okno, povrchy HACCP. Od výrobcu z Poľska. Dodávka na Slovensko.",
+    "image": "https://stago.com.pl/assets/modele/saga.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

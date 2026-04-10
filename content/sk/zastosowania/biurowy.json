@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Kontajner pre kanceláriu — predajná kancelária, recepcia, stavebná kancelária | STAGO",
+    "description": "Kancelárske kontajnery od výrobcu. Predajná kancelária, recepcia, kancelária na stavbe, kabinét. Teplo, ticho, pripravené na prácu. Od 5 100 € netto. Dodávka na Slovensko.",
+    "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
+    "ogTitle": "Kontajner pre kanceláriu — predajná kancelária, recepcia | STAGO",
+    "ogDescription": "Kancelárske kontajnery od výrobcu. Predajná kancelária, recepcia, kancelária na stavbe, kabinét. Teplo, ticho, pripravené na prácu. Od 5 100 € netto. Dodávka na Slovensko.",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "breadcrumb": "Kancelárske",
+  "productType": "biurowy",
+  "hero": {
+    "img": "../assets/modele/nord.webp",
+    "imgAlt": "Kontajner pre kanceláriu STAGO — hmota NORD",
+    "h1": "Kontajner pre kanceláriu.",
+    "subtitle": "Predajná kancelária, recepcia pri firme, dočasná kancelária na stavbe, poradenský kabinét. Teplo v zime, ticho po celý rok, elektrika a internet od prvého dňa. Vstúpite s laptopom a hneď začínate pracovať — bez mesiacov rekonštrukcie a bez kompromisov.",
+    "price": "od 5 100 € netto",
+    "priceNote": "/ kancelársky kontajner 6x2,4 m, pripravený na prácu",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Kancelaria%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Pozrite si všetkých 12 modelov &rarr;"
+  },
+  "models": {
+    "eyebrow": "Odporúčané hmoty",
+    "h2": "Modely, ktoré budujú dôveru zákazníka",
+    "sub": "Zákazník vchádzajúci do Vašej kancelárie by mal od prahu cítiť, že trafil do serióznej firmy. Tieto hmoty sa starajú o prvý dojem.",
+    "items": [
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Prémiová hmota s rohovými oknami",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pavilón STAGO NORD",
+        "href": "../modele/nord.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modulárny kubík s výraznou vložkou",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pavilón STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasické usporiadanie, symetrické proporcie",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pavilón STAGO MILA",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Drevený rám, symetrický front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pavilón STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Predĺžený monolit s lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pavilón STAGO NOIR",
+        "href": "../modele/noir.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pre tento odbor",
+    "h2": "Čo pripravíme pre kanceláriu",
+    "sub": "Vstúpite, pripojíte elektriu a internet, začínate pracovať. Zvyšok je hotový.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
+        "h3": "Tepelný komfort po celý rok",
+        "text": "Steny s izoláciou PIR 100 mm a klimatizácia s tepelným čerpadlom. Pracujete pri stálych 21°C bez ohľadu na to, či je vonku -15°C, alebo +35°C."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6\"/></svg>",
+        "h3": "Ticho pre koncentráciu",
+        "text": "Oceľová konštrukcia s PIR výplňou účinne tlmí zvuky zvonku. Vnútri počujete len to, čo sa deje pri stole — žiadny pouličný hluk ani partia zo susednej stavby."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Elektrika, internet, osvetlenie",
+        "text": "Plná elektrická inštalácia, zásuvky rozmiestnené pod stoly, LED osvetlenie a pripravené miesto na router. Internet pripojíte káblovo alebo bezdrôtovo cez LTE — výber je na Vás."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Toaleta a kuchynský kút (voliteľne)",
+        "text": "Môžeme pridať sanitárny uzol, umývadlo a kuchynský kút. Potom získate skutočnú kanceláriu na dennú prácu, nie len zasadačku. Voľba vyžaduje prívod vody na pozemku."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V cene",
+    "h2": "Čo dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizácia",
+        "text": "Poviete, čo potrebujete. Nakreslíme. Uvidíte pavilón v 3D skôr, než miniete euro. Meníme, kým nepoviete \"áno\"."
+      },
+      {
+        "h3": "Doprava a montáž v cene",
+        "text": "Pavilón ide na návese z nášho závodu. Náš tím ho postaví na mieste. Vy ukážete, kde má stáť. Dodávka na Slovensko v cene."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konštrukcia, steny, strecha — 2 roky záruky. Po záruke tiež neopúšťame zákazníkov. Máme vlastných ľudí, nehľadáme na telefón."
+      },
+      {
+        "h3": "Pomoc s dokumentmi",
+        "text": "Do 35 m² stačí ohlásenie, nie povolenie. Pomôžeme vyplniť papiere, aby ste nemuseli hľadať vzory po internete."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Pozrite naživo",
+    "h2": "Takto vyzerajú naše realizácie",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Kancelársky kontajner STAGO — realizácia 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Kancelársky kontajner STAGO — realizácia 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r6.webp",
+        "alt": "Kancelársky kontajner STAGO — realizácia 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-biurowy",
+    "eyebrow": "Otázky",
+    "h2": "Na čo sa pýtajú zákazníci z tohto odboru",
+    "items": [
+      {
+        "q": "Koľko stojí kancelársky kontajner?",
+        "a": "Jednotlivý modul 6x2,4 m začína od 5 100 € netto. Väčšia kancelária s toaletou a kuchynským kútom — 8 000–11 500 €. Ak potrebujete väčšiu plochu, spájame moduly vedľa seba do jedného väčšieho objektu."
+      },
+      {
+        "q": "Môžem v ňom mať toaletu?",
+        "a": "Áno. Môžeme namontovať sanitárny uzol s umývadlom a ohrievačom vody. Nutný je prívod vody a odtok — pomôžeme naplánovať prípojky, ale ich realizácia na strane pozemku je na Vás."
+      },
+      {
+        "q": "Ako dlho vydrží kancelársky kontajner?",
+        "a": "Konštrukcia je oceľová, antikorózne ošetrená, s plnou izoláciou PIR a strechou s odvodom zrážkovej vody. Mnohí naši zákazníci používajú kancelárie v našich kontajneroch 10-15 rokov bez väčších opráv."
+      },
+      {
+        "q": "Môžem previezť kontajner na inú stavbu?",
+        "a": "Áno, to je jedna z jeho najväčších výhod. Naloženie na náves, transport, umiestnenie na novom mieste — a kontajner opäť pracuje. Mnohí naši zákazníci zo stavebníctva takto obslúžia tri až štyri stavby ročne."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začíname",
+    "h2": "Povedzte, čo potrebujete",
+    "textareaPlaceholder": "Čo chcete urobiť? Aký rozmer? Kde to má stáť?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodný pavilón"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pavilón pre gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontajner pre kanceláriu"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Prevádzkový pavilón"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontajner na stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoročný domček"
+      },
+      {
+        "value": "specjalny",
+        "label": "Netypický pavilón"
+      }
+    ],
+    "infoH3": "Ako to prebieha?",
+    "infoText": "Napíšete alebo zavoláte. Opýtame sa na detaily. Nakreslíme projekt s 3D vizualizáciou. Uvedieme cenu s dopravou a montážou. Bez prekvapení.",
+    "features": [
+      {
+        "text": "3D vizualizácia — uvidíte, skôr než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montážou"
+      },
+      {
+        "text": "Pomoc s dokumentmi a ohlásením"
+      },
+      {
+        "text": "Odpoveď do jedného dňa"
+      }
+    ],
+    "selectedType": "biurowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/nord.webp",
+      "alt": "Všetky modely",
+      "label": "Modely",
+      "h3": "Pozrite si všetkých 12 modelov",
+      "text": "Každý model prispôsobíte podľa svojho použitia. Prezrite si celý katalóg."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Použitie",
+      "label": "Použitie",
+      "h3": "Ďalšie použitie",
+      "text": "Pozrite, čo ešte robíme — obchod, kancelária, dom, gastro, kabinét."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cenník 2026",
+      "label": "Poradňa",
+      "h3": "Cenník pavilónov 2026",
+      "text": "Konkrétne sumy, bez zavádzania. Zistite, koľko zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Kancelársky kontajner STAGO",
+    "description": "Kancelárske kontajnery od výrobcu. Predajná kancelária, recepcia, kancelária na stavbe, kabinét. Teplo, ticho, pripravené na prácu. Od 5 100 € netto. Dodávka na Slovensko.",
+    "image": "https://stago.com.pl/assets/modele/nord.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

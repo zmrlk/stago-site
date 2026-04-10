@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Container per cantiere — spogliatoio, mensa, servizi igienici | STAGO",
+    "description": "Container sociali per cantieri e aziende. Spogliatoio, mensa, container sanitario. Solidi, mobili, pronti subito. Da 2 760 € netto.",
+    "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
+    "ogTitle": "Container per cantiere — spogliatoio, mensa, servizi igienici | STAGO",
+    "ogDescription": "Container sociali per cantieri e aziende. Spogliatoio, mensa, container sanitario. Solidi, mobili, pronti subito. Da 2 760 € netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
+  },
+  "breadcrumb": "Sociali",
+  "productType": "socjalny",
+  "hero": {
+    "img": "../assets/modele/cube.webp",
+    "imgAlt": "Container per cantiere STAGO — modello CUBE",
+    "h1": "Container per cantiere.",
+    "subtitle": "Spogliatoio, mensa, servizi igienici, base per la squadra. Solidi, mobili e pronti per essere spostati al prossimo cantiere quando l'attuale progetto è concluso. La squadra ha dove cambiarsi, mangiare e riposare — e tu hai la tranquillità.",
+    "price": "da 2 760 € netto",
+    "priceNote": "/ container sociale 6×2,4 m",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Cantiere%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i 12 modelli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelli consigliati",
+    "h2": "Modelli che resistono alle condizioni del cantiere",
+    "sub": "Solidi e funzionali, senza fronzoli. Resistono all'uso quotidiano in cantiere e anche dopo anni hanno un aspetto dignitoso.",
+    "items": [
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Cubo modulare con inserto espressivo",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Padiglione STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Monolite allungato con listelli",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Padiglione STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Forma compatta con vetrina piena",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Padiglione STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Cornice in legno, fronte simmetrico",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Padiglione STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Forma premium con finestre angolari",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Padiglione STAGO NORD",
+        "href": "../modele/nord.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Per questo settore",
+    "h2": "Cosa prepariamo per le condizioni di cantiere",
+    "sub": "Senza fronzoli. Solidamente, in modo mobile e per anni — perché il cantiere perdona solo alle strutture robuste.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Resistente alle condizioni di cantiere",
+        "text": "Telaio in acciaio, lamiera trapezoidale, angoli rinforzati. Resiste senza problemi al caricamento con gru, al trasporto su strade sconnesse e all'uso quotidiano della squadra in abbigliamento da lavoro."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
+        "h3": "Trasporto rapido tra cantieri",
+        "text": "Dimensioni standard adatte ai rimorchi. Caricamento, trasporto e scaricamento richiedono poche ore — e il container lavora già nel nuovo luogo. Un solo container può servire tre o quattro cantieri all'anno."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Attrezzature su misura per la squadra",
+        "text": "Armadietti, panche, tavoli, lavandini, docce — nella configurazione di cui hai bisogno. Spogliatoio completo, blocco sanitario indipendente o entrambi combinati in un unico modulo."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
+        "h3": "Riscaldamento e corrente",
+        "text": "Riscaldatore elettrico o stufa, impianto elettrico completo e illuminazione. La squadra lavora in condizioni confortevoli tutto l'anno — anche in pieno inverno."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Struttura, pareti, tetto — 2 anni di garanzia. Anche dopo la garanzia non abbandoniamo i clienti. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r6.webp",
+        "alt": "Container per cantiere STAGO — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Container per cantiere STAGO — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Container per cantiere STAGO — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-socjalny",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti di questo settore",
+    "items": [
+      {
+        "q": "Quanto costa un container sociale?",
+        "a": "Un modulo base 6×2,4 m parte da 2 760 € netto. Con dotazione completa (spogliatoio e blocco sanitario) — 5 750-8 050 €. È una soluzione più economica del noleggio per sei mesi, e dopo il pagamento il container resta di tua proprietà."
+      },
+      {
+        "q": "Posso prenderlo in leasing invece di comprarlo subito?",
+        "a": "Sì. Collaboriamo con società di leasing e ti aiutiamo a organizzare il finanziamento in modo che la rata entri nei costi aziendali e dopo il saldo il container diventi tua proprietà."
+      },
+      {
+        "q": "Si può allacciare l'acqua e la fognatura?",
+        "a": "Sì. I container sanitari hanno lavandini, docce e servizi igienici. Richiedono l'allacciamento dell'acqua e dello scarico in cantiere — aiutiamo a pianificare gli attacchi, ma la loro realizzazione è a carico dell'idraulico o dell'elettricista da parte tua."
+      },
+      {
+        "q": "Quanto dura un container?",
+        "a": "Un container ben mantenuto lavora 15-20 anni. Molti clienti dell'edilizia usano lo stesso oggetto con successo su decine di cantieri successivi."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "textareaPlaceholder": "Cosa vuoi fare? Quali dimensioni? Dove deve stare?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "socjalny",
+        "label": "Container per cantiere"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta tutto l'anno"
+      },
+      {
+        "value": "specjalny",
+        "label": "Padiglione speciale"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ],
+    "selectedType": "socjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/cube.webp",
+      "alt": "Tutti i modelli",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Ogni modello lo adatti alla tua destinazione. Sfoglia l'intero catalogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni",
+      "label": "Applicazioni",
+      "h3": "Altre applicazioni",
+      "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino 2026",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Container per cantiere STAGO",
+    "description": "Container sociali per cantieri e aziende. Spogliatoio, mensa, container sanitario. Solidi, mobili, pronti subito. Da 2 760 € netto.",
+    "image": "https://stago.com.pl/assets/modele/cube.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

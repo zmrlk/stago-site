@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "title": "Modelos de pabellones STAGO — 12 diseños a elegir",
+    "description": "12 modelos de pabellones modulares STAGO. Madera, grafito, mix. Elija el diseño — dimensiones, color, carpintería e interior los adaptamos a su situación.",
+    "canonical": "https://stago.com.pl/modele.html",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "hero": {
+    "eyebrow": "Nuestros modelos",
+    "h1": "Elija un diseño.",
+    "h1accent": "El resto lo adaptamos.",
+    "sub": "12 modelos son el punto de partida — inspiración en forma y carácter. Dimensiones, color, carpintería, interior, equipamiento — todo lo diseñamos de nuevo a su medida. Cada pabellón es diferente, cada uno para una situación concreta."
+  },
+  "models": [
+    {
+      "code": "ATRI",
+      "name": "ATRI",
+      "img": "assets/modele/atri.webp",
+      "alt": "Pabellón ATRI — roble claro, interior abierto",
+      "desc": "Lamas de madera claras, mucho cristal, puertas correderas. Un atrio abierto y acogedor.",
+      "href": "modele/atri.html"
+    },
+    {
+      "code": "MILA",
+      "name": "MILA",
+      "img": "assets/modele/mila.webp",
+      "alt": "Pabellón MILA — calma escandinava en madera",
+      "desc": "Fachada completa de madera en tono claro. Calma y calidez sin detalles innecesarios.",
+      "href": "modele/mila.html"
+    },
+    {
+      "code": "ICON",
+      "name": "ICON",
+      "img": "assets/modele/icon.webp",
+      "alt": "Pabellón ICON — loft premium en madera",
+      "desc": "Fachada de madera, enormes cristales en esquina. Estudio de arquitectura en todo su esplendor.",
+      "href": "modele/icon.html"
+    },
+    {
+      "code": "RYTM",
+      "name": "RYTM",
+      "img": "assets/modele/rytm.webp",
+      "alt": "Pabellón RYTM — marco de madera, frente simétrico",
+      "desc": "Lamas de madera verticales enmarcadas, frente negro, puertas simétricas.",
+      "href": "modele/rytm.html"
+    },
+    {
+      "code": "NORD",
+      "name": "NORD",
+      "img": "assets/modele/nord.webp",
+      "alt": "Pabellón NORD — antracita con acentos de madera",
+      "desc": "Antracita + madera en las esquinas + enormes acristalamientos en esquina. Premium escandinavo.",
+      "href": "modele/nord.html"
+    },
+    {
+      "code": "LOFT",
+      "name": "LOFT",
+      "img": "assets/modele/loft.webp",
+      "alt": "Pabellón LOFT — madera, grafito, enormes vitrinas",
+      "desc": "Lamas de madera verticales, techo grafito, tres grandes vitrinas. Aspecto de showroom.",
+      "href": "modele/loft.html"
+    },
+    {
+      "code": "SAGA",
+      "name": "SAGA",
+      "img": "assets/modele/saga.webp",
+      "alt": "Pabellón SAGA — madera arriba, grafito al frente",
+      "desc": "Fachada de madera en la parte superior, grafito abajo, tres grandes vitrinas. Listo para hostelería.",
+      "href": "modele/saga.html"
+    },
+    {
+      "code": "VIEW",
+      "name": "VIEW",
+      "img": "assets/modele/view.webp",
+      "alt": "Pabellón VIEW — madera, grafito, cristales en esquina",
+      "desc": "Franja de madera superior, cuerpo grafito, acristalamientos panorámicos en esquina.",
+      "href": "modele/view.html"
+    },
+    {
+      "code": "DUET",
+      "name": "DUET",
+      "img": "assets/modele/duet.webp",
+      "alt": "Pabellón DUET — grafito con acentos de madera",
+      "desc": "Cuerpo grafito, lamas de madera en los laterales, tres grandes vitrinas frontales.",
+      "href": "modele/duet.html"
+    },
+    {
+      "code": "CUBE",
+      "name": "CUBE",
+      "img": "assets/modele/cube.webp",
+      "alt": "Pabellón CUBE — cubo negro con inserto de madera",
+      "desc": "Cubo modular negro, inserto de madera como acento. Geometría pura.",
+      "href": "modele/cube.html"
+    },
+    {
+      "code": "NOIR",
+      "name": "NOIR",
+      "img": "assets/modele/noir.webp",
+      "alt": "Pabellón NOIR — lamas negras, minimalismo oscuro",
+      "desc": "Lamas negras verticales, ventanas alargadas, carácter boutique berlinés.",
+      "href": "modele/noir.html"
+    },
+    {
+      "code": "KIOS",
+      "name": "KIOS",
+      "img": "assets/modele/kios.webp",
+      "alt": "Pabellón KIOS — pequeño, negro, listo para el comercio",
+      "desc": "Pabellón compacto negro con gran vitrina de cristal. Pequeña huella, gran carácter.",
+      "href": "modele/kios.html"
+    }
+  ],
+  "cta": {
+    "h2": "¿No sabe cuál elegir?",
+    "sub": "Díganos para qué lo necesita. Le propondremos 2-3 modelos y haremos una visualización gratuita."
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Kereskedelmi pavilon — bolt, kioszk, értékesítési pont | STAGO",
+    "description": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, világítás, kényelmes bejárat. Kb. 3 450 € nettó-tól.",
+    "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
+    "ogTitle": "Kereskedelmi pavilon — bolt, kioszk, értékesítési pont | STAGO",
+    "ogDescription": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, világítás, kényelmes bejárat. Kb. 3 450 € nettó-tól.",
+    "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
+  },
+  "breadcrumb": "Kereskedelmi",
+  "productType": "handlowy",
+  "hero": {
+    "img": "../assets/modele/loft.webp",
+    "imgAlt": "STAGO kereskedelmi pavilon — LOFT forma",
+    "h1": "Kereskedelmi pavilon.",
+    "subtitle": "Bolt, kioszk, értékesítési pont a piactéren, zöldségpiac. Tudjuk, hogy a vásárló másodpercek alatt dönt a belépésről — ezért a kirakatokat a termékbemutatáshoz, a világítást a termék kiemelésére és a bejáratot a kényelemre tervezzük. Mondja el, mit árul — olyan elrendezést javaslunk, amely az eladásért dolgozik.",
+    "price": "kb. 3 450 € nettó-tól",
+    "priceNote": "/ 3×2 m-es pavilon kereskedelemre kész",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Kereskedelmi%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Tekintse meg mind a 12 modellt &rarr;"
+  },
+  "models": {
+    "eyebrow": "Ajánlott formák",
+    "h2": "Modellek, amelyek jó első benyomást keltenek",
+    "sub": "Az első benyomás sokáig megmarad a vásárló emlékezetében. Ezek a formák válnak be legjobban a kereskedelemben — de mindegyiket az Ön ötletéhez igazítjuk.",
+    "items": [
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Showroom front három kirakattal",
+        "img": "../assets/modele/loft.webp",
+        "alt": "STAGO LOFT pavilon",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Nyújtott forma kirakatfronttal",
+        "img": "../assets/modele/saga.webp",
+        "alt": "STAGO SAGA pavilon",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Forma oldalsó akcentusokkal és fronttal",
+        "img": "../assets/modele/duet.webp",
+        "alt": "STAGO DUET pavilon",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompakt forma teljes kirakattal",
+        "img": "../assets/modele/kios.webp",
+        "alt": "STAGO KIOS pavilon",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Forma panorámás sarkokkal",
+        "img": "../assets/modele/view.webp",
+        "alt": "STAGO VIEW pavilon",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Ehhez az iparághoz",
+    "h2": "Amit a kereskedelemhez készítünk",
+    "sub": "Minden elem az értékesítés szempontjából lett megtervezve — nem más pavilon-kategóriából kölcsönözve.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Kirakat az Ön kínálatához",
+        "text": "Nagy panoráma ablakok, sarokkirakatk, kiadóablak. Mondja el, mit árul, és mi megtervezzük a nyílások elrendezését a konkrét áruhoz. A járdáról látható kiállítás a siker fele."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0012 2z\"/></svg>",
+        "h3": "Világítás a termékbemutatáshoz",
+        "text": "LED világítás úgy elrendezve, hogy a termék frissen és vonzóan nézzen ki. Emellett a szerelés pénztárgéphez és fizetési terminálhoz előkészítve — improvizáció nélkül a nyitás napján."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Kényelmes bejárat a vásárlónak",
+        "text": "Alumínium tolóajtók, emelvény, rámpás bejárat babakocsikhoz. A vásárló természetesen lép be — nem kell gondolkodnia, hol és merre nyissa az ajtót."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0110 0v4\"/></svg>",
+        "h3": "Biztonság zárás után",
+        "text": "Acélváz, többpontos zárak, opcionális betörésvédő redőnyök. Bezárja a pavilont és nyugodtan alszik — egyetlen alkalmi betörő sem boldogul nehéz felszerelés nélkül."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Az árban",
+    "h2": "Mit kap a STAGO-tól",
+    "items": [
+      {
+        "h3": "Ingyenes 3D látványterv",
+        "text": "Mondja el, mire van szüksége. Megrajzoljuk. 3D-ben láthatja a pavilont, mielőtt egyetlen eurót kiadna. Módosítjuk, amíg nem mondja, hogy \"igen\"."
+      },
+      {
+        "h3": "Szállítás és telepítés az árban",
+        "text": "A pavilon félpótkocsin érkezik üzemünkből Jędrzejówból. Csapatunk felállítja a helyszínen. Szállítás Magyarországra. Ön megmutatja, hol álljon."
+      },
+      {
+        "h3": "2 év garancia + szerviz",
+        "text": "Szerkezet, falak, tető — 2 év garancia. A garancia után sem hagyjuk magukra ügyfeleinket. Saját embereink vannak, nem keresünk senkit telefonon."
+      },
+      {
+        "h3": "Segítség a dokumentációval",
+        "text": "Segítünk az export dokumentáció és a helyi engedélyezési eljárás előkészítésében. Gyorsabban, hatékonyabban, stressz nélkül."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nézze meg élőben",
+    "h2": "Így néznek ki megvalósításaink",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "STAGO kereskedelmi pavilon — megvalósítás 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "STAGO kereskedelmi pavilon — megvalósítás 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "STAGO kereskedelmi pavilon — megvalósítás 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-handlowy",
+    "eyebrow": "Kérdések",
+    "h2": "Amit az iparág ügyfelei kérdeznek",
+    "items": [
+      {
+        "q": "Mennyibe kerül egy kereskedelmi pavilon?",
+        "a": "Egy kis 3×2 m-es kioszk kb. 3 450 € nettó-tól indul. 6×3 m-es bolt — kb. 6 440 €-tól. Nagyobb 12×3 m-es pont kirakattal és háttérhelyiséggel — kb. 11 040 €-tól. Minden árajánlatot egyedileg és díjmentesen készítünk: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+      },
+      {
+        "q": "Kell-e építési engedély a kereskedelmi pavilonhoz?",
+        "a": "Lengyelországban a 35 m²-ig terjedő pavilonokhoz bejelentés elegendő, nem kell teljes építési engedély. Az eljárás néhány napot vesz igénybe. Magyarországi telepítés esetén az adott önkormányzati előírások az irányadók — segítünk tájékozódni."
+      },
+      {
+        "q": "Lehet kiadóablakom és egyben belső ügyfélterületem is?",
+        "a": "Természetesen. Kiadóablakot készítünk kültéri kiszolgáláshoz, teljes méretű boltkirakatkot és betörésvédő redőnyös ajtókat — bármilyen konfigurációban. Mondja el, hogyan képzeli az ügyfélkiszolgálást, és a nyílások elrendezését az Ön ötletéhez igazítjuk."
+      },
+      {
+        "q": "Hogyan fűtöm a pavilont télen és mennyibe kerül?",
+        "a": "A legnépszerűbb megoldás a klímaberendezés hőszivattyúval — télen fűt, nyáron hűt. A 100 mm PIR szigetelésű falak úgy tartják a meleget, mint egy falazott épület. Kis pavilonnál a havi fűtésszámla télen általában 80–115 €."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Kezdjük",
+    "h2": "Mondja el, mire van szüksége",
+    "textareaPlaceholder": "Mit szeretne csinálni? Milyen méret? Hol fog állni?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Kereskedelmi pavilon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Vendéglátó pavilon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Irodakonténer"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Szolgáltatási pavilon"
+      },
+      {
+        "value": "socjalny",
+        "label": "Építkezési konténer"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Egész éves házikó"
+      },
+      {
+        "value": "specjalny",
+        "label": "Különleges pavilon"
+      }
+    ],
+    "infoH3": "Hogyan működik?",
+    "infoText": "Ír vagy hív. Megkérdezzük a részleteket. Elkészítjük a 3D látványtervet. Megadjuk az árat szállítással és telepítéssel. Meglepetések nélkül.",
+    "features": [
+      {
+        "text": "3D látványterv — megnézheti, mielőtt megrendelné"
+      },
+      {
+        "text": "Ár szállítással és telepítéssel"
+      },
+      {
+        "text": "Segítség a dokumentációval"
+      },
+      {
+        "text": "Válasz egy munkanapon belül"
+      }
+    ],
+    "selectedType": "handlowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/loft.webp",
+      "alt": "Összes modell",
+      "label": "Modellek",
+      "h3": "Tekintse meg mind a 12 modellt",
+      "text": "Minden modellt az Ön igényeihez igazítunk. Böngéssze végig a teljes katalógust."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Felhasználás",
+      "label": "Felhasználás",
+      "h3": "Egyéb felhasználások",
+      "text": "Nézze meg, mit csinálunk még — bolt, iroda, lakás, vendéglátás, rendelő."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Árlista 2026",
+      "label": "Útmutató",
+      "h3": "Pavilon árlista 2026",
+      "text": "Konkrét összegek, ködösítés nélkül. Nézze meg, mennyit fizet."
+    }
+  ],
+  "jsonLd": {
+    "name": "STAGO kereskedelmi pavilon",
+    "description": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, világítás, kényelmes bejárat. Kb. 3 450 € nettó-tól.",
+    "image": "https://stago.com.pl/assets/modele/loft.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

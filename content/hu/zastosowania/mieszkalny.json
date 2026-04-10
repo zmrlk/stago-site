@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Egész éves házikó — ház, ADU, nyaraló | STAGO",
+    "description": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba, konyha. Kb. 10 350 € nettó-tól.",
+    "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
+    "ogTitle": "Egész éves házikó — ház, ADU, nyaraló | STAGO",
+    "ogDescription": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba, konyha. Kb. 10 350 € nettó-tól.",
+    "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
+  },
+  "breadcrumb": "Lakó",
+  "productType": "mieszkalny",
+  "hero": {
+    "img": "../assets/modele/mila.webp",
+    "imgAlt": "STAGO egész éves házikó — MILA forma",
+    "h1": "Egész éves házikó.",
+    "subtitle": "Kis ház a telken, ház az anyósnak, kerti iroda, tó melletti nyaraló. 100 mm PIR szigetelésű teljes falak, fürdőszoba, konyhai sarok — teljes értékű lakóhely, nem ideiglenes barakk.",
+    "price": "kb. 10 350 € nettó-tól",
+    "priceNote": "/ 6×3 m-es házikó fürdőszobával",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Lakás%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Tekintse meg mind a 12 modellt &rarr;"
+  },
+  "models": {
+    "eyebrow": "Ajánlott formák",
+    "h2": "Modellek, amelyek igazi háznak néznek ki",
+    "sub": "Nyugodt, meleg, fa formák — olyanok, hogy minden látogató úgy érezze, valaki otthonában van, nem egy konténerben.",
+    "items": [
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasszikus elrendezés, szimmetrikus arányok",
+        "img": "../assets/modele/mila.webp",
+        "alt": "STAGO MILA pavilon",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "ATRI",
+        "name": "ATRI",
+        "desc": "Nyitott forma nagy üvegezéssel",
+        "img": "../assets/modele/atri.webp",
+        "alt": "STAGO ATRI pavilon",
+        "href": "../modele/atri.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Fa keret, szimmetrikus front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "STAGO RYTM pavilon",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Moduláris kocka markáns betéttel",
+        "img": "../assets/modele/cube.webp",
+        "alt": "STAGO CUBE pavilon",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Prémium loft saroküvegezéssel",
+        "img": "../assets/modele/icon.webp",
+        "alt": "STAGO ICON pavilon",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Ehhez a célhoz",
+    "h2": "Amit az egész éves lakáshoz készítünk",
+    "sub": "Teljes értékű falak, valódi hőszigetelés és normális fürdőszoba. Egész évben lakja, nem csak nyáron.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Energiatakarékos házakéval azonos szigetelés",
+        "text": "Falak 100 mm PIR szigeteléssel, szigetelt tető és padló hőszigetelő réteggel. Télen meleg, nyáron kellemesen hűvös. A havi villanyszámla a téli időszakban jellemzően 60–105 € körül mozog."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Teljes fürdőszoba és konyhai sarok",
+        "text": "Fürdőszoba zuhanyzóval, WC-vel és mosdóval. Konyhai sarok mosogatóval, munkalappal és hellyel a hűtőnek és tűzhelynek. Minden kész — beköltözik és az első naptól lakik."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Alumínium nyílászárók",
+        "text": "Alumínium ablakok és ajtók — energiatakarékos, csendes, hőhíd-megszakítással. Már a nyitás és csukás mutatja, hogy ez nem ideiglenes megoldás. Párásodás és huzat nélkül a tél közepén is."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Egyszerűsített engedélyezés",
+        "text": "Segítünk az export dokumentációval és a magyarországi engedélyezési eljárás előkészítésével. Gyorsabban, hatékonyabban, stressz nélkül."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Az árban",
+    "h2": "Mit kap a STAGO-tól",
+    "items": [
+      {
+        "h3": "Ingyenes 3D látványterv",
+        "text": "Mondja el, mire van szüksége. Megrajzoljuk. 3D-ben láthatja a pavilont, mielőtt egyetlen eurót kiadna. Módosítjuk, amíg nem mondja, hogy \"igen\"."
+      },
+      {
+        "h3": "Szállítás és telepítés az árban",
+        "text": "A pavilon félpótkocsin érkezik üzemünkből Jędrzejówból. Csapatunk felállítja a helyszínen. Szállítás Magyarországra. Ön megmutatja, hol álljon."
+      },
+      {
+        "h3": "2 év garancia + szerviz",
+        "text": "Szerkezet, falak, tető — 2 év garancia. A garancia után sem hagyjuk magukra ügyfeleinket. Saját embereink vannak, nem keresünk senkit telefonon."
+      },
+      {
+        "h3": "Segítség a dokumentációval",
+        "text": "Segítünk az export dokumentáció és a helyi engedélyezési eljárás előkészítésében. Gyorsabban, hatékonyabban, stressz nélkül."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nézze meg élőben",
+    "h2": "Így néznek ki megvalósításaink",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "STAGO egész éves házikó — megvalósítás 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "STAGO egész éves házikó — megvalósítás 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "STAGO egész éves házikó — megvalósítás 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-mieszkalny",
+    "eyebrow": "Kérdések",
+    "h2": "Amit az ügyfelek kérdeznek",
+    "items": [
+      {
+        "q": "Mennyibe kerül egy egész éves házikó?",
+        "a": "Egy 6×3 m-es házikó fürdőszobával kb. 10 350 € nettó-tól indul. Nagyobb 8×4 m-es házikó konyhával és hálószobával — 14 950–20 700 €. Prémium burkolatokat egyedileg árazunk."
+      },
+      {
+        "q": "Egész évben lehet benne lakni?",
+        "a": "Igen. Ügyfeleink egész évben laknak a STAGO házikókban — 100 mm PIR szigeteléssel, fűtéssel (klímaberendezés hőszivattyúval, kályha vagy kandalló) és teljes víz-csatorna hálózattal. Ez teljes értékű otthon, nem ideiglenes barakk."
+      },
+      {
+        "q": "Kell-e építési engedély?",
+        "a": "A helyi magyarországi szabályozástól függ. Segítünk tájékozódni a hatósági követelményekben és előkészítjük a szükséges dokumentációt."
+      },
+      {
+        "q": "Bővíthetek terasszal vagy kiegészítő modullal?",
+        "a": "Igen. Fa vagy kompozit teraszokat építünk és több modult kapcsolunk össze egyetlen nagyobb házzá — például két hálószobával, nappalival és külön fürdőszobával. Mondja el, mire van szüksége, és a terv közösen készül."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Kezdjük",
+    "h2": "Mondja el, mire van szüksége",
+    "textareaPlaceholder": "Mit szeretne csinálni? Milyen méret? Hol fog állni?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Kereskedelmi pavilon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Vendéglátó pavilon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Irodakonténer"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Szolgáltatási pavilon"
+      },
+      {
+        "value": "socjalny",
+        "label": "Építkezési konténer"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Egész éves házikó"
+      },
+      {
+        "value": "specjalny",
+        "label": "Különleges pavilon"
+      }
+    ],
+    "infoH3": "Hogyan működik?",
+    "infoText": "Ír vagy hív. Megkérdezzük a részleteket. Elkészítjük a 3D látványtervet. Megadjuk az árat szállítással és telepítéssel. Meglepetések nélkül.",
+    "features": [
+      {
+        "text": "3D látványterv — megnézheti, mielőtt megrendelné"
+      },
+      {
+        "text": "Ár szállítással és telepítéssel"
+      },
+      {
+        "text": "Segítség a dokumentációval"
+      },
+      {
+        "text": "Válasz egy munkanapon belül"
+      }
+    ],
+    "selectedType": "mieszkalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/mila.webp",
+      "alt": "Összes modell",
+      "label": "Modellek",
+      "h3": "Tekintse meg mind a 12 modellt",
+      "text": "Minden modellt az Ön igényeihez igazítunk. Böngéssze végig a teljes katalógust."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Felhasználás",
+      "label": "Felhasználás",
+      "h3": "Egyéb felhasználások",
+      "text": "Nézze meg, mit csinálunk még — bolt, iroda, lakás, vendéglátás, rendelő."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Árlista 2026",
+      "label": "Útmutató",
+      "h3": "Pavilon árlista 2026",
+      "text": "Konkrét összegek, ködösítés nélkül. Nézze meg, mennyit fizet."
+    }
+  ],
+  "jsonLd": {
+    "name": "STAGO egész éves házikó",
+    "description": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba, konyha. Kb. 10 350 € nettó-tól.",
+    "image": "https://stago.com.pl/assets/modele/mila.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

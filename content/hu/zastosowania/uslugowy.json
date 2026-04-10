@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Szolgáltatási pavilon — szalon, kozmetika, szerviz | STAGO",
+    "description": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Víz, áram, csatorna — minden kész. Kb. 5 750 € nettó-tól.",
+    "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
+    "ogTitle": "Szolgáltatási pavilon — szalon, kozmetika, szerviz | STAGO",
+    "ogDescription": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Víz, áram, csatorna — minden kész. Kb. 5 750 € nettó-tól.",
+    "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
+  },
+  "breadcrumb": "Szolgáltatási",
+  "productType": "uslugowy",
+  "hero": {
+    "img": "../assets/modele/icon.webp",
+    "imgAlt": "STAGO szolgáltatási pavilon — ICON forma",
+    "h1": "Szolgáltatási pavilon.",
+    "subtitle": "Fodrászszalon, kozmetikai szalon, szerviz, mosoda, javítóműhely. Minden iparágnak megvannak a saját követelményei — víz, csatorna, szellőztetés, megerősített elektromos hálózat, néha konkrét tanúsítványok. Mondja el, mivel foglalkozik, és úgy készítjük el a pavilont, hogy az egészségügyi ellenőrzés probléma nélkül átmenjen.",
+    "price": "kb. 5 750 € nettó-tól",
+    "priceNote": "/ 5×3 m-es szolgáltatási pavilon, szerelések az árban",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Szolgáltatási%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Tekintse meg mind a 12 modellt &rarr;"
+  },
+  "models": {
+    "eyebrow": "Ajánlott formák",
+    "h2": "Modellek, amelyek úgy néznek ki, ahogy ügyfele szeretné",
+    "sub": "A szalonba való visszatérés döntése gyakran már az első látogatáskor megszületik. Ezek a formák segítenek a helyes irányba terelni.",
+    "items": [
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Prémium loft saroküvegezéssel",
+        "img": "../assets/modele/icon.webp",
+        "alt": "STAGO ICON pavilon",
+        "href": "../modele/icon.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Showroom front három kirakattal",
+        "img": "../assets/modele/loft.webp",
+        "alt": "STAGO LOFT pavilon",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Fa keret, szimmetrikus front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "STAGO RYTM pavilon",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Nyújtott monolit lamellákkal",
+        "img": "../assets/modele/noir.webp",
+        "alt": "STAGO NOIR pavilon",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasszikus elrendezés, szimmetrikus arányok",
+        "img": "../assets/modele/mila.webp",
+        "alt": "STAGO MILA pavilon",
+        "href": "../modele/mila.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Ehhez az iparághoz",
+    "h2": "Amit a szolgáltatásokhoz készítünk",
+    "sub": "Minden iparágnak megvannak a maga szabályai — és minden pavilonunkat konkrét berendezésekhez és konkrét előírásokhoz tervezzük.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Víz és csatorna",
+        "text": "Vízbekötés, mosdók, elvezetés — minden az egészségügyi szabványoknak megfelelően. Iparágtól függetlenül az egészségügyi ellenőrzés akadálytalanul átmegy."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Elektromos hálózat a berendezésekhez",
+        "text": "Megerősített hálózat hajszárítókhoz, kezelőlámpákhoz, sterilizátorokhoz vagy ipari mosógépekhez. Mondja el, milyen berendezést tervez beállítani, és mi a konkrét eszközökhöz igazítjuk a áramköröket."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Gépi szellőztetés",
+        "text": "Szellőztetés a vegyi gőzök és szagok elvezetésére. Ön tiszta levegőben dolgozik, az ügyfél kényelmes körülmények között várakozik — fülledtség és kellemetlen illatik nélkül."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Könnyen karbantartható burkolatok",
+        "text": "Csúszásmentes padló, mosható falak, vegyi anyagoknak ellenálló munkalapok. A napi fertőtlenítés percekbe telik, nem órákba."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Az árban",
+    "h2": "Mit kap a STAGO-tól",
+    "items": [
+      {
+        "h3": "Ingyenes 3D látványterv",
+        "text": "Mondja el, mire van szüksége. Megrajzoljuk. 3D-ben láthatja a pavilont, mielőtt egyetlen eurót kiadna. Módosítjuk, amíg nem mondja, hogy \"igen\"."
+      },
+      {
+        "h3": "Szállítás és telepítés az árban",
+        "text": "A pavilon félpótkocsin érkezik üzemünkből Jędrzejówból. Csapatunk felállítja a helyszínen. Szállítás Magyarországra. Ön megmutatja, hol álljon."
+      },
+      {
+        "h3": "2 év garancia + szerviz",
+        "text": "Szerkezet, falak, tető — 2 év garancia. A garancia után sem hagyjuk magukra ügyfeleinket. Saját embereink vannak, nem keresünk senkit telefonon."
+      },
+      {
+        "h3": "Segítség a dokumentációval",
+        "text": "Segítünk az export dokumentáció és a helyi engedélyezési eljárás előkészítésében. Gyorsabban, hatékonyabban, stressz nélkül."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nézze meg élőben",
+    "h2": "Így néznek ki megvalósításaink",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "STAGO szolgáltatási pavilon — megvalósítás 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "STAGO szolgáltatási pavilon — megvalósítás 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "STAGO szolgáltatási pavilon — megvalósítás 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-uslugowy",
+    "eyebrow": "Kérdések",
+    "h2": "Amit az iparág ügyfelei kérdeznek",
+    "items": [
+      {
+        "q": "Mennyibe kerül egy szolgáltatási pavilon?",
+        "a": "Egy 5×3 m-es modul alapszerelésekkel kb. 5 750 € nettó-tól indul. Nagyobb szalon két munkahellyel — 9 200–12 650 €. A végleges ár a berendezések számától, csatlakozásoktól és a belső burkolattól függ."
+      },
+      {
+        "q": "Megfelel a pavilon az egészségügyi követelményeknek?",
+        "a": "Igen. Az adott iparág követelményeinek megfelelően tervezzük. Az egészségügyi ellenőrzés bejön, megnézi és aláírja a jegyzőkönyvet. Több tucat ügyfelünk már üzemeltet szalonokat és szervizeket STAGO pavilonokban."
+      },
+      {
+        "q": "Lehet egynél több munkahelyem?",
+        "a": "Igen. Modulokat kapcsolunk egymás mellé, így nagyobb pavilonok jönnek létre — 8×3 m vagy 12×3 m — két vagy három munkahellyel. Csak mondja el, hány ember fog egyszerre dolgozni, és javasoljuk a megfelelő elrendezést."
+      },
+      {
+        "q": "Mi van, ha még nincs ötletem a belső elrendezésre?",
+        "a": "Segítünk összeállítani. A terv közösen készül — megkérdezzük, mire van szüksége, és tanácsot adunk, hová érdemes a mosdót, a széket vagy a WC-t elhelyezni. A szerepünk nem ér véget a pavilon gyártásánál."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Kezdjük",
+    "h2": "Mondja el, mire van szüksége",
+    "textareaPlaceholder": "Mit szeretne csinálni? Milyen méret? Hol fog állni?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Kereskedelmi pavilon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Vendéglátó pavilon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Irodakonténer"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Szolgáltatási pavilon"
+      },
+      {
+        "value": "socjalny",
+        "label": "Építkezési konténer"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Egész éves házikó"
+      },
+      {
+        "value": "specjalny",
+        "label": "Különleges pavilon"
+      }
+    ],
+    "infoH3": "Hogyan működik?",
+    "infoText": "Ír vagy hív. Megkérdezzük a részleteket. Elkészítjük a 3D látványtervet. Megadjuk az árat szállítással és telepítéssel. Meglepetések nélkül.",
+    "features": [
+      {
+        "text": "3D látványterv — megnézheti, mielőtt megrendelné"
+      },
+      {
+        "text": "Ár szállítással és telepítéssel"
+      },
+      {
+        "text": "Segítség a dokumentációval"
+      },
+      {
+        "text": "Válasz egy munkanapon belül"
+      }
+    ],
+    "selectedType": "uslugowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/icon.webp",
+      "alt": "Összes modell",
+      "label": "Modellek",
+      "h3": "Tekintse meg mind a 12 modellt",
+      "text": "Minden modellt az Ön igényeihez igazítunk. Böngéssze végig a teljes katalógust."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Felhasználás",
+      "label": "Felhasználás",
+      "h3": "Egyéb felhasználások",
+      "text": "Nézze meg, mit csinálunk még — bolt, iroda, lakás, vendéglátás, rendelő."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Árlista 2026",
+      "label": "Útmutató",
+      "h3": "Pavilon árlista 2026",
+      "text": "Konkrét összegek, ködösítés nélkül. Nézze meg, mennyit fizet."
+    }
+  ],
+  "jsonLd": {
+    "name": "STAGO szolgáltatási pavilon",
+    "description": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Víz, áram, csatorna — minden kész. Kb. 5 750 € nettó-tól.",
+    "image": "https://stago.com.pl/assets/modele/icon.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

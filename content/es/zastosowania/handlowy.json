@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pabellón comercial — tienda, quiosco, punto de venta | STAGO",
+    "description": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde 3 450 € neto.",
+    "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
+    "ogTitle": "Pabellón comercial — tienda, quiosco, punto de venta | STAGO",
+    "ogDescription": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde 3 450 € neto.",
+    "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
+  },
+  "breadcrumb": "Comerciales",
+  "productType": "handlowy",
+  "hero": {
+    "img": "../assets/modele/loft.webp",
+    "imgAlt": "Pabellón comercial STAGO — modelo LOFT",
+    "h1": "Pabellón comercial.",
+    "subtitle": "Tienda, quiosco, punto de venta en plaza, mercadillo. Sabemos que el cliente decide entrar en pocos segundos — por eso diseñamos vitrinas para la exposición, iluminación que realza el producto y una entrada cómoda. Díganos qué vende — le propondremos una distribución que trabaje para sus ventas.",
+    "price": "desde 3 450 € neto",
+    "priceNote": "/ pabellón 3×2m listo para el comercio",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Comercial",
+    "articleHref": "../modele.html",
+    "articleText": "Ver los 12 modelos &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelos recomendados",
+    "h2": "Modelos que causan buena primera impresión",
+    "sub": "La primera impresión queda grabada en la memoria del cliente. Estos modelos funcionan mejor en el comercio — aunque cada uno lo adaptamos a su idea.",
+    "items": [
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Frente de showroom con tres vitrinas",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pabellón STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Volumen alargado con frente de vitrinas",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pabellón STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Volumen con acentos laterales y frente",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Pabellón STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Volumen compacto con vitrina completa",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pabellón STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Volumen con esquinas panorámicas",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pabellón STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Para este sector",
+    "h2": "Lo que preparamos para el comercio",
+    "sub": "Cada elemento está pensado para la venta — no tomado prestado de otra categoría de pabellones.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Vitrinas para su surtido",
+        "text": "Grandes ventanas panorámicas, vitrinas en esquina, ventana de despacho. Nos dice qué vende y diseñamos la distribución de huecos para su producto concreto. La exposición visible desde la acera es la mitad del éxito."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0012 2z\"/></svg>",
+        "h3": "Iluminación para la exposición",
+        "text": "Iluminación LED planificada para que el producto luzca fresco y atractivo. Además, instalación preparada para caja registradora y terminal de pago — sin improvisaciones el día de la apertura."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Entrada cómoda para el cliente",
+        "text": "Puertas correderas de aluminio, plataforma, rampa para carritos. El cliente entra de forma natural — sin preguntarse dónde ni en qué dirección abrir la puerta."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0110 0v4\"/></svg>",
+        "h3": "Seguridad fuera de horario",
+        "text": "Bastidor de acero, cerraduras multipunto, persianas antirrobo opcionales. Cierra el pabellón con llave y duerme tranquilo — ningún intruso casual podrá sin herramienta pesada."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluido",
+    "h2": "Lo que recibe de STAGO",
+    "items": [
+      {
+        "h3": "Visualización 3D gratuita",
+        "text": "Díganos qué necesita. Dibujamos. Verá el pabellón en 3D antes de gastar un céntimo. Lo cambiamos hasta que diga \"sí\"."
+      },
+      {
+        "h3": "Transporte y montaje incluidos",
+        "text": "El pabellón viaja en camión desde nuestra fábrica en Jędrzejów. Nuestro equipo lo instala in situ. Usted indica dónde debe ir. Entrega en España."
+      },
+      {
+        "h3": "2 años de garantía + servicio",
+        "text": "Estructura, paredes, cubierta — 2 años de garantía. Después de la garantía tampoco abandonamos a nuestros clientes. Tenemos nuestro propio equipo."
+      },
+      {
+        "h3": "Ayuda con la documentación",
+        "text": "Le asesoramos sobre la normativa local y le ayudamos a preparar la documentación necesaria."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Véalo en persona",
+    "h2": "Así son nuestras realizaciones",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Pabellón comercial STAGO — realización 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Pabellón comercial STAGO — realización 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Pabellón comercial STAGO — realización 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-handlowy",
+    "eyebrow": "Preguntas",
+    "h2": "Lo que preguntan los clientes de este sector",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta un pabellón comercial?",
+        "a": "Un pequeño quiosco de 3×2 m empieza desde 3 450 € neto. Una tienda de 6×3 m — desde 6 440 € neto. Un punto mayor de 12×3 m con vitrinas y trastienda — desde 11 040 € neto. Cada presupuesto lo preparamos individualmente y gratis: <strong><a href=\"mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Comercial\">kontakt@stago.com.pl</a></strong>."
+      },
+      {
+        "q": "¿Necesito licencia para un pabellón comercial?",
+        "a": "Depende de la normativa municipal de su localidad en España. Generalmente se requiere licencia de actividad o declaración responsable. Le asesoramos sobre la documentación necesaria para su caso."
+      },
+      {
+        "q": "¿Puedo tener ventana de despacho y a la vez espacio para clientes dentro?",
+        "a": "Por supuesto. Realizamos ventanas de despacho para atención exterior, vitrinas de tienda de tamaño completo y puertas con persianas antirrobo — en cualquier configuración. Díganos cómo se imagina la atención al cliente y adaptaremos la distribución de huecos a su idea."
+      },
+      {
+        "q": "¿Cómo se calienta el pabellón en invierno y cuánto cuesta?",
+        "a": "La solución más popular es climatización con bomba de calor — calienta en invierno y enfría en verano. Las paredes con aislamiento PIR de 100 mm retienen el calor como un edificio de ladrillo. En un pabellón pequeño, la factura mensual de calefacción en temporada de invierno suele ser de 80–120 €."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Empecemos",
+    "h2": "Díganos qué necesita",
+    "textareaPlaceholder": "¿Qué quiere hacer? ¿Qué tamaño? ¿Dónde debe estar?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pabellón comercial"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pabellón de hostelería"
+      },
+      {
+        "value": "biurowy",
+        "label": "Contenedor de oficina"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pabellón de servicios"
+      },
+      {
+        "value": "socjalny",
+        "label": "Contenedor para obra"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casita residencial"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pabellón especial"
+      }
+    ],
+    "infoH3": "¿Cómo funciona?",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
+    "features": [
+      {
+        "text": "Visualización 3D — véalo antes de encargar"
+      },
+      {
+        "text": "Precio con transporte y montaje incluidos"
+      },
+      {
+        "text": "Ayuda con documentación y trámites"
+      },
+      {
+        "text": "Respuesta en un día laborable"
+      }
+    ],
+    "selectedType": "handlowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/loft.webp",
+      "alt": "Todos los modelos",
+      "label": "Modelos",
+      "h3": "Vea los 12 modelos",
+      "text": "Cada modelo lo adaptamos a su uso. Explore todo el catálogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Aplicaciones",
+      "label": "Aplicaciones",
+      "h3": "Otras aplicaciones",
+      "text": "Vea qué más hacemos — tienda, oficina, vivienda, hostelería, gabinete."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Precios 2026",
+      "label": "Guía",
+      "h3": "Precios de pabellones 2026",
+      "text": "Cifras concretas, sin rodeos. Vea cuánto pagará."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pabellón comercial STAGO",
+    "description": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde 3 450 € neto.",
+    "image": "https://stago.com.pl/assets/modele/loft.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

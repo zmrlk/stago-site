@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "STAGO pavilon modellek — 12 minta választékban",
+    "description": "12 moduláris pavilon modell a STAGO-tól. Fa, grafit, mix. Válasszon mintát — a méretet, színt, nyílászárókat és belső teret az Ön igényeihez igazítjuk.",
+    "canonical": "https://stago.com.pl/modele.html",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "hero": {
+    "eyebrow": "Modelljeink",
+    "h1": "Válasszon mintát.",
+    "h1accent": "A többit mi igazítjuk.",
+    "sub": "12 modell kiindulópontként — inspiráció formában és jellegben. Méret, szín, nyílászárók, belső tér, felszereltség — mindent az Ön igényei szerint tervezünk. Minden pavilon egyedi, minden konkrét helyzetre szabott."
+  },
+  "models": [
+    { "code": "ATRI", "name": "ATRI", "img": "assets/modele/atri.webp", "alt": "ATRI pavilon — világos tölgy, nyitott belső tér", "desc": "Világos fa lamellák, sok üveg, tolóajtók. Nyitott, meghitt átrium.", "href": "modele/atri.html" },
+    { "code": "MILA", "name": "MILA", "img": "assets/modele/mila.webp", "alt": "MILA pavilon — skandináv nyugalom fában", "desc": "Teljes fa homlokzat világos tónusban. Nyugalom és melegség felesleges részletek nélkül.", "href": "modele/mila.html" },
+    { "code": "ICON", "name": "ICON", "img": "assets/modele/icon.webp", "alt": "ICON pavilon — fa loft prémium", "desc": "Fa homlokzat, hatalmas saroküvegek. Építészeti stúdió a maga teljességében.", "href": "modele/icon.html" },
+    { "code": "RYTM", "name": "RYTM", "img": "assets/modele/rytm.webp", "alt": "RYTM pavilon — fa keret, szimmetrikus front", "desc": "Függőleges fa lamellák keretben, fekete front, szimmetrikus ajtók.", "href": "modele/rytm.html" },
+    { "code": "NORD", "name": "NORD", "img": "assets/modele/nord.webp", "alt": "NORD pavilon — antracit fa akcentusokkal", "desc": "Antracit + fa a sarkokban + hatalmas saroküvegezés. Skandináv prémium.", "href": "modele/nord.html" },
+    { "code": "LOFT", "name": "LOFT", "img": "assets/modele/loft.webp", "alt": "LOFT pavilon — fa, grafit, hatalmas kirakatablak", "desc": "Függőleges fa lamellák, grafit tető, három nagy kirakat. Showroom-érzés.", "href": "modele/loft.html" },
+    { "code": "SAGA", "name": "SAGA", "img": "assets/modele/saga.webp", "alt": "SAGA pavilon — fa felső rész, grafit front", "desc": "Fa homlokzat felül, grafit alul, három nagy kirakat. Vendéglátásra kész.", "href": "modele/saga.html" },
+    { "code": "VIEW", "name": "VIEW", "img": "assets/modele/view.webp", "alt": "VIEW pavilon — fa, grafit, saroküvegek", "desc": "Fa felső sáv, grafit korpusz, panorámás saroküvegezés.", "href": "modele/view.html" },
+    { "code": "DUET", "name": "DUET", "img": "assets/modele/duet.webp", "alt": "DUET pavilon — grafit fa akcentusokkal", "desc": "Grafit korpusz, fa lamellák az oldalakon, három nagy frontális kirakat.", "href": "modele/duet.html" },
+    { "code": "CUBE", "name": "CUBE", "img": "assets/modele/cube.webp", "alt": "CUBE pavilon — fekete kocka fa betéttel", "desc": "Fekete moduláris kocka, fa betét akcentusként. Tiszta geometria.", "href": "modele/cube.html" },
+    { "code": "NOIR", "name": "NOIR", "img": "assets/modele/noir.webp", "alt": "NOIR pavilon — fekete lamellák, sötét minimalizmus", "desc": "Függőleges fekete lamellák, hosszúkás ablakok, berlini butik jelleg.", "href": "modele/noir.html" },
+    { "code": "KIOS", "name": "KIOS", "img": "assets/modele/kios.webp", "alt": "KIOS pavilon — kicsi, fekete, kereskedelemre kész", "desc": "Kompakt fekete pavilon nagy üvegkirakattal. Kis alapterület, nagy karakter.", "href": "modele/kios.html" }
+  ],
+  "cta": {
+    "h2": "Nem tudja, melyiket válassza?",
+    "sub": "Mondja el, mire kell. Javaslunk 2-3 modellt és készítünk egy ingyenes látványtervet."
+  }
+}

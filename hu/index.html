@@ -2,125 +2,723 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
+  <!-- GTM + GA4 (deferred until interaction or 3s) -->
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moduláris pavilonok Lengyelországból — STAGO | Gyártó</title>
-  <meta name="description" content="STAGO — moduláris pavilonok lengyel gyártója. Üzletek, irodák, vendéglátás, lakómodulok. Szállítás Magyarországra. Lengyel minőség, európai árak.">
-  <link rel="canonical" href="https://stago.com.pl/hu/">
-  <link rel="alternate" hreflang="pl" href="https://stago.com.pl/">
-  <link rel="alternate" hreflang="hu" href="https://stago.com.pl/hu/">
+  <title>STAGO — Moduláris pavilonok, konténerek, kulcsrakész épületek</title>
+  <meta name="description" content="STAGO — moduláris pavilonok gyártója. Üzlet, iroda, lakás — kulcsrakészen. Ingyenes látványterv, telepítés az árban, 2 év garancia. Szállítás Magyarországra.">
+  <meta name="author" content="STAGO">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://stago.com.pl/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stago.com.pl/">
+  <meta property="og:title" content="STAGO — Moduláris pavilonok, konténerek, kulcsrakész épületek">
+  <meta property="og:description" content="Moduláris pavilonok gyártója. Handlowe, biurowe, mieszkalne. Darmowa wizualizacja, montaż w cenie, gwarancja 2 lata.">
+  <meta property="og:image" content="https://stago.com.pl/assets/og.jpg">
+  <meta property="og:locale" content="hu_HU">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="STAGO — Moduláris pavilonok, konténerek, kulcsrakész épületek">
+  <meta name="twitter:description" content="Moduláris pavilonok gyártója. Darmowa wizualizacja, montaż w cenie, 2 lata gwarancji.">
+  <meta name="twitter:image" content="https://stago.com.pl/assets/og.jpg">
+
   <meta name="theme-color" content="#1D1D1B">
-  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css"></noscript><style>
-@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
-*,*::before,*::after{box-sizing:border-box}
-body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}
-.nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;background:rgba(255,255,255,.94);border-bottom:1px solid #E5E5E5}
-.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
-.hero-h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-.04em;line-height:1.08;color:#fff;margin:0 0 16px}
-img{max-width:100%;height:auto}
-</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css"></noscript><style>body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
   <link rel="icon" type="image/png" href="../assets/sygnet.png">
+  <link rel="alternate" hreflang="pl" href="https://stago.com.pl/index.html">
+  <link rel="alternate" hreflang="de" href="https://stago.com.pl/de/index.html">
+  <link rel="alternate" hreflang="cs" href="https://stago.com.pl/cz/index.html">
+  <link rel="alternate" hreflang="sk" href="https://stago.com.pl/sk/index.html">
+  <link rel="alternate" hreflang="hu" href="https://stago.com.pl/hu/index.html">
+  <link rel="alternate" hreflang="it" href="https://stago.com.pl/it/index.html">
+  <link rel="alternate" hreflang="es" href="https://stago.com.pl/es/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://stago.com.pl/index.html">
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNJQZHX6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <a href="#historia" class="skip-link">Ugrás a tartalomhoz</a>
+
+  <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo"><img src="../assets/logo.webp" alt="STAGO" class="nav-logo-img" width="130" height="29"></a>
+      <a href="../hu/index.html" class="nav-logo"><img src="../assets/logo.webp" alt="STAGO" class="nav-logo-img" width="130" height="29"></a>
       <div class="nav-links" id="nav-links">
-        <a href="#models">Modellek</a>
-        <a href="#export">Alkalmazások</a>
-        <a href="#contact">Kapcsolat</a>
-        <a href="../index.html" style="font-size:.85rem">🇵🇱 PL</a>
+        <a href="../hu/modele.html">Modellek</a>
+        <a href="../hu/zastosowania.html">Alkalmazások</a>
+        <a href="../hu/realizacje.html">Referenciák</a>
+        <a href="../hu/finansowanie.html">Finanszírozás</a>
+        <a href="../hu/faq.html">GYIK</a>
+        <a href="../hu/kontakt.html">Kapcsolat</a>
+        <a href="mailto:kontakt@stago.com.pl?subject=HU%20—%20Ajánlatkérés" class="btn btn-nav">Ingyenes árajánlat</a>
+        <div class="nav-mobile-bottom">
+          <a href="tel:+48509508210" class="nav-mobile-phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            509 508 210
+          </a>
+          <div class="nav-mobile-socials">
+            <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48V13a8.28 8.28 0 005.58 2.15V11.7a4.83 4.83 0 01-3.77-1.24V6.69h3.77z"/></svg></a>
+          </div>
+        </div>
       </div>
       <div class="nav-right">
-        <a href="tel:+48509508210" class="nav-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+48 509 508 210</a>
+        <div class="nav-social">
+          <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+        <div class="lang-switch">
+          <button class="lang-btn" aria-label="Language">🇭🇺</button>
+          <div class="lang-dropdown" style="display:none">
+            <a href="../index.html">🇵🇱 Polski</a>
+            <a href="../de/index.html">🇩🇪 Deutsch</a>
+            <a href="../cz/index.html">🇨🇿 Čeština</a>
+            <a href="../sk/index.html">🇸🇰 Slovenčina</a>
+            <a href="../hu/index.html">🇭🇺 Magyar</a>
+            <a href="../it/index.html">🇮🇹 Italiano</a>
+            <a href="../es/index.html">🇪🇸 Español</a>
+          </div>
+        </div>
+        <a href="tel:+48509508210" class="nav-phone">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          509 508 210
+        </a>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <section class="container country-hero">
-    <span class="country-flag">🇭🇺</span>
-    <h1 class="h1">Moduláris pavilonok Lengyelországból. <span class="accent">Közvetlenül a gyártótól.</span></h1>
-    <p class="hub-sub" style="max-width:760px;margin:24px auto 32px">A STAGO minőségi moduláris pavilonokat gyárt Lengyelországban — és egész Magyarországra szállítunk. Üzletek, irodák, vendéglátás, lakómodulok. Acélkeret, PIR szigetelés 100mm, alumínium nyílászárók. Jobb minőség európai áron.</p>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-      <a href="mailto:export@stago.com.pl?subject=Magyarorsz%C3%A1g%20%E2%80%94%20Inquiry" class="btn btn-primary btn-lg">Ingyenes ajánlat</a>
-      <a href="tel:+48509508210" class="btn btn-outline-dark">Hívás: +48 509 508 210</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url(../assets/hero1.webp)"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-badge">Moduláris pavilonok gyártója &middot; Szállítás Magyarországra</p>
+      <h1 class="hero-h1">Az Ön tere.<br><span class="accent">Kompromisszumok nélkül.</span></h1>
+      <p class="hero-sub">Az Ön igényei szerint tervezzük és építjük. Ingyenes látványterv, telepítés az árban, 2 év garancia.</p>
+      <div class="hero-cta">
+        <a href="mailto:kontakt@stago.com.pl?subject=HU%20—%20Ajánlatkérés" class="btn btn-primary">Ingyenes árajánlat</a>
+        <a href="#historia" class="btn btn-outline-light">Tovább</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
   </section>
 
-  <section class="section section-light" id="models">
+  <!-- CASE STUDY -->
+  <section class="section" id="historia">
     <div class="container">
-      <h2 class="h2">Európai minőség</h2>
-      <div class="country-usp-grid">
-        <div class="country-usp"><h3>Európai minőség, lengyel ár</h3><p>Ugyanazon szabványok szerint építünk, mint a nyugati gyártók — acélkeret, PIR szigetelés 100mm, alumínium nyílászárók. De töredékáron.</p></div>
-        <div class="country-usp"><h3>Szállítás egész Magyarországra</h3><p>Saját szállítás lengyelországi üzemünkből. Szállítási idő Magyarországra: 3-5 nap. Helyszíni szerelés csapatunkkal.</p></div>
-        <div class="country-usp"><h3>Mindent egyedi méretre</h3><p>12 modell kiindulópontként — méret, anyag, szín, belső felszerelés egyénileg testreszabva. Üzlet, iroda, lakás, kerti pavilon.</p></div>
+      <div class="story-hero-block reveal">
+        <div class="story-hero-img">
+          <img src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak Tomka — pawilon handlowy STAGO" width="800" height="450" loading="lazy">
+        </div>
+        <div class="story-hero-text">
+          <p class="eyebrow">Ügyfél története</p>
+          <p class="story-intro">Bérleti díjat fizet egy helyiségért, amely soha nem lesz az Öné? Talán ideje változtatni — ahogy Tomek tette.</p>
+          <h2 class="story-h2">Tomek áthelyezte a zöldségesét. <span class="accent">A saját feltételei szerint.</span></h2>
+        </div>
+      </div>
+      <div class="story-narrative">
+        
+        <div class="story-chapter reveal">
+          <div class="story-chapter-label">Helyzet</div>
+          <p>Tomek bérelt helyiségben üzemeltetett zöldségest. Éveken át fizetett bérleti díjat, amely semmit nem épített számára. Egy nap a tulajdonos emelte a díjat — és Tomek más megoldást keresett.</p>
+        </div>
+        
+        <div class="story-chapter reveal">
+          <div class="story-chapter-label">Egyetlen telefonhívás</div>
+          <p>Felhívott minket. Megterveztünk egy pavilont nagy kirakattal a gyümölcskiállításhoz és hűtőhelyiséggel. Tomeknek saját ötletei voltak — módosítottuk az elrendezést, kiválasztottuk a színeket. Két megbeszélés és kész.</p>
+        </div>
+        
+        <div class="story-chapter reveal">
+          <div class="story-chapter-label">Eredmény</div>
+          <p>Ma a saját telkén áll, a saját feltételei szerint. A lízingrészlet alacsonyabb, mint a korábbi bérleti díj. Az ügyfelek azt mondják, jobban néz ki, mint a város boltjainak fele. Néhány év múlva a pavilon teljes egészében az övé lesz.</p>
+        </div>
+        
+      </div>
+      <div class="story-bottom reveal">
+        <blockquote class="story-pullquote">"Csak egy dolgot sajnálok — hogy nem hívtam korábban."<cite>— Tomek, zöldséges, Busko-Zdrój</cite></blockquote>
+        <a href="mailto:kontakt@stago.com.pl?subject=HU%20—%20Ajánlatkérés" class="btn btn-primary">Én is ilyet akarok — ingyenes árajánlat</a>
       </div>
     </div>
   </section>
 
-  <section class="section" id="export">
+  <!-- CZYNSZ VS WŁASNY (czarne tło) -->
+  <section class="section section-dark" id="porownanie">
     <div class="container">
-      <div class="country-export-info">
-        <h3>Export Magyarországra — feltételek</h3>
-        <ul>
-          <li><strong>Szállítási idő:</strong> 3-5 nap</li>
-          <li><strong>Szállítás:</strong> az árban</li>
-          <li><strong>Szerelés:</strong> az árban</li>
-          <li><strong>Garancia:</strong> 2 év + szerviz</li>
-          <li><strong>Vám:</strong> EU — díjmentes</li>
-          <li><strong>ÁFA:</strong> HU számlát állítunk ki</li>
-        </ul>
+      <p class="eyebrow">Bérlés vs saját helyiség</p>
+      <h2 class="h2">Bérelni vagy saját pavilont?<br><span class="accent">Számolja ki maga.</span></h2>
+      <p class="sub">Legtöbb ügyfelünk korábban bérelt. Aztán utánaszámoltak.</p>
+      <div class="compare-grid">
+        <div class="compare-card compare-bad reveal">
+          <div class="compare-label">Bérel</div>
+          <div class="compare-price">700 €<span>/hó</span></div>
+          <ul class="compare-list">
+            <li>36 hónap = <strong>25 200 €</strong></li><li>A helyiség soha nem lesz az Öné</li><li>Bérleti díj emelés bármikor, a tulajdonos döntése</li><li>Felújítás? Az Ön pénzéből, más helyiségében</li><li>Nem működik a helyszín? Sajnos a szerződés köt</li>
+          </ul>
+        </div>
+        <div class="compare-card compare-good reveal">
+          <div class="compare-label">Saját pavilonja van</div>
+          <div class="compare-price">~280 €<span>/hó részlet</span></div>
+          <ul class="compare-list">
+            <li>Törlesztés után = <strong>örökre az Öné</strong></li><li>Nulla bérleti díj élete végéig</li><li>Áthelyezi, ahová akarja — félpótkocsi és néhány óra</li><li>Eladja, amikor akarja, visszakapja a pénzét</li><li>Úgy néz ki és úgy működik, ahogy Ön akarja — mert az Öné</li>
+          </ul>
+          <a href="mailto:kontakt@stago.com.pl?subject=HU%20—%20Ajánlatkérés" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center">Pavilon árajánlat</a>
+        </div>
       </div>
+      <p class="compare-footnote reveal">A lízingrészlet tájékoztató jellegű, kb. 8 000 € nettó értékű pavilonnál 36 hónapra. A pontos finanszírozási ajánlatot egyedileg állítjuk össze.</p>
     </div>
   </section>
 
-  <section class="section section-light">
+  <!-- FINANSOWANIE -->
+  <section class="section" id="finansowanie">
     <div class="container">
-      <h2 class="h2">12 modellek</h2>
-      <p class="section-sub" style="max-width:680px;margin:0 auto 40px">A STAGO minőségi moduláris pavilonokat gyárt Lengyelországban — és egész Magyarországra szállítunk.</p>
-      <div class="hub-grid" style="margin-top:24px">
-        <a href="../modele/nord.html" class="hub-card"><div class="hub-card-img"><img src="../assets/modele/nord.webp" alt="STAGO NORD" loading="lazy"></div><div class="hub-card-body"><span class="hub-card-code">NORD</span><h3>NORD</h3><span class="hub-card-cta">→</span></div></a>
-        <a href="../modele/loft.html" class="hub-card"><div class="hub-card-img"><img src="../assets/modele/loft.webp" alt="STAGO LOFT" loading="lazy"></div><div class="hub-card-body"><span class="hub-card-code">LOFT</span><h3>LOFT</h3><span class="hub-card-cta">→</span></div></a>
-        <a href="../modele/duet.html" class="hub-card"><div class="hub-card-img"><img src="../assets/modele/duet.webp" alt="STAGO DUET" loading="lazy"></div><div class="hub-card-body"><span class="hub-card-code">DUET</span><h3>DUET</h3><span class="hub-card-cta">→</span></div></a>
-        <a href="../modele/icon.html" class="hub-card"><div class="hub-card-img"><img src="../assets/modele/icon.webp" alt="STAGO ICON" loading="lazy"></div><div class="hub-card-body"><span class="hub-card-code">ICON</span><h3>ICON</h3><span class="hub-card-cta">→</span></div></a>
-        <a href="../modele/mila.html" class="hub-card"><div class="hub-card-img"><img src="../assets/modele/mila.webp" alt="STAGO MILA" loading="lazy"></div><div class="hub-card-body"><span class="hub-card-code">MILA</span><h3>MILA</h3><span class="hub-card-cta">→</span></div></a>
-        <a href="../modele/noir.html" class="hub-card"><div class="hub-card-img"><img src="../assets/modele/noir.webp" alt="STAGO NOIR" loading="lazy"></div><div class="hub-card-body"><span class="hub-card-code">NOIR</span><h3>NOIR</h3><span class="hub-card-cta">→</span></div></a>
+      <p class="eyebrow">Finanszírozás?</p>
+      <h2 class="h2">Megvannak rá a <span class="accent">megoldásaink.</span></h2>
+      <p class="sub">Segítünk úgy összeállítani a finanszírozást, hogy a részlet alacsonyabb legyen, mint a korábbi bérleti díj. Három út — válassza azt, amelyik az Ön helyzetéhez illik.</p>
+      <div class="about-features">
+        
+        <div class="about-feature reveal">
+          <div class="about-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+          <h3>Lízing</h3>
+          <p>Lízingcégekkel dolgozunk együtt. A részlet a cég költségei közé tartozik, az ÁFA levonható. A törlesztés után a pavilon az Öné. Segítünk az adminisztrációval.</p>
+        </div>
+        
+        <div class="about-feature reveal">
+          <div class="about-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>Részletfizetés</h3>
+          <p>Nem céges vásárlás? Együttműködünk bankokkal, amelyek részlethitelt nyújtanak magánszemélyek számára. Igénylés általunk, döntés órák alatt.</p>
+        </div>
+        
+        <div class="about-feature reveal">
+          <div class="about-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3>EU pályázatok</h3>
+          <p>EU-s támogatási programok és helyi pályázati lehetőségek. Tanácsot adunk, mi jöhet szóba az Ön helyzetében.</p>
+        </div>
+        
+      </div>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="../hu/pawilon-vs-najem.html" class="btn btn-primary">Számítsa ki a megtakarítást &rarr;</a>
+        <a href="../hu/finansowanie.html" class="btn btn-outline-dark">Teljes finanszírozás &rarr;</a>
       </div>
     </div>
   </section>
 
-  <section class="section section-dark" id="contact">
-    <div class="container" style="text-align:center">
-      <h2 class="h2">Pavilonra van szüksége Magyarországon?</h2>
-      <p style="color:var(--t-light2);font-size:1.05rem;max-width:600px;margin:16px auto 32px">Mondja el, mire van szüksége — 24 órán belül elküldjük az ingyenes 3D vizualizációt és az árajánlatot.</p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-        <a href="mailto:export@stago.com.pl?subject=Magyarorsz%C3%A1g%20%E2%80%94%20Inquiry" class="btn btn-primary btn-lg">Ingyenes ajánlat</a>
-        <a href="tel:+48509508210" class="btn btn-outline-light">Hívás: +48 509 508 210</a>
+  <!-- PROCES -->
+  <section class="section section-process-bg" id="proces">
+    <div class="container">
+      <p class="eyebrow">Hogyan dolgozunk</p>
+      <h2 class="h2">Önnek csak telefonálnia kell.<br><span class="accent">A többit bízza ránk.</span></h2>
+      <div class="steps">
+        
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Kapcsolatfelvétel</h3>
+          <p>Mondja el, mire van szüksége. Nem kell centiméterig ismerni a méreteket — arra mi vagyunk. Tanácsot adunk, megoldást javaslunk.</p>
+        </div>
+        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
+        
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Ingyenes látványterv</h3>
+          <p>Megrajzoljuk, hogyan fog kinézni a pavilonja. 3D-ben láthatja, mielőtt egyetlen eurót kiadna. Nem tetszik? Módosítjuk. Annyiszor, ahányszor kell.</p>
+        </div>
+        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
+        
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Gyártás</h3>
+          <p>Saját üzemünkben építjük, saját felügyelet alatt. Minden szakaszt ellenőrzünk — a szerkezet hegesztésétől a nyílászárók beszereléséig. Meglátogathat minket és megnézheti a munkálatok állását.</p>
+        </div>
+        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
+        
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <h3>Szállítás és telepítés</h3>
+          <p>Félpótkocsin szállítjuk Önhöz, felállítjuk a helyszínen. Szállítás Magyarországra. Néhány óra és kész. Kulccsal lép be a saját terébe.</p>
+        </div>
+        <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
+        
       </div>
-      <p style="margin-top:32px;font-size:.85rem;color:var(--t-light2)">STAGO &middot; Jasionka 117, 28-300 Jędrzejów, Poland &middot; export@stago.com.pl</p>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="../hu/jak-kupic.html" class="btn btn-primary">A teljes folyamat lépésről lépésre &rarr;</a>
+      </div>
     </div>
   </section>
 
+  <!-- PRODUKTY -->
+  <section class="section section-light" id="produkty">
+    <div class="container">
+      <p class="eyebrow">Modelljeink</p>
+      <h2 class="h2">Válasszon mintát.<br><span class="accent">A rendeltetést Ön határozza meg.</span></h2>
+      <p class="sub">Minden mintát az Ön igényei szerint alakítunk — méret, anyag, szín, nyílászárók és belső tér. Az alábbiakban a hat legnépszerűbb modell.</p>
+      <div class="products-grid">
+        
+        <a href="modele/nord.html" class="product-card reveal">
+          <div class="product-img"><img src="../assets/modele/nord.webp" alt="NORD" loading="lazy"></div>
+          <div class="product-body">
+            <h3>NORD</h3>
+            <p>Antracit fa akcentusokkal a sarkokban, hatalmas saroküvegezés. Skandináv prémium. Forma, amelyet az első pillantás után megjegyez.</p>
+            <span class="product-price">kb. 5 750 € nettó-tól</span>
+            <span class="product-cta">NORD megtekintése &rarr;</span>
+          </div>
+        </a>
+        
+        <a href="modele/loft.html" class="product-card reveal">
+          <div class="product-img"><img src="../assets/modele/loft.webp" alt="LOFT" loading="lazy"></div>
+          <div class="product-body">
+            <h3>LOFT</h3>
+            <p>Fa lamellák, grafit tető, három nagy frontális kirakat. Showroom-érzés — a vásárlók bejönnek, mert látniuk kell, mi van belül.</p>
+            <span class="product-price">kb. 5 060 € nettó-tól</span>
+            <span class="product-cta">LOFT megtekintése &rarr;</span>
+          </div>
+        </a>
+        
+        <a href="modele/duet.html" class="product-card reveal">
+          <div class="product-img"><img src="../assets/modele/duet.webp" alt="DUET" loading="lazy"></div>
+          <div class="product-body">
+            <h3>DUET</h3>
+            <p>Grafit korpusz, fa lamellák az oldalakon, három ajtós kirakat. Univerzális minta vendéglátásra, kereskedelemre és irodai célra.</p>
+            <span class="product-price">kb. 5 060 € nettó-tól</span>
+            <span class="product-cta">DUET megtekintése &rarr;</span>
+          </div>
+        </a>
+        
+        <a href="modele/icon.html" class="product-card reveal">
+          <div class="product-img"><img src="../assets/modele/icon.webp" alt="ICON" loading="lazy"></div>
+          <div class="product-body">
+            <h3>ICON</h3>
+            <p>Fa homlokzat, hatalmas saroküvegek padlótól mennyezetig. Úgy néz ki, mint egy építészeti stúdió. Prémium vállalkozásoknak.</p>
+            <span class="product-price">egyedi árazás</span>
+            <span class="product-cta">ICON megtekintése &rarr;</span>
+          </div>
+        </a>
+        
+        <a href="modele/mila.html" class="product-card reveal">
+          <div class="product-img"><img src="../assets/modele/mila.webp" alt="MILA" loading="lazy"></div>
+          <div class="product-body">
+            <h3>MILA</h3>
+            <p>Teljes fa homlokzat világos tónusban. Skandináv nyugalom. Ideális iroda, lakás vagy meleg hangulatú rendelő számára.</p>
+            <span class="product-price">kb. 5 750 € nettó-tól</span>
+            <span class="product-cta">MILA megtekintése &rarr;</span>
+          </div>
+        </a>
+        
+        <a href="modele/noir.html" class="product-card reveal">
+          <div class="product-img"><img src="../assets/modele/noir.webp" alt="NOIR" loading="lazy"></div>
+          <div class="product-body">
+            <h3>NOIR</h3>
+            <p>Függőleges fekete lamellák, hosszúkás ablakok, berlini butik jelleg. Vállalkozásoknak, amelyek prémium megjelenést szeretnének.</p>
+            <span class="product-price">kb. 6 440 € nettó-tól</span>
+            <span class="product-cta">NOIR megtekintése &rarr;</span>
+          </div>
+        </a>
+        
+      </div>
+      <div class="section-cta reveal">
+        <a href="../hu/modele.html" class="btn btn-primary">Zobacz wszystkie 12 modeli</a>
+        <a href="mailto:kontakt@stago.com.pl?subject=HU%20—%20Ajánlatkérés" class="btn btn-outline-dark">Pavilon árajánlat</a>
+        <a href="tel:+48509508210" class="btn btn-outline-dark">Zadzwoń: 509 508 210</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- O FIRMIE -->
+  <section class="section section-about-bg" id="o-firmie">
+    <div class="container">
+      <p class="eyebrow">Saját gyártás</p>
+      <h2 class="h2">Minden egy fedél alatt.<br><span class="accent"></span></h2>
+      <div class="about-features">
+        
+        <div class="about-feature reveal">
+          <div class="about-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Mindent házon belül készítünk</h3>
+          <p>A szerkezetet saját üzemünkben hegesztjük Jędrzejów mellett. 100 mm PIR szigetelésű falak, alumínium nyílászárók, minden alaposan elkészítve. Télen megtartja a meleget, nyáron nem melegszik fel, mint egy bádogépület — és a számlák is jóval alacsonyabbak, mint gondolná.</p>
+        </div>
+        
+        <div class="about-feature reveal">
+          <div class="about-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Minden pavilon egyedi</h3>
+          <p>Mert minden ügyfélnek más az elképzelése. Az egyik piaci kioszk, a másik irodát, a harmadik telken házat szeretne. Ezért nem kínálunk kész megoldásokat — leülünk Önnel, megkérdezzük a részleteket és a nulláról tervezzük meg. Ha még nem tudja, hogyan nézzen ki, bemutatunk néhány javaslatot.</p>
+        </div>
+        
+        <div class="about-feature reveal">
+          <div class="about-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Egyetlen telefonhívás és kész</h3>
+          <p>Nem kell külön tervezőhöz, gyártóhoz és szerelőcsapathoz fordulnia. Egyszer hív minket — megbeszéljük, elkészítjük a látványtervet, árazunk, megépítjük és felállítjuk a telkén. Az első beszélgetéstől a kulcsátadásig mindennel mi foglalkozunk.</p>
+        </div>
+        
+      </div>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="../hu/technologia.html" class="btn btn-primary">Ismerjen meg minket közelebbről &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIE -->
+  <section class="section section-dark" id="opinie">
+    <div class="container">
+      <p class="eyebrow">Ügyfeleink véleménye</p>
+      <h2 class="h2">5.0 a Google-ön. <span class="review-count">5 opinii</span><br><span class="accent">Nem mi — ügyfeleink mondják.</span></h2>
+      <div class="reviews" id="google-reviews">
+        
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Nagyon kellemes légkör, kiváló kiszolgálás, gyors teljesítés. Mindenkinek ajánlom!"</p>
+          <div class="review-author">
+            <strong>Kacper Z.</strong>
+            <span>Google Reviews</span>
+          </div>
+        </div>
+        
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Kedves, professzionális kiszolgálás. A tanácson kívül mintaanyagot is kaptam saját ötletem kipróbálásához. Fantasztikus."</p>
+          <div class="review-author">
+            <strong>Nikodem S.</strong>
+            <span>Google Reviews</span>
+          </div>
+        </div>
+        
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Megbízható cég, tartják a határidőket. A pavilon pontosan úgy néz ki, mint a látványterven. Nulla meglepetés."</p>
+          <div class="review-author">
+            <strong>Marek W.</strong>
+            <span>Google Reviews</span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="reviews-cta">
+        <a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Zobacz wszystkie opinie na Google &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP REALIZACJE -->
+  <section class="section section-light" id="top-realizacje">
+    <div class="container">
+      <p class="eyebrow">Nasze realizacje</p>
+      <h2 class="h2">Nézze meg, <span class="accent">mit csinálunk.</span></h2>
+      <p class="sub">Minden projekt egyedi — minden az ügyfélé. Kattintson a nagyításhoz.</p>
+      <div class="realizacje-grid" style="margin-top:40px">
+        <div class="realizacja-card"><img src="../assets/gallery/realizacje/r2.webp" alt="Tywent — pawilon handlowy STAGO" loading="lazy"><div class="realizacja-label">Tywent &middot; salon firmowy</div></div>
+        <div class="realizacja-card"><img src="../assets/gallery/realizacje/r5.webp" alt="Lemon Vape — pawilon handlowy STAGO" loading="lazy"><div class="realizacja-label">Lemon Vape &middot; pawilon handlowy</div></div>
+        <div class="realizacja-card"><img src="../assets/gallery/realizacje/r1.webp" alt="Biuro miejskie — pawilon STAGO" loading="lazy"><div class="realizacja-label">Biuro miejskie &middot; czarna elewacja + drewno</div></div>
+      </div>
+      <div class="section-cta reveal" style="margin-top:48px">
+        <a href="../hu/realizacje.html" class="btn btn-primary">Zobacz wszystkie realizacje &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAZA WIEDZY / PORADNIKI -->
+  <section class="section" id="blog">
+    <div class="container">
+      <p class="eyebrow">Útmutatók</p>
+      <h2 class="h2">Amit tudnia kell</h2>
+      <p class="sub">vásárlás előtt.</p>
+      <div class="blog-grid">
+        
+        <a href="blog/pawilon-handlowy-cena.html" class="blog-card reveal">
+          <div class="blog-img"><img src="../assets/gallery/k2.webp" alt="Hogyan ellenőrizze a pavilongyártót szerződéskötés előtt" loading="lazy"></div>
+          <div class="blog-body">
+            <span class="blog-date">Útmutató</span>
+            <h3>Hogyan ellenőrizze a pavilongyártót szerződéskötés előtt</h3>
+            <p>7 konkrét dolog, amit ellenőriznie kell. Hegesztések, szigetelés, tető, rejtett költségek. Mielőtt utalná a pénzt — olvassa el.</p>
+          </div>
+        </a>
+        
+        <a href="blog/pawilon-bez-pozwolenia.html" class="blog-card reveal">
+          <div class="blog-img"><img src="../assets/gallery/k9.webp" alt="Megkapta a pavilont. És most mi van? Minőség-ellenőrzés lépésről lépésre." loading="lazy"></div>
+          <div class="blog-body">
+            <span class="blog-date">Útmutató</span>
+            <h3>Megkapta a pavilont. És most mi van? Minőség-ellenőrzés lépésről lépésre.</h3>
+            <p>A pavilon megérkezett a félpótkocsin. Mit ellenőrizzen, mielőtt aláírja az átadási jegyzőkönyvet? Tető, hegesztések, ablakok, padló — ellenőrzőlista.</p>
+          </div>
+        </a>
+        
+        <a href="blog/kontener-biurowy-cena.html" class="blog-card reveal">
+          <div class="blog-img"><img src="../assets/gallery/k6.webp" alt="Az első tél a pavilonban — amit senki nem mond el" loading="lazy"></div>
+          <div class="blog-body">
+            <span class="blog-date">Útmutató</span>
+            <h3>Az első tél a pavilonban — amit senki nem mond el</h3>
+            <p>Szigetelés, fűtés, párásodás, számlák. Valós számok és tanácsok valakitől, aki nem egy telet látott már.</p>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light" id="faq">
+    <div class="container">
+      <p class="eyebrow">GYIK</p>
+      <h2 class="h2">Ügyfeleink gyakran kérdezik:</h2>
+      <div class="faq-list">
+        
+        <details class="faq-item reveal">
+          <summary>Mennyibe kerül?</summary>
+          <p>A modelltől, mérettől és a belső felszereléstől függ. Hogy legyen egy képe — a legegyszerűbb modul kb. 2 800 € nettó-tól indul, a nagyobb, kulcsrakész pavilonok kb. 8 000–11 500 € körül mozognak. Minden projektet egyedileg és díjmentesen árazunk. Hívjon vagy írjon — konkrét összeget adunk, mielőtt bármit eldöntene.</p>
+        </details>
+        
+        <details class="faq-item reveal">
+          <summary>Mennyi az átfutási idő?</summary>
+          <p>A határidőt a szerződéskötéskor rögzítjük — és betartjuk. Attól függ, mit építünk. Egyszerűbb modul gyorsabban, összetettebb több időt igényel. A pontos átadási dátumot a foglalóbefizetés előtt ismeri — szerződésben, nem szóban.</p>
+        </details>
+        
+        <details class="faq-item reveal">
+          <summary>Kell-e építési engedély?</summary>
+          <p>Lengyelországban a 35 m²-ig terjedő pavilonokhoz általában bejelentés elegendő, nem engedély. Ez néhány nap kérdése, nem hónapoké. Magyarországi telepítés esetén az adott önkormányzati előírások irányadók — tanácsot adunk az Ön helyzetéhez.</p>
+        </details>
+        
+        <details class="faq-item reveal">
+          <summary>Magyarországra is szállítanak? Hol telepítenek?</summary>
+          <p>Igen, szállítunk Magyarországra. A pavilon félpótkocsin érkezik üzemünkből Jędrzejów mellől. Csapatunk a helyszínen telepíti — szilárd alapra (térkő, beton, lemezek) van szükség. A szállítás és telepítés az árban van. Ön csak megmutatja, hol álljon.</p>
+        </details>
+        
+        <details class="faq-item reveal">
+          <summary>Mi van télen? Meleg a pavilon?</summary>
+          <p>Pavilonjainkban PIR szigetelés van — ugyanaz a szigetelés, mint az energiatakarékos házakban. Télen belül meleg van, nyáron nem melegszik fel, mint egy bádogépület. Azok az ügyfelek, akiknek légkondicionálójuk van hőszivattyúval, havonta 50–100 €-t fizetnek a fűtésért. Ez nem ideiglenes megoldás — ez egész éves, teljes értékű tér.</p>
+        </details>
+        
+        <details class="faq-item reveal">
+          <summary>Mi a helyzet a garanciával?</summary>
+          <p>2 év garancia a szerkezetre, 1 év a szerelésre. De a garancia egy dolog — fontosabb, hogy az eladás után sem hagyjuk magukra ügyfeleinket. Történik valami? Hív, jövünk, javítunk. Saját üzemünk és saját embereink vannak — nem keresünk senkit telefonon.</p>
+        </details>
+        
+        <details class="faq-item reveal">
+          <summary>Meglátogathatom az üzemet?</summary>
+          <p>Igen — és bátorítjuk is. Üzemünk Jasionkában van, Jędrzejów mellett, Lengyelországban. Meglátogathat minket, megnézheti, hogyan hegesztjük a szerkezetet, megtapinthatja az anyagokat, beszélgethet a csapattal. A legtöbb ügyfél megteszi és nyugodtabban távozik.</p>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT / WYCENA -->
+  <section class="section section-dark" id="kontakt">
+    <div class="container">
+      <p class="eyebrow">Ingyenes árajánlat</p>
+      <h2 class="h2">Írja le, mire van szüksége.<br><span class="accent">24 órán belül visszahívjuk.</span></h2>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form" data-stago-form novalidate>
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Név" required aria-label="Név" autocomplete="name">
+            <input type="tel" name="phone" placeholder="Telefon" required aria-label="Telefon" autocomplete="tel" pattern="[0-9\s\+\-]{9,15}">
+          </div>
+          <input type="email" name="email" placeholder="E-mail (opcionális)" aria-label="Email" autocomplete="email">
+          <select name="typ" aria-label="Typ pawilonu">
+            <option value="">Wybierz model</option>
+            <option value="model-s">Model S</option>
+            <option value="model-m">Model M</option>
+            <option value="model-l">Model L</option>
+            <option value="model-t">Model T</option>
+            <option value="model-x">Model X</option>
+            <option value="model-glass">Model Glass</option>
+            <option value="inny">Inny / niestandardowy</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Írja le igényeit — méretek, helyszín, felhasználás..." aria-label="Üzenet"></textarea>
+          <!-- Honeypot — ukryte pole, boty je wypełniają -->
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Segédmező (ne töltse ki)"></div>
+          <label class="form-consent"><input type="checkbox" name="consent" required> Hozzájárulok személyes adataim kezeléséhez. <a href="../hu/polityka-prywatnosci.html" target="_blank">Adatvédelem</a></label>
+          <button type="submit" class="btn btn-primary btn-full" id="contact-submit">Ajánlatkérés küldése</button>
+          <p class="form-note">24 órán belül válaszolunk. Az árajánlat ingyenes és kötelezettségmentes.</p>
+          <p class="form-success" id="contact-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">Elküldve! 24 órán belül jelentkezünk.</p>
+          <p class="form-error" id="contact-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:12px"></p>
+        </form>
+        <div class="contact-info">
+          <div class="info-card reveal">
+            <h3>Hívás</h3>
+            <a href="tel:+48509508210" class="info-phone">509 508 210</a>
+            <p>H-P: 7:00-20:00<br>Szo: 8:00-14:00</p>
+          </div>
+          <div class="info-card reveal">
+            <h3>Látogasson el hozzánk</h3>
+            <p>Jasionka 117<br>28-300 Jędrzejów<br>Lengyelország</p>
+          </div>
+          <div class="info-card reveal">
+            <h3>Social media</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank">Facebook</a>
+              <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank">Instagram</a>
+              <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank">TikTok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="../assets/logo-white.webp" alt="STAGO" class="footer-logo" width="140" height="31" loading="lazy">
-        <p>Modular pavilions producer.<br>Jędrzejów, Poland.</p>
+        <p>Moduláris pavilonok gyártója.<br>Jędrzejów, Lengyelország.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/></svg></a>
+        </div>
       </div>
       <div class="footer-cols">
-        <div><h4>STAGO</h4><a href="../index.html">🇵🇱 Polska</a><a href="../de/">🇩🇪 Deutschland</a><a href="../cz/">🇨🇿 Česko</a><a href="../sk/">🇸🇰 Slovensko</a></div>
-        <div><h4>Export</h4><a href="../hu/">🇭🇺 Magyarország</a><a href="../it/">🇮🇹 Italia</a><a href="../es/">🇪🇸 España</a></div>
-        <div><h4>Kapcsolat</h4><a href="tel:+48509508210">+48 509 508 210</a><a href="mailto:export@stago.com.pl">export@stago.com.pl</a></div>
-        <div><h4>Address</h4><span class="footer-cities">Jasionka 117<br>28-300 Jędrzejów<br>Poland</span></div>
+        <div><h4>Modellek</h4><a href="../hu/modele.html">Mind a 12 modell</a><a href="../hu/modele/nord.html">NORD</a><a href="../hu/modele/loft.html">LOFT</a><a href="../hu/modele/duet.html">DUET</a><a href="../hu/modele/icon.html">ICON</a><a href="../hu/modele/mila.html">MILA</a></div>
+        <div><h4>Alkalmazások</h4><a href="../hu/zastosowania.html">Összes</a><a href="../hu/zastosowania/handlowy.html">Kereskedelmi</a><a href="../hu/zastosowania/biurowy.html">Irodai</a><a href="../hu/zastosowania/gastronomiczny.html">Gasztronómia</a><a href="../hu/zastosowania/uslugowy.html">Szolgáltatások</a><a href="../hu/zastosowania/mieszkalny.html">Lakó</a></div>
+        <div><h4>Cég</h4><a href="../hu/jak-kupic.html">Hogyan vásároljon</a><a href="../hu/technologia.html">Technológia</a><a href="../hu/finansowanie.html">Finanszírozás</a><a href="../hu/pawilon-vs-najem.html">Pavilon vs. bérlés</a><a href="../hu/realizacje.html">Referenciák</a><a href="../hu/dostepne-od-reki.html">Azonnal elérhető</a><a href="../hu/faq.html">GYIK</a></div>
+        <div><h4>Kapcsolat</h4><a href="tel:+48509508210">+48 509 508 210</a><a href="tel:+48509508110">+48 509 508 110</a><a href="mailto:kontakt@stago.com.pl">kontakt@stago.com.pl</a><a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Jasionka 117, Jędrzejów</a><a href="../hu/kontakt.html">Kapcsolat oldal &rarr;</a></div>
       </div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2026 STAGO &middot; Made by <a href="https://isiko.pl" target="_blank">ISIKO</a></p></div>
+    <div class="container footer-bottom">
+      <div class="footer-legal"><a href="../hu/polityka-prywatnosci.html">Adatvédelem</a><a href="../hu/regulamin.html">ÁSZF</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Cookie-beállítások</a></div>
+      <p>&copy; 2026 STAGO &middot; Készítette <a href="https://isiko.pl" target="_blank">ISIKO</a></p>
+    </div>
   </footer>
 
-  <script>document.getElementById('nav-toggle')?.addEventListener('click',function(){document.getElementById('nav-links').classList.toggle('open');});</script>
-  <script src="../cookies.js"></script>
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta">
+    <a href="tel:+48509508210" class="sticky-phone">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Hívás
+    </a>
+    <a href="../hu/konfigurator.html" class="sticky-quote">Ingyenes árajánlat</a>
+  </div>
+
+  <script src="../app.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "STAGO — Pawilony modułowe", "item": "https://stago.com.pl/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "STAGO - producent pawilonów",
+    "url": "https://stago.com.pl",
+    "telephone": "+48509508210",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jasionka 117",
+      "addressLocality": "Jędrzejów",
+      "postalCode": "28-300",
+      "addressCountry": "PL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "50.6424",
+      "longitude": "20.3024"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "5",
+      "bestRating": "5"
+    },
+    "openingHours": ["Mo-Fr 07:00-20:00", "Sa 08:00-14:00"],
+    "priceRange": "$$",
+    "image": "https://stago.com.pl/assets/hero.jpg",
+    "description": "Moduláris pavilonok gyártója. Pawilony handlowe, biurowe, mieszkalne, sanitarne. Darmowa wizualizacja, montaż w cenie, gwarancja 2 lata. Dostawa w całej Polsce.",
+    "sameAs": [
+      "https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr",
+      "https://instagram.com/stago_pawilony_modulowe",
+      "https://www.tiktok.com/@stago_pawilony_modulowe"
+    ],
+    "areaServed": [
+      {"@type": "Country", "name": "Polska"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "STAGO GROUP Sp. z o.o.",
+    "legalName": "STAGO GROUP Sp. z o.o.",
+    "url": "https://stago.com.pl",
+    "logo": "https://stago.com.pl/assets/logo.png",
+    "description": "Moduláris pavilonok gyártója. Projektujemy i budujemy pod klucz — sklepy, biura, domy, magazyny. Własny zakład w Jędrzejowie, dostawa w całej Polsce.",
+    "telephone": "+48509508210",
+    "email": "kontakt@stago.com.pl",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jasionka 117",
+      "addressLocality": "Jędrzejów",
+      "postalCode": "28-300",
+      "addressCountry": "PL"
+    },
+    "sameAs": [
+      "https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr",
+      "https://instagram.com/stago_pawilony_modulowe",
+      "https://www.tiktok.com/@stago_pawilony_modulowe"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+48509508210",
+      "contactType": "sales",
+      "availableLanguage": "Polish"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "STAGO",
+    "url": "https://stago.com.pl",
+    "description": "Producent pawilonów modułowych — projektowanie, produkcja, dostawa i montaż w całej Polsce.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "STAGO GROUP Sp. z o.o."
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Ile kosztuje pawilon modułowy?","acceptedAnswer":{"@type":"Answer","text":"Najprostszy moduł zaczyna się od ok. 12 000 zł netto, a większe, wykończone pod klucz to okolice 35 000–50 000 zł. Każdy projekt wyceniamy indywidualnie i zawsze za darmo."}},
+      {"@type":"Question","name":"Jak długo czeka się na pawilon?","acceptedAnswer":{"@type":"Answer","text":"Termin ustalamy przy podpisaniu umowy i go dotrzymujemy. Konkretną datę odbioru znasz zanim wpłacisz złotówkę."}},
+      {"@type":"Question","name":"Czy potrzebuję pozwolenia na budowę?","acceptedAnswer":{"@type":"Answer","text":"Jeśli pawilon ma do 35 m² — zazwyczaj wystarczy samo zgłoszenie, nie pozwolenie. Przy większych obiektach pomagamy przygotować dokumenty."}},
+      {"@type":"Question","name":"Gdzie montujecie pawilony?","acceptedAnswer":{"@type":"Answer","text":"W całej Polsce. Pawilon jedzie na naczepie z naszego zakładu pod Jędrzejowem. Transport i montaż są w cenie."}},
+      {"@type":"Question","name":"Czy pawilon jest ciepły zimą?","acceptedAnswer":{"@type":"Answer","text":"Tak. Nasze pawilony mają izolację PIR — to ta sama izolacja co w domach energooszczędnych. Klienci z klimatyzacją z pompą ciepła płacą za ogrzewanie 200-400 zł miesięcznie."}},
+      {"@type":"Question","name":"Jaka jest gwarancja na pawilon?","acceptedAnswer":{"@type":"Answer","text":"2 lata gwarancji na konstrukcję, rok na instalację. Serwis posprzedażowy bez limitu czasowego — dzwonisz, przyjeżdżamy, naprawiamy."}},
+      {"@type":"Question","name":"Czy mogę przyjechać zobaczyć zakład?","acceptedAnswer":{"@type":"Answer","text":"Tak. Nasz zakład jest w Jasionkach pod Jędrzejowem. Możesz przyjechać, zobaczyć jak spawamy konstrukcję, dotknąć materiałów. Większość klientów to robi."}}
+    ]
+  }
+  </script>
+  <script>
+    window.STAGO_GOOGLE_API_KEY = 'AIzaSyDdd5Kkz7Thbzuq5swgHX7vfn41Nr63Now';
+    window.STAGO_PLACE_ID = 'ChIJY7vHl1WZF0cRh3HPZovQvZw';
+  </script>
+  <script src="../reviews.js"></script>
+  <script src="../form-handler.js"></script>
+  <script>document.querySelector('.lang-btn')?.addEventListener('click',function(e){e.stopPropagation();var d=this.nextElementSibling;d.style.display=d.style.display==='none'?'grid':'none'});document.addEventListener('click',function(){var d=document.querySelector('.lang-dropdown');if(d)d.style.display='none'});</script>
 </body>
 </html>

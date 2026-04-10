@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Casita para todo el año — vivienda, ADU, holiday house | STAGO",
+    "description": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100mm, baño, cocina. Desde 10 350 € neto.",
+    "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
+    "ogTitle": "Casita para todo el año — vivienda, ADU, holiday house | STAGO",
+    "ogDescription": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100mm, baño, cocina. Desde 10 350 € neto.",
+    "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
+  },
+  "breadcrumb": "Vivienda",
+  "productType": "mieszkalny",
+  "hero": {
+    "img": "../assets/modele/mila.webp",
+    "imgAlt": "Casita para todo el año STAGO — modelo MILA",
+    "h1": "Casita para todo el año.",
+    "subtitle": "Vivienda en parcela, casita para la familia, despacho en el jardín, casa vacacional junto al lago. Paredes completas con aislamiento PIR de 100 mm, baño, kitchenette — un lugar de pleno derecho para vivir, no una caravana provisional.",
+    "price": "desde 10 350 € neto",
+    "priceNote": "/ casita 6×3 m con baño",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Casita%20Residencial",
+    "articleHref": "../modele.html",
+    "articleText": "Ver los 12 modelos &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelos recomendados",
+    "h2": "Modelos que parecen un hogar de verdad",
+    "sub": "Volúmenes tranquilos, cálidos, de madera — para que cualquiera que visite su casita sienta que está en un hogar, no en un contenedor.",
+    "items": [
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Distribución clásica, proporciones simétricas",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pabellón STAGO MILA",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "ATRI",
+        "name": "ATRI",
+        "desc": "Volumen abierto con gran acristalamiento",
+        "img": "../assets/modele/atri.webp",
+        "alt": "Pabellón STAGO ATRI",
+        "href": "../modele/atri.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Marco de madera, frente simétrico",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pabellón STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Cubo modular con inserto destacado",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pabellón STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Loft premium con acristalamiento en esquina",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pabellón STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Para este sector",
+    "h2": "Lo que preparamos para vivienda durante todo el año",
+    "sub": "Paredes de pleno tamaño, aislamiento térmico real y baño normal. Se vive en él todo el año, no solo en verano.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Aislamiento como en viviendas eficientes",
+        "text": "Paredes con aislamiento PIR de 100 mm, cubierta aislada y suelo con aislamiento térmico. En invierno se está caliente, en verano agradablemente fresco. La factura mensual de electricidad en temporada de invierno suele estar entre 60–100 €."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Baño completo y kitchenette",
+        "text": "Baño con ducha, inodoro y lavabo. Kitchenette con fregadero, encimera y espacio para frigorífico y cocina. Todo listo — se muda y vive desde el primer día."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Carpintería de aluminio",
+        "text": "Ventanas y puertas de aluminio — eficientes, silenciosas, con rotura de puente térmico. Solo al abrirlas y cerrarlas se nota que esto no es algo provisional. Sin condensación en cristales ni corrientes de aire incluso en pleno invierno."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Trámites simplificados",
+        "text": "Le asesoramos sobre la normativa local aplicable en España para su casita modular. Unos días de trámites en lugar de meses. Le ayudamos con la documentación desde la primera solicitud."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluido",
+    "h2": "Lo que recibe de STAGO",
+    "items": [
+      {
+        "h3": "Visualización 3D gratuita",
+        "text": "Díganos qué necesita. Dibujamos. Verá el pabellón en 3D antes de gastar un céntimo. Lo cambiamos hasta que diga \"sí\"."
+      },
+      {
+        "h3": "Transporte y montaje incluidos",
+        "text": "El pabellón viaja en camión desde nuestra fábrica en Jędrzejów. Nuestro equipo lo instala in situ. Usted indica dónde debe ir. Entrega en España."
+      },
+      {
+        "h3": "2 años de garantía + servicio",
+        "text": "Estructura, paredes, cubierta — 2 años de garantía. Después de la garantía tampoco abandonamos a nuestros clientes. Tenemos nuestro propio equipo."
+      },
+      {
+        "h3": "Ayuda con la documentación",
+        "text": "Le asesoramos sobre la normativa local y le ayudamos a preparar la documentación necesaria."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Véalo en persona",
+    "h2": "Así son nuestras realizaciones",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Casita para todo el año STAGO — realización 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Casita para todo el año STAGO — realización 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Casita para todo el año STAGO — realización 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-mieszkalny",
+    "eyebrow": "Preguntas",
+    "h2": "Lo que preguntan los clientes de este sector",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta una casita para todo el año?",
+        "a": "Una casita de 6×3 m con baño empieza desde 10 350 € neto. Una casita más grande de 8×4 m con cocina y dormitorio — 14 950–20 700 €. Acabados premium los presupuestamos individualmente."
+      },
+      {
+        "q": "¿Se puede vivir en ella todo el año?",
+        "a": "Sí. Nuestros clientes viven en casitas STAGO durante todo el año — con aislamiento PIR de 100 mm, calefacción (climatización con bomba de calor, estufa o chimenea) e instalación completa de agua y saneamiento. Es una vivienda de pleno derecho, no una caravana provisional."
+      },
+      {
+        "q": "¿Necesito licencia de obras?",
+        "a": "Depende de la normativa municipal española. Generalmente las casitas modulares requieren algún tipo de licencia o declaración. Le asesoramos sobre la documentación necesaria para su caso."
+      },
+      {
+        "q": "¿Puedo añadir una terraza o un módulo adicional?",
+        "a": "Sí. Instalamos terrazas de madera o composite y combinamos varios módulos en una vivienda más grande — por ejemplo, con dos dormitorios, salón y baño independiente. Díganos qué necesita y el proyecto se crea conjuntamente."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Empecemos",
+    "h2": "Díganos qué necesita",
+    "textareaPlaceholder": "¿Qué quiere hacer? ¿Qué tamaño? ¿Dónde debe estar?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pabellón comercial"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pabellón de hostelería"
+      },
+      {
+        "value": "biurowy",
+        "label": "Contenedor de oficina"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pabellón de servicios"
+      },
+      {
+        "value": "socjalny",
+        "label": "Contenedor para obra"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casita residencial"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pabellón especial"
+      }
+    ],
+    "infoH3": "¿Cómo funciona?",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
+    "features": [
+      {
+        "text": "Visualización 3D — véalo antes de encargar"
+      },
+      {
+        "text": "Precio con transporte y montaje incluidos"
+      },
+      {
+        "text": "Ayuda con documentación y trámites"
+      },
+      {
+        "text": "Respuesta en un día laborable"
+      }
+    ],
+    "selectedType": "mieszkalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/mila.webp",
+      "alt": "Todos los modelos",
+      "label": "Modelos",
+      "h3": "Vea los 12 modelos",
+      "text": "Cada modelo lo adaptamos a su uso. Explore todo el catálogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Aplicaciones",
+      "label": "Aplicaciones",
+      "h3": "Otras aplicaciones",
+      "text": "Vea qué más hacemos — tienda, oficina, vivienda, hostelería, gabinete."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Precios 2026",
+      "label": "Guía",
+      "h3": "Precios de pabellones 2026",
+      "text": "Cifras concretas, sin rodeos. Vea cuánto pagará."
+    }
+  ],
+  "jsonLd": {
+    "name": "Casita para todo el año STAGO",
+    "description": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100mm, baño, cocina. Desde 10 350 € neto.",
+    "image": "https://stago.com.pl/assets/modele/mila.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Padiglione speciale — studio medico, guardiola, biglietteria | STAGO",
+    "description": "Padiglioni per applicazioni speciali. Studio medico, guardiola, biglietteria, info point, centro culturale. Secondo normative e requisiti specifici.",
+    "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
+    "ogTitle": "Padiglione speciale — studio medico, guardiola, biglietteria | STAGO",
+    "ogDescription": "Padiglioni per applicazioni speciali. Studio medico, guardiola, biglietteria, info point, centro culturale. Secondo normative e requisiti specifici.",
+    "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
+  },
+  "breadcrumb": "Speciali",
+  "productType": "specjalny",
+  "hero": {
+    "img": "../assets/modele/noir.webp",
+    "imgAlt": "Padiglione speciale STAGO — modello NOIR",
+    "h1": "Padiglione speciale.",
+    "subtitle": "Studio medico, guardiola, biglietteria, punto informazioni per la città, piccola biblioteca, centro culturale rurale. Ogni progetto di questo tipo richiede una conversazione con uno specialista — normative, regolamenti, attrezzature. Li realizziamo regolarmente, quindi dicci semplicemente di cosa hai bisogno.",
+    "price": "preventivo individuale",
+    "priceNote": "/ il progetto nasce secondo le tue esigenze",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Speciale%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i 12 modelli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelli consigliati",
+    "h2": "Modelli di partenza — punto per la conversazione",
+    "sub": "Nei progetti speciali partiamo da una forma scelta, ma fin dall'inizio la progettiamo secondo le tue esigenze specifiche.",
+    "items": [
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Monolite allungato con listelli",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Padiglione STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Cubo modulare con inserto espressivo",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Padiglione STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Forma premium con finestre angolari",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Padiglione STAGO NORD",
+        "href": "../modele/nord.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Forma compatta con vetrina piena",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Padiglione STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Forma con angoli panoramici",
+        "img": "../assets/modele/view.webp",
+        "alt": "Padiglione STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Per questo settore",
+    "h2": "Cosa facciamo nei progetti speciali",
+    "sub": "Ogni progetto è una storia a sé — normative, regolamenti, contatti con gli uffici. Abbiamo procedure collaudate per questo.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Conformità a normative specifiche",
+        "text": "Studio medico — soddisfiamo i requisiti del regolamento del Ministero della Salute. Biglietteria per le ferrovie — realizziamo secondo le specifiche del committente. Dicci cosa deve nascere e progettiamo il padiglione secondo la norma specifica."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Dimensioni e layout atipici",
+        "text": "Guardiola 2×2 m, punto informazioni 8×4 m con tettoia sulla zona d'attesa, piccola biblioteca con sala lettura — dimensioni e layout li progettiamo per la situazione concreta, non per un catalogo rigido."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Impianti specialistici",
+        "text": "Gas medicali, sterilizzatrici, impianto elettrico rinforzato, impianto audio, videosorveglianza, climatizzazione di precisione — quello di cui hai bisogno, lo colleghiamo."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16\"/></svg>",
+        "h3": "Collaborazione con enti pubblici",
+        "text": "Emettiamo fatture con IVA, aiutiamo nella preparazione della documentazione e realizziamo progetti per gare pubbliche. Collaboriamo con enti locali in tutta la Polonia e all'estero."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Struttura, pareti, tetto — 2 anni di garanzia. Anche dopo la garanzia non abbandoniamo i clienti. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Padiglione speciale STAGO — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Padiglione speciale STAGO — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Padiglione speciale STAGO — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-specjalny",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti di questo settore",
+    "items": [
+      {
+        "q": "Realizzate padiglioni per gare pubbliche?",
+        "a": "Sì. Abbiamo esperienza nella collaborazione con enti locali, ospedali e ferrovie. Emettiamo fatture con IVA, forniamo documentazione tecnica completa e realizziamo progetti conformemente al capitolato."
+      },
+      {
+        "q": "Quanto costa uno studio medico?",
+        "a": "Il prezzo dipende dalle specifiche. Un piccolo studio ambulatoriale parte da 8 050 € netto. Un modulo medico completo con sala d'attesa, studio e sterilizzazione — 18 400-34 500 €. Il preventivo finale nasce dopo una conversazione con lo specialista."
+      },
+      {
+        "q": "Potete realizzare un punto informazioni per la città?",
+        "a": "Sì. Abbiamo realizzato pannelli informativi, biglietterie e punti di informazione turistica. Basta che ci dica dove deve stare, per quanto tempo lavorerà e quante persone deve servire — il resto lo progettiamo noi."
+      },
+      {
+        "q": "Avete gli attestati e i documenti necessari?",
+        "a": "Sì. La struttura in acciaio è conforme alle norme PN-EN, l'isolamento PIR ha il certificato di resistenza al fuoco e i materiali selezionati sono approvati per il contatto con alimenti dove richiesto. Ogni progetto riceve la documentazione tecnica completa."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "textareaPlaceholder": "Cosa vuoi fare? Quali dimensioni? Dove deve stare?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "socjalny",
+        "label": "Container per cantiere"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta tutto l'anno"
+      },
+      {
+        "value": "specjalny",
+        "label": "Padiglione speciale"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ],
+    "selectedType": "specjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/noir.webp",
+      "alt": "Tutti i modelli",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Ogni modello lo adatti alla tua destinazione. Sfoglia l'intero catalogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni",
+      "label": "Applicazioni",
+      "h3": "Altre applicazioni",
+      "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino 2026",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Padiglione speciale STAGO",
+    "description": "Padiglioni per applicazioni speciali. Studio medico, guardiola, biglietteria, info point, centro culturale. Secondo normative e requisiti specifici.",
+    "image": "https://stago.com.pl/assets/modele/noir.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Casetta tutto l'anno — casa, ADU, holiday house | STAGO",
+    "description": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100mm, bagno, cucina. Da 10 350 € netto.",
+    "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
+    "ogTitle": "Casetta tutto l'anno — casa, ADU, holiday house | STAGO",
+    "ogDescription": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100mm, bagno, cucina. Da 10 350 € netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
+  },
+  "breadcrumb": "Abitativi",
+  "productType": "mieszkalny",
+  "hero": {
+    "img": "../assets/modele/mila.webp",
+    "imgAlt": "Casetta tutto l'anno STAGO — modello MILA",
+    "h1": "Casetta tutto l'anno.",
+    "subtitle": "Piccola casa sul terreno, casa per i suoceri, studio in giardino, casa vacanze al lago. Pareti piene con isolamento PIR 100 mm, bagno, angolo cucina — un luogo abitativo completo, non una baracca temporanea.",
+    "price": "da 10 350 € netto",
+    "priceNote": "/ casetta 6×3 m con bagno",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Abitazione%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i 12 modelli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelli consigliati",
+    "h2": "Modelli che sembrano una vera casa",
+    "sub": "Forme tranquille, calde, in legno — tali che ogni visitatore della tua casetta senta di essere a casa di qualcuno, non in un container.",
+    "items": [
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Layout classico, proporzioni simmetriche",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Padiglione STAGO MILA",
+        "href": "../modele/mila.html"
+      },
+      {
+        "code": "ATRI",
+        "name": "ATRI",
+        "desc": "Forma aperta con grande vetrata",
+        "img": "../assets/modele/atri.webp",
+        "alt": "Padiglione STAGO ATRI",
+        "href": "../modele/atri.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Cornice in legno, fronte simmetrico",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Padiglione STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Cubo modulare con inserto espressivo",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Padiglione STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Loft premium con vetrata angolare",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Padiglione STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Per questo settore",
+    "h2": "Cosa prepariamo per l'abitazione tutto l'anno",
+    "sub": "Pareti a grandezza piena, vero isolamento termico e bagno normale. Ci abiti tutto l'anno, non solo d'estate.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Isolamento come nelle case ad alta efficienza",
+        "text": "Pareti con isolamento PIR 100 mm, tetto coibentato e pavimento con isolamento termico. D'inverno è caldo, d'estate piacevolmente fresco. La bolletta mensile per la corrente in inverno si aggira di solito tra 60 e 100 €."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Bagno completo e angolo cucina",
+        "text": "Bagno con doccia, WC e lavandino. Angolo cucina con lavello, piano di lavoro e spazio per frigorifero e fornelli. Tutto è pronto — ti trasferisci e abiti dal primo giorno."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Infissi in alluminio",
+        "text": "Finestre e porte in alluminio — ad alta efficienza energetica, silenziose, con taglio termico. Già il solo aprire e chiudere mostra che non è una struttura provvisoria. Niente vetri appannati e niente spifferi nemmeno in pieno inverno."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Senza permesso di costruire (fino a 35 m²)",
+        "text": "Per casette fino a 35 m² basta la comunicazione all'ufficio — il permesso di costruire completo non serve. Pochi giorni di formalità invece di mesi. Ti aiutiamo con i documenti dalla prima domanda fino alla conclusione."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Struttura, pareti, tetto — 2 anni di garanzia. Anche dopo la garanzia non abbandoniamo i clienti. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Casetta tutto l'anno STAGO — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Casetta tutto l'anno STAGO — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Casetta tutto l'anno STAGO — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-mieszkalny",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti di questo settore",
+    "items": [
+      {
+        "q": "Quanto costa una casetta tutto l'anno?",
+        "a": "Una casetta 6×3 m con bagno parte da 10 350 € netto. Una casetta più grande 8×4 m con cucina e camera da letto — 14 950-20 700 €. Le finiture premium le preventiviamo individualmente."
+      },
+      {
+        "q": "Posso abitarci tutto l'anno?",
+        "a": "Sì. I nostri clienti vivono nelle casette STAGO tutto l'anno — con isolamento PIR 100 mm, riscaldamento (climatizzatore con pompa di calore, stufa o camino) e impianto idrico-sanitario completo. È una casa a tutti gli effetti, non una baracca temporanea."
+      },
+      {
+        "q": "Ho bisogno del permesso di costruire?",
+        "a": "Per casette fino a 35 m² basta la comunicazione all'ufficio. Oltre questa superficie serve il permesso completo. Ti aiutiamo a preparare i documenti in entrambi i casi."
+      },
+      {
+        "q": "Posso aggiungere una terrazza o un modulo aggiuntivo?",
+        "a": "Sì. Realizziamo terrazze in legno o composito e colleghiamo più moduli in una casa più grande — per esempio con due camere da letto, soggiorno e bagno separato. Dicci di cosa hai bisogno e il progetto nascerà insieme."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "textareaPlaceholder": "Cosa vuoi fare? Quali dimensioni? Dove deve stare?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "socjalny",
+        "label": "Container per cantiere"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta tutto l'anno"
+      },
+      {
+        "value": "specjalny",
+        "label": "Padiglione speciale"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ],
+    "selectedType": "mieszkalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/mila.webp",
+      "alt": "Tutti i modelli",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Ogni modello lo adatti alla tua destinazione. Sfoglia l'intero catalogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni",
+      "label": "Applicazioni",
+      "h3": "Altre applicazioni",
+      "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino 2026",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Casetta tutto l'anno STAGO",
+    "description": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100mm, bagno, cucina. Da 10 350 € netto.",
+    "image": "https://stago.com.pl/assets/modele/mila.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

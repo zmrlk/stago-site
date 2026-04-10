@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pavilón pre obchod — predajňa, kiosk, predajné miesto | STAGO",
+    "description": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, osvetlenie, pohodlný vstup. Od 3 500 € netto. Dodávka na Slovensko.",
+    "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
+    "ogTitle": "Pavilón pre obchod — predajňa, kiosk, predajné miesto | STAGO",
+    "ogDescription": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, osvetlenie, pohodlný vstup. Od 3 500 € netto. Dodávka na Slovensko.",
+    "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
+  },
+  "breadcrumb": "Obchodné",
+  "productType": "handlowy",
+  "hero": {
+    "img": "../assets/modele/loft.webp",
+    "imgAlt": "Obchodný pavilón STAGO — hmota LOFT",
+    "h1": "Pavilón pre obchod.",
+    "subtitle": "Predajňa, kiosk, predajné miesto na námestí, trhovisko so zeleninou. Vieme, že zákazník sa rozhodne vojsť za pár sekúnd — preto navrhujeme výklady na expozíciu, osvetlenie zvýrazňujúce tovar a pohodlný vstup. Povedzte nám, čo predávate — navrhneme usporiadanie, ktoré pracuje na predaj.",
+    "price": "od 3 500 € netto",
+    "priceNote": "/ pavilón 3x2m pripravený na obchod",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Obchodny%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Pozrite si všetkých 12 modelov &rarr;"
+  },
+  "models": {
+    "eyebrow": "Odporúčané hmoty",
+    "h2": "Modely, ktoré robia dobrý prvý dojem",
+    "sub": "Prvý dojem zostáva v pamäti zákazníka nadlho. Tieto hmoty sa v obchode osvedčujú najlepšie — hoci každú z nich prispôsobíme Vášmu nápadu.",
+    "items": [
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Showroomový front s tromi výkladmi",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pavilón STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Predĺžená hmota s výkladným frontom",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pavilón STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Hmota s bočnými akcentmi a frontom",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Pavilón STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompaktná hmota s celovýkladom",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pavilón STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Hmota s panoramatickými rohmi",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pavilón STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pre tento odbor",
+    "h2": "Čo pripravíme pre obchod",
+    "sub": "Každý prvok je premyslený pre predaj — nie požičaný z inej kategórie pavilónov.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Výklady podľa Vášho sortimentu",
+        "text": "Veľké panoramatické okná, rohové výklady, podávacie okno. Poviete nám, čo predávate, a my navrhneme rozloženie otvorov pre konkrétny tovar. Expozícia viditeľná z chodníka je polovica úspechu."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0012 2z\"/></svg>",
+        "h3": "Osvetlenie pre expozíciu",
+        "text": "LED osvetlenie rozvrhnuté tak, aby tovar vyzeral sviežo a atraktívne. Navyše inštalácia pripravená pre pokladnicu a platobný terminál — bez improvizácie v deň otvorenia."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Pohodlný vstup pre zákazníka",
+        "text": "Hliníkové posuvné dvere, pódium, rampa pre vozíky. Zákazník vchádza prirodzene — bez premýšľania, kde a akým smerom otvoriť dvere."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0110 0v4\"/></svg>",
+        "h3": "Bezpečnosť po otváracích hodinách",
+        "text": "Oceľový rám, viacbodové zámky, voliteľné bezpečnostné rolety. Zamknete pavilón na kľúč a spíte pokojne — žiadny náhodný zlodej si neporadí bez ťažkého náradia."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V cene",
+    "h2": "Čo dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizácia",
+        "text": "Poviete, čo potrebujete. Nakreslíme. Uvidíte pavilón v 3D skôr, než miniete euro. Meníme, kým nepoviete \"áno\"."
+      },
+      {
+        "h3": "Doprava a montáž v cene",
+        "text": "Pavilón ide na návese z nášho závodu. Náš tím ho postaví na mieste. Vy ukážete, kde má stáť. Dodávka na Slovensko v cene."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konštrukcia, steny, strecha — 2 roky záruky. Po záruke tiež neopúšťame zákazníkov. Máme vlastných ľudí, nehľadáme na telefón."
+      },
+      {
+        "h3": "Pomoc s dokumentmi",
+        "text": "Do 35 m² stačí ohlásenie, nie povolenie. Pomôžeme vyplniť papiere, aby ste nemuseli hľadať vzory po internete."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Pozrite naživo",
+    "h2": "Takto vyzerajú naše realizácie",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Obchodný pavilón STAGO — realizácia 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Obchodný pavilón STAGO — realizácia 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Obchodný pavilón STAGO — realizácia 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-handlowy",
+    "eyebrow": "Otázky",
+    "h2": "Na čo sa pýtajú zákazníci z tohto odboru",
+    "items": [
+      {
+        "q": "Koľko stojí obchodný pavilón?",
+        "a": "Malý kiosk 3x2 m začína od 3 500 € netto. Predajňa 6x3 m — od 6 400 €. Väčší bod 12x3 m s výkladmi a zázemím — od 11 000 €. Každú cenovú ponuku pripravíme individuálne a bezplatne: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+      },
+      {
+        "q": "Potrebujem stavebné povolenie na obchodný pavilón?",
+        "a": "V prípade pavilónov do 35 m² stačí ohlásenie na úrade — stavebné povolenie nie je potrebné. Procedúra trvá niekoľko dní. Pomôžeme pripraviť dokumenty: vzory, žiadosti, návod čo a kam vpísať."
+      },
+      {
+        "q": "Môžem mať podávacie okno a zároveň miesto pre zákazníkov vnútri?",
+        "a": "Samozrejme. Zhotovíme podávacie okná na obsluhu zvonku, celovýkladné vitríny aj dvere s bezpečnostnými roletami — v ľubovoľnej konfigurácii. Povedzte nám, ako si predstavujete obsluhu zákazníka, a rozloženie otvorov prispôsobíme Vášmu nápadu."
+      },
+      {
+        "q": "Ako kúrim pavilón v zime a koľko to stojí?",
+        "a": "Najpopulárnejšie riešenie je klimatizácia s tepelným čerpadlom — kúri v zime a chladí v lete. Steny s izoláciou PIR 100 mm držia teplo ako murovaná budova. Pri malom pavilóne mesačný účet za kúrenie v zimnej sezóne je zvyčajne 80–120 €."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začíname",
+    "h2": "Povedzte, čo potrebujete",
+    "textareaPlaceholder": "Čo chcete urobiť? Aký rozmer? Kde to má stáť?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodný pavilón"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pavilón pre gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontajner pre kanceláriu"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Prevádzkový pavilón"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontajner na stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoročný domček"
+      },
+      {
+        "value": "specjalny",
+        "label": "Netypický pavilón"
+      }
+    ],
+    "infoH3": "Ako to prebieha?",
+    "infoText": "Napíšete alebo zavoláte. Opýtame sa na detaily. Nakreslíme projekt s 3D vizualizáciou. Uvedieme cenu s dopravou a montážou. Bez prekvapení.",
+    "features": [
+      {
+        "text": "3D vizualizácia — uvidíte, skôr než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montážou"
+      },
+      {
+        "text": "Pomoc s dokumentmi a ohlásením"
+      },
+      {
+        "text": "Odpoveď do jedného dňa"
+      }
+    ],
+    "selectedType": "handlowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/loft.webp",
+      "alt": "Všetky modely",
+      "label": "Modely",
+      "h3": "Pozrite si všetkých 12 modelov",
+      "text": "Každý model prispôsobíte podľa svojho použitia. Prezrite si celý katalóg."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Použitie",
+      "label": "Použitie",
+      "h3": "Ďalšie použitie",
+      "text": "Pozrite, čo ešte robíme — obchod, kancelária, dom, gastro, kabinét."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cenník 2026",
+      "label": "Poradňa",
+      "h3": "Cenník pavilónov 2026",
+      "text": "Konkrétne sumy, bez zavádzania. Zistite, koľko zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Obchodný pavilón STAGO",
+    "description": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, osvetlenie, pohodlný vstup. Od 3 500 € netto. Dodávka na Slovensko.",
+    "image": "https://stago.com.pl/assets/modele/loft.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "site": {
+    "title": "STAGO — Modulární pavilony, kontejnery, budovy na klíč",
+    "description": "STAGO — výrobce modulárních pavilonů. Obchod, kancelář, dům — na klíč. Bezplatná vizualizace, montáž v ceně, záruka 2 roky. Dodávka do České republiky.",
+    "phone": "509 508 210",
+    "phoneLink": "+48509508210",
+    "email": "kontakt@stago.com.pl",
+    "address": "Jasionka 117",
+    "city": "Jędrzejów",
+    "postalCode": "28-300",
+    "region": "Polsko",
+    "hours": "Po-Pá: 7:00-20:00",
+    "hoursSat": "So: 8:00-14:00",
+    "cities": "Dodávka do České republiky — Praha, Brno, Ostrava a celé ČR"
+  },
+  "hero": {
+    "badge": "Výrobce modulárních pavilonů &middot; Dodávka do České republiky",
+    "h1": "Váš prostor.",
+    "h1accent": "Bez kompromisů.",
+    "sub": "Navrhujeme a stavíme na míru. Bezplatná vizualizace, montáž v ceně, 2 roky záruky."
+  },
+  "trust": [
+    { "value": "5.0/5", "label": "Google Reviews" },
+    { "value": "Vlastní výroba", "label": "Výroba pod kontrolou" },
+    { "value": "Na klíč", "label": "Vejdete a začnete" },
+    { "value": "Celá ČR", "label": "Doprava + montáž v ceně" }
+  ],
+  "about": {
+    "eyebrow": "Vlastní výroba",
+    "h2": "Vše pod jednou střechou.",
+    "h2accent": "",
+    "features": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"M9 12l2 2 4-4\"/></svg>",
+        "title": "Vše děláme u nás",
+        "text": "Konstrukci svařujeme sami, v naší dílně u Jędrzejowa v Polsku. Stěny z PIR 100 mm, hliníková okna a dveře, vše pořádně. Díky tomu v zimě drží teplo a v létě se nepřehřívá jako plech — a účty za energie jsou výrazně nižší, než byste čekali."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "title": "Každý pavilon je jiný",
+        "text": "Protože každý zákazník má jiný nápad. Jeden chce stánek na náměstí, druhý kancelář na stavbě, třetí domek na pozemku. Proto nevnucujeme hotové řešení — sedneme si s vámi, zeptáme se na detaily a navrhneme projekt od nuly. A pokud ještě nevíte, jak to má vypadat, ukážeme vám několik návrhů na výběr."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Jeden telefonát a hotovo",
+        "text": "Nemusíte zvlášť obíhat projektanta, výrobce a montážní firmu. Zavoláte nám jednou — promluvíme si, nakreslíme vizualizaci, oceníme, vyrobíme a postavíme vám to na pozemku. Od prvního rozhovoru po předání klíčů se o vše staráme my."
+      }
+    ],
+    "text": "Vše děláme u nás v dílně u Jędrzejowa v Polsku — od prvního svaru po poslední šroub. Nic nezadáváme subdodavatelům, nehledáme firmy na telefon. Proto kontrolujeme kvalitu v každé fázi. Můžete přijet do naší dílny a na vlastní oči vidět, jak váš pavilon vzniká. Většina zákazníků to dělá — a odchází klidnější."
+  },
+  "products": {
+    "eyebrow": "Naše modely",
+    "h2": "Vyberte si vzor.",
+    "h2accent": "Účel si přizpůsobíte sami.",
+    "sub": "Každý vzor přizpůsobíme na míru — rozměr, materiál, barvu, výplně a interiér. Níže šest nejčastěji volených modely zákazníky.",
+    "items": [
+      { "name": "NORD", "desc": "Antracit s dřevěnými akcenty v rozích, obrovská rohová prosklení. Skandinávský premium. Tvar, který si zapamatujete na první pohled.", "price": "od 7 000 € netto", "href": "modele/nord.html", "img": "assets/modele/nord.webp", "cta": "Zobrazit NORD &rarr;" },
+      { "name": "LOFT", "desc": "Dřevěné lamely, grafitová střecha, tři velké výkladce. Showroom-feel — zákazníci vcházejí, protože musí vidět, co je uvnitř.", "price": "od 5 100 € netto", "href": "modele/loft.html", "img": "assets/modele/loft.webp", "cta": "Zobrazit LOFT &rarr;" },
+      { "name": "DUET", "desc": "Grafitové tělo, dřevěné lamely po stranách, tři výkladce s dveřmi. Univerzální vzor pro gastro, obchod i kancelář.", "price": "od 5 100 € netto", "href": "modele/duet.html", "img": "assets/modele/duet.webp", "cta": "Zobrazit DUET &rarr;" },
+      { "name": "ICON", "desc": "Dřevěná fasáda, obrovská rohová skla od podlahy ke stropu. Vypadá jako architektonické studio. Pro prémiové podnikání.", "price": "individuální kalkulace", "href": "modele/icon.html", "img": "assets/modele/icon.webp", "cta": "Zobrazit ICON &rarr;" },
+      { "name": "MILA", "desc": "Celodřevěná fasáda ve světlém odstínu. Skandinávský klid. Ideální pro ordinaci, domek, kancelář v teplém tónu.", "price": "od 5 800 € netto", "href": "modele/mila.html", "img": "assets/modele/mila.webp", "cta": "Zobrazit MILA &rarr;" },
+      { "name": "NOIR", "desc": "Svislé černé lamely, podlouhlá okna, butikový charakter jako z Berlína. Pro podnikání, které chce vypadat prémiově.", "price": "od 6 500 € netto", "href": "modele/noir.html", "img": "assets/modele/noir.webp", "cta": "Zobrazit NOIR &rarr;" }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Nájem vs vlastní prostor",
+    "h2": "Pronájem nebo vlastní pavilon?",
+    "h2accent": "Spočítejte si sami.",
+    "sub": "Většina našich zákazníků dříve pronajímala. Pak si to spočítali.",
+    "rent": {
+      "label": "Pronajímáte",
+      "price": "700 €",
+      "priceSuffix": "/měs",
+      "items": [
+        { "text": "36 měsíců = <strong>25 200 €</strong>" },
+        { "text": "Prostor nikdy nebude váš" },
+        { "text": "Zvýšení nájmu, kdy se to hodí pronajímateli" },
+        { "text": "Rekonstrukce? Za vaše peníze, v cizím prostoru" },
+        { "text": "Lokace nefunguje? Máte smůlu, smlouva platí" }
+      ]
+    },
+    "own": {
+      "label": "Máte vlastní pavilon",
+      "price": "~280 €",
+      "priceSuffix": "/měs splátky",
+      "items": [
+        { "text": "Po splacení = <strong>váš navždy</strong>" },
+        { "text": "Žádné nájemné do konce života" },
+        { "text": "Přestěhujete kam chcete — návěs a pár hodin" },
+        { "text": "Prodáte, když chcete, získáte peníze zpět" },
+        { "text": "Vypadá a funguje jak chcete — protože je to vaše" }
+      ]
+    },
+    "footnote": "Orientační leasingová splátka při pavilonu ~8 000 € netto na 36 měsíců. Přesnou nabídku financování připravíme individuálně."
+  },
+  "caseStudy": {
+    "eyebrow": "Příběh zákazníka",
+    "intro": "Platíte nájem za prostor, který nikdy nebude váš? Možná je čas na změnu — tak jako Tomek.",
+    "h2": "Tomek přestěhoval zelinářství.",
+    "h2accent": "Za svých podmínek.",
+    "steps": [
+      { "label": "Situace", "text": "Tomek provozoval zelinářství v pronajatém prostoru. Roky platil nájem, který nebudoval nic jeho. Jednoho dne majitel zvedl cenu — a Tomek začal hledat jiné řešení." },
+      { "label": "Jeden telefonát", "text": "Zavolal nám. Nakreslili jsme pavilon s velkou výlohou na vystavení ovoce a chladicím zázemím. Tomek měl své nápady — změnili jsme dispozici, vybrali barvy. Dvě schůzky a hotovo." },
+      { "label": "Výsledek", "text": "Dnes stojí na vlastním pozemku, za vlastních podmínek. Leasingová splátka nižší než bývalé nájemné. Zákazníci říkají, že vypadá lépe než polovina obchodů ve městě. Za pár let bude pavilon zcela jeho." }
+    ],
+    "quote": "Lituji jen jednoho — že jsem nezavolal dříve.",
+    "cite": "— Tomek, zelinářství, Busko-Zdrój (Polsko)"
+  },
+  "financing": {
+    "eyebrow": "Finance?",
+    "h2": "Máme na to",
+    "h2accent": "řešení.",
+    "sub": "Pomůžeme nastavit financování tak, aby splátka byla nižší než bývalé nájemné. Tři cesty — vyberte tu, která sedí vaší situaci.",
+    "options": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M2 10h20\"/></svg>",
+        "title": "Leasing",
+        "text": "Spolupracujeme s leasingovými společnostmi. Splátka jde do nákladů firmy, odečtete DPH. Po splacení — pavilon je váš. Pomůžeme s formálnostmi."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg>",
+        "title": "Splátky",
+        "text": "Nepodnikáte? Spolupracujeme s bankami, které poskytují splátkový úvěr pro fyzické osoby. Žádost přes nás, rozhodnutí během hodin."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Dotace",
+        "text": "Poradíme s možnostmi dotací a podpor pro podnikatele ve vaší zemi. Řeknete nám situaci, my prověříme varianty."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Jak pracujeme",
+    "h2": "Na vás je jen telefonát.",
+    "h2accent": "Zbytek nechte na nás.",
+    "steps": [
+      { "num": "01", "title": "Kontakt", "text": "Řekněte, co potřebujete. Nemusíte znát rozměry na centimetr — od toho jsme tu my. Poradíme, navrhneme řešení." },
+      { "num": "02", "title": "Bezplatná vizualizace", "text": "Nakreslíme, jak bude váš pavilon vypadat. Uvidíte ho ve 3D dříve, než utratíte korunu. Nelíbí se? Změníme. Kolikrát bude potřeba." },
+      { "num": "03", "title": "Výroba", "text": "Stavíme u nás v dílně, pod vlastním dohledem. Kontrolujeme každou fázi — od svařování konstrukce po montáž výplní. Můžete přijet a vidět postup prací." },
+      { "num": "04", "title": "Dodávka a montáž", "text": "Naložíme na návěs, přijedeme k vám, postavíme na místě. Dodávka do České republiky. Několik hodin a hotovo. Vejdete s klíčem do vlastního prostoru." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Naše projekty",
+    "h2": "Podívejte se,",
+    "h2accent": "co děláme.",
+    "sub": "Každý projekt jiný — každý na míru zákazníkovi. Klikněte pro zvětšení.",
+    "items": [
+      { "img": "assets/gallery/k2.webp", "alt": "Obchodní pavilon STAGO — antracitový stánek", "label": "Obchodní stánek, antracitový plech" },
+      { "img": "assets/gallery/k6.webp", "alt": "Kancelářský kontejner STAGO — modul s panoramatickými okny", "label": "Kancelář 6×3m, panoramatická okna" },
+      { "img": "assets/gallery/k9.webp", "alt": "Pavilon služeb STAGO — s podávacím oknem", "label": "Servisní bod, podávací okno" },
+      { "img": "assets/gallery/k11.webp", "alt": "Kancelářský kontejner STAGO — HPL fasáda", "label": "Kancelářský kontejner, HPL fasáda" },
+      { "img": "assets/gallery/k14.webp", "alt": "Modulární pavilon STAGO — dřevěný obklad", "label": "Pavilon s dřevěným obkladem" },
+      { "img": "assets/gallery/k16.webp", "alt": "Modulární kontejner STAGO — dřevěný akcent", "label": "Kontejner s dřevěným akcentem" },
+      { "img": "assets/gallery/k19.webp", "alt": "Skladový kontejner STAGO — grafitový plech", "label": "Sklad 6×2,4m, grafitový plech" },
+      { "img": "assets/gallery/k21.webp", "alt": "Modulární pavilon STAGO — celodřevěná fasáda", "label": "Pavilon s celodřevěnou fasádou" },
+      { "img": "assets/gallery/k25.webp", "alt": "Spojené moduly STAGO — kancelář a sklad", "label": "Spojené moduly, kancelář + sklad" }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Hodnocení zákazníků",
+    "h2": "5.0 na Googlu.",
+    "h2accent": "To nejsme my — to naši zákazníci.",
+    "items": [
+      { "text": "Velmi příjemná atmosféra, skvělý servis, rychlá realizace. Doporučuji každému!", "author": "Kacper Z.", "source": "Google Reviews" },
+      { "text": "Příjemná profesionální obsluha. Kromě rady jsem dostal materiál k vyzkoušení vlastního nápadu. Skvělé.", "author": "Nikodem S.", "source": "Google Reviews" },
+      { "text": "Solidní firma, dodržují termíny. Pavilon vypadá přesně jako na vizualizaci. Žádná překvapení.", "author": "Marek W.", "source": "Google Reviews" }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Poradci",
+    "h2": "Co byste měli vědět",
+    "sub": "před nákupem.",
+    "items": [
+      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.webp", "date": "Poradce", "title": "Jak prověřit výrobce pavilonů, než podepíšete smlouvu", "desc": "7 konkrétních věcí ke kontrole. Svary, izolace, střecha, skryté náklady. Než odešlete platbu — přečtěte si." },
+      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.webp", "date": "Poradce", "title": "Převzali jste pavilon. A co teď? Kontrola kvality krok za krokem.", "desc": "Pavilon přijel na návěsu. Co zkontrolovat, než podepíšete protokol? Střecha, svary, okna, podlaha — checklist." },
+      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.webp", "date": "Poradce", "title": "První zima v pavilonu — co vám nikdo neřekne", "desc": "Izolace, vytápění, vlhkost, účty. Reálná čísla a rady od někoho, kdo viděl nejednu zimu." }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "h2": "Zákazníci se nás často ptají:",
+    "items": [
+      { "q": "Kolik to stojí?", "a": "Záleží na modelu, velikosti a tom, co má být uvnitř. Pro orientaci — nejjednodušší modul začíná od cca 2 800 € netto, větší, kompletně vybavené na klíč, se pohybují kolem 8 000–11 500 €. Každý projekt oceňujeme individuálně a vždy zdarma. Zavolejte nebo napište — uvedeme konkrétní částku, než se k čemukoli zavážete." },
+      { "q": "Jak dlouho se čeká na pavilon?", "a": "Termín domluvíme při podpisu smlouvy — a dodržíme ho. Záleží na tom, co stavíme. Jednodušší modul rychleji, složitější potřebuje víc času. Konkrétní datum převzetí znáte, než zaplatíte zálohu — ve smlouvě, ne ústně." },
+      { "q": "Potřebuji stavební povolení?", "a": "Pro pavilony do 35 m² v Polsku stačí ohlášení. Pro Českou republiku vám poradíme s místními předpisy — ve většině případů se jedná o jednoduchou proceduru. Pomůžeme připravit potřebné dokumenty." },
+      { "q": "Dovezete ke mně? Kde montujete?", "a": "Dodáváme do celé České republiky. Pavilon jede na návěsu přímo z naší dílny u Jędrzejowa v Polsku. Náš tým ho namontuje na místě — potřebujete zpevněný podklad (dlažba, beton, desky). Doprava a montáž jsou v ceně. Vy jen ukážete, kde má stát." },
+      { "q": "A co v zimě? Je pavilon teplý?", "a": "Naše pavilony mají izolaci PIR — to je stejná izolace jako v nízkoenergetických domech. V zimě je uvnitř teplo, v létě se nepřehřívá jako plech. Zákazníci s klimatizací s tepelným čerpadlem platí za vytápění 50–100 € měsíčně. Není to provizórium — je to plnohodnotný prostor na celý rok." },
+      { "q": "A záruka?", "a": "2 roky záruky na konstrukci, rok na instalace. Ale záruka je jedna věc — důležitější je, že zákazníky po prodeji neopouštíme. Něco se stane? Zavoláte, přijedeme, opravíme. Máme vlastní dílnu a vlastní lidi — nehledáme nikoho na telefon." },
+      { "q": "Mohu přijet podívat se, jak vyrábíte?", "a": "Ano — a doporučujeme to. Naše dílna je v Jasionkách u Jędrzejowa v Polsku. Můžete přijet, vidět jak svařujeme konstrukci, osahat materiály, promluvit si s týmem. Většina zákazníků to dělá a odchází klidnější. Nemusíte se objednat — ale když zavoláte předem, připravíme se na vaši návštěvu." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Bezplatná kalkulace",
+    "h2": "Napište, co potřebujete.",
+    "h2accent": "Ozveme se do 24 hodin.",
+    "formNote": "Odpovídáme do 24 hodin. Kalkulace je bezplatná a nezávazná."
+  }
+}

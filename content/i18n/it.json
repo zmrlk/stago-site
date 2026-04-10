@@ -1,0 +1,97 @@
+{
+  "lang": "it",
+  "locale": "it_IT",
+  "langName": "Italiano",
+  "flag": "🇮🇹",
+  "baseUrl": "https://stago.com.pl/it",
+  "email": "kontakt@stago.com.pl",
+  "emailExport": "kontakt@stago.com.pl",
+  "skipLink": "Vai al contenuto",
+  "nav": {
+    "modele": "Modelli",
+    "zastosowania": "Applicazioni",
+    "realizacje": "Realizzazioni",
+    "finansowanie": "Finanziamento",
+    "faq": "FAQ",
+    "kontakt": "Contatto",
+    "cta": "Preventivo gratuito"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "modele": "Modelli",
+    "zastosowania": "Applicazioni"
+  },
+  "hub": {
+    "see": "Vedi &rarr;",
+    "seeModel": "Vedi modello &rarr;",
+    "seeAll": "Vedi tutti &rarr;",
+    "allModels": "Tutti i 12 modelli",
+    "allModelsH3": "Vedi tutti i 12 modelli",
+    "allModelsDesc": "Ogni forma è un punto di partenza. Vi mostriamo il catalogo completo.",
+    "allModelsCode": "Tutti",
+    "allUses": "Tutte le applicazioni",
+    "allUsesDesc": "7 direzioni, ognuna con modelli consigliati. Guardate tutto per trovare la soluzione migliore.",
+    "allUsesArrow": "Vedi tutti &rarr;"
+  },
+  "cta": {
+    "freeQuote": "Preventivo gratuito",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Preventivo",
+    "call": "Chiama",
+    "callLabel": "Chiama: 509 508 210"
+  },
+  "form": {
+    "name": "Nome e cognome",
+    "phone": "Telefono",
+    "email": "E-mail (facoltativo)",
+    "consent": "Acconsento al trattamento dei dati personali.",
+    "privacyLink": "Privacy",
+    "submit": "Invia richiesta",
+    "note": "Richiamiamo entro 24 ore. Preventivo gratuito e senza impegno.",
+    "success": "Inviato! Vi contatteremo entro 24 ore.",
+    "honeypot": "Campo ausiliario (non compilare)",
+    "hours": "Lun-Ven: 7:00-20:00 | Sab: 8:00-14:00",
+    "message": "Messaggio",
+    "messagePlaceholder": "Descrivi le tue esigenze — dimensioni, posizione, utilizzo..."
+  },
+  "related": {
+    "eyebrow": "Potrebbe essere utile",
+    "h2": "Altri prodotti e guide"
+  },
+  "footer": {
+    "tagline": "Produttore di padiglioni modulari.",
+    "location": "Jędrzejów, Polonia.",
+    "modele": "Modelli",
+    "zastosowania": "Applicazioni",
+    "allModels": "Tutti i 12 modelli",
+    "all": "Tutti",
+    "handlowe": "Commerciali",
+    "biurowe": "Ufficio",
+    "gastronomiczne": "Gastronomia",
+    "uslugowe": "Servizi",
+    "mieszkalne": "Residenziali",
+    "firma": "Azienda",
+    "jakKupic": "Come acquistare",
+    "technologia": "Tecnologia",
+    "finansowanie": "Finanziamento",
+    "pawilonVsNajem": "Padiglione vs. affitto",
+    "realizacje": "Realizzazioni",
+    "dostepne": "Disponibili subito",
+    "faq": "FAQ",
+    "kontakt": "Contatto",
+    "contactPage": "Pagina contatto &rarr;",
+    "privacy": "Privacy",
+    "terms": "Condizioni",
+    "cookies": "Impostazioni cookie",
+    "madeBy": "Creato da"
+  },
+  "index": {
+    "seeMore": "Scopri di più",
+    "wantSame": "Lo voglio anch'io — preventivo gratuito",
+    "quotePavillon": "Calcola il tuo padiglione",
+    "calcSavings": "Calcola il risparmio &rarr;",
+    "fullFinancing": "Tutte le opzioni di finanziamento &rarr;",
+    "fullProcess": "L'intero processo passo dopo passo &rarr;",
+    "meetUs": "Scoprite chi siamo &rarr;",
+    "visitUs": "Veniteci a trovare"
+  }
+}

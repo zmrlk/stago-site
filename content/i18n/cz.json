@@ -1,0 +1,97 @@
+{
+  "lang": "cs",
+  "locale": "cs_CZ",
+  "langName": "Čeština",
+  "flag": "🇨🇿",
+  "baseUrl": "https://stago.com.pl/cz",
+  "email": "kontakt@stago.com.pl",
+  "emailExport": "kontakt@stago.com.pl",
+  "skipLink": "Přejít na obsah",
+  "nav": {
+    "modele": "Modely",
+    "zastosowania": "Použití",
+    "realizacje": "Realizace",
+    "finansowanie": "Financování",
+    "faq": "FAQ",
+    "kontakt": "Kontakt",
+    "cta": "Bezplatná poptávka"
+  },
+  "breadcrumb": {
+    "home": "Úvodní stránka",
+    "modele": "Modely",
+    "zastosowania": "Použití"
+  },
+  "hub": {
+    "see": "Zobrazit &rarr;",
+    "seeModel": "Zobrazit model &rarr;",
+    "seeAll": "Zobrazit vše &rarr;",
+    "allModels": "Všech 12 modelů",
+    "allModelsH3": "Zobrazit všech 12 modelů",
+    "allModelsDesc": "Každý tvar je výchozím bodem. Ukážeme vám kompletní katalog.",
+    "allModelsCode": "Vše",
+    "allUses": "Všechna použití",
+    "allUsesDesc": "7 směrů, každý s doporučenými modely. Prohlédněte si vše a vyberte nejlepší řešení.",
+    "allUsesArrow": "Zobrazit vše &rarr;"
+  },
+  "cta": {
+    "freeQuote": "Bezplatná poptávka",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Poptávka",
+    "call": "Zavolat",
+    "callLabel": "Zavolat: 509 508 210"
+  },
+  "form": {
+    "name": "Jméno a příjmení",
+    "phone": "Telefon",
+    "email": "E-mail (nepovinné)",
+    "consent": "Souhlasím se zpracováním osobních údajů.",
+    "privacyLink": "Ochrana osobních údajů",
+    "submit": "Odeslat poptávku",
+    "note": "Zavoláme do 24 hodin. Nabídka zdarma, nezávazně.",
+    "success": "Odesláno! Ozveme se do 24 hodin.",
+    "honeypot": "Pomocné pole (nevyplňujte)",
+    "hours": "Po-Pá: 7:00-20:00 | So: 8:00-14:00",
+    "message": "Zpráva",
+    "messagePlaceholder": "Popište své potřeby — rozměry, lokalizace, účel..."
+  },
+  "related": {
+    "eyebrow": "Mohlo by se hodit",
+    "h2": "Další produkty a rádce"
+  },
+  "footer": {
+    "tagline": "Výrobce modulových pavilonů.",
+    "location": "Jędrzejów, Polsko.",
+    "modele": "Modely",
+    "zastosowania": "Použití",
+    "allModels": "Všech 12 modelů",
+    "all": "Vše",
+    "handlowe": "Obchodní",
+    "biurowe": "Kancelářské",
+    "gastronomiczne": "Gastronomie",
+    "uslugowe": "Služby",
+    "mieszkalne": "Obytné",
+    "firma": "Firma",
+    "jakKupic": "Jak koupit",
+    "technologia": "Technologie",
+    "finansowanie": "Financování",
+    "pawilonVsNajem": "Pavilon vs. nájem",
+    "realizacje": "Realizace",
+    "dostepne": "Ihned k dispozici",
+    "faq": "FAQ",
+    "kontakt": "Kontakt",
+    "contactPage": "Stránka kontaktu &rarr;",
+    "privacy": "Ochrana osobních údajů",
+    "terms": "Obchodní podmínky",
+    "cookies": "Nastavení cookies",
+    "madeBy": "Vytvořeno"
+  },
+  "index": {
+    "seeMore": "Zobrazit více",
+    "wantSame": "Chci totéž — nacenit zdarma",
+    "quotePavillon": "Nacenit svůj pavilon",
+    "calcSavings": "Spočítejte si úsporu &rarr;",
+    "fullFinancing": "Kompletní financování &rarr;",
+    "fullProcess": "Celý proces krok za krokem &rarr;",
+    "meetUs": "Poznejte nás blíže &rarr;",
+    "visitUs": "Navštivte nás"
+  }
+}

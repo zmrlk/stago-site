@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Prevádzkový pavilón — salón, kozmetika, servis | STAGO",
+    "description": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Voda, elektrika, kanalizácia — všetko hotové. Od 5 800 € netto. Dodávka na Slovensko.",
+    "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
+    "ogTitle": "Prevádzkový pavilón — salón, kozmetika, servis | STAGO",
+    "ogDescription": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Voda, elektrika, kanalizácia — všetko hotové. Od 5 800 € netto. Dodávka na Slovensko.",
+    "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
+  },
+  "breadcrumb": "Prevádzkové",
+  "productType": "uslugowy",
+  "hero": {
+    "img": "../assets/modele/icon.webp",
+    "imgAlt": "Prevádzkový pavilón STAGO — hmota ICON",
+    "h1": "Prevádzkový pavilón.",
+    "subtitle": "Kaderníctvo, kozmetický salón, servis, práčovňa, opravovňa. Každý odbor má svoje požiadavky — vodu, kanalizáciu, ventiláciu, silnejšiu elektrickú inštaláciu, niekedy konkrétne certifikáty. Povedzte nám, čím sa zaoberáte, a pripravíme pavilón tak, aby hygiena prešla bez problémov.",
+    "price": "od 5 800 € netto",
+    "priceNote": "/ prevádzkový pavilón 5x3 m, inštalácie v cene",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Prevadzkovy%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Pozrite si všetkých 12 modelov &rarr;"
+  },
+  "models": {
+    "eyebrow": "Odporúčané hmoty",
+    "h2": "Modely, ktoré vyzerajú tak, ako by chcel Váš zákazník",
+    "sub": "Rozhodnutie vrátiť sa do salónu často padne už pri prvej návšteve. Tieto hmoty pomáhajú urobiť ho správnym smerom.",
+    "items": [
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Prémiový loft s rohovým zasklením",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pavilón STAGO ICON",
+        "href": "../modele/icon.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Showroomový front s tromi výkladmi",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pavilón STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Drevený rám, symetrický front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pavilón STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Predĺžený monolit s lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pavilón STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Klasické usporiadanie, symetrické proporcie",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pavilón STAGO MILA",
+        "href": "../modele/mila.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pre tento odbor",
+    "h2": "Čo pripravíme pre služby",
+    "sub": "Každý odbor sa riadi vlastnými pravidlami — a každý náš pavilón navrhujeme pre konkrétne zariadenia aj konkrétne predpisy.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Voda a kanalizácia",
+        "text": "Prívod vody, umývadlá, odtok — všetko v súlade so sanitárnymi normami. Bez ohľadu na odbor, hygiena prechádza takýmto pavilónom bez prekážok."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Elektrická inštalácia pre zariadenia",
+        "text": "Zosilnená inštalácia pripravená pre sušičky, zákrokové lampy, sterilizátory či priemyselné práčky. Povedzte nám, aké zariadenia plánujete postaviť, a zvolíme obvody pre konkrétne prístroje."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Mechanická ventilácia",
+        "text": "Ventilácia s odvodom výparov a chemických zápachov. Vy pracujete v čistom vzduchu a zákazník čaká v komfortných podmienkach — bez dusna a nepríjemných arómov."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Povrchy ľahké na údržbu",
+        "text": "Protišmyková podlaha, umývateľné steny, pracovné dosky odolné voči chemikáliám. Denná dezinfekcia trvá minúty, nie hodiny."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V cene",
+    "h2": "Čo dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizácia",
+        "text": "Poviete, čo potrebujete. Nakreslíme. Uvidíte pavilón v 3D skôr, než miniete euro. Meníme, kým nepoviete \"áno\"."
+      },
+      {
+        "h3": "Doprava a montáž v cene",
+        "text": "Pavilón ide na návese z nášho závodu. Náš tím ho postaví na mieste. Vy ukážete, kde má stáť. Dodávka na Slovensko v cene."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konštrukcia, steny, strecha — 2 roky záruky. Po záruke tiež neopúšťame zákazníkov. Máme vlastných ľudí, nehľadáme na telefón."
+      },
+      {
+        "h3": "Pomoc s dokumentmi",
+        "text": "Do 35 m² stačí ohlásenie, nie povolenie. Pomôžeme vyplniť papiere, aby ste nemuseli hľadať vzory po internete."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Pozrite naživo",
+    "h2": "Takto vyzerajú naše realizácie",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Prevádzkový pavilón STAGO — realizácia 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Prevádzkový pavilón STAGO — realizácia 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Prevádzkový pavilón STAGO — realizácia 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-uslugowy",
+    "eyebrow": "Otázky",
+    "h2": "Na čo sa pýtajú zákazníci z tohto odboru",
+    "items": [
+      {
+        "q": "Koľko stojí prevádzkový pavilón?",
+        "a": "Modul 5x3 m so základnými inštaláciami začína od 5 800 € netto. Väčší salón s dvomi pracoviskami — 9 200–12 700 €. Konečná cena závisí od množstva zariadení, prípojok a dokončenia interiéru."
+      },
+      {
+        "q": "Spĺňa pavilón požiadavky hygieny?",
+        "a": "Áno. Navrhujeme ho v súlade s požiadavkami platnými v danom odbore. Hygiena príde, skontroluje a podpíše protokol. Desiatky našich zákazníkov už prevádzkujú salóny a servisy v pavilónoch STAGO."
+      },
+      {
+        "q": "Môžem mať viac ako jedno pracovisko?",
+        "a": "Áno. Spájame moduly vedľa seba, vďaka čomu vznikajú väčšie pavilóny — 8x3 m alebo 12x3 m — s dvomi alebo tromi pracoviskami. Povedzte nám len, koľko ľudí má pracovať súčasne, a navrhneme vhodné usporiadanie."
+      },
+      {
+        "q": "A ak ešte nemám nápad na usporiadanie interiéru?",
+        "a": "Pomôžeme ho zostaviť. Projekt vzniká spoločne — opýtame sa, čo potrebujete, a poradíme, kde umiestniť umývadlo, kreslo či toaletu. Naša úloha nekončí výrobou pavilónu."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začíname",
+    "h2": "Povedzte, čo potrebujete",
+    "textareaPlaceholder": "Čo chcete urobiť? Aký rozmer? Kde to má stáť?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodný pavilón"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pavilón pre gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontajner pre kanceláriu"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Prevádzkový pavilón"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontajner na stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoročný domček"
+      },
+      {
+        "value": "specjalny",
+        "label": "Netypický pavilón"
+      }
+    ],
+    "infoH3": "Ako to prebieha?",
+    "infoText": "Napíšete alebo zavoláte. Opýtame sa na detaily. Nakreslíme projekt s 3D vizualizáciou. Uvedieme cenu s dopravou a montážou. Bez prekvapení.",
+    "features": [
+      {
+        "text": "3D vizualizácia — uvidíte, skôr než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montážou"
+      },
+      {
+        "text": "Pomoc s dokumentmi a ohlásením"
+      },
+      {
+        "text": "Odpoveď do jedného dňa"
+      }
+    ],
+    "selectedType": "uslugowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/icon.webp",
+      "alt": "Všetky modely",
+      "label": "Modely",
+      "h3": "Pozrite si všetkých 12 modelov",
+      "text": "Každý model prispôsobíte podľa svojho použitia. Prezrite si celý katalóg."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Použitie",
+      "label": "Použitie",
+      "h3": "Ďalšie použitie",
+      "text": "Pozrite, čo ešte robíme — obchod, kancelária, dom, gastro, kabinét."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cenník 2026",
+      "label": "Poradňa",
+      "h3": "Cenník pavilónov 2026",
+      "text": "Konkrétne sumy, bez zavádzania. Zistite, koľko zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Prevádzkový pavilón STAGO",
+    "description": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Voda, elektrika, kanalizácia — všetko hotové. Od 5 800 € netto. Dodávka na Slovensko.",
+    "image": "https://stago.com.pl/assets/modele/icon.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Padiglione gastronomico — caffetteria, gelateria, food truck | STAGO",
+    "description": "Padiglioni gastronomici chiavi in mano. Caffetteria, gelateria, food truck, bar. Ventilazione, finestra di servizio, finiture HACCP. Dal produttore.",
+    "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
+    "ogTitle": "Padiglione gastronomico — caffetteria, gelateria, food truck | STAGO",
+    "ogDescription": "Padiglioni gastronomici chiavi in mano. Caffetteria, gelateria, food truck, bar. Ventilazione, finestra di servizio, finiture HACCP. Dal produttore.",
+    "ogImage": "https://stago.com.pl/assets/modele/saga.webp"
+  },
+  "breadcrumb": "Gastronomici",
+  "productType": "gastronomiczny",
+  "hero": {
+    "img": "../assets/modele/saga.webp",
+    "imgAlt": "Padiglione gastronomico STAGO — modello SAGA",
+    "h1": "Padiglione gastronomico.",
+    "subtitle": "Caffetteria, gelateria, food truck, piccola cucina, bar. Conosciamo le specificità del settore — ventilazione, requisiti sanitari, layout con finestra di servizio. Sappiamo anche che in stagione non c'è tempo per correzioni, per questo tutto deve funzionare dal primo giorno. Dicci cosa servi e adattiamo il resto.",
+    "price": "da 5 060 € netto",
+    "priceNote": "/ modulo gastronomico 4×2,4 m, pronto per l'apertura",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Gastronomico%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i 12 modelli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelli consigliati",
+    "h2": "Modelli che stanno bene con un caffè in mano",
+    "sub": "Queste forme hanno il carattere che il cliente cerca comprando un caffè o un gelato — e allo stesso tempo un layout che funziona nel lavoro quotidiano dietro il bancone.",
+    "items": [
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Forma allungata con fronte vetrinato",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Padiglione STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Fronte showroom con tre vetrine",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Padiglione STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Forma con accenti laterali e fronte",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Padiglione STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Forma con angoli panoramici",
+        "img": "../assets/modele/view.webp",
+        "alt": "Padiglione STAGO VIEW",
+        "href": "../modele/view.html"
+      },
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Loft premium con vetrata angolare",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Padiglione STAGO ICON",
+        "href": "../modele/icon.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Per questo settore",
+    "h2": "Cosa prepariamo per la gastronomia",
+    "sub": "Tutto conforme ai requisiti sanitari e HACCP. Non devi lottare con le normative — è compito nostro.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Ventilazione gastronomica",
+        "text": "Cappa, ventilatore, estrazione fumi e vapori. La progettiamo per le attrezzature specifiche che hai o che prevedi di acquistare. L'aria è fresca anche nel pieno della stagione."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Finestra di servizio",
+        "text": "Finestra classica stile food truck — grande, apribile verso l'alto, con mensola espositiva. Il cliente viene servito dall'esterno, tu lavori in condizioni confortevoli all'interno. Possiamo anche realizzare un ingresso completo per ospiti seduti — la scelta è tua."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Finiture conformi HACCP",
+        "text": "Pareti e pavimento in materiali facili da pulire, approvati per il contatto con alimenti. L'ispezione sanitaria entra, controlla, firma il verbale — senza stress e senza improvvisazioni dell'ultimo minuto."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Impianti per le attrezzature",
+        "text": "Impianto elettrico rinforzato per macchina del caffè, frigoriferi e vetrine refrigerate. Allacciamento acqua e scarico. Dicci quali attrezzature metti e noi prepariamo gli attacchi nei punti giusti."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Struttura, pareti, tetto — 2 anni di garanzia. Anche dopo la garanzia non abbandoniamo i clienti. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Padiglione gastronomico STAGO — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Padiglione gastronomico STAGO — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Padiglione gastronomico STAGO — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-gastronomiczny",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti di questo settore",
+    "items": [
+      {
+        "q": "Quanto costa un padiglione gastronomico?",
+        "a": "Un piccolo modulo per caffè parte da 5 060 € netto. Una gelateria più grande con retro refrigerato — 9 200-13 800 €. Un bar con cucina completa — da 16 100 €. Ogni preventivo lo prepariamo gratuitamente dopo una breve conversazione."
+      },
+      {
+        "q": "Posso avere la finestra di servizio e contemporaneamente posto per i clienti all'interno?",
+        "a": "Sì, entrambe le soluzioni si possono combinare in un unico padiglione. Finestra di servizio per i clienti serviti all'esterno e ingresso completo per gli ospiti seduti all'interno. Possiamo anche progettare una zona esterna con tavolini e ombrelloni."
+      },
+      {
+        "q": "E i requisiti sanitari?",
+        "a": "Realizziamo i padiglioni conformemente al sistema HACCP: pareti lavabili, pavimento antiscivolo, ventilazione meccanica, accesso ad acqua e fognatura. Aiutiamo anche con la documentazione necessaria per la comunicazione sanitaria."
+      },
+      {
+        "q": "Posso spostare il padiglione in un altro posto per la stagione?",
+        "a": "Sì — molti dei nostri clienti fanno proprio così. D'estate al mare, in autunno in città, d'inverno al sicuro parcheggiato sul terreno. Basta caricare il padiglione sul rimorchio e trasportarlo nella nuova posizione."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "textareaPlaceholder": "Cosa vuoi fare? Quali dimensioni? Dove deve stare?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "socjalny",
+        "label": "Container per cantiere"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta tutto l'anno"
+      },
+      {
+        "value": "specjalny",
+        "label": "Padiglione speciale"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ],
+    "selectedType": "gastronomiczny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/saga.webp",
+      "alt": "Tutti i modelli",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Ogni modello lo adatti alla tua destinazione. Sfoglia l'intero catalogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni",
+      "label": "Applicazioni",
+      "h3": "Altre applicazioni",
+      "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino 2026",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Padiglione gastronomico STAGO",
+    "description": "Padiglioni gastronomici chiavi in mano. Caffetteria, gelateria, food truck, bar. Ventilazione, finestra di servizio, finiture HACCP. Dal produttore.",
+    "image": "https://stago.com.pl/assets/modele/saga.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

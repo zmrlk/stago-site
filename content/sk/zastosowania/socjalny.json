@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Kontajner na stavbu — šatňa, jedáleň, sanitárky | STAGO",
+    "description": "Sociálne kontajnery pre stavby a firmy. Šatňa, jedáleň, sanitárny kontajner. Pevné, mobilné, ihneď k dispozícii. Od 2 800 € netto. Dodávka na Slovensko.",
+    "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
+    "ogTitle": "Kontajner na stavbu — šatňa, jedáleň, sanitárky | STAGO",
+    "ogDescription": "Sociálne kontajnery pre stavby a firmy. Šatňa, jedáleň, sanitárny kontajner. Pevné, mobilné, ihneď k dispozícii. Od 2 800 € netto. Dodávka na Slovensko.",
+    "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
+  },
+  "breadcrumb": "Sociálne",
+  "productType": "socjalny",
+  "hero": {
+    "img": "../assets/modele/cube.webp",
+    "imgAlt": "Kontajner na stavbu STAGO — hmota CUBE",
+    "h1": "Kontajner na stavbu.",
+    "subtitle": "Šatňa, jedáleň, sanitárky, zázemie pre partiu. Pevné, mobilné a pripravené na prevoz na ďalší stavebný plac, keď aktuálna investícia končí. Partia sa má kde prezliecť, najesť a oddýchnuť — a Vy máte svätý pokoj.",
+    "price": "od 2 800 € netto",
+    "priceNote": "/ sociálny kontajner 6x2,4 m",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Stavba%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Pozrite si všetkých 12 modelov &rarr;"
+  },
+  "models": {
+    "eyebrow": "Odporúčané hmoty",
+    "h2": "Modely, ktoré vydržia podmienky stavby",
+    "sub": "Pevné a funkčné, bez zbytočných ozdôb. Vydržia každodenné používanie na stavebnom placi a aj po rokoch vyzerajú poriadne.",
+    "items": [
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modulárny kubík s výraznou vložkou",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pavilón STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Predĺžený monolit s lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pavilón STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompaktná hmota s celovýkladom",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pavilón STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Drevený rám, symetrický front",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pavilón STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Prémiová hmota s rohovými oknami",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pavilón STAGO NORD",
+        "href": "../modele/nord.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pre tento odbor",
+    "h2": "Čo pripravíme pre podmienky stavby",
+    "sub": "Bez ozdôb. Pevne, mobilne a na roky — lebo stavebný plac odpúšťa len silným konštrukciám.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Odolný voči podmienkam stavby",
+        "text": "Oceľový rám, trapézový plech, zosilnené rohy. Bez problémov vydrží nakladanie žeriavom, transport po nerovných cestách a každodenné používanie partiou v pracovnom oblečení."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
+        "h3": "Rýchly transport medzi stavbami",
+        "text": "Štandardné rozmery prispôsobené návesom. Naloženie, prevoz a vyloženie trvajú niekoľko hodín — a kontajner už pracuje na novom mieste. Jeden takýto objekt dokáže obslúžiť tri až štyri stavby ročne."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Vybavenie prispôsobené partii",
+        "text": "Skrinky na oblečenie, lavičky, stoly, umývadlá, sprchy — v konfigurácii, akú potrebujete. Plná šatňa, samostatný sanitárny uzol alebo oboje spojené v jednom module."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
+        "h3": "Kúrenie a elektrika",
+        "text": "Elektrický ohrievač alebo piecka, plná elektrická inštalácia a osvetlenie. Partia pracuje v komfortných podmienkach po celý rok — aj v strede zimy."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V cene",
+    "h2": "Čo dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizácia",
+        "text": "Poviete, čo potrebujete. Nakreslíme. Uvidíte pavilón v 3D skôr, než miniete euro. Meníme, kým nepoviete \"áno\"."
+      },
+      {
+        "h3": "Doprava a montáž v cene",
+        "text": "Pavilón ide na návese z nášho závodu. Náš tím ho postaví na mieste. Vy ukážete, kde má stáť. Dodávka na Slovensko v cene."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konštrukcia, steny, strecha — 2 roky záruky. Po záruke tiež neopúšťame zákazníkov. Máme vlastných ľudí, nehľadáme na telefón."
+      },
+      {
+        "h3": "Pomoc s dokumentmi",
+        "text": "Do 35 m² stačí ohlásenie, nie povolenie. Pomôžeme vyplniť papiere, aby ste nemuseli hľadať vzory po internete."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Pozrite naživo",
+    "h2": "Takto vyzerajú naše realizácie",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r6.webp",
+        "alt": "Kontajner na stavbu STAGO — realizácia 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Kontajner na stavbu STAGO — realizácia 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Kontajner na stavbu STAGO — realizácia 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-socjalny",
+    "eyebrow": "Otázky",
+    "h2": "Na čo sa pýtajú zákazníci z tohto odboru",
+    "items": [
+      {
+        "q": "Koľko stojí sociálny kontajner?",
+        "a": "Základný modul 6x2,4 m začína od 2 800 € netto. S kompletným vybavením (šatňa a sanitárny uzol) — 5 800–8 000 €. To je lacnejšie riešenie ako prenájom na polroka, a po zaplatení kontajner zostáva Vašim majetkom."
+      },
+      {
+        "q": "Môžem ho vziať na lízing namiesto okamžitej kúpy?",
+        "a": "Áno. Spolupracujeme s lízingovými spoločnosťami a pomôžeme nastaviť financovanie tak, aby splátka išla do nákladov firmy, a po splatení sa kontajner stal Vašim majetkom."
+      },
+      {
+        "q": "Dá sa k nemu pripojiť voda a kanalizácia?",
+        "a": "Áno. Sanitárne kontajnery majú umývadlá, sprchy a toalety. Vyžadujú prívod vody a odtok na stavebnom placi — pomôžeme naplánovať prípojky, ale ich realizácia je na strane inštalatéra alebo elektrikára u Vás."
+      },
+      {
+        "q": "Ako dlho vydrží kontajner?",
+        "a": "Dobre udržiavaný kontajner slúži 15-20 rokov. Mnohí zákazníci zo stavebníctva používajú jeden objekt s úspechom na desiatkach stavieb za sebou."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začíname",
+    "h2": "Povedzte, čo potrebujete",
+    "textareaPlaceholder": "Čo chcete urobiť? Aký rozmer? Kde to má stáť?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodný pavilón"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pavilón pre gastro"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontajner pre kanceláriu"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Prevádzkový pavilón"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontajner na stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoročný domček"
+      },
+      {
+        "value": "specjalny",
+        "label": "Netypický pavilón"
+      }
+    ],
+    "infoH3": "Ako to prebieha?",
+    "infoText": "Napíšete alebo zavoláte. Opýtame sa na detaily. Nakreslíme projekt s 3D vizualizáciou. Uvedieme cenu s dopravou a montážou. Bez prekvapení.",
+    "features": [
+      {
+        "text": "3D vizualizácia — uvidíte, skôr než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montážou"
+      },
+      {
+        "text": "Pomoc s dokumentmi a ohlásením"
+      },
+      {
+        "text": "Odpoveď do jedného dňa"
+      }
+    ],
+    "selectedType": "socjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/cube.webp",
+      "alt": "Všetky modely",
+      "label": "Modely",
+      "h3": "Pozrite si všetkých 12 modelov",
+      "text": "Každý model prispôsobíte podľa svojho použitia. Prezrite si celý katalóg."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Použitie",
+      "label": "Použitie",
+      "h3": "Ďalšie použitie",
+      "text": "Pozrite, čo ešte robíme — obchod, kancelária, dom, gastro, kabinét."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Cenník 2026",
+      "label": "Poradňa",
+      "h3": "Cenník pavilónov 2026",
+      "text": "Konkrétne sumy, bez zavádzania. Zistite, koľko zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Kontajner na stavbu STAGO",
+    "description": "Sociálne kontajnery pre stavby a firmy. Šatňa, jedáleň, sanitárny kontajner. Pevné, mobilné, ihneď k dispozícii. Od 2 800 € netto. Dodávka na Slovensko.",
+    "image": "https://stago.com.pl/assets/modele/cube.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

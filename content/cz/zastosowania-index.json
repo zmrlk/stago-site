@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Využití pavilonů STAGO — obchod, kancelář, gastro, bydlení",
+    "description": "Modulární pavilony pro každý byznys. Obchod, kancelář, kavárna, salon, dům, zázemí stavby. Každý z 12 modelů přizpůsobíte svému účelu.",
+    "canonical": "https://stago.com.pl/zastosowania.html"
+  },
+  "hero": {
+    "eyebrow": "K čemu se hodí pavilon",
+    "h1": "Pro každý byznys.",
+    "h1accent": "Pro každý nápad.",
+    "sub": "Obchod, kancelář, kavárna, kosmetický salon, dům na pozemku, zázemí stavby — to je jen začátek. Vyberte využití, které vás nejvíc zajímá, a ukážeme tvary, které se v něm osvědčují nejlépe."
+  },
+  "uses": [
+    { "name": "Obchod", "desc": "Prodejna, stánek, prodejní místo na náměstí. Výlohy pro expozici, osvětlení zvýrazňující produkt, pohodlný vstup pro každého zákazníka.", "href": "zastosowania/handlowy.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l1.5-5h15L21 9M3 9v11a1 1 0 001 1h16a1 1 0 001-1V9M3 9h18M9 14h6\"/></svg>" },
+    { "name": "Gastronomie", "desc": "Kavárna, zmrzlinárna, food truck, bar. Podávací okno, gastronomická ventilace a povrchy v souladu s požadavky HACCP.", "href": "zastosowania/gastronomiczny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3\"/></svg>" },
+    { "name": "Kancelář", "desc": "Prodejní kancelář, recepce u firmy, dočasná kancelář na stavbě, poradenská ordinace. Teplo, ticho a připraveno k práci od prvního dne.", "href": "zastosowania/biurowy.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 21V9\"/></svg>" },
+    { "name": "Služby", "desc": "Kadeřnictví, kosmetický salon, servis, prádelna. Voda, kanalizace a elektřina připravené pro konkrétní zařízení vaší branže.", "href": "zastosowania/uslugowy.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z\"/></svg>" },
+    { "name": "Staveniště", "desc": "Zázemí pro pracovní četu, šatna, jídelna, sanitární uzel. Solidní, mobilní, připraveno k převozu na další stavbu.", "href": "zastosowania/socjalny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75\"/></svg>" },
+    { "name": "Bydlení", "desc": "Celoroční domek, malý dům pro rodinu, pracovna na zahradě, rekreační chata. Plné stěny, skutečná izolace a normální koupelna.", "href": "zastosowania/mieszkalny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>" },
+    { "name": "Speciální projekty", "desc": "Lékařská ordinace, vrátnice, pokladna, informační bod, malý kulturní dům. Každý projekt vzniká podle konkrétních předpisů a norem.", "href": "zastosowania/specjalny.html", "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"/></svg>" }
+  ],
+  "cta": {
+    "h2": "Váš nápad se nevejde do žádné kategorie?",
+    "sub": "Zavolejte, promluvíme si. Realizujeme i nestandardní projekty — pro zemědělství, samosprávy, dráhy, přístavy. Řekněte, co máte na mysli, a prověříme, jak vám můžeme pomoci."
+  }
+}

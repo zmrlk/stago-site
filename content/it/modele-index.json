@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Modelli di padiglioni STAGO — 12 design tra cui scegliere",
+    "description": "12 modelli di padiglioni modulari STAGO. Legno, grafite, mix. Scegli il design — dimensioni, colore, infissi e interni li adattiamo alla tua situazione.",
+    "canonical": "https://stago.com.pl/modele.html",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "hero": {
+    "eyebrow": "I nostri modelli",
+    "h1": "Scegli il design.",
+    "h1accent": "Il resto lo adattiamo noi.",
+    "sub": "12 modelli sono il punto di partenza — ispirazione nella forma e nel carattere. Dimensioni, colore, infissi, interni, attrezzature — tutto lo progettiamo da zero su misura per te. Ogni padiglione è diverso, ogni padiglione è per una situazione concreta."
+  },
+  "models": [
+    { "code": "ATRI", "name": "ATRI", "img": "assets/modele/atri.webp", "alt": "Padiglione ATRI — rovere chiaro, interni aperti", "desc": "Listelli in legno chiaro, tanto vetro, porte scorrevoli. Un atrio aperto e accogliente.", "href": "modele/atri.html" },
+    { "code": "MILA", "name": "MILA", "img": "assets/modele/mila.webp", "alt": "Padiglione MILA — tranquillità scandinava in legno", "desc": "Facciata interamente in legno chiaro. Tranquillità e calore senza dettagli superflui.", "href": "modele/mila.html" },
+    { "code": "ICON", "name": "ICON", "img": "assets/modele/icon.webp", "alt": "Padiglione ICON — loft premium in legno", "desc": "Facciata in legno, enormi vetrate angolari. Uno studio di architettura in tutto il suo splendore.", "href": "modele/icon.html" },
+    { "code": "RYTM", "name": "RYTM", "img": "assets/modele/rytm.webp", "alt": "Padiglione RYTM — cornice in legno, fronte simmetrico", "desc": "Listelli verticali in legno nella cornice, fronte nero, porte simmetriche.", "href": "modele/rytm.html" },
+    { "code": "NORD", "name": "NORD", "img": "assets/modele/nord.webp", "alt": "Padiglione NORD — antracite con accenti in legno", "desc": "Antracite + legno sugli angoli + enormi vetrate angolari. Premium scandinavo.", "href": "modele/nord.html" },
+    { "code": "LOFT", "name": "LOFT", "img": "assets/modele/loft.webp", "alt": "Padiglione LOFT — legno, grafite, enormi vetrine", "desc": "Listelli verticali in legno, tetto grafite, tre grandi vetrine. Effetto showroom.", "href": "modele/loft.html" },
+    { "code": "SAGA", "name": "SAGA", "img": "assets/modele/saga.webp", "alt": "Padiglione SAGA — parte superiore in legno, fronte grafite", "desc": "Facciata in legno nella parte alta, grafite in basso, tre grandi vetrine. Pronto per la gastronomia.", "href": "modele/saga.html" },
+    { "code": "VIEW", "name": "VIEW", "img": "assets/modele/view.webp", "alt": "Padiglione VIEW — legno, grafite, vetrate angolari", "desc": "Fascia superiore in legno, corpo grafite, vetrate panoramiche angolari.", "href": "modele/view.html" },
+    { "code": "DUET", "name": "DUET", "img": "assets/modele/duet.webp", "alt": "Padiglione DUET — grafite con accenti in legno", "desc": "Corpo grafite, listelli in legno sui lati, tre grandi vetrine frontali.", "href": "modele/duet.html" },
+    { "code": "CUBE", "name": "CUBE", "img": "assets/modele/cube.webp", "alt": "Padiglione CUBE — cubo nero con inserto in legno", "desc": "Cubo modulare nero, inserto in legno come accento. Geometria pura.", "href": "modele/cube.html" },
+    { "code": "NOIR", "name": "NOIR", "img": "assets/modele/noir.webp", "alt": "Padiglione NOIR — listelli neri, minimalismo dark", "desc": "Listelli verticali neri, finestre allungate, carattere boutique berlinese.", "href": "modele/noir.html" },
+    { "code": "KIOS", "name": "KIOS", "img": "assets/modele/kios.webp", "alt": "Padiglione KIOS — piccolo, nero, pronto per il commercio", "desc": "Padiglione compatto nero con grande vetrina in vetro. Piccolo footprint, grande carattere.", "href": "modele/kios.html" }
+  ],
+  "cta": {
+    "h2": "Non sai quale scegliere?",
+    "sub": "Dicci a cosa ti serve. Ti proporremo 2-3 modelli e faremo una visualizzazione gratuita."
+  }
+}

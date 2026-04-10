@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "ICON — loft premium con acristalamiento en esquina | Pabellón modular STAGO",
+    "description": "ICON STAGO — Volumen expresivo con grandes ventanas en esquina del suelo al techo. Dimensiones, material de fachada, color e interior adaptables. Presupuesto gratuito.",
+    "canonical": "https://stago.com.pl/modele/icon.html",
+    "ogTitle": "ICON — loft premium con acristalamiento en esquina",
+    "ogDescription": "Volumen expresivo con grandes ventanas en esquina del suelo al techo. Carácter de estudio de arquitectura — abierto, premium, diseñado para impresionar. Acabado de fachada a su elección.",
+    "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
+  },
+  "breadcrumb": "ICON",
+  "productType": "ICON",
+  "hero": {
+    "img": "../assets/modele/icon.webp",
+    "imgAlt": "Pabellón modular STAGO ICON — loft premium con acristalamiento en esquina",
+    "h1": "ICON — loft premium con acristalamiento en esquina.",
+    "subtitle": "Volumen expresivo con grandes ventanas en esquina del suelo al techo. Carácter de estudio de arquitectura — abierto, premium, diseñado para impresionar. Acabado de fachada a su elección.",
+    "price": "desde 8 050 € neto",
+    "priceNote": "/ presupuesto individual para su proyecto",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20ICON%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Ver todos los modelos &rarr;"
+  },
+  "usecases": {
+    "eyebrow": "Para qué sirve",
+    "h2": "Dónde ICON funciona mejor",
+    "sub": "Este volumen es universal — funciona en varias direcciones principales. Pero no se limita a ellas. Cada pabellón lo diseñamos para la situación concreta del cliente.",
+    "items": [
+      {
+        "title": "Pabellón de hostelería",
+        "text": "Cafetería, heladería, food truck, bar. Ventana de despacho, ventilación, acabados conformes con normativa sanitaria.",
+        "href": "../zastosowania/gastronomiczny.html"
+      },
+      {
+        "title": "Pabellón de servicios",
+        "text": "Salón, estética, taller, lavandería. Agua, saneamiento, electricidad — todo conectado.",
+        "href": "../zastosowania/uslugowy.html"
+      },
+      {
+        "title": "Contenedor de oficina",
+        "text": "Oficina de ventas, recepción, oficina en obra. Cálido, silencioso, listo para trabajar desde el primer día.",
+        "href": "../zastosowania/biurowy.html"
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "A su medida",
+    "h2": "Este volumen. Su acabado.",
+    "sub": "ICON es una forma y unas proporciones — no un producto terminado. Todo lo que ve en el render es una de las variantes. Dimensiones, material de fachada, color, carpintería, interior — lo diseñamos de nuevo a su medida. Díganos cómo debe ser, nosotros dibujamos.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "title": "Dimensiones",
+        "text": "Desde 3×2m (compacto) hasta 12×4m (módulo grande). Combinamos módulos en paralelo si necesita más superficie. Altura estándar o elevada."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
+        "title": "Material y color de fachada",
+        "text": "Madera (roble claro, nogal, ébano), chapa trapezoidal, paneles HPL, paneles compuestos. Toda la carta RAL de colores. Mostramos muestras antes del pedido."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M9 3v18M3 9h6M3 15h6\"/></svg>",
+        "title": "Carpintería y ventanas",
+        "text": "Puertas correderas, clásicas, técnicas. Ventanas panorámicas, en esquina, de despacho. Distribución de huecos según su uso — usted dice dónde necesita qué."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
+        "title": "Interior y equipamiento",
+        "text": "Para vivienda (baño, cocina, dormitorio), para oficina (instalaciones, iluminación), para servicios (lavabos, agua, saneamiento). Acabados, suelos, mobiliario — todo lo diseñamos junto a usted."
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Construcción",
+    "h2": "Lo que es constante — independientemente del acabado",
+    "items": [
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
+        "h3": "Bastidor de acero soldado",
+        "text": "Perfiles de acero cerrados, soldados sobre plantillas. Protección anticorrosiva. La estructura soporta transporte, montaje con grúa y cargas de nieve en invierno."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Aislamiento PIR 100mm",
+        "text": "Panel PIR de 100 mm en paredes, cubierta y suelo. Lambda 0,022 W/(m·K) — clase de eficiencia energética. En invierno mantiene el calor, en verano no se recalienta como una caseta metálica."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "h3": "Carpintería de aluminio",
+        "text": "Ventanas y puertas de aluminio con rotura de puente térmico. Perfiles de alta eficiencia, acristalamiento doble. Juntas, cerraduras, regulación — certificado del fabricante."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
+        "h3": "Instalaciones a medida",
+        "text": "Electricidad, iluminación LED, cuadro eléctrico — de serie. Agua, saneamiento, ventilación, climatización — según su uso. Listo para la conexión en su parcela."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluido",
+    "h2": "Lo que recibe de STAGO",
+    "items": [
+      {
+        "h3": "Visualización 3D gratuita",
+        "text": "Dibujamos el pabellón en 3D antes de que firme nada. Lo cambiamos tantas veces como haga falta — hasta que diga \"sí\". Gratuita, sin compromiso."
+      },
+      {
+        "h3": "Transporte y montaje incluidos",
+        "text": "El pabellón viaja en camión desde nuestra fábrica. Nuestro equipo lo instala en su parcela. Incluido en el precio — sin recargos por kilómetros, sin costes ocultos. Entrega en España."
+      },
+      {
+        "h3": "2 años de garantía + servicio",
+        "text": "Garantía en estructura e instalaciones. Después de la garantía tampoco abandonamos a nuestros clientes — llame y venimos. Tenemos nuestro propio equipo."
+      },
+      {
+        "h3": "Ayuda con la documentación",
+        "text": "Le asesoramos sobre la normativa local aplicable y le ayudamos a preparar la documentación necesaria. De forma rápida, eficaz y sin estrés."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Véalo en persona",
+    "h2": "Así son nuestras realizaciones",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Pabellón STAGO ICON — realización 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Pabellón STAGO ICON — realización 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Pabellón STAGO ICON — realización 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-icon",
+    "eyebrow": "Preguntas",
+    "h2": "Lo que preguntan los clientes",
+    "items": [
+      {
+        "q": "¿Tengo que elegir la misma fachada que en el render?",
+        "a": "No. El render muestra una de las variantes de acabado. ICON como volumen acepta cualquier fachada — madera en varios tonos, chapa trapezoidal, paneles HPL, paneles compuestos. Díganos cómo debe ser, nosotros proponemos materiales y mostramos muestras."
+      },
+      {
+        "q": "¿Puedo cambiar las dimensiones de este volumen?",
+        "a": "Sí. El volumen es flexible — desde 3×2m hasta 12×4m. También se pueden combinar módulos en paralelo para superficies mayores. Mantenemos las proporciones para conservar el carácter de ICON, pero el tamaño lo adaptamos a su situación."
+      },
+      {
+        "q": "¿Cuánto cuesta?",
+        "a": "Depende del tamaño, material de fachada y equipamiento. Los módulos más pequeños empiezan desde aprox. 4 140 € neto, los más grandes con equipamiento completo — 10 350–19 550 €. Presupuesto gratuito: <strong><a href=\"mailto:kontakt@stago.com.pl?subject=ES%20—%20ICON%20Consulta\">kontakt@stago.com.pl</a></strong>."
+      },
+      {
+        "q": "¿Cuánto se tarda?",
+        "a": "Normalmente 4-6 semanas desde la aprobación del proyecto hasta la entrega en su parcela. La fecha exacta de entrega la conoce antes de hacer ningún pago — por contrato, no de palabra."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Empecemos",
+    "h2": "Díganos qué necesita",
+    "selectedType": "inny",
+    "textareaPlaceholder": "¿Qué tamaño, qué material de fachada, dónde debe estar, para qué se usará?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pabellón comercial"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pabellón de hostelería"
+      },
+      {
+        "value": "biurowy",
+        "label": "Contenedor de oficina"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pabellón de servicios"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casita residencial"
+      },
+      {
+        "value": "inny",
+        "label": "Otro"
+      }
+    ],
+    "infoH3": "¿Cómo funciona?",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles — dimensiones, material, uso, ubicación. Hacemos la visualización 3D. Le damos el precio final con transporte y montaje. Sin sorpresas.",
+    "features": [
+      {
+        "text": "Visualización 3D — véalo antes de encargar"
+      },
+      {
+        "text": "Precio con transporte y montaje incluidos"
+      },
+      {
+        "text": "Ayuda con documentación y trámites"
+      },
+      {
+        "text": "Respuesta en un día laborable"
+      }
+    ]
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/nord.webp",
+      "alt": "Todos los modelos STAGO",
+      "label": "Modelos",
+      "h3": "Vea los 12 modelos",
+      "text": "Explore todo el catálogo de diseños. Cada uno lo adaptamos a su medida."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Aplicaciones de pabellones",
+      "label": "Aplicaciones",
+      "h3": "¿Para qué se puede usar?",
+      "text": "Tienda, oficina, cafetería, vivienda — le mostramos qué modelo para qué."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Lista de precios de pabellones",
+      "label": "Guía",
+      "h3": "Precios de pabellones 2026",
+      "text": "Cifras concretas, sin rodeos. Vea cuánto pagará."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pabellón modular STAGO ICON",
+    "description": "ICON. Volumen expresivo con grandes ventanas en esquina del suelo al techo. Carácter de estudio de arquitectura — abierto, premium, diseñado para impresionar. Acabado de fachada a su elección.",
+    "image": "https://stago.com.pl/assets/modele/icon.webp",
+    "lowPrice": "35000",
+    "highPrice": "120000"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Speciální pavilon — lékařská ordinace, vrátnice, pokladna | STAGO",
+    "description": "Pavilony pro speciální využití. Lékařská ordinace, vrátnice, pokladna, info point, kulturní dům. Podle konkrétních požadavků a předpisů.",
+    "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
+    "ogTitle": "Speciální pavilon — lékařská ordinace, vrátnice, pokladna | STAGO",
+    "ogDescription": "Pavilony pro speciální využití. Lékařská ordinace, vrátnice, pokladna, info point, kulturní dům. Podle konkrétních požadavků a předpisů.",
+    "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
+  },
+  "breadcrumb": "Speciální",
+  "productType": "specjalny",
+  "hero": {
+    "img": "../assets/modele/noir.webp",
+    "imgAlt": "Speciální pavilon STAGO — tvar NOIR",
+    "h1": "Speciální pavilon.",
+    "subtitle": "Lékařská ordinace, vrátnice, pokladna, informační bod pro město, malá knihovna, vesnický kulturní dům. Každý takový projekt vyžaduje rozhovor s odborníkem — předpisy, normy, vybavení. Realizujeme je pravidelně, takže nám prostě řekněte, co potřebujete.",
+    "price": "individuální kalkulace",
+    "priceNote": "/ projekt vzniká podle vašich požadavků",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Specialni%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Zobrazit všech 12 modelů &rarr;"
+  },
+  "models": {
+    "eyebrow": "Doporučené tvary",
+    "h2": "Výchozí modely — bod pro další rozhovor",
+    "sub": "U speciálních projektů začínáme od zvoleného tvaru, ale od začátku ho navrhujeme podle vašich konkrétních požadavků.",
+    "items": [
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Podlouhlý monolit s lamelami",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pavilon STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Modulární kostka s výraznou vložkou",
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pavilon STAGO CUBE",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Prémiový tvar s rohovými okny",
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pavilon STAGO NORD",
+        "href": "../modele/nord.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompaktní tvar s plnou výlohou",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pavilon STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Tvar s panoramatickými rohy",
+        "img": "../assets/modele/view.webp",
+        "alt": "Pavilon STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Pro tuto branži",
+    "h2": "Co děláme u speciálních projektů",
+    "sub": "Každý takový projekt je samostatný příběh — předpisy, normy, kontakt s úřady. Máme na to ověřené postupy.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Soulad s konkrétními předpisy",
+        "text": "Lékařská ordinace — splňujeme požadavky zdravotnických vyhlášek. Pokladna pro dráhy — realizujeme podle specifikace objednatele. Řekněte nám, co má vzniknout, a navrhneme pavilon podle konkrétní normy."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Nestandardní rozměry a dispozice",
+        "text": "Vrátnice 2×2 m, informační bod 8×4 m se stříškou nad čekací zónou, malá knihovna s čítárnou — rozměry a dispozici navrhujeme pro konkrétní situaci, ne podle pevného katalogu."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Specializované instalace",
+        "text": "Medicinální plyny, sterilizátory, posílená elektrická instalace, ozvučení, monitoring, přesná klimatizace — co potřebujete, to napojíme."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16\"/></svg>",
+        "h3": "Spolupráce s úřady a samosprávami",
+        "text": "Vystavujeme faktury s DPH, pomáháme s přípravou dokumentace a realizujeme projekty pro veřejné zakázky. Spolupracujeme se samosprávami v celém Polsku i zahraničí."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "V ceně",
+    "h2": "Co dostanete od STAGO",
+    "items": [
+      {
+        "h3": "Bezplatná 3D vizualizace",
+        "text": "Řeknete, co potřebujete. Nakreslíme. Uvidíte pavilon ve 3D dříve, než utratíte korunu. Měníme, dokud neřeknete \"ano\"."
+      },
+      {
+        "h3": "Doprava a montáž v ceně",
+        "text": "Pavilon jede na návěsu z naší dílny v Jędrzejově (Polsko). Dodávka do České republiky. Náš tým ho postaví na místě. Vy jen ukážete, kde má stát."
+      },
+      {
+        "h3": "2 roky záruky + servis",
+        "text": "Konstrukce, stěny, střecha — 2 roky záruky. Po záruce zákazníky také neopouštíme. Máme vlastní lidi, nehledáme nikoho na telefon."
+      },
+      {
+        "h3": "Pomoc s dokumenty",
+        "text": "Pro pavilony do 35 m² stačí ohlášení, ne povolení. Pomůžeme vám s papíry, abyste nemuseli hledat formuláře na internetu."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Podívejte se naživo",
+    "h2": "Tak vypadají naše realizace",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Speciální pavilon STAGO — realizace 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "Speciální pavilon STAGO — realizace 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Speciální pavilon STAGO — realizace 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-specjalny",
+    "eyebrow": "Dotazy",
+    "h2": "Na co se ptají zákazníci z této branže",
+    "items": [
+      {
+        "q": "Realizujete pavilony pro veřejné zakázky?",
+        "a": "Ano. Máme zkušenosti se spoluprací se samosprávami, nemocnicemi a dráhami. Vystavujeme faktury s DPH, dodáváme kompletní technickou dokumentaci a realizujeme projekty v souladu se zadávací dokumentací."
+      },
+      {
+        "q": "Kolik stojí lékařská ordinace?",
+        "a": "Cena závisí na specifikaci. Malá ordinace začíná od 8 100 € netto. Kompletní zdravotnický modul s čekárnou, ordinací a sterilizační místností — 18 400–34 500 €. Konečná kalkulace vzniká po rozhovoru s odborníkem."
+      },
+      {
+        "q": "Dokážete realizovat informační bod pro město?",
+        "a": "Ano. Máme na kontě informační tabule, pokladny i body turistických informací. Stačí nám říct, kde má stát, jak dlouho bude provozován a kolik lidí má obsluhovat — zbytek navrhneme."
+      },
+      {
+        "q": "Máte požadované atesty a dokumenty?",
+        "a": "Ano. Ocelová konstrukce je v souladu s normami PN-EN, izolace PIR má certifikát požární odolnosti a vybrané materiály jsou schváleny pro styk s potravinami tam, kde je to vyžadováno. Každý projekt obdrží kompletní technickou dokumentaci."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Začínáme",
+    "h2": "Řekněte, co potřebujete",
+    "textareaPlaceholder": "Co chcete udělat? Jaký rozměr? Kde má stát?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Obchodní pavilon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Gastronomický pavilon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kancelářský kontejner"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Servisní pavilon"
+      },
+      {
+        "value": "socjalny",
+        "label": "Kontejner pro stavbu"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Celoroční domek"
+      },
+      {
+        "value": "specjalny",
+        "label": "Speciální pavilon"
+      }
+    ],
+    "infoH3": "Jak to probíhá?",
+    "infoText": "Napíšete nebo zavoláte. Zeptáme se na detaily. Nakreslíme projekt s 3D vizualizací. Uvedeme cenu s dopravou a montáží. Bez překvapení.",
+    "features": [
+      {
+        "text": "3D vizualizace — uvidíte, než objednáte"
+      },
+      {
+        "text": "Cena s dopravou a montáží"
+      },
+      {
+        "text": "Pomoc s dokumenty a ohlášením"
+      },
+      {
+        "text": "Odpověď do jednoho dne"
+      }
+    ],
+    "selectedType": "specjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/noir.webp",
+      "alt": "Všechny modely",
+      "label": "Modely",
+      "h3": "Zobrazit všech 12 modelů",
+      "text": "Každý model přizpůsobíte svému účelu. Prohlédněte si celý katalog."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Využití",
+      "label": "Využití",
+      "h3": "Další využití",
+      "text": "Podívejte se, co ještě děláme — obchod, kancelář, dům, gastro, ordinace."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Ceník 2026",
+      "label": "Poradce",
+      "h3": "Ceník pavilonů 2026",
+      "text": "Konkrétní částky, bez vytáček. Zjistěte, kolik zaplatíte."
+    }
+  ],
+  "jsonLd": {
+    "name": "Speciální pavilon STAGO",
+    "description": "Pavilony pro speciální využití. Lékařská ordinace, vrátnice, pokladna, info point, kulturní dům. Podle konkrétních požadavků a předpisů.",
+    "image": "https://stago.com.pl/assets/modele/noir.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

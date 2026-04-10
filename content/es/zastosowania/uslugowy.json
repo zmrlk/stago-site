@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Pabellón de servicios — peluquería, estética, taller | STAGO",
+    "description": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Agua, electricidad, saneamiento — todo listo. Desde 5 750 € neto.",
+    "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
+    "ogTitle": "Pabellón de servicios — peluquería, estética, taller | STAGO",
+    "ogDescription": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Agua, electricidad, saneamiento — todo listo. Desde 5 750 € neto.",
+    "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
+  },
+  "breadcrumb": "Servicios",
+  "productType": "uslugowy",
+  "hero": {
+    "img": "../assets/modele/icon.webp",
+    "imgAlt": "Pabellón de servicios STAGO — modelo ICON",
+    "h1": "Pabellón de servicios.",
+    "subtitle": "Peluquería, gabinete de estética, taller, lavandería, punto de reparación. Cada sector tiene sus requisitos — agua, saneamiento, ventilación, instalación eléctrica reforzada, a veces certificados específicos. Díganos a qué se dedica y preparamos el pabellón para que pase la inspección sin problemas.",
+    "price": "desde 5 750 € neto",
+    "priceNote": "/ pabellón de servicios 5×3 m, instalaciones incluidas",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Servicios",
+    "articleHref": "../modele.html",
+    "articleText": "Ver los 12 modelos &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelos recomendados",
+    "h2": "Modelos que lucen como quiere su cliente",
+    "sub": "La decisión de volver al salón a menudo se toma en la primera visita. Estos modelos ayudan a que sea la decisión correcta.",
+    "items": [
+      {
+        "code": "ICON",
+        "name": "ICON",
+        "desc": "Loft premium con acristalamiento en esquina",
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pabellón STAGO ICON",
+        "href": "../modele/icon.html"
+      },
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Frente de showroom con tres vitrinas",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pabellón STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "RYTM",
+        "name": "RYTM",
+        "desc": "Marco de madera, frente simétrico",
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pabellón STAGO RYTM",
+        "href": "../modele/rytm.html"
+      },
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Monolito alargado con lamas",
+        "img": "../assets/modele/noir.webp",
+        "alt": "Pabellón STAGO NOIR",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "MILA",
+        "name": "MILA",
+        "desc": "Distribución clásica, proporciones simétricas",
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pabellón STAGO MILA",
+        "href": "../modele/mila.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Para este sector",
+    "h2": "Lo que preparamos para servicios",
+    "sub": "Cada sector se rige por sus propias normas — y cada pabellón lo diseñamos para equipos concretos y normativa específica.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
+        "h3": "Agua y saneamiento",
+        "text": "Acometida de agua, lavabos, desagüe — todo conforme a normativa sanitaria. Independientemente del sector, la inspección pasa sin problemas."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Instalación eléctrica para equipos",
+        "text": "Instalación reforzada preparada para secadores, lámparas de tratamiento, esterilizadores o lavadoras industriales. Díganos qué equipos piensa instalar y dimensionamos los circuitos para los aparatos concretos."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 12c0-3 2.5-5 5-5 3 0 5 2 5 5s-2 5-5 5c-1 0-2-.3-3-.8\"/><path d=\"M12 12c0 3-2.5 5-5 5-3 0-5-2-5-5s2-5 5-5c1 0 2 .3 3 .8\"/><path d=\"M12 12c-3 0-5-2.5-5-5 0-3 2-5 5-5s5 2 5 5c0 1-.3 2-.8 3\"/><path d=\"M12 12c3 0 5 2.5 5 5 0 3-2 5-5 5s-5-2-5-5c0-1 .3-2 .8-3\"/></svg>",
+        "h3": "Ventilación mecánica",
+        "text": "Ventilación con extracción de vapores y olores químicos. Usted trabaja con aire limpio y el cliente espera en condiciones confortables — sin agobio ni olores desagradables."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16zM5 5l.5 1.5L7 7l-1.5.5L5 9l-.5-1.5L3 7l1.5-.5L5 5z\"/></svg>",
+        "h3": "Acabados fáciles de mantener",
+        "text": "Suelo antideslizante, paredes lavables, encimeras resistentes a productos químicos. La desinfección diaria lleva minutos, no horas."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluido",
+    "h2": "Lo que recibe de STAGO",
+    "items": [
+      {
+        "h3": "Visualización 3D gratuita",
+        "text": "Díganos qué necesita. Dibujamos. Verá el pabellón en 3D antes de gastar un céntimo. Lo cambiamos hasta que diga \"sí\"."
+      },
+      {
+        "h3": "Transporte y montaje incluidos",
+        "text": "El pabellón viaja en camión desde nuestra fábrica en Jędrzejów. Nuestro equipo lo instala in situ. Usted indica dónde debe ir. Entrega en España."
+      },
+      {
+        "h3": "2 años de garantía + servicio",
+        "text": "Estructura, paredes, cubierta — 2 años de garantía. Después de la garantía tampoco abandonamos a nuestros clientes. Tenemos nuestro propio equipo."
+      },
+      {
+        "h3": "Ayuda con la documentación",
+        "text": "Le asesoramos sobre la normativa local y le ayudamos a preparar la documentación necesaria."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Véalo en persona",
+    "h2": "Así son nuestras realizaciones",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Pabellón de servicios STAGO — realización 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Pabellón de servicios STAGO — realización 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Pabellón de servicios STAGO — realización 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-uslugowy",
+    "eyebrow": "Preguntas",
+    "h2": "Lo que preguntan los clientes de este sector",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta un pabellón de servicios?",
+        "a": "Un módulo de 5×3 m con instalaciones básicas empieza desde 5 750 € neto. Un salón más grande con dos puestos — 9 200–12 650 €. El precio final depende de la cantidad de equipos, conexiones y acabado interior."
+      },
+      {
+        "q": "¿El pabellón cumple los requisitos sanitarios?",
+        "a": "Sí. Lo diseñamos conforme a los requisitos vigentes en cada sector. La inspección entra, comprueba y firma el acta. Decenas de nuestros clientes ya gestionan salones y talleres en pabellones STAGO."
+      },
+      {
+        "q": "¿Puedo tener más de un puesto de trabajo?",
+        "a": "Sí. Combinamos módulos en paralelo, creando pabellones más grandes — 8×3 m o 12×3 m — con dos o tres puestos. Solo díganos cuántas personas trabajarán a la vez y propondremos la distribución adecuada."
+      },
+      {
+        "q": "¿Y si aún no tengo una idea clara de la distribución interior?",
+        "a": "Le ayudamos a diseñarla. El proyecto se crea conjuntamente — preguntamos qué necesita y le sugerimos dónde colocar el lavabo, el sillón o el aseo. Nuestro papel no termina con la fabricación del pabellón."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Empecemos",
+    "h2": "Díganos qué necesita",
+    "textareaPlaceholder": "¿Qué quiere hacer? ¿Qué tamaño? ¿Dónde debe estar?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Pabellón comercial"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Pabellón de hostelería"
+      },
+      {
+        "value": "biurowy",
+        "label": "Contenedor de oficina"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Pabellón de servicios"
+      },
+      {
+        "value": "socjalny",
+        "label": "Contenedor para obra"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casita residencial"
+      },
+      {
+        "value": "specjalny",
+        "label": "Pabellón especial"
+      }
+    ],
+    "infoH3": "¿Cómo funciona?",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
+    "features": [
+      {
+        "text": "Visualización 3D — véalo antes de encargar"
+      },
+      {
+        "text": "Precio con transporte y montaje incluidos"
+      },
+      {
+        "text": "Ayuda con documentación y trámites"
+      },
+      {
+        "text": "Respuesta en un día laborable"
+      }
+    ],
+    "selectedType": "uslugowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/icon.webp",
+      "alt": "Todos los modelos",
+      "label": "Modelos",
+      "h3": "Vea los 12 modelos",
+      "text": "Cada modelo lo adaptamos a su uso. Explore todo el catálogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Aplicaciones",
+      "label": "Aplicaciones",
+      "h3": "Otras aplicaciones",
+      "text": "Vea qué más hacemos — tienda, oficina, vivienda, hostelería, gabinete."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Precios 2026",
+      "label": "Guía",
+      "h3": "Precios de pabellones 2026",
+      "text": "Cifras concretas, sin rodeos. Vea cuánto pagará."
+    }
+  ],
+  "jsonLd": {
+    "name": "Pabellón de servicios STAGO",
+    "description": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Agua, electricidad, saneamiento — todo listo. Desde 5 750 € neto.",
+    "image": "https://stago.com.pl/assets/modele/icon.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

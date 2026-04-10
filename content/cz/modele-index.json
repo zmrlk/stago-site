@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Modely pavilonů STAGO — 12 vzorů na výběr",
+    "description": "12 modelů modulárních pavilonů STAGO. Dřevo, grafit, mix. Vyberte vzor — rozměr, barvu, výplně a interiér přizpůsobíme vaší situaci.",
+    "canonical": "https://stago.com.pl/modele.html",
+    "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
+  },
+  "hero": {
+    "eyebrow": "Naše modely",
+    "h1": "Vyberte vzor.",
+    "h1accent": "Zbytek přizpůsobíme.",
+    "sub": "12 modelů je výchozí bod — inspirace tvarem a charakterem. Rozměr, barvu, výplně, interiér, vybavení — vše navrhujeme od nuly na míru. Každý pavilon jiný, každý pro konkrétní situaci."
+  },
+  "models": [
+    { "code": "ATRI", "name": "ATRI", "img": "assets/modele/atri.webp", "alt": "Pavilon ATRI — světlý dub, otevřený interiér", "desc": "Světlé dřevěné lamely, hodně skla, posuvné dveře. Otevřené, útulné atrium.", "href": "modele/atri.html" },
+    { "code": "MILA", "name": "MILA", "img": "assets/modele/mila.webp", "alt": "Pavilon MILA — skandinávský klid ve dřevě", "desc": "Celodřevěná fasáda ve světlém odstínu. Klid a teplo bez zbytečných detailů.", "href": "modele/mila.html" },
+    { "code": "ICON", "name": "ICON", "img": "assets/modele/icon.webp", "alt": "Pavilon ICON — dřevěný loft premium", "desc": "Dřevěná fasáda, obrovská rohová skla. Studio architekta v plné kráse.", "href": "modele/icon.html" },
+    { "code": "RYTM", "name": "RYTM", "img": "assets/modele/rytm.webp", "alt": "Pavilon RYTM — dřevěný rám, symetrický front", "desc": "Svislé dřevěné lamely v rámu, černý front, symetrické dveře.", "href": "modele/rytm.html" },
+    { "code": "NORD", "name": "NORD", "img": "assets/modele/nord.webp", "alt": "Pavilon NORD — antracit s dřevěnými akcenty", "desc": "Antracit + dřevo v rozích + obrovská rohová prosklení. Skandinávský premium.", "href": "modele/nord.html" },
+    { "code": "LOFT", "name": "LOFT", "img": "assets/modele/loft.webp", "alt": "Pavilon LOFT — dřevo, grafit, obrovské výkladce", "desc": "Svislé dřevěné lamely, grafitová střecha, tři velké výkladce. Showroom-feel.", "href": "modele/loft.html" },
+    { "code": "SAGA", "name": "SAGA", "img": "assets/modele/saga.webp", "alt": "Pavilon SAGA — dřevěný vrch, grafitový front", "desc": "Dřevěná fasáda nahoře, grafit dole, tři velké výkladce. Připravený pro gastro.", "href": "modele/saga.html" },
+    { "code": "VIEW", "name": "VIEW", "img": "assets/modele/view.webp", "alt": "Pavilon VIEW — dřevo, grafit, rohová skla", "desc": "Dřevěný pás nahoře, grafitové tělo, panoramatická rohová prosklení.", "href": "modele/view.html" },
+    { "code": "DUET", "name": "DUET", "img": "assets/modele/duet.webp", "alt": "Pavilon DUET — grafit s dřevěnými akcenty", "desc": "Grafitové tělo, dřevěné lamely po stranách, tři velké přední výkladce.", "href": "modele/duet.html" },
+    { "code": "CUBE", "name": "CUBE", "img": "assets/modele/cube.webp", "alt": "Pavilon CUBE — černá kostka s dřevěnou vložkou", "desc": "Černá modulární kostka, dřevěná vložka jako akcent. Čistá geometrie.", "href": "modele/cube.html" },
+    { "code": "NOIR", "name": "NOIR", "img": "assets/modele/noir.webp", "alt": "Pavilon NOIR — černé lamely, tmavý minimalismus", "desc": "Svislé černé lamely, podlouhlá okna, butikový charakter jako z Berlína.", "href": "modele/noir.html" },
+    { "code": "KIOS", "name": "KIOS", "img": "assets/modele/kios.webp", "alt": "Pavilon KIOS — malý, černý, připravený k prodeji", "desc": "Kompaktní černý pavilon s velkou skleněnou výlohou. Malý footprint, velký charakter.", "href": "modele/kios.html" }
+  ],
+  "cta": {
+    "h2": "Nevíte, který vybrat?",
+    "sub": "Řekněte nám, k čemu to má být. Navrhneme 2-3 modely a připravíme bezplatnou vizualizaci."
+  }
+}

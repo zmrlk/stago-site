@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "KIOS — forma compatta con vetrina piena | Padiglione modulare STAGO",
+    "description": "KIOS STAGO — Piccolo footprint, una grande vetrina in vetro su tutto il fronte. Dimensioni, materiale, colore e interni su misura. Preventivo gratuito.",
+    "canonical": "https://stago.com.pl/modele/kios.html",
+    "ogTitle": "KIOS — forma compatta con vetrina piena",
+    "ogDescription": "Piccolo footprint, una grande vetrina in vetro su tutto il fronte. Forma progettata per vendere da una piccola superficie. Materiale della facciata e colore scegli tu.",
+    "ogImage": "https://stago.com.pl/assets/modele/kios.webp"
+  },
+  "breadcrumb": "KIOS",
+  "productType": "KIOS",
+  "hero": {
+    "img": "../assets/modele/kios.webp",
+    "imgAlt": "Padiglione modulare STAGO KIOS — forma compatta con vetrina piena",
+    "h1": "KIOS — forma compatta con vetrina piena.",
+    "subtitle": "Piccolo footprint, una grande vetrina in vetro su tutto il fronte. Forma progettata per vendere da una piccola superficie. Materiale della facciata e colore scegli tu.",
+    "price": "da 4 140 € netto",
+    "priceNote": "/ preventivo individuale per il tuo progetto",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20KIOS%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i modelli &rarr;"
+  },
+  "usecases": {
+    "eyebrow": "A cosa è adatto",
+    "h2": "Dove KIOS funziona meglio",
+    "sub": "Questa forma è universale — funziona in diverse direzioni principali. Ma non si limita a queste. Ogni padiglione lo progettiamo per la situazione concreta del cliente.",
+    "items": [
+      {
+        "title": "Padiglione commerciale",
+        "text": "Negozio, chiosco, punto vendita. Vetrine, illuminazione, ingresso comodo — tutto per vendere.",
+        "href": "../zastosowania/handlowy.html"
+      },
+      {
+        "title": "Padiglione servizi",
+        "text": "Salone, estetica, officina, lavanderia. Acqua, fognatura, corrente — tutto collegato.",
+        "href": "../zastosowania/uslugowy.html"
+      },
+      {
+        "title": "Padiglione speciale",
+        "text": "Studio medico, guardiola, biglietteria, info point. Secondo requisiti e normative specifiche.",
+        "href": "../zastosowania/specjalny.html"
+      }
+    ]
+  },
+  "customization": {
+    "eyebrow": "Su misura per te",
+    "h2": "Questa forma. La tua finitura.",
+    "sub": "KIOS è forma e proporzioni — non un prodotto finito. Tutto ciò che vedi nel render è una delle varianti. Dimensioni, materiale della facciata, colore, infissi, interni — progettiamo tutto da zero su misura per te. Dicci come deve essere, noi disegniamo.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "title": "Dimensioni",
+        "text": "Da 3×2m (compatto) a 12×4m (modulo grande). Colleghiamo moduli affiancati se hai bisogno di più superficie. Altezza standard o rialzata."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
+        "title": "Materiale e colore della facciata",
+        "text": "Legno (rovere chiaro, noce, ebano), lamiera trapezoidale, pannelli HPL, pannelli compositi. Tutta la gamma RAL per i colori. Mostriamo campioni prima dell'ordine."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M9 3v18M3 9h6M3 15h6\"/></svg>",
+        "title": "Infissi e finestre",
+        "text": "Porte scorrevoli, classiche, tecniche. Finestre panoramiche, angolari, di servizio. Disposizione delle aperture secondo la tua destinazione — dicci dove serve cosa."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
+        "title": "Interni e attrezzature",
+        "text": "Per abitazione (bagno, cucina, camera), per ufficio (impianti, illuminazione), per servizi (lavandini, acqua, fognatura). Finiture, pavimenti, mobili — tutto progettiamo insieme a te."
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Costruzione",
+    "h2": "Cosa è costante — indipendentemente dalla finitura",
+    "items": [
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
+        "h3": "Telaio in acciaio saldato",
+        "text": "Profili in acciaio chiusi, saldati su dime. Protetti con trattamento anticorrosivo. La struttura resiste al trasporto, al montaggio con gru e ai carichi neve invernali."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
+        "h3": "Isolamento PIR 100mm",
+        "text": "Pannello PIR 100 mm su pareti, tetto e pavimento. Lambda 0,022 W/(m·K) — classe ad alta efficienza energetica. D'inverno mantiene il calore, d'estate non si surriscalda come un container in lamiera."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
+        "h3": "Infissi in alluminio",
+        "text": "Finestre e porte in alluminio con taglio termico. Profili ad alta efficienza energetica, vetri camera. Guarnizioni, serrature, regolazione — certificato del produttore."
+      },
+      {
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
+        "h3": "Impianti su ordinazione",
+        "text": "Impianto elettrico, illuminazione LED, quadro elettrico — di serie. Acqua, fognatura, ventilazione, climatizzazione — secondo la tua destinazione. Pronto per l'allacciamento sul terreno."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Disegniamo il padiglione in 3D prima che tu firmi qualsiasi cosa. Lo modifichiamo quante volte serve — finché non dici \"sì\". Gratuita, senza impegno."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento. La nostra squadra lo installa sul tuo terreno. Incluso nel prezzo — nessun supplemento per chilometraggio, nessun costo nascosto. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Garanzia sulla struttura e sugli impianti. Anche dopo la garanzia non abbandoniamo i clienti — chiami e arriviamo. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo. Più veloce, più efficiente, senza stress."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Padiglione STAGO KIOS — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Padiglione STAGO KIOS — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "Padiglione STAGO KIOS — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-kios",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti",
+    "items": [
+      {
+        "q": "Devo scegliere la stessa facciata del render?",
+        "a": "No. Il render mostra una delle varianti di finitura. KIOS come forma accetta qualsiasi facciata — legno in diverse tonalità, lamiera trapezoidale, pannelli HPL, pannelli compositi. Dicci come deve essere, noi proponiamo i materiali e mostriamo i campioni."
+      },
+      {
+        "q": "Posso cambiare le dimensioni di questa forma?",
+        "a": "Sì. La forma è flessibile — da 3×2m a 12×4m. Si possono anche collegare moduli affiancati per superfici maggiori. Manteniamo le proporzioni per preservare il carattere di KIOS, ma le dimensioni le adattiamo alla tua situazione."
+      },
+      {
+        "q": "Quanto costa?",
+        "a": "Dipende dalle dimensioni, dal materiale della facciata e dalle attrezzature. I moduli più piccoli partono da circa 4 140 € netto, quelli più grandi con dotazione completa — 10 350-19 550 €. Preventivo gratuito: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+      },
+      {
+        "q": "Quanto tempo devo aspettare?",
+        "a": "Di norma 4-6 settimane dall'approvazione del progetto alla consegna sul terreno. La data precisa di ritiro la conosci prima di versare l'acconto — nel contratto, non a voce."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "selectedType": "inny",
+    "textareaPlaceholder": "Quali dimensioni, quale materiale di facciata, dove deve stare, a cosa deve servire?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta abitativa"
+      },
+      {
+        "value": "inny",
+        "label": "Altro"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli — dimensioni, materiale, destinazione, posizione. Disegniamo la visualizzazione 3D. Ti diamo il prezzo finale con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ]
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/nord.webp",
+      "alt": "Tutti i modelli STAGO",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Sfoglia l'intero catalogo di design. Ognuno lo adatti su misura."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni dei padiglioni",
+      "label": "Applicazioni",
+      "h3": "A cosa si può usare?",
+      "text": "Negozio, ufficio, caffetteria, casa — ti mostriamo quale modello per cosa."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino prezzi padiglioni",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Padiglione modulare STAGO KIOS",
+    "description": "KIOS. Piccolo footprint, una grande vetrina in vetro su tutto il fronte. Forma progettata per vendere da una piccola superficie. Materiale della facciata e colore scegli tu.",
+    "image": "https://stago.com.pl/assets/modele/kios.webp",
+    "lowPrice": "18000",
+    "highPrice": "60000"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Padiglione commerciale — negozio, chiosco, punto vendita | STAGO",
+    "description": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da 3 450 € netto.",
+    "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
+    "ogTitle": "Padiglione commerciale — negozio, chiosco, punto vendita | STAGO",
+    "ogDescription": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da 3 450 € netto.",
+    "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
+  },
+  "breadcrumb": "Commerciali",
+  "productType": "handlowy",
+  "hero": {
+    "img": "../assets/modele/loft.webp",
+    "imgAlt": "Padiglione commerciale STAGO — modello LOFT",
+    "h1": "Padiglione commerciale.",
+    "subtitle": "Negozio, chiosco, punto vendita in piazza, mercato ortofrutticolo. Sappiamo che il cliente decide di entrare in pochi secondi — per questo progettiamo vetrine per l'esposizione, illuminazione che valorizza il prodotto e un ingresso comodo. Dicci cosa vendi — ti proporremo un layout che lavora per le vendite.",
+    "price": "da 3 450 € netto",
+    "priceNote": "/ padiglione 3×2m pronto per il commercio",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Commerciale%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Vedi tutti i 12 modelli &rarr;"
+  },
+  "models": {
+    "eyebrow": "Modelli consigliati",
+    "h2": "Modelli che fanno una buona prima impressione",
+    "sub": "La prima impressione resta nella memoria del cliente a lungo. Queste forme funzionano meglio nel commercio — ma ognuna la adattiamo alla tua idea.",
+    "items": [
+      {
+        "code": "LOFT",
+        "name": "LOFT",
+        "desc": "Fronte showroom con tre vetrine",
+        "img": "../assets/modele/loft.webp",
+        "alt": "Padiglione STAGO LOFT",
+        "href": "../modele/loft.html"
+      },
+      {
+        "code": "SAGA",
+        "name": "SAGA",
+        "desc": "Forma allungata con fronte vetrinato",
+        "img": "../assets/modele/saga.webp",
+        "alt": "Padiglione STAGO SAGA",
+        "href": "../modele/saga.html"
+      },
+      {
+        "code": "DUET",
+        "name": "DUET",
+        "desc": "Forma con accenti laterali e fronte",
+        "img": "../assets/modele/duet.webp",
+        "alt": "Padiglione STAGO DUET",
+        "href": "../modele/duet.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Forma compatta con vetrina piena",
+        "img": "../assets/modele/kios.webp",
+        "alt": "Padiglione STAGO KIOS",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Forma con angoli panoramici",
+        "img": "../assets/modele/view.webp",
+        "alt": "Padiglione STAGO VIEW",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Per questo settore",
+    "h2": "Cosa prepariamo per il commercio",
+    "sub": "Ogni elemento è pensato per la vendita — non preso in prestito da un'altra categoria di padiglioni.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Vetrine per il tuo assortimento",
+        "text": "Grandi finestre panoramiche, vetrine angolari, finestra di servizio. Dicci cosa vendi e noi progettiamo la disposizione delle aperture per la merce specifica. L'esposizione visibile dal marciapiede è metà del successo."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0012 2z\"/></svg>",
+        "h3": "Illuminazione per l'esposizione",
+        "text": "Illuminazione LED progettata per far sembrare il prodotto fresco e attraente. Inoltre l'impianto è predisposto per registratore di cassa e terminale POS — nessuna improvvisazione il giorno dell'apertura."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
+        "h3": "Ingresso comodo per il cliente",
+        "text": "Porte scorrevoli in alluminio, pedana, rampa per carrelli. Il cliente entra in modo naturale — senza chiedersi dove e in che direzione aprire la porta."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0110 0v4\"/></svg>",
+        "h3": "Sicurezza fuori orario",
+        "text": "Telaio in acciaio, serrature multipunto, tapparelle antieffrazione opzionali. Chiudi il padiglione a chiave e dormi tranquillo — nessun ladro occasionale ci riesce senza attrezzature pesanti."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Incluso nel prezzo",
+    "h2": "Cosa ricevi da STAGO",
+    "items": [
+      {
+        "h3": "Visualizzazione 3D gratuita",
+        "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
+      },
+      {
+        "h3": "Trasporto e montaggio inclusi",
+        "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
+      },
+      {
+        "h3": "2 anni di garanzia + assistenza",
+        "text": "Struttura, pareti, tetto — 2 anni di garanzia. Anche dopo la garanzia non abbandoniamo i clienti. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto."
+      },
+      {
+        "h3": "Assistenza documentale",
+        "text": "Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Guarda dal vivo",
+    "h2": "Ecco come appaiono le nostre realizzazioni",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r2.webp",
+        "alt": "Padiglione commerciale STAGO — realizzazione 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r5.webp",
+        "alt": "Padiglione commerciale STAGO — realizzazione 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "Padiglione commerciale STAGO — realizzazione 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-handlowy",
+    "eyebrow": "Domande",
+    "h2": "Quello che chiedono i clienti di questo settore",
+    "items": [
+      {
+        "q": "Quanto costa un padiglione commerciale?",
+        "a": "Un piccolo chiosco 3×2 m parte da 3 450 € netto. Un negozio 6×3 m — da 6 440 €. Un punto vendita più grande 12×3 m con vetrine e retro — da 11 040 €. Ogni preventivo lo prepariamo individualmente e gratuitamente: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+      },
+      {
+        "q": "Ho bisogno del permesso di costruire per un padiglione commerciale?",
+        "a": "Per padiglioni fino a 35 m² basta la semplice comunicazione all'ufficio — il permesso di costruire completo non serve. La procedura dura pochi giorni. Ti aiutiamo a preparare i documenti: moduli, domande, istruzioni su cosa e dove compilare."
+      },
+      {
+        "q": "Posso avere la finestra di servizio e contemporaneamente posto per i clienti all'interno?",
+        "a": "Certamente. Realizziamo finestre di servizio per il servizio esterno, vetrine a grandezza piena e porte con tapparelle antieffrazione — in qualsiasi configurazione. Dicci come immagini il servizio clienti e la disposizione delle aperture la adattiamo alla tua idea."
+      },
+      {
+        "q": "Come riscaldo il padiglione d'inverno e quanto costa?",
+        "a": "La soluzione più popolare è il climatizzatore con pompa di calore — riscalda d'inverno e raffredda d'estate. Le pareti con isolamento PIR 100 mm mantengono il calore come un edificio in muratura. Per un piccolo padiglione la bolletta mensile per il riscaldamento in inverno è di solito 80-115 €."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Iniziamo",
+    "h2": "Dicci di cosa hai bisogno",
+    "textareaPlaceholder": "Cosa vuoi fare? Quali dimensioni? Dove deve stare?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Padiglione commerciale"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Padiglione gastronomico"
+      },
+      {
+        "value": "biurowy",
+        "label": "Container ufficio"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Padiglione servizi"
+      },
+      {
+        "value": "socjalny",
+        "label": "Container per cantiere"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Casetta tutto l'anno"
+      },
+      {
+        "value": "specjalny",
+        "label": "Padiglione speciale"
+      }
+    ],
+    "infoH3": "Come funziona?",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "features": [
+      {
+        "text": "Visualizzazione 3D — vedi prima di ordinare"
+      },
+      {
+        "text": "Prezzo con trasporto e montaggio"
+      },
+      {
+        "text": "Assistenza con documenti e comunicazione"
+      },
+      {
+        "text": "Risposta entro un giorno"
+      }
+    ],
+    "selectedType": "handlowy"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/loft.webp",
+      "alt": "Tutti i modelli",
+      "label": "Modelli",
+      "h3": "Vedi tutti i 12 modelli",
+      "text": "Ogni modello lo adatti alla tua destinazione. Sfoglia l'intero catalogo."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Applicazioni",
+      "label": "Applicazioni",
+      "h3": "Altre applicazioni",
+      "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Listino 2026",
+      "label": "Guida",
+      "h3": "Listino padiglioni 2026",
+      "text": "Cifre concrete, senza giri di parole. Scopri quanto pagherai."
+    }
+  ],
+  "jsonLd": {
+    "name": "Padiglione commerciale STAGO",
+    "description": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da 3 450 € netto.",
+    "image": "https://stago.com.pl/assets/modele/loft.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}

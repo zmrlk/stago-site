@@ -1,0 +1,385 @@
+{
+  "site": {
+    "title": "STAGO — Pabellones modulares, contenedores, edificios llave en mano",
+    "description": "STAGO — fabricante de pabellones modulares. Tienda, oficina, vivienda — llave en mano. Visualización gratuita, montaje incluido, 2 años de garantía. Entrega en España.",
+    "phone": "509 508 210",
+    "phoneLink": "+48509508210",
+    "email": "kontakt@stago.com.pl",
+    "address": "Jasionka 117",
+    "city": "Jędrzejów",
+    "postalCode": "28-300",
+    "region": "Polonia",
+    "hours": "Lun-Vie: 7:00-20:00",
+    "hoursSat": "Sáb: 8:00-14:00",
+    "cities": "Entrega en toda España y Europa"
+  },
+  "hero": {
+    "badge": "Fabricante de pabellones modulares &middot; Entrega en España",
+    "h1": "Tu espacio.",
+    "h1accent": "Sin compromisos.",
+    "sub": "Diseñamos y construimos a su medida. Visualización gratuita, montaje incluido, 2 años de garantía."
+  },
+  "trust": [
+    {
+      "value": "5.0/5",
+      "label": "Google Reviews"
+    },
+    {
+      "value": "Fábrica propia",
+      "label": "Producción bajo control"
+    },
+    {
+      "value": "Llave en mano",
+      "label": "Entra y empieza"
+    },
+    {
+      "value": "Toda España",
+      "label": "Transporte + montaje incluidos"
+    }
+  ],
+  "about": {
+    "eyebrow": "Producción propia",
+    "h2": "Todo bajo un mismo techo.",
+    "h2accent": "",
+    "features": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"M9 12l2 2 4-4\"/></svg>",
+        "title": "Lo hacemos todo en nuestra fábrica",
+        "text": "Soldamos la estructura nosotros mismos, en nuestra planta en Jędrzejów (Polonia). Paredes de PIR de 100 mm, ventanas y puertas de aluminio, todo de primera calidad. Gracias a ello, en invierno mantiene el calor y en verano no se recalienta como una caseta metálica — las facturas son notablemente más bajas de lo que imagina."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+        "title": "Cada pabellón es diferente",
+        "text": "Porque cada cliente tiene una idea distinta. Uno quiere un quiosco en la plaza, otro una oficina en obra, otro una casita en su parcela. Por eso no imponemos soluciones prefabricadas — nos sentamos con usted, preguntamos los detalles y diseñamos el proyecto desde cero. Y si aún no sabe cómo debería ser, le mostramos varias propuestas."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Una sola llamada y listo",
+        "text": "No tiene que ir por separado al diseñador, al fabricante y al equipo de montaje. Nos llama una vez — hablamos, hacemos la visualización, presupuestamos, construimos e instalamos en su parcela. Desde la primera conversación hasta la entrega de llaves, nos ocupamos de todo."
+      }
+    ],
+    "text": "Todo lo hacemos en nuestra planta en Jędrzejów (Polonia) — desde la primera soldadura hasta el último tornillo. No subcontratamos, no buscamos equipos por teléfono. Por eso controlamos la calidad en cada etapa. Puede visitar la fábrica y ver con sus propios ojos cómo se construye su pabellón. La mayoría de los clientes lo hace — y salen más tranquilos."
+  },
+  "products": {
+    "eyebrow": "Nuestros modelos",
+    "h2": "Elija un diseño.",
+    "h2accent": "El uso lo decide usted.",
+    "sub": "Cada diseño lo adaptamos a su medida — dimensiones, material, color, carpintería e interior. A continuación, los seis más elegidos por nuestros clientes.",
+    "items": [
+      {
+        "name": "NORD",
+        "desc": "Antracita con acentos de madera en las esquinas, enormes acristalamientos en esquina. Premium escandinavo. Un volumen que se recuerda a primera vista.",
+        "price": "desde 5 750 € neto",
+        "href": "modele/nord.html",
+        "img": "assets/modele/nord.webp",
+        "cta": "Ver NORD &rarr;"
+      },
+      {
+        "name": "LOFT",
+        "desc": "Lamas de madera, techo grafito, tres grandes vitrinas frontales. Aspecto de showroom — los clientes entran porque tienen que ver lo que hay dentro.",
+        "price": "desde 5 060 € neto",
+        "href": "modele/loft.html",
+        "img": "assets/modele/loft.webp",
+        "cta": "Ver LOFT &rarr;"
+      },
+      {
+        "name": "DUET",
+        "desc": "Cuerpo grafito, lamas de madera en los laterales, tres vitrinas con puertas. Diseño universal para hostelería, comercio y oficina.",
+        "price": "desde 5 060 € neto",
+        "href": "modele/duet.html",
+        "img": "assets/modele/duet.webp",
+        "cta": "Ver DUET &rarr;"
+      },
+      {
+        "name": "ICON",
+        "desc": "Fachada de madera, enormes cristales en esquina del suelo al techo. Aspecto de estudio de arquitectura. Para negocios premium.",
+        "price": "presupuesto individual",
+        "href": "modele/icon.html",
+        "img": "assets/modele/icon.webp",
+        "cta": "Ver ICON &rarr;"
+      },
+      {
+        "name": "MILA",
+        "desc": "Fachada completa en madera de tono claro. Calma escandinava. Ideal para despacho, casita o oficina con tono cálido.",
+        "price": "desde 5 750 € neto",
+        "href": "modele/mila.html",
+        "img": "assets/modele/mila.webp",
+        "cta": "Ver MILA &rarr;"
+      },
+      {
+        "name": "NOIR",
+        "desc": "Lamas negras verticales, ventanas alargadas, carácter boutique berlinés. Para negocios que quieren verse premium.",
+        "price": "desde 6 440 € neto",
+        "href": "modele/noir.html",
+        "img": "assets/modele/noir.webp",
+        "cta": "Ver NOIR &rarr;"
+      }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Alquiler vs local propio",
+    "h2": "¿Alquilar o tener su propio pabellón?",
+    "h2accent": "Haga las cuentas.",
+    "sub": "La mayoría de nuestros clientes antes alquilaba. Luego hicieron números.",
+    "rent": {
+      "label": "Usted alquila",
+      "price": "700 €",
+      "priceSuffix": "/mes",
+      "items": [
+        {
+          "text": "36 meses = <strong>25 200 €</strong>"
+        },
+        {
+          "text": "El local nunca será suyo"
+        },
+        {
+          "text": "Subida de alquiler cuando quiera el propietario"
+        },
+        {
+          "text": "¿Reforma? Con su dinero, en un local ajeno"
+        },
+        {
+          "text": "¿La ubicación no funciona? Difícil, el contrato obliga"
+        }
+      ]
+    },
+    "own": {
+      "label": "Tiene su pabellón",
+      "price": "~280 €",
+      "priceSuffix": "/mes cuotas",
+      "items": [
+        {
+          "text": "Tras el pago = <strong>suyo para siempre</strong>"
+        },
+        {
+          "text": "Cero alquiler de por vida"
+        },
+        {
+          "text": "Lo traslada donde quiera — un camión y unas horas"
+        },
+        {
+          "text": "Lo vende cuando quiera, recupera su dinero"
+        },
+        {
+          "text": "Tiene el aspecto que usted quiere — porque es suyo"
+        }
+      ]
+    },
+    "footnote": "Cuota de leasing orientativa, para un pabellón de ~8 000 € neto a 36 meses. La oferta exacta de financiación la ajustamos individualmente."
+  },
+  "caseStudy": {
+    "eyebrow": "Historia de un cliente",
+    "intro": "¿Paga alquiler por un local que nunca será suyo? Quizá es hora de un cambio — como hizo Tomek.",
+    "h2": "Tomek trasladó su frutería.",
+    "h2accent": "Bajo sus propias reglas.",
+    "steps": [
+      {
+        "label": "Situación",
+        "text": "Tomek llevaba una frutería en un local alquilado. Durante años pagaba un alquiler que no construía nada suyo. Un día el propietario subió la renta — y Tomek empezó a buscar otra salida."
+      },
+      {
+        "label": "Una llamada",
+        "text": "Nos llamó. Diseñamos un pabellón con gran vitrina para exposición de frutas y trastienda frigorífica. Tomek tenía sus ideas — cambiamos la distribución, elegimos los colores. Dos reuniones y listo."
+      },
+      {
+        "label": "Resultado",
+        "text": "Hoy está en su propia parcela, bajo sus propias reglas. La cuota de leasing es más baja que el antiguo alquiler. Los clientes dicen que tiene mejor aspecto que la mitad de las tiendas de la ciudad. En unos años el pabellón será completamente suyo."
+      }
+    ],
+    "quote": "Solo lamento una cosa — no haber llamado antes.",
+    "cite": "— Tomek, frutería, Busko-Zdrój (Polonia)"
+  },
+  "financing": {
+    "eyebrow": "¿Financiación?",
+    "h2": "Tenemos",
+    "h2accent": "soluciones.",
+    "sub": "Ayudamos a organizar la financiación para que la cuota sea más baja que el antiguo alquiler. Tres opciones — elija la que se adapte a su situación.",
+    "options": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M2 10h20\"/></svg>",
+        "title": "Leasing",
+        "text": "Colaboramos con compañías de leasing. La cuota entra como gasto empresarial. Tras el pago — el pabellón es suyo. Le ayudamos con los trámites."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg>",
+        "title": "Financiación a plazos",
+        "text": "Trabajamos con entidades bancarias que ofrecen crédito a plazos. Solicitud a través nuestro, decisión en horas."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
+        "title": "Subvenciones",
+        "text": "Fondos europeos, programas de ayuda local, subvenciones al emprendimiento. Le asesoramos sobre qué opciones aplican en su caso."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Cómo trabajamos",
+    "h2": "De su parte solo hace falta una llamada.",
+    "h2accent": "Del resto nos encargamos nosotros.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Contacto",
+        "text": "Díganos qué necesita. No tiene que saber las medidas al centímetro — para eso estamos nosotros. Le asesoramos y proponemos una solución."
+      },
+      {
+        "num": "02",
+        "title": "Visualización gratuita",
+        "text": "Dibujamos cómo será su pabellón. Lo verá en 3D antes de gastar un céntimo. ¿No le gusta? Lo cambiamos. Tantas veces como haga falta."
+      },
+      {
+        "num": "03",
+        "title": "Producción",
+        "text": "Construimos en nuestra fábrica, bajo nuestra supervisión. Controlamos cada fase — desde la soldadura de la estructura hasta el montaje de la carpintería. Puede venir a ver el avance de los trabajos."
+      },
+      {
+        "num": "04",
+        "title": "Entrega y montaje",
+        "text": "Cargamos en un camión, viajamos hasta su ubicación y lo instalamos en el sitio. Unas horas y listo. Entra con la llave en su propio espacio."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nuestros proyectos",
+    "h2": "Vea",
+    "h2accent": "lo que hacemos.",
+    "sub": "Cada proyecto es diferente — cada uno hecho a medida del cliente. Haga clic para ampliar.",
+    "items": [
+      {
+        "img": "assets/gallery/k2.webp",
+        "alt": "Pabellón comercial STAGO — quiosco de chapa antracita",
+        "label": "Quiosco comercial, chapa antracita"
+      },
+      {
+        "img": "assets/gallery/k6.webp",
+        "alt": "Contenedor de oficina STAGO — módulo con ventanas panorámicas",
+        "label": "Oficina 6×3m, ventanas panorámicas"
+      },
+      {
+        "img": "assets/gallery/k9.webp",
+        "alt": "Pabellón de servicios STAGO — punto con ventana de despacho",
+        "label": "Punto de servicios, ventana de despacho"
+      },
+      {
+        "img": "assets/gallery/k11.webp",
+        "alt": "Contenedor de oficina STAGO — fachada HPL",
+        "label": "Contenedor de oficina, fachada HPL"
+      },
+      {
+        "img": "assets/gallery/k14.webp",
+        "alt": "Pabellón modular STAGO — revestimiento de madera",
+        "label": "Pabellón con revestimiento de madera"
+      },
+      {
+        "img": "assets/gallery/k16.webp",
+        "alt": "Contenedor modular STAGO — acento de madera",
+        "label": "Contenedor con acento de madera"
+      },
+      {
+        "img": "assets/gallery/k19.webp",
+        "alt": "Contenedor almacén STAGO — chapa grafito",
+        "label": "Almacén 6×2,4m, chapa grafito"
+      },
+      {
+        "img": "assets/gallery/k21.webp",
+        "alt": "Pabellón modular STAGO — fachada completa de madera",
+        "label": "Pabellón con fachada completa de madera"
+      },
+      {
+        "img": "assets/gallery/k25.webp",
+        "alt": "Módulos combinados STAGO — oficina y almacén",
+        "label": "Módulos combinados, oficina + almacén"
+      }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Opiniones de clientes",
+    "h2": "5.0 en Google.",
+    "h2accent": "No lo decimos nosotros — lo dicen nuestros clientes.",
+    "items": [
+      {
+        "text": "Ambiente muy agradable, atención magnífica, plazo de entrega rápido. ¡Lo recomiendo a todo el mundo!",
+        "author": "Kacper Z.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Atención profesional y amable. Además del asesoramiento, recibí muestras de materiales para probar mi propia idea. Excelente.",
+        "author": "Nikodem S.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Empresa sólida, cumplen plazos. El pabellón es exactamente igual que en la visualización. Cero sorpresas.",
+        "author": "Marek W.",
+        "source": "Google Reviews"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Guías",
+    "h2": "Lo que debería saber",
+    "sub": "antes de comprar.",
+    "items": [
+      {
+        "href": "blog/pawilon-handlowy-cena.html",
+        "img": "assets/gallery/k2.webp",
+        "date": "Guía",
+        "title": "Cómo verificar un fabricante de pabellones antes de firmar el contrato",
+        "desc": "7 cosas concretas que comprobar. Soldaduras, aislamiento, cubierta, costes ocultos. Antes de hacer la transferencia — léalo."
+      },
+      {
+        "href": "blog/pawilon-bez-pozwolenia.html",
+        "img": "assets/gallery/k9.webp",
+        "date": "Guía",
+        "title": "Ha recibido el pabellón. ¿Y ahora qué? Control de calidad paso a paso.",
+        "desc": "El pabellón ha llegado en el camión. ¿Qué comprobar antes de firmar el acta? Cubierta, soldaduras, ventanas, suelo — lista de verificación."
+      },
+      {
+        "href": "blog/kontener-biurowy-cena.html",
+        "img": "assets/gallery/k6.webp",
+        "date": "Guía",
+        "title": "El primer invierno en un pabellón — lo que nadie le cuenta",
+        "desc": "Aislamiento, calefacción, humedad, facturas. Cifras reales y consejos de alguien que ha visto más de un invierno."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "h2": "Los clientes nos preguntan con frecuencia:",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta?",
+        "a": "Depende del modelo, el tamaño y el equipamiento interior. Para que se haga una idea — el módulo más sencillo empieza desde aprox. 2 760 € neto, y los más grandes, acabados llave en mano, están en torno a 8 000–11 500 €. Cada proyecto lo presupuestamos individualmente y siempre gratis. Llame o escriba — le daremos una cifra concreta antes de que decida nada."
+      },
+      {
+        "q": "¿Cuánto se tarda en recibir el pabellón?",
+        "a": "El plazo lo fijamos al firmar el contrato — y lo cumplimos. Depende de lo que construya. Un módulo más sencillo es más rápido, uno más complejo necesita más tiempo. La fecha exacta de entrega la conoce antes de hacer ningún pago — por contrato, no de palabra."
+      },
+      {
+        "q": "¿Necesito licencia de obras?",
+        "a": "Depende de la normativa local en España. Los pabellones modulares suelen requerir una licencia de actividad o declaración responsable. Le asesoramos sobre la documentación necesaria para su caso concreto."
+      },
+      {
+        "q": "¿Entregan en España? ¿Dónde realizan el montaje?",
+        "a": "Entrega en toda España. El pabellón viaja en camión directamente desde nuestra fábrica en Jędrzejów (Polonia). Nuestro equipo lo monta in situ — necesita una superficie endurecida (adoquín, hormigón, losas). Transporte y montaje están incluidos en el precio. Usted solo indica dónde debe ir."
+      },
+      {
+        "q": "¿Y en invierno? ¿El pabellón es cálido?",
+        "a": "Nuestros pabellones tienen aislamiento PIR — el mismo aislamiento que en viviendas de alta eficiencia energética. En invierno el interior está caliente, en verano no se recalienta como una caseta metálica. Los clientes con bomba de calor pagan entre 50–100 € al mes en calefacción. No es algo provisional — es un espacio de pleno derecho para todo el año."
+      },
+      {
+        "q": "¿Qué garantía tiene?",
+        "a": "2 años de garantía en la estructura, un año en las instalaciones. Pero la garantía es una cosa — lo más importante es que no abandonamos a nuestros clientes después de la venta. ¿Ha ocurrido algo? Llame, venimos y lo reparamos. Tenemos fábrica propia y nuestro propio equipo."
+      },
+      {
+        "q": "¿Puedo visitar la fábrica?",
+        "a": "Sí — y lo animamos a hacerlo. Nuestra fábrica está en Jasionki, cerca de Jędrzejów (Polonia). Puede venir, ver cómo soldamos la estructura, tocar los materiales y hablar con el equipo. La mayoría de los clientes lo hace y salen más tranquilos."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Presupuesto gratuito",
+    "h2": "Escríbanos qué necesita.",
+    "h2accent": "Respondemos en 24h.",
+    "formNote": "Respondemos en un plazo de 24 horas. El presupuesto es gratuito y sin compromiso."
+  }
+}

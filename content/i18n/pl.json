@@ -1,0 +1,97 @@
+{
+  "lang": "pl",
+  "locale": "pl_PL",
+  "langName": "Polski",
+  "flag": "🇵🇱",
+  "baseUrl": "https://stago.com.pl",
+  "email": "kontakt@stago.com.pl",
+  "emailExport": "kontakt@stago.com.pl",
+  "skipLink": "Przejdź do treści",
+  "nav": {
+    "modele": "Modele",
+    "zastosowania": "Zastosowania",
+    "realizacje": "Realizacje",
+    "finansowanie": "Finansowanie",
+    "faq": "FAQ",
+    "kontakt": "Kontakt",
+    "cta": "Darmowa wycena"
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "modele": "Modele",
+    "zastosowania": "Zastosowania"
+  },
+  "hub": {
+    "see": "Zobacz &rarr;",
+    "seeModel": "Zobacz model &rarr;",
+    "seeAll": "Zobacz wszystkie &rarr;",
+    "allModels": "Wszystkie 12 modeli",
+    "allModelsH3": "Zobacz wszystkie 12 modeli",
+    "allModelsDesc": "Każda bryła to punkt wyjścia. Pokażemy Ci pełen katalog.",
+    "allModelsCode": "Wszystkie",
+    "allUses": "Wszystkie zastosowania",
+    "allUsesDesc": "7 kierunków, każdy z polecanymi modelami. Zobacz całość, żeby mieć pewność, że wybierasz najlepsze rozwiązanie.",
+    "allUsesArrow": "Zobacz wszystkie &rarr;"
+  },
+  "cta": {
+    "freeQuote": "Darmowa wycena",
+    "ctaHref": "konfigurator.html",
+    "call": "Zadzwoń",
+    "callLabel": "Zadzwoń: 509 508 210"
+  },
+  "form": {
+    "name": "Imię i nazwisko",
+    "phone": "Telefon",
+    "email": "Email (opcjonalnie)",
+    "consent": "Wyrażam zgodę na przetwarzanie danych osobowych.",
+    "privacyLink": "Polityka prywatności",
+    "submit": "Wyślij zapytanie",
+    "note": "Oddzwaniamy w ciągu 24 godzin. Wycena za darmo, bez zobowiązań.",
+    "success": "Wysłano! Odezwiemy się w ciągu 24 godzin.",
+    "honeypot": "Pole pomocnicze (nie wypełniaj)",
+    "hours": "Pon-Pt: 7:00-20:00 | Sob: 8:00-14:00",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Opisz swoje potrzeby — wymiary, lokalizacja, przeznaczenie..."
+  },
+  "related": {
+    "eyebrow": "Może Ci się przydać",
+    "h2": "Inne produkty i poradniki"
+  },
+  "footer": {
+    "tagline": "Producent pawilonów modułowych.",
+    "location": "Jędrzejów, woj. świętokrzyskie.",
+    "modele": "Modele",
+    "zastosowania": "Zastosowania",
+    "allModels": "Wszystkie 12 modeli",
+    "all": "Wszystkie",
+    "handlowe": "Handlowe",
+    "biurowe": "Biurowe",
+    "gastronomiczne": "Gastronomiczne",
+    "uslugowe": "Usługowe",
+    "mieszkalne": "Mieszkalne",
+    "firma": "Firma",
+    "jakKupic": "Jak kupić",
+    "technologia": "Technologia",
+    "finansowanie": "Finansowanie",
+    "pawilonVsNajem": "Pawilon vs najem",
+    "realizacje": "Realizacje",
+    "dostepne": "Dostępne od ręki",
+    "faq": "FAQ",
+    "kontakt": "Kontakt",
+    "contactPage": "Strona kontaktu &rarr;",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "cookies": "Zgody cookies",
+    "madeBy": "Stworzone przez"
+  },
+  "index": {
+    "seeMore": "Zobacz więcej",
+    "wantSame": "Chcę tak samo — wyceń za darmo",
+    "quotePavillon": "Wyceń swój pawilon",
+    "calcSavings": "Policz swoją oszczędność &rarr;",
+    "fullFinancing": "Pełne finansowanie &rarr;",
+    "fullProcess": "Cały proces krok po kroku &rarr;",
+    "meetUs": "Poznaj nas bliżej &rarr;",
+    "visitUs": "Odwiedź nas"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Különleges pavilon — orvosi rendelő, portásfülke, jegypénztár | STAGO",
+    "description": "Különleges célú pavilonok. Orvosi rendelő, portásfülke, jegypénztár, info pont, művelődési ház. Konkrét követelmények és előírások szerint.",
+    "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
+    "ogTitle": "Különleges pavilon — orvosi rendelő, portásfülke, jegypénztár | STAGO",
+    "ogDescription": "Különleges célú pavilonok. Orvosi rendelő, portásfülke, jegypénztár, info pont, művelődési ház. Konkrét követelmények és előírások szerint.",
+    "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
+  },
+  "breadcrumb": "Különleges",
+  "productType": "specjalny",
+  "hero": {
+    "img": "../assets/modele/noir.webp",
+    "imgAlt": "STAGO különleges pavilon — NOIR forma",
+    "h1": "Különleges pavilon.",
+    "subtitle": "Orvosi rendelő, portásfülke, jegypénztár, városi információs pont, kis könyvtár, falusi művelődési ház. Minden ilyen projekt szakemberrel való egyeztetést igényel — előírások, szabványok, felszerelés. Rendszeresen megvalósítjuk őket, ezért egyszerűen mondja el, mire van szüksége.",
+    "price": "egyedi árazás",
+    "priceNote": "/ a projekt az Ön követelményei szerint készül",
+    "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Különleges%20Inquiry",
+    "articleHref": "../modele.html",
+    "articleText": "Tekintse meg mind a 12 modellt &rarr;"
+  },
+  "models": {
+    "eyebrow": "Ajánlott formák",
+    "h2": "Kiinduló modellek — pont a további beszélgetéshez",
+    "sub": "Különleges projekteknél a kiválasztott formából indulunk ki, de az elejétől az Ön konkrét követelményeihez tervezzük.",
+    "items": [
+      {
+        "code": "NOIR",
+        "name": "NOIR",
+        "desc": "Nyújtott monolit lamellákkal",
+        "img": "../assets/modele/noir.webp",
+        "alt": "STAGO NOIR pavilon",
+        "href": "../modele/noir.html"
+      },
+      {
+        "code": "CUBE",
+        "name": "CUBE",
+        "desc": "Moduláris kocka markáns betéttel",
+        "img": "../assets/modele/cube.webp",
+        "alt": "STAGO CUBE pavilon",
+        "href": "../modele/cube.html"
+      },
+      {
+        "code": "NORD",
+        "name": "NORD",
+        "desc": "Prémium forma sarokablakokkal",
+        "img": "../assets/modele/nord.webp",
+        "alt": "STAGO NORD pavilon",
+        "href": "../modele/nord.html"
+      },
+      {
+        "code": "KIOS",
+        "name": "KIOS",
+        "desc": "Kompakt forma teljes kirakattal",
+        "img": "../assets/modele/kios.webp",
+        "alt": "STAGO KIOS pavilon",
+        "href": "../modele/kios.html"
+      },
+      {
+        "code": "VIEW",
+        "name": "VIEW",
+        "desc": "Forma panorámás sarkokkal",
+        "img": "../assets/modele/view.webp",
+        "alt": "STAGO VIEW pavilon",
+        "href": "../modele/view.html"
+      }
+    ]
+  },
+  "specs": {
+    "eyebrow": "Ehhez a célhoz",
+    "h2": "Amit különleges projekteknél csinálunk",
+    "sub": "Minden ilyen projekt külön történet — előírások, szabványok, hivatalokkal való kapcsolattartás. Bevált eljárásaink vannak rá.",
+    "items": [
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
+        "h3": "Konkrét előírásoknak való megfelelés",
+        "text": "Orvosi rendelő — teljesítjük az Egészségügyi Minisztérium rendeletének követelményeit. Vasúti jegypénztár — a megrendelő specifikációja szerint valósítjuk meg. Mondja el, minek kell készülnie, és a pavilont a konkrét szabványhoz tervezzük."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
+        "h3": "Különleges méretek és elrendezések",
+        "text": "2×2 m-es portásfülke, 8×4 m-es információs pont tetővel a várakozó zóna felett, kis könyvtár olvasóteremmel — a méreteket és a belső elrendezést a konkrét helyzethez tervezzük, nem merev katalógushoz."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
+        "h3": "Speciális szerelések",
+        "text": "Orvosi gázok, sterilizátorok, megerősített elektromos hálózat, hangosítás, megfigyelő rendszer, precíziós klíma — amire szüksége van, azt bekötjük."
+      },
+      {
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16\"/></svg>",
+        "h3": "Együttműködés hatóságokkal és önkormányzatokkal",
+        "text": "ÁFÁ-s számlát állítunk ki, segítünk a dokumentáció előkészítésében és közbeszerzési pályázatok szerinti projekteket is megvalósítunk. Egész Európában dolgozunk együtt önkormányzatokkal."
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Az árban",
+    "h2": "Mit kap a STAGO-tól",
+    "items": [
+      {
+        "h3": "Ingyenes 3D látványterv",
+        "text": "Mondja el, mire van szüksége. Megrajzoljuk. 3D-ben láthatja a pavilont, mielőtt egyetlen eurót kiadna. Módosítjuk, amíg nem mondja, hogy \"igen\"."
+      },
+      {
+        "h3": "Szállítás és telepítés az árban",
+        "text": "A pavilon félpótkocsin érkezik üzemünkből Jędrzejówból. Csapatunk felállítja a helyszínen. Szállítás Magyarországra. Ön megmutatja, hol álljon."
+      },
+      {
+        "h3": "2 év garancia + szerviz",
+        "text": "Szerkezet, falak, tető — 2 év garancia. A garancia után sem hagyjuk magukra ügyfeleinket. Saját embereink vannak, nem keresünk senkit telefonon."
+      },
+      {
+        "h3": "Segítség a dokumentációval",
+        "text": "Segítünk az export dokumentáció és a helyi engedélyezési eljárás előkészítésében. Gyorsabban, hatékonyabban, stressz nélkül."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nézze meg élőben",
+    "h2": "Így néznek ki megvalósításaink",
+    "items": [
+      {
+        "img": "../assets/gallery/realizacje/r3.webp",
+        "alt": "STAGO különleges pavilon — megvalósítás 1"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r4.webp",
+        "alt": "STAGO különleges pavilon — megvalósítás 2"
+      },
+      {
+        "img": "../assets/gallery/realizacje/r1.webp",
+        "alt": "STAGO különleges pavilon — megvalósítás 3"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-specjalny",
+    "eyebrow": "Kérdések",
+    "h2": "Amit az ügyfelek kérdeznek",
+    "items": [
+      {
+        "q": "Közbeszerzési pályázatokra is teljesítenek?",
+        "a": "Igen. Tapasztalatunk van önkormányzatokkal, kórházakkal és vasúttal való együttműködésben. ÁFÁ-s számlát állítunk ki, teljes műszaki dokumentációt szállítunk és a kiírás szerinti projekteket valósítjuk meg."
+      },
+      {
+        "q": "Mennyibe kerül egy orvosi rendelő?",
+        "a": "Az ár a specifikációtól függ. Kis kezelő rendelő kb. 8 050 € nettó-tól indul. Teljes orvosi modul váróteremmel, rendelővel és sterilizáló helyiséggel — 18 400–34 500 €. A végleges árajánlat a szakemberrel folytatott beszélgetés után készül."
+      },
+      {
+        "q": "Tudnak városi információs pontot megvalósítani?",
+        "a": "Igen. Készítettünk már információs táblákat, jegypénztárakat és turisztikai információs pontokat is. Elég megmondania, hol fog állni, meddig fog működni és hány embert kell kiszolgálnia — a többit megtervezzük."
+      },
+      {
+        "q": "Rendelkeznek a szükséges tanúsítványokkal és dokumentumokkal?",
+        "a": "Igen. Az acélszerkezet megfelel a PN-EN szabványoknak, a PIR szigetelés tűzállósági tanúsítvánnyal rendelkezik, és a kiválasztott anyagok — ahol szükséges — élelmiszerrel való érintkezésre engedélyezettek. Minden projekt teljes műszaki dokumentációt kap."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Kezdjük",
+    "h2": "Mondja el, mire van szüksége",
+    "textareaPlaceholder": "Mit szeretne csinálni? Milyen méret? Hol fog állni?",
+    "options": [
+      {
+        "value": "handlowy",
+        "label": "Kereskedelmi pavilon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Vendéglátó pavilon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Irodakonténer"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Szolgáltatási pavilon"
+      },
+      {
+        "value": "socjalny",
+        "label": "Építkezési konténer"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Egész éves házikó"
+      },
+      {
+        "value": "specjalny",
+        "label": "Különleges pavilon"
+      }
+    ],
+    "infoH3": "Hogyan működik?",
+    "infoText": "Ír vagy hív. Megkérdezzük a részleteket. Elkészítjük a 3D látványtervet. Megadjuk az árat szállítással és telepítéssel. Meglepetések nélkül.",
+    "features": [
+      {
+        "text": "3D látványterv — megnézheti, mielőtt megrendelné"
+      },
+      {
+        "text": "Ár szállítással és telepítéssel"
+      },
+      {
+        "text": "Segítség a dokumentációval"
+      },
+      {
+        "text": "Válasz egy munkanapon belül"
+      }
+    ],
+    "selectedType": "specjalny"
+  },
+  "related": [
+    {
+      "href": "../modele.html",
+      "img": "../assets/modele/noir.webp",
+      "alt": "Összes modell",
+      "label": "Modellek",
+      "h3": "Tekintse meg mind a 12 modellt",
+      "text": "Minden modellt az Ön igényeihez igazítunk. Böngéssze végig a teljes katalógust."
+    },
+    {
+      "href": "../zastosowania.html",
+      "img": "../assets/gallery/realizacje/r5.webp",
+      "alt": "Felhasználás",
+      "label": "Felhasználás",
+      "h3": "Egyéb felhasználások",
+      "text": "Nézze meg, mit csinálunk még — bolt, iroda, lakás, vendéglátás, rendelő."
+    },
+    {
+      "href": "../blog/cennik-pawilonow-2026.html",
+      "img": "../assets/gallery/realizacje/r6.webp",
+      "alt": "Árlista 2026",
+      "label": "Útmutató",
+      "h3": "Pavilon árlista 2026",
+      "text": "Konkrét összegek, ködösítés nélkül. Nézze meg, mennyit fizet."
+    }
+  ],
+  "jsonLd": {
+    "name": "STAGO különleges pavilon",
+    "description": "Különleges célú pavilonok. Orvosi rendelő, portásfülke, jegypénztár, info pont, művelődési ház. Konkrét követelmények és előírások szerint.",
+    "image": "https://stago.com.pl/assets/modele/noir.webp",
+    "lowPrice": "12000",
+    "highPrice": "150000"
+  }
+}
