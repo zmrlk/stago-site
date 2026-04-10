@@ -20,10 +20,22 @@
     "sub": "Az Ön igényei szerint tervezzük és építjük. Ingyenes látványterv, telepítés az árban, 2 év garancia."
   },
   "trust": [
-    { "value": "5.0/5", "label": "Google Reviews" },
-    { "value": "Saját üzem", "label": "Gyártás saját kézben" },
-    { "value": "Kulcsrakész", "label": "Belép és elkezdi" },
-    { "value": "EU szállítás", "label": "Szállítás + telepítés az árban" }
+    {
+      "value": "5.0/5",
+      "label": "Google Reviews"
+    },
+    {
+      "value": "Saját üzem",
+      "label": "Gyártás saját kézben"
+    },
+    {
+      "value": "Kulcsrakész",
+      "label": "Belép és elkezdi"
+    },
+    {
+      "value": "EU szállítás",
+      "label": "Szállítás + telepítés az árban"
+    }
   ],
   "about": {
     "eyebrow": "Saját gyártás",
@@ -54,12 +66,54 @@
     "h2accent": "A rendeltetést Ön határozza meg.",
     "sub": "Minden mintát az Ön igényei szerint alakítunk — méret, anyag, szín, nyílászárók és belső tér. Az alábbiakban a hat legnépszerűbb modell.",
     "items": [
-      { "name": "NORD", "desc": "Antracit fa akcentusokkal a sarkokban, hatalmas saroküvegezés. Skandináv prémium. Forma, amelyet az első pillantás után megjegyez.", "price": "kb. 5 750 € nettó-tól", "href": "modele/nord.html", "img": "assets/modele/nord.webp", "cta": "NORD megtekintése &rarr;" },
-      { "name": "LOFT", "desc": "Fa lamellák, grafit tető, három nagy frontális kirakat. Showroom-érzés — a vásárlók bejönnek, mert látniuk kell, mi van belül.", "price": "kb. 5 060 € nettó-tól", "href": "modele/loft.html", "img": "assets/modele/loft.webp", "cta": "LOFT megtekintése &rarr;" },
-      { "name": "DUET", "desc": "Grafit korpusz, fa lamellák az oldalakon, három ajtós kirakat. Univerzális minta vendéglátásra, kereskedelemre és irodai célra.", "price": "kb. 5 060 € nettó-tól", "href": "modele/duet.html", "img": "assets/modele/duet.webp", "cta": "DUET megtekintése &rarr;" },
-      { "name": "ICON", "desc": "Fa homlokzat, hatalmas saroküvegek padlótól mennyezetig. Úgy néz ki, mint egy építészeti stúdió. Prémium vállalkozásoknak.", "price": "egyedi árazás", "href": "modele/icon.html", "img": "assets/modele/icon.webp", "cta": "ICON megtekintése &rarr;" },
-      { "name": "MILA", "desc": "Teljes fa homlokzat világos tónusban. Skandináv nyugalom. Ideális iroda, lakás vagy meleg hangulatú rendelő számára.", "price": "kb. 5 750 € nettó-tól", "href": "modele/mila.html", "img": "assets/modele/mila.webp", "cta": "MILA megtekintése &rarr;" },
-      { "name": "NOIR", "desc": "Függőleges fekete lamellák, hosszúkás ablakok, berlini butik jelleg. Vállalkozásoknak, amelyek prémium megjelenést szeretnének.", "price": "kb. 6 440 € nettó-tól", "href": "modele/noir.html", "img": "assets/modele/noir.webp", "cta": "NOIR megtekintése &rarr;" }
+      {
+        "name": "NORD",
+        "desc": "Antracit fa akcentusokkal a sarkokban, hatalmas saroküvegezés. Skandináv prémium. Forma, amelyet az első pillantás után megjegyez.",
+        "price": "kb. 5 750 € nettó-tól",
+        "href": "modele/nord.html",
+        "img": "assets/modele/nord.webp",
+        "cta": "NORD megtekintése &rarr;"
+      },
+      {
+        "name": "LOFT",
+        "desc": "Fa lamellák, grafit tető, három nagy frontális kirakat. Showroom-érzés — a vásárlók bejönnek, mert látniuk kell, mi van belül.",
+        "price": "kb. 5 060 € nettó-tól",
+        "href": "modele/loft.html",
+        "img": "assets/modele/loft.webp",
+        "cta": "LOFT megtekintése &rarr;"
+      },
+      {
+        "name": "DUET",
+        "desc": "Grafit korpusz, fa lamellák az oldalakon, három ajtós kirakat. Univerzális minta vendéglátásra, kereskedelemre és irodai célra.",
+        "price": "kb. 5 060 € nettó-tól",
+        "href": "modele/duet.html",
+        "img": "assets/modele/duet.webp",
+        "cta": "DUET megtekintése &rarr;"
+      },
+      {
+        "name": "ICON",
+        "desc": "Fa homlokzat, hatalmas saroküvegek padlótól mennyezetig. Úgy néz ki, mint egy építészeti stúdió. Prémium vállalkozásoknak.",
+        "price": "egyedi árazás",
+        "href": "modele/icon.html",
+        "img": "assets/modele/icon.webp",
+        "cta": "ICON megtekintése &rarr;"
+      },
+      {
+        "name": "MILA",
+        "desc": "Teljes fa homlokzat világos tónusban. Skandináv nyugalom. Ideális iroda, lakás vagy meleg hangulatú rendelő számára.",
+        "price": "kb. 5 750 € nettó-tól",
+        "href": "modele/mila.html",
+        "img": "assets/modele/mila.webp",
+        "cta": "MILA megtekintése &rarr;"
+      },
+      {
+        "name": "NOIR",
+        "desc": "Függőleges fekete lamellák, hosszúkás ablakok, berlini butik jelleg. Vállalkozásoknak, amelyek prémium megjelenést szeretnének.",
+        "price": "kb. 6 440 € nettó-tól",
+        "href": "modele/noir.html",
+        "img": "assets/modele/noir.webp",
+        "cta": "NOIR megtekintése &rarr;"
+      }
     ]
   },
   "compare": {
@@ -72,11 +126,21 @@
       "price": "700 €",
       "priceSuffix": "/hó",
       "items": [
-        { "text": "36 hónap = <strong>25 200 €</strong>" },
-        { "text": "A helyiség soha nem lesz az Öné" },
-        { "text": "Bérleti díj emelés bármikor, a tulajdonos döntése" },
-        { "text": "Felújítás? Az Ön pénzéből, más helyiségében" },
-        { "text": "Nem működik a helyszín? Sajnos a szerződés köt" }
+        {
+          "text": "36 hónap = <strong>25 200 €</strong>"
+        },
+        {
+          "text": "A helyiség soha nem lesz az Öné"
+        },
+        {
+          "text": "Bérleti díj emelés bármikor, a tulajdonos döntése"
+        },
+        {
+          "text": "Felújítás? Az Ön pénzéből, más helyiségében"
+        },
+        {
+          "text": "Nem működik a helyszín? Sajnos a szerződés köt"
+        }
       ]
     },
     "own": {
@@ -84,11 +148,21 @@
       "price": "~280 €",
       "priceSuffix": "/hó részlet",
       "items": [
-        { "text": "Törlesztés után = <strong>örökre az Öné</strong>" },
-        { "text": "Nulla bérleti díj élete végéig" },
-        { "text": "Áthelyezi, ahová akarja — félpótkocsi és néhány óra" },
-        { "text": "Eladja, amikor akarja, visszakapja a pénzét" },
-        { "text": "Úgy néz ki és úgy működik, ahogy Ön akarja — mert az Öné" }
+        {
+          "text": "Törlesztés után = <strong>örökre az Öné</strong>"
+        },
+        {
+          "text": "Nulla bérleti díj élete végéig"
+        },
+        {
+          "text": "Áthelyezi, ahová akarja — félpótkocsi és néhány óra"
+        },
+        {
+          "text": "Eladja, amikor akarja, visszakapja a pénzét"
+        },
+        {
+          "text": "Úgy néz ki és úgy működik, ahogy Ön akarja — mert az Öné"
+        }
       ]
     },
     "footnote": "A lízingrészlet tájékoztató jellegű, kb. 8 000 € nettó értékű pavilonnál 36 hónapra. A pontos finanszírozási ajánlatot egyedileg állítjuk össze."
@@ -99,9 +173,18 @@
     "h2": "Tomek áthelyezte a zöldségesét.",
     "h2accent": "A saját feltételei szerint.",
     "steps": [
-      { "label": "Helyzet", "text": "Tomek bérelt helyiségben üzemeltetett zöldségest. Éveken át fizetett bérleti díjat, amely semmit nem épített számára. Egy nap a tulajdonos emelte a díjat — és Tomek más megoldást keresett." },
-      { "label": "Egyetlen telefonhívás", "text": "Felhívott minket. Megterveztünk egy pavilont nagy kirakattal a gyümölcskiállításhoz és hűtőhelyiséggel. Tomeknek saját ötletei voltak — módosítottuk az elrendezést, kiválasztottuk a színeket. Két megbeszélés és kész." },
-      { "label": "Eredmény", "text": "Ma a saját telkén áll, a saját feltételei szerint. A lízingrészlet alacsonyabb, mint a korábbi bérleti díj. Az ügyfelek azt mondják, jobban néz ki, mint a város boltjainak fele. Néhány év múlva a pavilon teljes egészében az övé lesz." }
+      {
+        "label": "Helyzet",
+        "text": "Tomek bérelt helyiségben üzemeltetett zöldségest. Éveken át fizetett bérleti díjat, amely semmit nem épített számára. Egy nap a tulajdonos emelte a díjat — és Tomek más megoldást keresett."
+      },
+      {
+        "label": "Egyetlen telefonhívás",
+        "text": "Felhívott minket. Megterveztünk egy pavilont nagy kirakattal a gyümölcskiállításhoz és hűtőhelyiséggel. Tomeknek saját ötletei voltak — módosítottuk az elrendezést, kiválasztottuk a színeket. Két megbeszélés és kész."
+      },
+      {
+        "label": "Eredmény",
+        "text": "Ma a saját telkén áll, a saját feltételei szerint. A lízingrészlet alacsonyabb, mint a korábbi bérleti díj. Az ügyfelek azt mondják, jobban néz ki, mint a város boltjainak fele. Néhány év múlva a pavilon teljes egészében az övé lesz."
+      }
     ],
     "quote": "Csak egy dolgot sajnálok — hogy nem hívtam korábban.",
     "cite": "— Tomek, zöldséges, Busko-Zdrój"
@@ -134,10 +217,26 @@
     "h2": "Önnek csak telefonálnia kell.",
     "h2accent": "A többit bízza ránk.",
     "steps": [
-      { "num": "01", "title": "Kapcsolatfelvétel", "text": "Mondja el, mire van szüksége. Nem kell centiméterig ismerni a méreteket — arra mi vagyunk. Tanácsot adunk, megoldást javaslunk." },
-      { "num": "02", "title": "Ingyenes látványterv", "text": "Megrajzoljuk, hogyan fog kinézni a pavilonja. 3D-ben láthatja, mielőtt egyetlen eurót kiadna. Nem tetszik? Módosítjuk. Annyiszor, ahányszor kell." },
-      { "num": "03", "title": "Gyártás", "text": "Saját üzemünkben építjük, saját felügyelet alatt. Minden szakaszt ellenőrzünk — a szerkezet hegesztésétől a nyílászárók beszereléséig. Meglátogathat minket és megnézheti a munkálatok állását." },
-      { "num": "04", "title": "Szállítás és telepítés", "text": "Félpótkocsin szállítjuk Önhöz, felállítjuk a helyszínen. Szállítás Magyarországra. Néhány óra és kész. Kulccsal lép be a saját terébe." }
+      {
+        "num": "01",
+        "title": "Kapcsolatfelvétel",
+        "text": "Mondja el, mire van szüksége. Nem kell centiméterig ismerni a méreteket — arra mi vagyunk. Tanácsot adunk, megoldást javaslunk."
+      },
+      {
+        "num": "02",
+        "title": "Ingyenes látványterv",
+        "text": "Megrajzoljuk, hogyan fog kinézni a pavilonja. 3D-ben láthatja, mielőtt egyetlen eurót kiadna. Nem tetszik? Módosítjuk. Annyiszor, ahányszor kell."
+      },
+      {
+        "num": "03",
+        "title": "Gyártás",
+        "text": "Saját üzemünkben építjük, saját felügyelet alatt. Minden szakaszt ellenőrzünk — a szerkezet hegesztésétől a nyílászárók beszereléséig. Meglátogathat minket és megnézheti a munkálatok állását."
+      },
+      {
+        "num": "04",
+        "title": "Szállítás és telepítés",
+        "text": "Félpótkocsin szállítjuk Önhöz, felállítjuk a helyszínen. Szállítás Magyarországra. Néhány óra és kész. Kulccsal lép be a saját terébe."
+      }
     ]
   },
   "gallery": {
@@ -146,15 +245,51 @@
     "h2accent": "mit csinálunk.",
     "sub": "Minden projekt egyedi — minden az ügyfélé. Kattintson a nagyításhoz.",
     "items": [
-      { "img": "assets/gallery/k2.webp", "alt": "STAGO kereskedelmi pavilon — antracit lemez kioszk", "label": "Kereskedelmi kioszk, antracit lemez" },
-      { "img": "assets/gallery/k6.webp", "alt": "STAGO irodakonténer — modul panoráma ablakokkal", "label": "Iroda 6×3m, panoráma ablakok" },
-      { "img": "assets/gallery/k9.webp", "alt": "STAGO szolgáltatási pavilon — kiadóablakos pont", "label": "Szolgáltatási pont, kiadóablak" },
-      { "img": "assets/gallery/k11.webp", "alt": "STAGO irodakonténer — HPL homlokzat", "label": "Irodakonténer, HPL homlokzat" },
-      { "img": "assets/gallery/k14.webp", "alt": "STAGO moduláris pavilon — fa burkolat", "label": "Pavilon fa burkolattal" },
-      { "img": "assets/gallery/k16.webp", "alt": "STAGO moduláris konténer — fa akcentus", "label": "Konténer fa akcentussal" },
-      { "img": "assets/gallery/k19.webp", "alt": "STAGO raktárkonténer — grafit lemez", "label": "Raktár 6×2,4m, grafit lemez" },
-      { "img": "assets/gallery/k21.webp", "alt": "STAGO moduláris pavilon — teljes fa homlokzat", "label": "Pavilon teljes fa homlokzattal" },
-      { "img": "assets/gallery/k25.webp", "alt": "STAGO összekapcsolt modulok — iroda és raktár", "label": "Összekapcsolt modulok, iroda + raktár" }
+      {
+        "img": "assets/gallery/k2.webp",
+        "alt": "STAGO kereskedelmi pavilon — antracit lemez kioszk",
+        "label": "Kereskedelmi kioszk, antracit lemez"
+      },
+      {
+        "img": "assets/gallery/k6.webp",
+        "alt": "STAGO irodakonténer — modul panoráma ablakokkal",
+        "label": "Iroda 6×3m, panoráma ablakok"
+      },
+      {
+        "img": "assets/gallery/k9.webp",
+        "alt": "STAGO szolgáltatási pavilon — kiadóablakos pont",
+        "label": "Szolgáltatási pont, kiadóablak"
+      },
+      {
+        "img": "assets/gallery/k11.webp",
+        "alt": "STAGO irodakonténer — HPL homlokzat",
+        "label": "Irodakonténer, HPL homlokzat"
+      },
+      {
+        "img": "assets/gallery/k14.webp",
+        "alt": "STAGO moduláris pavilon — fa burkolat",
+        "label": "Pavilon fa burkolattal"
+      },
+      {
+        "img": "assets/gallery/k16.webp",
+        "alt": "STAGO moduláris konténer — fa akcentus",
+        "label": "Konténer fa akcentussal"
+      },
+      {
+        "img": "assets/gallery/k19.webp",
+        "alt": "STAGO raktárkonténer — grafit lemez",
+        "label": "Raktár 6×2,4m, grafit lemez"
+      },
+      {
+        "img": "assets/gallery/k21.webp",
+        "alt": "STAGO moduláris pavilon — teljes fa homlokzat",
+        "label": "Pavilon teljes fa homlokzattal"
+      },
+      {
+        "img": "assets/gallery/k25.webp",
+        "alt": "STAGO összekapcsolt modulok — iroda és raktár",
+        "label": "Összekapcsolt modulok, iroda + raktár"
+      }
     ]
   },
   "reviews": {
@@ -162,32 +297,84 @@
     "h2": "5.0 a Google-ön.",
     "h2accent": "Nem mi — ügyfeleink mondják.",
     "items": [
-      { "text": "Nagyon kellemes légkör, kiváló kiszolgálás, gyors teljesítés. Mindenkinek ajánlom!", "author": "Kacper Z.", "source": "Google Reviews" },
-      { "text": "Kedves, professzionális kiszolgálás. A tanácson kívül mintaanyagot is kaptam saját ötletem kipróbálásához. Fantasztikus.", "author": "Nikodem S.", "source": "Google Reviews" },
-      { "text": "Megbízható cég, tartják a határidőket. A pavilon pontosan úgy néz ki, mint a látványterven. Nulla meglepetés.", "author": "Marek W.", "source": "Google Reviews" }
-    ]
+      {
+        "text": "Nagyon kellemes légkör, kiváló kiszolgálás, gyors teljesítés. Mindenkinek ajánlom!",
+        "author": "Kacper Z.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Kedves, professzionális kiszolgálás. A tanácson kívül mintaanyagot is kaptam saját ötletem kipróbálásához. Fantasztikus.",
+        "author": "Nikodem S.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Megbízható cég, tartják a határidőket. A pavilon pontosan úgy néz ki, mint a látványterven. Nulla meglepetés.",
+        "author": "Marek W.",
+        "source": "Google Reviews"
+      }
+    ],
+    "count": "13 vélemény"
   },
   "blog": {
     "eyebrow": "Útmutatók",
     "h2": "Amit tudnia kell",
     "sub": "vásárlás előtt.",
     "items": [
-      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.webp", "date": "Útmutató", "title": "Hogyan ellenőrizze a pavilongyártót szerződéskötés előtt", "desc": "7 konkrét dolog, amit ellenőriznie kell. Hegesztések, szigetelés, tető, rejtett költségek. Mielőtt utalná a pénzt — olvassa el." },
-      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.webp", "date": "Útmutató", "title": "Megkapta a pavilont. És most mi van? Minőség-ellenőrzés lépésről lépésre.", "desc": "A pavilon megérkezett a félpótkocsin. Mit ellenőrizzen, mielőtt aláírja az átadási jegyzőkönyvet? Tető, hegesztések, ablakok, padló — ellenőrzőlista." },
-      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.webp", "date": "Útmutató", "title": "Az első tél a pavilonban — amit senki nem mond el", "desc": "Szigetelés, fűtés, párásodás, számlák. Valós számok és tanácsok valakitől, aki nem egy telet látott már." }
+      {
+        "href": "blog/pawilon-handlowy-cena.html",
+        "img": "assets/gallery/k2.webp",
+        "date": "Útmutató",
+        "title": "Hogyan ellenőrizze a pavilongyártót szerződéskötés előtt",
+        "desc": "7 konkrét dolog, amit ellenőriznie kell. Hegesztések, szigetelés, tető, rejtett költségek. Mielőtt utalná a pénzt — olvassa el."
+      },
+      {
+        "href": "blog/pawilon-bez-pozwolenia.html",
+        "img": "assets/gallery/k9.webp",
+        "date": "Útmutató",
+        "title": "Megkapta a pavilont. És most mi van? Minőség-ellenőrzés lépésről lépésre.",
+        "desc": "A pavilon megérkezett a félpótkocsin. Mit ellenőrizzen, mielőtt aláírja az átadási jegyzőkönyvet? Tető, hegesztések, ablakok, padló — ellenőrzőlista."
+      },
+      {
+        "href": "blog/kontener-biurowy-cena.html",
+        "img": "assets/gallery/k6.webp",
+        "date": "Útmutató",
+        "title": "Az első tél a pavilonban — amit senki nem mond el",
+        "desc": "Szigetelés, fűtés, párásodás, számlák. Valós számok és tanácsok valakitől, aki nem egy telet látott már."
+      }
     ]
   },
   "faq": {
     "eyebrow": "GYIK",
     "h2": "Ügyfeleink gyakran kérdezik:",
     "items": [
-      { "q": "Mennyibe kerül?", "a": "A modelltől, mérettől és a belső felszereléstől függ. Hogy legyen egy képe — a legegyszerűbb modul kb. 2 800 € nettó-tól indul, a nagyobb, kulcsrakész pavilonok kb. 8 000–11 500 € körül mozognak. Minden projektet egyedileg és díjmentesen árazunk. Hívjon vagy írjon — konkrét összeget adunk, mielőtt bármit eldöntene." },
-      { "q": "Mennyi az átfutási idő?", "a": "A határidőt a szerződéskötéskor rögzítjük — és betartjuk. Attól függ, mit építünk. Egyszerűbb modul gyorsabban, összetettebb több időt igényel. A pontos átadási dátumot a foglalóbefizetés előtt ismeri — szerződésben, nem szóban." },
-      { "q": "Kell-e építési engedély?", "a": "Lengyelországban a 35 m²-ig terjedő pavilonokhoz általában bejelentés elegendő, nem engedély. Ez néhány nap kérdése, nem hónapoké. Magyarországi telepítés esetén az adott önkormányzati előírások irányadók — tanácsot adunk az Ön helyzetéhez." },
-      { "q": "Magyarországra is szállítanak? Hol telepítenek?", "a": "Igen, szállítunk Magyarországra. A pavilon félpótkocsin érkezik üzemünkből Jędrzejów mellől. Csapatunk a helyszínen telepíti — szilárd alapra (térkő, beton, lemezek) van szükség. A szállítás és telepítés az árban van. Ön csak megmutatja, hol álljon." },
-      { "q": "Mi van télen? Meleg a pavilon?", "a": "Pavilonjainkban PIR szigetelés van — ugyanaz a szigetelés, mint az energiatakarékos házakban. Télen belül meleg van, nyáron nem melegszik fel, mint egy bádogépület. Azok az ügyfelek, akiknek légkondicionálójuk van hőszivattyúval, havonta 50–100 €-t fizetnek a fűtésért. Ez nem ideiglenes megoldás — ez egész éves, teljes értékű tér." },
-      { "q": "Mi a helyzet a garanciával?", "a": "2 év garancia a szerkezetre, 1 év a szerelésre. De a garancia egy dolog — fontosabb, hogy az eladás után sem hagyjuk magukra ügyfeleinket. Történik valami? Hív, jövünk, javítunk. Saját üzemünk és saját embereink vannak — nem keresünk senkit telefonon." },
-      { "q": "Meglátogathatom az üzemet?", "a": "Igen — és bátorítjuk is. Üzemünk Jasionkában van, Jędrzejów mellett, Lengyelországban. Meglátogathat minket, megnézheti, hogyan hegesztjük a szerkezetet, megtapinthatja az anyagokat, beszélgethet a csapattal. A legtöbb ügyfél megteszi és nyugodtabban távozik." }
+      {
+        "q": "Mennyibe kerül?",
+        "a": "A modelltől, mérettől és a belső felszereléstől függ. Hogy legyen egy képe — a legegyszerűbb modul kb. 2 800 € nettó-tól indul, a nagyobb, kulcsrakész pavilonok kb. 8 000–11 500 € körül mozognak. Minden projektet egyedileg és díjmentesen árazunk. Hívjon vagy írjon — konkrét összeget adunk, mielőtt bármit eldöntene."
+      },
+      {
+        "q": "Mennyi az átfutási idő?",
+        "a": "A határidőt a szerződéskötéskor rögzítjük — és betartjuk. Attól függ, mit építünk. Egyszerűbb modul gyorsabban, összetettebb több időt igényel. A pontos átadási dátumot a foglalóbefizetés előtt ismeri — szerződésben, nem szóban."
+      },
+      {
+        "q": "Kell-e építési engedély?",
+        "a": "Lengyelországban a 35 m²-ig terjedő pavilonokhoz általában bejelentés elegendő, nem engedély. Ez néhány nap kérdése, nem hónapoké. Magyarországi telepítés esetén az adott önkormányzati előírások irányadók — tanácsot adunk az Ön helyzetéhez."
+      },
+      {
+        "q": "Magyarországra is szállítanak? Hol telepítenek?",
+        "a": "Igen, szállítunk Magyarországra. A pavilon félpótkocsin érkezik üzemünkből Jędrzejów mellől. Csapatunk a helyszínen telepíti — szilárd alapra (térkő, beton, lemezek) van szükség. A szállítás és telepítés az árban van. Ön csak megmutatja, hol álljon."
+      },
+      {
+        "q": "Mi van télen? Meleg a pavilon?",
+        "a": "Pavilonjainkban PIR szigetelés van — ugyanaz a szigetelés, mint az energiatakarékos házakban. Télen belül meleg van, nyáron nem melegszik fel, mint egy bádogépület. Azok az ügyfelek, akiknek légkondicionálójuk van hőszivattyúval, havonta 50–100 €-t fizetnek a fűtésért. Ez nem ideiglenes megoldás — ez egész éves, teljes értékű tér."
+      },
+      {
+        "q": "Mi a helyzet a garanciával?",
+        "a": "2 év garancia a szerkezetre, 1 év a szerelésre. De a garancia egy dolog — fontosabb, hogy az eladás után sem hagyjuk magukra ügyfeleinket. Történik valami? Hív, jövünk, javítunk. Saját üzemünk és saját embereink vannak — nem keresünk senkit telefonon."
+      },
+      {
+        "q": "Meglátogathatom az üzemet?",
+        "a": "Igen — és bátorítjuk is. Üzemünk Jasionkában van, Jędrzejów mellett, Lengyelországban. Meglátogathat minket, megnézheti, hogyan hegesztjük a szerkezetet, megtapinthatja az anyagokat, beszélgethet a csapattal. A legtöbb ügyfél megteszi és nyugodtabban távozik."
+      }
     ]
   },
   "contact": {

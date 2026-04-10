@@ -20,10 +20,22 @@
     "sub": "Projektujemy i budujemy pod Ciebie. Darmowa wizualizacja, montaż w cenie, 2 lata gwarancji."
   },
   "trust": [
-    { "value": "5.0/5", "label": "Google Reviews" },
-    { "value": "Własny zakład", "label": "Produkcja pod kontrolą" },
-    { "value": "Pod klucz", "label": "Wchodzisz i zaczynasz" },
-    { "value": "Cała PL", "label": "Transport + montaż w cenie" }
+    {
+      "value": "5.0/5",
+      "label": "Google Reviews"
+    },
+    {
+      "value": "Własny zakład",
+      "label": "Produkcja pod kontrolą"
+    },
+    {
+      "value": "Pod klucz",
+      "label": "Wchodzisz i zaczynasz"
+    },
+    {
+      "value": "Cała PL",
+      "label": "Transport + montaż w cenie"
+    }
   ],
   "about": {
     "eyebrow": "Własna produkcja",
@@ -54,12 +66,54 @@
     "h2accent": "Przeznaczenie dopasujesz sam.",
     "sub": "Każdy wzór dopasujemy pod Ciebie — wymiar, materiał, kolor, stolarkę i wnętrze. Poniżej sześć najczęściej wybieranych przez klientów.",
     "items": [
-      { "name": "NORD", "desc": "Antracyt z drewnianymi akcentami w narożnikach, ogromne narożne szklenia. Skandynawski premium. Bryła, którą pamiętasz po pierwszym spojrzeniu.", "price": "od 25 000 zł netto", "href": "modele/nord.html", "img": "assets/modele/nord.webp", "cta": "Zobacz NORD &rarr;" },
-      { "name": "LOFT", "desc": "Drewniane lamele, grafitowy dach, trzy duże witryny frontowe. Showroom-feel — klienci wchodzą, bo muszą zobaczyć, co w środku.", "price": "od 22 000 zł netto", "href": "modele/loft.html", "img": "assets/modele/loft.webp", "cta": "Zobacz LOFT &rarr;" },
-      { "name": "DUET", "desc": "Grafitowy korpus, drewniane lamele po bokach, trzy witryny z drzwiami. Uniwersalny wzór do gastro, handlu i biura.", "price": "od 22 000 zł netto", "href": "modele/duet.html", "img": "assets/modele/duet.webp", "cta": "Zobacz DUET &rarr;" },
-      { "name": "ICON", "desc": "Drewniana elewacja, wielkie narożne szkła od podłogi do sufitu. Wygląda jak studio architekta. Dla biznesów premium.", "price": "wycena indywidualna", "href": "modele/icon.html", "img": "assets/modele/icon.webp", "cta": "Zobacz ICON &rarr;" },
-      { "name": "MILA", "desc": "Pełna drewniana elewacja w jasnym odcieniu. Skandynawski spokój. Idealny pod gabinet, domek, biuro w ciepłym tonie.", "price": "od 25 000 zł netto", "href": "modele/mila.html", "img": "assets/modele/mila.webp", "cta": "Zobacz MILA &rarr;" },
-      { "name": "NOIR", "desc": "Pionowe czarne lamele, podłużne okna, butikowy charakter jak z Berlina. Dla biznesów, które chcą wyglądać premium.", "price": "od 28 000 zł netto", "href": "modele/noir.html", "img": "assets/modele/noir.webp", "cta": "Zobacz NOIR &rarr;" }
+      {
+        "name": "NORD",
+        "desc": "Antracyt z drewnianymi akcentami w narożnikach, ogromne narożne szklenia. Skandynawski premium. Bryła, którą pamiętasz po pierwszym spojrzeniu.",
+        "price": "od 25 000 zł netto",
+        "href": "modele/nord.html",
+        "img": "assets/modele/nord.webp",
+        "cta": "Zobacz NORD &rarr;"
+      },
+      {
+        "name": "LOFT",
+        "desc": "Drewniane lamele, grafitowy dach, trzy duże witryny frontowe. Showroom-feel — klienci wchodzą, bo muszą zobaczyć, co w środku.",
+        "price": "od 22 000 zł netto",
+        "href": "modele/loft.html",
+        "img": "assets/modele/loft.webp",
+        "cta": "Zobacz LOFT &rarr;"
+      },
+      {
+        "name": "DUET",
+        "desc": "Grafitowy korpus, drewniane lamele po bokach, trzy witryny z drzwiami. Uniwersalny wzór do gastro, handlu i biura.",
+        "price": "od 22 000 zł netto",
+        "href": "modele/duet.html",
+        "img": "assets/modele/duet.webp",
+        "cta": "Zobacz DUET &rarr;"
+      },
+      {
+        "name": "ICON",
+        "desc": "Drewniana elewacja, wielkie narożne szkła od podłogi do sufitu. Wygląda jak studio architekta. Dla biznesów premium.",
+        "price": "wycena indywidualna",
+        "href": "modele/icon.html",
+        "img": "assets/modele/icon.webp",
+        "cta": "Zobacz ICON &rarr;"
+      },
+      {
+        "name": "MILA",
+        "desc": "Pełna drewniana elewacja w jasnym odcieniu. Skandynawski spokój. Idealny pod gabinet, domek, biuro w ciepłym tonie.",
+        "price": "od 25 000 zł netto",
+        "href": "modele/mila.html",
+        "img": "assets/modele/mila.webp",
+        "cta": "Zobacz MILA &rarr;"
+      },
+      {
+        "name": "NOIR",
+        "desc": "Pionowe czarne lamele, podłużne okna, butikowy charakter jak z Berlina. Dla biznesów, które chcą wyglądać premium.",
+        "price": "od 28 000 zł netto",
+        "href": "modele/noir.html",
+        "img": "assets/modele/noir.webp",
+        "cta": "Zobacz NOIR &rarr;"
+      }
     ]
   },
   "compare": {
@@ -72,11 +126,21 @@
       "price": "3 000 zł",
       "priceSuffix": "/msc",
       "items": [
-        { "text": "36 miesięcy = <strong>108 000 zł</strong>" },
-        { "text": "Lokal nigdy nie będzie Twój" },
-        { "text": "Podwyżka czynszu kiedy chce właściciel" },
-        { "text": "Remont? Za Twoje pieniądze, w cudzym lokalu" },
-        { "text": "Lokalizacja nie działa? Trudno, umowa wiąże" }
+        {
+          "text": "36 miesięcy = <strong>108 000 zł</strong>"
+        },
+        {
+          "text": "Lokal nigdy nie będzie Twój"
+        },
+        {
+          "text": "Podwyżka czynszu kiedy chce właściciel"
+        },
+        {
+          "text": "Remont? Za Twoje pieniądze, w cudzym lokalu"
+        },
+        {
+          "text": "Lokalizacja nie działa? Trudno, umowa wiąże"
+        }
       ]
     },
     "own": {
@@ -84,11 +148,21 @@
       "price": "~1 200 zł",
       "priceSuffix": "/msc raty",
       "items": [
-        { "text": "Po spłacie = <strong>Twój na zawsze</strong>" },
-        { "text": "Zero czynszu do końca życia" },
-        { "text": "Przenosisz gdzie chcesz — naczepa i kilka godzin" },
-        { "text": "Sprzedajesz kiedy chcesz, odzyskujesz pieniądze" },
-        { "text": "Wygląda i działa jak chcesz — bo to Twoje" }
+        {
+          "text": "Po spłacie = <strong>Twój na zawsze</strong>"
+        },
+        {
+          "text": "Zero czynszu do końca życia"
+        },
+        {
+          "text": "Przenosisz gdzie chcesz — naczepa i kilka godzin"
+        },
+        {
+          "text": "Sprzedajesz kiedy chcesz, odzyskujesz pieniądze"
+        },
+        {
+          "text": "Wygląda i działa jak chcesz — bo to Twoje"
+        }
       ]
     },
     "footnote": "Rata leasingowa orientacyjna, przy pawilonie ~35 000 zł netto na 36 miesięcy. Dokładną ofertę finansowania dobieramy indywidualnie."
@@ -99,9 +173,18 @@
     "h2": "Tomek przeniósł warzywniak.",
     "h2accent": "Na swoich zasadach.",
     "steps": [
-      { "label": "Sytuacja", "text": "Tomek prowadził warzywniak w wynajętym lokalu. Przez lata płacił czynsz, który nie budował niczego jego. Pewnego dnia właściciel podniósł stawkę — i Tomek zaczął szukać innego wyjścia." },
-      { "label": "Jeden telefon", "text": "Zadzwonił do nas. Narysowaliśmy pawilon z dużą witryną na wystawkę owoców i zapleczem chłodniczym. Tomek miał swoje pomysły — zmieniliśmy układ, dobraliśmy kolory. Dwa spotkania i gotowe." },
-      { "label": "Efekt", "text": "Dziś stoi na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Klienci mówią, że wygląda lepiej niż połowa sklepów w mieście. Za kilka lat pawilon będzie w całości jego." }
+      {
+        "label": "Sytuacja",
+        "text": "Tomek prowadził warzywniak w wynajętym lokalu. Przez lata płacił czynsz, który nie budował niczego jego. Pewnego dnia właściciel podniósł stawkę — i Tomek zaczął szukać innego wyjścia."
+      },
+      {
+        "label": "Jeden telefon",
+        "text": "Zadzwonił do nas. Narysowaliśmy pawilon z dużą witryną na wystawkę owoców i zapleczem chłodniczym. Tomek miał swoje pomysły — zmieniliśmy układ, dobraliśmy kolory. Dwa spotkania i gotowe."
+      },
+      {
+        "label": "Efekt",
+        "text": "Dziś stoi na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Klienci mówią, że wygląda lepiej niż połowa sklepów w mieście. Za kilka lat pawilon będzie w całości jego."
+      }
     ],
     "quote": "Żałuję tylko jednego — że nie zadzwoniłem wcześniej.",
     "cite": "— Tomek, warzywniak, Busko-Zdrój"
@@ -134,10 +217,26 @@
     "h2": "Po Twojej stronie jest tylko telefon.",
     "h2accent": "Resztę zostaw nam.",
     "steps": [
-      { "num": "01", "title": "Kontakt", "text": "Powiedz czego potrzebujesz. Nie musisz znać wymiarów co do centymetra — od tego jesteśmy my. Doradzimy, zaproponujemy rozwiązanie." },
-      { "num": "02", "title": "Darmowa wizualizacja", "text": "Narysujemy jak będzie wyglądał Twój pawilon. Zobaczysz go w 3D zanim wydasz złotówkę. Nie podoba się? Zmieniamy. Tyle razy ile trzeba." },
-      { "num": "03", "title": "Produkcja", "text": "Budujemy u siebie w zakładzie, pod własnym okiem. Kontrolujemy każdy etap — od spawania konstrukcji po montaż stolarki. Możesz przyjechać i zobaczyć postęp prac." },
-      { "num": "04", "title": "Dostawa i montaż", "text": "Ładujemy na naczepę, jedziemy do Ciebie, stawiamy na miejscu. Kilka godzin i gotowe. Wchodzisz z kluczem do własnej przestrzeni." }
+      {
+        "num": "01",
+        "title": "Kontakt",
+        "text": "Powiedz czego potrzebujesz. Nie musisz znać wymiarów co do centymetra — od tego jesteśmy my. Doradzimy, zaproponujemy rozwiązanie."
+      },
+      {
+        "num": "02",
+        "title": "Darmowa wizualizacja",
+        "text": "Narysujemy jak będzie wyglądał Twój pawilon. Zobaczysz go w 3D zanim wydasz złotówkę. Nie podoba się? Zmieniamy. Tyle razy ile trzeba."
+      },
+      {
+        "num": "03",
+        "title": "Produkcja",
+        "text": "Budujemy u siebie w zakładzie, pod własnym okiem. Kontrolujemy każdy etap — od spawania konstrukcji po montaż stolarki. Możesz przyjechać i zobaczyć postęp prac."
+      },
+      {
+        "num": "04",
+        "title": "Dostawa i montaż",
+        "text": "Ładujemy na naczepę, jedziemy do Ciebie, stawiamy na miejscu. Kilka godzin i gotowe. Wchodzisz z kluczem do własnej przestrzeni."
+      }
     ]
   },
   "gallery": {
@@ -146,15 +245,51 @@
     "h2accent": "co robimy.",
     "sub": "Każdy projekt inny — każdy pod klienta. Kliknij żeby powiększyć.",
     "items": [
-      { "img": "assets/gallery/k2.webp", "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej", "label": "Kiosk handlowy, blacha antracyt" },
-      { "img": "assets/gallery/k6.webp", "alt": "Kontener biurowy STAGO — moduł z oknami panoramicznymi", "label": "Biuro 6×3m, okna panoramiczne" },
-      { "img": "assets/gallery/k9.webp", "alt": "Pawilon usługowy STAGO — punkt z oknem podawczym", "label": "Punkt usługowy, okno podawcze" },
-      { "img": "assets/gallery/k11.webp", "alt": "Kontener biurowy STAGO — elewacja HPL", "label": "Kontener biurowy, elewacja HPL" },
-      { "img": "assets/gallery/k14.webp", "alt": "Pawilon modułowy STAGO — okładzina drewniana", "label": "Pawilon z okładziną drewnianą" },
-      { "img": "assets/gallery/k16.webp", "alt": "Kontener modułowy STAGO — akcent drewniany", "label": "Kontener z akcentem drewnianym" },
-      { "img": "assets/gallery/k19.webp", "alt": "Kontener magazynowy STAGO — blacha grafitowa", "label": "Magazyn 6×2,4m, blacha grafitowa" },
-      { "img": "assets/gallery/k21.webp", "alt": "Pawilon modułowy STAGO — pełna elewacja drewniana", "label": "Pawilon z pełną elewacją drewnianą" },
-      { "img": "assets/gallery/k25.webp", "alt": "Moduły łączone STAGO — biuro i magazyn", "label": "Moduły łączone, biuro + magazyn" }
+      {
+        "img": "assets/gallery/k2.webp",
+        "alt": "Pawilon handlowy STAGO — kiosk z blachy antracytowej",
+        "label": "Kiosk handlowy, blacha antracyt"
+      },
+      {
+        "img": "assets/gallery/k6.webp",
+        "alt": "Kontener biurowy STAGO — moduł z oknami panoramicznymi",
+        "label": "Biuro 6×3m, okna panoramiczne"
+      },
+      {
+        "img": "assets/gallery/k9.webp",
+        "alt": "Pawilon usługowy STAGO — punkt z oknem podawczym",
+        "label": "Punkt usługowy, okno podawcze"
+      },
+      {
+        "img": "assets/gallery/k11.webp",
+        "alt": "Kontener biurowy STAGO — elewacja HPL",
+        "label": "Kontener biurowy, elewacja HPL"
+      },
+      {
+        "img": "assets/gallery/k14.webp",
+        "alt": "Pawilon modułowy STAGO — okładzina drewniana",
+        "label": "Pawilon z okładziną drewnianą"
+      },
+      {
+        "img": "assets/gallery/k16.webp",
+        "alt": "Kontener modułowy STAGO — akcent drewniany",
+        "label": "Kontener z akcentem drewnianym"
+      },
+      {
+        "img": "assets/gallery/k19.webp",
+        "alt": "Kontener magazynowy STAGO — blacha grafitowa",
+        "label": "Magazyn 6×2,4m, blacha grafitowa"
+      },
+      {
+        "img": "assets/gallery/k21.webp",
+        "alt": "Pawilon modułowy STAGO — pełna elewacja drewniana",
+        "label": "Pawilon z pełną elewacją drewnianą"
+      },
+      {
+        "img": "assets/gallery/k25.webp",
+        "alt": "Moduły łączone STAGO — biuro i magazyn",
+        "label": "Moduły łączone, biuro + magazyn"
+      }
     ]
   },
   "reviews": {
@@ -162,32 +297,84 @@
     "h2": "5.0 na Google.",
     "h2accent": "To nie my — to nasi klienci.",
     "items": [
-      { "text": "Bardzo miła atmosfera, wspaniała obsługa, szybki czas realizacji. Polecam każdemu!", "author": "Kacper Z.", "source": "Google Reviews" },
-      { "text": "Miła profesjonalna obsługa. Oprócz porady dostałem materiał do wypróbowania własnego pomysłu. Rewelacja.", "author": "Nikodem S.", "source": "Google Reviews" },
-      { "text": "Solidna firma, dotrzymują terminów. Pawilon wygląda dokładnie jak na wizualizacji. Zero niespodzianek.", "author": "Marek W.", "source": "Google Reviews" }
-    ]
+      {
+        "text": "Bardzo miła atmosfera, wspaniała obsługa, szybki czas realizacji. Polecam każdemu!",
+        "author": "Kacper Z.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Miła profesjonalna obsługa. Oprócz porady dostałem materiał do wypróbowania własnego pomysłu. Rewelacja.",
+        "author": "Nikodem S.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Solidna firma, dotrzymują terminów. Pawilon wygląda dokładnie jak na wizualizacji. Zero niespodzianek.",
+        "author": "Marek W.",
+        "source": "Google Reviews"
+      }
+    ],
+    "count": "13 opinii"
   },
   "blog": {
     "eyebrow": "Poradniki",
     "h2": "O czym powinieneś wiedzieć",
     "sub": "przed zakupem.",
     "items": [
-      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.webp", "date": "Poradnik", "title": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę", "desc": "7 konkretnych rzeczy do sprawdzenia. Spawy, izolacja, dach, ukryte koszty. Zanim wyślesz przelew — przeczytaj." },
-      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.webp", "date": "Poradnik", "title": "Odebrałeś pawilon. I co teraz? Kontrola jakości krok po kroku.", "desc": "Pawilon przyjechał na naczepie. Co sprawdzić zanim podpiszesz protokół? Dach, spawy, okna, podłoga — checklista." },
-      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.webp", "date": "Poradnik", "title": "Pierwsza zima w pawilonie — czego nikt Ci nie powie", "desc": "Izolacja, ogrzewanie, wilgoć, rachunki. Prawdziwe liczby i porady od kogoś, kto widział nie jedną zimę." }
+      {
+        "href": "blog/pawilon-handlowy-cena.html",
+        "img": "assets/gallery/k2.webp",
+        "date": "Poradnik",
+        "title": "Jak sprawdzić producenta pawilonów zanim podpiszesz umowę",
+        "desc": "7 konkretnych rzeczy do sprawdzenia. Spawy, izolacja, dach, ukryte koszty. Zanim wyślesz przelew — przeczytaj."
+      },
+      {
+        "href": "blog/pawilon-bez-pozwolenia.html",
+        "img": "assets/gallery/k9.webp",
+        "date": "Poradnik",
+        "title": "Odebrałeś pawilon. I co teraz? Kontrola jakości krok po kroku.",
+        "desc": "Pawilon przyjechał na naczepie. Co sprawdzić zanim podpiszesz protokół? Dach, spawy, okna, podłoga — checklista."
+      },
+      {
+        "href": "blog/kontener-biurowy-cena.html",
+        "img": "assets/gallery/k6.webp",
+        "date": "Poradnik",
+        "title": "Pierwsza zima w pawilonie — czego nikt Ci nie powie",
+        "desc": "Izolacja, ogrzewanie, wilgoć, rachunki. Prawdziwe liczby i porady od kogoś, kto widział nie jedną zimę."
+      }
     ]
   },
   "faq": {
     "eyebrow": "FAQ",
     "h2": "Klienci często pytają nas:",
     "items": [
-      { "q": "Ile to kosztuje?", "a": "Zależy od modelu, rozmiaru i tego co ma być w środku. Żebyś miał orientację — najprostszy moduł zaczyna się od ok. 12 000 zł netto, a większe, wykończone pod klucz to okolice 35 000–50 000 zł. Każdy projekt wyceniamy indywidualnie i zawsze za darmo. Zadzwoń albo napisz — podamy konkretną kwotę zanim zdecydujesz cokolwiek." },
-      { "q": "Jak długo czeka się na pawilon?", "a": "Termin ustalamy przy podpisaniu umowy — i go dotrzymujemy. Zależy od tego co budujesz. Prostszy moduł szybciej, bardziej rozbudowany potrzebuje więcej czasu. Konkretną datę odbioru znasz zanim wpłacisz złotówkę." },
-      { "q": "Czy potrzebuję pozwolenia na budowę?", "a": "Jeśli pawilon ma do 35 m² — zazwyczaj wystarczy samo zgłoszenie, nie pozwolenie. To kwestia kilku dni, nie miesięcy. Przy większych obiektach pomagamy przygotować dokumenty. Doradzimy co jest potrzebne w Twojej sytuacji — żebyś nie musiał się z tym sam męczyć." },
-      { "q": "Dowieziecie do mnie? Gdzie montujecie?", "a": "W całej Polsce. Pawilon jedzie na naczepie prosto z naszego zakładu pod Jędrzejowem. Nasz zespół montuje go na miejscu — potrzebujesz utwardzone podłoże (kostka, beton, płyty). Transport i montaż są w cenie. Ty tylko wskazujesz gdzie ma stać." },
-      { "q": "A jak będzie zimą? Czy pawilon jest ciepły?", "a": "Nasze pawilony mają izolację PIR — to ta sama izolacja co w domach energooszczędnych. Zimą w środku jest ciepło, latem nie nagrzewa się jak blaszak. Klienci, którzy mają klimatyzację z pompą ciepła, płacą za ogrzewanie 200-400 zł miesięcznie. To nie jest prowizorka — to pełnowartościowa przestrzeń na cały rok." },
-      { "q": "Co z gwarancją?", "a": "2 lata gwarancji na konstrukcję, rok na instalację. Ale gwarancja to jedno — ważniejsze jest to, że nie zostawiamy klientów po sprzedaży. Coś się stanie? Dzwonisz, przyjeżdżamy, naprawiamy. Mamy własny zakład i własnych ludzi — nie szukamy kogoś na telefon." },
-      { "q": "Mogę przyjechać zobaczyć jak robicie?", "a": "Tak — i zachęcamy. Nasz zakład jest w Jasionkach pod Jędrzejowem. Możesz przyjechać, zobaczyć jak spawamy konstrukcję, dotknąć materiałów, porozmawiać z ekipą. Większość klientów to robi i wychodzą spokojniejsi. Nie trzeba się umawiać — ale jak zadzwonisz wcześniej, to przygotujemy się na Twoją wizytę." }
+      {
+        "q": "Ile to kosztuje?",
+        "a": "Zależy od modelu, rozmiaru i tego co ma być w środku. Żebyś miał orientację — najprostszy moduł zaczyna się od ok. 12 000 zł netto, a większe, wykończone pod klucz to okolice 35 000–50 000 zł. Każdy projekt wyceniamy indywidualnie i zawsze za darmo. Zadzwoń albo napisz — podamy konkretną kwotę zanim zdecydujesz cokolwiek."
+      },
+      {
+        "q": "Jak długo czeka się na pawilon?",
+        "a": "Termin ustalamy przy podpisaniu umowy — i go dotrzymujemy. Zależy od tego co budujesz. Prostszy moduł szybciej, bardziej rozbudowany potrzebuje więcej czasu. Konkretną datę odbioru znasz zanim wpłacisz złotówkę."
+      },
+      {
+        "q": "Czy potrzebuję pozwolenia na budowę?",
+        "a": "Jeśli pawilon ma do 35 m² — zazwyczaj wystarczy samo zgłoszenie, nie pozwolenie. To kwestia kilku dni, nie miesięcy. Przy większych obiektach pomagamy przygotować dokumenty. Doradzimy co jest potrzebne w Twojej sytuacji — żebyś nie musiał się z tym sam męczyć."
+      },
+      {
+        "q": "Dowieziecie do mnie? Gdzie montujecie?",
+        "a": "W całej Polsce. Pawilon jedzie na naczepie prosto z naszego zakładu pod Jędrzejowem. Nasz zespół montuje go na miejscu — potrzebujesz utwardzone podłoże (kostka, beton, płyty). Transport i montaż są w cenie. Ty tylko wskazujesz gdzie ma stać."
+      },
+      {
+        "q": "A jak będzie zimą? Czy pawilon jest ciepły?",
+        "a": "Nasze pawilony mają izolację PIR — to ta sama izolacja co w domach energooszczędnych. Zimą w środku jest ciepło, latem nie nagrzewa się jak blaszak. Klienci, którzy mają klimatyzację z pompą ciepła, płacą za ogrzewanie 200-400 zł miesięcznie. To nie jest prowizorka — to pełnowartościowa przestrzeń na cały rok."
+      },
+      {
+        "q": "Co z gwarancją?",
+        "a": "2 lata gwarancji na konstrukcję, rok na instalację. Ale gwarancja to jedno — ważniejsze jest to, że nie zostawiamy klientów po sprzedaży. Coś się stanie? Dzwonisz, przyjeżdżamy, naprawiamy. Mamy własny zakład i własnych ludzi — nie szukamy kogoś na telefon."
+      },
+      {
+        "q": "Mogę przyjechać zobaczyć jak robicie?",
+        "a": "Tak — i zachęcamy. Nasz zakład jest w Jasionkach pod Jędrzejowem. Możesz przyjechać, zobaczyć jak spawamy konstrukcję, dotknąć materiałów, porozmawiać z ekipą. Większość klientów to robi i wychodzą spokojniejsi. Nie trzeba się umawiać — ale jak zadzwonisz wcześniej, to przygotujemy się na Twoją wizytę."
+      }
     ]
   },
   "contact": {

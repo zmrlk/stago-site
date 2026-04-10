@@ -20,10 +20,22 @@
     "sub": "Navrhujeme a staviame podľa Vás. Bezplatná vizualizácia, montáž v cene, 2 roky záruky."
   },
   "trust": [
-    { "value": "5.0/5", "label": "Google Reviews" },
-    { "value": "Vlastná výroba", "label": "Produkcia pod kontrolou" },
-    { "value": "Na kľúč", "label": "Vstúpite a začínate" },
-    { "value": "Celé SK", "label": "Doprava + montáž v cene" }
+    {
+      "value": "5.0/5",
+      "label": "Google Reviews"
+    },
+    {
+      "value": "Vlastná výroba",
+      "label": "Produkcia pod kontrolou"
+    },
+    {
+      "value": "Na kľúč",
+      "label": "Vstúpite a začínate"
+    },
+    {
+      "value": "Celé SK",
+      "label": "Doprava + montáž v cene"
+    }
   ],
   "about": {
     "eyebrow": "Vlastná výroba",
@@ -54,12 +66,54 @@
     "h2accent": "Účel si prispôsobíte sami.",
     "sub": "Každý vzor prispôsobíme podľa Vás — rozmer, materiál, farba, výplne a interiér. Nižšie šesť najčastejšie vyberaných zákazníkmi.",
     "items": [
-      { "name": "NORD", "desc": "Antracit s drevenými akcentmi v rohoch, obrovské rohové zasklenia. Škandinávsky prémium. Hmota, ktorú si zapamätáte na prvý pohľad.", "price": "od 6 900 € netto", "href": "modele/nord.html", "img": "assets/modele/nord.webp", "cta": "Pozrite si NORD &rarr;" },
-      { "name": "LOFT", "desc": "Drevené lamely, grafitová strecha, tri veľké výkladné okná spredu. Showroom-feel — zákazníci vchádzajú, lebo musia vidieť, čo je vnútri.", "price": "od 5 100 € netto", "href": "modele/loft.html", "img": "assets/modele/loft.webp", "cta": "Pozrite si LOFT &rarr;" },
-      { "name": "DUET", "desc": "Grafitový korpus, drevené lamely po bokoch, tri výklady s dverami. Univerzálny vzor pre gastro, obchod a kanceláriu.", "price": "od 5 100 € netto", "href": "modele/duet.html", "img": "assets/modele/duet.webp", "cta": "Pozrite si DUET &rarr;" },
-      { "name": "ICON", "desc": "Drevená fasáda, obrovské rohové sklá od podlahy po strop. Vyzerá ako štúdio architekta. Pre prémiové biznisy.", "price": "individuálna cenová ponuka", "href": "modele/icon.html", "img": "assets/modele/icon.webp", "cta": "Pozrite si ICON &rarr;" },
-      { "name": "MILA", "desc": "Celodrevená fasáda v svetlom odtieni. Škandinávsky pokoj. Ideálny na kabinét, domček, kanceláriu v teplom tóne.", "price": "od 5 800 € netto", "href": "modele/mila.html", "img": "assets/modele/mila.webp", "cta": "Pozrite si MILA &rarr;" },
-      { "name": "NOIR", "desc": "Zvislé čierne lamely, podlhovasté okná, butikový charakter ako z Berlína. Pre biznisy, ktoré chcú vyzerať prémiovo.", "price": "od 6 400 € netto", "href": "modele/noir.html", "img": "assets/modele/noir.webp", "cta": "Pozrite si NOIR &rarr;" }
+      {
+        "name": "NORD",
+        "desc": "Antracit s drevenými akcentmi v rohoch, obrovské rohové zasklenia. Škandinávsky prémium. Hmota, ktorú si zapamätáte na prvý pohľad.",
+        "price": "od 6 900 € netto",
+        "href": "modele/nord.html",
+        "img": "assets/modele/nord.webp",
+        "cta": "Pozrite si NORD &rarr;"
+      },
+      {
+        "name": "LOFT",
+        "desc": "Drevené lamely, grafitová strecha, tri veľké výkladné okná spredu. Showroom-feel — zákazníci vchádzajú, lebo musia vidieť, čo je vnútri.",
+        "price": "od 5 100 € netto",
+        "href": "modele/loft.html",
+        "img": "assets/modele/loft.webp",
+        "cta": "Pozrite si LOFT &rarr;"
+      },
+      {
+        "name": "DUET",
+        "desc": "Grafitový korpus, drevené lamely po bokoch, tri výklady s dverami. Univerzálny vzor pre gastro, obchod a kanceláriu.",
+        "price": "od 5 100 € netto",
+        "href": "modele/duet.html",
+        "img": "assets/modele/duet.webp",
+        "cta": "Pozrite si DUET &rarr;"
+      },
+      {
+        "name": "ICON",
+        "desc": "Drevená fasáda, obrovské rohové sklá od podlahy po strop. Vyzerá ako štúdio architekta. Pre prémiové biznisy.",
+        "price": "individuálna cenová ponuka",
+        "href": "modele/icon.html",
+        "img": "assets/modele/icon.webp",
+        "cta": "Pozrite si ICON &rarr;"
+      },
+      {
+        "name": "MILA",
+        "desc": "Celodrevená fasáda v svetlom odtieni. Škandinávsky pokoj. Ideálny na kabinét, domček, kanceláriu v teplom tóne.",
+        "price": "od 5 800 € netto",
+        "href": "modele/mila.html",
+        "img": "assets/modele/mila.webp",
+        "cta": "Pozrite si MILA &rarr;"
+      },
+      {
+        "name": "NOIR",
+        "desc": "Zvislé čierne lamely, podlhovasté okná, butikový charakter ako z Berlína. Pre biznisy, ktoré chcú vyzerať prémiovo.",
+        "price": "od 6 400 € netto",
+        "href": "modele/noir.html",
+        "img": "assets/modele/noir.webp",
+        "cta": "Pozrite si NOIR &rarr;"
+      }
     ]
   },
   "compare": {
@@ -72,11 +126,21 @@
       "price": "700 €",
       "priceSuffix": "/mes.",
       "items": [
-        { "text": "36 mesiacov = <strong>25 200 €</strong>" },
-        { "text": "Priestor nikdy nebude Váš" },
-        { "text": "Zvýšenie nájmu kedykoľvek chce majiteľ" },
-        { "text": "Rekonštrukcia? Za Vaše peniaze, v cudzom priestore" },
-        { "text": "Lokalita nefunguje? Smola, zmluva zaväzuje" }
+        {
+          "text": "36 mesiacov = <strong>25 200 €</strong>"
+        },
+        {
+          "text": "Priestor nikdy nebude Váš"
+        },
+        {
+          "text": "Zvýšenie nájmu kedykoľvek chce majiteľ"
+        },
+        {
+          "text": "Rekonštrukcia? Za Vaše peniaze, v cudzom priestore"
+        },
+        {
+          "text": "Lokalita nefunguje? Smola, zmluva zaväzuje"
+        }
       ]
     },
     "own": {
@@ -84,11 +148,21 @@
       "price": "~280 €",
       "priceSuffix": "/mes. splátky",
       "items": [
-        { "text": "Po splatení = <strong>Váš navždy</strong>" },
-        { "text": "Nulový nájom do konca života" },
-        { "text": "Presťahujete kam chcete — náves a pár hodín" },
-        { "text": "Predáte keď chcete, získate peniaze späť" },
-        { "text": "Vyzerá a funguje ako chcete — lebo je to Vaše" }
+        {
+          "text": "Po splatení = <strong>Váš navždy</strong>"
+        },
+        {
+          "text": "Nulový nájom do konca života"
+        },
+        {
+          "text": "Presťahujete kam chcete — náves a pár hodín"
+        },
+        {
+          "text": "Predáte keď chcete, získate peniaze späť"
+        },
+        {
+          "text": "Vyzerá a funguje ako chcete — lebo je to Vaše"
+        }
       ]
     },
     "footnote": "Lízingová splátka orientačná, pri pavilóne ~8 100 € netto na 36 mesiacov. Presnú ponuku financovania vyberieme individuálne."
@@ -99,9 +173,18 @@
     "h2": "Tomek presťahoval zelenináreň.",
     "h2accent": "Na vlastných podmienkach.",
     "steps": [
-      { "label": "Situácia", "text": "Tomek prevádzkoval zelenináreň v prenajatom priestore. Roky platil nájom, ktorý nebudoval nič jeho. Jedného dňa majiteľ zvýšil cenu — a Tomek začal hľadať iné riešenie." },
-      { "label": "Jeden telefonát", "text": "Zavolal nám. Nakreslili sme pavilón s veľkým výkladom na vystavenie ovocia a chladiarenským zázemím. Tomek mal svoje nápady — zmenili sme rozloženie, vybrali farby. Dve stretnutia a hotovo." },
-      { "label": "Výsledok", "text": "Dnes stojí na svojom pozemku, na vlastných podmienkach. Lízingová splátka nižšia ako bývalý nájom. Zákazníci hovoria, že vyzerá lepšie ako polovica obchodov v meste. O pár rokov bude pavilón celý jeho." }
+      {
+        "label": "Situácia",
+        "text": "Tomek prevádzkoval zelenináreň v prenajatom priestore. Roky platil nájom, ktorý nebudoval nič jeho. Jedného dňa majiteľ zvýšil cenu — a Tomek začal hľadať iné riešenie."
+      },
+      {
+        "label": "Jeden telefonát",
+        "text": "Zavolal nám. Nakreslili sme pavilón s veľkým výkladom na vystavenie ovocia a chladiarenským zázemím. Tomek mal svoje nápady — zmenili sme rozloženie, vybrali farby. Dve stretnutia a hotovo."
+      },
+      {
+        "label": "Výsledok",
+        "text": "Dnes stojí na svojom pozemku, na vlastných podmienkach. Lízingová splátka nižšia ako bývalý nájom. Zákazníci hovoria, že vyzerá lepšie ako polovica obchodov v meste. O pár rokov bude pavilón celý jeho."
+      }
     ],
     "quote": "Ľutujem len jedno — že som nezavolal skôr.",
     "cite": "— Tomek, zelenináreň, Busko-Zdrój (PL)"
@@ -134,10 +217,26 @@
     "h2": "Na Vašej strane je len telefonát.",
     "h2accent": "Zvyšok nechajte na nás.",
     "steps": [
-      { "num": "01", "title": "Kontakt", "text": "Povedzte, čo potrebujete. Nemusíte poznať rozmery na centimeter — od toho sme tu my. Poradíme, navrhneme riešenie." },
-      { "num": "02", "title": "Bezplatná vizualizácia", "text": "Nakreslíme, ako bude Váš pavilón vyzerať. Uvidíte ho v 3D skôr, než miniete euro. Nepáči sa? Zmeníme. Toľkokrát, koľkokrát treba." },
-      { "num": "03", "title": "Výroba", "text": "Staviame u seba v závode, pod vlastným dohľadom. Kontrolujeme každú fázu — od zvárania konštrukcie po montáž výplní. Môžete prísť a vidieť postup prác." },
-      { "num": "04", "title": "Dodávka a montáž", "text": "Naložíme na náves, privezieme k Vám, postavíme na mieste. Pár hodín a hotovo. Vstúpite s kľúčom do vlastného priestoru. Dodávka na Slovensko v cene." }
+      {
+        "num": "01",
+        "title": "Kontakt",
+        "text": "Povedzte, čo potrebujete. Nemusíte poznať rozmery na centimeter — od toho sme tu my. Poradíme, navrhneme riešenie."
+      },
+      {
+        "num": "02",
+        "title": "Bezplatná vizualizácia",
+        "text": "Nakreslíme, ako bude Váš pavilón vyzerať. Uvidíte ho v 3D skôr, než miniete euro. Nepáči sa? Zmeníme. Toľkokrát, koľkokrát treba."
+      },
+      {
+        "num": "03",
+        "title": "Výroba",
+        "text": "Staviame u seba v závode, pod vlastným dohľadom. Kontrolujeme každú fázu — od zvárania konštrukcie po montáž výplní. Môžete prísť a vidieť postup prác."
+      },
+      {
+        "num": "04",
+        "title": "Dodávka a montáž",
+        "text": "Naložíme na náves, privezieme k Vám, postavíme na mieste. Pár hodín a hotovo. Vstúpite s kľúčom do vlastného priestoru. Dodávka na Slovensko v cene."
+      }
     ]
   },
   "gallery": {
@@ -146,15 +245,51 @@
     "h2accent": "čo robíme.",
     "sub": "Každý projekt iný — každý pre zákazníka. Kliknite pre zväčšenie.",
     "items": [
-      { "img": "assets/gallery/k2.webp", "alt": "Obchodný pavilón STAGO — kiosk z antracitového plechu", "label": "Obchodný kiosk, antracitový plech" },
-      { "img": "assets/gallery/k6.webp", "alt": "Kancelársky kontajner STAGO — modul s panoramatickými oknami", "label": "Kancelária 6x3m, panoramatické okná" },
-      { "img": "assets/gallery/k9.webp", "alt": "Prevádzkový pavilón STAGO — bod s podávacím oknom", "label": "Prevádzkový bod, podávacie okno" },
-      { "img": "assets/gallery/k11.webp", "alt": "Kancelársky kontajner STAGO — fasáda HPL", "label": "Kancelársky kontajner, fasáda HPL" },
-      { "img": "assets/gallery/k14.webp", "alt": "Modulárny pavilón STAGO — drevený obklad", "label": "Pavilón s dreveným obkladom" },
-      { "img": "assets/gallery/k16.webp", "alt": "Modulárny kontajner STAGO — drevený akcent", "label": "Kontajner s dreveným akcentom" },
-      { "img": "assets/gallery/k19.webp", "alt": "Skladový kontajner STAGO — grafitový plech", "label": "Sklad 6x2,4m, grafitový plech" },
-      { "img": "assets/gallery/k21.webp", "alt": "Modulárny pavilón STAGO — celodrevená fasáda", "label": "Pavilón s celodrevenou fasádou" },
-      { "img": "assets/gallery/k25.webp", "alt": "Spojené moduly STAGO — kancelária a sklad", "label": "Spojené moduly, kancelária + sklad" }
+      {
+        "img": "assets/gallery/k2.webp",
+        "alt": "Obchodný pavilón STAGO — kiosk z antracitového plechu",
+        "label": "Obchodný kiosk, antracitový plech"
+      },
+      {
+        "img": "assets/gallery/k6.webp",
+        "alt": "Kancelársky kontajner STAGO — modul s panoramatickými oknami",
+        "label": "Kancelária 6x3m, panoramatické okná"
+      },
+      {
+        "img": "assets/gallery/k9.webp",
+        "alt": "Prevádzkový pavilón STAGO — bod s podávacím oknom",
+        "label": "Prevádzkový bod, podávacie okno"
+      },
+      {
+        "img": "assets/gallery/k11.webp",
+        "alt": "Kancelársky kontajner STAGO — fasáda HPL",
+        "label": "Kancelársky kontajner, fasáda HPL"
+      },
+      {
+        "img": "assets/gallery/k14.webp",
+        "alt": "Modulárny pavilón STAGO — drevený obklad",
+        "label": "Pavilón s dreveným obkladom"
+      },
+      {
+        "img": "assets/gallery/k16.webp",
+        "alt": "Modulárny kontajner STAGO — drevený akcent",
+        "label": "Kontajner s dreveným akcentom"
+      },
+      {
+        "img": "assets/gallery/k19.webp",
+        "alt": "Skladový kontajner STAGO — grafitový plech",
+        "label": "Sklad 6x2,4m, grafitový plech"
+      },
+      {
+        "img": "assets/gallery/k21.webp",
+        "alt": "Modulárny pavilón STAGO — celodrevená fasáda",
+        "label": "Pavilón s celodrevenou fasádou"
+      },
+      {
+        "img": "assets/gallery/k25.webp",
+        "alt": "Spojené moduly STAGO — kancelária a sklad",
+        "label": "Spojené moduly, kancelária + sklad"
+      }
     ]
   },
   "reviews": {
@@ -162,32 +297,84 @@
     "h2": "5.0 na Google.",
     "h2accent": "To nie my — to naši zákazníci.",
     "items": [
-      { "text": "Veľmi príjemná atmosféra, skvelá obsluha, rýchla realizácia. Odporúčam každému!", "author": "Kacper Z.", "source": "Google Reviews" },
-      { "text": "Príjemná profesionálna obsluha. Okrem rady som dostal materiál na vyskúšanie vlastného nápadu. Paráda.", "author": "Nikodem S.", "source": "Google Reviews" },
-      { "text": "Spoľahlivá firma, dodržiavajú termíny. Pavilón vyzerá presne ako na vizualizácii. Žiadne prekvapenia.", "author": "Marek W.", "source": "Google Reviews" }
-    ]
+      {
+        "text": "Veľmi príjemná atmosféra, skvelá obsluha, rýchla realizácia. Odporúčam každému!",
+        "author": "Kacper Z.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Príjemná profesionálna obsluha. Okrem rady som dostal materiál na vyskúšanie vlastného nápadu. Paráda.",
+        "author": "Nikodem S.",
+        "source": "Google Reviews"
+      },
+      {
+        "text": "Spoľahlivá firma, dodržiavajú termíny. Pavilón vyzerá presne ako na vizualizácii. Žiadne prekvapenia.",
+        "author": "Marek W.",
+        "source": "Google Reviews"
+      }
+    ],
+    "count": "13 recenzií"
   },
   "blog": {
     "eyebrow": "Poradňa",
     "h2": "O čom by ste mali vedieť",
     "sub": "pred kúpou.",
     "items": [
-      { "href": "blog/pawilon-handlowy-cena.html", "img": "assets/gallery/k2.webp", "date": "Poradňa", "title": "Ako overiť výrobcu pavilónov predtým, než podpíšete zmluvu", "desc": "7 konkrétnych vecí na kontrolu. Zvary, izolácia, strecha, skryté náklady. Skôr než pošlete prevod — prečítajte si." },
-      { "href": "blog/pawilon-bez-pozwolenia.html", "img": "assets/gallery/k9.webp", "date": "Poradňa", "title": "Prevzali ste pavilón. A čo teraz? Kontrola kvality krok za krokom.", "desc": "Pavilón prišiel na návese. Čo skontrolovať predtým, než podpíšete protokol? Strecha, zvary, okná, podlaha — checklist." },
-      { "href": "blog/kontener-biurowy-cena.html", "img": "assets/gallery/k6.webp", "date": "Poradňa", "title": "Prvá zima v pavilóne — čo Vám nikto nepovie", "desc": "Izolácia, kúrenie, vlhkosť, účty. Skutočné čísla a rady od niekoho, kto videl nie jednu zimu." }
+      {
+        "href": "blog/pawilon-handlowy-cena.html",
+        "img": "assets/gallery/k2.webp",
+        "date": "Poradňa",
+        "title": "Ako overiť výrobcu pavilónov predtým, než podpíšete zmluvu",
+        "desc": "7 konkrétnych vecí na kontrolu. Zvary, izolácia, strecha, skryté náklady. Skôr než pošlete prevod — prečítajte si."
+      },
+      {
+        "href": "blog/pawilon-bez-pozwolenia.html",
+        "img": "assets/gallery/k9.webp",
+        "date": "Poradňa",
+        "title": "Prevzali ste pavilón. A čo teraz? Kontrola kvality krok za krokom.",
+        "desc": "Pavilón prišiel na návese. Čo skontrolovať predtým, než podpíšete protokol? Strecha, zvary, okná, podlaha — checklist."
+      },
+      {
+        "href": "blog/kontener-biurowy-cena.html",
+        "img": "assets/gallery/k6.webp",
+        "date": "Poradňa",
+        "title": "Prvá zima v pavilóne — čo Vám nikto nepovie",
+        "desc": "Izolácia, kúrenie, vlhkosť, účty. Skutočné čísla a rady od niekoho, kto videl nie jednu zimu."
+      }
     ]
   },
   "faq": {
     "eyebrow": "FAQ",
     "h2": "Zákazníci sa nás často pýtajú:",
     "items": [
-      { "q": "Koľko to stojí?", "a": "Závisí od modelu, veľkosti a toho, čo má byť vo vnútri. Pre orientáciu — najjednoduchší modul začína od cca 2 800 € netto, väčšie, zariadené na kľúč sú v okolí 8 000–11 500 €. Každý projekt oceníme individuálne a vždy zadarmo. Zavolajte alebo napíšte — uvedieme konkrétnu sumu skôr, než sa rozhodnete." },
-      { "q": "Ako dlho sa čaká na pavilón?", "a": "Termín dohodneme pri podpise zmluvy — a dodržíme ho. Závisí od toho, čo staviame. Jednoduchší modul rýchlejšie, zložitejší potrebuje viac času. Konkrétny dátum prevzatia poznáte predtým, než zaplatíte euro." },
-      { "q": "Potrebujem stavebné povolenie?", "a": "Ak má pavilón do 35 m² — zvyčajne stačí iba ohlásenie, nie povolenie. Je to otázka pár dní, nie mesiacov. Pri väčších objektoch pomôžeme pripraviť dokumenty. Poradíme, čo je potrebné vo Vašej situácii — aby ste sa s tým nemuseli trápiť sami." },
-      { "q": "Dovezete ku mne? Kde montujete?", "a": "Na celé Slovensko. Pavilón ide na návese priamo z nášho závodu pri Jędrzejowe v Poľsku. Náš tím ho zmontuje na mieste — potrebujete spevnený podklad (dlažba, betón, platne). Doprava a montáž sú v cene. Vy len ukážete, kde má stáť." },
-      { "q": "A ako bude v zime? Je pavilón teplý?", "a": "Naše pavilóny majú izoláciu PIR — rovnakú izoláciu ako energeticky úsporné domy. V zime je vo vnútri teplo, v lete sa neprehrieva ako plech. Zákazníci, ktorí majú klimatizáciu s tepelným čerpadlom, platia za kúrenie 50–100 € mesačne. Nie je to provizórium — je to plnohodnotný priestor na celý rok." },
-      { "q": "Čo so zárukou?", "a": "2 roky záruky na konštrukciu, rok na inštalácie. Ale záruka je jedno — dôležitejšie je, že neopúšťame zákazníkov po predaji. Niečo sa stane? Zavoláte, prídeme, opravíme. Máme vlastný závod a vlastných ľudí — nehľadáme niekoho na telefón." },
-      { "q": "Môžem prísť pozrieť, ako vyrábate?", "a": "Áno — a povzbudzujeme k tomu. Náš závod je v Jasionkách pri Jędrzejowe v Poľsku. Môžete prísť, vidieť ako zvárame konštrukciu, dotknúť sa materiálov, porozprávať sa s tímom. Väčšina zákazníkov to robí a odchádzajú pokojnejší. Netreba sa objednávať — ale keď zavoláte vopred, pripravíme sa na Vašu návštevu." }
+      {
+        "q": "Koľko to stojí?",
+        "a": "Závisí od modelu, veľkosti a toho, čo má byť vo vnútri. Pre orientáciu — najjednoduchší modul začína od cca 2 800 € netto, väčšie, zariadené na kľúč sú v okolí 8 000–11 500 €. Každý projekt oceníme individuálne a vždy zadarmo. Zavolajte alebo napíšte — uvedieme konkrétnu sumu skôr, než sa rozhodnete."
+      },
+      {
+        "q": "Ako dlho sa čaká na pavilón?",
+        "a": "Termín dohodneme pri podpise zmluvy — a dodržíme ho. Závisí od toho, čo staviame. Jednoduchší modul rýchlejšie, zložitejší potrebuje viac času. Konkrétny dátum prevzatia poznáte predtým, než zaplatíte euro."
+      },
+      {
+        "q": "Potrebujem stavebné povolenie?",
+        "a": "Ak má pavilón do 35 m² — zvyčajne stačí iba ohlásenie, nie povolenie. Je to otázka pár dní, nie mesiacov. Pri väčších objektoch pomôžeme pripraviť dokumenty. Poradíme, čo je potrebné vo Vašej situácii — aby ste sa s tým nemuseli trápiť sami."
+      },
+      {
+        "q": "Dovezete ku mne? Kde montujete?",
+        "a": "Na celé Slovensko. Pavilón ide na návese priamo z nášho závodu pri Jędrzejowe v Poľsku. Náš tím ho zmontuje na mieste — potrebujete spevnený podklad (dlažba, betón, platne). Doprava a montáž sú v cene. Vy len ukážete, kde má stáť."
+      },
+      {
+        "q": "A ako bude v zime? Je pavilón teplý?",
+        "a": "Naše pavilóny majú izoláciu PIR — rovnakú izoláciu ako energeticky úsporné domy. V zime je vo vnútri teplo, v lete sa neprehrieva ako plech. Zákazníci, ktorí majú klimatizáciu s tepelným čerpadlom, platia za kúrenie 50–100 € mesačne. Nie je to provizórium — je to plnohodnotný priestor na celý rok."
+      },
+      {
+        "q": "Čo so zárukou?",
+        "a": "2 roky záruky na konštrukciu, rok na inštalácie. Ale záruka je jedno — dôležitejšie je, že neopúšťame zákazníkov po predaji. Niečo sa stane? Zavoláte, prídeme, opravíme. Máme vlastný závod a vlastných ľudí — nehľadáme niekoho na telefón."
+      },
+      {
+        "q": "Môžem prísť pozrieť, ako vyrábate?",
+        "a": "Áno — a povzbudzujeme k tomu. Náš závod je v Jasionkách pri Jędrzejowe v Poľsku. Môžete prísť, vidieť ako zvárame konštrukciu, dotknúť sa materiálov, porozprávať sa s tímom. Väčšina zákazníkov to robí a odchádzajú pokojnejší. Netreba sa objednávať — ale keď zavoláte vopred, pripravíme sa na Vašu návštevu."
+      }
     ]
   },
   "contact": {
