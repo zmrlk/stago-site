@@ -125,7 +125,7 @@
     "infoText": "Piszesz lub dzwonisz. Pytamy o liczbę kabin, przeznaczenie, lokalizację. Rysujemy układ. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
     "features": [
       { "text": "Wizualizacja układu kabin — zobaczysz, zanim zamówisz" },
-      { "text": "Cena z transportem i montażem" },
+      { "text": "Wycena obejmuje dostawę i montaż" },
       { "text": "Gotowe przyłącza wod-kan i elektryka" },
       { "text": "Odpowiedź w ciągu jednego dnia" }
     ]

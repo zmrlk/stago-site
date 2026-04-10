@@ -125,7 +125,7 @@
     "infoText": "Piszesz lub dzwonisz. Pytamy o metraż, układ pomieszczeń, działkę. Rysujemy wizualizację 3D. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
     "features": [
       { "text": "Wizualizacja 3D — zobaczysz swój dom, zanim zamówisz" },
-      { "text": "Cena z transportem i montażem" },
+      { "text": "Wycena obejmuje dostawę i montaż" },
       { "text": "Pomoc z dokumentami i zgłoszeniem" },
       { "text": "Odpowiedź w ciągu jednego dnia" }
     ]

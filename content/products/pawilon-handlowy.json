@@ -42,7 +42,7 @@
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
         "h3": "4-6 tygodni",
-        "text": "Tyle trwa od podpisania umowy do momentu, gdy wchodzisz do środka z kluczem. Transport i montaż w cenie."
+        "text": "Tyle trwa od podpisania umowy do momentu, gdy wchodzisz do środka z kluczem. Transport i montaż na miejscu."
       }
     ]
   },
@@ -123,7 +123,7 @@
     "infoText": "Piszesz lub dzwonisz. Pytamy o rozmiar, miejsce, przeznaczenie. Rysujemy projekt z wizualizacją. Podajemy cenę. Bez niespodzianek.",
     "features": [
       { "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz" },
-      { "text": "Cena z transportem i montażem" },
+      { "text": "Wycena obejmuje dostawę i montaż" },
       { "text": "Pomoc z dokumentami i zgłoszeniem" },
       { "text": "Odpowiedź w ciągu jednego dnia" }
     ]

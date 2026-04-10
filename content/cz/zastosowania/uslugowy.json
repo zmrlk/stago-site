@@ -15,7 +15,7 @@
     "h1": "Servisní pavilon.",
     "subtitle": "Kadeřnictví, kosmetický salon, servis, prádelna, opravna. Každá branže má své požadavky — vodu, kanalizaci, ventilaci, silnější elektrickou instalaci, někdy konkrétní certifikáty. Řekněte nám, čím se zabýváte, a připravíme pavilon tak, aby hygiena prošla bez problému.",
     "price": "od 5 800 € netto",
-    "priceNote": "/ servisní pavilon 5×3 m, instalace v ceně",
+    "priceNote": "/ servisní pavilon 5×3 m, instalace v nabídce",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Sluzby%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Zobrazit všech 12 modelů &rarr;"
@@ -103,7 +103,7 @@
         "text": "Řeknete, co potřebujete. Nakreslíme. Uvidíte pavilon ve 3D dříve, než utratíte korunu. Měníme, dokud neřeknete \"ano\"."
       },
       {
-        "h3": "Doprava a montáž v ceně",
+        "h3": "Zajistíme dopravu a montáž",
         "text": "Pavilon jede na návěsu z naší dílny v Jędrzejově (Polsko). Dodávka do České republiky. Náš tým ho postaví na místě. Vy jen ukážete, kde má stát."
       },
       {
@@ -192,13 +192,13 @@
       }
     ],
     "infoH3": "Jak to probíhá?",
-    "infoText": "Napíšete nebo zavoláte. Zeptáme se na detaily. Nakreslíme projekt s 3D vizualizací. Uvedeme cenu s dopravou a montáží. Bez překvapení.",
+    "infoText": "Napíšete nebo zavoláte. Zeptáme se na detaily. Nakreslíme projekt s 3D vizualizací. Uvedeme nabídku s dopravou a montáží. Bez překvapení.",
     "features": [
       {
         "text": "3D vizualizace — uvidíte, než objednáte"
       },
       {
-        "text": "Cena s dopravou a montáží"
+        "text": "Nabídka zahrnuje dopravu a montáž"
       },
       {
         "text": "Pomoc s dokumenty a ohlášením"

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "STAGO — Modulární pavilony, kontejnery, budovy na klíč",
-    "description": "STAGO — výrobce modulárních pavilonů. Obchod, kancelář, dům — na klíč. Bezplatná vizualizace, montáž v ceně, záruka 2 roky. Dodávka do České republiky.",
+    "description": "STAGO — výrobce modulárních pavilonů. Obchod, kancelář, dům — na klíč. Bezplatná vizualizace, montáž na místě, záruka 2 roky. Dodávka do České republiky.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -17,7 +17,7 @@
     "badge": "Výrobce modulárních pavilonů &middot; Dodávka do České republiky",
     "h1": "Váš prostor.",
     "h1accent": "Bez kompromisů.",
-    "sub": "Navrhujeme a stavíme na míru. Bezplatná vizualizace, montáž v ceně, 2 roky záruky."
+    "sub": "Navrhujeme a stavíme na míru. Bezplatná vizualizace, montáž na místě, 2 roky záruky."
   },
   "trust": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "value": "Celá ČR",
-      "label": "Doprava + montáž v ceně"
+      "label": "Doprava + montáž na místě"
     }
   ],
   "about": {
@@ -361,7 +361,7 @@
       },
       {
         "q": "Dovezete ke mně? Kde montujete?",
-        "a": "Dodáváme do celé České republiky. Pavilon jede na návěsu přímo z naší dílny u Jędrzejowa v Polsku. Náš tým ho namontuje na místě — potřebujete zpevněný podklad (dlažba, beton, desky). Doprava a montáž jsou v ceně. Vy jen ukážete, kde má stát."
+        "a": "Dodáváme do celé České republiky. Pavilon jede na návěsu přímo z naší dílny u Jędrzejowa v Polsku. Náš tým ho namontuje na místě — potřebujete zpevněný podklad (dlažba, beton, desky). Zajistíme dopravu a montáž. Vy jen ukážete, kde má stát."
       },
       {
         "q": "A co v zimě? Je pavilon teplý?",

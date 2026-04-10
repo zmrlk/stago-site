@@ -125,8 +125,8 @@
     "infoText": "Opisujesz pomysł. Nasz inżynier analizuje, rysuje wizualizację 3D, podaje wycenę. Bez zobowiązań — dopiero po Twoim \"tak\" ruszamy z produkcją.",
     "features": [
       { "text": "Wizualizacja 3D — zobaczysz budynek, zanim zamówisz" },
-      { "text": "Konsultacja z inżynierem w cenie" },
-      { "text": "Cena z transportem i montażem" },
+      { "text": "Konsultacja z inżynierem" },
+      { "text": "Wycena obejmuje dostawę i montaż" },
       { "text": "Odpowiedź w ciągu jednego dnia" }
     ]
   },

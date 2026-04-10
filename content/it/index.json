@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "STAGO — Padiglioni modulari, container, edifici chiavi in mano",
-    "description": "STAGO — produttore di padiglioni modulari. Negozio, ufficio, casa — chiavi in mano. Visualizzazione gratuita, montaggio incluso, 2 anni di garanzia. Consegna in Italia.",
+    "description": "STAGO — produttore di padiglioni modulari. Negozio, ufficio, casa — chiavi in mano. Visualizzazione gratuita, montaggio in loco, 2 anni di garanzia. Consegna in Italia.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -17,7 +17,7 @@
     "badge": "Produttore di padiglioni modulari &middot; Consegna in Italia",
     "h1": "Il tuo spazio.",
     "h1accent": "Senza compromessi.",
-    "sub": "Progettiamo e costruiamo su misura per te. Visualizzazione gratuita, montaggio incluso, 2 anni di garanzia."
+    "sub": "Progettiamo e costruiamo su misura per te. Visualizzazione gratuita, montaggio in loco, 2 anni di garanzia."
   },
   "trust": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "value": "Tutta Italia",
-      "label": "Trasporto + montaggio inclusi"
+      "label": "Trasporto + montaggio in locoi"
     }
   ],
   "about": {
@@ -361,7 +361,7 @@
       },
       {
         "q": "Consegnate in Italia? Dove montate?",
-        "a": "Consegniamo in tutta Italia. Il padiglione viaggia su rimorchio direttamente dal nostro stabilimento vicino a Jędrzejów, in Polonia. La nostra squadra lo monta sul posto — serve un fondo solido (massetto, cemento, lastre). Trasporto e montaggio sono inclusi nel prezzo. Tu indichi solo dove deve stare."
+        "a": "Consegniamo in tutta Italia. Il padiglione viaggia su rimorchio direttamente dal nostro stabilimento vicino a Jędrzejów, in Polonia. La nostra squadra lo monta sul posto — serve un fondo solido (massetto, cemento, lastre). Trasporto e montaggio sono organizziamo. Tu indichi solo dove deve stare."
       },
       {
         "q": "E d'inverno? Il padiglione è caldo?",

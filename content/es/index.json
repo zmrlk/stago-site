@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "STAGO — Pabellones modulares, contenedores, edificios llave en mano",
-    "description": "STAGO — fabricante de pabellones modulares. Tienda, oficina, vivienda — llave en mano. Visualización gratuita, montaje incluido, 2 años de garantía. Entrega en España.",
+    "description": "STAGO — fabricante de pabellones modulares. Tienda, oficina, vivienda — llave en mano. Visualización gratuita, montaje en el lugar, 2 años de garantía. Entrega en España.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -17,7 +17,7 @@
     "badge": "Fabricante de pabellones modulares &middot; Entrega en España",
     "h1": "Tu espacio.",
     "h1accent": "Sin compromisos.",
-    "sub": "Diseñamos y construimos a su medida. Visualización gratuita, montaje incluido, 2 años de garantía."
+    "sub": "Diseñamos y construimos a su medida. Visualización gratuita, montaje en el lugar, 2 años de garantía."
   },
   "trust": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "value": "Toda España",
-      "label": "Transporte + montaje incluidos"
+      "label": "Transporte + montaje en el lugars"
     }
   ],
   "about": {
@@ -361,7 +361,7 @@
       },
       {
         "q": "¿Entregan en España? ¿Dónde realizan el montaje?",
-        "a": "Entrega en toda España. El pabellón viaja en camión directamente desde nuestra fábrica en Jędrzejów (Polonia). Nuestro equipo lo monta in situ — necesita una superficie endurecida (adoquín, hormigón, losas). Transporte y montaje están incluidos en el precio. Usted solo indica dónde debe ir."
+        "a": "Entrega en toda España. El pabellón viaja en camión directamente desde nuestra fábrica en Jędrzejów (Polonia). Nuestro equipo lo monta in situ — necesita una superficie endurecida (adoquín, hormigón, losas). Transporte y montaje están organizamos. Usted solo indica dónde debe ir."
       },
       {
         "q": "¿Y en invierno? ¿El pabellón es cálido?",

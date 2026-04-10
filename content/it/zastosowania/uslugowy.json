@@ -15,7 +15,7 @@
     "h1": "Padiglione servizi.",
     "subtitle": "Salone di parrucchiere, studio estetico, officina, lavanderia, punto riparazioni. Ogni settore ha le sue esigenze — acqua, fognatura, ventilazione, impianto elettrico potenziato, a volte certificazioni specifiche. Dicci di cosa ti occupi e prepariamo il padiglione in modo che l'ispezione sanitaria passi senza problemi.",
     "price": "da 5 750 € netto",
-    "priceNote": "/ padiglione servizi 5×3 m, impianti inclusi",
+    "priceNote": "/ padiglione servizi 5×3 m, impianti compresi",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Servizi%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Vedi tutti i 12 modelli &rarr;"
@@ -103,7 +103,7 @@
         "text": "Dicci di cosa hai bisogno. Disegniamo. Vedrai il padiglione in 3D prima di spendere un centesimo. Lo modifichiamo finché non dici \"sì\"."
       },
       {
-        "h3": "Trasporto e montaggio inclusi",
+        "h3": "Organizziamo trasporto e montaggio",
         "text": "Il padiglione viaggia su rimorchio dal nostro stabilimento a Jędrzejów. La nostra squadra lo installa sul posto. Tu indichi dove deve stare. Consegna in Italia."
       },
       {
@@ -192,13 +192,13 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
       },
       {
-        "text": "Prezzo con trasporto e montaggio"
+        "text": "Preventivo con trasporto e montaggio"
       },
       {
         "text": "Assistenza con documenti e comunicazione"

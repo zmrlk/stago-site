@@ -56,7 +56,7 @@
     "h2": "Was Sie von STAGO bekommen",
     "items": [
       { "h3": "Kostenlose 3D-Visualisierung", "text": "Wir zeichnen den Pavillon in 3D, bevor Sie etwas unterschreiben. Wir ändern so oft wie nötig — bis Sie „ja\u201C sagen. Kostenlos, ohne Verpflichtungen." },
-      { "h3": "Transport und Montage aus Jędrzejów", "text": "Der Pavillon kommt auf dem Sattelauflieger aus unserem Werk. Unser Team stellt ihn auf Ihrem Grundstück auf. Lieferung nach Deutschland im Preis — ohne versteckte Kosten." },
+      { "h3": "Transport und Montage aus Jędrzejów", "text": "Der Pavillon kommt auf dem Sattelauflieger aus unserem Werk. Unser Team stellt ihn auf Ihrem Grundstück auf. Lieferung nach Deutschland — wir organisieren Transport und Montage." },
       { "h3": "2 Jahre Garantie + Service", "text": "Garantie auf Konstruktion und Installationen. Auch nach der Garantie lassen wir unsere Kunden nicht allein — rufen Sie an, wir kommen. Eigenes Serviceteam, keine Subunternehmer." },
       { "h3": "Hilfe bei Dokumenten", "text": "Wir unterstützen Sie bei der Genehmigungsdokumentation für den deutschen Markt. Schneller, reibungsloser, ohne Stress." }
     ]
@@ -95,10 +95,10 @@
       { "value": "inny", "label": "Sonstiges" }
     ],
     "infoH3": "Wie läuft das ab?",
-    "infoText": "Sie schreiben oder rufen an. Wir fragen nach Details — Maße, Material, Verwendungszweck, Standort. Wir erstellen eine 3D-Visualisierung. Wir nennen den Endpreis mit Transport und Montage. Ohne Überraschungen.",
+    "infoText": "Sie schreiben oder rufen an. Wir fragen nach Details — Maße, Material, Verwendungszweck, Standort. Wir erstellen eine 3D-Visualisierung. Wir nennen ein vollständiges Angebot mit Transport und Montage. Ohne Überraschungen.",
     "features": [
       { "text": "3D-Visualisierung — sehen, bevor Sie bestellen" },
-      { "text": "Preis inkl. Transport und Montage" },
+      { "text": "Wir organisieren Transport und Montage" },
       { "text": "Hilfe bei Dokumenten und Genehmigung" },
       { "text": "Antwort innerhalb eines Tages" }
     ]

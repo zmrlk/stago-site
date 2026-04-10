@@ -104,8 +104,8 @@
         "text": "Rysujemy pawilon w 3D zanim cokolwiek podpisujesz. Zmieniamy tyle razy, ile trzeba — póki nie powiesz „tak\". Darmowa, bez zobowiązań."
       },
       {
-        "h3": "Transport i montaż z Jędrzejowa",
-        "text": "Pawilon jedzie na naczepie z naszego zakładu. Nasza ekipa stawia go na Twojej działce. W cenie — bez dopłat za kilometry, bez ukrytych kosztów."
+        "h3": "Dostawa i montaż",
+        "text": "Pawilon jedzie na naczepie z naszego zakładu. Nasza ekipa stawia go na Twojej działce. Organizujemy dostawę na terenie całej Polski, bez ukrytych kosztów."
       },
       {
         "h3": "2 lata gwarancji + serwis",
@@ -190,13 +190,13 @@
       }
     ],
     "infoH3": "Jak to wygląda?",
-    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły — wymiar, materiał, przeznaczenie, lokalizacja. Rysujemy wizualizację 3D. Podajemy cenę finalną z transportem i montażem. Bez niespodzianek.",
+    "infoText": "Piszesz lub dzwonisz. Pytamy o szczegóły — wymiar, materiał, przeznaczenie, lokalizacja. Rysujemy wizualizację 3D. Podajemy pełną wycenę z dostawą i montażem. Bez niespodzianek.",
     "features": [
       {
         "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
       },
       {
-        "text": "Cena z transportem i montażem"
+        "text": "Wycena obejmuje dostawę i montaż"
       },
       {
         "text": "Pomoc z dokumentami i zgłoszeniem"

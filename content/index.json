@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "STAGO — Pawilony modułowe, kontenery, budynki pod klucz",
-    "description": "STAGO — producent pawilonów modułowych. Sklep, biuro, dom — pod klucz. Darmowa wizualizacja, montaż w cenie, gwarancja 2 lata. Dostawa w całej Polsce.",
+    "description": "STAGO — producent pawilonów modułowych. Sklep, biuro, dom — pod klucz. Darmowa wizualizacja, montaż na miejscu, gwarancja 2 lata. Dostawa w całej Polsce.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -17,7 +17,7 @@
     "badge": "Producent pawilonów modułowych &middot; Dostawa w całej Polsce",
     "h1": "Twoja przestrzeń.",
     "h1accent": "Bez kompromisów.",
-    "sub": "Projektujemy i budujemy pod Ciebie. Darmowa wizualizacja, montaż w cenie, 2 lata gwarancji."
+    "sub": "Projektujemy i budujemy pod Ciebie. Darmowa wizualizacja, montaż na miejscu, 2 lata gwarancji."
   },
   "trust": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "value": "Cała PL",
-      "label": "Transport + montaż w cenie"
+      "label": "Montaż na miejscu"
     }
   ],
   "about": {
@@ -361,7 +361,7 @@
       },
       {
         "q": "Dowieziecie do mnie? Gdzie montujecie?",
-        "a": "W całej Polsce. Pawilon jedzie na naczepie prosto z naszego zakładu pod Jędrzejowem. Nasz zespół montuje go na miejscu — potrzebujesz utwardzone podłoże (kostka, beton, płyty). Transport i montaż są w cenie. Ty tylko wskazujesz gdzie ma stać."
+        "a": "W całej Polsce. Pawilon jedzie na naczepie prosto z naszego zakładu pod Jędrzejowem. Nasz zespół montuje go na miejscu — potrzebujesz utwardzone podłoże (kostka, beton, płyty). Organizujemy transport i montaż. Ty tylko wskazujesz gdzie ma stać."
       },
       {
         "q": "A jak będzie zimą? Czy pawilon jest ciepły?",

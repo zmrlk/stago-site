@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "STAGO — Modulpavillons, Container, schlüsselfertige Gebäude",
-    "description": "STAGO — Hersteller von Modulpavillons. Geschäft, Büro, Haus — schlüsselfertig. Kostenlose Visualisierung, Montage inklusive, 2 Jahre Garantie. Lieferung nach Deutschland.",
+    "description": "STAGO — Hersteller von Modulpavillons. Geschäft, Büro, Haus — schlüsselfertig. Kostenlose Visualisierung, Montage vor Ort, 2 Jahre Garantie. Lieferung nach Deutschland.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -17,7 +17,7 @@
     "badge": "Hersteller von Modulpavillons &middot; Lieferung nach Deutschland",
     "h1": "Ihr Raum.",
     "h1accent": "Ohne Kompromisse.",
-    "sub": "Wir entwerfen und bauen nach Ihren Wünschen. Kostenlose Visualisierung, Montage inklusive, 2 Jahre Garantie."
+    "sub": "Wir entwerfen und bauen nach Ihren Wünschen. Kostenlose Visualisierung, Montage vor Ort, 2 Jahre Garantie."
   },
   "trust": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "value": "Ganz DE",
-      "label": "Transport + Montage inklusive"
+      "label": "Transport + Montage vor Ort"
     }
   ],
   "about": {
@@ -361,7 +361,7 @@
       },
       {
         "q": "Liefern Sie nach Deutschland?",
-        "a": "Ja. Der Pavillon wird auf einem Sattelauflieger direkt aus unserem Werk bei Jędrzejów geliefert. Unser Team montiert ihn vor Ort — Sie benötigen einen befestigten Untergrund (Pflaster, Beton, Platten). Transport und Montage sind im Preis enthalten. Lieferung nach Deutschland und in die gesamte EU."
+        "a": "Ja. Der Pavillon wird auf einem Sattelauflieger direkt aus unserem Werk bei Jędrzejów geliefert. Unser Team montiert ihn vor Ort — Sie benötigen einen befestigten Untergrund (Pflaster, Beton, Platten). Wir organisieren Transport und Montage enthalten. Lieferung nach Deutschland und in die gesamte EU."
       },
       {
         "q": "Wie ist es im Winter? Ist der Pavillon warm?",

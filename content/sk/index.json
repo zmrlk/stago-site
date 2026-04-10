@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "STAGO — Modularne pavilony, kontajnery, budovy na kľúč",
-    "description": "STAGO — výrobca modulárnych pavilónov. Obchod, kancelária, dom — na kľúč. Bezplatná vizualizácia, montáž v cene, záruka 2 roky. Dodávka na Slovensko.",
+    "description": "STAGO — výrobca modulárnych pavilónov. Obchod, kancelária, dom — na kľúč. Bezplatná vizualizácia, montáž na mieste, záruka 2 roky. Dodávka na Slovensko.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -17,7 +17,7 @@
     "badge": "Výrobca modulárnych pavilónov &middot; Dodávka na Slovensko",
     "h1": "Váš priestor.",
     "h1accent": "Bez kompromisov.",
-    "sub": "Navrhujeme a staviame podľa Vás. Bezplatná vizualizácia, montáž v cene, 2 roky záruky."
+    "sub": "Navrhujeme a staviame podľa Vás. Bezplatná vizualizácia, montáž na mieste, 2 roky záruky."
   },
   "trust": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "value": "Celé SK",
-      "label": "Doprava + montáž v cene"
+      "label": "Doprava + montáž na mieste"
     }
   ],
   "about": {
@@ -235,7 +235,7 @@
       {
         "num": "04",
         "title": "Dodávka a montáž",
-        "text": "Naložíme na náves, privezieme k Vám, postavíme na mieste. Pár hodín a hotovo. Vstúpite s kľúčom do vlastného priestoru. Dodávka na Slovensko v cene."
+        "text": "Naložíme na náves, privezieme k Vám, postavíme na mieste. Pár hodín a hotovo. Vstúpite s kľúčom do vlastného priestoru. Dodávka na Slovensko v ponuke."
       }
     ]
   },
@@ -361,7 +361,7 @@
       },
       {
         "q": "Dovezete ku mne? Kde montujete?",
-        "a": "Na celé Slovensko. Pavilón ide na návese priamo z nášho závodu pri Jędrzejowe v Poľsku. Náš tím ho zmontuje na mieste — potrebujete spevnený podklad (dlažba, betón, platne). Doprava a montáž sú v cene. Vy len ukážete, kde má stáť."
+        "a": "Na celé Slovensko. Pavilón ide na návese priamo z nášho závodu pri Jędrzejowe v Poľsku. Náš tím ho zmontuje na mieste — potrebujete spevnený podklad (dlažba, betón, platne). Doprava a montáž sú v ponuke. Vy len ukážete, kde má stáť."
       },
       {
         "q": "A ako bude v zime? Je pavilón teplý?",

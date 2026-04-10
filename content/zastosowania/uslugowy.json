@@ -15,7 +15,7 @@
     "h1": "Pawilon usługowy.",
     "subtitle": "Salon fryzjerski, gabinet kosmetyczny, serwis, pralnia, punkt naprawczy. Każda branża ma swoje wymagania — wodę, kanalizację, wentylację, mocniejszą instalację elektryczną, czasem konkretne certyfikaty. Powiedz nam, czym się zajmujesz, a przygotujemy pawilon tak, żeby sanepid przeszedł bez problemu.",
     "price": "od 25 000 zł netto",
-    "priceNote": "/ pawilon usługowy 5×3 m, instalacje w cenie",
+    "priceNote": "/ pawilon usługowy 5×3 m, instalacje wliczone",
     "ctaHref": "../konfigurator.html?type=uslugowy",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -103,7 +103,7 @@
         "text": "Mówisz, czego potrzebujesz. Rysujemy. Zobaczysz pawilon w 3D zanim wydasz złotówkę. Zmieniamy póki nie powiesz „tak\"."
       },
       {
-        "h3": "Transport i montaż w cenie",
+        "h3": "Transport i montaż na miejscu",
         "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
       },
       {
@@ -198,7 +198,7 @@
         "text": "Wizualizacja 3D — zobaczysz, zanim zamówisz"
       },
       {
-        "text": "Cena z transportem i montażem"
+        "text": "Wycena obejmuje dostawę i montaż"
       },
       {
         "text": "Pomoc z dokumentami i zgłoszeniem"

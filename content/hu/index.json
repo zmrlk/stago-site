@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "STAGO — Moduláris pavilonok, konténerek, kulcsrakész épületek",
-    "description": "STAGO — moduláris pavilonok gyártója. Üzlet, iroda, lakás — kulcsrakészen. Ingyenes látványterv, telepítés az árban, 2 év garancia. Szállítás Magyarországra.",
+    "description": "STAGO — moduláris pavilonok gyártója. Üzlet, iroda, lakás — kulcsrakészen. Ingyenes látványterv, telepítés a helyszínen, 2 év garancia. Szállítás Magyarországra.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -17,7 +17,7 @@
     "badge": "Moduláris pavilonok gyártója &middot; Szállítás Magyarországra",
     "h1": "Az Ön tere.",
     "h1accent": "Kompromisszumok nélkül.",
-    "sub": "Az Ön igényei szerint tervezzük és építjük. Ingyenes látványterv, telepítés az árban, 2 év garancia."
+    "sub": "Az Ön igényei szerint tervezzük és építjük. Ingyenes látványterv, telepítés a helyszínen, 2 év garancia."
   },
   "trust": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "value": "EU szállítás",
-      "label": "Szállítás + telepítés az árban"
+      "label": "Szállítás + telepítés a helyszínen"
     }
   ],
   "about": {
@@ -361,7 +361,7 @@
       },
       {
         "q": "Magyarországra is szállítanak? Hol telepítenek?",
-        "a": "Igen, szállítunk Magyarországra. A pavilon félpótkocsin érkezik üzemünkből Jędrzejów mellől. Csapatunk a helyszínen telepíti — szilárd alapra (térkő, beton, lemezek) van szükség. A szállítás és telepítés az árban van. Ön csak megmutatja, hol álljon."
+        "a": "Igen, szállítunk Magyarországra. A pavilon félpótkocsin érkezik üzemünkből Jędrzejów mellől. Csapatunk a helyszínen telepíti — szilárd alapra (térkő, beton, lemezek) van szükség. A szállítást és telepítést megszervezzük van. Ön csak megmutatja, hol álljon."
       },
       {
         "q": "Mi van télen? Meleg a pavilon?",
