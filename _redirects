@@ -40,5 +40,5 @@
 /kontener-magazynowy.html    /zastosowania/socjalny.html 301
 /kontener-sanitarny.html     /zastosowania/specjalny.html 301
 
-# Catch-all: nieistniejące strony → strona główna
-/*                           /index.html 200
+# 404 fallback (Netlify obsługuje to automatycznie via 404.html)
+# BEZ catch-all 200 — to powoduje soft 404 w Google i masową karę SEO

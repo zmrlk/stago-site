@@ -12,11 +12,44 @@
   <meta property="og:description" content="Vsetko, na co sa pytaju zakazniky STAGO. Cena, cas realizacie, formality, transport, zaruka, zima, financovanie. Konkretne odpovede.">
   <meta property="og:locale" content="sk_SK">
   <meta name="theme-color" content="#1D1D1B">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css"></noscript><style>body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
+  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css"></noscript><style>
+@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
   <link rel="icon" type="image/png" href="../assets/sygnet.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Kolko stoji pavilon STAGO?","acceptedAnswer":{"@type":"Answer","text":"Zavisi od velkosti a dokoncenia. Najjednoduchsi modul od pribl. 2 760 EUR bez DPH. Obchodny pavilon 6x3m — od 6 440 EUR. Plny obytny domcek 6x3m s kupelnou — od 10 350 EUR. Individualna cenova ponuka je bezplatna."}},
+      {"@type":"Question","name":"Da sa kupit pavilon na splatky alebo leasing?","acceptedAnswer":{"@type":"Answer","text":"Ano. Spolupracujeme s leasingovymi spolocnostami a bankami. Splatka zacina od ~117 EUR/mes. pri pavilone 3 450 EUR na 36 mesiacov."}},
+      {"@type":"Question","name":"Su nejake skryte naklady?","acceptedAnswer":{"@type":"Answer","text":"Nie. Cena, ktoru uvadzame v zmluve, je finalna s transportom a montazou. Ziadne priradzky za dojazd, postavenie ani pripojenie."}},
+      {"@type":"Question","name":"Aku zalohu treba zaplatit?","acceptedAnswer":{"@type":"Answer","text":"Standardne 30 % pri podpise zmluvy, 60 % pred transportom, 10 % pri prevzati. Konecne podmienky dohadujeme individualne."}},
+      {"@type":"Question","name":"Mozem dostat dotaciu na pavilon?","acceptedAnswer":{"@type":"Answer","text":"Ano — obzvlast ak zakladate firmu. Dotacie z uradu prace do 6 900 EUR, obecne mikrodotacie, programy EU."}},
+      {"@type":"Question","name":"Kolko casu od objednavky po hotovy pavilon?","acceptedAnswer":{"@type":"Answer","text":"Standardne 4-6 tyzdnov. 1-2 tyzdne projekt a vizualizacia, 3-4 tyzdne vyroba, dodavka v priebehu niekolkych dni. Nudzne realizacie robime rychlejsie."}},
+      {"@type":"Question","name":"Mozem prist a pozriet si vyrobu?","acceptedAnswer":{"@type":"Answer","text":"Ano — a povzbudzujeme k tomu. Nas zavod je v Jasionke pri Jedrzejowe. Vacsina zakaznikov to robi a odchadzaju pokojnejsi."}},
+      {"@type":"Question","name":"Z coho su pavilony STAGO?","acceptedAnswer":{"@type":"Answer","text":"Ocelovy ram zvarany s protikoroznou ochranou. Steny s PIR panelom 100mm — rovnaka izolacia ako v energeticky uspornych domoch. Hlinikove okna a dvere s termickym prerusenim."}},
+      {"@type":"Question","name":"Ako dlho pavilon vydrzi?","acceptedAnswer":{"@type":"Answer","text":"Realna zivotnost: 20-25 rokov pri beznom pouzivani."}},
+      {"@type":"Question","name":"A v zime? Je pavilon teply?","acceptedAnswer":{"@type":"Answer","text":"Ano. PIR 100mm je izolacia ako v energeticky uspornom dome. Zakaznik s klimou tepelneho cerpadla plati 70-115 EUR mesacne za vykurovanie v zime."}},
+      {"@type":"Question","name":"Aka je zaruka?","acceptedAnswer":{"@type":"Answer","text":"2 roky na konstrukciu, 1 rok na instalacie. Po zaruke nenechavame zakaznikov."}},
+      {"@type":"Question","name":"Potrebujem stavebne povolenie?","acceptedAnswer":{"@type":"Answer","text":"Pavilon do 35 m² — staci ohlasenie, nie povolenie. Nad 35 m² sa vyzaduje plne povolenie."}},
+      {"@type":"Question","name":"Dorucite ku mne? Kam?","acceptedAnswer":{"@type":"Answer","text":"Po celom Polsku. Pavilon ide na navese z Jedrzejowa, nas tim montuje na mieste. Transport a montaz v ponuke."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Hlavna stranka", "item": "https://stago.com.pl/sk/"},
+      {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://stago.com.pl/sk/faq.html"}
+    ]
+  }
+  </script>
   <link rel="alternate" hreflang="pl" href="https://stago.com.pl/faq.html">
   <link rel="alternate" hreflang="de" href="https://stago.com.pl/de/faq.html">
   <link rel="alternate" hreflang="cs" href="https://stago.com.pl/cz/faq.html">
