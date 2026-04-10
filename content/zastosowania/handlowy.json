@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Pawilon do handlu — sklep, kiosk, punkt sprzedaży | STAGO",
-    "description": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 15 000 zł netto.",
+    "title": "Pawilon handlowy — sklep, kontener na sklep, kiosk od producenta | STAGO",
+    "description": "Pawilony handlowe od producenta. Sklep, kiosk, punkt sprzedaży na rynku. Witryny, oświetlenie, wygodne wejście. 12 modeli do wyboru. Darmowa wycena.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
-    "ogTitle": "Pawilon do handlu — sklep, kiosk, punkt sprzedaży | STAGO",
-    "ogDescription": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 15 000 zł netto.",
+    "ogTitle": "Pawilon handlowy — sklep, kiosk, punkt sprzedaży od producenta",
+    "ogDescription": "Pawilony handlowe od producenta. Sklep, kiosk, punkt sprzedaży. Witryny pod ekspozycję, oświetlenie, wygodne wejście. 12 modeli do wyboru.",
     "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
   },
   "breadcrumb": "Handlowe",
@@ -12,7 +12,7 @@
   "hero": {
     "img": "../assets/modele/loft.webp",
     "imgAlt": "Pawilon do handlu STAGO — bryła LOFT",
-    "h1": "Pawilon do handlu.",
+    "h1": "Pawilon handlowy. Sklep, kiosk, kontener na sklep.",
     "subtitle": "Sklep, kiosk, punkt sprzedaży na rynku, ryneczek warzywny. Wiemy, że klient decyduje o wejściu w kilka sekund — dlatego projektujemy witryny pod ekspozycję, oświetlenie wydobywające produkt i wygodne wejście. Powiedz nam, co sprzedajesz — zaproponujemy układ, który pracuje na sprzedaż.",
     "price": "od 15 000 zł netto",
     "priceNote": "/ pawilon 3×2m gotowy do handlu",
@@ -154,6 +154,14 @@
       {
         "q": "Jak ogrzewam pawilon zimą i ile to kosztuje?",
         "a": "Najpopularniejsze rozwiązanie to klimatyzacja z pompą ciepła — grzeje zimą i chłodzi latem. Ściany z izolacją PIR 100 mm trzymają ciepło jak murowany budynek. Przy małym pawilonie miesięczny rachunek za ogrzewanie w sezonie zimowym to zwykle 350–500 zł."
+      },
+      {
+        "q": "Czy pawilon nadaje się na warzywniak?",
+        "a": "Tak — mamy klientów prowadzących warzywniaki i stragany w pawilonach STAGO. Duże witryny wystawieniowe, szerokie wejście, oświetlenie eksponujące towar. Model LOFT z trzema witrynami to nasz bestseller w tej kategorii."
+      },
+      {
+        "q": "Szukam kontenera na sklep — czy to to samo?",
+        "a": "W praktyce tak. Kontener handlowy, pawilon handlowy, kontener na sklep — to różne nazwy na ten sam produkt. W STAGO budujemy je z PIR 100mm, stolarką aluminiową i pełnym wykończeniem wnętrza. Gotowe do handlu od pierwszego dnia."
       }
     ]
   },

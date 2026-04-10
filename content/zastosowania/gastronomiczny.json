@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Pawilon pod gastro — kawiarnia, lodziarnia, food truck | STAGO",
-    "description": "Pawilony gastronomiczne pod klucz. Kawiarnia, lodziarnia, food truck, bar. Wentylacja, okno podawcze, wykończenia HACCP. Od producenta z Jędrzejowa.",
+    "title": "Pawilon gastronomiczny — kawiarnia, food truck, kontener gastronomiczny | STAGO",
+    "description": "Pawilony gastronomiczne od producenta. Kawiarnia, lodziarnia, bar. Okno podawcze, wentylacja, wykończenia HACCP. Darmowa wycena.",
     "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
-    "ogTitle": "Pawilon pod gastro — kawiarnia, lodziarnia, food truck | STAGO",
-    "ogDescription": "Pawilony gastronomiczne pod klucz. Kawiarnia, lodziarnia, food truck, bar. Wentylacja, okno podawcze, wykończenia HACCP. Od producenta z Jędrzejowa.",
+    "ogTitle": "Pawilon gastronomiczny — kontener gastronomiczny, food truck",
+    "ogDescription": "Pawilony gastronomiczne od producenta. Kawiarnia, lodziarnia, bar. Okno podawcze, wentylacja, wykończenia HACCP.",
     "ogImage": "https://stago.com.pl/assets/modele/saga.webp"
   },
   "breadcrumb": "Gastronomiczne",
@@ -12,7 +12,7 @@
   "hero": {
     "img": "../assets/modele/saga.webp",
     "imgAlt": "Pawilon pod gastro STAGO — bryła SAGA",
-    "h1": "Pawilon pod gastronomię.",
+    "h1": "Pawilon gastronomiczny. Kontener gastronomiczny, food truck.",
     "subtitle": "Kawiarnia, lodziarnia, food truck, mała kuchnia, bar. Znamy specyfikę branży — wentylację, wymogi sanepidu, układ z oknem podawczym. Wiemy też, że w sezonie nie ma czasu na poprawki, dlatego wszystko ma działać od pierwszego dnia. Powiedz nam, co podajesz, a dopasujemy resztę.",
     "price": "od 22 000 zł netto",
     "priceNote": "/ moduł gastronomiczny 4×2,4 m, gotowy do otwarcia",
@@ -154,6 +154,18 @@
       {
         "q": "Czy mogę przewieźć pawilon w inne miejsce na sezon?",
         "a": "Tak — wielu naszych klientów właśnie tak działa. Latem nad morzem, jesienią w mieście, zimą bezpiecznie zaparkowany na działce lub u znajomego. Wystarczy załadować pawilon na naczepę i przewieźć w nową lokalizację."
+      },
+      {
+        "q": "Czy robiliście już kawiarnię w pawilonie?",
+        "a": "Tak — kilku naszych klientów prowadzi kawiarnie w pawilonach STAGO. Typowy układ: bar z ekspresem, okno podawcze, 2-3 stoliki wewnątrz lub na tarasie. Model LOFT albo SAGA sprawdza się tu najlepiej. Chętnie pokażemy zdjęcia realizacji."
+      },
+      {
+        "q": "Czy mogę prowadzić food truck stacjonarny w pawilonie STAGO?",
+        "a": "Tak — to coraz popularniejszy format. Pawilon z oknem podawczym, wentylacją gastronomiczną i przyłączem wodno-kanalizacyjnym. Klient obsługiwany z zewnątrz, kuchnia w środku. Kompaktowy model KIOS lub większy DUET."
+      },
+      {
+        "q": "Czy pawilon gastronomiczny to to samo co kontener gastronomiczny?",
+        "a": "W praktyce tak — różnica jest w nazewnictwie. Kontener gastronomiczny to popularny termin, ale chodzi o ten sam produkt: mobilny, ocieplony moduł z instalacjami pod gastronomię. W STAGO budujemy je z PIR 100mm i stolarką aluminiową — to nie jest typowy blaszak."
       }
     ]
   },

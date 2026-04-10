@@ -56,8 +56,17 @@ function getPages() {
     ...['pawilon-handlowy-cena','kontener-biurowy-cena','pawilon-bez-pozwolenia','cennik-pawilonow-2026',
        'pawilony-modulowe-kielce','pawilony-modulowe-krakow','pawilony-modulowe-katowice',
        'pawilony-modulowe-warszawa','pawilony-modulowe-lodz',
+       'pawilony-modulowe-wroclaw','pawilony-modulowe-poznan','pawilony-modulowe-gdansk',
+       'pawilony-modulowe-rzeszow','pawilony-modulowe-lublin','pawilony-modulowe-szczecin',
+       'pawilony-modulowe-bydgoszcz','pawilony-modulowe-bialystok',
        'pawilon-handlowy-producent','kontener-biurowy-producent','pawilon-gastronomiczny',
-       'kontener-uslugowy','dom-modulowy-producent'].map(s => ({
+       'kontener-uslugowy','dom-modulowy-producent',
+       'jak-ogrzac-pawilon','jak-przygotowac-teren-pod-pawilon',
+       'pawilon-modulowy-zalety-wady','jak-podlaczyc-media-do-kontenera',
+       'pawilon-na-dzialalnosc-gospodarcza',
+       'ile-kosztuje-utrzymanie-pawilonu','jak-przygotowac-kontener-na-zime',
+       'czy-warto-kupic-pawilon-modulowy','pawilon-modulowy-vs-tradycyjny',
+       'jak-ocieplic-kontener'].map(s => ({
       content: `blog/${s}.json`, template: 'templates/blog.html', output: `blog/${s}.html`, i18n: false
     })),
     // Modele hub + models
@@ -74,6 +83,13 @@ function getPages() {
     ...['faq','kontakt','realizacje','finansowanie','jak-kupic','technologia',
        'pawilon-vs-najem','dostepne-od-reki','polityka-prywatnosci','regulamin'].map(s => ({
       content: `pages/${s}.json`, template: 'templates/page.html', output: `${s}.html`, i18n: true
+    })),
+    // SEO landing pages (PL only for now)
+    ...['pawilony-sprzedaz','pawilony-pod-klucz','cennik-pawilonow-handlowych',
+       'cennik-kontenerow-biurowych','pawilon-bez-pozwolenia-przepisy',
+       'stago-vs-dampol','stago-vs-novi','stago-vs-defro','ranking-producentow-pawilonow',
+       'producent-kontenerow-modulowych','pawilon-na-dzialke'].map(s => ({
+      content: `pages/${s}.json`, template: 'templates/page.html', output: `${s}.html`, i18n: false
     })),
   ];
 }

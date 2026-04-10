@@ -41,7 +41,7 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
-        "h3": "3-4 tygodnie",
+        "h3": "4-6 tygodnie",
         "text": "Od zamówienia do postawienia na Twojej działce. Dowozimy na naczepie. Ustawiamy. Gotowe."
       }
     ]
@@ -156,7 +156,7 @@
   ],
   "jsonLd": {
     "name": "Kontener magazynowy STAGO",
-    "description": "Kontener magazynowy od producenta. Magazyny, garaże, pomieszczenia gospodarcze. Konstrukcja stalowa z zabezpieczeniem antykorozyjnym. Gotowy w 3-4 tygodnie.",
+    "description": "Kontener magazynowy od producenta. Magazyny, garaże, pomieszczenia gospodarcze. Konstrukcja stalowa z zabezpieczeniem antykorozyjnym. Gotowy w 4-6 tygodnie.",
     "image": "https://stago.com.pl/assets/products/magazynowy.webp",
     "lowPrice": "12000",
     "highPrice": "45000"

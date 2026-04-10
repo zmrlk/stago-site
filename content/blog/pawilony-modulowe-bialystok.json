@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Pawilony modułowe Białystok — producent STAGO | Dostawa w 5h",
+    "description": "Pawilony modułowe w Białymstoku od producenta STAGO. Dostawa z zakładu w 5h. Pawilon handlowy, biurowy, magazynowy — od 12 000 zł netto.",
+    "canonical": "https://stago.com.pl/blog/pawilony-modulowe-bialystok.html",
+    "ogTitle": "Pawilony modułowe Białystok — producent STAGO | Dostawa w 5h",
+    "ogDescription": "Pawilony modułowe w Białymstoku od producenta STAGO. Dostawa z zakładu w 5h. Od 12 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/gallery/k22.webp"
+  },
+  "breadcrumb": "Pawilony modułowe Białystok",
+  "hero": {
+    "h1": "Pawilony modułowe w Białymstoku — dostawa prosto z zakładu",
+    "datetime": "2026-04-05",
+    "dateDisplay": "kwiecień 2026",
+    "readTime": "4 min"
+  },
+  "featuredImg": {
+    "src": "../assets/gallery/k22.webp",
+    "alt": "Pawilon modułowy STAGO — Białystok"
+  },
+  "body": "<p>Białystok to największe miasto północno-wschodniej Polski — stolica Podlasia z rosnącym rynkiem budowlanym i handlowym. Z zakładu STAGO w Jasionkach pod Jędrzejowem do Białegostoku to <strong>około 5 godzin jazdy</strong>. Zamawiasz dziś — jutro pawilon stoi na miejscu. Od producenta, bez pośredników.</p>\n\n<h2>Gdzie w Białymstoku sprawdza się pawilon modułowy?</h2>\n\n<p>Białystok rozwija się stabilnie — nowe osiedla, strefa ekonomiczna, rosnący handel przygraniczny. Pawilony modułowe mają tu konkretne zastosowania:</p>\n\n<ul>\n<li><strong>Handel przygraniczny</strong> — okolice Rynku Sienkiewicza, ul. Lipowej, Centrum Handlowe Fasty. Bliskość granicy z Białorusią i Litwą to ruch handlowy. Pawilon handlowy KIOS to tani punkt sprzedaży bez wynajmu lokalu.</li>\n<li><strong>Suwalska Specjalna Strefa Ekonomiczna — Podstrefa Białystok</strong> — Kleosin, Zawady. Pawilony biurowe i socjalne dla firm produkcyjnych. Szybki montaż, zero czekania na pozwolenia.</li>\n<li><strong>Place budów</strong> — Dojlidy, Jaroszówka, Białostoczek. Miasto buduje nowe osiedla — kontenery biurowe i sanitarne na zaplecza to stałe zapotrzebowanie.</li>\n<li><strong>Gastronomia i eventy</strong> — okolice Opery, Rynku Kościuszki, Parku Planty. Pawilony jako punkty gastronomiczne i pop-up store'y w centrum miasta.</li>\n<li><strong>Targowiska</strong> — Kawaleryjska, Klepacka. Modernizacja straganów na solidne pawilony z izolacją PIR i profesjonalnym wykończeniem.</li>\n</ul>\n\n<h2>Pawilon modułowy — alternatywa dla wynajmu w Białymstoku</h2>\n\n<p>Białystok to jedno z tańszych dużych miast, ale wynajem lokalu 30 m² to wciąż <strong>2 000–3 500 zł/msc</strong>. Pawilon handlowy KIOS od 12 000 zł netto. Zwrot w 4–6 miesięcy — potem zero kosztów stałych.</p>\n\n<p>Do 35 m² na zgłoszenie budowy, bez pozwolenia. Izolacja PIR 100 mm to klucz na podlaskie zimy — ciepło w środku przy -20 na zewnątrz. Okna aluminiowe, konstrukcja stalowa. Pawilon na lata.</p>\n\n<h2>Dostawa i montaż Białystok</h2>\n\n<p>Transport na naczepie, montaż dźwigiem na przygotowane podłoże. 5 godzin od zakładu — dostarczamy na całą Polskę, Białystok obsługujemy bez problemu. Trasa przez S7 i S8.</p>\n\n<p>Podłoże? Doradzamy — bloczki betonowe, stopy fundamentowe, płyta żwirowa. Na Podlasiu grunty bywają różne, dobieramy rozwiązanie do lokalizacji.</p>\n\n<div class=\"inline-cta\">\n<p>Potrzebujesz pawilon w Białymstoku? Wycena w 24h.</p>\n<a href=\"tel:+48509508210\" class=\"btn btn-primary\">Zadzwoń: 509 508 210</a>\n</div>\n\n<p>Skonfiguruj pawilon pod swoje potrzeby: <a href=\"../konfigurator.html\">konfigurator online</a>. Albo sprawdź nasze modele: <a href=\"../pawilon-handlowy.html\">pawilon handlowy</a>, <a href=\"../kontener-biurowy.html\">kontener biurowy</a>, <a href=\"../kontener-magazynowy.html\">kontener magazynowy</a>.</p>",
+  "sidebar": {
+    "ctaText": "Podaj wymiary i przeznaczenie — wycenimy w 24h. Bez zobowiązań.",
+    "articles": [
+      {
+        "href": "cennik-pawilonow-2026.html",
+        "text": "Cennik pawilonów modułowych 2026 — ile kosztuje pawilon?"
+      },
+      {
+        "href": "pawilon-bez-pozwolenia.html",
+        "text": "Pawilon bez pozwolenia na budowę — co musisz wiedzieć"
+      }
+    ],
+    "products": [
+      {
+        "href": "../pawilon-handlowy.html",
+        "text": "Pawilon handlowy &rarr;"
+      },
+      {
+        "href": "../kontener-biurowy.html",
+        "text": "Kontener biurowy &rarr;"
+      },
+      {
+        "href": "../kontener-magazynowy.html",
+        "text": "Kontener magazynowy &rarr;"
+      }
+    ]
+  },
+  "jsonLd": {
+    "headline": "Pawilony modułowe w Białymstoku — dostawa prosto z zakładu",
+    "description": "Pawilony modułowe w Białymstoku od producenta STAGO. Dostawa z zakładu w 5h. Od 12 000 zł netto.",
+    "image": "https://stago.com.pl/assets/gallery/k9.webp",
+    "datePublished": "2026-04-05",
+    "dateModified": "2026-04-05",
+    "mainEntityOfPage": "https://stago.com.pl/blog/pawilony-modulowe-bialystok.html"
+  }
+}

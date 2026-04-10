@@ -211,4 +211,49 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- SEO LANDING PAGES -->
+  <url><loc>https://stago.com.pl/pawilony-sprzedaz.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/pawilony-pod-klucz.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/cennik-pawilonow-handlowych.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/cennik-kontenerow-biurowych.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/pawilon-bez-pozwolenia-przepisy.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- GEO BLOGI — nowe miasta -->
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-wroclaw.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-poznan.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-gdansk.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-rzeszow.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-lublin.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-szczecin.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-bydgoszcz.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilony-modulowe-bialystok.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ARTYKUŁY SEO -->
+  <url><loc>https://stago.com.pl/blog/jak-ogrzac-pawilon.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/jak-przygotowac-teren-pod-pawilon.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilon-modulowy-zalety-wady.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/jak-podlaczyc-media-do-kontenera.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilon-na-dzialalnosc-gospodarcza.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- PORÓWNANIA I RANKING -->
+  <url><loc>https://stago.com.pl/stago-vs-dampol.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/stago-vs-novi.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/stago-vs-defro.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/ranking-producentow-pawilonow.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- ARTYKUŁY SEO — batch 2 -->
+  <url><loc>https://stago.com.pl/blog/ile-kosztuje-utrzymanie-pawilonu.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/jak-przygotowac-kontener-na-zime.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/czy-warto-kupic-pawilon-modulowy.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/pawilon-modulowy-vs-tradycyjny.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://stago.com.pl/blog/jak-ocieplic-kontener.html</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- i18n STRONY GŁÓWNE -->
+  <url><loc>https://stago.com.pl/de/index.html</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/cz/index.html</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/sk/index.html</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/hu/index.html</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/it/index.html</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://stago.com.pl/es/index.html</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
 </urlset>

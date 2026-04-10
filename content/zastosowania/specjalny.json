@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Pawilon nietypowy — gabinet medyczny, stróżówka, kasa | STAGO",
+    "title": "Kontenery specjalne — zaplecze sportowe, kiosk, gabinet | STAGO",
     "description": "Pawilony pod nietypowe zastosowania. Gabinet medyczny, stróżówka, kasa biletowa, info point, GOK. Pod konkretne wymogi i przepisy.",
     "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
-    "ogTitle": "Pawilon nietypowy — gabinet medyczny, stróżówka, kasa | STAGO",
+    "ogTitle": "Kontenery specjalne — zaplecze sportowe, kiosk, gabinet",
     "ogDescription": "Pawilony pod nietypowe zastosowania. Gabinet medyczny, stróżówka, kasa biletowa, info point, GOK. Pod konkretne wymogi i przepisy.",
     "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
   },
@@ -12,7 +12,7 @@
   "hero": {
     "img": "../assets/modele/noir.webp",
     "imgAlt": "Pawilon nietypowy STAGO — bryła NOIR",
-    "h1": "Pawilon nietypowy.",
+    "h1": "Kontenery specjalne i pawilony nietypowe.",
     "subtitle": "Gabinet medyczny, stróżówka, kasa biletowa, punkt informacyjny dla miasta, mała biblioteka, wiejski dom kultury. Każdy taki projekt wymaga rozmowy ze specjalistą — przepisów, norm, wyposażenia. Realizujemy je regularnie, więc po prostu powiedz nam, czego potrzebujesz.",
     "price": "wycena indywidualna",
     "priceNote": "/ projekt powstaje pod Twoje wymagania",

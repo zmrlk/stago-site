@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Pawilon usługowy — salon, kosmetyka, serwis | STAGO",
+    "title": "Pawilon usługowy — kontenery usługowe od producenta | STAGO",
     "description": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
-    "ogTitle": "Pawilon usługowy — salon, kosmetyka, serwis | STAGO",
+    "ogTitle": "Pawilon usługowy — kontenery usługowe od producenta",
     "ogDescription": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
@@ -12,7 +12,7 @@
   "hero": {
     "img": "../assets/modele/icon.webp",
     "imgAlt": "Pawilon usługowy STAGO — bryła ICON",
-    "h1": "Pawilon usługowy.",
+    "h1": "Pawilon usługowy. Kontenery usługowe od producenta.",
     "subtitle": "Salon fryzjerski, gabinet kosmetyczny, serwis, pralnia, punkt naprawczy. Każda branża ma swoje wymagania — wodę, kanalizację, wentylację, mocniejszą instalację elektryczną, czasem konkretne certyfikaty. Powiedz nam, czym się zajmujesz, a przygotujemy pawilon tak, żeby sanepid przeszedł bez problemu.",
     "price": "od 25 000 zł netto",
     "priceNote": "/ pawilon usługowy 5×3 m, instalacje wliczone",
@@ -154,6 +154,14 @@
       {
         "q": "A jeśli nie mam jeszcze pomysłu na układ wnętrza?",
         "a": "Pomożemy go ułożyć. Projekt powstaje wspólnie — pytamy o to, czego potrzebujesz, i podpowiadamy, gdzie warto umieścić umywalkę, fotel czy toaletę. Nasza rola nie kończy się na produkcji pawilonu."
+      },
+      {
+        "q": "Czy mogę otworzyć salon fryzjerski w pawilonie?",
+        "a": "Tak. Przygotowujemy instalację wodno-kanalizacyjną pod umywalki fryzjerskie, elektrykę pod suszarki i oświetlenie punktowe. Klienci prowadzą w naszych pawilonach salony fryzjerskie, gabinety kosmetyczne i barber shopy. Model MILA i ATRI pasują tu najlepiej."
+      },
+      {
+        "q": "A salon kosmetyczny?",
+        "a": "Również. Gabinet kosmetyczny wymaga dobrego oświetlenia, wentylacji i dostępu do wody — wszystko przygotowujemy fabrycznie. Pawilon usługowy 4×3m to minimum, 6×3m daje komfortową przestrzeń na fotel, recepcję i zaplecze."
       }
     ]
   },

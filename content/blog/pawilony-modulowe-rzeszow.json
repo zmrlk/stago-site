@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Pawilony modułowe Rzeszów — producent STAGO | Dostawa w 2.5h",
+    "description": "Pawilony modułowe w Rzeszowie od producenta STAGO. Dostawa z zakładu w 2.5h. Pawilon handlowy, biurowy, magazynowy — od 12 000 zł netto.",
+    "canonical": "https://stago.com.pl/blog/pawilony-modulowe-rzeszow.html",
+    "ogTitle": "Pawilony modułowe Rzeszów — producent STAGO | Dostawa w 2.5h",
+    "ogDescription": "Pawilony modułowe w Rzeszowie od producenta STAGO. Dostawa z zakładu w 2.5h. Od 12 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/gallery/k14.webp"
+  },
+  "breadcrumb": "Pawilony modułowe Rzeszów",
+  "hero": {
+    "h1": "Pawilony modułowe w Rzeszowie — dostawa prosto z zakładu",
+    "datetime": "2026-03-25",
+    "dateDisplay": "marzec 2026",
+    "readTime": "4 min"
+  },
+  "featuredImg": {
+    "src": "../assets/gallery/k14.webp",
+    "alt": "Pawilon modułowy STAGO — Rzeszów"
+  },
+  "body": "<p>Rzeszów to jedno z najbliższych dużych miast od naszego zakładu. Z Jasionek pod Jędrzejowem do Rzeszowa to <strong>około 2,5 godziny jazdy</strong>. Rano zamawiasz — tego samego dnia pawilon może stać na działce. Bez pośredników, prosto od producenta.</p>\n\n<h2>Gdzie w Rzeszowie sprawdza się pawilon modułowy?</h2>\n\n<p>Rzeszów rośnie szybciej niż większość miast w Polsce. Stolica Podkarpacia przyciąga inwestorów, a z nimi rośnie zapotrzebowanie na szybkie rozwiązania budowlane:</p>\n\n<ul>\n<li><strong>Specjalna Strefa Ekonomiczna</strong> — Rzeszów-Dworzysko, Jasionka (lotnisko). Pawilony biurowe i socjalne jako zaplecze dla firm produkcyjnych i logistycznych. Szybki montaż, zero czekania na pozwolenia.</li>\n<li><strong>Handel i gastronomia</strong> — Millenium Hall okolice, Krakowska, Rejtana. Pawilon handlowy z witryną to tańsza alternatywa dla lokalu w galerii. Własny punkt, własne zasady.</li>\n<li><strong>Place budów</strong> — Budziwój, Pobitno, Staromieście. Rzeszów buduje osiedla i drogi. Kontenery biurowe i sanitarne na zaplecza — dostarczamy regularnie.</li>\n<li><strong>Targowiska i bazary</strong> — okolice ul. Dębickiej, Lwowskiej. Pawilony handlowe zastępują stare stragany — solidna konstrukcja, izolacja, profesjonalny wygląd.</li>\n</ul>\n\n<h2>Blisko zakładu = szybko i tanio</h2>\n\n<p>Rzeszów to nasz bliski zasięg dostawczy. Krótka trasa oznacza <strong>niższe koszty transportu</strong> i możliwość realizacji ekspresowej. Pawilon handlowy KIOS od 12 000 zł netto. Do 35 m² na zgłoszenie — bez pozwolenia, bez architektów.</p>\n\n<p>Wynajem lokalu 30 m² w Rzeszowie to <strong>2 500–4 500 zł/msc</strong>. Pawilon zwraca się w 3–5 miesięcy. Izolacja PIR 100 mm, okna aluminiowe, konstrukcja stalowa — pełen komfort przez cały rok.</p>\n\n<h2>Dostawa i montaż Rzeszów</h2>\n\n<p>Transport na naczepie, montaż dźwigiem. 2,5 godziny od zakładu — to jedna z najszybszych tras. Często łączymy dostawy na Podkarpacie, więc terminy są elastyczne.</p>\n\n<p>Podłoże? Doradzamy — bloczki betonowe, stopy fundamentowe, płyta żwirowa. Dobieramy rozwiązanie do gruntu i przeznaczenia pawilonu.</p>\n\n<div class=\"inline-cta\">\n<p>Potrzebujesz pawilon w Rzeszowie? Wycena w 24h.</p>\n<a href=\"tel:+48509508210\" class=\"btn btn-primary\">Zadzwoń: 509 508 210</a>\n</div>\n\n<p>Skonfiguruj pawilon pod swoje potrzeby: <a href=\"../konfigurator.html\">konfigurator online</a>. Albo sprawdź nasze modele: <a href=\"../pawilon-handlowy.html\">pawilon handlowy</a>, <a href=\"../kontener-biurowy.html\">kontener biurowy</a>, <a href=\"../kontener-magazynowy.html\">kontener magazynowy</a>.</p>",
+  "sidebar": {
+    "ctaText": "Podaj wymiary i przeznaczenie — wycenimy w 24h. Bez zobowiązań.",
+    "articles": [
+      {
+        "href": "cennik-pawilonow-2026.html",
+        "text": "Cennik pawilonów modułowych 2026 — ile kosztuje pawilon?"
+      },
+      {
+        "href": "pawilon-bez-pozwolenia.html",
+        "text": "Pawilon bez pozwolenia na budowę — co musisz wiedzieć"
+      }
+    ],
+    "products": [
+      {
+        "href": "../pawilon-handlowy.html",
+        "text": "Pawilon handlowy &rarr;"
+      },
+      {
+        "href": "../kontener-biurowy.html",
+        "text": "Kontener biurowy &rarr;"
+      },
+      {
+        "href": "../kontener-magazynowy.html",
+        "text": "Kontener magazynowy &rarr;"
+      }
+    ]
+  },
+  "jsonLd": {
+    "headline": "Pawilony modułowe w Rzeszowie — dostawa prosto z zakładu",
+    "description": "Pawilony modułowe w Rzeszowie od producenta STAGO. Dostawa z zakładu w 2.5h. Od 12 000 zł netto.",
+    "image": "https://stago.com.pl/assets/gallery/k9.webp",
+    "datePublished": "2026-03-25",
+    "dateModified": "2026-03-25",
+    "mainEntityOfPage": "https://stago.com.pl/blog/pawilony-modulowe-rzeszow.html"
+  }
+}

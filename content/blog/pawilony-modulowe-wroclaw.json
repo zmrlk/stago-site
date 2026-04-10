@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Pawilony modułowe Wrocław — producent STAGO | Dostawa w 3h",
+    "description": "Pawilony modułowe we Wrocławiu od producenta STAGO. Dostawa z zakładu w 3h. Pawilon handlowy, biurowy, magazynowy — od 12 000 zł netto.",
+    "canonical": "https://stago.com.pl/blog/pawilony-modulowe-wroclaw.html",
+    "ogTitle": "Pawilony modułowe Wrocław — producent STAGO | Dostawa w 3h",
+    "ogDescription": "Pawilony modułowe we Wrocławiu od producenta STAGO. Dostawa z zakładu w 3h. Od 12 000 zł netto.",
+    "ogImage": "https://stago.com.pl/assets/gallery/k2.webp"
+  },
+  "breadcrumb": "Pawilony modułowe Wrocław",
+  "hero": {
+    "h1": "Pawilony modułowe we Wrocławiu — dostawa prosto z zakładu",
+    "datetime": "2026-03-17",
+    "dateDisplay": "marzec 2026",
+    "readTime": "4 min"
+  },
+  "featuredImg": {
+    "src": "../assets/gallery/k2.webp",
+    "alt": "Pawilon modułowy STAGO — Wrocław"
+  },
+  "body": "<p>Wrocław to dynamicznie rozwijające się miasto z ogromnym zapotrzebowaniem na szybkie rozwiązania budowlane. Z naszego zakładu w Jasionkach pod Jędrzejowem do Wrocławia to <strong>około 3 godziny jazdy</strong> — rano ładujemy, po południu stawiamy. Bez pośredników, bezpośrednio od producenta.</p>\n\n<h2>Gdzie we Wrocławiu sprawdza się pawilon modułowy?</h2>\n\n<p>Wrocław to miasto inwestycji, budów i handlu. Pawilony modułowe STAGO pracują tu w kilku kluczowych segmentach:</p>\n\n<ul>\n<li><strong>Handel i gastronomia</strong> — okolice Hali Targowej, Rynek, Psie Pole. Pawilon handlowy z witryną przeszkloną to gotowy punkt sprzedaży bez czekania na lokal. Koszty wejścia ułamek tego, co wynajem w centrum.</li>\n<li><strong>Place budów</strong> — Jagodno, Ołtaszyn, Lipa Piotrowska, Nowe Żerniki. Wrocław buduje intensywnie. Kontenery biurowe i socjalne na zaplecza to standard na każdej większej inwestycji.</li>\n<li><strong>Strefy przemysłowe</strong> — Bielany Wrocławskie, Kobierzyce, okolice autostrady A4. Pawilony magazynowe i biurowe jako zaplecze logistyczne przy centrach dystrybucyjnych.</li>\n<li><strong>Tereny rekreacyjne</strong> — Hala Stulecia, Park Szczytnicki, bulwary nad Odrą. Pawilony sezonowe na eventy, gastronomię, wypożyczalnie.</li>\n</ul>\n\n<h2>Pawilon modułowy zamiast wynajmu — dlaczego to się opłaca</h2>\n\n<p>Wrocław jest drogi. Wynajem lokalu 30 m² w dobrym punkcie to <strong>4 000–7 000 zł miesięcznie</strong>. Nasz pawilon handlowy KIOS kosztuje od 12 000 zł netto. Zwrot w 2–3 miesiące. A jak lokalizacja nie wypali — zabierasz pawilon i stawiasz gdzie indziej.</p>\n\n<p>Do 35 m² nie potrzebujesz pozwolenia na budowę — wystarczy zgłoszenie. Od zamówienia do postawienia: <strong>3 tygodnie</strong>. Izolacja PIR 100 mm, okna aluminiowe, konstrukcja stalowa — to nie kontener z OLX, to solidny obiekt na lata.</p>\n\n<h2>Dostawa i montaż Wrocław</h2>\n\n<p>Dowozimy na naczepie, stawiamy dźwigiem na przygotowane podłoże. Cała operacja trwa kilka godzin. Transport z Jędrzejowa do Wrocławia realizujemy regularnie — to jedna z naszych głównych tras dostawczych.</p>\n\n<p>Potrzebujesz przygotować podłoże? Doradzamy co i jak — bloczki betonowe, stopy fundamentowe, płyta żwirowa. Zależy od gruntu i przeznaczenia.</p>\n\n<div class=\"inline-cta\">\n<p>Potrzebujesz pawilon we Wrocławiu? Wycena w 24h.</p>\n<a href=\"tel:+48509508210\" class=\"btn btn-primary\">Zadzwoń: 509 508 210</a>\n</div>\n\n<p>Skonfiguruj pawilon pod swoje potrzeby: <a href=\"../konfigurator.html\">konfigurator online</a>. Albo sprawdź nasze modele: <a href=\"../pawilon-handlowy.html\">pawilon handlowy</a>, <a href=\"../kontener-biurowy.html\">kontener biurowy</a>, <a href=\"../kontener-magazynowy.html\">kontener magazynowy</a>.</p>",
+  "sidebar": {
+    "ctaText": "Podaj wymiary i przeznaczenie — wycenimy w 24h. Bez zobowiązań.",
+    "articles": [
+      {
+        "href": "cennik-pawilonow-2026.html",
+        "text": "Cennik pawilonów modułowych 2026 — ile kosztuje pawilon?"
+      },
+      {
+        "href": "pawilon-bez-pozwolenia.html",
+        "text": "Pawilon bez pozwolenia na budowę — co musisz wiedzieć"
+      }
+    ],
+    "products": [
+      {
+        "href": "../pawilon-handlowy.html",
+        "text": "Pawilon handlowy &rarr;"
+      },
+      {
+        "href": "../kontener-biurowy.html",
+        "text": "Kontener biurowy &rarr;"
+      },
+      {
+        "href": "../kontener-magazynowy.html",
+        "text": "Kontener magazynowy &rarr;"
+      }
+    ]
+  },
+  "jsonLd": {
+    "headline": "Pawilony modułowe we Wrocławiu — dostawa prosto z zakładu",
+    "description": "Pawilony modułowe we Wrocławiu od producenta STAGO. Dostawa z zakładu w 3h. Od 12 000 zł netto.",
+    "image": "https://stago.com.pl/assets/gallery/k9.webp",
+    "datePublished": "2026-03-17",
+    "dateModified": "2026-03-17",
+    "mainEntityOfPage": "https://stago.com.pl/blog/pawilony-modulowe-wroclaw.html"
+  }
+}
