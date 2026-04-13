@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Model S — pawilon modułowy STAGO | Czarna stal, drewno, przeszklenia",
-    "description": "Model S od producenta STAGO. Czarna stal, drewniane lamele, przeszklony front aluminiowy. Kompaktowy moduł z charakterem — do sklepu, biura, kawiarni. Od 15 000 zł netto.",
+    "description": "Model S od producenta STAGO. Czarna stal, drewniane lamele, przeszklony front aluminiowy. Kompaktowy moduł z charakterem — do sklepu, biura, kawiarni. Od 20 564 zł netto.",
     "canonical": "https://stago.com.pl/pawilon-handlowy.html",
     "ogTitle": "Model S — pawilon modułowy STAGO | Czarna stal, drewno, przeszklenia",
-    "ogDescription": "Pawilony handlowe od producenta. Sklepy, kioski, punkty usługowe. Od 15 000 zł netto.",
+    "ogDescription": "Pawilony handlowe od producenta. Sklepy, kioski, punkty usługowe. Od 20 564 zł netto.",
     "ogImage": "https://stago.com.pl/assets/products/handlowy.webp"
   },
   "breadcrumb": "Model S",
@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon handlowy STAGO",
     "h1": "Model S — nasz klasyk, którego wszyscy chcą.",
     "subtitle": "Czarna stal, drewniane lamele i duży przeszklony front aluminiowy. Kompaktowy moduł, który wygląda jak z zachodnioeuropejskiego miasta. Otwierasz sklep, robisz biuro, stawiasz kawiarenkę — co chcesz. Model S się sprawdzi.",
-    "price": "od 15 000 zł netto",
-    "priceNote": "/ pawilon 3x2m, gotowy do handlu",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m podstawowy",
     "ctaHref": "konfigurator.html?type=Handlowy",
     "articleHref": "blog/pawilon-handlowy-cena.html",
     "articleText": "Jak sprawdzić producenta &rarr;"
@@ -88,7 +88,7 @@
     "items": [
       {
         "q": "Ile zapłacę za pawilon handlowy?",
-        "a": "Zależy od rozmiaru i tego, co ma być w środku. Mały kiosk 3x2m — od 15 000 zł netto. Sklep 6x3m — od 28 000 zł. Duży punkt 12x3m z witrynami — od 48 000 zł. Wycena jest za darmo, wystarczy zadzwonić: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/pawilon-handlowy-cena.html\">Jak sprawdzić producenta &rarr;</a>"
+        "a": "Zależy od rozmiaru i tego, co ma być w środku. Pawilon 4×3m — od 20 564 zł netto. Sklep 6×3m — od 24 649 zł. Duży punkt 12×3m z witrynami — od 44 218 zł. Wycena jest za darmo, wystarczy zadzwonić: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/pawilon-handlowy-cena.html\">Jak sprawdzić producenta &rarr;</a>"
       },
       {
         "q": "Potrzebuję pozwolenia na budowę?",
@@ -158,7 +158,7 @@
     "name": "Pawilon handlowy STAGO",
     "description": "Pawilon handlowy od producenta. Sklepy, kioski, punkty usługowe. Konstrukcja stalowa z zabezpieczeniem antykorozyjnym, izolacja PIR. Gotowy w 4-6 tygodni.",
     "image": "https://stago.com.pl/assets/products/handlowy.webp",
-    "lowPrice": "15000",
-    "highPrice": "65000"
+    "lowPrice": "20564",
+    "highPrice": "44218"
   }
 }

@@ -14,8 +14,8 @@
     "imgAlt": "Kontener na budowę STAGO — bryła CUBE",
     "h1": "Kontener na budowę.",
     "subtitle": "Szatnia, stołówka, sanitariaty, zaplecze dla brygady. Solidne, mobilne i gotowe do przewiezienia na kolejny plac, gdy bieżąca inwestycja dobiega końca. Ekipa ma gdzie się przebrać, zjeść i odpocząć — a Ty masz święty spokój.",
-    "price": "od 12 000 zł netto",
-    "priceNote": "/ kontener socjalny 6×2,4 m",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ kontener socjalny 4×3m",
     "ctaHref": "../konfigurator.html?type=socjalny",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje kontener socjalny?",
-        "a": "Podstawowy moduł 6×2,4 m zaczyna się od 12 000 zł netto. Z pełnym wyposażeniem (szatnia i węzeł sanitarny) — 25 000–35 000 zł. To tańsze rozwiązanie niż wynajem na pół roku, a po zapłacie kontener pozostaje Twoją własnością."
+        "a": "Podstawowy moduł 6×2,4 m zaczyna się od 20 564 zł netto. Z pełnym wyposażeniem (szatnia i węzeł sanitarny) — 25 000–35 000 zł. To tańsze rozwiązanie niż wynajem na pół roku, a po zapłacie kontener pozostaje Twoją własnością."
       },
       {
         "q": "Czy mogę go wziąć w leasing zamiast kupować od razu?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Kontener na budowę STAGO",
-    "description": "Kontenery socjalne dla budów i firm. Szatnia, stołówka, kontener sanitarny. Solidne, mobilne, gotowe od ręki. Od 12 000 zł netto.",
+    "description": "Kontenery socjalne dla budów i firm. Szatnia, stołówka, kontener sanitarny. Solidne, mobilne, gotowe od ręki. Od 20 564 zł netto.",
     "image": "https://stago.com.pl/assets/modele/cube.webp",
-    "lowPrice": "12000",
+    "lowPrice": "20564",
     "highPrice": "150000"
   }
 }

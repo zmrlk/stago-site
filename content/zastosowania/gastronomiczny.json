@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon pod gastro STAGO — bryła SAGA",
     "h1": "Pawilon gastronomiczny. Kontener gastronomiczny, food truck.",
     "subtitle": "Kawiarnia, lodziarnia, food truck, mała kuchnia, bar. Znamy specyfikę branży — wentylację, wymogi sanepidu, układ z oknem podawczym. Wiemy też, że w sezonie nie ma czasu na poprawki, dlatego wszystko ma działać od pierwszego dnia. Powiedz nam, co podajesz, a dopasujemy resztę.",
-    "price": "od 22 000 zł netto",
-    "priceNote": "/ moduł gastronomiczny 4×2,4 m, gotowy do otwarcia",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ moduł gastronomiczny 4×3m, gotowy do otwarcia",
     "ctaHref": "../konfigurator.html?type=gastronomiczny",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje pawilon gastronomiczny?",
-        "a": "Mały moduł na kawę zaczyna się od 22 000 zł netto. Większa lodziarnia z zapleczem chłodniczym — 40 000–60 000 zł. Bar z pełną kuchnią — od 70 000 zł. Każdą wycenę przygotowujemy bezpłatnie po krótkiej rozmowie."
+        "a": "Mały moduł na kawę zaczyna się od 20 564 zł netto. Większa lodziarnia z zapleczem chłodniczym — 40 000–60 000 zł. Bar z pełną kuchnią — od 70 000 zł. Każdą wycenę przygotowujemy bezpłatnie po krótkiej rozmowie."
       },
       {
         "q": "Czy mogę mieć okno podawcze i jednocześnie miejsce dla klientów w środku?",
@@ -251,7 +251,7 @@
     "name": "Pawilon pod gastro STAGO",
     "description": "Pawilony gastronomiczne pod klucz. Kawiarnia, lodziarnia, food truck, bar. Wentylacja, okno podawcze, wykończenia HACCP. Od producenta z Jędrzejowa.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "12000",
+    "lowPrice": "20564",
     "highPrice": "150000"
   }
 }

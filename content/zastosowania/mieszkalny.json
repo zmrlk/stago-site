@@ -14,8 +14,8 @@
     "imgAlt": "Domek całoroczny STAGO — bryła MILA",
     "h1": "Dom modułowy. Kontener mieszkalny ocieplony.",
     "subtitle": "Mały dom na działce, dom dla teściowej, gabinet w ogrodzie, domek wakacyjny nad jeziorem. Pełne ściany z izolacją PIR 100 mm, łazienka, aneks kuchenny — pełnowartościowe miejsce do mieszkania, a nie tymczasowy barakowóz.",
-    "price": "od 45 000 zł netto",
-    "priceNote": "/ domek 6×3 m z łazienką",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, wycena indywidualna pod Twój projekt",
     "ctaHref": "../konfigurator.html?type=mieszkalny",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -239,7 +239,7 @@
     "name": "Domek całoroczny STAGO",
     "description": "Domki modułowe całoroczne. Mały dom na działce, ADU, holiday house, gabinet w ogrodzie. PIR 100mm, łazienka, kuchnia. Od 45 000 zł netto.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "12000",
+    "lowPrice": "35000",
     "highPrice": "150000"
   }
 }

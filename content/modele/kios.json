@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon modułowy STAGO KIOS — kompaktowa bryła z pełną witryną",
     "h1": "KIOS — kompaktowa bryła z pełną witryną.",
     "subtitle": "Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.",
-    "price": "od 18 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, wycena indywidualna pod Twój projekt",
     "ctaHref": "../konfigurator.html?model=kios",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie modele &rarr;"
@@ -236,7 +236,7 @@
     "name": "Pawilon modułowy STAGO KIOS",
     "description": "KIOS. Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/kios.webp",
-    "lowPrice": "18000",
+    "lowPrice": "20564",
     "highPrice": "60000"
   }
 }

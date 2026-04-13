@@ -379,85 +379,132 @@ body { background: #F8F9FA; padding-bottom: 0; }
 .summary-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  gap: 20px;
   align-items: start;
 }
 .summary-card {
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 .summary-card h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: var(--primary);
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--border);
 }
 .summary-row {
   display: flex;
   justify-content: space-between;
-  padding: 7px 0;
-  font-size: .85rem;
+  align-items: baseline;
+  padding: 11px 0;
+  font-size: .88rem;
   border-bottom: 1px solid #f0f0f0;
 }
 .summary-row:last-child { border-bottom: none; }
 .summary-row .s-label { color: var(--t3); }
 .summary-row .s-value { font-weight: 600; color: var(--primary); text-align: right; }
+.summary-price {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid var(--accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary-price .s-label {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: .95rem;
+}
+.summary-price .s-value {
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
 
 .contact-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  background: var(--primary);
+  border: none;
+  border-radius: 16px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 .contact-card h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
+  color: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
 }
-.cfg-form { display: flex; flex-direction: column; gap: 12px; }
-.cfg-form input, .cfg-form textarea {
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: .9rem;
-  outline: none;
-  background: #fff;
-  transition: border-color .2s;
-  color: var(--primary);
-}
-.cfg-form input:focus, .cfg-form textarea:focus { border-color: var(--accent); }
-.cfg-form textarea { resize: vertical; min-height: 60px; }
-.cfg-form .required-note {
-  font-size: .75rem;
-  color: var(--t3);
-}
-.cfg-submit {
+.contact-card .cfg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
   width: 100%;
-  padding: 14px;
+  min-width: 0;
+  align-self: stretch;
+}
+.contact-card .cfg-form input,
+.contact-card .cfg-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 10px;
+  font-size: .92rem;
+  font-family: inherit;
+  outline: none;
+  background: rgba(255,255,255,.07);
+  transition: border-color .2s, background .2s;
+  color: #fff;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.contact-card .cfg-form input::placeholder,
+.contact-card .cfg-form textarea::placeholder { color: rgba(255,255,255,.4); }
+.contact-card .cfg-form input:focus,
+.contact-card .cfg-form textarea:focus { border-color: var(--accent); background: rgba(255,255,255,.12); box-shadow: 0 0 0 3px rgba(232,70,28,.15); }
+.contact-card .cfg-form textarea { resize: vertical; min-height: 100px; }
+.contact-card .cfg-submit {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--accent);
   color: #fff;
-  font-size: .95rem;
+  font-size: 1rem;
   font-weight: 700;
+  font-family: inherit;
   cursor: pointer;
   transition: all .25s;
+  box-sizing: border-box;
+  -webkit-appearance: none;
 }
-.cfg-submit:hover { background: var(--accent-h); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(232,70,28,.25); }
-.form-promise {
+.contact-card .cfg-submit:hover { background: var(--accent-h); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(232,70,28,.35); }
+.contact-card .form-promise {
   text-align: center;
   font-size: .78rem;
-  color: var(--t3);
-  margin-top: 2px;
+  color: rgba(255,255,255,.4);
+  margin-top: 6px;
 }
-.form-promise svg { vertical-align: -2px; margin-right: 3px; }
+.contact-card .form-promise svg { vertical-align: -2px; margin-right: 3px; stroke: rgba(255,255,255,.4); }
 
 /* ── BOTTOM BAR ── */
 .bottom-bar {
@@ -642,9 +689,6 @@ body { background: #F8F9FA; padding-bottom: 0; }
         </div>
         {{/step1.types}}
       </div>
-      <div style="text-align:center;margin:20px 0 8px">
-        <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
-      </div>
       <p class="social-proof">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
         {{step1.socialProof}}
@@ -777,7 +821,7 @@ body { background: #F8F9FA; padding-bottom: 0; }
           <div id="summaryRows"></div>
         </div>
         <div class="contact-card">
-          <h3>{{step5.contactHeading}}</h3>
+          <h3>Dane kontaktowe</h3>
           <form class="cfg-form" id="cfgForm" data-stago-form>
             <input type="text" name="name" placeholder="Imię i nazwisko *" required>
             <input type="tel" name="phone" placeholder="Telefon *" required>
@@ -801,7 +845,8 @@ body { background: #F8F9FA; padding-bottom: 0; }
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
       <h2>{{success.heading}}</h2>
-      <p>{{success.text}}</p>
+      <div id="successPrice" style="margin:16px auto;max-width:400px"></div>
+      <p>Odezwiemy się w ciągu 24 godzin z pełną wyceną uwzględniającą wykończenie i wyposażenie.</p>
       <p>{{success.subtext}}</p>
       <a href="tel:{{success.phoneLink}}" class="phone-link">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -824,6 +869,28 @@ body { background: #F8F9FA; padding-bottom: 0; }
   </div>
 
 <script>
+// ── PRICING TABLE (Pawilon Podstawowy, szer. 3m, wys. 2.55m) ──
+const PRICING = {
+  '4x3': 20564.40,
+  '5x3': 22643.90,
+  '6x3': 24649.40,
+  '7x3': 27806.90,
+  '8x3': 31146.40,
+  '9x3': 34151.90,
+  '10x3': 38257.40,
+  '11x3': 41112.90,
+  '12x3': 44218.40
+};
+
+function getPrice(l, w) {
+  const key = `${Math.round(parseFloat(l))}x${Math.round(parseFloat(w))}`;
+  return PRICING[key] || null;
+}
+
+function formatPrice(val) {
+  return val.toLocaleString('pl-PL', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' zł';
+}
+
 // ── STATE ──
 const state = {
   step: 1,
@@ -1046,9 +1113,34 @@ function buildSummary() {
   if (state.extras.length) {
     rows.push(['Wyposażenie dodatkowe', state.extras.join(', ')]);
   }
-  document.getElementById('summaryRows').innerHTML = rows.map(([l, v]) =>
-    `<div class="summary-row"><span class="s-label">${l}</span><span class="s-value">${v || '—'}</span></div>`
-  ).join('');
+  const summaryContainer = document.getElementById('summaryRows');
+  summaryContainer.textContent = '';
+  rows.forEach(function(r) {
+    var row = document.createElement('div');
+    row.className = 'summary-row';
+    var label = document.createElement('span');
+    label.className = 's-label';
+    label.textContent = r[0];
+    var val = document.createElement('span');
+    val.className = 's-value';
+    val.textContent = r[1] || '—';
+    row.appendChild(label);
+    row.appendChild(val);
+    summaryContainer.appendChild(row);
+  });
+  // Price teaser
+  var priceRow = document.createElement('div');
+  priceRow.className = 'summary-price';
+  var pLabel = document.createElement('span');
+  pLabel.className = 's-label';
+  pLabel.textContent = 'Cena';
+  var pVal = document.createElement('span');
+  pVal.className = 's-value';
+  pVal.style.fontSize = '.9rem';
+  pVal.textContent = 'wyślij zapytanie — odezwiemy się z wyceną';
+  priceRow.appendChild(pLabel);
+  priceRow.appendChild(pVal);
+  summaryContainer.appendChild(priceRow);
 }
 
 // ── FORM SUBMIT ──
@@ -1066,6 +1158,39 @@ function submitForm(e) {
   document.getElementById('configWrap').querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
   document.getElementById('successScreen').classList.add('active');
   document.getElementById('bottomBar').style.display = 'none';
+
+  // Price reveal
+  var successPriceEl = document.getElementById('successPrice');
+  var revealPrice = getPrice(state.dimL, state.dimW);
+  if (revealPrice) {
+    var box = document.createElement('div');
+    box.style.cssText = 'background:rgba(232,70,28,.06);border:2px solid var(--accent);border-radius:12px;padding:20px 28px;text-align:center';
+    var lbl = document.createElement('div');
+    lbl.style.cssText = 'font-size:.78rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px';
+    lbl.textContent = 'Cena bazowa Twojego pawilonu';
+    var val = document.createElement('div');
+    val.style.cssText = 'font-size:1.6rem;font-weight:800;color:var(--accent);letter-spacing:-.02em';
+    val.textContent = formatPrice(revealPrice) + ' netto';
+    var note = document.createElement('div');
+    note.style.cssText = 'font-size:.78rem;color:var(--t3);margin-top:4px';
+    note.textContent = 'Wykończenie, wyposażenie i transport wycenimy indywidualnie';
+    box.appendChild(lbl);
+    box.appendChild(val);
+    box.appendChild(note);
+    successPriceEl.appendChild(box);
+  } else {
+    var customBox = document.createElement('div');
+    customBox.style.cssText = 'background:rgba(232,70,28,.06);border:2px solid var(--accent);border-radius:12px;padding:20px 28px;text-align:center';
+    var customTxt = document.createElement('div');
+    customTxt.style.cssText = 'font-size:1.1rem;font-weight:700;color:var(--accent)';
+    customTxt.textContent = 'Wymiar niestandardowy — wycena indywidualna';
+    var customNote = document.createElement('div');
+    customNote.style.cssText = 'font-size:.78rem;color:var(--t3);margin-top:4px';
+    customNote.textContent = 'Przygotujemy pełną wycenę w ciągu 24 godzin';
+    customBox.appendChild(customTxt);
+    customBox.appendChild(customNote);
+    successPriceEl.appendChild(customBox);
+  }
 
   // Clear storage
   localStorage.removeItem('stago_cfg');

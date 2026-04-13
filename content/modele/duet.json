@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon modułowy STAGO DUET — bryła z bocznymi akcentami i frontem",
     "h1": "DUET — bryła z bocznymi akcentami i frontem.",
     "subtitle": "Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Dwa elementy w równowadze — mocny korpus i ciepłe akcenty. Materiały dwóch stref ustalamy razem.",
-    "price": "od 25 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, wycena indywidualna pod Twój projekt",
     "ctaHref": "../konfigurator.html?model=duet",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie modele &rarr;"
@@ -236,7 +236,7 @@
     "name": "Pawilon modułowy STAGO DUET",
     "description": "DUET. Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Dwa elementy w równowadze — mocny korpus i ciepłe akcenty. Materiały dwóch stref ustalamy razem.",
     "image": "https://stago.com.pl/assets/modele/duet.webp",
-    "lowPrice": "25000",
+    "lowPrice": "20564",
     "highPrice": "95000"
   }
 }

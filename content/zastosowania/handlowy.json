@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon do handlu STAGO — bryła LOFT",
     "h1": "Pawilon handlowy. Sklep, kiosk, kontener na sklep.",
     "subtitle": "Sklep, kiosk, punkt sprzedaży na rynku, ryneczek warzywny. Wiemy, że klient decyduje o wejściu w kilka sekund — dlatego projektujemy witryny pod ekspozycję, oświetlenie wydobywające produkt i wygodne wejście. Powiedz nam, co sprzedajesz — zaproponujemy układ, który pracuje na sprzedaż.",
-    "price": "od 15 000 zł netto",
-    "priceNote": "/ pawilon 3×2m gotowy do handlu",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, gotowy do handlu",
     "ctaHref": "../konfigurator.html?type=handlowy",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje pawilon do handlu?",
-        "a": "Mały kiosk 3×2 m zaczyna się od 15 000 zł netto. Sklep 6×3 m — od 28 000 zł. Większy punkt 12×3 m z witrynami i zapleczem — od 48 000 zł. Każdą wycenę przygotowujemy indywidualnie i bezpłatnie: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "Pawilon 4×3 m zaczyna się od 20 564 zł netto. Sklep 6×3 m — od 24 649 zł. Większy punkt 12×3 m z witrynami i zapleczem — od 44 218 zł. Każdą wycenę przygotowujemy indywidualnie i bezpłatnie: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Czy potrzebuję pozwolenia na pawilon handlowy?",
@@ -245,9 +245,9 @@
   ],
   "jsonLd": {
     "name": "Pawilon do handlu STAGO",
-    "description": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 15 000 zł netto.",
+    "description": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 20 564 zł netto.",
     "image": "https://stago.com.pl/assets/modele/loft.webp",
-    "lowPrice": "12000",
+    "lowPrice": "20564",
     "highPrice": "150000"
   }
 }

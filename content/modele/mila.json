@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon modułowy STAGO MILA — bryła w klasycznym układzie",
     "h1": "MILA — bryła w klasycznym układzie.",
     "subtitle": "Kompaktowa forma, symetryczne proporcje, duże drzwi wejściowe po środku. Uniwersalny układ, który pasuje pod każde przeznaczenie. Wykończenie — drewno, blacha, HPL albo panele kompozytowe — wybierasz Ty.",
-    "price": "od 25 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, wycena indywidualna pod Twój projekt",
     "ctaHref": "../konfigurator.html?model=mila",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie modele &rarr;"
@@ -236,7 +236,7 @@
     "name": "Pawilon modułowy STAGO MILA",
     "description": "MILA. Kompaktowa forma, symetryczne proporcje, duże drzwi wejściowe po środku. Uniwersalny układ, który pasuje pod każde przeznaczenie. Wykończenie — drewno, blacha, HPL albo panele kompozytowe — wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "25000",
+    "lowPrice": "20564",
     "highPrice": "85000"
   }
 }

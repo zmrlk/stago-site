@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon modułowy STAGO NORD — premium bryła z narożnymi oknami",
     "h1": "NORD — premium bryła z narożnymi oknami.",
     "subtitle": "Mocna forma z akcentami w narożnikach i ogromnymi narożnymi szkleniami. Skandynawski charakter premium — bryła, którą się pamięta. Materiał elewacji i akcentów ustalamy razem.",
-    "price": "od 30 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, wycena indywidualna pod Twój projekt",
     "ctaHref": "../konfigurator.html?model=nord",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie modele &rarr;"
@@ -236,7 +236,7 @@
     "name": "Pawilon modułowy STAGO NORD",
     "description": "NORD. Mocna forma z akcentami w narożnikach i ogromnymi narożnymi szkleniami. Skandynawski charakter premium — bryła, którą się pamięta. Materiał elewacji i akcentów ustalamy razem.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "30000",
+    "lowPrice": "20564",
     "highPrice": "110000"
   }
 }

@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Model M — pawilon modułowy STAGO | Minimalizm, panoramiczne okna",
-    "description": "Model M od producenta STAGO. Szara elewacja, panoramiczne okna, czysta forma. Moduł do pracy, sprzedaży, obsługi klientów — wypełnisz go po swojemu. Od 18 000 zł netto.",
+    "description": "Model M od producenta STAGO. Szara elewacja, panoramiczne okna, czysta forma. Moduł do pracy, sprzedaży, obsługi klientów — wypełnisz go po swojemu. Od 20 564 zł netto.",
     "canonical": "https://stago.com.pl/kontener-biurowy.html",
     "ogTitle": "Model M — pawilon modułowy STAGO | Minimalizm, panoramiczne okna",
-    "ogDescription": "Kontenery biurowe od producenta. Biura, portierne, recepcje. Od 18 000 zł netto.",
+    "ogDescription": "Kontenery biurowe od producenta. Biura, portierne, recepcje. Od 20 564 zł netto.",
     "ogImage": "https://stago.com.pl/assets/products/biurowy.webp"
   },
   "breadcrumb": "Model M",
@@ -14,8 +14,8 @@
     "imgAlt": "Kontener biurowy STAGO",
     "h1": "Model M — czysty minimalizm. Zero bałaganu.",
     "subtitle": "Szara elewacja, panoramiczne okna z boku, żadnych zbędnych detali. Wchodzisz i od razu czujesz — tu się pracuje. Albo sprzedaje. Albo przyjmuje klientów. Model M to czysta forma, którą wypełnisz po swojemu.",
-    "price": "od 18 000 zł netto",
-    "priceNote": "/ kontener 2,4x6m z pełną elektryką",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ kontener biurowy 4×3m z pełną elektryką",
     "ctaHref": "konfigurator.html?type=Biurowy",
     "articleHref": "blog/kontener-biurowy-cena.html",
     "articleText": "Pierwsza zima w pawilonie &rarr;"
@@ -76,9 +76,18 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Biura, które już pracują",
     "items": [
-      { "img": "assets/gallery/k11.webp", "alt": "Kontener biurowy STAGO — elewacja HPL, stolarka aluminiowa" },
-      { "img": "assets/gallery/k14.webp", "alt": "Kontener biurowy STAGO — okładzina drewniana, izolacja PIR" },
-      { "img": "assets/gallery/k16.webp", "alt": "Kontener biurowy STAGO — moduł z akcentem drewnianym i oknami" }
+      {
+        "img": "assets/gallery/k11.webp",
+        "alt": "Kontener biurowy STAGO — elewacja HPL, stolarka aluminiowa"
+      },
+      {
+        "img": "assets/gallery/k14.webp",
+        "alt": "Kontener biurowy STAGO — okładzina drewniana, izolacja PIR"
+      },
+      {
+        "img": "assets/gallery/k16.webp",
+        "alt": "Kontener biurowy STAGO — moduł z akcentem drewnianym i oknami"
+      }
     ]
   },
   "faq": {
@@ -88,7 +97,7 @@
     "items": [
       {
         "q": "Ile kosztuje kontener biurowy?",
-        "a": "Podstawowy moduł 2,4x6m z elektryką — od 18 000 zł netto. Z klimatyzacją i izolacją PIR 100mm — od 24 000 zł. Duży kontener 3x12m z łazienką i aneksem kuchennym — od 45 000 zł. Wycenę robię za darmo — zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/kontener-biurowy-cena.html\">Pierwsza zima w pawilonie &rarr;</a>"
+        "a": "Podstawowy moduł 2,4x6m z elektryką — od 20 564 zł netto. Z klimatyzacją i izolacją PIR 100mm — od 24 000 zł. Duży kontener 3x12m z łazienką i aneksem kuchennym — od 45 000 zł. Wycenę robię za darmo — zadzwoń: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>. <a href=\"blog/kontener-biurowy-cena.html\">Pierwsza zima w pawilonie &rarr;</a>"
       },
       {
         "q": "Mogę postawić go na swojej działce?",
@@ -114,18 +123,38 @@
     "selectedType": "biurowy",
     "textareaPlaceholder": "Ile osób będzie pracować? Potrzebujesz łazienkę? Gdzie ma stać?",
     "options": [
-      { "value": "biurowy", "label": "Kontener biurowy" },
-      { "value": "handlowy", "label": "Pawilon handlowy" },
-      { "value": "magazynowy", "label": "Kontener magazynowy" },
-      { "value": "inny", "label": "Inny" }
+      {
+        "value": "biurowy",
+        "label": "Kontener biurowy"
+      },
+      {
+        "value": "handlowy",
+        "label": "Pawilon handlowy"
+      },
+      {
+        "value": "magazynowy",
+        "label": "Kontener magazynowy"
+      },
+      {
+        "value": "inny",
+        "label": "Inny"
+      }
     ],
     "infoH3": "Jak to wygląda?",
     "infoText": "Dzwonisz albo piszesz. Pytamy ile osób, czy potrzebujesz łazienkę, dokąd dowieźć. Rysujemy projekt, podajemy cenę. Bez niespodzianek.",
     "features": [
-      { "text": "Wizualizacja 3D — zobaczysz układ przed zamówieniem" },
-      { "text": "Cena z transportem, montażem, elektryką" },
-      { "text": "Doradztwo BHP — za darmo" },
-      { "text": "Odpowiedź w ciągu jednego dnia" }
+      {
+        "text": "Wizualizacja 3D — zobaczysz układ przed zamówieniem"
+      },
+      {
+        "text": "Cena z transportem, montażem, elektryką"
+      },
+      {
+        "text": "Doradztwo BHP — za darmo"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
     ]
   },
   "related": [
@@ -158,7 +187,7 @@
     "name": "Kontener biurowy STAGO",
     "description": "Kontener biurowy od producenta. Biura, portierne, recepcje. Izolacja PIR, klimatyzacja, pełna elektryka. Gotowy w 4-6 tygodni.",
     "image": "https://stago.com.pl/assets/products/biurowy.webp",
-    "lowPrice": "18000",
+    "lowPrice": "20564",
     "highPrice": "55000"
   }
 }

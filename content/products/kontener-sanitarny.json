@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Model T — pawilon modułowy STAGO | Antracyt, drewno, wiele wejść",
-    "description": "Model T od producenta STAGO. Antracyt z jasnym drewnem, kilka osobnych wejść. Moduł zaprojektowany na dużo ludzi naraz — kabiny, prysznice, szatnie. Od 20 000 zł netto.",
+    "description": "Model T od producenta STAGO. Antracyt z jasnym drewnem, kilka osobnych wejść. Moduł zaprojektowany na dużo ludzi naraz — kabiny, prysznice, szatnie. Od 20 564 zł netto.",
     "canonical": "https://stago.com.pl/kontener-sanitarny.html",
     "ogTitle": "Model T — pawilon modułowy STAGO | Antracyt, drewno, wiele wejść",
-    "ogDescription": "Kontenery sanitarne od producenta. Toalety, prysznice, szatnie. Od 20 000 zł netto.",
+    "ogDescription": "Kontenery sanitarne od producenta. Toalety, prysznice, szatnie. Od 20 564 zł netto.",
     "ogImage": "https://stago.com.pl/assets/products/sanitarny.webp"
   },
   "breadcrumb": "Model T",
@@ -14,8 +14,8 @@
     "imgAlt": "Kontener sanitarny STAGO",
     "h1": "Model T — zbudowany, żeby obsłużyć tłum.",
     "subtitle": "Antracyt z jasnym drewnem, kilka osobnych wejść. Zaprojektowany tak, żeby dużo ludzi mogło korzystać jednocześnie bez czekania w kolejce. Kabiny, prysznice, szatnie — konfiguracja pod Twoje potrzeby.",
-    "price": "od 20 000 zł netto",
-    "priceNote": "/ kontener sanitarny 2,4x3m z 2 kabinami WC",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ kontener sanitarny 4×3m",
     "ctaHref": "konfigurator.html?type=Sanitarny",
     "articleHref": "blog/pawilon-bez-pozwolenia.html",
     "articleText": "Przepisy i zgłoszenia &rarr;"
@@ -76,9 +76,18 @@
     "eyebrow": "Zrobione przez nas",
     "h2": "Kontenery sanitarne, które już działają",
     "items": [
-      { "img": "assets/gallery/k11.webp", "alt": "Kontener sanitarny STAGO — moduł z kabinami WC i prysznicami" },
-      { "img": "assets/gallery/k19.webp", "alt": "Kontener sanitarny STAGO — zaplecze socjalne na budowę" },
-      { "img": "assets/gallery/k25.webp", "alt": "Kontener sanitarny STAGO — łączone moduły toalet i szatni" }
+      {
+        "img": "assets/gallery/k11.webp",
+        "alt": "Kontener sanitarny STAGO — moduł z kabinami WC i prysznicami"
+      },
+      {
+        "img": "assets/gallery/k19.webp",
+        "alt": "Kontener sanitarny STAGO — zaplecze socjalne na budowę"
+      },
+      {
+        "img": "assets/gallery/k25.webp",
+        "alt": "Kontener sanitarny STAGO — łączone moduły toalet i szatni"
+      }
     ]
   },
   "faq": {
@@ -88,7 +97,7 @@
     "items": [
       {
         "q": "Ile kosztuje kontener sanitarny?",
-        "a": "Zależy od liczby kabin i wyposażenia. Mały kontener 2,4x3m z 2 toaletami — od 20 000 zł netto. Większy 3x6m z prysznicami i szatnią — od 35 000 zł. Pełny węzeł sanitarny 3x12m — od 50 000 zł. Wycena jest za darmo: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od liczby kabin i wyposażenia. Mały kontener 2,4x3m z 2 toaletami — od 20 564 zł netto. Większy 3x6m z prysznicami i szatnią — od 35 000 zł. Pełny węzeł sanitarny 3x12m — od 50 000 zł. Wycena jest za darmo: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jakie przyłącza są potrzebne?",
@@ -114,20 +123,46 @@
     "selectedType": "sanitarny",
     "textareaPlaceholder": "Ile kabin WC / pryszniców? Na budowę czy na stałe? Gdzie ma stać?",
     "options": [
-      { "value": "handlowy", "label": "Pawilon handlowy" },
-      { "value": "biurowy", "label": "Kontener biurowy" },
-      { "value": "magazynowy", "label": "Kontener magazynowy" },
-      { "value": "mieszkalny", "label": "Pawilon mieszkalny" },
-      { "value": "sanitarny", "label": "Kontener sanitarny" },
-      { "value": "premium", "label": "Premium / Custom" }
+      {
+        "value": "handlowy",
+        "label": "Pawilon handlowy"
+      },
+      {
+        "value": "biurowy",
+        "label": "Kontener biurowy"
+      },
+      {
+        "value": "magazynowy",
+        "label": "Kontener magazynowy"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Pawilon mieszkalny"
+      },
+      {
+        "value": "sanitarny",
+        "label": "Kontener sanitarny"
+      },
+      {
+        "value": "premium",
+        "label": "Premium / Custom"
+      }
     ],
     "infoH3": "Jak to wygląda?",
     "infoText": "Piszesz lub dzwonisz. Pytamy o liczbę kabin, przeznaczenie, lokalizację. Rysujemy układ. Podajemy cenę z transportem i montażem. Bez niespodzianek.",
     "features": [
-      { "text": "Wizualizacja układu kabin — zobaczysz, zanim zamówisz" },
-      { "text": "Wycena obejmuje dostawę i montaż" },
-      { "text": "Gotowe przyłącza wod-kan i elektryka" },
-      { "text": "Odpowiedź w ciągu jednego dnia" }
+      {
+        "text": "Wizualizacja układu kabin — zobaczysz, zanim zamówisz"
+      },
+      {
+        "text": "Wycena obejmuje dostawę i montaż"
+      },
+      {
+        "text": "Gotowe przyłącza wod-kan i elektryka"
+      },
+      {
+        "text": "Odpowiedź w ciągu jednego dnia"
+      }
     ]
   },
   "related": [
@@ -160,7 +195,7 @@
     "name": "Kontener sanitarny STAGO",
     "description": "Kontener sanitarny od producenta. Toalety, prysznice, szatnie. Pełna instalacja wod-kan, wentylacja mechaniczna, podłoga antypoślizgowa.",
     "image": "https://stago.com.pl/assets/products/sanitarny.webp",
-    "lowPrice": "20000",
+    "lowPrice": "20564",
     "highPrice": "55000"
   }
 }

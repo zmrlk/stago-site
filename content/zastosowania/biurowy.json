@@ -14,8 +14,8 @@
     "imgAlt": "Kontener pod biuro STAGO — bryła NORD",
     "h1": "Pawilon biurowy od producenta. Kontener biurowy całoroczny.",
     "subtitle": "Biuro sprzedaży, recepcja przy firmie, biuro tymczasowe na budowie, gabinet konsultacyjny. Ciepło zimą, cicho przez cały rok, prąd i internet od pierwszego dnia. Wchodzisz z laptopem i od razu zaczynasz pracować — bez miesięcy remontu i bez kompromisów.",
-    "price": "od 22 000 zł netto",
-    "priceNote": "/ kontener biurowy 6×2,4 m, gotowy do pracy",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ kontener biurowy 4×3m, gotowy do pracy",
     "ctaHref": "../konfigurator.html?type=biurowy",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje kontener biurowy?",
-        "a": "Pojedynczy moduł 6×2,4 m zaczyna się od 22 000 zł netto. Większe biuro z toaletą i aneksem kuchennym — 35 000–50 000 zł. Jeśli potrzebujesz większej powierzchni, łączymy moduły obok siebie w jeden większy obiekt."
+        "a": "Pojedynczy moduł 6×2,4 m zaczyna się od 20 564 zł netto. Większe biuro z toaletą i aneksem kuchennym — 35 000–50 000 zł. Jeśli potrzebujesz większej powierzchni, łączymy moduły obok siebie w jeden większy obiekt."
       },
       {
         "q": "Czy mogę mieć w nim toaletę?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Kontener pod biuro STAGO",
-    "description": "Kontenery biurowe od producenta. Biuro sprzedaży, recepcja, biuro na budowie, gabinet. Ciepło, cicho, gotowe do pracy. Od 22 000 zł netto.",
+    "description": "Kontenery biurowe od producenta. Biuro sprzedaży, recepcja, biuro na budowie, gabinet. Ciepło, cicho, gotowe do pracy. Od 20 564 zł netto.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "12000",
+    "lowPrice": "20564",
     "highPrice": "150000"
   }
 }

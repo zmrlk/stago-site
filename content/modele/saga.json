@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon modułowy STAGO SAGA — wydłużona bryła z frontem witrynowym",
     "h1": "SAGA — wydłużona bryła z frontem witrynowym.",
     "subtitle": "Długa, niska forma z trzema dużymi witrynami i centralnym wejściem. Idealna pod gastro i sprzedaż — klient widzi wszystko z chodnika. Wykończenie elewacji wybierasz Ty.",
-    "price": "od 28 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, wycena indywidualna pod Twój projekt",
     "ctaHref": "../konfigurator.html?model=saga",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie modele &rarr;"
@@ -236,7 +236,7 @@
     "name": "Pawilon modułowy STAGO SAGA",
     "description": "SAGA. Długa, niska forma z trzema dużymi witrynami i centralnym wejściem. Idealna pod gastro i sprzedaż — klient widzi wszystko z chodnika. Wykończenie elewacji wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "28000",
+    "lowPrice": "20564",
     "highPrice": "100000"
   }
 }

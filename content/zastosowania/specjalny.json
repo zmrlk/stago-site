@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon nietypowy STAGO — bryła NOIR",
     "h1": "Kontenery specjalne i pawilony nietypowe.",
     "subtitle": "Gabinet medyczny, stróżówka, kasa biletowa, punkt informacyjny dla miasta, mała biblioteka, wiejski dom kultury. Każdy taki projekt wymaga rozmowy ze specjalistą — przepisów, norm, wyposażenia. Realizujemy je regularnie, więc po prostu powiedz nam, czego potrzebujesz.",
-    "price": "wycena indywidualna",
-    "priceNote": "/ projekt powstaje pod Twoje wymagania",
+    "price": "od 20 564 zł netto",
+    "priceNote": "/ pawilon 4×3m, wycena indywidualna pod Twój projekt",
     "ctaHref": "../konfigurator.html?type=specjalny",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -239,7 +239,7 @@
     "name": "Pawilon nietypowy STAGO",
     "description": "Pawilony pod nietypowe zastosowania. Gabinet medyczny, stróżówka, kasa biletowa, info point, GOK. Pod konkretne wymogi i przepisy.",
     "image": "https://stago.com.pl/assets/modele/noir.webp",
-    "lowPrice": "12000",
+    "lowPrice": "20564",
     "highPrice": "150000"
   }
 }
