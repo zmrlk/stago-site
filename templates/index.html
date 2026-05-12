@@ -2,8 +2,8 @@
 <html lang="{{ui.lang}}">
 <head>
   <meta charset="UTF-8">
-  <!-- GTM + GA4 (deferred until interaction or 3s) -->
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
+  <!-- Analytics gated by cookies.js (loads GTM/GA4 only after explicit consent) -->
+  <script>window['ga-disable-G-XZNVTYFPWR']=true;window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{site.title}}</title>
   <meta name="description" content="{{site.description}}">
@@ -360,6 +360,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <!-- Honeypot — ukryte pole, boty je wypełniają -->
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="{{ui.form.honeypot}}"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> {{{ui.form.consent}}} <a href="{{{pageRoot}}}polityka-prywatnosci.html" target="_blank">{{{ui.form.privacyLink}}}</a></label>
+          <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> {{{ui.form.consentOptional}}}</label>
           <button type="submit" class="btn btn-primary btn-full" id="contact-submit">{{{ui.form.submit}}}</button>
           <p class="form-note">{{contact.formNote}}</p>
           <p class="form-success" id="contact-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">{{{ui.form.success}}}</p>
@@ -564,5 +565,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <script src="{{{root}}}reviews.js"></script>
   <script src="{{{root}}}form-handler.js"></script>
   <script>document.querySelector('.lang-btn')?.addEventListener('click',function(e){e.stopPropagation();var d=this.nextElementSibling;d.style.display=d.style.display==='none'?'grid':'none'});document.addEventListener('click',function(){var d=document.querySelector('.lang-dropdown');if(d)d.style.display='none'});</script>
+  <script src="{{{root}}}cookies.js" defer></script>
 </body>
 </html>

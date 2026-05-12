@@ -43,7 +43,8 @@
     "name": "Meno a priezvisko",
     "phone": "Telefón",
     "email": "E-mail (nepovinné)",
-    "consent": "Súhlasím so spracovaním osobných údajov.",
+    "consent": "Oboznámil/a som sa s informáciami o spracovaní údajov a súhlasím s kontaktom na účely zaslania materiálu a vybavenia dopytu.",
+    "consentOptional": "Súhlasím s tým, aby mi STAGO GROUP Sp. z o.o. zasielala obchodné a marketingové informácie o ponuke STAGO e-mailom, telefonicky alebo SMS. Súhlas môžem kedykoľvek odvolať.",
     "privacyLink": "Ochrana osobných údajov",
     "submit": "Odoslať dopyt",
     "note": "Zavoláme do 24 hodín. Ponuka zadarmo, nezáväzne.",
@@ -80,7 +81,9 @@
     "kontakt": "Kontakt",
     "contactPage": "Stránka kontaktu &rarr;",
     "privacy": "Ochrana osobných údajov",
-    "terms": "Obchodné podmienky",
+    "cookiesPolicy": "Zásady cookies",
+    "terms": "Podmienky používania",
+    "salesTerms": "Obchodné podmienky",
     "cookies": "Nastavenia cookies",
     "madeBy": "Vytvorené"
   },
@@ -94,5 +97,21 @@
     "meetUs": "Spoznajte nás bližšie &rarr;",
     "visitUs": "Navštívte nás"
   },
-  "areaServed": "Slovakia"
+  "areaServed": "Slovakia",
+  "cookieBanner": {
+    "title": "Cookies a súkromie",
+    "description": "Používame cookies nevyhnutné pre fungovanie stránky. S vaším súhlasom spustíme analytické cookies (Google Analytics) a marketingové cookies (Meta Pixel, TikTok Pixel), aby sme mohli merať účinnosť stránky a kampaní.",
+    "acceptAll": "Prijať všetko",
+    "onlyNecessary": "Iba nevyhnutné",
+    "settings": "Nastavenia",
+    "savePreferences": "Uložiť výber",
+    "categoryNecessary": "Nevyhnutné",
+    "categoryNecessaryDesc": "Potrebné pre funkčnosť stránky, formulárov a uloženie nastavení. Vždy aktívne.",
+    "categoryAnalytics": "Analytické",
+    "categoryAnalyticsDesc": "Google Analytics 4 — meranie návštevnosti, zdrojov a udalostí na stránke.",
+    "categoryMarketing": "Marketingové",
+    "categoryMarketingDesc": "Meta Pixel a TikTok Pixel — meranie účinnosti reklám a remarketing.",
+    "moreInfo": "Viac v",
+    "moreInfoLink": "Zásadách cookies"
+  }
 }

@@ -2,8 +2,8 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8">
-  <!-- GTM + GA4 (deferred until interaction or 3s) -->
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
+  <!-- Analytics gated by cookies.js (loads GTM/GA4 only after explicit consent) -->
+  <script>window['ga-disable-G-XZNVTYFPWR']=true;window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DUET — hmota s bočnými akcentmi a frontom | Modulárny pavilón STAGO</title>
   <meta name="description" content="DUET STAGO — Hmota s výraznými akcentmi po bokoch a tromi prednými výkladmi. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba. Bezplatná cenová ponuka.">
@@ -323,7 +323,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           </select>
           <textarea name="message" rows="4" placeholder="Aký rozmer, aký materiál fasády, kde to má stáť, na čo to má byť?"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pomocné pole (nevypĺňajte)"></div>
-          <label class="form-consent"><input type="checkbox" name="consent" required> Súhlasím so spracovaním osobných údajov. <a href="../../sk/polityka-prywatnosci.html" target="_blank">Ochrana osobných údajov</a></label>
+          <label class="form-consent"><input type="checkbox" name="consent" required> Oboznámil/a som sa s informáciami o spracovaní údajov a súhlasím s kontaktom na účely zaslania materiálu a vybavenia dopytu. <a href="../../sk/polityka-prywatnosci.html" target="_blank">Ochrana osobných údajov</a></label>
+          <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Súhlasím s tým, aby mi STAGO GROUP Sp. z o.o. zasielala obchodné a marketingové informácie o ponuke STAGO e-mailom, telefonicky alebo SMS. Súhlas môžem kedykoľvek odvolať.</label>
           <button type="submit" class="btn btn-primary btn-full">Odoslať dopyt</button>
           <p class="form-note">Zavoláme do 24 hodín. Ponuka zadarmo, nezáväzne.</p>
           <p class="form-success" id="product-form-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">Odoslané! Ozveme sa do 24 hodín.</p>
@@ -410,7 +411,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       </div>
     </div>
     <div class="container footer-bottom">
-      <div class="footer-legal"><a href="../../sk/polityka-prywatnosci.html">Ochrana osobných údajov</a><a href="../../sk/regulamin.html">Obchodné podmienky</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Nastavenia cookies</a></div>
+      <div class="footer-legal"><a href="../../sk/polityka-prywatnosci.html">Ochrana osobných údajov</a><a href="../../sk/regulamin.html">Podmienky používania</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Nastavenia cookies</a></div>
       <p>&copy; 2026 STAGO &middot; Vytvorené <a href="https://isiko.pl" target="_blank">ISIKO</a></p>
     </div>
   </footer>
@@ -459,5 +460,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   }
   </script>
   <script src="../../form-handler.js"></script>
+  <script src="../../cookies.js" defer></script>
 </body>
 </html>

@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- GTM + GA4 (deferred until interaction or 3s) -->
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
+  <!-- Analytics gated by cookies.js (loads GTM/GA4 only after explicit consent) -->
+  <script>window['ga-disable-G-XZNVTYFPWR']=true;window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pabellón de servicios — peluquería, estética, taller | STAGO</title>
   <meta name="description" content="Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Agua, electricidad, saneamiento — todo listo. Desde 5 750 € neto.">
@@ -325,7 +325,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           </select>
           <textarea name="message" rows="4" placeholder="¿Qué quiere hacer? ¿Qué tamaño? ¿Dónde debe estar?"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Campo auxiliar (no rellenar)"></div>
-          <label class="form-consent"><input type="checkbox" name="consent" required> Acepto el tratamiento de mis datos personales. <a href="../../es/polityka-prywatnosci.html" target="_blank">Política de privacidad</a></label>
+          <label class="form-consent"><input type="checkbox" name="consent" required> He leído la información sobre el tratamiento de datos y acepto el contacto para el envío del material y la atención a mi consulta. <a href="../../es/polityka-prywatnosci.html" target="_blank">Política de privacidad</a></label>
+          <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Acepto recibir de STAGO GROUP Sp. z o.o. información comercial y de marketing sobre la oferta de STAGO por correo electrónico, teléfono o SMS. Puedo retirar el consentimiento en cualquier momento.</label>
           <button type="submit" class="btn btn-primary btn-full">Enviar solicitud</button>
           <p class="form-note">Le llamamos en 24 horas. Presupuesto gratis y sin compromiso.</p>
           <p class="form-success" id="product-form-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">¡Enviado! Le contactaremos en 24 horas.</p>
@@ -412,7 +413,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       </div>
     </div>
     <div class="container footer-bottom">
-      <div class="footer-legal"><a href="../../es/polityka-prywatnosci.html">Política de privacidad</a><a href="../../es/regulamin.html">Condiciones</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Ajustes de cookies</a></div>
+      <div class="footer-legal"><a href="../../es/polityka-prywatnosci.html">Política de privacidad</a><a href="../../es/regulamin.html">Condiciones de uso</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Ajustes de cookies</a></div>
       <p>&copy; 2026 STAGO &middot; Creado por <a href="https://isiko.pl" target="_blank">ISIKO</a></p>
     </div>
   </footer>
@@ -461,5 +462,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   }
   </script>
   <script src="../../form-handler.js"></script>
+  <script src="../../cookies.js" defer></script>
 </body>
 </html>

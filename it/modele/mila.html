@@ -2,8 +2,8 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <!-- GTM + GA4 (deferred until interaction or 3s) -->
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
+  <!-- Analytics gated by cookies.js (loads GTM/GA4 only after explicit consent) -->
+  <script>window['ga-disable-G-XZNVTYFPWR']=true;window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MILA — forma dal layout classico | Padiglione modulare STAGO</title>
   <meta name="description" content="MILA STAGO — Forma compatta, proporzioni simmetriche, grande porta d'ingresso centrale. Dimensioni, materiale, colore e interni su misura. Preventivo gratuito.">
@@ -323,7 +323,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           </select>
           <textarea name="message" rows="4" placeholder="Quali dimensioni, quale materiale di facciata, dove deve stare, a cosa deve servire?"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Campo ausiliario (non compilare)"></div>
-          <label class="form-consent"><input type="checkbox" name="consent" required> Acconsento al trattamento dei dati personali. <a href="../../it/polityka-prywatnosci.html" target="_blank">Privacy</a></label>
+          <label class="form-consent"><input type="checkbox" name="consent" required> Ho preso visione dell'informativa sul trattamento dei dati e acconsento al contatto per la consegna del materiale e l'evasione della richiesta. <a href="../../it/polityka-prywatnosci.html" target="_blank">Privacy</a></label>
+          <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Acconsento a ricevere da STAGO GROUP Sp. z o.o. comunicazioni commerciali e di marketing relative all'offerta STAGO via e-mail, telefono o SMS. Posso revocare il consenso in qualsiasi momento.</label>
           <button type="submit" class="btn btn-primary btn-full">Invia richiesta</button>
           <p class="form-note">Richiamiamo entro 24 ore. Preventivo gratuito e senza impegno.</p>
           <p class="form-success" id="product-form-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">Inviato! Vi contatteremo entro 24 ore.</p>
@@ -410,7 +411,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       </div>
     </div>
     <div class="container footer-bottom">
-      <div class="footer-legal"><a href="../../it/polityka-prywatnosci.html">Privacy</a><a href="../../it/regulamin.html">Condizioni</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Impostazioni cookie</a></div>
+      <div class="footer-legal"><a href="../../it/polityka-prywatnosci.html">Privacy</a><a href="../../it/regulamin.html">Termini di utilizzo</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Impostazioni cookie</a></div>
       <p>&copy; 2026 STAGO &middot; Creato da <a href="https://isiko.pl" target="_blank">ISIKO</a></p>
     </div>
   </footer>
@@ -459,5 +460,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   }
   </script>
   <script src="../../form-handler.js"></script>
+  <script src="../../cookies.js" defer></script>
 </body>
 </html>

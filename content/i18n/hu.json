@@ -43,7 +43,8 @@
     "name": "Név",
     "phone": "Telefon",
     "email": "E-mail (opcionális)",
-    "consent": "Hozzájárulok személyes adataim kezeléséhez.",
+    "consent": "Megismertem az adatkezelési tájékoztatót és hozzájárulok a kapcsolatfelvételhez az anyag átadása és a megkeresés kezelése céljából.",
+    "consentOptional": "Hozzájárulok, hogy a STAGO GROUP Sp. z o.o. üzleti és marketing információkat küldjön számomra a STAGO ajánlatáról e-mailben, telefonon vagy SMS-ben. A hozzájárulást bármikor visszavonhatom.",
     "privacyLink": "Adatvédelem",
     "submit": "Ajánlatkérés küldése",
     "note": "24 órán belül visszahívjuk. Az árajánlat ingyenes és kötelezettségmentes.",
@@ -80,7 +81,9 @@
     "kontakt": "Kapcsolat",
     "contactPage": "Kapcsolat oldal &rarr;",
     "privacy": "Adatvédelem",
-    "terms": "ÁSZF",
+    "cookiesPolicy": "Cookie szabályzat",
+    "terms": "Felhasználási feltételek",
+    "salesTerms": "ÁSZF",
     "cookies": "Cookie-beállítások",
     "madeBy": "Készítette"
   },
@@ -94,5 +97,21 @@
     "meetUs": "Ismerjen meg minket közelebbről &rarr;",
     "visitUs": "Látogasson el hozzánk"
   },
-  "areaServed": "Hungary"
+  "areaServed": "Hungary",
+  "cookieBanner": {
+    "title": "Cookie-k és adatvédelem",
+    "description": "Az oldal működéséhez szükséges cookie-kat használunk. Hozzájárulásával analitikai cookie-kat (Google Analytics) és marketing cookie-kat (Meta Pixel, TikTok Pixel) is bekapcsolunk az oldal és a kampányok hatékonyságának mérése érdekében.",
+    "acceptAll": "Mind elfogadom",
+    "onlyNecessary": "Csak szükségesek",
+    "settings": "Beállítások",
+    "savePreferences": "Választás mentése",
+    "categoryNecessary": "Szükséges",
+    "categoryNecessaryDesc": "Az oldal, az űrlapok és a beállítások mentésének működéséhez szükségesek. Mindig aktívak.",
+    "categoryAnalytics": "Analitikai",
+    "categoryAnalyticsDesc": "Google Analytics 4 — forgalom, források és események mérése az oldalon.",
+    "categoryMarketing": "Marketing",
+    "categoryMarketingDesc": "Meta Pixel és TikTok Pixel — hirdetések hatékonyságának mérése és remarketing.",
+    "moreInfo": "Részletek a",
+    "moreInfoLink": "Cookie szabályzatban"
+  }
 }

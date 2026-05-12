@@ -2,8 +2,8 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <!-- GTM + GA4 (deferred until interaction or 3s) -->
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
+  <!-- Analytics gated by cookies.js (loads GTM/GA4 only after explicit consent) -->
+  <script>window['ga-disable-G-XZNVTYFPWR']=true;window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{meta.title}}</title>
   <meta name="description" content="{{meta.description}}">
@@ -233,8 +233,8 @@ body { background: #F8F9FA; padding-bottom: 0; }
   gap: 10px;
 }
 .swatch {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: 2px solid var(--border);
   cursor: pointer;
@@ -262,8 +262,472 @@ body { background: #F8F9FA; padding-bottom: 0; }
 .finish-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px 32px;
+  gap: 32px 48px;
+  align-items: start;
+  max-width: 880px;
+  margin: 0 auto;
 }
+.finish-section {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+.okucia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 4px;
+}
+.okucia-card {
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s;
+  overflow: hidden;
+}
+.okucia-card:hover { transform: translateY(-2px); border-color: #ccc; box-shadow: var(--shadow-hover); }
+.okucia-card.selected { border-color: var(--accent); background: rgba(232,70,28,.04); }
+.okucia-card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; display: block; margin-bottom: 8px; background: #f0f0f0; }
+.okucia-card strong { display: block; font-size: .9rem; font-weight: 700; color: var(--primary); margin-bottom: 2px; }
+.okucia-card span { display: block; font-size: .76rem; color: var(--t3); line-height: 1.3; }
+@media(max-width:600px){ .finish-grid{ grid-template-columns: 1fr; gap: 16px; } }
+
+/* ── NEW: STEP HEADER (per-step) ── */
+.step-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto 32px;
+  padding: 0 8px;
+}
+.step-head-text { min-width: 0; }
+.step-head-badge {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.step-head-title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: var(--primary);
+  margin: 0 0 10px;
+}
+.step-head-desc {
+  font-size: .95rem;
+  color: var(--t2);
+  line-height: 1.5;
+  margin: 0;
+  max-width: 640px;
+}
+.step-head-hero {
+  width: clamp(180px, 22vw, 280px);
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  background: #1D1D1B center/cover no-repeat;
+  box-shadow: 0 8px 32px rgba(0,0,0,.12);
+}
+@media(max-width:768px){
+  .step-head{ grid-template-columns: 1fr; }
+  .step-head-hero{ display:none; }
+}
+
+/* ── NEW: STEP 3 GRID 3-col with preview ── */
+.s3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(280px, 360px);
+  gap: 28px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.s3-col { display: flex; flex-direction: column; gap: 20px; }
+.s3-section {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 24px;
+}
+.s3-section h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0 0 4px;
+}
+.s3-section .s3-hint {
+  font-size: .82rem;
+  color: var(--t3);
+  margin: 0 0 16px;
+}
+
+/* Profile cards (2-col) */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.profile-card {
+  position: relative;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .2s;
+}
+.profile-card:hover { border-color: #ccc; transform: translateY(-2px); }
+.profile-card.selected { border-color: var(--accent); }
+.profile-card .pc-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg,#f0f0f0,#e0e0e0);
+}
+.profile-card .pc-name {
+  display: block;
+  text-align: center;
+  padding: 10px 8px;
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.profile-card-text {
+  padding: 20px 18px;
+  text-align: center;
+}
+.profile-card-text .pc-name {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.profile-card-text .pc-desc {
+  display: block;
+  font-size: .82rem;
+  color: var(--t3);
+  line-height: 1.4;
+}
+.profile-card .pc-check {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: .7rem;
+}
+.profile-card.selected .pc-check { display: flex; }
+
+/* Color cards (swatches with RAL labels) */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.color-card {
+  position: relative;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 8px 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s;
+}
+.color-card:hover { border-color: #ccc; }
+.color-card.selected { border-color: var(--accent); background: rgba(232,70,28,.04); }
+.color-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+  border: 1px solid rgba(0,0,0,.08);
+}
+.color-card strong { display: block; font-size: .85rem; font-weight: 700; color: var(--primary); }
+.color-card span { display: block; font-size: .72rem; color: var(--t3); margin-top: 1px; }
+.color-card .pc-check {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  color:#fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: .6rem;
+}
+.color-card.selected .pc-check { display: flex; }
+
+/* Hint box (info pod sekcją) */
+.s3-info {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: rgba(232,70,28,.04);
+  border-radius: 8px;
+  font-size: .78rem;
+  color: var(--t2);
+  line-height: 1.4;
+}
+.s3-info svg { flex-shrink: 0; color: var(--accent); margin-top: 1px; }
+
+/* Okucia horizontal cards */
+.okucia-list { display: flex; flex-direction: column; gap: 10px; }
+.okucia-row {
+  display: grid;
+  grid-template-columns: 22px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.okucia-row:hover { border-color: #ccc; }
+.okucia-row.selected { border-color: var(--accent); background: rgba(232,70,28,.04); }
+.okucia-radio {
+  width: 22px; height: 22px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+.okucia-row.selected .okucia-radio { border-color: var(--accent); }
+.okucia-row.selected .okucia-radio::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.okucia-info strong { display:block; font-size:.95rem; font-weight:700; color:var(--primary); margin-bottom:2px; }
+.okucia-info span { display:block; font-size:.78rem; color:var(--t3); line-height:1.35; }
+.okucia-thumbs { display:flex; gap:6px; align-items:center; }
+.okucia-thumbs img,
+.okucia-thumbs .thumb-ph {
+  width: 44px; height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: linear-gradient(135deg,#f0f0f0,#e0e0e0);
+  display: block;
+}
+@media(max-width:520px){ .okucia-thumbs{ display:none; } }
+
+/* Right preview panel */
+.preview-panel {
+  position: sticky;
+  top: 80px;
+  align-self: start;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+}
+.preview-panel h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0 0 14px;
+}
+.preview-hero {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#1D1D1B,#3C3C3C) center/cover no-repeat;
+  margin-bottom: 16px;
+}
+.preview-row {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid #f0f0f0;
+  align-items: center;
+}
+.preview-row:first-of-type { border-top: none; }
+.preview-icon {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+.preview-row .pr-label { display:block; font-size:.72rem; color: var(--t3); margin-bottom: 1px; text-transform: uppercase; letter-spacing: .06em; }
+.preview-row .pr-value { display:block; font-size:.95rem; font-weight: 700; color: var(--accent); }
+.preview-footer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #f0f0f0;
+  font-size: .72rem;
+  color: var(--t3);
+}
+@media(max-width:1100px){
+  .s3-grid{ grid-template-columns: 1fr 1fr; }
+  .preview-panel{ grid-column: 1 / -1; position: static; }
+}
+@media(max-width:720px){
+  .s3-grid{ grid-template-columns: 1fr; }
+}
+
+/* ── NEW: 5-step progress bar (bottom) ── */
+.bb-steps {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  overflow: hidden;
+}
+.bb-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,.5);
+  font-size: .82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: default;
+}
+.bb-step + .bb-step { margin-left: 0; }
+.bb-step::before {
+  content: attr(data-n);
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .72rem;
+  font-weight: 700;
+  color: rgba(255,255,255,.7);
+}
+.bb-step.active { color: #fff; }
+.bb-step.active::before { background: var(--accent); color: #fff; }
+.bb-step.done { color: rgba(255,255,255,.8); }
+.bb-step.done::before { background: rgba(255,255,255,.25); color: #fff; }
+.bb-sep {
+  width: 18px;
+  height: 2px;
+  background: rgba(255,255,255,.15);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+@media(max-width:900px){ .bb-step span{ display:none; } .bb-sep{ width:10px; } }
+
+/* ── NEW: SHARED 2-col step layout (main + preview) for steps 1, 2, 4 ── */
+.s-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 340px);
+  gap: 28px;
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+}
+.s-grid > .preview-panel { position: sticky; top: 80px; }
+.s-main { min-width: 0; }
+@media(max-width:1100px){
+  .s-grid{ grid-template-columns: 1fr; }
+  .s-grid .preview-panel{ position: static; }
+}
+
+/* ── MOBILE PASS (< 768px) ── */
+@media(max-width:768px){
+  .step-head{ margin-bottom: 20px; padding: 0 4px; gap: 16px; }
+  .step-head-title{ font-size: clamp(1.4rem, 6vw, 1.8rem); margin: 0 0 6px; }
+  .step-head-desc{ font-size: .88rem; }
+  .step-head-badge{ font-size: .68rem; margin-bottom: 6px; }
+  .config-wrap{ padding: 20px 12px 90px; }
+  .s3-section{ padding: 16px 14px; border-radius: 10px; }
+  .s3-section h3{ font-size: .98rem; }
+  .s3-section .s3-hint{ font-size: .78rem; margin-bottom: 12px; }
+  .profile-grid{ gap: 10px; }
+  .profile-card-text{ padding: 16px 14px; }
+  .color-grid{ grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .color-card{ padding: 10px 6px 8px; }
+  .color-dot{ width: 36px; height: 36px; margin-bottom: 6px; }
+  .color-card strong{ font-size: .8rem; }
+  .color-card span{ font-size: .68rem; }
+  .okucia-row{ grid-template-columns: 22px 1fr; padding: 12px 14px; gap: 10px; }
+  .okucia-row .okucia-thumbs{ grid-column: 1 / -1; padding-left: 32px; }
+  .okucia-thumbs img,
+  .okucia-thumbs .thumb-ph{ width: 38px; height: 38px; }
+  .preview-panel{ padding: 16px; margin-top: 8px; }
+  .preview-panel h3{ font-size: 1rem; margin-bottom: 10px; }
+  .preview-hero{ aspect-ratio: 16/9; }
+  .preview-row{ padding: 8px 0; }
+  .preview-row .pr-value{ font-size: .88rem; }
+  .preview-icon{ width: 32px; height: 32px; }
+  .equip-row{ flex-wrap: wrap; gap: 8px; padding: 8px 10px; }
+  .equip-row label{ min-width: auto; flex: 0 0 100%; font-size: .8rem; margin-bottom: 2px; }
+  .equip-row select{ flex: 1 1 100%; font-size: .9rem; padding: 10px 12px; }
+  .equip-row .qty-control{ margin-left: auto; }
+  .toggles-grid{ grid-template-columns: 1fr; gap: 8px; }
+  .pills{ gap: 6px; }
+  .pill{ padding: 8px 14px; font-size: .8rem; }
+  .swatch{ width: 44px; height: 44px; }
+}
+
+/* ── EXTRA SMALL (< 480px) ── */
+@media(max-width:480px){
+  .step-head-title{ font-size: 1.4rem; }
+  .step-head-desc{ font-size: .82rem; }
+  .bb-step{ font-size: 0; }
+  .bb-step::before{ width: 20px; height: 20px; font-size: .7rem; }
+  .bb-step.active{ font-size: .76rem; padding-left: 4px; }
+  .bb-sep{ width: 8px; }
+  .bottom-bar{ padding: 8px 12px; height: 56px; }
+  .bar-btn{ padding: 8px 14px; font-size: .8rem; }
+  .dim-inputs{ flex-direction: column; align-items: stretch; gap: 10px; max-width: none !important; }
+  .dim-group{ max-width: none; }
+  .profile-grid{ grid-template-columns: 1fr; }
+  .color-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── A11Y + POLISH ── */
+.profile-card:focus-visible,
+.color-card:focus-visible,
+.okucia-row:focus-visible,
+.type-card:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+.pr-value{ transition: color .25s ease; }
+.preview-row .pr-value.updated{ animation: prvFlash .8s ease; }
+@keyframes prvFlash {
+  0% { background: rgba(232,70,28,.18); }
+  100% { background: transparent; }
+}
+.preview-panel{ transition: box-shadow .2s; }
+.preview-panel:hover{ box-shadow: 0 4px 20px rgba(0,0,0,.05); }
+.profile-card,
+.color-card,
+.okucia-row{ user-select: none; -webkit-tap-highlight-color: transparent; }
+button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* ── STEP 4: EQUIPMENT ── */
 .equip-row {
@@ -631,146 +1095,372 @@ body { background: #F8F9FA; padding-bottom: 0; }
   <div class="config-wrap" id="configWrap">
 
     <!-- STEP 1: PRZEZNACZENIE -->
-    <div class="step-panel active" data-step="1">
-      <h1 class="step-title">{{step1.title}}</h1>
-      <p class="step-sub">{{step1.sub}}</p>
-      <div class="type-grid">
-        {{#step1.types}}
-        <div class="type-card" data-type="{{name}}" onclick="selectType(this)">
-          <img src="{{img}}" alt="{{name}}" loading="lazy">
-          <span>{{name}}</span>
+    <div class="step-panel step-wide active" data-step="1">
+      <div class="step-head">
+        <div class="step-head-text">
+          <p class="step-head-badge">Krok 1 z 5</p>
+          <h1 class="step-head-title">{{step1.title}}</h1>
+          <p class="step-head-desc">{{{step1.description}}}</p>
         </div>
-        {{/step1.types}}
       </div>
-      <div style="text-align:center;margin:20px 0 8px">
-        <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
+
+      <div class="s-grid">
+        <div class="s-main">
+          <div class="type-grid">
+            {{#step1.types}}
+            <div class="type-card" data-type="{{name}}" onclick="selectType(this)">
+              <img src="{{img}}" alt="{{name}}" loading="lazy">
+              <span>{{name}}</span>
+            </div>
+            {{/step1.types}}
+          </div>
+          <div style="text-align:center;margin:20px 0 8px">
+            <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
+          </div>
+          <p class="social-proof">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            {{step1.socialProof}}
+          </p>
+        </div>
+
+        <aside class="preview-panel">
+          <h3>Twój wybór</h3>
+          <div class="preview-hero" id="previewHero1"></div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Model</span>
+              <span class="pr-value" id="prv-model-1">— wybierz —</span>
+            </div>
+          </div>
+          <p class="preview-footer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            Wybór możesz zmienić w każdej chwili.
+          </p>
+        </aside>
       </div>
-      <p class="social-proof">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-        {{step1.socialProof}}
-      </p>
     </div>
 
     <!-- STEP 2: WYMIARY -->
-    <div class="step-panel" data-step="2">
-      <h2 class="step-title">{{step2.title}}</h2>
-      <p class="step-sub">{{step2.sub}}</p>
-      <div class="dim-inputs">
-        <div class="dim-group">
-          <label>Długość</label>
-          <div class="dim-field">
-            <input type="number" id="dimL" step="0.1" min="2" max="18" placeholder="6" oninput="updateDims()">
-            <span class="unit">m</span>
-          </div>
-        </div>
-        <div class="dim-group">
-          <label>Szerokość</label>
-          <div class="dim-field">
-            <input type="number" id="dimW" step="0.1" min="2" max="6" placeholder="3" oninput="updateDims()">
-            <span class="unit">m</span>
-          </div>
-        </div>
-        <div class="dim-group">
-          <label>Wysokość</label>
-          <div class="dim-field">
-            <input type="number" id="dimH" step="0.1" min="2.5" max="4" placeholder="2.8" oninput="updateDims()">
-            <span class="unit">m</span>
-          </div>
+    <div class="step-panel step-wide" data-step="2">
+      <div class="step-head">
+        <div class="step-head-text">
+          <p class="step-head-badge">Krok 2 z 5</p>
+          <h1 class="step-head-title">{{step2.title}}</h1>
+          <p class="step-head-desc">{{{step2.description}}}</p>
         </div>
       </div>
-      <p class="preset-label">{{step2.presetLabel}}</p>
-      <div class="presets">
-        {{#step2.presets}}
-        <button class="preset-btn" onclick="setPreset({{l}},{{w}},{{h}},this)">{{label}}</button>
-        {{/step2.presets}}
+
+      <div class="s-grid">
+        <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
+          <div class="s3-section">
+            <h3>1. Długość i szerokość</h3>
+            <p class="s3-hint">W metrach. Wpisz dokładnie albo wybierz popularny rozmiar.</p>
+            <div class="dim-inputs" style="justify-content:flex-start;max-width:420px">
+              <div class="dim-group">
+                <label>Długość</label>
+                <div class="dim-field">
+                  <input type="number" id="dimL" step="0.1" min="2" max="18" placeholder="6" oninput="updateDims()">
+                  <span class="unit">m</span>
+                </div>
+              </div>
+              <div class="dim-group">
+                <label>Szerokość</label>
+                <div class="dim-field">
+                  <input type="number" id="dimW" step="0.1" min="2" max="6" placeholder="3" oninput="updateDims()">
+                  <span class="unit">m</span>
+                </div>
+              </div>
+            </div>
+            <p class="preset-label" style="margin-top:18px">{{step2.presetLabel}}</p>
+            <div class="presets">
+              {{#step2.presets}}
+              <button class="preset-btn" onclick="setPreset({{l}},{{w}},this)">{{label}}</button>
+              {{/step2.presets}}
+            </div>
+          </div>
+
+          <div class="s3-section">
+            <h3>2. {{step2.heightLabel}}</h3>
+            <p class="s3-hint">Cztery standardy. Różnica 10 cm w panelu. Domyślnie 2,44 m.</p>
+            <div class="pills" data-group="dimH">
+              {{#step2.heights}}<div class="pill" data-val="{{val}}" onclick="selectHeight(this)">{{name}}</div>{{/step2.heights}}
+            </div>
+          </div>
+        </div>
+
+        <aside class="preview-panel">
+          <h3>Twoje wymiary</h3>
+          <div class="preview-hero" id="previewHero2"></div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Model</span>
+              <span class="pr-value" id="prv-model-2">—</span>
+            </div>
+          </div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Wymiary</span>
+              <span class="pr-value" id="prv-dim">— × — × — m</span>
+            </div>
+          </div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Powierzchnia</span>
+              <span class="pr-value" id="prv-area">—</span>
+            </div>
+          </div>
+          <p class="preview-footer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            Wymiary zewnętrzne. Wysokość dachu w środku.
+          </p>
+        </aside>
       </div>
     </div>
 
     <!-- STEP 3: WYKOŃCZENIE -->
-    <div class="step-panel" data-step="3">
-      <h2 class="step-title">{{step3.title}}</h2>
-      <p class="step-sub">{{step3.sub}}</p>
-      <div class="finish-grid">
-        <div>
-          <div class="finish-section">
-            <div class="finish-label">Profil blachy</div>
-            <div class="pills" data-group="profil">
-              {{#step3.profiles}}<div class="pill" onclick="selectPill(this)">{{name}}</div>{{/step3.profiles}}
-            </div>
-          </div>
-          <div class="finish-section">
-            <div class="finish-label">Kolor ścian</div>
-            <div class="swatches" data-group="kolorScian">
-              {{#step3.wallColors}}<div class="swatch" style="background:{{color}}" title="{{name}}" onclick="selectSwatch(this)"></div>{{/step3.wallColors}}
-            </div>
-          </div>
-          <div class="finish-section">
-            <div class="finish-label">Okucia</div>
-            <div class="pills" data-group="okucia">
-              {{#step3.fittingTypes}}<div class="pill" onclick="selectPill(this)">{{name}}</div>{{/step3.fittingTypes}}
-            </div>
-          </div>
+    <div class="step-panel step-wide" data-step="3">
+      <div class="step-head">
+        <div class="step-head-text">
+          <p class="step-head-badge">Krok 3 z 5</p>
+          <h1 class="step-head-title">{{step3.title}}</h1>
+          <p class="step-head-desc">{{{step3.description}}}</p>
         </div>
-        <div>
-          <div class="finish-section">
-            <div class="finish-label">Kolor okuć</div>
-            <div class="pills" data-group="kolorOkuc">
-              {{#step3.fittingColors}}<div class="pill" onclick="selectPill(this)">{{name}}</div>{{/step3.fittingColors}}
+      </div>
+
+      <div class="s-grid">
+        <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
+          <div class="s3-section">
+            <h3>1. Profil płyty warstwowej</h3>
+            <p class="s3-hint">Wybierz fakturę zewnętrzną płyty ściennej.</p>
+            <div class="profile-grid" data-group="profil">
+              {{#step3.profiles}}
+              <div class="profile-card profile-card-text" data-name="{{name}}" onclick="selectProfile(this)">
+                <strong class="pc-name">{{name}}</strong>
+                <span class="pc-desc">{{desc}}</span>
+                <span class="pc-check">&#10003;</span>
+              </div>
+              {{/step3.profiles}}
             </div>
           </div>
-          <div class="finish-section">
-            <div class="finish-label">Rozmieszczenie okuć</div>
+
+          <div class="s3-section">
+            <h3>2. Kolor ścian</h3>
+            <p class="s3-hint">Wybierz kolor zewnętrzny płyty.</p>
+            <div class="color-grid" data-group="kolorScian">
+              {{#step3.wallColors}}
+              <div class="color-card" data-name="{{name}}" onclick="selectWallColor(this)">
+                <div class="color-dot" style="background:{{{color}}}"></div>
+                <strong>{{name}}</strong>
+                <span>{{ral}}</span>
+                <span class="pc-check">&#10003;</span>
+              </div>
+              {{/step3.wallColors}}
+            </div>
+            <div class="s3-info">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+              <span>Możesz wybrać dowolny kolor z palety RAL.</span>
+            </div>
+          </div>
+
+          <div class="s3-section">
+            <h3>3. Okucia</h3>
+            <p class="s3-hint">Wybierz typ okuć. Dla premium pojawia się dodatkowo wybór koloru akcesoriów.</p>
+            <div class="okucia-list" data-group="okucia">
+              {{#step3.fittingTypes}}
+              <div class="okucia-row" data-name="{{name}}" onclick="selectOkucia(this)">
+                <div class="okucia-radio"></div>
+                <div class="okucia-info">
+                  <strong>{{name}}</strong>
+                  <span>{{desc}}</span>
+                </div>
+                <div class="okucia-thumbs">
+                  {{#thumbs}}<img src="{{.}}" alt="" onerror="this.style.visibility='hidden'">{{/thumbs}}
+                </div>
+              </div>
+              {{/step3.fittingTypes}}
+            </div>
+          </div>
+
+          <div class="s3-section" id="kolorOkucSection">
+            <h3>Kolor okuć</h3>
+            <p class="s3-hint">Dotyczy okuć specjalnych premium.</p>
+            <div class="color-grid color-grid-6" data-group="kolorOkuc">
+              {{#step3.fittingColors}}
+              <div class="color-card" data-name="{{name}}" onclick="selectKolorOkuc(this)">
+                <div class="color-dot" style="background:{{{color}}}"></div>
+                <strong>{{name}}</strong>
+                <span>{{ral}}</span>
+                <span class="pc-check">&#10003;</span>
+              </div>
+              {{/step3.fittingColors}}
+            </div>
+          </div>
+
+          <div class="s3-section">
+            <h3>4. Rozmieszczenie okuć</h3>
+            <p class="s3-hint">Gdzie umieścić elementy ozdobne.</p>
             <div class="pills" data-group="rozmOkuc">
               {{#step3.fittingPlacement}}<div class="pill" onclick="selectPill(this)">{{name}}</div>{{/step3.fittingPlacement}}
             </div>
           </div>
         </div>
+
+        <aside class="preview-panel">
+          <h3>Podgląd wykończenia</h3>
+          <div class="preview-hero" id="previewHero"></div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 14c2-3 4-3 6 0s4 3 6 0 4-3 6 0"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Profil płyty</span>
+              <span class="pr-value" id="prv-profil">Mikrofala</span>
+            </div>
+          </div>
+          <div class="preview-row">
+            <div class="preview-icon" id="prv-kolor-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg></div>
+            <div>
+              <span class="pr-label">Kolor ścian</span>
+              <span class="pr-value" id="prv-kolor">Czarny (RAL 9005)</span>
+            </div>
+          </div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r="1"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Okucia</span>
+              <span class="pr-value" id="prv-okucia">Podstawowe</span>
+            </div>
+          </div>
+          <p class="preview-footer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            Podgląd ma charakter poglądowy.
+          </p>
+        </aside>
       </div>
     </div>
 
-    <!-- STEP 4: WYPOSAŻENIE -->
-    <div class="step-panel" data-step="4">
-      <h2 class="step-title">{{step4.title}}</h2>
-      <p class="step-sub">{{step4.sub}}</p>
-      <div class="equip-row">
-        <label>Drzwi</label>
-        <select id="doorType">
-          {{#step4.doorTypes}}<option>{{name}}</option>{{/step4.doorTypes}}
-        </select>
-        <div class="qty-control">
-          <button class="qty-btn" onclick="changeQty('doorQty',-1)">−</button>
-          <span class="qty-val" id="doorQty">1</span>
-          <button class="qty-btn" onclick="changeQty('doorQty',1)">+</button>
+    <!-- STEP 4: DODATKI -->
+    <div class="step-panel step-wide" data-step="4">
+      <div class="step-head">
+        <div class="step-head-text">
+          <p class="step-head-badge">Krok 4 z 5</p>
+          <h1 class="step-head-title">{{step4.title}}</h1>
+          <p class="step-head-desc">{{{step4.description}}}</p>
         </div>
       </div>
-      <div class="equip-row">
-        <label>Okna</label>
-        <select id="windowType">
-          {{#step4.windowTypes}}<option>{{name}}</option>{{/step4.windowTypes}}
-        </select>
-        <div class="qty-control">
-          <button class="qty-btn" onclick="changeQty('windowQty',-1)">−</button>
-          <span class="qty-val" id="windowQty">2</span>
-          <button class="qty-btn" onclick="changeQty('windowQty',1)">+</button>
-        </div>
-      </div>
-      <div style="margin-top:8px">
-        <div class="finish-label">Dodatkowe wyposażenie</div>
-        <div class="toggles-grid">
-          {{#step4.extras}}
-          <div class="toggle-item" onclick="toggleItem(this)" data-equip="{{name}}">
-            <span>{{name}}</span>
-            <div class="toggle-switch"></div>
+
+      <div class="s-grid">
+        <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
+          <div class="s3-section">
+            <h3>1. Drzwi</h3>
+            <p class="s3-hint">Typ, przeszklenie i liczba.</p>
+            <div class="equip-row" style="background:transparent;border:none;padding:0">
+              <label>Typ</label>
+              <select id="doorType">
+                {{#step4.doorTypes}}<option>{{name}}</option>{{/step4.doorTypes}}
+              </select>
+              <select id="doorGlazing">
+                {{#step4.doorGlazing}}<option>{{name}}</option>{{/step4.doorGlazing}}
+              </select>
+              <div class="qty-control">
+                <button class="qty-btn" onclick="changeQty('doorQty',-1)">−</button>
+                <span class="qty-val" id="doorQty">1</span>
+                <button class="qty-btn" onclick="changeQty('doorQty',1)">+</button>
+              </div>
+            </div>
           </div>
-          {{/step4.extras}}
+
+          <div class="s3-section">
+            <h3>2. Okna</h3>
+            <p class="s3-hint">Typ okien i ilość.</p>
+            <div class="equip-row" style="background:transparent;border:none;padding:0">
+              <label>Typ</label>
+              <select id="windowType">
+                {{#step4.windowTypes}}<option>{{name}}</option>{{/step4.windowTypes}}
+              </select>
+              <div class="qty-control">
+                <button class="qty-btn" onclick="changeQty('windowQty',-1)">−</button>
+                <span class="qty-val" id="windowQty">2</span>
+                <button class="qty-btn" onclick="changeQty('windowQty',1)">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="s3-section">
+            <h3>3. Dodatkowe wyposażenie</h3>
+            <p class="s3-hint">Wybierz opcje, które potrzebujesz. Wszystkie opcjonalne.</p>
+            <div class="toggles-grid">
+              {{#step4.extras}}
+              <div class="toggle-item" onclick="toggleItem(this)" data-equip="{{name}}">
+                <span>{{name}}</span>
+                <div class="toggle-switch"></div>
+              </div>
+              {{/step4.extras}}
+            </div>
+          </div>
         </div>
+
+        <aside class="preview-panel">
+          <h3>Twoje dodatki</h3>
+          <div class="preview-hero" id="previewHero4"></div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r="1"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Drzwi</span>
+              <span class="pr-value" id="prv-drzwi">—</span>
+            </div>
+          </div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 12h18M12 3v18"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Okna</span>
+              <span class="pr-value" id="prv-okna">—</span>
+            </div>
+          </div>
+          <div class="preview-row">
+            <div class="preview-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <span class="pr-label">Dodatki</span>
+              <span class="pr-value" id="prv-extras">brak</span>
+            </div>
+          </div>
+          <p class="preview-footer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            Wszystko można jeszcze doprecyzować w rozmowie.
+          </p>
+        </aside>
       </div>
     </div>
 
     <!-- STEP 5: PODSUMOWANIE -->
     <div class="step-panel step-wide" data-step="5">
-      <h2 class="step-title">{{step5.title}}</h2>
-      <p class="step-sub">{{step5.sub}}</p>
+      <div class="step-head">
+        <div class="step-head-text">
+          <p class="step-head-badge">Krok 5 z 5</p>
+          <h1 class="step-head-title">{{step5.title}}</h1>
+          <p class="step-head-desc">{{{step5.description}}}</p>
+        </div>
+      </div>
       <div class="summary-layout">
         <div class="summary-card">
           <h3>{{step5.summaryHeading}}</h3>
@@ -813,12 +1503,21 @@ body { background: #F8F9FA; padding-bottom: 0; }
 
   <!-- BOTTOM BAR -->
   <div class="bottom-bar" id="bottomBar">
-    <div class="bar-left">
-      <span class="bar-step" id="barStep">Krok 1 z 5</span>
-      <div class="bar-chips" id="barChips"></div>
-    </div>
-    <div class="bar-right">
+    <div class="bar-right" style="flex-shrink:0">
       <button class="bar-btn bar-back" id="btnBack" onclick="goBack()" disabled>&#8592; Wstecz</button>
+    </div>
+    <div class="bb-steps" id="bbSteps">
+      <span class="bb-step" data-n="1"><span>Model</span></span>
+      <span class="bb-sep"></span>
+      <span class="bb-step" data-n="2"><span>Wymiary</span></span>
+      <span class="bb-sep"></span>
+      <span class="bb-step" data-n="3"><span>Wykończenie</span></span>
+      <span class="bb-sep"></span>
+      <span class="bb-step" data-n="4"><span>Dodatki</span></span>
+      <span class="bb-sep"></span>
+      <span class="bb-step" data-n="5"><span>Podsumowanie</span></span>
+    </div>
+    <div class="bar-right" style="flex-shrink:0">
       <button class="bar-btn bar-next" id="btnNext" onclick="goNext()" disabled>Dalej &#8594;</button>
     </div>
   </div>
@@ -828,13 +1527,14 @@ body { background: #F8F9FA; padding-bottom: 0; }
 const state = {
   step: 1,
   type: '',
-  dimL: '', dimW: '', dimH: '',
-  profil: 'Gładka',
-  kolorScian: 'Biały',
+  dimL: '', dimW: '', dimH: '2.44',
+  profil: 'Mikrofala',
+  kolorScian: 'Antracyt',
   okucia: 'Podstawowe',
-  kolorOkuc: 'Biały',
-  rozmOkuc: 'Wszystkie narożniki',
+  kolorOkuc: 'Antracyt',
+  rozmOkuc: '2 narożniki',
   doorType: 'Jednoskrzydłowe',
+  doorGlazing: 'Pełne',
   doorQty: 1,
   windowType: 'Uchylne 80×60 cm',
   windowQty: 2,
@@ -862,24 +1562,38 @@ function restoreUI() {
       if (c.dataset.type === state.type) c.classList.add('selected');
     });
   }
-  // Restore dims
+  // Restore dims (L/W only — H is a pill group)
   if (state.dimL) document.getElementById('dimL').value = state.dimL;
   if (state.dimW) document.getElementById('dimW').value = state.dimW;
-  if (state.dimH) document.getElementById('dimH').value = state.dimH;
-  // Restore pills
-  restorePills('profil', state.profil);
-  restorePills('okucia', state.okucia);
-  restorePills('kolorOkuc', state.kolorOkuc);
+  // Restore pills (rozmOkuc still pills)
   restorePills('rozmOkuc', state.rozmOkuc);
-  // Restore swatches
-  document.querySelectorAll('[data-group="kolorScian"] .swatch').forEach(s => {
-    s.classList.toggle('selected', s.title === state.kolorScian);
+  // Restore profile cards (data-name based)
+  document.querySelectorAll('.profile-card').forEach(c => {
+    c.classList.toggle('selected', c.dataset.name === state.profil);
+  });
+  // Restore wall color cards
+  document.querySelectorAll('[data-group="kolorScian"] .color-card').forEach(c => {
+    c.classList.toggle('selected', c.dataset.name === state.kolorScian);
+  });
+  // Restore kolor okuc cards
+  document.querySelectorAll('[data-group="kolorOkuc"] .color-card').forEach(c => {
+    c.classList.toggle('selected', c.dataset.name === state.kolorOkuc);
+  });
+  // Restore okucia (rows, data-name based)
+  document.querySelectorAll('.okucia-row').forEach(c => {
+    c.classList.toggle('selected', c.dataset.name === state.okucia);
+  });
+  // Restore height pill (data-val based)
+  document.querySelectorAll('[data-group="dimH"] .pill').forEach(p => {
+    p.classList.toggle('selected', p.dataset.val === state.dimH);
   });
   // Restore equip
   document.getElementById('doorType').value = state.doorType;
+  document.getElementById('doorGlazing').value = state.doorGlazing;
   document.getElementById('doorQty').textContent = state.doorQty;
   document.getElementById('windowType').value = state.windowType;
   document.getElementById('windowQty').textContent = state.windowQty;
+  updateOkuciaUI();
   // Restore toggles
   document.querySelectorAll('.toggle-item').forEach(t => {
     if (state.extras.includes(t.dataset.equip)) t.classList.add('on');
@@ -920,7 +1634,6 @@ function goBack() {
 }
 
 function updateBar() {
-  document.getElementById('barStep').textContent = `Krok ${state.step} z ${totalSteps}`;
   document.getElementById('btnBack').disabled = state.step === 1;
 
   // Next button logic
@@ -932,12 +1645,12 @@ function updateBar() {
     btnNext.disabled = !canProceed();
   }
 
-  // Chips
-  const chips = [];
-  if (state.type) chips.push(state.type);
-  if (state.dimL && state.dimW) chips.push(`${state.dimL}×${state.dimW} m`);
-  if (state.step >= 3 && state.profil) chips.push(`${state.profil} ${state.kolorScian.toLowerCase()}`);
-  document.getElementById('barChips').innerHTML = chips.map(c => `<span class="bar-chip">${c}</span>`).join('');
+  // Highlight active step in progress bar
+  document.querySelectorAll('.bb-step').forEach(el => {
+    const n = parseInt(el.dataset.n);
+    el.classList.toggle('active', n === state.step);
+    el.classList.toggle('done', n < state.step);
+  });
 }
 
 function canProceed() {
@@ -953,6 +1666,7 @@ function selectType(el) {
   state.type = el.dataset.type;
   saveState();
   updateBar();
+  updatePreview();
   setTimeout(() => goNext(), 300);
 }
 
@@ -960,24 +1674,32 @@ function selectType(el) {
 function updateDims() {
   state.dimL = document.getElementById('dimL').value;
   state.dimW = document.getElementById('dimW').value;
-  state.dimH = document.getElementById('dimH').value;
-  // Clear preset selection
   document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('selected'));
   saveState();
   updateBar();
+  updatePreview();
 }
 
-function setPreset(l, w, h, el) {
+function setPreset(l, w, el) {
   document.getElementById('dimL').value = l;
   document.getElementById('dimW').value = w;
-  document.getElementById('dimH').value = h;
   state.dimL = String(l);
   state.dimW = String(w);
-  state.dimH = String(h);
   document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('selected'));
   el.classList.add('selected');
   saveState();
   updateBar();
+  updatePreview();
+}
+
+function selectHeight(el) {
+  const parent = el.parentElement;
+  parent.querySelectorAll('.pill').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+  state.dimH = el.dataset.val;
+  saveState();
+  updateBar();
+  updatePreview();
 }
 
 // ── STEP 3 ──
@@ -988,6 +1710,130 @@ function selectPill(el) {
   const groupName = group.dataset.group;
   if (groupName) state[groupName] = el.textContent;
   saveState();
+}
+
+function selectOkucia(el) {
+  const group = el.parentElement;
+  group.querySelectorAll('.okucia-row').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.okucia = el.dataset.name;
+  saveState();
+  updateOkuciaUI();
+  updatePreview();
+}
+
+function selectProfile(el) {
+  const group = el.parentElement;
+  group.querySelectorAll('.profile-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.profil = el.dataset.name;
+  saveState();
+  updatePreview();
+}
+
+function selectWallColor(el) {
+  const group = el.parentElement;
+  group.querySelectorAll('.color-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.kolorScian = el.dataset.name;
+  state.kolorScianRal = el.querySelector('span').textContent;
+  state.kolorScianHex = el.querySelector('.color-dot').style.background;
+  saveState();
+  updatePreview();
+}
+
+function selectKolorOkuc(el) {
+  const group = el.parentElement;
+  group.querySelectorAll('.color-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.kolorOkuc = el.dataset.name;
+  state.kolorOkucRal = el.querySelector('span').textContent;
+  saveState();
+}
+
+function setPrv(el, val) {
+  if (!el) return;
+  const newVal = val == null ? '—' : String(val);
+  if (el.textContent === newVal) return;
+  el.textContent = newVal;
+  el.classList.remove('updated');
+  // Force reflow then re-add class to retrigger animation
+  void el.offsetWidth;
+  el.classList.add('updated');
+}
+
+function updatePreview() {
+  // Step 1 preview
+  const prvModel1 = document.getElementById('prv-model-1');
+  const previewHero1 = document.getElementById('previewHero1');
+  setPrv(prvModel1, state.type || '— wybierz —');
+
+  // Step 2 preview
+  const prvModel2 = document.getElementById('prv-model-2');
+  const prvDim = document.getElementById('prv-dim');
+  const prvArea = document.getElementById('prv-area');
+  const previewHero2 = document.getElementById('previewHero2');
+  // Step 4 preview
+  const prvDrzwi = document.getElementById('prv-drzwi');
+  const prvOkna = document.getElementById('prv-okna');
+  const prvExtras = document.getElementById('prv-extras');
+  const previewHero4 = document.getElementById('previewHero4');
+  setPrv(prvDrzwi, (state.doorType && state.doorGlazing)
+    ? state.doorType + ', ' + state.doorGlazing.toLowerCase() + ' × ' + state.doorQty
+    : '—');
+  setPrv(prvOkna, state.windowType
+    ? state.windowType + ' × ' + state.windowQty
+    : '—');
+  setPrv(prvExtras, state.extras.length
+    ? state.extras.join(', ')
+    : 'brak');
+  setPrv(prvModel2, state.type || '—');
+  if (prvDim) {
+    const L = state.dimL || '—';
+    const W = state.dimW || '—';
+    const H = state.dimH || '—';
+    setPrv(prvDim, L + ' × ' + W + ' × ' + H + ' m');
+  }
+  if (prvArea) {
+    const L = parseFloat(state.dimL);
+    const W = parseFloat(state.dimW);
+    setPrv(prvArea, (L > 0 && W > 0) ? (L * W).toFixed(1) + ' m²' : '—');
+  }
+
+  // Step 3 preview
+  const prvProfil = document.getElementById('prv-profil');
+  const prvKolor = document.getElementById('prv-kolor');
+  const prvOkucia = document.getElementById('prv-okucia');
+  const prvKolorIcon = document.getElementById('prv-kolor-icon');
+  const previewHero = document.getElementById('previewHero');
+  const stepHero3 = document.getElementById('stepHeadHero3');
+
+  setPrv(prvProfil, state.profil || '—');
+  setPrv(prvKolor, state.kolorScian
+    ? state.kolorScian + (state.kolorScianRal ? ' (' + state.kolorScianRal + ')' : '')
+    : '—');
+  setPrv(prvOkucia, state.okucia || '—');
+  if (prvKolorIcon && state.kolorScianHex) {
+    const circle = prvKolorIcon.querySelector('circle');
+    if (circle) circle.setAttribute('fill', state.kolorScianHex.includes('gradient') ? '#888' : state.kolorScianHex);
+  }
+
+  // Hero image — model from step 1 (fallback gradient if missing)
+  const modelImg = state.type ? 'assets/modele/' + state.type.toLowerCase() + '.webp' : '';
+  const bg = modelImg
+    ? "url('" + modelImg + "'), linear-gradient(135deg,#1D1D1B,#3C3C3C)"
+    : "linear-gradient(135deg,#1D1D1B,#3C3C3C)";
+  if (previewHero1) previewHero1.style.backgroundImage = bg;
+  if (previewHero2) previewHero2.style.backgroundImage = bg;
+  if (previewHero4) previewHero4.style.backgroundImage = bg;
+  if (previewHero) previewHero.style.backgroundImage = bg;
+  if (stepHero3) stepHero3.style.backgroundImage = bg;
+}
+
+function updateOkuciaUI() {
+  const sec = document.getElementById('kolorOkucSection');
+  if (!sec) return;
+  sec.style.display = (state.okucia && state.okucia.toLowerCase().includes('podstaw')) ? 'none' : '';
 }
 
 function selectSwatch(el) {
@@ -1007,6 +1853,7 @@ function changeQty(id, delta) {
   el.textContent = val;
   state[id] = val;
   saveState();
+  updatePreview();
 }
 
 function toggleItem(el) {
@@ -1018,37 +1865,58 @@ function toggleItem(el) {
     state.extras = state.extras.filter(e => e !== name);
   }
   saveState();
+  updatePreview();
 }
 
 // Sync selects
 document.getElementById('doorType').addEventListener('change', function() {
   state.doorType = this.value;
   saveState();
+  updatePreview();
+});
+document.getElementById('doorGlazing').addEventListener('change', function() {
+  state.doorGlazing = this.value;
+  saveState();
+  updatePreview();
 });
 document.getElementById('windowType').addEventListener('change', function() {
   state.windowType = this.value;
   saveState();
+  updatePreview();
 });
 
 // ── STEP 5 ──
 function buildSummary() {
+  const isPodstaw = state.okucia && state.okucia.toLowerCase().includes('podstaw');
   const rows = [
     ['Przeznaczenie', state.type],
     ['Wymiary', `${state.dimL} × ${state.dimW} × ${state.dimH} m`],
     ['Profil blachy', state.profil],
     ['Kolor ścian', state.kolorScian],
     ['Okucia', state.okucia],
-    ['Kolor okuć', state.kolorOkuc],
+    ['Kolor okuć', isPodstaw ? 'zgodny z płytą' : state.kolorOkuc],
     ['Rozmieszczenie okuć', state.rozmOkuc],
-    ['Drzwi', `${state.doorType} × ${state.doorQty}`],
+    ['Drzwi', `${state.doorType}, ${state.doorGlazing} × ${state.doorQty}`],
     ['Okna', `${state.windowType} × ${state.windowQty}`],
   ];
   if (state.extras.length) {
     rows.push(['Wyposażenie dodatkowe', state.extras.join(', ')]);
   }
-  document.getElementById('summaryRows').innerHTML = rows.map(([l, v]) =>
-    `<div class="summary-row"><span class="s-label">${l}</span><span class="s-value">${v || '—'}</span></div>`
-  ).join('');
+  const container = document.getElementById('summaryRows');
+  container.textContent = '';
+  rows.forEach(([l, v]) => {
+    const row = document.createElement('div');
+    row.className = 'summary-row';
+    const label = document.createElement('span');
+    label.className = 's-label';
+    label.textContent = l;
+    const value = document.createElement('span');
+    value.className = 's-value';
+    value.textContent = v || '—';
+    row.appendChild(label);
+    row.appendChild(value);
+    container.appendChild(row);
+  });
 }
 
 // ── FORM SUBMIT ──
@@ -1098,9 +1966,39 @@ if (urlType) {
 // Init: select first pill/swatch in each group
 document.querySelectorAll('.pills').forEach(g => { const f = g.querySelector('.pill'); if (f) f.classList.add('selected'); });
 document.querySelectorAll('.swatches').forEach(g => { const f = g.querySelector('.swatch'); if (f) f.classList.add('selected'); });
+// Override: dimH group selects pill matching state.dimH (default 2.44), not first
+document.querySelectorAll('[data-group="dimH"] .pill').forEach(p => {
+  p.classList.toggle('selected', p.dataset.val === state.dimH);
+});
+// Profile cards default selection (state.profil)
+document.querySelectorAll('.profile-card').forEach(c => {
+  c.classList.toggle('selected', c.dataset.name === state.profil);
+});
+// Wall color cards (state.kolorScian)
+document.querySelectorAll('[data-group="kolorScian"] .color-card').forEach(c => {
+  c.classList.toggle('selected', c.dataset.name === state.kolorScian);
+});
+// Kolor okuc cards (state.kolorOkuc)
+document.querySelectorAll('[data-group="kolorOkuc"] .color-card').forEach(c => {
+  c.classList.toggle('selected', c.dataset.name === state.kolorOkuc);
+});
+// Okucia rows (state.okucia)
+document.querySelectorAll('.okucia-row').forEach(c => {
+  c.classList.toggle('selected', c.dataset.name === state.okucia);
+});
+// Capture default wall color RAL + hex from the selected card
+(function(){
+  const sel = document.querySelector('[data-group="kolorScian"] .color-card.selected');
+  if (sel) {
+    state.kolorScianRal = sel.querySelector('span').textContent;
+    state.kolorScianHex = sel.querySelector('.color-dot').style.background;
+  }
+})();
 
-// Init bar
+// Init bar + okucia conditional UI + preview
 updateBar();
+updateOkuciaUI();
+updatePreview();
 </script>
   <script type="application/ld+json">
   {
@@ -1113,5 +2011,6 @@ updateBar();
   }
   </script>
   <script src="form-handler.js"></script>
+  <script src="{{{root}}}cookies.js" defer></script>
 </body>
 </html>

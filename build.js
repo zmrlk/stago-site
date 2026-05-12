@@ -81,7 +81,8 @@ function getPages() {
     })),
     // Static pages (i18n via page.html template)
     ...['faq','kontakt','realizacje','finansowanie','jak-kupic','technologia',
-       'pawilon-vs-najem','dostepne-od-reki','polityka-prywatnosci','regulamin'].map(s => ({
+       'pawilon-vs-najem','dostepne-od-reki','polityka-prywatnosci','polityka-cookies',
+       'regulamin','regulamin-sprzedazy'].map(s => ({
       content: `pages/${s}.json`, template: 'templates/page.html', output: `${s}.html`, i18n: true
     })),
     // SEO landing pages (PL only for now)

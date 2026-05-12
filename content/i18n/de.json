@@ -43,7 +43,8 @@
     "name": "Vor- und Nachname",
     "phone": "Telefon",
     "email": "E-Mail (optional)",
-    "consent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten zu.",
+    "consent": "Ich habe die Informationen zur Datenverarbeitung gelesen und stimme der Kontaktaufnahme zur Bereitstellung des Materials und zur Bearbeitung meiner Anfrage zu.",
+    "consentOptional": "Ich willige ein, dass STAGO GROUP Sp. z o.o. mir geschäftliche und werbliche Informationen zum STAGO-Angebot per E-Mail, Telefon oder SMS zusendet. Die Einwilligung kann ich jederzeit widerrufen.",
     "privacyLink": "Datenschutz",
     "submit": "Anfrage senden",
     "note": "Wir rufen innerhalb von 24 Stunden zurück. Angebot kostenlos, unverbindlich.",
@@ -80,7 +81,9 @@
     "kontakt": "Kontakt",
     "contactPage": "Kontaktseite &rarr;",
     "privacy": "Datenschutz",
-    "terms": "AGB",
+    "cookiesPolicy": "Cookie-Richtlinie",
+    "terms": "Nutzungsbedingungen",
+    "salesTerms": "Verkaufsbedingungen",
     "cookies": "Cookie-Einstellungen",
     "madeBy": "Erstellt von"
   },
@@ -94,5 +97,21 @@
     "meetUs": "Lernen Sie uns kennen &rarr;",
     "visitUs": "Besuchen Sie uns"
   },
-  "areaServed": "Germany"
+  "areaServed": "Germany",
+  "cookieBanner": {
+    "title": "Cookies und Datenschutz",
+    "description": "Wir verwenden notwendige Cookies für den Betrieb der Website. Mit Ihrer Einwilligung aktivieren wir analytische Cookies (Google Analytics) und Marketing-Cookies (Meta Pixel, TikTok Pixel), um die Wirksamkeit der Website und Kampagnen zu messen.",
+    "acceptAll": "Alle akzeptieren",
+    "onlyNecessary": "Nur notwendige",
+    "settings": "Einstellungen",
+    "savePreferences": "Auswahl speichern",
+    "categoryNecessary": "Notwendig",
+    "categoryNecessaryDesc": "Erforderlich für die Funktion der Website, Formulare und das Speichern von Einstellungen. Immer aktiv.",
+    "categoryAnalytics": "Analytisch",
+    "categoryAnalyticsDesc": "Google Analytics 4 — Messung von Traffic, Quellen und Ereignissen auf der Website.",
+    "categoryMarketing": "Marketing",
+    "categoryMarketingDesc": "Meta Pixel und TikTok Pixel — Messung der Werbewirksamkeit und Remarketing.",
+    "moreInfo": "Mehr in der",
+    "moreInfoLink": "Cookie-Richtlinie"
+  }
 }

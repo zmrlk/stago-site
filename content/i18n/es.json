@@ -43,7 +43,8 @@
     "name": "Nombre y apellidos",
     "phone": "Teléfono",
     "email": "E-mail (opcional)",
-    "consent": "Acepto el tratamiento de mis datos personales.",
+    "consent": "He leído la información sobre el tratamiento de datos y acepto el contacto para el envío del material y la atención a mi consulta.",
+    "consentOptional": "Acepto recibir de STAGO GROUP Sp. z o.o. información comercial y de marketing sobre la oferta de STAGO por correo electrónico, teléfono o SMS. Puedo retirar el consentimiento en cualquier momento.",
     "privacyLink": "Política de privacidad",
     "submit": "Enviar solicitud",
     "note": "Le llamamos en 24 horas. Presupuesto gratis y sin compromiso.",
@@ -80,7 +81,9 @@
     "kontakt": "Contacto",
     "contactPage": "Página de contacto &rarr;",
     "privacy": "Política de privacidad",
-    "terms": "Condiciones",
+    "cookiesPolicy": "Política de cookies",
+    "terms": "Condiciones de uso",
+    "salesTerms": "Condiciones de venta",
     "cookies": "Ajustes de cookies",
     "madeBy": "Creado por"
   },
@@ -94,5 +97,21 @@
     "meetUs": "Conózcanos mejor &rarr;",
     "visitUs": "Visítenos"
   },
-  "areaServed": "Spain"
+  "areaServed": "Spain",
+  "cookieBanner": {
+    "title": "Cookies y privacidad",
+    "description": "Usamos cookies necesarias para el funcionamiento del sitio. Con su consentimiento activaremos cookies analíticas (Google Analytics) y de marketing (Meta Pixel, TikTok Pixel) para medir la eficacia del sitio y de las campañas.",
+    "acceptAll": "Aceptar todas",
+    "onlyNecessary": "Solo necesarias",
+    "settings": "Ajustes",
+    "savePreferences": "Guardar selección",
+    "categoryNecessary": "Necesarias",
+    "categoryNecessaryDesc": "Necesarias para el funcionamiento del sitio, los formularios y para recordar los ajustes. Siempre activas.",
+    "categoryAnalytics": "Analíticas",
+    "categoryAnalyticsDesc": "Google Analytics 4 — medición de tráfico, fuentes y eventos en el sitio.",
+    "categoryMarketing": "Marketing",
+    "categoryMarketingDesc": "Meta Pixel y TikTok Pixel — medición de la eficacia de los anuncios y remarketing.",
+    "moreInfo": "Más información en la",
+    "moreInfoLink": "Política de cookies"
+  }
 }

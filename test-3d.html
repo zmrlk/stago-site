@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfigurator 3D — STAGO Container BOX</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; color: #1d1d1b; }
+
+    .layout {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* ── 3D VIEWPORT ── */
+    .viewport {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(180deg, #e0e0e2 0%, #c8c8ca 100%);
+    }
+    #canvas3d {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .viewport-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(0,0,0,.6);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      width: 360px;
+      background: #fff;
+      border-left: 1px solid #e0e0e0;
+      overflow-y: auto;
+      padding: 24px 20px;
+    }
+    .sidebar h1 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .sidebar .sub {
+      font-size: .82rem;
+      color: #888;
+      margin-bottom: 24px;
+    }
+
+    .section {
+      margin-bottom: 22px;
+    }
+    .section-title {
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    /* Swatch buttons */
+    .swatch-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .swatch {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      border: 2px solid #ddd;
+      cursor: pointer;
+      transition: all .15s;
+      position: relative;
+    }
+    .swatch:hover { transform: scale(1.08); border-color: #aaa; }
+    .swatch.active { border-color: #e8461c; box-shadow: 0 0 0 3px rgba(232,70,28,.2); }
+    .swatch-label {
+      font-size: .65rem;
+      text-align: center;
+      margin-top: 3px;
+      color: #888;
+      font-weight: 600;
+    }
+    .swatch-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    /* Wood swatch texture */
+    .swatch-wood-winchester {
+      background: linear-gradient(160deg, #a67841 0%, #7a5028 30%, #b8864a 50%, #8a6030 70%, #a07040 100%);
+    }
+    .swatch-wood-gold {
+      background: linear-gradient(160deg, #c8964a 0%, #a07030 30%, #d4a458 50%, #b08038 70%, #c09048 100%);
+    }
+
+    /* Pill buttons */
+    .pill-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+      border-radius: 100px;
+      background: #fff;
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+      color: #1d1d1b;
+    }
+    .pill:hover { border-color: #e8461c; color: #e8461c; }
+    .pill.active { border-color: #e8461c; background: rgba(232,70,28,.06); color: #e8461c; }
+
+    .divider {
+      height: 1px;
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .layout { flex-direction: column; }
+      .viewport { height: 50vh; }
+      .sidebar { width: 100%; height: 50vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- 3D Viewport -->
+    <div class="viewport">
+      <canvas id="canvas3d"></canvas>
+      <div class="viewport-badge">STAGO BOX — Konfigurator 3D</div>
+    </div>
+
+    <!-- Sidebar controls -->
+    <div class="sidebar">
+      <h1>Kontener BOX</h1>
+      <p class="sub">4.0 × 2.5 × 2.8 m</p>
+
+      <!-- KOLOR ŚCIAN (sandwich panels) -->
+      <div class="section">
+        <div class="section-title">Kolor ścian</div>
+        <div class="swatch-row">
+          <div class="swatch-item">
+            <div class="swatch active" style="background:#3C3C3C" data-group="walls" data-color="anthracite" onclick="setWallColor(this)"></div>
+            <span class="swatch-label">Antracyt</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch" style="background:#1D1D1B" data-group="walls" data-color="black" onclick="setWallColor(this)"></div>
+            <span class="swatch-label">Czarny</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch" style="background:#f0f0f0; border-color:#ccc" data-group="walls" data-color="white" onclick="setWallColor(this)"></div>
+            <span class="swatch-label">Biały</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch" style="background:#8B8B8B" data-group="walls" data-color="grey" onclick="setWallColor(this)"></div>
+            <span class="swatch-label">Szary</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KOLOR OKUĆ (cassettes) -->
+      <div class="section">
+        <div class="section-title">Kolor okuć</div>
+        <div class="swatch-row">
+          <div class="swatch-item">
+            <div class="swatch active" style="background:#3C3C3C" data-group="cassettes" data-color="anthracite" onclick="setCassetteColor(this)"></div>
+            <span class="swatch-label">Antracyt</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch" style="background:#1D1D1B" data-group="cassettes" data-color="black" onclick="setCassetteColor(this)"></div>
+            <span class="swatch-label">Czarny</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch" style="background:#f0f0f0; border-color:#ccc" data-group="cassettes" data-color="white" onclick="setCassetteColor(this)"></div>
+            <span class="swatch-label">Biały</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch swatch-wood-winchester" data-group="cassettes" data-color="winchester" onclick="setCassetteColor(this)"></div>
+            <span class="swatch-label">Dąb Winchester</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch swatch-wood-gold" data-group="cassettes" data-color="golden" onclick="setCassetteColor(this)"></div>
+            <span class="swatch-label">Złoty dąb</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- PROFIL BLACHY -->
+      <div class="section">
+        <div class="section-title">Profil blachy</div>
+        <div class="pill-row">
+          <div class="pill active" data-profile="smooth" onclick="setProfile(this)">Gładka</div>
+          <div class="pill" data-profile="micro" onclick="setProfile(this)">Mikrofala</div>
+          <div class="pill" data-profile="trapez" onclick="setProfile(this)">Trapez</div>
+        </div>
+      </div>
+
+      <!-- KOLOR WYKOŃCZENIA GÓRY -->
+      <div class="section">
+        <div class="section-title">Wykończenie góry</div>
+        <div class="pill-row">
+          <div class="pill active" data-top="auto" onclick="setTop(this)">Auto (dopasuj)</div>
+          <div class="pill" data-top="dark" onclick="setTop(this)">Ciemne</div>
+          <div class="pill" data-top="match-walls" onclick="setTop(this)">Jak ściany</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- KOLOR RAMY -->
+      <div class="section">
+        <div class="section-title">Kolor ramy / cokołu</div>
+        <div class="swatch-row">
+          <div class="swatch-item">
+            <div class="swatch active" style="background:#111" data-group="frame" data-color="black" onclick="setFrameColor(this)"></div>
+            <span class="swatch-label">Czarny</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch" style="background:#3C3C3C" data-group="frame" data-color="anthracite" onclick="setFrameColor(this)"></div>
+            <span class="swatch-label">Antracyt</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+    // ── SCENE SETUP ──
+    const canvas = document.getElementById('canvas3d');
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.3;
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xd8d8da);
+
+    const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+    camera.position.set(6, 4, 6);
+
+    const controls = new OrbitControls(camera, canvas);
+    controls.target.set(0, 1.2, 0);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.08;
+    controls.minDistance = 3;
+    controls.maxDistance = 15;
+    controls.maxPolarAngle = Math.PI / 2.05;
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 1.5;
+    controls.update();
+
+    // ── LIGHTING ──
+    const ambient = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambient);
+
+    const key = new THREE.DirectionalLight(0xffffff, 1.8);
+    key.position.set(5, 8, 4);
+    key.castShadow = true;
+    key.shadow.mapSize.set(2048, 2048);
+    key.shadow.camera.near = 0.5;
+    key.shadow.camera.far = 20;
+    key.shadow.camera.left = -5;
+    key.shadow.camera.right = 5;
+    key.shadow.camera.top = 5;
+    key.shadow.camera.bottom = -5;
+    key.shadow.bias = -0.0005;
+    scene.add(key);
+
+    const fill = new THREE.DirectionalLight(0xddeeff, 0.6);
+    fill.position.set(-4, 3, -2);
+    scene.add(fill);
+
+    const rim = new THREE.DirectionalLight(0xffeedd, 0.4);
+    rim.position.set(0, 5, -5);
+    scene.add(rim);
+
+    // ── GROUND PLANE ──
+    const groundGeo = new THREE.PlaneGeometry(30, 30);
+    const groundMat = new THREE.MeshStandardMaterial({ color: 0xc0c0c0, roughness: 0.6 });
+    const ground = new THREE.Mesh(groundGeo, groundMat);
+    ground.rotation.x = -Math.PI / 2;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    // ── COLOR DEFINITIONS ──
+    const COLORS = {
+      anthracite: { color: 0x2a2a2c, roughness: 0.45, metalness: 0.1 },
+      black:      { color: 0x0a0a0a, roughness: 0.25, metalness: 0.15 },
+      white:      { color: 0xeeeeee, roughness: 0.5,  metalness: 0.05 },
+      grey:       { color: 0x8b8b8b, roughness: 0.45, metalness: 0.08 },
+      winchester: { color: 0x8a5a2a, roughness: 0.55, metalness: 0.0 },
+      golden:     { color: 0xb07830, roughness: 0.5,  metalness: 0.0 },
+    };
+
+    // ── MESH GROUPS ──
+    const groups = {
+      walls: [],      // sandwich panels (Wall_*)
+      cassettes: [],  // cassette panel faces (C*_pF_*, C*_pS_*)
+      cassBacks: [],  // cassette backings (C*_back*)
+      top: [],        // top band (Top_*)
+      purple: [],     // purple row (Pur_*)
+      roof: [],       // roof
+      frame: [],      // glazing frames + base
+    };
+
+    let oakTexture = null;
+
+    // ── LOAD TEXTURE ──
+    const texLoader = new THREE.TextureLoader();
+    texLoader.load('assets/oak-texture.jpg', (tex) => {
+      tex.wrapS = THREE.RepeatWrapping;
+      tex.wrapT = THREE.RepeatWrapping;
+      tex.repeat.set(2, 2);
+      tex.colorSpace = THREE.SRGBColorSpace;
+      oakTexture = tex;
+      console.log('Oak texture loaded');
+    });
+
+    // ── LOAD MODEL ──
+    const loader = new GLTFLoader();
+    loader.load('assets/models/container_box.glb', (gltf) => {
+      const model = gltf.scene;
+      model.traverse((child) => {
+        if (!child.isMesh) return;
+        child.castShadow = true;
+        child.receiveShadow = true;
+        const n = child.name;
+
+        // Classify meshes into groups
+        if (n.startsWith('Wall_') && !n.startsWith('Wall_Front')) {
+          groups.walls.push(child);
+        } else if (n.startsWith('Wall_F')) {
+          groups.walls.push(child);
+        } else if (n.includes('_pF_') || n.includes('_pS_')) {
+          groups.cassettes.push(child);
+        } else if (n.includes('_back')) {
+          groups.cassBacks.push(child);
+        } else if (n.startsWith('Top_')) {
+          groups.top.push(child);
+        } else if (n.startsWith('Pur_')) {
+          groups.purple.push(child);
+        } else if (n === 'Roof') {
+          groups.roof.push(child);
+        } else if (n.startsWith('Fr_') || n.startsWith('Mul') || n === 'Base' || n === 'Handle') {
+          groups.frame.push(child);
+        } else if (n.startsWith('Int_') || n === 'Floor') {
+          // interior — leave as is
+        } else if (n.startsWith('Glass')) {
+          // glass — make transparent
+          child.material = new THREE.MeshPhysicalMaterial({
+            color: 0xc8dce8,
+            transmission: 0.85,
+            roughness: 0.05,
+            metalness: 0,
+            ior: 1.45,
+            thickness: 0.01,
+          });
+        }
+      });
+
+      scene.add(model);
+      console.log('Model loaded. Groups:', Object.fromEntries(
+        Object.entries(groups).map(([k, v]) => [k, v.length])
+      ));
+    });
+
+    // ── MATERIAL HELPERS ──
+    function makeMat(colorDef) {
+      return new THREE.MeshStandardMaterial({
+        color: colorDef.color,
+        roughness: colorDef.roughness,
+        metalness: colorDef.metalness,
+      });
+    }
+
+    function makeWoodMat(tint) {
+      if (oakTexture) {
+        const mat = new THREE.MeshStandardMaterial({
+          map: oakTexture.clone(),
+          roughness: 0.55,
+          metalness: 0,
+        });
+        if (tint === 'golden') {
+          // brighter
+          mat.color = new THREE.Color(1.1, 1.0, 0.85);
+        } else {
+          // winchester — darker
+          mat.color = new THREE.Color(0.75, 0.65, 0.55);
+        }
+        mat.map.needsUpdate = true;
+        return mat;
+      }
+      // fallback solid color
+      return makeMat(COLORS[tint]);
+    }
+
+    function applyToGroup(groupName, material) {
+      groups[groupName].forEach(mesh => {
+        mesh.material = material;
+      });
+    }
+
+    // ── STATE ──
+    let currentWall = 'anthracite';
+    let currentCassette = 'anthracite';
+    let currentFrame = 'black';
+    let currentTopMode = 'auto';
+
+    function updateTopAndRoof() {
+      const isLightWall = (currentWall === 'white' || currentWall === 'grey');
+
+      if (currentTopMode === 'auto') {
+        // Auto: top matches cassettes for dark schemes, walls for light schemes
+        if (currentCassette === 'winchester' || currentCassette === 'golden') {
+          applyToGroup('top', makeMat(COLORS.anthracite));
+          applyToGroup('purple', makeMat(COLORS.anthracite));
+        } else {
+          applyToGroup('top', makeMat(COLORS[currentCassette] || COLORS.anthracite));
+          applyToGroup('purple', makeMat(COLORS[currentCassette] || COLORS.anthracite));
+        }
+      } else if (currentTopMode === 'dark') {
+        applyToGroup('top', makeMat(COLORS.anthracite));
+        applyToGroup('purple', makeMat(COLORS.anthracite));
+      } else if (currentTopMode === 'match-walls') {
+        applyToGroup('top', makeMat(COLORS[currentWall] || COLORS.anthracite));
+        applyToGroup('purple', makeMat(COLORS[currentWall] || COLORS.anthracite));
+      }
+
+      // Roof always dark
+      applyToGroup('roof', makeMat(isLightWall && currentTopMode !== 'dark'
+        ? COLORS.anthracite : COLORS.black));
+
+      // Auto-adjust frame for light walls
+      if (isLightWall && currentFrame === 'black') {
+        // suggest anthracite frame, but don't force
+      }
+    }
+
+    // ── UI HANDLERS ──
+    window.setWallColor = function(el) {
+      document.querySelectorAll('[data-group="walls"]').forEach(s => s.classList.remove('active'));
+      el.classList.add('active');
+      currentWall = el.dataset.color;
+      applyToGroup('walls', makeMat(COLORS[currentWall]));
+      updateTopAndRoof();
+    };
+
+    window.setCassetteColor = function(el) {
+      document.querySelectorAll('[data-group="cassettes"]').forEach(s => s.classList.remove('active'));
+      el.classList.add('active');
+      currentCassette = el.dataset.color;
+
+      if (currentCassette === 'winchester' || currentCassette === 'golden') {
+        applyToGroup('cassettes', makeWoodMat(currentCassette));
+      } else {
+        applyToGroup('cassettes', makeMat(COLORS[currentCassette]));
+      }
+      // Backings always slightly darker
+      applyToGroup('cassBacks', makeMat(COLORS.black));
+      updateTopAndRoof();
+    };
+
+    window.setFrameColor = function(el) {
+      document.querySelectorAll('[data-group="frame"]').forEach(s => s.classList.remove('active'));
+      el.classList.add('active');
+      currentFrame = el.dataset.color;
+      applyToGroup('frame', makeMat(COLORS[currentFrame]));
+    };
+
+    window.setProfile = function(el) {
+      document.querySelectorAll('.pill[data-profile]').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      // Profile changes would need geometry/texture swap — visual placeholder for now
+    };
+
+    window.setTop = function(el) {
+      document.querySelectorAll('.pill[data-top]').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      currentTopMode = el.dataset.top;
+      updateTopAndRoof();
+    };
+
+    // ── RENDER LOOP ──
+    function onResize() {
+      const w = canvas.parentElement.clientWidth;
+      const h = canvas.parentElement.clientHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    }
+    window.addEventListener('resize', onResize);
+    onResize();
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>

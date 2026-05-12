@@ -6,6 +6,7 @@
   "step1": {
     "title": "Wybierz model",
     "sub": "12 brył do wyboru — wymiar, materiał i wnętrze dopasujemy w kolejnych krokach",
+    "description": "Każdy model ma swój charakter — od kompaktowego ATRI po panoramiczne KIOS. Wybierz bryłę, którą rozwiniemy w kolejnych krokach.",
     "socialProof": "127 osób skonfigurowało pawilon w tym miesiącu",
     "types": [
       { "name": "ATRI", "img": "assets/modele/atri.webp" },
@@ -24,81 +25,99 @@
   },
   "step2": {
     "title": "Wymiary pawilonu",
-    "sub": "Podaj wymiary lub wybierz popularny rozmiar",
-    "presetLabel": "Popularne rozmiary",
+    "sub": "Podaj długość i szerokość, wybierz wysokość dachu",
+    "description": "Wymiary zewnętrzne pawilonu w metrach. Wysokość dachu w czterech standardach — różnica 10 cm w panelu.",
+    "heightLabel": "Wysokość dachu",
+    "heights": [
+      { "name": "2,44 m", "val": "2.44" },
+      { "name": "2,54 m", "val": "2.54" },
+      { "name": "2,64 m", "val": "2.64" },
+      { "name": "2,74 m", "val": "2.74" }
+    ],
+    "presetLabel": "Popularne rozmiary (długość × szerokość)",
     "presets": [
-      { "label": "3×2 m", "l": "3", "w": "2", "h": "2.8" },
-      { "label": "4×2,5 m", "l": "4", "w": "2.5", "h": "2.8" },
-      { "label": "6×3 m", "l": "6", "w": "3", "h": "2.8" },
-      { "label": "8×3 m", "l": "8", "w": "3", "h": "2.8" },
-      { "label": "9×3 m", "l": "9", "w": "3", "h": "2.8" },
-      { "label": "12×3 m", "l": "12", "w": "3", "h": "3" }
+      { "label": "3×2 m", "l": "3", "w": "2" },
+      { "label": "4×2,5 m", "l": "4", "w": "2.5" },
+      { "label": "6×3 m", "l": "6", "w": "3" },
+      { "label": "8×3 m", "l": "8", "w": "3" },
+      { "label": "9×3 m", "l": "9", "w": "3" },
+      { "label": "12×3 m", "l": "12", "w": "3" }
     ]
   },
   "step3": {
     "title": "Wykończenie",
     "sub": "Profil blachy, kolor i okucia",
+    "description": "Dopasuj profil płyty warstwowej, kolor ścian i okucia do swoich potrzeb.",
     "profiles": [
-      { "name": "Gładka" },
-      { "name": "Trapez" },
-      { "name": "Mikrofala" }
+      { "name": "Mikrofala", "img": "assets/profile/mikrofala.webp", "desc": "Delikatna fala — najczęściej wybierana faktura." },
+      { "name": "Gładka", "img": "assets/profile/gladka.webp", "desc": "Czysta, minimalistyczna powierzchnia." }
     ],
     "wallColors": [
-      { "color": "#fff", "name": "Biały" },
-      { "color": "#3C3C3C", "name": "Antracyt" },
-      { "color": "#1D1D1B", "name": "Czarny" },
-      { "color": "#8B8B8B", "name": "Szary" },
-      { "color": "#5C3A1E", "name": "Brązowy" },
-      { "color": "linear-gradient(135deg,#E8461C,#D03A15)", "name": "RAL" }
+      { "color": "#1D1D1B", "name": "Czarny", "ral": "RAL 9005" },
+      { "color": "#3C3C3C", "name": "Antracyt", "ral": "RAL 7016" },
+      { "color": "linear-gradient(135deg,#E8461C,#FFD700 25%,#34D399 50%,#3B82F6 75%,#A855F7)", "name": "Inny kolor", "ral": "Paleta RAL", "wheel": true }
     ],
     "fittingTypes": [
-      { "name": "Podstawowe" },
-      { "name": "Specjalne premium" }
+      {
+        "name": "Podstawowe",
+        "desc": "Trwałe i ekonomiczne rozwiązanie.",
+        "thumbs": ["assets/okucia/podst-klamka.webp", "assets/okucia/podst-zawias.webp", "assets/okucia/podst-zamek.webp"]
+      },
+      {
+        "name": "Specjalne premium",
+        "desc": "Nowoczesny wygląd i wyższy standard.",
+        "thumbs": ["assets/okucia/prem-klamka.webp", "assets/okucia/prem-zawias.webp", "assets/okucia/prem-zamek.webp"]
+      }
     ],
     "fittingColors": [
-      { "name": "Biały" },
-      { "name": "Czarny" },
-      { "name": "Antracyt" },
-      { "name": "Złoty dąb" },
-      { "name": "Dąb winchester" },
-      { "name": "Inny" }
+      { "color": "#FAFAFA", "name": "Biały", "ral": "RAL 9003" },
+      { "color": "#1D1D1B", "name": "Czarny", "ral": "RAL 9005" },
+      { "color": "#3C3C3C", "name": "Antracyt", "ral": "RAL 7016" },
+      { "color": "linear-gradient(135deg,#B8893F,#8C5A1F)", "name": "Złoty dąb", "ral": "Drewno" },
+      { "color": "linear-gradient(135deg,#3E2A1A,#1F1207)", "name": "Dąb winchester", "ral": "Drewno" },
+      { "color": "linear-gradient(135deg,#E8461C,#FFD700 25%,#34D399 50%,#3B82F6 75%,#A855F7)", "name": "Inny", "ral": "Indywidualny" }
     ],
     "fittingPlacement": [
-      { "name": "Wszystkie narożniki" },
-      { "name": "Tylko przód" },
-      { "name": "Przód + tył" },
-      { "name": "Tylko boki" }
+      { "name": "2 narożniki" },
+      { "name": "4 narożniki" },
+      { "name": "2 narożniki + attyka" },
+      { "name": "2 narożniki + attyka + boczne" }
     ]
   },
   "step4": {
-    "title": "Wyposażenie",
+    "title": "Dodatki",
     "sub": "Drzwi, okna i dodatkowe instalacje",
+    "description": "Wybierz wyposażenie i dodatkowe instalacje. Wszystko da się jeszcze doprecyzować w rozmowie.",
     "doorTypes": [
       { "name": "Jednoskrzydłowe" },
       { "name": "Dwuskrzydłowe" },
       { "name": "Przesuwne" },
       { "name": "Aluminiowe z naświetlem" }
     ],
+    "doorGlazing": [
+      { "name": "Pełne" },
+      { "name": "Przeszklone" }
+    ],
     "windowTypes": [
       { "name": "Uchylne 80×60 cm" },
       { "name": "Rozwierno-uchylne 120×120 cm" },
+      { "name": "Panoramiczne 100×200 cm" },
       { "name": "Stałe panoramiczne" },
       { "name": "Podawcze (handlowe)" }
     ],
     "extras": [
       { "name": "Klimatyzacja" },
-      { "name": "Oświetlenie LED" },
       { "name": "Instalacja elektryczna" },
-      { "name": "Rolety zewnętrzne" },
       { "name": "Instalacja wod-kan" },
-      { "name": "System alarmowy" },
       { "name": "Ogrzewanie" },
-      { "name": "Podłoga OSB + wykładzina" }
+      { "name": "Oświetlenie LED" },
+      { "name": "Rolety zewnętrzne" }
     ]
   },
   "step5": {
-    "title": "Podsumowanie konfiguracji",
+    "title": "Podsumowanie",
     "sub": "Sprawdź dane i zostaw kontakt — odezwiemy się z wyceną",
+    "description": "Sprawdź konfigurację i zostaw kontakt. Wycenę indywidualną wysyłamy w 24h.",
     "summaryHeading": "Twój pawilon",
     "contactHeading": "Dane kontaktowe",
     "submitLabel": "Wyślij zapytanie",

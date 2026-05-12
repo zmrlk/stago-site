@@ -43,7 +43,8 @@
     "name": "Jméno a příjmení",
     "phone": "Telefon",
     "email": "E-mail (nepovinné)",
-    "consent": "Souhlasím se zpracováním osobních údajů.",
+    "consent": "Seznámil/a jsem se s informacemi o zpracování údajů a souhlasím s kontaktem za účelem zaslání materiálu a vyřízení dotazu.",
+    "consentOptional": "Souhlasím s tím, aby mi STAGO GROUP Sp. z o.o. zasílala obchodní a marketingová sdělení o nabídce STAGO e-mailem, telefonicky nebo SMS. Souhlas mohu kdykoliv odvolat.",
     "privacyLink": "Ochrana osobních údajů",
     "submit": "Odeslat poptávku",
     "note": "Zavoláme do 24 hodin. Nabídka zdarma, nezávazně.",
@@ -80,7 +81,9 @@
     "kontakt": "Kontakt",
     "contactPage": "Stránka kontaktu &rarr;",
     "privacy": "Ochrana osobních údajů",
-    "terms": "Obchodní podmínky",
+    "cookiesPolicy": "Zásady cookies",
+    "terms": "Podmínky používání",
+    "salesTerms": "Obchodní podmínky",
     "cookies": "Nastavení cookies",
     "madeBy": "Vytvořeno"
   },
@@ -94,5 +97,21 @@
     "meetUs": "Poznejte nás blíže &rarr;",
     "visitUs": "Navštivte nás"
   },
-  "areaServed": "Czech Republic"
+  "areaServed": "Czech Republic",
+  "cookieBanner": {
+    "title": "Cookies a soukromí",
+    "description": "Používáme cookies nezbytné pro fungování webu. S vaším souhlasem spustíme analytické cookies (Google Analytics) a marketingové cookies (Meta Pixel, TikTok Pixel), abychom mohli měřit efektivitu webu a kampaní.",
+    "acceptAll": "Přijmout vše",
+    "onlyNecessary": "Pouze nezbytné",
+    "settings": "Nastavení",
+    "savePreferences": "Uložit volbu",
+    "categoryNecessary": "Nezbytné",
+    "categoryNecessaryDesc": "Potřebné pro funkčnost stránky, formulářů a uložení nastavení. Vždy aktivní.",
+    "categoryAnalytics": "Analytické",
+    "categoryAnalyticsDesc": "Google Analytics 4 — měření návštěvnosti, zdrojů a událostí na stránce.",
+    "categoryMarketing": "Marketingové",
+    "categoryMarketingDesc": "Meta Pixel a TikTok Pixel — měření efektivity reklam a remarketing.",
+    "moreInfo": "Více v",
+    "moreInfoLink": "Zásadách cookies"
+  }
 }

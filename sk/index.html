@@ -2,8 +2,8 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8">
-  <!-- GTM + GA4 (deferred until interaction or 3s) -->
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XZNVTYFPWR');(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-WNJQZHX6&l=dataLayer';document.head.appendChild(s);var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-XZNVTYFPWR';document.head.appendChild(g);dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'})}var ev=['scroll','mousemove','touchstart','keydown','click'];function trig(){load();ev.forEach(function(e){removeEventListener(e,trig)})}ev.forEach(function(e){addEventListener(e,trig,{once:true,passive:true})});setTimeout(load,3500)})();</script>
+  <!-- Analytics gated by cookies.js (loads GTM/GA4 only after explicit consent) -->
+  <script>window['ga-disable-G-XZNVTYFPWR']=true;window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>STAGO — Modularne pavilony, kontajnery, budovy na kľúč</title>
   <meta name="description" content="STAGO — výrobca modulárnych pavilónov. Obchod, kancelária, dom — na kľúč. Bezplatná vizualizácia, montáž na mieste, záruka 2 roky. Dodávka na Slovensko.">
@@ -542,7 +542,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <textarea name="message" rows="4" placeholder="Opíšte svoje potreby — rozmery, lokalita, účel..." aria-label="Správa"></textarea>
           <!-- Honeypot — ukryte pole, boty je wypełniają -->
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pomocné pole (nevypĺňajte)"></div>
-          <label class="form-consent"><input type="checkbox" name="consent" required> Súhlasím so spracovaním osobných údajov. <a href="../sk/polityka-prywatnosci.html" target="_blank">Ochrana osobných údajov</a></label>
+          <label class="form-consent"><input type="checkbox" name="consent" required> Oboznámil/a som sa s informáciami o spracovaní údajov a súhlasím s kontaktom na účely zaslania materiálu a vybavenia dopytu. <a href="../sk/polityka-prywatnosci.html" target="_blank">Ochrana osobných údajov</a></label>
+          <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Súhlasím s tým, aby mi STAGO GROUP Sp. z o.o. zasielala obchodné a marketingové informácie o ponuke STAGO e-mailom, telefonicky alebo SMS. Súhlas môžem kedykoľvek odvolať.</label>
           <button type="submit" class="btn btn-primary btn-full" id="contact-submit">Odoslať dopyt</button>
           <p class="form-note">Odpovedáme do 24 hodín. Cenová ponuka je bezplatná a nezáväzná.</p>
           <p class="form-success" id="contact-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">Odoslané! Ozveme sa do 24 hodín.</p>
@@ -591,7 +592,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       </div>
     </div>
     <div class="container footer-bottom">
-      <div class="footer-legal"><a href="../sk/polityka-prywatnosci.html">Ochrana osobných údajov</a><a href="../sk/regulamin.html">Obchodné podmienky</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Nastavenia cookies</a></div>
+      <div class="footer-legal"><a href="../sk/polityka-prywatnosci.html">Ochrana osobných údajov</a><a href="../sk/regulamin.html">Podmienky používania</a><a href="#" onclick="document.getElementById('cookie-banner').style.display='flex';return false">Nastavenia cookies</a></div>
       <p>&copy; 2026 STAGO &middot; Vytvorené <a href="https://isiko.pl" target="_blank">ISIKO</a></p>
     </div>
   </footer>
@@ -747,5 +748,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <script src="../reviews.js"></script>
   <script src="../form-handler.js"></script>
   <script>document.querySelector('.lang-btn')?.addEventListener('click',function(e){e.stopPropagation();var d=this.nextElementSibling;d.style.display=d.style.display==='none'?'grid':'none'});document.addEventListener('click',function(){var d=document.querySelector('.lang-dropdown');if(d)d.style.display='none'});</script>
+  <script src="../cookies.js" defer></script>
 </body>
 </html>
