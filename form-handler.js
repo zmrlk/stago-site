@@ -45,28 +45,32 @@
       error: 'Wystąpił błąd. Spróbuj ponownie lub zadzwoń do nas.',
       rateLimit: 'Proszę poczekać 30 sekund przed ponownym wysłaniem.',
       invalidEmail: 'Proszę podać poprawny adres e-mail.',
-      sending: 'Wysyłanie...'
+      sending: 'Wysyłanie...',
+      consentRequired: 'Aby wysłać zapytanie, zaakceptuj informację o przetwarzaniu danych osobowych.'
     },
     cz: {
       success: 'Děkujeme! Zpráva byla odeslána. Ozveme se co nejdříve.',
       error: 'Došlo k chybě. Zkuste to znovu nebo nám zavolejte.',
       rateLimit: 'Počkejte prosím 30 sekund před dalším odesláním.',
       invalidEmail: 'Zadejte prosím platnou e-mailovou adresu.',
-      sending: 'Odesílání...'
+      sending: 'Odesílání...',
+      consentRequired: 'Pro odeslání dotazu prosím potvrďte souhlas se zpracováním osobních údajů.'
     },
     sk: {
       success: 'Ďakujeme! Správa bola odoslaná. Ozveme sa čo najskôr.',
       error: 'Vyskytla sa chyba. Skúste to znova alebo nám zavolajte.',
       rateLimit: 'Počkajte prosím 30 sekúnd pred ďalším odoslaním.',
       invalidEmail: 'Zadajte prosím platnú e-mailovú adresu.',
-      sending: 'Odosielanie...'
+      sending: 'Odosielanie...',
+      consentRequired: 'Pre odoslanie dopytu prosím potvrďte súhlas so spracovaním osobných údajov.'
     },
     en: {
       success: 'Thank you! Your message has been sent. We\'ll get back to you soon.',
       error: 'Something went wrong. Please try again or call us.',
       rateLimit: 'Please wait 30 seconds before submitting again.',
       invalidEmail: 'Please enter a valid email address.',
-      sending: 'Sending...'
+      sending: 'Sending...',
+      consentRequired: 'To send the message, please accept the privacy notice.'
     }
   };
 
@@ -254,6 +258,21 @@
       return;
     }
 
+    // Consent collection (RODO Art. 7 — administrator must be able to demonstrate consent)
+    var consentBox = form.querySelector('[name="consent"]');
+    var consentMarketingBox = form.querySelector('[name="consent_marketing"]');
+    if (consentBox && !consentBox.checked) {
+      showMessage(form, msgs.consentRequired, true);
+      return;
+    }
+    var consentRecord = {
+      consent: consentBox ? !!consentBox.checked : null,
+      consent_marketing: consentMarketingBox ? !!consentMarketingBox.checked : false,
+      consent_timestamp: new Date().toISOString(),
+      consent_source_url: window.location.href,
+      consent_form_id: form.id || form.getAttribute('data-form-name') || ''
+    };
+
     // Set loading state
     lastSubmitTime = now;
     setSubmitButton(form, true, lang);
@@ -275,14 +294,19 @@
       data.containerType = state.type || data.containerType;
     }
 
-    // Build payload
+    // Build payload (consent record persisted server-side for RODO Art. 7 audit trail)
     var payload = {
       name: data.name || '',
       email: data.email,
       phone: data.phone || '',
       message: data.message || '',
       containerType: data.containerType || '',
-      language: lang
+      language: lang,
+      consent: consentRecord.consent,
+      consent_marketing: consentRecord.consent_marketing,
+      consent_timestamp: consentRecord.consent_timestamp,
+      consent_source_url: consentRecord.consent_source_url,
+      consent_form_id: consentRecord.consent_form_id
     };
 
     // Send to Edge Function ONLY — no direct REST API insert
