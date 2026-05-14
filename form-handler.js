@@ -324,7 +324,21 @@
       .then(function () {
         setSubmitButton(form, false, lang);
         form.reset();
-        showMessage(form, msgs.success, false);
+
+        // Konfigurator — dedykowany success-screen (ukryj step-panels + bottom-bar, pokaż successScreen)
+        if (form.id === 'cfgForm' || form.classList.contains('cfg-form')) {
+          var configWrap = document.getElementById('configWrap');
+          if (configWrap) {
+            configWrap.querySelectorAll('.step-panel').forEach(function (p) { p.classList.remove('active'); });
+          }
+          var successScreen = document.getElementById('successScreen');
+          if (successScreen) successScreen.classList.add('active');
+          var bottomBar = document.getElementById('bottomBar');
+          if (bottomBar) bottomBar.style.display = 'none';
+          try { localStorage.removeItem('stago_cfg'); } catch (e) {}
+        } else {
+          showMessage(form, msgs.success, false);
+        }
 
         if (CONFIG.SUCCESS_REDIRECT) {
           setTimeout(function () {
