@@ -13,12 +13,30 @@
     "img": "../assets/modele/kios.webp",
     "imgAlt": "Pawilon modułowy STAGO KIOS — kompaktowa bryła z pełną witryną",
     "h1": "KIOS — kompaktowa bryła z pełną witryną.",
-    "subtitle": "Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.",
-    "price": "od 18 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "subtitle": "Mały, ciemny, z witryną na cały front. Wciśniesz go tam, gdzie większe się nie mieszczą — róg podwórka, skrawek parkingu — i zaczyna na siebie zarabiać. Kiosk, punkt odbioru, mała sprzedaż.",
+    "price": "od 20 564 zł",
+    "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=kios",
     "articleHref": "../modele.html",
-    "articleText": "Zobacz wszystkie modele &rarr;"
+    "articleText": "Zobacz wszystkie modele &rarr;",
+    "haslo": "Zmieści się tam, gdzie inni odpadają.",
+    "views": [
+      {
+        "img": "../assets/modele/kios.webp",
+        "alt": "Pawilon STAGO KIOS — widok główny 3/4",
+        "label": "Widok główny"
+      },
+      {
+        "img": "../assets/modele/kios-a.webp",
+        "alt": "Pawilon STAGO KIOS — front",
+        "label": "Front"
+      },
+      {
+        "img": "../assets/modele/kios-b.webp",
+        "alt": "Pawilon STAGO KIOS — ujęcie z boku",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Do czego pasuje",
@@ -150,7 +168,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
@@ -236,7 +254,7 @@
     "name": "Pawilon modułowy STAGO KIOS",
     "description": "KIOS. Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/kios.webp",
-    "lowPrice": "18000",
+    "lowPrice": "20564",
     "highPrice": "60000"
   }
 }

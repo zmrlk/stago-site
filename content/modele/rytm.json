@@ -13,12 +13,30 @@
     "img": "../assets/modele/rytm.webp",
     "imgAlt": "Pawilon modułowy STAGO RYTM — drewniana ramka z symetrycznym frontem",
     "h1": "RYTM — drewniana ramka z symetrycznym frontem.",
-    "subtitle": "Bryła z wyraźną ramką dookoła i szerokim frontem ze szklanymi drzwiami pośrodku. Symetria, czystość proporcji, klasyczny rytm. Materiał ramki i wypełnienia ustalamy z Tobą.",
-    "price": "od 25 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "subtitle": "Drewniana rama, ciemny środek, wszystko w równej symetrii. Stajesz przed nim i czujesz, że ktoś tu panuje nad szczegółem — a to budzi zaufanie szybciej niż słowa. Pod sklep, punkt usługowy albo biuro z porządkiem.",
+    "price": "od 20 564 zł",
+    "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=rytm",
     "articleHref": "../modele.html",
-    "articleText": "Zobacz wszystkie modele &rarr;"
+    "articleText": "Zobacz wszystkie modele &rarr;",
+    "haslo": "Równo, czysto, do rzeczy.",
+    "views": [
+      {
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pawilon STAGO RYTM — widok główny 3/4",
+        "label": "Widok główny"
+      },
+      {
+        "img": "../assets/modele/rytm-a.webp",
+        "alt": "Pawilon STAGO RYTM — front",
+        "label": "Front"
+      },
+      {
+        "img": "../assets/modele/rytm-b.webp",
+        "alt": "Pawilon STAGO RYTM — ujęcie z boku",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Do czego pasuje",
@@ -150,7 +168,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
@@ -236,7 +254,7 @@
     "name": "Pawilon modułowy STAGO RYTM",
     "description": "RYTM. Bryła z wyraźną ramką dookoła i szerokim frontem ze szklanymi drzwiami pośrodku. Symetria, czystość proporcji, klasyczny rytm. Materiał ramki i wypełnienia ustalamy z Tobą.",
     "image": "https://stago.com.pl/assets/modele/rytm.webp",
-    "lowPrice": "25000",
+    "lowPrice": "20564",
     "highPrice": "90000"
   }
 }

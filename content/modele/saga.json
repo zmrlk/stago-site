@@ -13,12 +13,30 @@
     "img": "../assets/modele/saga.webp",
     "imgAlt": "Pawilon modułowy STAGO SAGA — wydłużona bryła z frontem witrynowym",
     "h1": "SAGA — wydłużona bryła z frontem witrynowym.",
-    "subtitle": "Długa, niska forma z trzema dużymi witrynami i centralnym wejściem. Idealna pod gastro i sprzedaż — klient widzi wszystko z chodnika. Wykończenie elewacji wybierasz Ty.",
-    "price": "od 28 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "subtitle": "Drewno na górze, grafit na dole, witryny prosto od frontu. Twarda, konkretna bryła, która zniesie tłum, parę z ekspresu i poranny ruch. Niejeden zrobił w niej bar albo małą gastronomię.",
+    "price": "od 20 564 zł",
+    "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=saga",
     "articleHref": "../modele.html",
-    "articleText": "Zobacz wszystkie modele &rarr;"
+    "articleText": "Zobacz wszystkie modele &rarr;",
+    "haslo": "Stworzony na ruch.",
+    "views": [
+      {
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pawilon STAGO SAGA — widok główny 3/4",
+        "label": "Widok główny"
+      },
+      {
+        "img": "../assets/modele/saga-a.webp",
+        "alt": "Pawilon STAGO SAGA — front",
+        "label": "Front"
+      },
+      {
+        "img": "../assets/modele/saga-b.webp",
+        "alt": "Pawilon STAGO SAGA — ujęcie z boku",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Do czego pasuje",
@@ -150,7 +168,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
@@ -236,7 +254,7 @@
     "name": "Pawilon modułowy STAGO SAGA",
     "description": "SAGA. Długa, niska forma z trzema dużymi witrynami i centralnym wejściem. Idealna pod gastro i sprzedaż — klient widzi wszystko z chodnika. Wykończenie elewacji wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "28000",
+    "lowPrice": "20564",
     "highPrice": "100000"
   }
 }

@@ -74,10 +74,21 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <!-- PRODUCT HERO -->
   <section class="container product-hero">
     <div class="product-hero-grid">
-      <div class="product-hero-img">
-        <img src="{{hero.img}}" alt="{{hero.imgAlt}}" loading="eager">
+      <div class="product-hero-media">
+        <div class="product-hero-img">
+          <img id="phMain" src="{{hero.img}}" alt="{{hero.imgAlt}}" loading="eager">
+        </div>
+        <div class="product-hero-thumbs">
+          {{#hero.views}}
+          <button type="button" class="phm-thumb" data-src="{{img}}" aria-label="{{label}}">
+            <img src="{{img}}" alt="{{alt}}" loading="lazy"><span>{{label}}</span>
+          </button>
+          {{/hero.views}}
+        </div>
       </div>
       <div class="product-hero-text">
+        <p class="product-eyebrow-name">Model {{productType}}</p>
+        {{#hero.haslo}}<p class="product-haslo">{{{hero.haslo}}}</p>{{/hero.haslo}}
         <h1>{{{hero.h1}}}</h1>
         <p class="product-subtitle">{{{hero.subtitle}}}</p>
         <div class="product-price-range">{{{hero.price}}} <span>{{{hero.priceNote}}}</span></div>
@@ -112,20 +123,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  <!-- CUSTOMIZATION — co możesz zmienić -->
-  <section class="customization-section section">
+  <!-- GALLERY — realizacje (przeniesione wyżej: przełamuje rzędy kart zdjęciami) -->
+  <section class="gallery-section section">
     <div class="container">
-      <p class="eyebrow">{{customization.eyebrow}}</p>
-      <h2 class="h2">{{{customization.h2}}}</h2>
-      <p class="section-sub">{{{customization.sub}}}</p>
-      <div class="customization-grid">
-        {{#customization.items}}
-        <div class="customization-card">
-          <div class="customization-icon">{{{icon}}}</div>
-          <h3>{{title}}</h3>
-          <p>{{{text}}}</p>
-        </div>
-        {{/customization.items}}
+      <p class="eyebrow">{{gallery.eyebrow}}</p>
+      <h2 class="h2">{{gallery.h2}}</h2>
+      <div class="product-gallery">
+        {{#gallery.items}}
+        <div class="product-gallery-item"><img src="{{img}}" alt="{{alt}}" loading="lazy"></div>
+        {{/gallery.items}}
       </div>
     </div>
   </section>
@@ -162,19 +168,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           </div>
         </div>
         {{/benefits.items}}
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery-section">
-    <div class="container">
-      <p class="eyebrow">{{gallery.eyebrow}}</p>
-      <h2 class="h2">{{gallery.h2}}</h2>
-      <div class="product-gallery">
-        {{#gallery.items}}
-        <div class="product-gallery-item"><img src="{{img}}" alt="{{alt}}" loading="lazy"></div>
-        {{/gallery.items}}
       </div>
     </div>
   </section>
@@ -291,6 +284,21 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     document.querySelector('.lang-btn')?.addEventListener('click',function(e){e.stopPropagation();var d=this.nextElementSibling;d.style.display=d.style.display==='none'?'grid':'none'});
     document.addEventListener('click',function(){var d=document.querySelector('.lang-dropdown');if(d)d.style.display='none'});
     var sel=document.querySelector('select[data-default]');if(sel)sel.value=sel.dataset.default;
+    // hero gallery — przełącznik ujęć modelu
+    (function(){
+      var main=document.getElementById('phMain');
+      var thumbs=document.querySelectorAll('.phm-thumb');
+      if(!main||!thumbs.length)return;
+      thumbs[0].classList.add('active');
+      thumbs.forEach(function(t){
+        t.addEventListener('click',function(){
+          var s=t.getAttribute('data-src');if(!s)return;
+          main.src=s;
+          thumbs.forEach(function(x){x.classList.remove('active')});
+          t.classList.add('active');
+        });
+      });
+    })();
   </script>
 
   <script type="application/ld+json">

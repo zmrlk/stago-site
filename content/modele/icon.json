@@ -13,12 +13,30 @@
     "img": "../assets/modele/icon.webp",
     "imgAlt": "Pawilon modułowy STAGO ICON — premium loft z narożnym przeszkleniem",
     "h1": "ICON — premium loft z narożnym przeszkleniem.",
-    "subtitle": "Wyrazista bryła z dużymi narożnymi oknami od podłogi po sufit. Charakter studio architekta — otwarte, premium, zaprojektowane żeby robić wrażenie. Wykończenie elewacji wybierasz Ty.",
-    "price": "od 35 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "subtitle": "Drewno na ciemnym tle i przeszklenia od podłogi po sufit. To, co dzieje się w środku, widać z chodnika — i to ono przyciąga ludzi, zanim zdążysz się odezwać. Studio, showroom, biuro z charakterem.",
+    "price": "od 20 564 zł",
+    "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=icon",
     "articleHref": "../modele.html",
-    "articleText": "Zobacz wszystkie modele &rarr;"
+    "articleText": "Zobacz wszystkie modele &rarr;",
+    "haslo": "Twoje wnętrze na wystawie.",
+    "views": [
+      {
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pawilon STAGO ICON — widok główny 3/4",
+        "label": "Widok główny"
+      },
+      {
+        "img": "../assets/modele/icon-a.webp",
+        "alt": "Pawilon STAGO ICON — front",
+        "label": "Front"
+      },
+      {
+        "img": "../assets/modele/icon-b.webp",
+        "alt": "Pawilon STAGO ICON — ujęcie z boku",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Do czego pasuje",
@@ -150,7 +168,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
@@ -236,7 +254,7 @@
     "name": "Pawilon modułowy STAGO ICON",
     "description": "ICON. Wyrazista bryła z dużymi narożnymi oknami od podłogi po sufit. Charakter studio architekta — otwarte, premium, zaprojektowane żeby robić wrażenie. Wykończenie elewacji wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "35000",
+    "lowPrice": "20564",
     "highPrice": "120000"
   }
 }

@@ -1096,3 +1096,41 @@ body.nav-open{overflow:hidden}
 .seo-content .seo-highlight h3{color:#fff;font-size:1.2rem;margin-bottom:12px}
 .seo-content .seo-highlight p{color:var(--t-light2)}
 .seo-content .seo-highlight ul{color:var(--t-light2)}
+
+/* ── MODEL HERO v2 — galeria ujęć + Hasło + konfiguracja (2026-06) ── */
+.product-hero-grid{align-items:start}
+.product-hero-media{display:flex;flex-direction:column;gap:14px}
+.product-hero-thumbs{display:flex;gap:12px}
+.product-hero-thumbs:empty{display:none}
+.phm-thumb{flex:1;position:relative;padding:0;border:2px solid transparent;border-radius:12px;overflow:hidden;background:var(--bg-light);cursor:pointer;aspect-ratio:4/3}
+.phm-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.phm-thumb span{position:absolute;left:8px;bottom:6px;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.55);pointer-events:none}
+.phm-thumb.active,.phm-thumb:hover{border-color:var(--accent)}
+.product-eyebrow-name{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.product-haslo{font-size:clamp(2rem,5vw,3.1rem);font-weight:800;letter-spacing:-.035em;line-height:1.03;color:var(--primary);margin:0 0 14px}
+.product-haslo + h1{font-size:1.05rem;font-weight:600;color:var(--t2);letter-spacing:0;line-height:1.45;margin-bottom:18px}
+.product-config-h{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin:28px 0 2px}
+.product-config{border-top:1px solid var(--border)}
+.product-config:empty{display:none}
+.pc-row{display:grid;grid-template-columns:110px 1fr;gap:18px;padding:13px 2px;border-bottom:1px solid var(--border)}
+.pc-k{font-weight:700;font-size:.95rem;color:var(--primary)}
+.pc-v{font-size:.95rem;color:var(--t2);line-height:1.5}
+.pc-v b{color:var(--accent);font-weight:700}
+@media(max-width:768px){.pc-row{grid-template-columns:90px 1fr;gap:12px}}
+
+/* ── polish kart sekcji modelu — kontrast/„leżą na stronie" (2026-06) ── */
+.usecase-card{box-shadow:0 2px 6px rgba(29,29,27,.05)}
+.spec-card{box-shadow:0 2px 6px rgba(29,29,27,.05)}
+.spec-card:hover{box-shadow:0 12px 30px rgba(29,29,27,.10);transform:translateY(-3px)}
+.spec-card h3{font-size:.95rem}
+.spec-card p{font-size:.88rem}
+
+/* ── KONFIGURACJA — spec band pod hero (2 kolumny, pełna szerokość) ── */
+.model-config-section{padding:4px 0 40px}
+.model-config-section .product-config-h{margin:0 0 4px}
+.model-config-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;border-top:2px solid var(--primary)}
+.mc-row{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:15px 2px;border-bottom:1px solid var(--border);align-items:baseline}
+.mc-row .pc-k{font-weight:700;font-size:.95rem;color:var(--primary)}
+.mc-row .pc-v{font-size:.95rem;color:var(--t2);line-height:1.5}
+.mc-row .pc-v b{color:var(--accent);font-weight:700}
+@media(max-width:768px){.model-config-grid{grid-template-columns:1fr;gap:0}.mc-row{grid-template-columns:96px 1fr;gap:14px}}

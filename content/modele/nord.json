@@ -13,12 +13,30 @@
     "img": "../assets/modele/nord.webp",
     "imgAlt": "Pawilon modułowy STAGO NORD — premium bryła z narożnymi oknami",
     "h1": "NORD — premium bryła z narożnymi oknami.",
-    "subtitle": "Mocna forma z akcentami w narożnikach i ogromnymi narożnymi szkleniami. Skandynawski charakter premium — bryła, którą się pamięta. Materiał elewacji i akcentów ustalamy razem.",
-    "price": "od 30 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "subtitle": "Antracyt, drewno w narożnikach i szkło zawinięte za róg. Wygląda na drogi z każdej odległości — także z drugiej strony ulicy. Komuś będzie domem, komuś recepcją premium.",
+    "price": "od 20 564 zł",
+    "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=nord",
     "articleHref": "../modele.html",
-    "articleText": "Zobacz wszystkie modele &rarr;"
+    "articleText": "Zobacz wszystkie modele &rarr;",
+    "haslo": "Robi wrażenie, zanim powiesz słowo.",
+    "views": [
+      {
+        "img": "../assets/modele/nord.webp",
+        "alt": "Pawilon STAGO NORD — widok główny 3/4",
+        "label": "Widok główny"
+      },
+      {
+        "img": "../assets/modele/nord-a.webp",
+        "alt": "Pawilon STAGO NORD — front",
+        "label": "Front"
+      },
+      {
+        "img": "../assets/modele/nord-b.webp",
+        "alt": "Pawilon STAGO NORD — ujęcie z boku",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Do czego pasuje",
@@ -150,7 +168,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
@@ -236,7 +254,7 @@
     "name": "Pawilon modułowy STAGO NORD",
     "description": "NORD. Mocna forma z akcentami w narożnikach i ogromnymi narożnymi szkleniami. Skandynawski charakter premium — bryła, którą się pamięta. Materiał elewacji i akcentów ustalamy razem.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "30000",
+    "lowPrice": "20564",
     "highPrice": "110000"
   }
 }

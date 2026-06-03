@@ -902,13 +902,6 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
   font-size: .75rem;
   color: var(--t3);
 }
-.cfg-form .form-consent {
-  color: var(--primary);
-  font-size: .82rem;
-  line-height: 1.5;
-  margin-top: 4px;
-}
-.cfg-form .form-consent a { color: var(--accent); font-weight: 600; }
 .cfg-submit {
   width: 100%;
   padding: 14px;
@@ -1635,8 +1628,6 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
             <input type="email" name="email" placeholder="Email">
             <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)"></textarea>
             <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
-            <label class="form-consent"><input type="checkbox" name="consent" required> Zapoznałem/am się z informacją o przetwarzaniu danych i zgadzam się na kontakt w celu przygotowania wyceny. <a href="polityka-prywatnosci.html" target="_blank">Polityka prywatności</a></label>
-            <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Wyrażam zgodę na otrzymywanie od STAGO GROUP Sp. z o.o. informacji handlowych i marketingowych dotyczących oferty STAGO drogą e-mail, telefonicznie lub SMS. Zgodę mogę wycofać w dowolnym momencie.</label>
             <button type="submit" class="cfg-submit">Wyślij zapytanie</button>
             <p class="form-error" id="cfgForm-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:8px"></p>
             <p class="form-promise">

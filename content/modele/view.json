@@ -13,12 +13,30 @@
     "img": "../assets/modele/view.webp",
     "imgAlt": "Pawilon modułowy STAGO VIEW — bryła z panoramicznymi narożnikami",
     "h1": "VIEW — bryła z panoramicznymi narożnikami.",
-    "subtitle": "Dynamiczna forma z ogromnymi narożnymi szkleniami w skośnym układzie. Panoramiczny widok z wnętrza, mocna obecność z zewnątrz. Materiał górnego pasa i korpusu wybierasz Ty.",
-    "price": "od 30 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "subtitle": "Tu szkło zastępuje ścianę — przeszklenia ciągną się za róg, a drewno wieńczy całość u góry. Siadasz w środku i patrzysz na świat, nie na tynk przed nosem. Biuro, recepcja, showroom — zależnie od tego, co chcesz mieć przed oczami.",
+    "price": "od 20 564 zł",
+    "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=view",
     "articleHref": "../modele.html",
-    "articleText": "Zobacz wszystkie modele &rarr;"
+    "articleText": "Zobacz wszystkie modele &rarr;",
+    "haslo": "Ściany? Wolimy widok.",
+    "views": [
+      {
+        "img": "../assets/modele/view.webp",
+        "alt": "Pawilon STAGO VIEW — widok główny 3/4",
+        "label": "Widok główny"
+      },
+      {
+        "img": "../assets/modele/view-a.webp",
+        "alt": "Pawilon STAGO VIEW — front",
+        "label": "Front"
+      },
+      {
+        "img": "../assets/modele/view-b.webp",
+        "alt": "Pawilon STAGO VIEW — ujęcie z boku",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Do czego pasuje",
@@ -150,7 +168,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
@@ -236,7 +254,7 @@
     "name": "Pawilon modułowy STAGO VIEW",
     "description": "VIEW. Dynamiczna forma z ogromnymi narożnymi szkleniami w skośnym układzie. Panoramiczny widok z wnętrza, mocna obecność z zewnątrz. Materiał górnego pasa i korpusu wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/view.webp",
-    "lowPrice": "30000",
+    "lowPrice": "20564",
     "highPrice": "110000"
   }
 }

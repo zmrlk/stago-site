@@ -13,12 +13,30 @@
     "img": "../assets/modele/cube.webp",
     "imgAlt": "Pawilon modułowy STAGO CUBE — modułowy kubik z wyrazistą wstawką",
     "h1": "CUBE — modułowy kubik z wyrazistą wstawką.",
-    "subtitle": "Czysta geometryczna forma z wyraźną panelową wstawką jako akcentem. Łatwo łączy się w większe układy. Solidny, funkcjonalny, bezpretensjonalny. Wykończenie panelu i wstawki wybierasz Ty.",
-    "price": "od 22 000 zł netto",
-    "priceNote": "/ wycena indywidualna pod Twój projekt",
+    "subtitle": "Czarny, modułowy kubik z jednym ciepłym, drewnianym akcentem. Żadnych ozdobników — sama geometria, dla tych, którzy lubią, gdy rzeczy są proste. Forma zostaje, funkcję dopisujesz Ty.",
+    "price": "od 20 564 zł",
+    "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=cube",
     "articleHref": "../modele.html",
-    "articleText": "Zobacz wszystkie modele &rarr;"
+    "articleText": "Zobacz wszystkie modele &rarr;",
+    "haslo": "Sama forma. Zero gadania.",
+    "views": [
+      {
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pawilon STAGO CUBE — widok główny 3/4",
+        "label": "Widok główny"
+      },
+      {
+        "img": "../assets/modele/cube-a.webp",
+        "alt": "Pawilon STAGO CUBE — front",
+        "label": "Front"
+      },
+      {
+        "img": "../assets/modele/cube-b.webp",
+        "alt": "Pawilon STAGO CUBE — ujęcie z boku",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Do czego pasuje",
@@ -150,7 +168,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
@@ -236,7 +254,7 @@
     "name": "Pawilon modułowy STAGO CUBE",
     "description": "CUBE. Czysta geometryczna forma z wyraźną panelową wstawką jako akcentem. Łatwo łączy się w większe układy. Solidny, funkcjonalny, bezpretensjonalny. Wykończenie panelu i wstawki wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/cube.webp",
-    "lowPrice": "22000",
+    "lowPrice": "20564",
     "highPrice": "85000"
   }
 }
