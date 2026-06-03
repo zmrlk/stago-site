@@ -18,7 +18,24 @@
     "priceNote": "/ individuální kalkulace pro váš projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20NORD%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Zobrazit všechny modely &rarr;"
+    "articleText": "Zobrazit všechny modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/nord.webp",
+        "alt": "Modulární pavilon STAGO NORD",
+        "label": "Hlavní pohled"
+      },
+      {
+        "img": "../assets/modele/nord-a.webp",
+        "alt": "Modulární pavilon STAGO NORD",
+        "label": "Zepředu"
+      },
+      {
+        "img": "../assets/modele/nord-b.webp",
+        "alt": "Modulární pavilon STAGO NORD",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "K čemu se hodí",

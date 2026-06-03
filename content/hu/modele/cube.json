@@ -18,7 +18,24 @@
     "priceNote": "/ egyedi árazás az Ön projektjéhez",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20CUBE%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Összes modell megtekintése &rarr;"
+    "articleText": "Összes modell megtekintése &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/cube.webp",
+        "alt": "STAGO moduláris pavilon CUBE",
+        "label": "Fő nézet"
+      },
+      {
+        "img": "../assets/modele/cube-a.webp",
+        "alt": "STAGO moduláris pavilon CUBE",
+        "label": "Elöl"
+      },
+      {
+        "img": "../assets/modele/cube-b.webp",
+        "alt": "STAGO moduláris pavilon CUBE",
+        "label": "Oldalról"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Mire alkalmas",

@@ -18,7 +18,24 @@
     "priceNote": "/ presupuesto individual para su proyecto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20RYTM%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Ver todos los modelos &rarr;"
+    "articleText": "Ver todos los modelos &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Pabellón modular STAGO RYTM",
+        "label": "Vista principal"
+      },
+      {
+        "img": "../assets/modele/rytm-a.webp",
+        "alt": "Pabellón modular STAGO RYTM",
+        "label": "Frente"
+      },
+      {
+        "img": "../assets/modele/rytm-b.webp",
+        "alt": "Pabellón modular STAGO RYTM",
+        "label": "Lateral"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Para qué sirve",

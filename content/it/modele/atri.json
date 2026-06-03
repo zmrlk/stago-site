@@ -18,7 +18,24 @@
     "priceNote": "/ preventivo individuale per il tuo progetto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20ATRI%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Vedi tutti i modelli &rarr;"
+    "articleText": "Vedi tutti i modelli &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/atri.webp",
+        "alt": "Padiglione modulare STAGO ATRI",
+        "label": "Vista principale"
+      },
+      {
+        "img": "../assets/modele/atri-a.webp",
+        "alt": "Padiglione modulare STAGO ATRI",
+        "label": "Fronte"
+      },
+      {
+        "img": "../assets/modele/atri-b.webp",
+        "alt": "Padiglione modulare STAGO ATRI",
+        "label": "Lato"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "A cosa è adatto",

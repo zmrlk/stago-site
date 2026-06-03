@@ -18,7 +18,24 @@
     "priceNote": "/ preventivo individuale per il tuo progetto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20VIEW%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Vedi tutti i modelli &rarr;"
+    "articleText": "Vedi tutti i modelli &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/view.webp",
+        "alt": "Padiglione modulare STAGO VIEW",
+        "label": "Vista principale"
+      },
+      {
+        "img": "../assets/modele/view-a.webp",
+        "alt": "Padiglione modulare STAGO VIEW",
+        "label": "Fronte"
+      },
+      {
+        "img": "../assets/modele/view-b.webp",
+        "alt": "Padiglione modulare STAGO VIEW",
+        "label": "Lato"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "A cosa è adatto",

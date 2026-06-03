@@ -18,7 +18,24 @@
     "priceNote": "/ preventivo individuale per il tuo progetto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20KIOS%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Vedi tutti i modelli &rarr;"
+    "articleText": "Vedi tutti i modelli &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/kios.webp",
+        "alt": "Padiglione modulare STAGO KIOS",
+        "label": "Vista principale"
+      },
+      {
+        "img": "../assets/modele/kios-a.webp",
+        "alt": "Padiglione modulare STAGO KIOS",
+        "label": "Fronte"
+      },
+      {
+        "img": "../assets/modele/kios-b.webp",
+        "alt": "Padiglione modulare STAGO KIOS",
+        "label": "Lato"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "A cosa è adatto",

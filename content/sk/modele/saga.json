@@ -18,7 +18,24 @@
     "priceNote": "/ individuálna cenová ponuka podľa Vášho projektu",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20SAGA%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Pozrite si všetky modely &rarr;"
+    "articleText": "Pozrite si všetky modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/saga.webp",
+        "alt": "Modulárny pavilón STAGO SAGA",
+        "label": "Hlavný pohľad"
+      },
+      {
+        "img": "../assets/modele/saga-a.webp",
+        "alt": "Modulárny pavilón STAGO SAGA",
+        "label": "Spredu"
+      },
+      {
+        "img": "../assets/modele/saga-b.webp",
+        "alt": "Modulárny pavilón STAGO SAGA",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Na čo sa hodí",

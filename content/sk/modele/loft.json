@@ -18,7 +18,24 @@
     "priceNote": "/ individuálna cenová ponuka podľa Vášho projektu",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20LOFT%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Pozrite si všetky modely &rarr;"
+    "articleText": "Pozrite si všetky modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/loft.webp",
+        "alt": "Modulárny pavilón STAGO LOFT",
+        "label": "Hlavný pohľad"
+      },
+      {
+        "img": "../assets/modele/loft-a.webp",
+        "alt": "Modulárny pavilón STAGO LOFT",
+        "label": "Spredu"
+      },
+      {
+        "img": "../assets/modele/loft-b.webp",
+        "alt": "Modulárny pavilón STAGO LOFT",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Na čo sa hodí",

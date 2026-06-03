@@ -18,7 +18,24 @@
     "priceNote": "/ individuelle Kalkulation für Ihr Projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=DE%20—%20ICON%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Alle Modelle ansehen &rarr;"
+    "articleText": "Alle Modelle ansehen &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/icon.webp",
+        "alt": "STAGO Modulpavillon ICON",
+        "label": "Hauptansicht"
+      },
+      {
+        "img": "../assets/modele/icon-a.webp",
+        "alt": "STAGO Modulpavillon ICON",
+        "label": "Vorne"
+      },
+      {
+        "img": "../assets/modele/icon-b.webp",
+        "alt": "STAGO Modulpavillon ICON",
+        "label": "Seite"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Einsatzbereiche",
@@ -101,7 +118,7 @@
     "items": [
       {
         "h3": "Kostenlose 3D-Visualisierung",
-        "text": "Wir zeichnen den Pavillon in 3D, bevor Sie etwas unterschreiben. Wir ändern so oft wie nötig — bis Sie „ja\u201C sagen. Kostenlos, ohne Verpflichtungen."
+        "text": "Wir zeichnen den Pavillon in 3D, bevor Sie etwas unterschreiben. Wir ändern so oft wie nötig — bis Sie „ja“ sagen. Kostenlos, ohne Verpflichtungen."
       },
       {
         "h3": "Transport und Montage aus Jędrzejów",
@@ -164,20 +181,46 @@
     "selectedType": "inny",
     "textareaPlaceholder": "Welche Größe, welches Fassadenmaterial, wo soll er stehen, wofür soll er genutzt werden?",
     "options": [
-      { "value": "handlowy", "label": "Verkaufspavillon" },
-      { "value": "gastronomiczny", "label": "Gastro-Pavillon" },
-      { "value": "biurowy", "label": "Bürocontainer" },
-      { "value": "uslugowy", "label": "Dienstleistungspavillon" },
-      { "value": "mieszkalny", "label": "Wohnhaus" },
-      { "value": "inny", "label": "Sonstiges" }
+      {
+        "value": "handlowy",
+        "label": "Verkaufspavillon"
+      },
+      {
+        "value": "gastronomiczny",
+        "label": "Gastro-Pavillon"
+      },
+      {
+        "value": "biurowy",
+        "label": "Bürocontainer"
+      },
+      {
+        "value": "uslugowy",
+        "label": "Dienstleistungspavillon"
+      },
+      {
+        "value": "mieszkalny",
+        "label": "Wohnhaus"
+      },
+      {
+        "value": "inny",
+        "label": "Sonstiges"
+      }
     ],
     "infoH3": "Wie läuft das ab?",
     "infoText": "Sie schreiben oder rufen an. Wir fragen nach Details — Maße, Material, Verwendungszweck, Standort. Wir erstellen eine 3D-Visualisierung. Wir nennen ein vollständiges Angebot mit Transport und Montage. Ohne Überraschungen.",
     "features": [
-      { "text": "3D-Visualisierung — sehen, bevor Sie bestellen" },
-      { "text": "Wir organisieren Transport und Montage" },
-      { "text": "Hilfe bei Dokumenten und Genehmigung" },
-      { "text": "Antwort innerhalb eines Tages" }
+      {
+        "text": "3D-Visualisierung — sehen, bevor Sie bestellen"
+      },
+      {
+        "text": "Wir organisieren Transport und Montage"
+      },
+      {
+        "text": "Hilfe bei Dokumenten und Genehmigung"
+      },
+      {
+        "text": "Antwort innerhalb eines Tages"
+      }
     ]
   },
   "related": [

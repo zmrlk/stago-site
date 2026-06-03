@@ -18,7 +18,24 @@
     "priceNote": "/ individuálna cenová ponuka podľa Vášho projektu",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20MILA%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Pozrite si všetky modely &rarr;"
+    "articleText": "Pozrite si všetky modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/mila.webp",
+        "alt": "Modulárny pavilón STAGO MILA",
+        "label": "Hlavný pohľad"
+      },
+      {
+        "img": "../assets/modele/mila-a.webp",
+        "alt": "Modulárny pavilón STAGO MILA",
+        "label": "Spredu"
+      },
+      {
+        "img": "../assets/modele/mila-b.webp",
+        "alt": "Modulárny pavilón STAGO MILA",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Na čo sa hodí",

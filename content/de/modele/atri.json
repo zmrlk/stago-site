@@ -18,7 +18,24 @@
     "priceNote": "/ individuelle Kalkulation für Ihr Projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=DE%20—%20ATRI%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Alle Modelle ansehen &rarr;"
+    "articleText": "Alle Modelle ansehen &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/atri.webp",
+        "alt": "STAGO Modulpavillon ATRI",
+        "label": "Hauptansicht"
+      },
+      {
+        "img": "../assets/modele/atri-a.webp",
+        "alt": "STAGO Modulpavillon ATRI",
+        "label": "Vorne"
+      },
+      {
+        "img": "../assets/modele/atri-b.webp",
+        "alt": "STAGO Modulpavillon ATRI",
+        "label": "Seite"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Einsatzbereiche",
@@ -101,7 +118,7 @@
     "items": [
       {
         "h3": "Kostenlose 3D-Visualisierung",
-        "text": "Wir zeichnen den Pavillon in 3D, bevor Sie etwas unterschreiben. Wir ändern so oft wie nötig — bis Sie „ja\u201C sagen. Kostenlos, ohne Verpflichtungen."
+        "text": "Wir zeichnen den Pavillon in 3D, bevor Sie etwas unterschreiben. Wir ändern so oft wie nötig — bis Sie „ja“ sagen. Kostenlos, ohne Verpflichtungen."
       },
       {
         "h3": "Transport und Montage aus Jędrzejów",

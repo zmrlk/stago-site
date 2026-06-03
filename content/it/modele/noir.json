@@ -18,7 +18,24 @@
     "priceNote": "/ preventivo individuale per il tuo progetto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20NOIR%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Vedi tutti i modelli &rarr;"
+    "articleText": "Vedi tutti i modelli &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/noir.webp",
+        "alt": "Padiglione modulare STAGO NOIR",
+        "label": "Vista principale"
+      },
+      {
+        "img": "../assets/modele/noir-a.webp",
+        "alt": "Padiglione modulare STAGO NOIR",
+        "label": "Fronte"
+      },
+      {
+        "img": "../assets/modele/noir-b.webp",
+        "alt": "Padiglione modulare STAGO NOIR",
+        "label": "Lato"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "A cosa è adatto",

@@ -18,7 +18,24 @@
     "priceNote": "/ presupuesto individual para su proyecto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20LOFT%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Ver todos los modelos &rarr;"
+    "articleText": "Ver todos los modelos &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/loft.webp",
+        "alt": "Pabellón modular STAGO LOFT",
+        "label": "Vista principal"
+      },
+      {
+        "img": "../assets/modele/loft-a.webp",
+        "alt": "Pabellón modular STAGO LOFT",
+        "label": "Frente"
+      },
+      {
+        "img": "../assets/modele/loft-b.webp",
+        "alt": "Pabellón modular STAGO LOFT",
+        "label": "Lateral"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Para qué sirve",

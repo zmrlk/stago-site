@@ -18,7 +18,24 @@
     "priceNote": "/ individuální kalkulace pro váš projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20ICON%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Zobrazit všechny modely &rarr;"
+    "articleText": "Zobrazit všechny modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/icon.webp",
+        "alt": "Modulární pavilon STAGO ICON",
+        "label": "Hlavní pohled"
+      },
+      {
+        "img": "../assets/modele/icon-a.webp",
+        "alt": "Modulární pavilon STAGO ICON",
+        "label": "Zepředu"
+      },
+      {
+        "img": "../assets/modele/icon-b.webp",
+        "alt": "Modulární pavilon STAGO ICON",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "K čemu se hodí",

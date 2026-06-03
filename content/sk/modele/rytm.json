@@ -18,7 +18,24 @@
     "priceNote": "/ individuálna cenová ponuka podľa Vášho projektu",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20RYTM%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Pozrite si všetky modely &rarr;"
+    "articleText": "Pozrite si všetky modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/rytm.webp",
+        "alt": "Modulárny pavilón STAGO RYTM",
+        "label": "Hlavný pohľad"
+      },
+      {
+        "img": "../assets/modele/rytm-a.webp",
+        "alt": "Modulárny pavilón STAGO RYTM",
+        "label": "Spredu"
+      },
+      {
+        "img": "../assets/modele/rytm-b.webp",
+        "alt": "Modulárny pavilón STAGO RYTM",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Na čo sa hodí",

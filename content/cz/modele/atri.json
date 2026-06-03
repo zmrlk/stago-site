@@ -18,7 +18,24 @@
     "priceNote": "/ individuální kalkulace pro váš projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20ATRI%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Zobrazit všechny modely &rarr;"
+    "articleText": "Zobrazit všechny modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/atri.webp",
+        "alt": "Modulární pavilon STAGO ATRI",
+        "label": "Hlavní pohled"
+      },
+      {
+        "img": "../assets/modele/atri-a.webp",
+        "alt": "Modulární pavilon STAGO ATRI",
+        "label": "Zepředu"
+      },
+      {
+        "img": "../assets/modele/atri-b.webp",
+        "alt": "Modulární pavilon STAGO ATRI",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "K čemu se hodí",

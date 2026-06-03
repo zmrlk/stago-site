@@ -18,7 +18,24 @@
     "priceNote": "/ individuální kalkulace pro váš projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20VIEW%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Zobrazit všechny modely &rarr;"
+    "articleText": "Zobrazit všechny modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/view.webp",
+        "alt": "Modulární pavilon STAGO VIEW",
+        "label": "Hlavní pohled"
+      },
+      {
+        "img": "../assets/modele/view-a.webp",
+        "alt": "Modulární pavilon STAGO VIEW",
+        "label": "Zepředu"
+      },
+      {
+        "img": "../assets/modele/view-b.webp",
+        "alt": "Modulární pavilon STAGO VIEW",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "K čemu se hodí",

@@ -18,7 +18,24 @@
     "priceNote": "/ presupuesto individual para su proyecto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20DUET%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Ver todos los modelos &rarr;"
+    "articleText": "Ver todos los modelos &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/duet.webp",
+        "alt": "Pabellón modular STAGO DUET",
+        "label": "Vista principal"
+      },
+      {
+        "img": "../assets/modele/duet-a.webp",
+        "alt": "Pabellón modular STAGO DUET",
+        "label": "Frente"
+      },
+      {
+        "img": "../assets/modele/duet-b.webp",
+        "alt": "Pabellón modular STAGO DUET",
+        "label": "Lateral"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Para qué sirve",

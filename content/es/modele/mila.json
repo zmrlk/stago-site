@@ -18,7 +18,24 @@
     "priceNote": "/ presupuesto individual para su proyecto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20MILA%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Ver todos los modelos &rarr;"
+    "articleText": "Ver todos los modelos &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/mila.webp",
+        "alt": "Pabellón modular STAGO MILA",
+        "label": "Vista principal"
+      },
+      {
+        "img": "../assets/modele/mila-a.webp",
+        "alt": "Pabellón modular STAGO MILA",
+        "label": "Frente"
+      },
+      {
+        "img": "../assets/modele/mila-b.webp",
+        "alt": "Pabellón modular STAGO MILA",
+        "label": "Lateral"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Para qué sirve",

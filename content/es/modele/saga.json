@@ -18,7 +18,24 @@
     "priceNote": "/ presupuesto individual para su proyecto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20SAGA%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Ver todos los modelos &rarr;"
+    "articleText": "Ver todos los modelos &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/saga.webp",
+        "alt": "Pabellón modular STAGO SAGA",
+        "label": "Vista principal"
+      },
+      {
+        "img": "../assets/modele/saga-a.webp",
+        "alt": "Pabellón modular STAGO SAGA",
+        "label": "Frente"
+      },
+      {
+        "img": "../assets/modele/saga-b.webp",
+        "alt": "Pabellón modular STAGO SAGA",
+        "label": "Lateral"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Para qué sirve",

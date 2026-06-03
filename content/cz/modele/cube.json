@@ -18,7 +18,24 @@
     "priceNote": "/ individuální kalkulace pro váš projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20CUBE%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Zobrazit všechny modely &rarr;"
+    "articleText": "Zobrazit všechny modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/cube.webp",
+        "alt": "Modulární pavilon STAGO CUBE",
+        "label": "Hlavní pohled"
+      },
+      {
+        "img": "../assets/modele/cube-a.webp",
+        "alt": "Modulární pavilon STAGO CUBE",
+        "label": "Zepředu"
+      },
+      {
+        "img": "../assets/modele/cube-b.webp",
+        "alt": "Modulární pavilon STAGO CUBE",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "K čemu se hodí",

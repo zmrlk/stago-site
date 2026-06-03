@@ -18,7 +18,24 @@
     "priceNote": "/ egyedi árazás az Ön projektjéhez",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20VIEW%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Összes modell megtekintése &rarr;"
+    "articleText": "Összes modell megtekintése &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/view.webp",
+        "alt": "STAGO moduláris pavilon VIEW",
+        "label": "Fő nézet"
+      },
+      {
+        "img": "../assets/modele/view-a.webp",
+        "alt": "STAGO moduláris pavilon VIEW",
+        "label": "Elöl"
+      },
+      {
+        "img": "../assets/modele/view-b.webp",
+        "alt": "STAGO moduláris pavilon VIEW",
+        "label": "Oldalról"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Mire alkalmas",

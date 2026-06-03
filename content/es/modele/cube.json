@@ -18,7 +18,24 @@
     "priceNote": "/ presupuesto individual para su proyecto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20CUBE%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Ver todos los modelos &rarr;"
+    "articleText": "Ver todos los modelos &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/cube.webp",
+        "alt": "Pabellón modular STAGO CUBE",
+        "label": "Vista principal"
+      },
+      {
+        "img": "../assets/modele/cube-a.webp",
+        "alt": "Pabellón modular STAGO CUBE",
+        "label": "Frente"
+      },
+      {
+        "img": "../assets/modele/cube-b.webp",
+        "alt": "Pabellón modular STAGO CUBE",
+        "label": "Lateral"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Para qué sirve",

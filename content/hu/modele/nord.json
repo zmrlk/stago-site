@@ -18,7 +18,24 @@
     "priceNote": "/ egyedi árazás az Ön projektjéhez",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20NORD%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Összes modell megtekintése &rarr;"
+    "articleText": "Összes modell megtekintése &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/nord.webp",
+        "alt": "STAGO moduláris pavilon NORD",
+        "label": "Fő nézet"
+      },
+      {
+        "img": "../assets/modele/nord-a.webp",
+        "alt": "STAGO moduláris pavilon NORD",
+        "label": "Elöl"
+      },
+      {
+        "img": "../assets/modele/nord-b.webp",
+        "alt": "STAGO moduláris pavilon NORD",
+        "label": "Oldalról"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Mire alkalmas",

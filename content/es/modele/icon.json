@@ -18,7 +18,24 @@
     "priceNote": "/ presupuesto individual para su proyecto",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20ICON%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Ver todos los modelos &rarr;"
+    "articleText": "Ver todos los modelos &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/icon.webp",
+        "alt": "Pabellón modular STAGO ICON",
+        "label": "Vista principal"
+      },
+      {
+        "img": "../assets/modele/icon-a.webp",
+        "alt": "Pabellón modular STAGO ICON",
+        "label": "Frente"
+      },
+      {
+        "img": "../assets/modele/icon-b.webp",
+        "alt": "Pabellón modular STAGO ICON",
+        "label": "Lateral"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "Para qué sirve",

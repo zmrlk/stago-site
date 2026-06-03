@@ -18,7 +18,24 @@
     "priceNote": "/ individuální kalkulace pro váš projekt",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20DUET%20Inquiry",
     "articleHref": "../modele.html",
-    "articleText": "Zobrazit všechny modely &rarr;"
+    "articleText": "Zobrazit všechny modely &rarr;",
+    "views": [
+      {
+        "img": "../assets/modele/duet.webp",
+        "alt": "Modulární pavilon STAGO DUET",
+        "label": "Hlavní pohled"
+      },
+      {
+        "img": "../assets/modele/duet-a.webp",
+        "alt": "Modulární pavilon STAGO DUET",
+        "label": "Zepředu"
+      },
+      {
+        "img": "../assets/modele/duet-b.webp",
+        "alt": "Modulární pavilon STAGO DUET",
+        "label": "Z boku"
+      }
+    ]
   },
   "usecases": {
     "eyebrow": "K čemu se hodí",
