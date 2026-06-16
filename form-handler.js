@@ -1,9 +1,14 @@
 /**
- * STAGO Form Handler v2.0 — Production
- * 
+ * STAGO Form Handler v2.1 — Production
+ *
  * Wysyła dane formularza TYLKO do Edge Function send-contact-email.
  * Zero bezpośrednich INSERT do REST API = zero duplikatów.
- * 
+ *
+ * v2.1: po potwierdzonej wysyłce emituje konwersję `generate_lead`
+ *   - dataLayer.push (GTM → tagi marketingowe Meta/TikTok)
+ *   - gtag('event', ...) (GA4 — ładowany bezpośrednio z cookies.js, NIE przez GTM)
+ *   Bez PII. Tag odpala się tylko po zgodzie (consent mode).
+ *
  * Użycie: <script src="/form-handler.js"></script>
  * Formularz musi mieć atrybut data-contact-form lub id="contactForm"
  */
@@ -227,6 +232,41 @@
     }
   }
 
+  // ─── ANALYTICS: konwersja generate_lead ──────────────────────────
+  // Wywoływane TYLKO po potwierdzonej wysyłce (HTTP 2xx z Edge Function).
+  // Zero PII: imię/email/telefon NIE trafiają do analytics (wymóg GA4 §PII).
+  // Dwa tory bo GA4 jest ładowany wprost przez gtag z cookies.js (nie przez GTM):
+  //   1) dataLayer.push  → GTM (custom event 'generate_lead' dla tagów Meta/TikTok)
+  //   2) gtag('event')   → GA4 bezpośrednio (window.gtag istnieje dopiero po zgodzie analytics)
+  function trackLead(form, payload) {
+    try {
+      var isConfigurator = (form.id === 'cfgForm' || form.classList.contains('cfg-form'));
+      var params = {
+        lead_type: isConfigurator ? 'configurator' : 'contact',
+        form_id: payload.consent_form_id || form.id || '',
+        form_location: window.location.pathname,
+        language: payload.language || '',
+        container_type: payload.containerType || '',
+        consent_marketing: payload.consent_marketing === true
+      };
+
+      // 1) GTM — custom event
+      window.dataLayer = window.dataLayer || [];
+      var dlEvent = { event: 'generate_lead' };
+      for (var k in params) {
+        if (Object.prototype.hasOwnProperty.call(params, k)) dlEvent[k] = params[k];
+      }
+      window.dataLayer.push(dlEvent);
+
+      // 2) GA4 — recommended event (gtag dostępny tylko po zgodzie analytics)
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', params);
+      }
+    } catch (e) {
+      // Tracking nigdy nie może zepsuć wysyłki formularza — połykamy błąd.
+    }
+  }
+
   // ─── SUBMIT HANDLER ──────────────────────────────────────────────
   function handleSubmit(e) {
     e.preventDefault();
@@ -323,6 +363,10 @@
       })
       .then(function () {
         setSubmitButton(form, false, lang);
+
+        // Konwersja: lead potwierdzony (przed reset — payload mamy w scope)
+        trackLead(form, payload);
+
         form.reset();
 
         // Konfigurator — dedykowany success-screen (ukryj step-panels + bottom-bar, pokaż successScreen)
