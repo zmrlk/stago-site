@@ -535,25 +535,10 @@ document.querySelectorAll('[data-blog]').forEach(card => {
 });
 
 // ── FORM ──
-const form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const orig = btn.textContent;
-    btn.textContent = 'Wysłano! Odezwiemy się w 24h.';
-    btn.disabled = true;
-    btn.style.background = '#22c55e';
-    btn.style.borderColor = '#22c55e';
-    setTimeout(() => {
-      btn.textContent = orig;
-      btn.disabled = false;
-      btn.style.background = '';
-      btn.style.borderColor = '';
-      form.reset();
-    }, 4000);
-  });
-}
+// Obsługa #contact-form (wysyłka do Edge Function send-contact-email + komunikaty
+// + reset) jest w form-handler.js. NIE dodawać tu handlera submitu: poprzedni był
+// atrapą — pokazywał "Wysłano!" i resetował formularz BEZ faktycznej wysyłki, co
+// maskowało błędy sieci. Usunięty 2026-06-16.
 
 // ── GALLERY LIGHTBOX ──
 document.querySelectorAll('.gallery-item').forEach(item => {
