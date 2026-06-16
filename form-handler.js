@@ -17,7 +17,7 @@
 
   // ─── CONFIG ───────────────────────────────────────────────────────
   var CONFIG = {
-    ENDPOINT: 'https://qbsordlpomgyedvrkxck.supabase.co/functions/v1/send-contact-email',
+    ENDPOINT: 'https://erp.stago.com.pl/api/leads/intake',
     RATE_LIMIT_MS: 30000,
     MAX_MESSAGE_LENGTH: 2000,
     HONEYPOT_FIELD: 'website_url',
