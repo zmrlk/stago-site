@@ -11,6 +11,7 @@
   <meta property="og:title" content="{{meta.title}}">
   <meta property="og:description" content="{{meta.description}}">
   <meta property="og:locale" content="{{ui.locale}}">
+  <meta property="og:image" content="{{meta.ogImage}}">
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="{{{root}}}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{{root}}}assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -85,6 +86,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   </footer>
 
   <script>document.getElementById('nav-toggle')?.addEventListener('click',function(){document.getElementById('nav-links').classList.toggle('open');});document.querySelector('.lang-btn')?.addEventListener('click',function(e){e.stopPropagation();var d=this.nextElementSibling;d.style.display=d.style.display==='none'?'grid':'none'});document.addEventListener('click',function(){var d=document.querySelector('.lang-dropdown');if(d)d.style.display='none'});</script>
+  <script src="{{{root}}}form-handler.js"></script>
   <script src="{{{root}}}cookies.js"></script>
 </body>
 </html>

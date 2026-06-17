@@ -188,6 +188,10 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // Hreflang tags (inject before </head>)
   const hreflang = hreflangTags(output);
 
+  // og:image fallback — pages without explicit meta.ogImage get the brand default
+  if (!data.meta) data.meta = {};
+  if (!data.meta.ogImage) data.meta.ogImage = 'https://stago.com.pl/assets/og.jpg';
+
   // Load and render template
   const tmpl = fs.readFileSync(tmplPath, 'utf8');
   let html = render(tmpl, data);
