@@ -98,15 +98,17 @@ function getPages() {
 // ── Hreflang generation ──
 function hreflangTags(pagePath) {
   const tags = [];
+  // CF Pages serves clean URLs (no .html) — hreflang must point to canonical clean URLs
+  const cleanPath = pagePath === 'index.html' ? '' : pagePath.replace(/\.html$/, '');
   for (const [langKey, cfg] of Object.entries(LANGS)) {
     const i18nData = JSON.parse(fs.readFileSync(cfg.i18n, 'utf8'));
     const langCode = i18nData.lang; // 'pl', 'de', 'cs', 'sk', 'hu', 'it', 'es'
     const prefix = cfg.dir ? cfg.dir + '/' : '';
-    const url = `https://stago.com.pl/${prefix}${pagePath}`;
+    const url = `https://stago.com.pl/${prefix}${cleanPath}`;
     tags.push(`<link rel="alternate" hreflang="${langCode}" href="${url}">`);
   }
   // x-default → PL
-  tags.push(`<link rel="alternate" hreflang="x-default" href="https://stago.com.pl/${pagePath}">`);
+  tags.push(`<link rel="alternate" hreflang="x-default" href="https://stago.com.pl/${cleanPath}">`);
   return tags.join('\n  ');
 }
 
@@ -191,6 +193,10 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // og:image fallback — pages without explicit meta.ogImage get the brand default
   if (!data.meta) data.meta = {};
   if (!data.meta.ogImage) data.meta.ogImage = 'https://stago.com.pl/assets/og.jpg';
+
+  // CF Pages serves clean URLs — canonical/og:url without .html (match served URL)
+  if (data.meta.canonical) data.meta.canonical = data.meta.canonical.replace(/\.html$/, '');
+  if (data.meta.ogUrl) data.meta.ogUrl = data.meta.ogUrl.replace(/\.html$/, '');
 
   // Load and render template
   const tmpl = fs.readFileSync(tmplPath, 'utf8');

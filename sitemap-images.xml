@@ -17,7 +17,7 @@
 
   <!-- HUB MODELE -->
   <url>
-    <loc>https://stago.com.pl/modele.html</loc>
+    <loc>https://stago.com.pl/modele</loc>
     <image:image><image:loc>https://stago.com.pl/assets/modele/atri.webp</image:loc><image:title>Pawilon STAGO ATRI — otwarta bryła z dużym przeszkleniem</image:title></image:image>
     <image:image><image:loc>https://stago.com.pl/assets/modele/mila.webp</image:loc><image:title>Pawilon STAGO MILA — bryła w klasycznym układzie</image:title></image:image>
     <image:image><image:loc>https://stago.com.pl/assets/modele/icon.webp</image:loc><image:title>Pawilon STAGO ICON — premium loft z narożnym przeszkleniem</image:title></image:image>
@@ -34,7 +34,7 @@
 
   <!-- REALIZACJE -->
   <url>
-    <loc>https://stago.com.pl/realizacje.html</loc>
+    <loc>https://stago.com.pl/realizacje</loc>
     <image:image><image:loc>https://stago.com.pl/assets/gallery/realizacje/r1.webp</image:loc><image:title>Pawilon biurowy STAGO — czarna elewacja z drewnianym akcentem</image:title></image:image>
     <image:image><image:loc>https://stago.com.pl/assets/gallery/realizacje/r2.webp</image:loc><image:title>Pawilon handlowy STAGO Tywent — drewniana elewacja, salon firmowy</image:title></image:image>
     <image:image><image:loc>https://stago.com.pl/assets/gallery/realizacje/r3.webp</image:loc><image:title>Pawilon STAGO — antracyt z drewnianym narożnikiem</image:title></image:image>
@@ -45,22 +45,22 @@
 
   <!-- TECHNOLOGIA -->
   <url>
-    <loc>https://stago.com.pl/technologia.html</loc>
+    <loc>https://stago.com.pl/technologia</loc>
     <image:image><image:loc>https://stago.com.pl/assets/warsztat-bg.webp</image:loc><image:title>Zakład produkcyjny STAGO — Jasionka pod Jędrzejowem</image:title></image:image>
   </url>
 
   <!-- 12 MODELI - dedykowane strony -->
-  <url><loc>https://stago.com.pl/modele/atri.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/atri.webp</image:loc><image:title>Pawilon modułowy STAGO ATRI — otwarta bryła z dużym przeszkleniem</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/mila.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/mila.webp</image:loc><image:title>Pawilon modułowy STAGO MILA — bryła w klasycznym układzie</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/icon.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/icon.webp</image:loc><image:title>Pawilon modułowy STAGO ICON — premium loft</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/rytm.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/rytm.webp</image:loc><image:title>Pawilon modułowy STAGO RYTM — drewniana ramka</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/nord.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/nord.webp</image:loc><image:title>Pawilon modułowy STAGO NORD — premium bryła</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/loft.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/loft.webp</image:loc><image:title>Pawilon modułowy STAGO LOFT — front showroomowy</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/saga.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/saga.webp</image:loc><image:title>Pawilon modułowy STAGO SAGA — wydłużona bryła</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/view.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/view.webp</image:loc><image:title>Pawilon modułowy STAGO VIEW — panoramiczne narożniki</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/duet.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/duet.webp</image:loc><image:title>Pawilon modułowy STAGO DUET — boczne akcenty</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/cube.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/cube.webp</image:loc><image:title>Pawilon modułowy STAGO CUBE — modułowy kubik</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/noir.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/noir.webp</image:loc><image:title>Pawilon modułowy STAGO NOIR — wydłużony monolit</image:title></image:image></url>
-  <url><loc>https://stago.com.pl/modele/kios.html</loc><image:image><image:loc>https://stago.com.pl/assets/modele/kios.webp</image:loc><image:title>Pawilon modułowy STAGO KIOS — kompaktowa bryła</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/atri</loc><image:image><image:loc>https://stago.com.pl/assets/modele/atri.webp</image:loc><image:title>Pawilon modułowy STAGO ATRI — otwarta bryła z dużym przeszkleniem</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/mila</loc><image:image><image:loc>https://stago.com.pl/assets/modele/mila.webp</image:loc><image:title>Pawilon modułowy STAGO MILA — bryła w klasycznym układzie</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/icon</loc><image:image><image:loc>https://stago.com.pl/assets/modele/icon.webp</image:loc><image:title>Pawilon modułowy STAGO ICON — premium loft</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/rytm</loc><image:image><image:loc>https://stago.com.pl/assets/modele/rytm.webp</image:loc><image:title>Pawilon modułowy STAGO RYTM — drewniana ramka</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/nord</loc><image:image><image:loc>https://stago.com.pl/assets/modele/nord.webp</image:loc><image:title>Pawilon modułowy STAGO NORD — premium bryła</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/loft</loc><image:image><image:loc>https://stago.com.pl/assets/modele/loft.webp</image:loc><image:title>Pawilon modułowy STAGO LOFT — front showroomowy</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/saga</loc><image:image><image:loc>https://stago.com.pl/assets/modele/saga.webp</image:loc><image:title>Pawilon modułowy STAGO SAGA — wydłużona bryła</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/view</loc><image:image><image:loc>https://stago.com.pl/assets/modele/view.webp</image:loc><image:title>Pawilon modułowy STAGO VIEW — panoramiczne narożniki</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/duet</loc><image:image><image:loc>https://stago.com.pl/assets/modele/duet.webp</image:loc><image:title>Pawilon modułowy STAGO DUET — boczne akcenty</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/cube</loc><image:image><image:loc>https://stago.com.pl/assets/modele/cube.webp</image:loc><image:title>Pawilon modułowy STAGO CUBE — modułowy kubik</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/noir</loc><image:image><image:loc>https://stago.com.pl/assets/modele/noir.webp</image:loc><image:title>Pawilon modułowy STAGO NOIR — wydłużony monolit</image:title></image:image></url>
+  <url><loc>https://stago.com.pl/modele/kios</loc><image:image><image:loc>https://stago.com.pl/assets/modele/kios.webp</image:loc><image:title>Pawilon modułowy STAGO KIOS — kompaktowa bryła</image:title></image:image></url>
 
 </urlset>
