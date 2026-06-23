@@ -207,6 +207,11 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
     html = html.replace('</head>', `  ${hreflang}\n</head>`);
   }
 
+  // CF Pages serves clean URLs (no .html). Strip .html from absolute stago.com.pl
+  // URLs in canonical / og:url / hreflang / JSON-LD so a rebuild does not regress the
+  // SEO clean-URL convention (commit e14ece1). Nav links are relative → untouched.
+  html = html.replace(/"(https:\/\/stago\.com\.pl\/[^"]*?)\.html"/g, '"$1"');
+
   // Ensure output directory exists
   const outDir = path.dirname(outputPath);
   if (outDir !== '.') fs.mkdirSync(outDir, { recursive: true });
