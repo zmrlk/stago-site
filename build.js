@@ -143,6 +143,65 @@ function adjustAssetPaths(obj, extraPrefix) {
   });
 }
 
+// ── WebPage / WebSite / Organization JSON-LD graph ──
+// Shared publisher identity (stable @id anchors) + a per-page WebPage node.
+// meta.pageType lets a page override the WebPage @type (e.g. CollectionPage, ContactPage).
+const ORG_ID = 'https://stago.com.pl/#organization';
+const SITE_ID = 'https://stago.com.pl/#website';
+
+function buildSchemaGraph(meta, langCode) {
+  const graph = [
+    {
+      '@type': 'Organization',
+      '@id': ORG_ID,
+      name: 'STAGO',
+      url: 'https://stago.com.pl/',
+      logo: 'https://stago.com.pl/assets/logo.webp',
+      image: 'https://stago.com.pl/assets/og.jpg',
+      telephone: '+48509508210',
+      email: 'kontakt@stago.com.pl',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Jasionka 117',
+        addressLocality: 'Jędrzejów',
+        postalCode: '28-300',
+        addressCountry: 'PL',
+      },
+      sameAs: [
+        'https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr',
+        'https://instagram.com/stago_pawilony_modulowe',
+        'https://www.tiktok.com/@stago_pawilony_modulowe',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': SITE_ID,
+      url: 'https://stago.com.pl/',
+      name: 'STAGO',
+      inLanguage: langCode,
+      publisher: { '@id': ORG_ID },
+    },
+  ];
+
+  if (meta.canonical) {
+    const webpage = {
+      '@type': meta.pageType || 'WebPage',
+      '@id': meta.canonical + '#webpage',
+      url: meta.canonical,
+      name: meta.title,
+      inLanguage: langCode,
+      isPartOf: { '@id': SITE_ID },
+      publisher: { '@id': ORG_ID },
+    };
+    if (meta.description) webpage.description = meta.description;
+    if (meta.ogImage) webpage.primaryImageOfPage = meta.ogImage;
+    graph.push(webpage);
+  }
+
+  const jsonld = { '@context': 'https://schema.org', '@graph': graph };
+  return '<script type="application/ld+json">' + JSON.stringify(jsonld) + '</script>';
+}
+
 // ── Build ──
 function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI18n }, lang, langCfg) {
   const langDir = langCfg.dir;
@@ -197,6 +256,12 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // CF Pages serves clean URLs — canonical/og:url without .html (match served URL)
   if (data.meta.canonical) data.meta.canonical = data.meta.canonical.replace(/\.html$/, '');
   if (data.meta.ogUrl) data.meta.ogUrl = data.meta.ogUrl.replace(/\.html$/, '');
+
+  // ── WebPage / WebSite / Organization graph ──
+  // Every page.html page gets a WebPage node (many had zero JSON-LD) linked to a
+  // WebSite + Organization anchor (stable @id) so AI/search can resolve the publisher.
+  // Computed in JS (not mustache) so titles with quotes are JSON-safe.
+  data.schemaGraph = buildSchemaGraph(data.meta, ui.lang);
 
   // Load and render template
   const tmpl = fs.readFileSync(tmplPath, 'utf8');
