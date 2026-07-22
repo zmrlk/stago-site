@@ -4,6 +4,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://erp.stago.com.pl; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://erp.stago.com.pl; object-src 'none'; upgrade-insecure-requests
 
 /*.html
   Cache-Control: public, max-age=3600, must-revalidate

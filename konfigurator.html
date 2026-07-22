@@ -645,11 +645,11 @@ body { background: #F8F9FA; padding-bottom: 0; }
 /* ── NEW: SHARED 2-col step layout (main + preview) for steps 1, 2, 4 ── */
 .s-grid {
   display: grid;
-  grid-template-columns: 1fr minmax(280px, 340px);
+  grid-template-columns: 1fr minmax(340px, 460px);
   gap: 28px;
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
-  align-items: center;
+  align-items: start;
 }
 .s-grid > .preview-panel { position: sticky; top: 80px; }
 .s-main { min-width: 0; }
@@ -860,6 +860,64 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border);
 }
+.summary-render {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: linear-gradient(135deg, #E7EBEE, #d5dbdf);
+}
+.summary-render-cap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .72rem;
+  color: var(--t3);
+  margin: -10px 0 16px;
+}
+/* Przycisk „powiększ" na renderze 3D */
+.stago3d-max {
+  position: absolute;
+  top: 8px; right: 8px;
+  width: 32px; height: 32px;
+  border-radius: 8px; border: none;
+  background: rgba(29,29,27,.5); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; z-index: 3; transition: background .2s;
+}
+.stago3d-max:hover { background: rgba(29,29,27,.8); }
+/* Modal pełnoekranowego renderu 3D */
+.r3d-modal {
+  display: none;
+  position: fixed; inset: 0; z-index: 300;
+  background: rgba(20,22,24,.82);
+  align-items: center; justify-content: center; padding: 24px;
+}
+.r3d-modal.open { display: flex; }
+.r3d-modal-inner {
+  position: relative;
+  width: min(1100px, 94vw);
+  height: min(78vh, 820px);
+  background: linear-gradient(135deg, #E7EBEE, #d5dbdf);
+  border-radius: 16px; overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,.4);
+}
+.r3d-modal-stage { width: 100%; height: 100%; }
+.r3d-close {
+  position: absolute; top: 12px; right: 12px;
+  width: 38px; height: 38px; border-radius: 10px; border: none;
+  background: rgba(29,29,27,.6); color: #fff;
+  font-size: 1.5rem; line-height: 1; cursor: pointer; z-index: 4;
+  display: flex; align-items: center; justify-content: center;
+}
+.r3d-close:hover { background: rgba(29,29,27,.85); }
+.r3d-modal-hint {
+  position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
+  font-size: .78rem; color: var(--t2);
+  background: rgba(255,255,255,.82); padding: 5px 12px; border-radius: 100px;
+  pointer-events: none; margin: 0;
+}
 .summary-row {
   display: flex;
   justify-content: space-between;
@@ -1053,6 +1111,74 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
 @media (max-width: 480px) {
   .type-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
   .type-card span { font-size: .8rem; padding: 8px 4px; }
+}
+
+/* ── STOLARKA — edytor otworów per-ściana ── */
+.wall-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-bottom: 14px;
+  font-size: .74rem;
+  color: var(--t3);
+}
+.wall-legend span { white-space: nowrap; }
+.wall-legend b {
+  display: inline-flex;
+  width: 18px; height: 18px;
+  align-items: center; justify-content: center;
+  border-radius: 5px;
+  background: var(--primary);
+  color: #fff;
+  font-size: .68rem;
+  margin-right: 4px;
+  vertical-align: -3px;
+}
+.openings-list { display: flex; flex-direction: column; gap: 10px; }
+.opening-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px 12px;
+  align-items: center;
+}
+.opening-card .oc-field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.opening-card .oc-field label {
+  font-size: .68rem; font-weight: 600; color: var(--t3);
+  text-transform: uppercase; letter-spacing: .05em;
+}
+.opening-card select {
+  padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px;
+  font-size: .85rem; background: #fff; outline: none; cursor: pointer; color: var(--primary);
+}
+.opening-card select:focus { border-color: var(--accent); }
+.opening-card .oc-pos { grid-column: 1 / 3; }
+.opening-card .oc-pos input[type=range] { width: 100%; accent-color: var(--accent); }
+.opening-card .oc-hinge { grid-column: 1 / 3; display: flex; gap: 6px; align-items: center; }
+.opening-card .oc-hinge .pill { padding: 5px 12px; font-size: .76rem; }
+.oc-remove {
+  grid-column: 3; grid-row: 1;
+  width: 30px; height: 30px; border-radius: 8px;
+  border: 1px solid var(--border); background: #fff; cursor: pointer;
+  color: var(--t3); font-size: 1.1rem; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .2s;
+}
+.oc-remove:hover { border-color: #e53935; color: #e53935; }
+.add-opening-btn {
+  margin-top: 12px; width: 100%;
+  padding: 11px; border: 1.5px dashed var(--border); border-radius: 10px;
+  background: #fff; color: var(--primary); font-size: .88rem; font-weight: 600;
+  cursor: pointer; transition: all .2s;
+}
+.add-opening-btn:hover { border-color: var(--accent); color: var(--accent); }
+.openings-empty { font-size: .82rem; color: var(--t3); padding: 8px 0; }
+@media(max-width:520px){
+  .opening-card { grid-template-columns: 1fr auto; }
+  .opening-card .oc-pos, .opening-card .oc-hinge { grid-column: 1 / 2; }
 }
 </style>
 </head>
@@ -1358,90 +1484,30 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
           </div>
 
           <div class="s3-section">
-            <h3>3. Okucia</h3>
-            <p class="s3-hint">Wybierz typ okuć. Dla premium pojawia się dodatkowo wybór koloru akcesoriów.</p>
-            <div class="okucia-list" data-group="okucia">
-              
-              <div class="okucia-row" data-name="Podstawowe" onclick="selectOkucia(this)">
-                <div class="okucia-radio"></div>
-                <div class="okucia-info">
-                  <strong>Podstawowe</strong>
-                  <span>Trwałe i ekonomiczne rozwiązanie.</span>
-                </div>
-                <div class="okucia-thumbs">
-                  <img src="{{.}}" alt="" onerror="this.style.visibility='hidden'"><img src="{{.}}" alt="" onerror="this.style.visibility='hidden'"><img src="{{.}}" alt="" onerror="this.style.visibility='hidden'">
-                </div>
-              </div>
-              
-              <div class="okucia-row" data-name="Specjalne premium" onclick="selectOkucia(this)">
-                <div class="okucia-radio"></div>
-                <div class="okucia-info">
-                  <strong>Specjalne premium</strong>
-                  <span>Nowoczesny wygląd i wyższy standard.</span>
-                </div>
-                <div class="okucia-thumbs">
-                  <img src="{{.}}" alt="" onerror="this.style.visibility='hidden'"><img src="{{.}}" alt="" onerror="this.style.visibility='hidden'"><img src="{{.}}" alt="" onerror="this.style.visibility='hidden'">
-                </div>
-              </div>
-              
+            <h3>3. Akcenty lamelowe</h3>
+            <p class="s3-hint">Gdzie nałożyć lamele / okładziny ozdobne. Można wybrać kilka zakresów naraz. „Całość" obejmuje pozostałe.</p>
+            <div class="pills" id="accentsGroup">
+              <div class="pill" data-acc="corners" onclick="toggleAccent(this,'corners')">Narożniki</div>
+              <div class="pill" data-acc="entrance" onclick="toggleAccent(this,'entrance')">Wejście</div>
+              <div class="pill" data-acc="band" onclick="toggleAccent(this,'band')">Pas górny</div>
+              <div class="pill" data-acc="squares" onclick="toggleAccent(this,'squares')">Kwadraty</div>
+              <div class="pill" data-acc="cassette" onclick="toggleAccent(this,'cassette')">Kasetony</div>
+              <div class="pill" data-acc="full" onclick="toggleAccent(this,'full')">Całość</div>
             </div>
           </div>
 
-          <div class="s3-section" id="kolorOkucSection">
-            <h3>Kolor okuć</h3>
-            <p class="s3-hint">Dotyczy okuć specjalnych premium.</p>
-            <div class="color-grid color-grid-6" data-group="kolorOkuc">
-              
-              <div class="color-card" data-name="Biały" onclick="selectKolorOkuc(this)">
-                <div class="color-dot" style="background:#FAFAFA"></div>
-                <strong>Biały</strong>
-                <span>RAL 9003</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              
-              <div class="color-card" data-name="Czarny" onclick="selectKolorOkuc(this)">
-                <div class="color-dot" style="background:#1D1D1B"></div>
-                <strong>Czarny</strong>
-                <span>RAL 9005</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              
-              <div class="color-card" data-name="Antracyt" onclick="selectKolorOkuc(this)">
-                <div class="color-dot" style="background:#3C3C3C"></div>
-                <strong>Antracyt</strong>
-                <span>RAL 7016</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              
-              <div class="color-card" data-name="Złoty dąb" onclick="selectKolorOkuc(this)">
-                <div class="color-dot" style="background:linear-gradient(135deg,#B8893F,#8C5A1F)"></div>
-                <strong>Złoty dąb</strong>
-                <span>Drewno</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              
-              <div class="color-card" data-name="Dąb winchester" onclick="selectKolorOkuc(this)">
-                <div class="color-dot" style="background:linear-gradient(135deg,#3E2A1A,#1F1207)"></div>
-                <strong>Dąb winchester</strong>
-                <span>Drewno</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              
-              <div class="color-card" data-name="Inny" onclick="selectKolorOkuc(this)">
-                <div class="color-dot" style="background:linear-gradient(135deg,#E8461C,#FFD700 25%,#34D399 50%,#3B82F6 75%,#A855F7)"></div>
-                <strong>Inny</strong>
-                <span>Indywidualny</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              
-            </div>
+          <div class="s3-section" id="kolorLameliSection">
+            <h3>4. Kolor lameli</h3>
+            <p class="s3-hint">Kolor akcentów — drewno (ze słojami) albo gładki RAL. Aktywne, gdy wybrany jest akcent.</p>
+            <div class="color-grid" id="woodGroup"></div>
           </div>
 
           <div class="s3-section">
-            <h3>4. Rozmieszczenie okuć</h3>
-            <p class="s3-hint">Gdzie umieścić elementy ozdobne.</p>
-            <div class="pills" data-group="rozmOkuc">
-              <div class="pill" onclick="selectPill(this)">2 narożniki</div><div class="pill" onclick="selectPill(this)">4 narożniki</div><div class="pill" onclick="selectPill(this)">2 narożniki + attyka</div><div class="pill" onclick="selectPill(this)">2 narożniki + attyka + boczne</div>
+            <h3>5. Okucia narożne (metal)</h3>
+            <p class="s3-hint">Metalowe profile ochronne na narożnikach — charakterystyczne dla modelu KIOS.</p>
+            <div class="pills" data-group="okuciaMetal">
+              <div class="pill selected" data-metal="off" onclick="setOkuciaMetal(this,false)">Brak</div>
+              <div class="pill" data-metal="on" onclick="setOkuciaMetal(this,true)">Okucia</div>
             </div>
           </div>
         </div>
@@ -1495,42 +1561,17 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="s-grid">
         <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
           <div class="s3-section">
-            <h3>1. Drzwi</h3>
-            <p class="s3-hint">Typ, przeszklenie i liczba.</p>
-            <div class="equip-row" style="background:transparent;border:none;padding:0">
-              <label>Typ</label>
-              <select id="doorType">
-                <option>Jednoskrzydłowe</option><option>Dwuskrzydłowe</option><option>Przesuwne</option><option>Aluminiowe z naświetlem</option>
-              </select>
-              <select id="doorGlazing">
-                <option>Pełne</option><option>Przeszklone</option>
-              </select>
-              <div class="qty-control">
-                <button class="qty-btn" onclick="changeQty('doorQty',-1)">−</button>
-                <span class="qty-val" id="doorQty">1</span>
-                <button class="qty-btn" onclick="changeQty('doorQty',1)">+</button>
-              </div>
+            <h3>1. Stolarka — okna i drzwi</h3>
+            <p class="s3-hint">Dodaj elementy i rozmieść je na ścianach. Bryła po prawej pokazuje układ na żywo. Rozmiary wg standardu STAGO.</p>
+            <div class="wall-legend">
+              <span><b>A</b>przód</span><span><b>B</b>prawy bok</span><span><b>C</b>tył</span><span><b>D</b>lewy bok</span>
             </div>
+            <div class="openings-list" id="openingsList"></div>
+            <button type="button" class="add-opening-btn" onclick="addOpening()">+ Dodaj element</button>
           </div>
 
           <div class="s3-section">
-            <h3>2. Okna</h3>
-            <p class="s3-hint">Typ okien i ilość.</p>
-            <div class="equip-row" style="background:transparent;border:none;padding:0">
-              <label>Typ</label>
-              <select id="windowType">
-                <option>Uchylne 80×60 cm</option><option>Rozwierno-uchylne 120×120 cm</option><option>Panoramiczne 100×200 cm</option><option>Stałe panoramiczne</option><option>Podawcze (handlowe)</option>
-              </select>
-              <div class="qty-control">
-                <button class="qty-btn" onclick="changeQty('windowQty',-1)">−</button>
-                <span class="qty-val" id="windowQty">2</span>
-                <button class="qty-btn" onclick="changeQty('windowQty',1)">+</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="s3-section">
-            <h3>3. Dodatkowe wyposażenie</h3>
+            <h3>2. Dodatkowe wyposażenie</h3>
             <p class="s3-hint">Wybierz opcje, które potrzebujesz. Wszystkie opcjonalne.</p>
             <div class="toggles-grid">
               
@@ -1618,6 +1659,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="summary-layout">
         <div class="summary-card">
           <h3>Twój pawilon</h3>
+          <div class="summary-render" id="summaryRender"></div>
+          <p class="summary-render-cap">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+            Podgląd 3D — obróć myszą. Render poglądowy.
+          </p>
           <div id="summaryRows"></div>
         </div>
         <div class="contact-card">
@@ -1653,6 +1699,15 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       </a>
     </div>
 
+  </div>
+
+  <!-- MODAL: pełnoekranowy render 3D -->
+  <div class="r3d-modal" id="render3dModal" onclick="if(event.target===this)StagoConfigurator3D.fullscreen(false)">
+    <div class="r3d-modal-inner">
+      <button class="r3d-close" type="button" aria-label="Zamknij podgląd" onclick="StagoConfigurator3D.fullscreen(false)">&times;</button>
+      <div class="r3d-modal-stage" id="r3dStage"></div>
+      <p class="r3d-modal-hint">Obróć myszą &middot; scroll = zoom</p>
+    </div>
   </div>
 
   <!-- BOTTOM BAR -->
@@ -1692,7 +1747,11 @@ const state = {
   doorQty: 1,
   windowType: 'Uchylne 80×60 cm',
   windowQty: 2,
-  extras: []
+  extras: [],
+  openings: [],  // [{wall:'A'|'B'|'C'|'D', kind:'wit'|'door'|'okn', t:0..1, hinge:'left'|'right'}]
+  accents: [],   // zakresy lameli: corners/entrance/band/squares/cassette/full (łączliwe)
+  woodName: '', woodHex: '',  // kolor lameli/akcentów
+  okuciaMetal: false          // metalowe okucia narożne (KIOS)
 };
 
 // ── LOAD FROM STORAGE ──
@@ -1741,12 +1800,10 @@ function restoreUI() {
   document.querySelectorAll('[data-group="dimH"] .pill').forEach(p => {
     p.classList.toggle('selected', p.dataset.val === state.dimH);
   });
-  // Restore equip
-  document.getElementById('doorType').value = state.doorType;
-  document.getElementById('doorGlazing').value = state.doorGlazing;
-  document.getElementById('doorQty').textContent = state.doorQty;
-  document.getElementById('windowType').value = state.windowType;
-  document.getElementById('windowQty').textContent = state.windowQty;
+  // Restore stolarka (openings)
+  renderOpenings();
+  // Restore akcenty / kolor lameli / okucia
+  syncAccentUI();
   updateOkuciaUI();
   // Restore toggles
   document.querySelectorAll('.toggle-item').forEach(t => {
@@ -1767,12 +1824,23 @@ function restorePills(group, val) {
 const panels = document.querySelectorAll('.step-panel');
 const totalSteps = 5;
 
+// ── 3D PODGLĄD: przenieś canvas do preview-hero aktywnego kroku ──
+const HERO_BY_STEP = { 1: 'previewHero1', 2: 'previewHero2', 3: 'previewHero', 4: 'previewHero4', 5: 'summaryRender' };
+function mount3D(n) {
+  if (!window.StagoConfigurator3D || !StagoConfigurator3D.ready()) return;
+  const host = document.getElementById(HERO_BY_STEP[n]);
+  if (host) { StagoConfigurator3D.mount(host); StagoConfigurator3D.update(state); }
+}
+
 function goToStep(n) {
   state.step = n;
   panels.forEach(p => {
     p.classList.remove('active');
     if (parseInt(p.dataset.step) === n) p.classList.add('active');
   });
+  if (n === 3) { ensureAccents(); syncAccentUI(); }
+  if (n === 4) { ensureOpenings(); renderOpenings(); }
+  mount3D(n);
   if (n === 5) buildSummary();
   updateBar();
   saveState();
@@ -1864,6 +1932,7 @@ function selectPill(el) {
   const groupName = group.dataset.group;
   if (groupName) state[groupName] = el.textContent;
   saveState();
+  updatePreview();
 }
 
 function selectOkucia(el) {
@@ -1902,7 +1971,90 @@ function selectKolorOkuc(el) {
   el.classList.add('selected');
   state.kolorOkuc = el.dataset.name;
   state.kolorOkucRal = el.querySelector('span').textContent;
+  state.kolorOkucHex = el.querySelector('.color-dot').style.background;
   saveState();
+  updatePreview();
+}
+
+// ── STEP 3: AKCENTY LAMELOWE / KOLOR LAMELI / OKUCIA METAL (parytet konfiguratora 3D) ──
+const WOODS = [
+  ['Dąb naturalny', '#C7A06A'], ['Dąb jasny', '#B08D5F'], ['Orzech', '#8A6A48'],
+  ['Heban', '#4A3A2C'], ['Antracyt', '#3A4045'], ['Czarny', '#17191B'],
+  ['Biały', '#EDEEEA'], ['Srebrny', '#A5A8A6']
+];
+const ACC_NAMES = { corners: 'narożniki', entrance: 'wejście', band: 'pas górny', squares: 'kwadraty', cassette: 'kasetony', full: 'całość' };
+
+// Domyślne akcenty/kolor/okucia z presetu modelu (spójność bryła↔UI)
+function ensureAccents() {
+  if (state._accInit) return;
+  if (!window.StagoPavilionCore || !window.THREE) return;
+  try {
+    const core = window.StagoPavilionCore(window.THREE);
+    const p = core.PRESETS[(state.type || 'nord').toLowerCase()] || core.DEFAULTS;
+    if (!state.accents.length && p.accents) state.accents = p.accents.slice();
+    if (!state.woodHex && p.wood) {
+      state.woodHex = p.wood;
+      const w = WOODS.find(x => x[1].toLowerCase() === String(p.wood).toLowerCase());
+      state.woodName = w ? w[0] : '';
+    }
+    if (!state.okuciaMetal && p.okucia) state.okuciaMetal = true;
+    state._accInit = true;
+    saveState();
+  } catch (e) {}
+}
+
+function syncAccentUI() {
+  document.querySelectorAll('#accentsGroup .pill').forEach(p => {
+    p.classList.toggle('selected', state.accents.indexOf(p.dataset.acc) >= 0);
+  });
+  document.querySelectorAll('[data-group="okuciaMetal"] .pill').forEach(p => {
+    p.classList.toggle('selected', (p.dataset.metal === 'on') === !!state.okuciaMetal);
+  });
+  renderWoods();
+}
+
+function toggleAccent(el, val) {
+  if (val === 'full') {
+    state.accents = el.classList.contains('selected') ? [] : ['full'];
+  } else {
+    state.accents = state.accents.filter(a => a !== 'full');
+    const i = state.accents.indexOf(val);
+    if (i >= 0) state.accents.splice(i, 1); else state.accents.push(val);
+  }
+  saveState();
+  syncAccentUI();
+  updatePreview();
+}
+
+function renderWoods() {
+  const g = document.getElementById('woodGroup');
+  if (!g) return;
+  g.textContent = '';
+  WOODS.forEach(w => {
+    const card = document.createElement('div');
+    card.className = 'color-card' + (state.woodHex && state.woodHex.toLowerCase() === w[1].toLowerCase() ? ' selected' : '');
+    const dot = document.createElement('div'); dot.className = 'color-dot'; dot.style.background = w[1];
+    const name = document.createElement('strong'); name.textContent = w[0];
+    const chk = document.createElement('span'); chk.className = 'pc-check'; chk.textContent = '✓';
+    card.appendChild(dot); card.appendChild(name); card.appendChild(chk);
+    card.addEventListener('click', () => selectWood(w[0], w[1]));
+    g.appendChild(card);
+  });
+}
+
+function selectWood(name, hex) {
+  state.woodName = name; state.woodHex = hex;
+  saveState();
+  renderWoods();
+  updatePreview();
+}
+
+function setOkuciaMetal(el, on) {
+  document.querySelectorAll('[data-group="okuciaMetal"] .pill').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+  state.okuciaMetal = on;
+  saveState();
+  updatePreview();
 }
 
 function setPrv(el, val) {
@@ -1932,12 +2084,10 @@ function updatePreview() {
   const prvOkna = document.getElementById('prv-okna');
   const prvExtras = document.getElementById('prv-extras');
   const previewHero4 = document.getElementById('previewHero4');
-  setPrv(prvDrzwi, (state.doorType && state.doorGlazing)
-    ? state.doorType + ', ' + state.doorGlazing.toLowerCase() + ' × ' + state.doorQty
-    : '—');
-  setPrv(prvOkna, state.windowType
-    ? state.windowType + ' × ' + state.windowQty
-    : '—');
+  const _drzwi = state.openings.filter(o => o.kind === 'door').length;
+  const _okna = state.openings.filter(o => o.kind === 'wit' || o.kind === 'okn').length;
+  setPrv(prvDrzwi, _drzwi ? _drzwi + ' szt.' : 'brak');
+  setPrv(prvOkna, _okna ? _okna + ' szt.' : 'brak');
   setPrv(prvExtras, state.extras.length
     ? state.extras.join(', ')
     : 'brak');
@@ -1982,6 +2132,9 @@ function updatePreview() {
   if (previewHero4) previewHero4.style.backgroundImage = bg;
   if (previewHero) previewHero.style.backgroundImage = bg;
   if (stepHero3) stepHero3.style.backgroundImage = bg;
+
+  // Zaktualizuj bryłę 3D na żywo (jeśli silnik już załadowany)
+  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) StagoConfigurator3D.update(state);
 }
 
 function updateOkuciaUI() {
@@ -2022,36 +2175,148 @@ function toggleItem(el) {
   updatePreview();
 }
 
-// Sync selects
-document.getElementById('doorType').addEventListener('change', function() {
-  state.doorType = this.value;
+// ── STEP 4: STOLARKA (otwory per-ściana) ──
+const WALL_OPTS = [
+  { v: 'A', n: 'A · przód' }, { v: 'B', n: 'B · prawy bok' },
+  { v: 'C', n: 'C · tył' }, { v: 'D', n: 'D · lewy bok' }
+];
+const KIND_OPTS = [
+  { v: 'wit', n: 'Witryna 100×210' },
+  { v: 'door', n: 'Drzwi ALU 90×210' },
+  { v: 'okn', n: 'Okno 100×100' }
+];
+
+// Domyślny układ przy pierwszym wejściu (skalowany długością)
+function ensureOpenings() {
+  if (state.openings && state.openings.length) return;
+  const L = parseFloat(state.dimL) || 6;
+  const nWit = Math.max(1, Math.min(4, Math.round(L / 2) - 1));
+  const arr = [{ wall: 'A', kind: 'door', t: 0.85, hinge: 'left' }];
+  for (let i = 0; i < nWit; i++) arr.push({ wall: 'A', kind: 'wit', t: (i + 1) / (nWit + 2), hinge: 'left' });
+  arr.push({ wall: 'B', kind: 'okn', t: 0.5, hinge: 'left' });
+  state.openings = arr;
   saveState();
-  updatePreview();
-});
-document.getElementById('doorGlazing').addEventListener('change', function() {
-  state.doorGlazing = this.value;
+}
+
+function makeSelect(opts, val, onChange) {
+  const s = document.createElement('select');
+  opts.forEach(o => {
+    const opt = document.createElement('option');
+    opt.value = o.v; opt.textContent = o.n;
+    if (o.v === val) opt.selected = true;
+    s.appendChild(opt);
+  });
+  s.addEventListener('change', () => onChange(s.value));
+  return s;
+}
+
+function openingCard(o, idx) {
+  const card = document.createElement('div');
+  card.className = 'opening-card';
+
+  const fWall = document.createElement('div'); fWall.className = 'oc-field';
+  const lWall = document.createElement('label'); lWall.textContent = 'Ściana';
+  fWall.appendChild(lWall);
+  fWall.appendChild(makeSelect(WALL_OPTS, o.wall, v => updateOpening(idx, 'wall', v)));
+
+  const fKind = document.createElement('div'); fKind.className = 'oc-field';
+  const lKind = document.createElement('label'); lKind.textContent = 'Element';
+  fKind.appendChild(lKind);
+  fKind.appendChild(makeSelect(KIND_OPTS, o.kind, v => updateOpening(idx, 'kind', v)));
+
+  const rm = document.createElement('button');
+  rm.type = 'button'; rm.className = 'oc-remove'; rm.textContent = '×';
+  rm.setAttribute('aria-label', 'Usuń element');
+  rm.addEventListener('click', () => removeOpening(idx));
+
+  const fPos = document.createElement('div'); fPos.className = 'oc-field oc-pos';
+  const lPos = document.createElement('label');
+  lPos.textContent = 'Pozycja na ścianie: ' + Math.round((o.t == null ? 0.5 : o.t) * 100) + '%';
+  const rng = document.createElement('input');
+  rng.type = 'range'; rng.min = '0'; rng.max = '100'; rng.step = '5';
+  rng.value = String(Math.round((o.t == null ? 0.5 : o.t) * 100));
+  rng.addEventListener('input', () => {
+    lPos.textContent = 'Pozycja na ścianie: ' + rng.value + '%';
+    updateOpening(idx, 't', parseInt(rng.value, 10) / 100, true);
+  });
+  fPos.appendChild(lPos); fPos.appendChild(rng);
+
+  card.appendChild(fWall); card.appendChild(fKind); card.appendChild(rm); card.appendChild(fPos);
+
+  if (o.kind === 'door') {
+    const fH = document.createElement('div'); fH.className = 'oc-hinge';
+    const lH = document.createElement('span');
+    lH.style.cssText = 'font-size:.68rem;text-transform:uppercase;color:var(--t3);font-weight:600';
+    lH.textContent = 'Zawiasy:';
+    fH.appendChild(lH);
+    ['left', 'right'].forEach(side => {
+      const p = document.createElement('div');
+      p.className = 'pill' + (o.hinge === side ? ' selected' : '');
+      p.textContent = side === 'left' ? 'lewe' : 'prawe';
+      p.addEventListener('click', () => updateOpening(idx, 'hinge', side));
+      fH.appendChild(p);
+    });
+    card.appendChild(fH);
+  }
+  return card;
+}
+
+function renderOpenings() {
+  const list = document.getElementById('openingsList');
+  if (!list) return;
+  list.textContent = '';
+  if (!state.openings.length) {
+    const e = document.createElement('p');
+    e.className = 'openings-empty';
+    e.textContent = 'Brak elementów. Kliknij „Dodaj element", aby zacząć.';
+    list.appendChild(e);
+    return;
+  }
+  state.openings.forEach((o, idx) => list.appendChild(openingCard(o, idx)));
+}
+
+function addOpening() {
+  state.openings.push({ wall: 'A', kind: 'okn', t: 0.5, hinge: 'left' });
   saveState();
+  renderOpenings();
   updatePreview();
-});
-document.getElementById('windowType').addEventListener('change', function() {
-  state.windowType = this.value;
+}
+
+function updateOpening(idx, field, val, skipRerender) {
+  if (!state.openings[idx]) return;
+  state.openings[idx][field] = val;
   saveState();
+  if (!skipRerender) renderOpenings();
   updatePreview();
-});
+}
+
+function removeOpening(idx) {
+  state.openings.splice(idx, 1);
+  saveState();
+  renderOpenings();
+  updatePreview();
+}
 
 // ── STEP 5 ──
+function openingsSummary() {
+  if (!state.openings.length) return '—';
+  const names = { wit: 'witryna', door: 'drzwi', okn: 'okno' };
+  const cnt = {};
+  state.openings.forEach(o => { cnt[o.kind] = (cnt[o.kind] || 0) + 1; });
+  return Object.keys(cnt).map(k => cnt[k] + '× ' + (names[k] || k)).join(', ');
+}
+
 function buildSummary() {
   const isPodstaw = state.okucia && state.okucia.toLowerCase().includes('podstaw');
   const rows = [
     ['Przeznaczenie', state.type],
     ['Wymiary', `${state.dimL} × ${state.dimW} × ${state.dimH} m`],
-    ['Profil blachy', state.profil],
+    ['Profil płyty', state.profil],
     ['Kolor ścian', state.kolorScian],
-    ['Okucia', state.okucia],
-    ['Kolor okuć', isPodstaw ? 'zgodny z płytą' : state.kolorOkuc],
-    ['Rozmieszczenie okuć', state.rozmOkuc],
-    ['Drzwi', `${state.doorType}, ${state.doorGlazing} × ${state.doorQty}`],
-    ['Okna', `${state.windowType} × ${state.windowQty}`],
+    ['Akcenty lamelowe', state.accents.length ? state.accents.map(a => ACC_NAMES[a] || a).join(', ') : 'brak'],
+    ['Kolor lameli', state.woodName || '—'],
+    ['Okucia narożne', state.okuciaMetal ? 'tak' : 'brak'],
+    ['Stolarka', openingsSummary()],
   ];
   if (state.extras.length) {
     rows.push(['Wyposażenie dodatkowe', state.extras.join(', ')]);
@@ -2153,6 +2418,12 @@ document.querySelectorAll('.okucia-row').forEach(c => {
 updateBar();
 updateOkuciaUI();
 updatePreview();
+
+// 3D: gdy silnik (defer) się załaduje, zamontuj podgląd w aktywnym kroku
+(function waitFor3D() {
+  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) { mount3D(state.step); }
+  else { setTimeout(waitFor3D, 80); }
+})();
 </script>
   <script type="application/ld+json">
   {
@@ -2164,6 +2435,10 @@ updatePreview();
     ]
   }
   </script>
+  <!-- Konfigurator 3D — silnik pawilonu (lazy, tylko ta strona) -->
+  <script src="assets/3d/three.min.js" defer></script>
+  <script src="assets/3d/stago-pavilion-core.js" defer></script>
+  <script src="assets/3d/configurator-viewer.js" defer></script>
   <script src="form-handler.js"></script>
   <script src="cookies.js" defer></script>
 </body>

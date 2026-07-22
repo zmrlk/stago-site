@@ -324,10 +324,22 @@
       if (state.dimL && state.dimW) cfgLines.push('Wymiary: ' + state.dimL + ' × ' + state.dimW + ' × ' + (state.dimH || '2.8') + ' m');
       if (state.profil) cfgLines.push('Profil blachy: ' + state.profil);
       if (state.kolorScian) cfgLines.push('Kolor ścian: ' + state.kolorScian);
-      if (state.okucia) cfgLines.push('Okucia: ' + state.okucia);
-      if (state.kolorOkuc) cfgLines.push('Kolor okuć: ' + state.kolorOkuc);
-      if (state.doorType) cfgLines.push('Drzwi: ' + state.doorType + ' × ' + (state.doorQty || 1));
-      if (state.windowType) cfgLines.push('Okna: ' + state.windowType + ' × ' + (state.windowQty || 2));
+      if (state.accents && state.accents.length) {
+        var an = { corners: 'narożniki', entrance: 'wejście', band: 'pas górny', squares: 'kwadraty', cassette: 'kasetony', full: 'całość' };
+        cfgLines.push('Akcenty lamelowe: ' + state.accents.map(function (a) { return an[a] || a; }).join(', '));
+      }
+      if (state.woodName) cfgLines.push('Kolor lameli: ' + state.woodName);
+      if (state.okuciaMetal) cfgLines.push('Okucia narożne metalowe: tak');
+      if (state.openings && state.openings.length) {
+        var kn = { wit: 'witryna', door: 'drzwi', okn: 'okno' };
+        var wn = { A: 'przód', B: 'prawy bok', C: 'tył', D: 'lewy bok' };
+        var parts = state.openings.map(function (o) {
+          return (kn[o.kind] || o.kind) + ' (' + (wn[o.wall] || o.wall) + ', ' +
+            Math.round((o.t == null ? 0.5 : o.t) * 100) + '%' +
+            (o.kind === 'door' ? ', zawiasy ' + (o.hinge === 'right' ? 'prawe' : 'lewe') : '') + ')';
+        });
+        cfgLines.push('Stolarka: ' + parts.join('; '));
+      }
       if (state.extras && state.extras.length) cfgLines.push('Wyposażenie: ' + state.extras.join(', '));
       if (data.message) cfgLines.push('Uwagi: ' + data.message);
       data.message = cfgLines.join('\n');
