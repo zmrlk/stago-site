@@ -1,5 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
+
+// ── Odcisk treści style.css → ?v=… w <link> ──
+// Cloudflare cachuje statyki spod stałej nazwy (max-age 7 dni). Bez odcisku
+// świeży HTML wchodzi na prod ze STARYM CSS i nowe reguły nie działają.
+const CSS_V = crypto.createHash('md5').update(fs.readFileSync('style.css')).digest('hex').slice(0, 8);
 
 // ── Mini Mustache renderer ──
 function render(template, data) {
@@ -179,6 +185,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.pageRoot = computePageRoot(outputPath, langDir);
   data.pagePath = output; // e.g. "modele/nord.html" — used by language switcher
   data.ui = ui;
+  data.cssV = CSS_V;
 
   // Nav CTA href: PL uses konfigurator, export uses mailto from i18n
   if (isPl) {
