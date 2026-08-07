@@ -301,6 +301,8 @@ button{-webkit-tap-highlight-color:transparent}
 .footer-bottom p{font-size:.72rem;color:#888;margin:0;font-weight:400}
 .footer-bottom p a{color:#AAA;text-decoration:none;font-weight:500}
 .footer-bottom p a:hover{color:#FF6B3D}
+.footer-note{padding:0 24px 24px;max-width:var(--max);margin:0 auto}
+.footer-note p{font-size:.72rem;line-height:1.5;color:#777;margin:0;max-width:72ch}
 @media(max-width:680px){.footer-bottom{flex-direction:column;text-align:center;gap:10px}}
 
 /* ── STICKY MOBILE CTA ── */
