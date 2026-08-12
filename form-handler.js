@@ -1,5 +1,9 @@
 /**
- * STAGO Form Handler v2.1 — Production
+ * STAGO Form Handler v2.2 — Production
+ *
+ * v2.2: payload leada niesie atrybucję first-party (gclid/utm/landing_page
+ *   z window.STAGO_ATTRIBUTION — capture robi cookies.js). Niezależne od zgody
+ *   cookies: dane idą TYLKO z formularzem, który user świadomie wysyła.
  *
  * Wysyła dane formularza TYLKO do Edge Function send-contact-email.
  * Zero bezpośrednich INSERT do REST API = zero duplikatów.
@@ -360,6 +364,21 @@
       consent_source_url: consentRecord.consent_source_url,
       consent_form_id: consentRecord.consent_form_id
     };
+
+    // Atrybucja first-party (gclid/utm złapane przez cookies.js na landingu).
+    // Płaskie klucze top-level — endpoint intake czyta utm_*/gclid i buduje
+    // sekcję „Źródło leada" + strukturalną kolumnę attribution.
+    try {
+      var attr = (window.STAGO_ATTRIBUTION && window.STAGO_ATTRIBUTION.get()) || null;
+      if (attr) {
+        for (var ak in attr) {
+          if (Object.prototype.hasOwnProperty.call(attr, ak) && ak !== 'ts' && !(ak in payload)) {
+            payload[ak] = attr[ak];
+          }
+        }
+        if (attr.ts) payload.attribution_ts = new Date(attr.ts).toISOString();
+      }
+    } catch (attrErr) {}
 
     // Send to Edge Function ONLY — no direct REST API insert
     fetch(CONFIG.ENDPOINT, {
