@@ -21,9 +21,15 @@
   var STORAGE_KEY = 'stago_cookie_consent_v1';
   var GTM_ID = 'GTM-WNJQZHX6';
   var GA4_ID = 'G-XZNVTYFPWR';
-  // Ten sam dataset co lejek VSL (stago.online) — decyzja Karol 2026-08-13.
-  // Wspólny piksel = wspólna baza remarketingowa; osobny startowałby od zera.
-  var META_PIXEL_ID = '1483664383140099';
+  // WŁASNY dataset strony („STAGO — strona", założony 2026-08-13).
+  // ⚠️ NIE wpinać tu 1483664383140099 („Piksel VSL", lejek agencji na stago.online):
+  // tamten dataset ma włączoną bramkę API konwersji (Openbridge), przez co piksel
+  // POST-uje zdarzenia na losowe hosty *.on.aws / *.run.app zamiast na
+  // www.facebook.com/tr — nasze CSP je blokuje i pomiar milczy (sprawdzone na
+  // prodzie 13.08: 10 min nasłuchu, zero zdarzeń). Openbridge wyłącza się tylko
+  // w Menedżerze zdarzeń, nie z poziomu strony (fbevents.js bierze tę konfigurację
+  // z serwera Mety). Własny dataset = klasyczne /tr, które CSP już przepuszcza.
+  var META_PIXEL_ID = '2257244741790961';
   // Puste = piksel TikTok nieaktywny (brak ID; kampanie chodziły na koncie agencji).
   // Wpisanie ID tutaj wystarczy, żeby ruszył — reszta kodu jest gotowa.
   var TIKTOK_PIXEL_ID = '';
