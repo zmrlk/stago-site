@@ -35,18 +35,18 @@
   var TIKTOK_PIXEL_ID = '';
 
   var DEFAULT_STRINGS = {
-    title: 'Cookies i prywatność',
-    description: 'Używamy cookies niezbędnych do działania strony. Za Twoją zgodą uruchomimy cookies analityczne (Google Analytics) i marketingowe (Meta Pixel, TikTok Pixel), żeby mierzyć skuteczność strony i kampanii.',
+    title: 'Cookies',
+    description: 'Używamy plików cookies, żeby strona działała poprawnie, a za Twoją zgodą także do analityki i marketingu.',
     acceptAll: 'Akceptuję wszystkie',
     onlyNecessary: 'Tylko niezbędne',
     settings: 'Ustawienia',
     savePreferences: 'Zapisz wybór',
     categoryNecessary: 'Niezbędne',
-    categoryNecessaryDesc: 'Wymagane do działania strony, formularzy i zapamiętania ustawień. Zawsze aktywne.',
+    categoryNecessaryDesc: 'Potrzebne do działania strony i formularzy. Zawsze aktywne.',
     categoryAnalytics: 'Analityczne',
-    categoryAnalyticsDesc: 'Google Analytics 4 — pomiar ruchu, źródeł i zdarzeń na stronie.',
+    categoryAnalyticsDesc: 'Pomiar ruchu i sposobu korzystania ze strony.',
     categoryMarketing: 'Marketingowe',
-    categoryMarketingDesc: 'Meta Pixel i TikTok Pixel — pomiar skuteczności reklam i remarketing.',
+    categoryMarketingDesc: 'Pomiar skuteczności reklam i remarketing.',
     moreInfo: 'Więcej w',
     moreInfoLink: 'Polityce cookies',
     moreInfoHref: 'polityka-cookies.html'
