@@ -8,6 +8,9 @@
  * - Atrybucja first-party: gclid/utm z URL → localStorage (90 dni);
  *   form-handler.js dokleja ją do payloadu leada (window.STAGO_ATTRIBUTION.get()).
  * - phone_click: klik w link tel: → event GA4 + dataLayer (GTM).
+ * - Meta Pixel + TikTok Pixel: ładowane WYŁĄCZNIE po zgodzie marketingowej
+ *   (nie mają Consent Mode — każde odpalenie to od razu cookie dostawcy).
+ *   Konwersję Lead/SubmitForm wysyła form-handler.js po potwierdzonej wysyłce.
  * - Stores consent in localStorage as JSON: { necessary:true, analytics:bool, marketing:bool, ts:number }
  * - Banner appears on first visit. Footer link "Zgody cookies" reopens it.
  * - Strings come from window.STAGO_I18N_COOKIES (set by template) or fallback PL.
@@ -18,6 +21,12 @@
   var STORAGE_KEY = 'stago_cookie_consent_v1';
   var GTM_ID = 'GTM-WNJQZHX6';
   var GA4_ID = 'G-XZNVTYFPWR';
+  // Ten sam dataset co lejek VSL (stago.online) — decyzja Karol 2026-08-13.
+  // Wspólny piksel = wspólna baza remarketingowa; osobny startowałby od zera.
+  var META_PIXEL_ID = '1483664383140099';
+  // Puste = piksel TikTok nieaktywny (brak ID; kampanie chodziły na koncie agencji).
+  // Wpisanie ID tutaj wystarczy, żeby ruszył — reszta kodu jest gotowa.
+  var TIKTOK_PIXEL_ID = '';
 
   var DEFAULT_STRINGS = {
     title: 'Cookies i prywatność',
@@ -73,6 +82,61 @@
   }
   loadTags();
 
+  // ─── PIKSELE MARKETINGOWE (Meta, TikTok) ──────────────────────────
+  // W przeciwieństwie do tagów Google NIE ładują się bezwarunkowo: startują
+  // dopiero po zgodzie marketingowej, bo nie mają odpowiednika Consent Mode
+  // i każde ich odpalenie to już cookie po stronie dostawcy.
+  // Baza obu snippetów sama emituje PageView przy inicjalizacji.
+  function loadMetaPixel() {
+    if (window.__STAGO_META_LOADED || !META_PIXEL_ID) return;
+    window.__STAGO_META_LOADED = true;
+    /* eslint-disable */
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+      t = b.createElement(e); t.async = !0; t.src = v;
+      s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    /* eslint-enable */
+    window.fbq('init', META_PIXEL_ID);
+    window.fbq('track', 'PageView');
+  }
+
+  function loadTikTokPixel() {
+    if (window.__STAGO_TIKTOK_LOADED || !TIKTOK_PIXEL_ID) return;
+    window.__STAGO_TIKTOK_LOADED = true;
+    /* eslint-disable */
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || [];
+      ttq.methods = ['page', 'track', 'identify', 'instances', 'debug', 'on', 'off', 'once', 'ready', 'alias', 'group', 'enableCookie', 'disableCookie'];
+      ttq.setAndDefer = function (o, m) { o[m] = function () { o.push([m].concat(Array.prototype.slice.call(arguments, 0))); }; };
+      for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+      ttq.instance = function (id) {
+        var o = ttq._i[id] || [];
+        for (var j = 0; j < ttq.methods.length; j++) ttq.setAndDefer(o, ttq.methods[j]);
+        return o;
+      };
+      ttq.load = function (id, opts) {
+        var url = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+        ttq._i = ttq._i || {}; ttq._i[id] = []; ttq._i[id]._u = url;
+        ttq._t = ttq._t || {}; ttq._t[id] = +new Date();
+        ttq._o = ttq._o || {}; ttq._o[id] = opts || {};
+        var s = d.createElement('script'); s.type = 'text/javascript'; s.async = !0;
+        s.src = url + '?sdkid=' + id + '&lib=' + t;
+        var f = d.getElementsByTagName('script')[0]; f.parentNode.insertBefore(s, f);
+      };
+      ttq.load(TIKTOK_PIXEL_ID); ttq.page();
+    }(window, document, 'ttq');
+    /* eslint-enable */
+  }
+
+  function loadMarketingPixels() {
+    loadMetaPixel();
+    loadTikTokPixel();
+  }
+
   function load() {
     try {
       var raw = localStorage.getItem(STORAGE_KEY);
@@ -92,6 +156,11 @@
       ad_user_data: state.marketing ? 'granted' : 'denied',
       ad_personalization: state.marketing ? 'granted' : 'denied'
     });
+    // Piksele startują wyłącznie po zgodzie marketingowej. Raz załadowanego
+    // snippetu nie da się cofnąć bez przeładowania — po odwołaniu zgody
+    // przestaje strzelać dopiero od następnej odsłony (guard __STAGO_*_LOADED
+    // żyje w window, więc ginie razem ze stroną).
+    if (state.marketing) loadMarketingPixels();
     window.dataLayer.push({
       event: 'stago_consent_update',
       consent_analytics: !!state.analytics,

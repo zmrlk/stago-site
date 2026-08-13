@@ -266,6 +266,21 @@
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'generate_lead', params);
       }
+
+      // 3) Meta Pixel / TikTok Pixel — bezpośrednio, NIE przez GTM.
+      // GTM-WNJQZHX6 jest praktycznie pusty (zero tagów Meta/TikTok), więc sam
+      // dataLayer.push z punktu 1 nikomu nic nie wysyła. fbq/ttq istnieją tylko
+      // po zgodzie marketingowej — cookies.js ładuje je dopiero wtedy.
+      // Zero PII: przekazujemy wyłącznie te same nie-osobowe parametry co do GA4.
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead', {
+          content_category: params.lead_type,
+          content_name: params.container_type || undefined
+        });
+      }
+      if (typeof window.ttq === 'object' && typeof window.ttq.track === 'function') {
+        window.ttq.track('SubmitForm', { content_category: params.lead_type });
+      }
     } catch (e) {
       // Tracking nigdy nie może zepsuć wysyłki formularza — połykamy błąd.
     }
