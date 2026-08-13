@@ -99,6 +99,28 @@
       .substring(0, CONFIG.MAX_MESSAGE_LENGTH);
   }
 
+  // Identyfikator zdarzenia wspólny dla piksela i API konwersji (deduplikacja Meta).
+  // crypto.randomUUID nie jest dostępne w starszych Safari — stąd fallback.
+  function makeEventId() {
+    try {
+      if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+        return window.crypto.randomUUID();
+      }
+    } catch (e) {}
+    return 'ev-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 12);
+  }
+
+  // Ciasteczka Meta (_fbc = klik w reklamę, _fbp = identyfikator przeglądarki).
+  // Ustawia je fbevents.js, czyli istnieją TYLKO po zgodzie marketingowej.
+  function readCookie(name) {
+    try {
+      var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+      return m ? decodeURIComponent(m[1]) : '';
+    } catch (e) {
+      return '';
+    }
+  }
+
   function isValidEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
@@ -272,11 +294,19 @@
       // dataLayer.push z punktu 1 nikomu nic nie wysyła. fbq/ttq istnieją tylko
       // po zgodzie marketingowej — cookies.js ładuje je dopiero wtedy.
       // Zero PII: przekazujemy wyłącznie te same nie-osobowe parametry co do GA4.
+      // ⚠️ Czwarty argument { eventID } to CAŁA deduplikacja z API konwersji.
+      // Ten sam identyfikator poszedł w payloadzie do STAGO v2 (payload.event_id).
+      // Usunięcie go = Meta policzy każdy lead dwa razy.
       if (typeof window.fbq === 'function') {
-        window.fbq('track', 'Lead', {
-          content_category: params.lead_type,
-          content_name: params.container_type || undefined
-        });
+        window.fbq(
+          'track',
+          'Lead',
+          {
+            content_category: params.lead_type,
+            content_name: params.container_type || undefined
+          },
+          payload.event_id ? { eventID: payload.event_id } : undefined
+        );
       }
       if (typeof window.ttq === 'object' && typeof window.ttq.track === 'function') {
         window.ttq.track('SubmitForm', { content_category: params.lead_type });
@@ -394,6 +424,20 @@
         if (attr.ts) payload.attribution_ts = new Date(attr.ts).toISOString();
       }
     } catch (attrErr) {}
+
+    // Deduplikacja Meta (piksel ↔ API konwersji) — #667.
+    // To samo zgłoszenie leci DWOMA kanałami: fbq('track','Lead') z przeglądarki
+    // ORAZ z serwera STAGO v2. Meta scala je po event_id i liczy JAKO JEDNO.
+    // ⚠️ event_id generujemy TUTAJ, bo obie wysyłki muszą dostać tę samą wartość:
+    // payload.event_id → serwer, ten sam string → trackLead → fbq. Osobne identyfikatory
+    // = podwójnie policzone konwersje i zawyżony wynik kampanii.
+    // Dokładamy też ciasteczka Meta — serwer sam ich nie widzi (są na domenie klienta),
+    // a to one wiążą zgłoszenie z konkretnym klikiem w reklamę.
+    payload.event_id = makeEventId();
+    var fbcCookie = readCookie('_fbc');
+    var fbpCookie = readCookie('_fbp');
+    if (fbcCookie) payload.fbc = fbcCookie;
+    if (fbpCookie) payload.fbp = fbpCookie;
 
     // Send to Edge Function ONLY — no direct REST API insert
     fetch(CONFIG.ENDPOINT, {
