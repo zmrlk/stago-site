@@ -248,3 +248,16 @@ for (const page of pages) {
 }
 
 console.log(`\n✓ ${builtCount} pages built, ${skippedCount} skipped (no content)`);
+
+// ── Warstwa LLM + sitemap: świeżość i spójność (build pada na dryfie) ──
+// sitemap <lastmod> liczony z gita źródeł treści; llms.txt sprawdzany
+// przeciwko treści strony (ceny, termin, transport, adresy, kontakt).
+const { execFileSync } = require('child_process');
+for (const script of ['scripts/update-sitemap.js', 'scripts/check-llms.js']) {
+  try {
+    execFileSync('node', [script], { stdio: 'inherit' });
+  } catch {
+    console.error(`✗ ${script} — build przerwany, napraw dryf zanim zdeployujesz`);
+    process.exit(1);
+  }
+}
