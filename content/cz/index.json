@@ -69,7 +69,7 @@
       {
         "name": "NORD",
         "desc": "Antracit s dřevěnými akcenty v rozích, obrovská rohová prosklení. Skandinávský premium. Tvar, který si zapamatujete na první pohled.",
-        "price": "od 7 000 € netto",
+        "price": "od 4 800 € netto",
         "href": "modele/nord.html",
         "img": "assets/modele/nord.webp",
         "cta": "Zobrazit NORD &rarr;"
@@ -77,7 +77,7 @@
       {
         "name": "LOFT",
         "desc": "Dřevěné lamely, grafitová střecha, tři velké výkladce. Showroom-feel — zákazníci vcházejí, protože musí vidět, co je uvnitř.",
-        "price": "od 5 100 € netto",
+        "price": "od 4 800 € netto",
         "href": "modele/loft.html",
         "img": "assets/modele/loft.webp",
         "cta": "Zobrazit LOFT &rarr;"
@@ -85,7 +85,7 @@
       {
         "name": "DUET",
         "desc": "Grafitové tělo, dřevěné lamely po stranách, tři výkladce s dveřmi. Univerzální vzor pro gastro, obchod i kancelář.",
-        "price": "od 5 100 € netto",
+        "price": "od 4 800 € netto",
         "href": "modele/duet.html",
         "img": "assets/modele/duet.webp",
         "cta": "Zobrazit DUET &rarr;"
@@ -93,7 +93,7 @@
       {
         "name": "ICON",
         "desc": "Dřevěná fasáda, obrovská rohová skla od podlahy ke stropu. Vypadá jako architektonické studio. Pro prémiové podnikání.",
-        "price": "individuální kalkulace",
+        "price": "od 4 800 € netto",
         "href": "modele/icon.html",
         "img": "assets/modele/icon.webp",
         "cta": "Zobrazit ICON &rarr;"
@@ -101,7 +101,7 @@
       {
         "name": "MILA",
         "desc": "Celodřevěná fasáda ve světlém odstínu. Skandinávský klid. Ideální pro ordinaci, domek, kancelář v teplém tónu.",
-        "price": "od 5 800 € netto",
+        "price": "od 4 800 € netto",
         "href": "modele/mila.html",
         "img": "assets/modele/mila.webp",
         "cta": "Zobrazit MILA &rarr;"
@@ -109,7 +109,7 @@
       {
         "name": "NOIR",
         "desc": "Svislé černé lamely, podlouhlá okna, butikový charakter jako z Berlína. Pro podnikání, které chce vypadat prémiově.",
-        "price": "od 6 500 € netto",
+        "price": "od 4 800 € netto",
         "href": "modele/noir.html",
         "img": "assets/modele/noir.webp",
         "cta": "Zobrazit NOIR &rarr;"
@@ -382,5 +382,35 @@
     "h2": "Napište, co potřebujete.",
     "h2accent": "Ozveme se do 24 hodin.",
     "formNote": "Odpovídáme do 24 hodin. Kalkulace je bezplatná a nezávazná."
+  },
+  "facts": {
+    "heading": "Nejdůležitější fakta",
+    "note": "Stav: srpen 2026. Ceny bez DPH.",
+    "items": [
+      {
+        "k": "Cena od",
+        "v": "4 800 € bez DPH za pavilon 4×3 m; cena roste s rozměrem a vybavením"
+      },
+      {
+        "k": "Termín",
+        "v": "4–6 týdnů od schválení projektu"
+      },
+      {
+        "k": "Doprava",
+        "v": "účtujeme zvlášť ze závodu v Jędrzejowě; montáž kalkulujeme samostatně"
+      },
+      {
+        "k": "Konstrukce",
+        "v": "sendvičový panel PIR 100 mm, ocelový rám, celoroční provoz"
+      },
+      {
+        "k": "Formality",
+        "v": "do 35 m² na ohlášení, bez stavebního povolení"
+      },
+      {
+        "k": "Záruka",
+        "v": "2 roky na konstrukci a povrchové úpravy"
+      }
+    ]
   }
 }

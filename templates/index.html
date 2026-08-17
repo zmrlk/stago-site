@@ -108,6 +108,21 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
+  {{#facts}}
+  <!-- FAKTY — zwiezle dane pod cytowanie w wyszukiwarkach i asystentach AI -->
+  <section class="section section-facts" id="fakty">
+    <div class="container">
+      <h2 class="facts-heading">{{facts.heading}}</h2>
+      <dl class="facts-list">
+        {{#facts.items}}
+        <div class="facts-row"><dt>{{k}}</dt><dd>{{v}}</dd></div>
+        {{/facts.items}}
+      </dl>
+      <p class="facts-note">{{facts.note}}</p>
+    </div>
+  </section>
+  {{/facts}}
+
   <!-- CASE STUDY -->
   <section class="section" id="historia">
     <div class="container">
@@ -281,13 +296,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <!-- TOP REALIZACJE -->
   <section class="section section-light" id="top-realizacje">
     <div class="container">
-      <p class="eyebrow">Nasze realizacje</p>
+      <p class="eyebrow">{{{gallery.eyebrow}}}</p>
       <h2 class="h2">{{{gallery.h2}}} <span class="accent">{{{gallery.h2accent}}}</span></h2>
       <p class="sub">{{{gallery.sub}}}</p>
       <div class="realizacje-grid" style="margin-top:40px">
-        <div class="realizacja-card"><img src="{{{root}}}assets/gallery/realizacje/r2.webp" alt="Tywent — pawilon handlowy STAGO" loading="lazy"><div class="realizacja-label">Tywent &middot; salon firmowy</div></div>
-        <div class="realizacja-card"><img src="{{{root}}}assets/gallery/realizacje/r5.webp" alt="Lemon Vape — pawilon handlowy STAGO" loading="lazy"><div class="realizacja-label">Lemon Vape &middot; pawilon handlowy</div></div>
-        <div class="realizacja-card"><img src="{{{root}}}assets/gallery/realizacje/r1.webp" alt="Biuro miejskie — pawilon STAGO" loading="lazy"><div class="realizacja-label">Biuro miejskie &middot; czarna elewacja + drewno</div></div>
+        {{#gallery.top}}
+        <div class="realizacja-card"><img src="{{{img}}}" alt="{{alt}}" loading="lazy"><div class="realizacja-label">{{label}}</div></div>
+        {{/gallery.top}}
       </div>
       <div class="section-cta reveal" style="margin-top:48px">
         <a href="{{{pageRoot}}}realizacje.html" class="btn btn-primary">Zobacz wszystkie realizacje &rarr;</a>

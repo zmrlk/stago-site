@@ -69,7 +69,7 @@
       {
         "name": "NORD",
         "desc": "Antracyt z drewnianymi akcentami w narożnikach, ogromne narożne szklenia. Skandynawski premium. Bryła, którą pamiętasz po pierwszym spojrzeniu.",
-        "price": "od 25 000 zł netto",
+        "price": "od 20 564 zł netto",
         "href": "modele/nord.html",
         "img": "assets/modele/nord.webp",
         "cta": "Zobacz NORD &rarr;"
@@ -77,7 +77,7 @@
       {
         "name": "LOFT",
         "desc": "Drewniane lamele, grafitowy dach, trzy duże witryny frontowe. Showroom-feel — klienci wchodzą, bo muszą zobaczyć, co w środku.",
-        "price": "od 22 000 zł netto",
+        "price": "od 20 564 zł netto",
         "href": "modele/loft.html",
         "img": "assets/modele/loft.webp",
         "cta": "Zobacz LOFT &rarr;"
@@ -85,7 +85,7 @@
       {
         "name": "DUET",
         "desc": "Grafitowy korpus, drewniane lamele po bokach, trzy witryny z drzwiami. Uniwersalny wzór do gastro, handlu i biura.",
-        "price": "od 22 000 zł netto",
+        "price": "od 20 564 zł netto",
         "href": "modele/duet.html",
         "img": "assets/modele/duet.webp",
         "cta": "Zobacz DUET &rarr;"
@@ -93,7 +93,7 @@
       {
         "name": "ICON",
         "desc": "Drewniana elewacja, wielkie narożne szkła od podłogi do sufitu. Wygląda jak studio architekta. Dla biznesów premium.",
-        "price": "wycena indywidualna",
+        "price": "od 20 564 zł netto",
         "href": "modele/icon.html",
         "img": "assets/modele/icon.webp",
         "cta": "Zobacz ICON &rarr;"
@@ -101,7 +101,7 @@
       {
         "name": "MILA",
         "desc": "Pełna drewniana elewacja w jasnym odcieniu. Skandynawski spokój. Idealny pod gabinet, domek, biuro w ciepłym tonie.",
-        "price": "od 25 000 zł netto",
+        "price": "od 20 564 zł netto",
         "href": "modele/mila.html",
         "img": "assets/modele/mila.webp",
         "cta": "Zobacz MILA &rarr;"
@@ -109,7 +109,7 @@
       {
         "name": "NOIR",
         "desc": "Pionowe czarne lamele, podłużne okna, butikowy charakter jak z Berlina. Dla biznesów, które chcą wyglądać premium.",
-        "price": "od 28 000 zł netto",
+        "price": "od 20 564 zł netto",
         "href": "modele/noir.html",
         "img": "assets/modele/noir.webp",
         "cta": "Zobacz NOIR &rarr;"
@@ -382,5 +382,35 @@
     "h2": "Napisz czego potrzebujesz.",
     "h2accent": "Oddzwonimy w 24h.",
     "formNote": "Odpowiadamy w ciągu 24 godzin. Wycena jest darmowa i niezobowiązująca."
+  },
+  "facts": {
+    "heading": "Najważniejsze fakty",
+    "note": "Stan na sierpień 2026. Ceny netto.",
+    "items": [
+      {
+        "k": "Cena od",
+        "v": "20 564 zł netto za pawilon 4×3 m; cena rośnie z wymiarem i wyposażeniem"
+      },
+      {
+        "k": "Termin",
+        "v": "4–6 tygodni od zatwierdzenia projektu"
+      },
+      {
+        "k": "Transport",
+        "v": "6 zł za kilometr w obie strony od zakładu w Jędrzejowie; montaż wyceniany osobno"
+      },
+      {
+        "k": "Konstrukcja",
+        "v": "płyta warstwowa PIR 100 mm, stalowa rama, obiekt całoroczny"
+      },
+      {
+        "k": "Formalności",
+        "v": "do 35 m² na zgłoszenie, bez pozwolenia na budowę"
+      },
+      {
+        "k": "Gwarancja",
+        "v": "2 lata na konstrukcję i wykończenie"
+      }
+    ]
   }
 }

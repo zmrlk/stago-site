@@ -69,7 +69,7 @@
       {
         "name": "NORD",
         "desc": "Anthrazit mit Holzakzenten in den Ecken, riesige Eckverglasung. Skandinavisches Premium. Ein Baukörper, den man nach dem ersten Blick nicht vergisst.",
-        "price": "ab 6 900 € netto",
+        "price": "ab 4 800 € netto",
         "href": "modele/nord.html",
         "img": "assets/modele/nord.webp",
         "cta": "NORD ansehen &rarr;"
@@ -77,7 +77,7 @@
       {
         "name": "LOFT",
         "desc": "Holzlamellen, Graphitdach, drei große Frontvitrinen. Showroom-Feeling — Kunden kommen rein, weil sie sehen müssen, was drin ist.",
-        "price": "ab 5 100 € netto",
+        "price": "ab 4 800 € netto",
         "href": "modele/loft.html",
         "img": "assets/modele/loft.webp",
         "cta": "LOFT ansehen &rarr;"
@@ -85,7 +85,7 @@
       {
         "name": "DUET",
         "desc": "Graphitkorpus, Holzlamellen an den Seiten, drei Vitrinen mit Türen. Universelles Design für Gastro, Handel und Büro.",
-        "price": "ab 5 100 € netto",
+        "price": "ab 4 800 € netto",
         "href": "modele/duet.html",
         "img": "assets/modele/duet.webp",
         "cta": "DUET ansehen &rarr;"
@@ -93,7 +93,7 @@
       {
         "name": "ICON",
         "desc": "Holzfassade, riesige Eckverglasungen vom Boden bis zur Decke. Sieht aus wie ein Architektenstudio. Für Premium-Unternehmen.",
-        "price": "individuelle Kalkulation",
+        "price": "ab 4 800 € netto",
         "href": "modele/icon.html",
         "img": "assets/modele/icon.webp",
         "cta": "ICON ansehen &rarr;"
@@ -101,7 +101,7 @@
       {
         "name": "MILA",
         "desc": "Vollständige Holzfassade in hellem Ton. Skandinavische Ruhe. Ideal als Praxis, Häuschen oder Büro in warmem Stil.",
-        "price": "ab 5 800 € netto",
+        "price": "ab 4 800 € netto",
         "href": "modele/mila.html",
         "img": "assets/modele/mila.webp",
         "cta": "MILA ansehen &rarr;"
@@ -109,7 +109,7 @@
       {
         "name": "NOIR",
         "desc": "Vertikale schwarze Lamellen, Längsfenster, Boutique-Charakter wie aus Berlin. Für Unternehmen, die Premium aussehen wollen.",
-        "price": "ab 6 400 € netto",
+        "price": "ab 4 800 € netto",
         "href": "modele/noir.html",
         "img": "assets/modele/noir.webp",
         "cta": "NOIR ansehen &rarr;"
@@ -382,5 +382,35 @@
     "h2": "Schreiben Sie, was Sie brauchen.",
     "h2accent": "Wir melden uns innerhalb von 24h.",
     "formNote": "Wir antworten innerhalb von 24 Stunden. Das Angebot ist kostenlos und unverbindlich."
+  },
+  "facts": {
+    "heading": "Die wichtigsten Fakten",
+    "note": "Stand: August 2026. Nettopreise.",
+    "items": [
+      {
+        "k": "Preis ab",
+        "v": "4 800 € netto für einen Pavillon 4×3 m; der Preis steigt mit Größe und Ausstattung"
+      },
+      {
+        "k": "Lieferzeit",
+        "v": "4–6 Wochen ab Projektfreigabe"
+      },
+      {
+        "k": "Transport",
+        "v": "separat berechnet ab unserem Werk in Jędrzejów; Montage wird getrennt kalkuliert"
+      },
+      {
+        "k": "Konstruktion",
+        "v": "PIR-Sandwichpaneel 100 mm, Stahlrahmen, ganzjährig nutzbar"
+      },
+      {
+        "k": "Formalitäten",
+        "v": "bis 35 m² nach polnischem Recht ohne Baugenehmigung"
+      },
+      {
+        "k": "Garantie",
+        "v": "2 Jahre auf Konstruktion und Ausbau"
+      }
+    ]
   }
 }

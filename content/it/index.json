@@ -69,7 +69,7 @@
       {
         "name": "NORD",
         "desc": "Antracite con accenti in legno sugli angoli, enormi vetrate angolari. Premium scandinavo. Una forma che si ricorda al primo sguardo.",
-        "price": "da 5 750 € netto",
+        "price": "da 4 800 € netto",
         "href": "modele/nord.html",
         "img": "assets/modele/nord.webp",
         "cta": "Scopri NORD &rarr;"
@@ -77,7 +77,7 @@
       {
         "name": "LOFT",
         "desc": "Listelli in legno, tetto grafite, tre grandi vetrine frontali. Effetto showroom — i clienti entrano perché devono vedere cosa c'è dentro.",
-        "price": "da 5 060 € netto",
+        "price": "da 4 800 € netto",
         "href": "modele/loft.html",
         "img": "assets/modele/loft.webp",
         "cta": "Scopri LOFT &rarr;"
@@ -85,7 +85,7 @@
       {
         "name": "DUET",
         "desc": "Corpo grafite, listelli in legno sui lati, tre vetrine con porte. Design universale per gastronomia, commercio e ufficio.",
-        "price": "da 5 060 € netto",
+        "price": "da 4 800 € netto",
         "href": "modele/duet.html",
         "img": "assets/modele/duet.webp",
         "cta": "Scopri DUET &rarr;"
@@ -93,7 +93,7 @@
       {
         "name": "ICON",
         "desc": "Facciata in legno, enormi vetrate angolari dal pavimento al soffitto. Sembra uno studio di architettura. Per attività premium.",
-        "price": "preventivo individuale",
+        "price": "da 4 800 € netto",
         "href": "modele/icon.html",
         "img": "assets/modele/icon.webp",
         "cta": "Scopri ICON &rarr;"
@@ -101,7 +101,7 @@
       {
         "name": "MILA",
         "desc": "Facciata interamente in legno chiaro. Tranquillità scandinava. Ideale per studio, casetta, ufficio dai toni caldi.",
-        "price": "da 5 750 € netto",
+        "price": "da 4 800 € netto",
         "href": "modele/mila.html",
         "img": "assets/modele/mila.webp",
         "cta": "Scopri MILA &rarr;"
@@ -109,7 +109,7 @@
       {
         "name": "NOIR",
         "desc": "Listelli verticali neri, finestre allungate, carattere boutique berlinese. Per attività che vogliono apparire premium.",
-        "price": "da 6 440 € netto",
+        "price": "da 4 800 € netto",
         "href": "modele/noir.html",
         "img": "assets/modele/noir.webp",
         "cta": "Scopri NOIR &rarr;"
@@ -382,5 +382,35 @@
     "h2": "Scrivi di cosa hai bisogno.",
     "h2accent": "Ti richiamiamo entro 24h.",
     "formNote": "Rispondiamo entro 24 ore. Il preventivo è gratuito e senza impegno."
+  },
+  "facts": {
+    "heading": "I fatti principali",
+    "note": "Aggiornato ad agosto 2026. Prezzi netti.",
+    "items": [
+      {
+        "k": "Prezzo da",
+        "v": "4 800 € netti per un padiglione 4×3 m; il prezzo cresce con dimensioni e dotazioni"
+      },
+      {
+        "k": "Tempi",
+        "v": "4–6 settimane dall'approvazione del progetto"
+      },
+      {
+        "k": "Trasporto",
+        "v": "calcolato a parte dal nostro stabilimento di Jędrzejów; montaggio quotato separatamente"
+      },
+      {
+        "k": "Struttura",
+        "v": "pannello sandwich PIR 100 mm, telaio in acciaio, utilizzo tutto l'anno"
+      },
+      {
+        "k": "Permessi",
+        "v": "fino a 35 m² con semplice comunicazione, senza permesso di costruire"
+      },
+      {
+        "k": "Garanzia",
+        "v": "2 anni su struttura e finiture"
+      }
+    ]
   }
 }

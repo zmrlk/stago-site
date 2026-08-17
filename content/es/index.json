@@ -69,7 +69,7 @@
       {
         "name": "NORD",
         "desc": "Antracita con acentos de madera en las esquinas, enormes acristalamientos en esquina. Premium escandinavo. Un volumen que se recuerda a primera vista.",
-        "price": "desde 5 750 € neto",
+        "price": "desde 4 800 € neto",
         "href": "modele/nord.html",
         "img": "assets/modele/nord.webp",
         "cta": "Ver NORD &rarr;"
@@ -77,7 +77,7 @@
       {
         "name": "LOFT",
         "desc": "Lamas de madera, techo grafito, tres grandes vitrinas frontales. Aspecto de showroom — los clientes entran porque tienen que ver lo que hay dentro.",
-        "price": "desde 5 060 € neto",
+        "price": "desde 4 800 € neto",
         "href": "modele/loft.html",
         "img": "assets/modele/loft.webp",
         "cta": "Ver LOFT &rarr;"
@@ -85,7 +85,7 @@
       {
         "name": "DUET",
         "desc": "Cuerpo grafito, lamas de madera en los laterales, tres vitrinas con puertas. Diseño universal para hostelería, comercio y oficina.",
-        "price": "desde 5 060 € neto",
+        "price": "desde 4 800 € neto",
         "href": "modele/duet.html",
         "img": "assets/modele/duet.webp",
         "cta": "Ver DUET &rarr;"
@@ -93,7 +93,7 @@
       {
         "name": "ICON",
         "desc": "Fachada de madera, enormes cristales en esquina del suelo al techo. Aspecto de estudio de arquitectura. Para negocios premium.",
-        "price": "presupuesto individual",
+        "price": "desde 4 800 € neto",
         "href": "modele/icon.html",
         "img": "assets/modele/icon.webp",
         "cta": "Ver ICON &rarr;"
@@ -101,7 +101,7 @@
       {
         "name": "MILA",
         "desc": "Fachada completa en madera de tono claro. Calma escandinava. Ideal para despacho, casita o oficina con tono cálido.",
-        "price": "desde 5 750 € neto",
+        "price": "desde 4 800 € neto",
         "href": "modele/mila.html",
         "img": "assets/modele/mila.webp",
         "cta": "Ver MILA &rarr;"
@@ -109,7 +109,7 @@
       {
         "name": "NOIR",
         "desc": "Lamas negras verticales, ventanas alargadas, carácter boutique berlinés. Para negocios que quieren verse premium.",
-        "price": "desde 6 440 € neto",
+        "price": "desde 4 800 € neto",
         "href": "modele/noir.html",
         "img": "assets/modele/noir.webp",
         "cta": "Ver NOIR &rarr;"
@@ -382,5 +382,35 @@
     "h2": "Escríbanos qué necesita.",
     "h2accent": "Respondemos en 24h.",
     "formNote": "Respondemos en un plazo de 24 horas. El presupuesto es gratuito y sin compromiso."
+  },
+  "facts": {
+    "heading": "Los datos clave",
+    "note": "Actualizado en agosto de 2026. Precios netos.",
+    "items": [
+      {
+        "k": "Precio desde",
+        "v": "4 800 € netos por un pabellón de 4×3 m; el precio sube con el tamaño y el equipamiento"
+      },
+      {
+        "k": "Plazo",
+        "v": "4–6 semanas desde la aprobación del proyecto"
+      },
+      {
+        "k": "Transporte",
+        "v": "se calcula aparte desde nuestra fábrica en Jędrzejów; el montaje se presupuesta por separado"
+      },
+      {
+        "k": "Construcción",
+        "v": "panel sándwich PIR de 100 mm, estructura de acero, uso todo el año"
+      },
+      {
+        "k": "Trámites",
+        "v": "hasta 35 m² con simple comunicación, sin licencia de obra"
+      },
+      {
+        "k": "Garantía",
+        "v": "2 años en estructura y acabados"
+      }
+    ]
   }
 }

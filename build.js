@@ -259,6 +259,12 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // Galeria realizacji obiecuje w tresci powiekszanie zdjec, wiec potrzebuje lightboxa
   data.hasGallery = typeof data.body === 'string' && data.body.includes('realizacja-card');
 
+  // Sekcja realizacji na stronie glownej: trzy pierwsze kafelki z tresci (przetlumaczone
+  // w kazdej wersji jezykowej) zamiast wpisanych na sztywno polskich podpisow w szablonie.
+  if (data.gallery && Array.isArray(data.gallery.items)) {
+    data.gallery.top = data.gallery.items.slice(0, 3);
+  }
+
   // Nav CTA href: PL uses konfigurator, export uses mailto from i18n
   if (isPl) {
     data.navCtaHref = data.pageRoot + 'konfigurator.html';
