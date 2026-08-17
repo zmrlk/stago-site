@@ -26,29 +26,6 @@ const stories = [
     cite: '— Emilia, warzywniak, Busko-Zdrój'
   },
   {
-    id: 'marek',
-    img: 'assets/historia-marek.webp',
-    alt: 'Nowy pawilon STAGO z płytą PIR — wymiana starego obiektu',
-    intro: 'Stary pawilon, który więcej kosztuje niż zarabia? Marek znał to aż za dobrze.',
-    h2: 'Marek wymienił pawilon. <span class="accent">Rachunki spadły o połowę.</span>',
-    chapters: [
-      {
-        label: 'Sytuacja',
-        text: 'Marek prowadził punkt usługowy w pawilonie, który kupił lata temu od innej firmy. Ściany z cienkiej blachy, izolacja praktycznie żadna. Zimą klimatyzacja na full, a w środku i tak zimno — klienci wchodzili w kurtkach. Latem odwrotnie: blaszany piec nie do wytrzymania. Rachunki za prąd rosły z roku na rok, a pawilon wyglądał coraz gorzej. Marek wiedział, że łatanie nie ma sensu — ale bał się, że wymiana to skomplikowana sprawa.'
-      },
-      {
-        label: 'Jeden telefon',
-        text: 'Zadzwonił, opowiedział sytuację. Przyjechaliśmy, obejrzeliśmy stary pawilon, zmierzyliśmy działkę. Zaproponowaliśmy nowy obiekt z płytą warstwową PIR 10 cm — to izolacja, która trzyma ciepło zimą i chłód latem, bez mostków termicznych, bez dokładania dodatkowego ocieplenia. Marek wybrał układ zbliżony do starego, żeby nie zmieniać przyzwyczajeń klientów — ale z lepszą stolarką aluminiową i porządnym zapleczem. Stary pawilon zdemontowaliśmy, nowy postawiliśmy w tym samym miejscu.'
-      },
-      {
-        label: 'Efekt',
-        text: 'Pierwszy rachunek za prąd po wymianie — Marek nie wierzył. Klima na minimum, a w środku ciepło i przyjemnie. Klienci zaczęli zostawać dłużej. Pawilon wygląda jak nowy lokal — bo to jest nowy lokal. Marek mówi, że gdyby wiedział wcześniej, ile traci na ogrzewaniu starego blaszaka, nie czekałby ani dnia.'
-      }
-    ],
-    quote: 'Powinienem to zrobić trzy zimy temu. Tyle pieniędzy poszło w błoto.',
-    cite: '— Marek, punkt usługowy, Radomsko'
-  },
-  {
     id: 'jan',
     img: 'assets/historia-rowery-800.webp',
     alt: 'Serwis rowerowy w pawilonie STAGO — witryna, drewniane lamele',

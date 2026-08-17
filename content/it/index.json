@@ -169,17 +169,17 @@
   },
   "caseStudy": {
     "eyebrow": "Storia di un cliente",
-    "intro": "Paghi l'affitto per un locale che non sarà mai tuo? Forse è ora di cambiare — come ha fatto Tomek.",
-    "h2": "Tomek ha spostato il suo negozio di frutta.",
+    "intro": "Paghi l'affitto per un locale che non sarà mai tuo? Forse è ora di cambiare — come ha fatto Emilia.",
+    "h2": "Emilia ha spostato il suo negozio di frutta.",
     "h2accent": "Alle sue condizioni.",
     "steps": [
       {
         "label": "Situazione",
-        "text": "Tomek gestiva un negozio di frutta in un locale in affitto. Per anni ha pagato un canone che non costruiva nulla di suo. Un giorno il proprietario ha alzato il prezzo — e Tomek ha iniziato a cercare un'alternativa."
+        "text": "Emilia gestiva un negozio di frutta in un locale in affitto. Per anni ha pagato un canone che non costruiva nulla di suo. Un giorno il proprietario ha alzato il prezzo — e Emilia ha iniziato a cercare un'alternativa."
       },
       {
         "label": "Una telefonata",
-        "text": "Ci ha chiamato. Abbiamo disegnato un padiglione con una grande vetrina per esporre frutta e un retro refrigerato. Tomek aveva le sue idee — abbiamo cambiato il layout, scelto i colori. Due incontri e fatto."
+        "text": "Ci ha chiamato. Abbiamo disegnato un padiglione con una grande vetrina per esporre frutta e un retro refrigerato. Emilia aveva le sue idee — abbiamo cambiato il layout, scelto i colori. Due incontri e fatto."
       },
       {
         "label": "Risultato",
@@ -187,7 +187,7 @@
       }
     ],
     "quote": "Rimpiango solo una cosa — di non aver chiamato prima.",
-    "cite": "— Tomek, fruttivendolo, Busko-Zdrój, Polonia"
+    "cite": "— Emilia, fruttivendola, Busko-Zdrój, Polonia"
   },
   "financing": {
     "eyebrow": "Finanze?",

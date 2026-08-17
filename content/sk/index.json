@@ -169,25 +169,25 @@
   },
   "caseStudy": {
     "eyebrow": "Príbeh zákazníka",
-    "intro": "Platíte nájom za priestor, ktorý nikdy nebude Váš? Možno je čas na zmenu — tak ako Tomek.",
-    "h2": "Tomek presťahoval zelenináreň.",
+    "intro": "Platíte nájom za priestor, ktorý nikdy nebude Váš? Možno je čas na zmenu — tak ako Emilia.",
+    "h2": "Emilia presťahovala zelenináreň.",
     "h2accent": "Na vlastných podmienkach.",
     "steps": [
       {
         "label": "Situácia",
-        "text": "Tomek prevádzkoval zelenináreň v prenajatom priestore. Roky platil nájom, ktorý nebudoval nič jeho. Jedného dňa majiteľ zvýšil cenu — a Tomek začal hľadať iné riešenie."
+        "text": "Emilia prevádzkovala zelenináreň v prenajatom priestore. Roky platila nájom, ktorý nebudoval nič jej. Jedného dňa majiteľ zvýšil cenu — a Emilia začala hľadať iné riešenie."
       },
       {
         "label": "Jeden telefonát",
-        "text": "Zavolal nám. Nakreslili sme pavilón s veľkým výkladom na vystavenie ovocia a chladiarenským zázemím. Tomek mal svoje nápady — zmenili sme rozloženie, vybrali farby. Dve stretnutia a hotovo."
+        "text": "Zavolala nám. Nakreslili sme pavilón s veľkým výkladom na vystavenie ovocia a chladiarenským zázemím. Emilia mala svoje nápady — zmenili sme rozloženie, vybrali farby. Dve stretnutia a hotovo."
       },
       {
         "label": "Výsledok",
-        "text": "Dnes stojí na svojom pozemku, na vlastných podmienkach. Lízingová splátka nižšia ako bývalý nájom. Zákazníci hovoria, že vyzerá lepšie ako polovica obchodov v meste. O pár rokov bude pavilón celý jeho."
+        "text": "Dnes stojí na svojom pozemku, na vlastných podmienkach. Lízingová splátka nižšia ako bývalý nájom. Zákazníci hovoria, že vyzerá lepšie ako polovica obchodov v meste. O pár rokov bude pavilón celý jej."
       }
     ],
-    "quote": "Ľutujem len jedno — že som nezavolal skôr.",
-    "cite": "— Tomek, zelenináreň, Busko-Zdrój (PL)"
+    "quote": "Ľutujem len jedno — že som nezavolala skôr.",
+    "cite": "— Emilia, zelenináreň, Busko-Zdrój (PL)"
   },
   "financing": {
     "eyebrow": "Financovanie?",

@@ -169,25 +169,25 @@
   },
   "caseStudy": {
     "eyebrow": "Kundengeschichte",
-    "intro": "Zahlen Sie Miete für Räume, die nie Ihnen gehören werden? Vielleicht ist es Zeit für eine Veränderung — so wie bei Tomek.",
-    "h2": "Tomek hat seinen Gemüseladen verlegt.",
-    "h2accent": "Zu seinen eigenen Bedingungen.",
+    "intro": "Zahlen Sie Miete für Räume, die nie Ihnen gehören werden? Vielleicht ist es Zeit für eine Veränderung — so wie bei Emilia.",
+    "h2": "Emilia hat ihren Gemüseladen verlegt.",
+    "h2accent": "Zu ihren eigenen Bedingungen.",
     "steps": [
       {
         "label": "Ausgangslage",
-        "text": "Tomek betrieb einen Gemüseladen in gemieteten Räumen. Jahrelang zahlte er Miete, die nichts aufbaute, das ihm gehörte. Eines Tages erhöhte der Vermieter den Preis — und Tomek suchte nach einer Alternative."
+        "text": "Emilia betrieb einen Gemüseladen in gemieteten Räumen. Jahrelang zahlte sie Miete, die nichts aufbaute, das ihr gehörte. Eines Tages erhöhte der Vermieter den Preis — und Emilia suchte nach einer Alternative."
       },
       {
         "label": "Ein Anruf",
-        "text": "Er rief uns an. Wir entwarfen einen Pavillon mit großer Vitrine für die Obstauslage und einem Kühlraum. Tomek hatte eigene Ideen — wir änderten den Grundriss, wählten Farben aus. Zwei Treffen und fertig."
+        "text": "Sie rief uns an. Wir entwarfen einen Pavillon mit großer Vitrine für die Obstauslage und einem Kühlraum. Emilia hatte eigene Ideen — wir änderten den Grundriss, wählten Farben aus. Zwei Treffen und fertig."
       },
       {
         "label": "Ergebnis",
-        "text": "Heute steht er auf seinem eigenen Grundstück, zu seinen eigenen Bedingungen. Die Leasingrate ist niedriger als die frühere Miete. Kunden sagen, es sieht besser aus als die Hälfte der Geschäfte in der Stadt. In ein paar Jahren gehört der Pavillon komplett ihm."
+        "text": "Heute steht sie auf ihrem eigenen Grundstück, zu ihren eigenen Bedingungen. Die Leasingrate ist niedriger als die frühere Miete. Kunden sagen, es sieht besser aus als die Hälfte der Geschäfte in der Stadt. In ein paar Jahren gehört der Pavillon komplett ihr."
       }
     ],
     "quote": "Ich bedauere nur eines — dass ich nicht früher angerufen habe.",
-    "cite": "— Tomek, Gemüseladen, Busko-Zdrój"
+    "cite": "— Emilia, Gemüseladen, Busko-Zdrój"
   },
   "financing": {
     "eyebrow": "Finanzierung?",

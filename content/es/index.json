@@ -169,17 +169,17 @@
   },
   "caseStudy": {
     "eyebrow": "Historia de un cliente",
-    "intro": "¿Paga alquiler por un local que nunca será suyo? Quizá es hora de un cambio — como hizo Tomek.",
-    "h2": "Tomek trasladó su frutería.",
+    "intro": "¿Paga alquiler por un local que nunca será suyo? Quizá es hora de un cambio — como hizo Emilia.",
+    "h2": "Emilia trasladó su frutería.",
     "h2accent": "Bajo sus propias reglas.",
     "steps": [
       {
         "label": "Situación",
-        "text": "Tomek llevaba una frutería en un local alquilado. Durante años pagaba un alquiler que no construía nada suyo. Un día el propietario subió la renta — y Tomek empezó a buscar otra salida."
+        "text": "Emilia llevaba una frutería en un local alquilado. Durante años pagaba un alquiler que no construía nada suyo. Un día el propietario subió la renta — y Emilia empezó a buscar otra salida."
       },
       {
         "label": "Una llamada",
-        "text": "Nos llamó. Diseñamos un pabellón con gran vitrina para exposición de frutas y trastienda frigorífica. Tomek tenía sus ideas — cambiamos la distribución, elegimos los colores. Dos reuniones y listo."
+        "text": "Nos llamó. Diseñamos un pabellón con gran vitrina para exposición de frutas y trastienda frigorífica. Emilia tenía sus ideas — cambiamos la distribución, elegimos los colores. Dos reuniones y listo."
       },
       {
         "label": "Resultado",
@@ -187,7 +187,7 @@
       }
     ],
     "quote": "Solo lamento una cosa — no haber llamado antes.",
-    "cite": "— Tomek, frutería, Busko-Zdrój (Polonia)"
+    "cite": "— Emilia, frutería, Busko-Zdrój (Polonia)"
   },
   "financing": {
     "eyebrow": "¿Financiación?",

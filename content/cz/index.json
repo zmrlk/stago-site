@@ -169,25 +169,25 @@
   },
   "caseStudy": {
     "eyebrow": "Příběh zákazníka",
-    "intro": "Platíte nájem za prostor, který nikdy nebude váš? Možná je čas na změnu — tak jako Tomek.",
-    "h2": "Tomek přestěhoval zelinářství.",
+    "intro": "Platíte nájem za prostor, který nikdy nebude váš? Možná je čas na změnu — tak jako Emilia.",
+    "h2": "Emilia přestěhovala zelinářství.",
     "h2accent": "Za svých podmínek.",
     "steps": [
       {
         "label": "Situace",
-        "text": "Tomek provozoval zelinářství v pronajatém prostoru. Roky platil nájem, který nebudoval nic jeho. Jednoho dne majitel zvedl cenu — a Tomek začal hledat jiné řešení."
+        "text": "Emilia provozovala zelinářství v pronajatém prostoru. Roky platila nájem, který nebudoval nic jejího. Jednoho dne majitel zvedl cenu — a Emilia začala hledat jiné řešení."
       },
       {
         "label": "Jeden telefonát",
-        "text": "Zavolal nám. Nakreslili jsme pavilon s velkou výlohou na vystavení ovoce a chladicím zázemím. Tomek měl své nápady — změnili jsme dispozici, vybrali barvy. Dvě schůzky a hotovo."
+        "text": "Zavolala nám. Nakreslili jsme pavilon s velkou výlohou na vystavení ovoce a chladicím zázemím. Emilia měla své nápady — změnili jsme dispozici, vybrali barvy. Dvě schůzky a hotovo."
       },
       {
         "label": "Výsledek",
-        "text": "Dnes stojí na vlastním pozemku, za vlastních podmínek. Leasingová splátka nižší než bývalé nájemné. Zákazníci říkají, že vypadá lépe než polovina obchodů ve městě. Za pár let bude pavilon zcela jeho."
+        "text": "Dnes stojí na vlastním pozemku, za vlastních podmínek. Leasingová splátka nižší než bývalé nájemné. Zákazníci říkají, že vypadá lépe než polovina obchodů ve městě. Za pár let bude pavilon zcela její."
       }
     ],
-    "quote": "Lituji jen jednoho — že jsem nezavolal dříve.",
-    "cite": "— Tomek, zelinářství, Busko-Zdrój (Polsko)"
+    "quote": "Lituji jen jednoho — že jsem nezavolala dříve.",
+    "cite": "— Emilia, zelinářství, Busko-Zdrój (Polsko)"
   },
   "financing": {
     "eyebrow": "Finance?",

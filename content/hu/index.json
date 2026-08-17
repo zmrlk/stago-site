@@ -169,17 +169,17 @@
   },
   "caseStudy": {
     "eyebrow": "Ügyfél története",
-    "intro": "Bérleti díjat fizet egy helyiségért, amely soha nem lesz az Öné? Talán ideje változtatni — ahogy Tomek tette.",
-    "h2": "Tomek áthelyezte a zöldségesét.",
+    "intro": "Bérleti díjat fizet egy helyiségért, amely soha nem lesz az Öné? Talán ideje változtatni — ahogy Emilia tette.",
+    "h2": "Emilia áthelyezte a zöldségesét.",
     "h2accent": "A saját feltételei szerint.",
     "steps": [
       {
         "label": "Helyzet",
-        "text": "Tomek bérelt helyiségben üzemeltetett zöldségest. Éveken át fizetett bérleti díjat, amely semmit nem épített számára. Egy nap a tulajdonos emelte a díjat — és Tomek más megoldást keresett."
+        "text": "Emilia bérelt helyiségben üzemeltetett zöldségest. Éveken át fizetett bérleti díjat, amely semmit nem épített számára. Egy nap a tulajdonos emelte a díjat — és Emilia más megoldást keresett."
       },
       {
         "label": "Egyetlen telefonhívás",
-        "text": "Felhívott minket. Megterveztünk egy pavilont nagy kirakattal a gyümölcskiállításhoz és hűtőhelyiséggel. Tomeknek saját ötletei voltak — módosítottuk az elrendezést, kiválasztottuk a színeket. Két megbeszélés és kész."
+        "text": "Felhívott minket. Megterveztünk egy pavilont nagy kirakattal a gyümölcskiállításhoz és hűtőhelyiséggel. Emiliának saját ötletei voltak — módosítottuk az elrendezést, kiválasztottuk a színeket. Két megbeszélés és kész."
       },
       {
         "label": "Eredmény",
@@ -187,7 +187,7 @@
       }
     ],
     "quote": "Csak egy dolgot sajnálok — hogy nem hívtam korábban.",
-    "cite": "— Tomek, zöldséges, Busko-Zdrój"
+    "cite": "— Emilia, zöldséges, Busko-Zdrój"
   },
   "financing": {
     "eyebrow": "Finanszírozás?",

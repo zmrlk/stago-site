@@ -175,7 +175,7 @@ button{-webkit-tap-highlight-color:transparent}
 .story-hero-text .eyebrow{text-align:left}
 .story-intro{font-size:1.15rem;color:var(--t2);line-height:1.65;margin-bottom:20px}
 .story-h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;letter-spacing:-.03em;line-height:1.12;color:var(--primary);margin-bottom:0}
-.story-h2 .accent{color:var(--accent)}
+.story-h2 .accent{color:var(--accent);display:block}
 .story-narrative{display:flex;flex-direction:column;gap:0;margin-bottom:40px}
 .story-chapter{display:grid;grid-template-columns:140px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--border);align-items:baseline}
 .story-chapter:last-child{border-bottom:none}
