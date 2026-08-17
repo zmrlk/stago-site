@@ -9,8 +9,8 @@
     "city": "Jędrzejów",
     "postalCode": "28-300",
     "region": "Poľsko",
-    "hours": "Po-Pi: 7:00-20:00",
-    "hoursSat": "So: 8:00-14:00",
+    "hours": "Po-Pi: 7:00-15:00",
+    "hoursSat": "So-Ne: zatvorene",
     "cities": "Dodávka na Slovensko — Bratislava, Košice, Žilina, Banská Bystrica a celé Slovensko"
   },
   "hero": {

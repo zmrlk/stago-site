@@ -15,6 +15,12 @@ function render(template, data) {
     if (val) return render(inner, data);
     return '';
   });
+  // Sekcja odwrócona {{^klucz}}…{{/klucz}} — treść tylko gdy klucz jest fałszywy/pusty
+  template = template.replace(/\{\{\^(\w+(?:\.\w+)*)\}\}([\s\S]*?)\{\{\/\1\}\}/g, (_, key, inner) => {
+    const val = resolve(data, key);
+    const empty = Array.isArray(val) ? val.length === 0 : !val;
+    return empty ? render(inner, data) : '';
+  });
   template = template.replace(/\{\{\{(\w+(?:\.\w+)*)\}\}\}/g, (_, key) => {
     const val = resolve(data, key);
     return val != null ? String(val) : '';
@@ -186,6 +192,9 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.pagePath = output; // e.g. "modele/nord.html" — used by language switcher
   data.ui = ui;
   data.cssV = CSS_V;
+
+  // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
+  data.hasCalculator = typeof data.body === 'string' && data.body.includes('id="calcRent"');
 
   // Nav CTA href: PL uses konfigurator, export uses mailto from i18n
   if (isPl) {

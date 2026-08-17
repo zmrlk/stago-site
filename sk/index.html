@@ -121,15 +121,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <div class="container">
       <div class="story-hero-block reveal">
         <div class="story-hero-img">
-          <img src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
+          <img id="story-img" src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
         </div>
         <div class="story-hero-text">
           <p class="eyebrow">Príbeh zákazníka</p>
-          <p class="story-intro">Platíte nájom za priestor, ktorý nikdy nebude Váš? Možno je čas na zmenu — tak ako Tomek.</p>
-          <h2 class="story-h2">Tomek presťahoval zelenináreň. <span class="accent">Na vlastných podmienkach.</span></h2>
+          <p class="story-intro" id="story-intro">Platíte nájom za priestor, ktorý nikdy nebude Váš? Možno je čas na zmenu — tak ako Tomek.</p>
+          <h2 class="story-h2" id="story-h2">Tomek presťahoval zelenináreň. <span class="accent">Na vlastných podmienkach.</span></h2>
         </div>
       </div>
-      <div class="story-narrative">
+      <div class="story-narrative" id="story-narrative">
         
         <div class="story-chapter reveal">
           <div class="story-chapter-label">Situácia</div>
@@ -148,7 +148,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         
       </div>
       <div class="story-bottom reveal">
-        <blockquote class="story-pullquote">"Ľutujem len jedno — že som nezavolal skôr."<cite>— Tomek, zelenináreň, Busko-Zdrój (PL)</cite></blockquote>
+        <blockquote class="story-pullquote" id="story-quote">"Ľutujem len jedno — že som nezavolal skôr."<cite id="story-cite">— Tomek, zelenináreň, Busko-Zdrój (PL)</cite></blockquote>
         <a href="mailto:kontakt@stago.com.pl?subject=SK%20—%20Dopyt" class="btn btn-primary">Chcem to isté — naceniť zadarmo</a>
       </div>
     </div>
@@ -551,7 +551,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <div class="info-card reveal">
             <h3>Zavolať</h3>
             <a href="tel:+48509508210" class="info-phone">509 508 210</a>
-            <p>Po-Pi: 7:00-20:00<br>So: 8:00-14:00</p>
+            <p>Po-Pi: 7:00-15:00<br>So-Ne: zatvorene</p>
           </div>
           <div class="info-card reveal">
             <h3>Navštívte nás</h3>
@@ -642,7 +642,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       "reviewCount": "13",
       "bestRating": "5"
     },
-    "openingHours": ["Mo-Fr 07:00-20:00", "Sa 08:00-14:00"],
+    "openingHours": ["Mo-Fr 07:00-15:00"],
     "priceRange": "$$",
     "image": "https://stago.com.pl/assets/hero.jpg",
     "description": "STAGO — výrobca modulárnych pavilónov. Obchod, kancelária, dom — na kľúč. Bezplatná vizualizácia, montáž na mieste, záruka 2 roky. Dodávka na Slovensko.",

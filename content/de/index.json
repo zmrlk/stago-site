@@ -9,8 +9,8 @@
     "city": "Jędrzejów",
     "postalCode": "28-300",
     "region": "Woiwodschaft Świętokrzyskie, Polen",
-    "hours": "Mo-Fr: 7:00-20:00",
-    "hoursSat": "Sa: 8:00-14:00",
+    "hours": "Mo-Fr: 7:00-15:00",
+    "hoursSat": "Sa-So: geschlossen",
     "cities": "Lieferung nach Deutschland, Österreich und in die gesamte EU"
   },
   "hero": {

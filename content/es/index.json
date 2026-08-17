@@ -9,8 +9,8 @@
     "city": "Jędrzejów",
     "postalCode": "28-300",
     "region": "Polonia",
-    "hours": "Lun-Vie: 7:00-20:00",
-    "hoursSat": "Sáb: 8:00-14:00",
+    "hours": "Lun-Vie: 7:00-15:00",
+    "hoursSat": "Sáb-Dom: cerrado",
     "cities": "Entrega en toda España y Europa"
   },
   "hero": {

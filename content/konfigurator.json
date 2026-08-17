@@ -3,24 +3,61 @@
     "title": "Konfigurator pawilonu — STAGO",
     "description": "Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h."
   },
+  "enable3d": false,
   "step1": {
     "title": "Wybierz model",
     "sub": "12 brył do wyboru — wymiar, materiał i wnętrze dopasujemy w kolejnych krokach",
     "description": "Każdy model ma swój charakter — od kompaktowego ATRI po panoramiczne KIOS. Wybierz bryłę, którą rozwiniemy w kolejnych krokach.",
     "socialProof": "127 osób skonfigurowało pawilon w tym miesiącu",
     "types": [
-      { "name": "ATRI", "img": "assets/modele/atri.webp" },
-      { "name": "MILA", "img": "assets/modele/mila.webp" },
-      { "name": "ICON", "img": "assets/modele/icon.webp" },
-      { "name": "RYTM", "img": "assets/modele/rytm.webp" },
-      { "name": "NORD", "img": "assets/modele/nord.webp" },
-      { "name": "LOFT", "img": "assets/modele/loft.webp" },
-      { "name": "SAGA", "img": "assets/modele/saga.webp" },
-      { "name": "VIEW", "img": "assets/modele/view.webp" },
-      { "name": "DUET", "img": "assets/modele/duet.webp" },
-      { "name": "CUBE", "img": "assets/modele/cube.webp" },
-      { "name": "NOIR", "img": "assets/modele/noir.webp" },
-      { "name": "KIOS", "img": "assets/modele/kios.webp" }
+      {
+        "name": "ATRI",
+        "img": "assets/modele/atri.webp"
+      },
+      {
+        "name": "MILA",
+        "img": "assets/modele/mila.webp"
+      },
+      {
+        "name": "ICON",
+        "img": "assets/modele/icon.webp"
+      },
+      {
+        "name": "RYTM",
+        "img": "assets/modele/rytm.webp"
+      },
+      {
+        "name": "NORD",
+        "img": "assets/modele/nord.webp"
+      },
+      {
+        "name": "LOFT",
+        "img": "assets/modele/loft.webp"
+      },
+      {
+        "name": "SAGA",
+        "img": "assets/modele/saga.webp"
+      },
+      {
+        "name": "VIEW",
+        "img": "assets/modele/view.webp"
+      },
+      {
+        "name": "DUET",
+        "img": "assets/modele/duet.webp"
+      },
+      {
+        "name": "CUBE",
+        "img": "assets/modele/cube.webp"
+      },
+      {
+        "name": "NOIR",
+        "img": "assets/modele/noir.webp"
+      },
+      {
+        "name": "KIOS",
+        "img": "assets/modele/kios.webp"
+      }
     ]
   },
   "step2": {
@@ -29,19 +66,55 @@
     "description": "Wymiary zewnętrzne pawilonu w metrach. Wysokość dachu w czterech standardach — różnica 10 cm w panelu.",
     "heightLabel": "Wysokość dachu",
     "heights": [
-      { "name": "2,44 m", "val": "2.44" },
-      { "name": "2,54 m", "val": "2.54" },
-      { "name": "2,64 m", "val": "2.64" },
-      { "name": "2,74 m", "val": "2.74" }
+      {
+        "name": "2,44 m",
+        "val": "2.44"
+      },
+      {
+        "name": "2,54 m",
+        "val": "2.54"
+      },
+      {
+        "name": "2,64 m",
+        "val": "2.64"
+      },
+      {
+        "name": "2,74 m",
+        "val": "2.74"
+      }
     ],
     "presetLabel": "Popularne rozmiary (długość × szerokość)",
     "presets": [
-      { "label": "3×2 m", "l": "3", "w": "2" },
-      { "label": "4×2,5 m", "l": "4", "w": "2.5" },
-      { "label": "6×3 m", "l": "6", "w": "3" },
-      { "label": "8×3 m", "l": "8", "w": "3" },
-      { "label": "9×3 m", "l": "9", "w": "3" },
-      { "label": "12×3 m", "l": "12", "w": "3" }
+      {
+        "label": "3×2 m",
+        "l": "3",
+        "w": "2"
+      },
+      {
+        "label": "4×2,5 m",
+        "l": "4",
+        "w": "2.5"
+      },
+      {
+        "label": "6×3 m",
+        "l": "6",
+        "w": "3"
+      },
+      {
+        "label": "8×3 m",
+        "l": "8",
+        "w": "3"
+      },
+      {
+        "label": "9×3 m",
+        "l": "9",
+        "w": "3"
+      },
+      {
+        "label": "12×3 m",
+        "l": "12",
+        "w": "3"
+      }
     ]
   },
   "step3": {
@@ -49,39 +122,100 @@
     "sub": "Profil blachy, kolor i okucia",
     "description": "Dopasuj profil płyty warstwowej, kolor ścian i okucia do swoich potrzeb.",
     "profiles": [
-      { "name": "Mikrofala", "img": "assets/profile/mikrofala.webp", "desc": "Delikatna fala — najczęściej wybierana faktura." },
-      { "name": "Gładka", "img": "assets/profile/gladka.webp", "desc": "Czysta, minimalistyczna powierzchnia." }
+      {
+        "name": "Mikrofala",
+        "img": "assets/profile/mikrofala.webp",
+        "desc": "Delikatna fala — najczęściej wybierana faktura."
+      },
+      {
+        "name": "Gładka",
+        "img": "assets/profile/gladka.webp",
+        "desc": "Czysta, minimalistyczna powierzchnia."
+      }
     ],
     "wallColors": [
-      { "color": "#1D1D1B", "name": "Czarny", "ral": "RAL 9005" },
-      { "color": "#3C3C3C", "name": "Antracyt", "ral": "RAL 7016" },
-      { "color": "linear-gradient(135deg,#E8461C,#FFD700 25%,#34D399 50%,#3B82F6 75%,#A855F7)", "name": "Inny kolor", "ral": "Paleta RAL", "wheel": true }
+      {
+        "color": "#1D1D1B",
+        "name": "Czarny",
+        "ral": "RAL 9005"
+      },
+      {
+        "color": "#3C3C3C",
+        "name": "Antracyt",
+        "ral": "RAL 7016"
+      },
+      {
+        "color": "linear-gradient(135deg,#E8461C,#FFD700 25%,#34D399 50%,#3B82F6 75%,#A855F7)",
+        "name": "Inny kolor",
+        "ral": "Paleta RAL",
+        "wheel": true
+      }
     ],
     "fittingTypes": [
       {
         "name": "Podstawowe",
         "desc": "Trwałe i ekonomiczne rozwiązanie.",
-        "thumbs": ["assets/okucia/podst-klamka.webp", "assets/okucia/podst-zawias.webp", "assets/okucia/podst-zamek.webp"]
+        "thumbs": [
+          "assets/okucia/podst-klamka.webp",
+          "assets/okucia/podst-zawias.webp",
+          "assets/okucia/podst-zamek.webp"
+        ]
       },
       {
         "name": "Specjalne premium",
         "desc": "Nowoczesny wygląd i wyższy standard.",
-        "thumbs": ["assets/okucia/prem-klamka.webp", "assets/okucia/prem-zawias.webp", "assets/okucia/prem-zamek.webp"]
+        "thumbs": [
+          "assets/okucia/prem-klamka.webp",
+          "assets/okucia/prem-zawias.webp",
+          "assets/okucia/prem-zamek.webp"
+        ]
       }
     ],
     "fittingColors": [
-      { "color": "#FAFAFA", "name": "Biały", "ral": "RAL 9003" },
-      { "color": "#1D1D1B", "name": "Czarny", "ral": "RAL 9005" },
-      { "color": "#3C3C3C", "name": "Antracyt", "ral": "RAL 7016" },
-      { "color": "linear-gradient(135deg,#B8893F,#8C5A1F)", "name": "Złoty dąb", "ral": "Drewno" },
-      { "color": "linear-gradient(135deg,#3E2A1A,#1F1207)", "name": "Dąb winchester", "ral": "Drewno" },
-      { "color": "linear-gradient(135deg,#E8461C,#FFD700 25%,#34D399 50%,#3B82F6 75%,#A855F7)", "name": "Inny", "ral": "Indywidualny" }
+      {
+        "color": "#FAFAFA",
+        "name": "Biały",
+        "ral": "RAL 9003"
+      },
+      {
+        "color": "#1D1D1B",
+        "name": "Czarny",
+        "ral": "RAL 9005"
+      },
+      {
+        "color": "#3C3C3C",
+        "name": "Antracyt",
+        "ral": "RAL 7016"
+      },
+      {
+        "color": "linear-gradient(135deg,#B8893F,#8C5A1F)",
+        "name": "Złoty dąb",
+        "ral": "Drewno"
+      },
+      {
+        "color": "linear-gradient(135deg,#3E2A1A,#1F1207)",
+        "name": "Dąb winchester",
+        "ral": "Drewno"
+      },
+      {
+        "color": "linear-gradient(135deg,#E8461C,#FFD700 25%,#34D399 50%,#3B82F6 75%,#A855F7)",
+        "name": "Inny",
+        "ral": "Indywidualny"
+      }
     ],
     "fittingPlacement": [
-      { "name": "2 narożniki" },
-      { "name": "4 narożniki" },
-      { "name": "2 narożniki + attyka" },
-      { "name": "2 narożniki + attyka + boczne" }
+      {
+        "name": "2 narożniki"
+      },
+      {
+        "name": "4 narożniki"
+      },
+      {
+        "name": "2 narożniki + attyka"
+      },
+      {
+        "name": "2 narożniki + attyka + boczne"
+      }
     ]
   },
   "step4": {
@@ -89,29 +223,63 @@
     "sub": "Drzwi, okna i dodatkowe instalacje",
     "description": "Wybierz wyposażenie i dodatkowe instalacje. Wszystko da się jeszcze doprecyzować w rozmowie.",
     "doorTypes": [
-      { "name": "Jednoskrzydłowe" },
-      { "name": "Dwuskrzydłowe" },
-      { "name": "Przesuwne" },
-      { "name": "Aluminiowe z naświetlem" }
+      {
+        "name": "Jednoskrzydłowe"
+      },
+      {
+        "name": "Dwuskrzydłowe"
+      },
+      {
+        "name": "Przesuwne"
+      },
+      {
+        "name": "Aluminiowe z naświetlem"
+      }
     ],
     "doorGlazing": [
-      { "name": "Pełne" },
-      { "name": "Przeszklone" }
+      {
+        "name": "Pełne"
+      },
+      {
+        "name": "Przeszklone"
+      }
     ],
     "windowTypes": [
-      { "name": "Uchylne 80×60 cm" },
-      { "name": "Rozwierno-uchylne 120×120 cm" },
-      { "name": "Panoramiczne 100×200 cm" },
-      { "name": "Stałe panoramiczne" },
-      { "name": "Podawcze (handlowe)" }
+      {
+        "name": "Uchylne 80×60 cm"
+      },
+      {
+        "name": "Rozwierno-uchylne 120×120 cm"
+      },
+      {
+        "name": "Panoramiczne 100×200 cm"
+      },
+      {
+        "name": "Stałe panoramiczne"
+      },
+      {
+        "name": "Podawcze (handlowe)"
+      }
     ],
     "extras": [
-      { "name": "Klimatyzacja" },
-      { "name": "Instalacja elektryczna" },
-      { "name": "Instalacja wod-kan" },
-      { "name": "Ogrzewanie" },
-      { "name": "Oświetlenie LED" },
-      { "name": "Rolety zewnętrzne" }
+      {
+        "name": "Klimatyzacja"
+      },
+      {
+        "name": "Instalacja elektryczna"
+      },
+      {
+        "name": "Instalacja wod-kan"
+      },
+      {
+        "name": "Ogrzewanie"
+      },
+      {
+        "name": "Oświetlenie LED"
+      },
+      {
+        "name": "Rolety zewnętrzne"
+      }
     ]
   },
   "step5": {

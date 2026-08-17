@@ -382,11 +382,23 @@
       if (state.openings && state.openings.length) {
         var kn = { wit: 'witryna', door: 'drzwi', okn: 'okno' };
         var wn = { A: 'przód', B: 'prawy bok', C: 'tył', D: 'lewy bok' };
-        var parts = state.openings.map(function (o) {
-          return (kn[o.kind] || o.kind) + ' (' + (wn[o.wall] || o.wall) + ', ' +
-            Math.round((o.t == null ? 0.5 : o.t) * 100) + '%' +
-            (o.kind === 'door' ? ', zawiasy ' + (o.hinge === 'right' ? 'prawe' : 'lewe') : '') + ')';
+        // Pozycja na ścianie i zawiasy istnieją tylko wtedy, gdy klient miał podgląd 3D
+        // i mógł je świadomie ustawić. Bez nich grupujemy powtórzenia, jak w podsumowaniu na ekranie.
+        var parts = [];
+        var groups = {};
+        state.openings.forEach(function (o) {
+          var kind = kn[o.kind] || o.kind;
+          var wall = wn[o.wall] || o.wall;
+          if (o.t != null) {
+            parts.push(kind + ' (' + wall + ', ' + Math.round(o.t * 100) + '%' +
+              (o.kind === 'door' && o.hinge ? ', zawiasy ' + (o.hinge === 'right' ? 'prawe' : 'lewe') : '') + ')');
+            return;
+          }
+          var key = kind + ' (' + wall + ')';
+          if (groups[key] == null) { groups[key] = 0; parts.push(key); }
+          groups[key]++;
         });
+        parts = parts.map(function (p) { return groups[p] > 1 ? groups[p] + '× ' + p : p; });
         cfgLines.push('Stolarka: ' + parts.join('; '));
       }
       if (state.extras && state.extras.length) cfgLines.push('Wyposażenie: ' + state.extras.join(', '));

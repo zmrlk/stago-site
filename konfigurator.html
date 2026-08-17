@@ -866,7 +866,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 18px;
-  background: linear-gradient(135deg, #E7EBEE, #d5dbdf);
+  background: linear-gradient(135deg, #E7EBEE, #d5dbdf) center/cover no-repeat;
 }
 .summary-render-cap {
   display: flex;
@@ -1562,7 +1562,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
         <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
           <div class="s3-section">
             <h3>1. Stolarka — okna i drzwi</h3>
-            <p class="s3-hint">Dodaj elementy i rozmieść je na ścianach. Bryła po prawej pokazuje układ na żywo. Rozmiary wg standardu STAGO.</p>
+            <p class="s3-hint">Wybierz, jakie elementy potrzebujesz i na której ścianie. Dokładne rozmieszczenie ustalimy razem przy wycenie. Rozmiary wg standardu STAGO.</p>
             <div class="wall-legend">
               <span><b>A</b>przód</span><span><b>B</b>prawy bok</span><span><b>C</b>tył</span><span><b>D</b>lewy bok</span>
             </div>
@@ -1661,8 +1661,8 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
           <h3>Twój pawilon</h3>
           <div class="summary-render" id="summaryRender"></div>
           <p class="summary-render-cap">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
-            Podgląd 3D — obróć myszą. Render poglądowy.
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 15l-5-4-4.5 4-2-1.5L3 18"/></svg>
+            Zdjęcie poglądowe wybranego modelu. Wygląd Twojego pawilonu ustalamy przy wycenie.
           </p>
           <div id="summaryRows"></div>
         </div>
@@ -1701,14 +1701,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
 
   </div>
 
-  <!-- MODAL: pełnoekranowy render 3D -->
-  <div class="r3d-modal" id="render3dModal" onclick="if(event.target===this)StagoConfigurator3D.fullscreen(false)">
-    <div class="r3d-modal-inner">
-      <button class="r3d-close" type="button" aria-label="Zamknij podgląd" onclick="StagoConfigurator3D.fullscreen(false)">&times;</button>
-      <div class="r3d-modal-stage" id="r3dStage"></div>
-      <p class="r3d-modal-hint">Obróć myszą &middot; scroll = zoom</p>
-    </div>
-  </div>
+  
 
   <!-- BOTTOM BAR -->
   <div class="bottom-bar" id="bottomBar">
@@ -2132,6 +2125,9 @@ function updatePreview() {
   if (previewHero4) previewHero4.style.backgroundImage = bg;
   if (previewHero) previewHero.style.backgroundImage = bg;
   if (stepHero3) stepHero3.style.backgroundImage = bg;
+  // Podsumowanie: przy wyłączonym 3D to jedyny obraz pawilonu, przy włączonym canvas i tak je przykryje
+  const summaryHero = document.getElementById('summaryRender');
+  if (summaryHero) summaryHero.style.backgroundImage = bg;
 
   // Zaktualizuj bryłę 3D na żywo (jeśli silnik już załadowany)
   if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) StagoConfigurator3D.update(state);
@@ -2186,16 +2182,38 @@ const KIND_OPTS = [
   { v: 'okn', n: 'Okno 100×100' }
 ];
 
+// Dokładne umiejscowienie (suwak pozycji, zawiasy) ma sens tylko z podglądem 3D —
+// bez niego klient ustawiałby je na ślepo, więc idzie w parze z tą samą flagą.
+const SHOW_PLACEMENT = false;
+
 // Domyślny układ przy pierwszym wejściu (skalowany długością)
 function ensureOpenings() {
-  if (state.openings && state.openings.length) return;
+  if (state.openings && state.openings.length) { stripPlacement(); return; }
   const L = parseFloat(state.dimL) || 6;
   const nWit = Math.max(1, Math.min(4, Math.round(L / 2) - 1));
-  const arr = [{ wall: 'A', kind: 'door', t: 0.85, hinge: 'left' }];
-  for (let i = 0; i < nWit; i++) arr.push({ wall: 'A', kind: 'wit', t: (i + 1) / (nWit + 2), hinge: 'left' });
-  arr.push({ wall: 'B', kind: 'okn', t: 0.5, hinge: 'left' });
+  const arr = [newOpening('A', 'door', 0.85)];
+  for (let i = 0; i < nWit; i++) arr.push(newOpening('A', 'wit', (i + 1) / (nWit + 2)));
+  arr.push(newOpening('B', 'okn', 0.5));
   state.openings = arr;
   saveState();
+}
+
+function newOpening(wall, kind, t) {
+  const o = { wall: wall, kind: kind };
+  if (SHOW_PLACEMENT) { o.t = t; o.hinge = 'left'; }
+  return o;
+}
+
+// Stan zapisany w przeglądarce sprzed uproszczenia może nieść pozycję i zawiasy —
+// bez suwaka nikt ich nie potwierdził, więc nie wolno ich wysłać do wyceny.
+function stripPlacement() {
+  if (SHOW_PLACEMENT || !state.openings) return;
+  let dirty = false;
+  state.openings.forEach(o => {
+    if (o.t != null) { delete o.t; dirty = true; }
+    if (o.hinge != null) { delete o.hinge; dirty = true; }
+  });
+  if (dirty) saveState();
 }
 
 function makeSelect(opts, val, onChange) {
@@ -2229,21 +2247,24 @@ function openingCard(o, idx) {
   rm.setAttribute('aria-label', 'Usuń element');
   rm.addEventListener('click', () => removeOpening(idx));
 
-  const fPos = document.createElement('div'); fPos.className = 'oc-field oc-pos';
-  const lPos = document.createElement('label');
-  lPos.textContent = 'Pozycja na ścianie: ' + Math.round((o.t == null ? 0.5 : o.t) * 100) + '%';
-  const rng = document.createElement('input');
-  rng.type = 'range'; rng.min = '0'; rng.max = '100'; rng.step = '5';
-  rng.value = String(Math.round((o.t == null ? 0.5 : o.t) * 100));
-  rng.addEventListener('input', () => {
-    lPos.textContent = 'Pozycja na ścianie: ' + rng.value + '%';
-    updateOpening(idx, 't', parseInt(rng.value, 10) / 100, true);
-  });
-  fPos.appendChild(lPos); fPos.appendChild(rng);
+  card.appendChild(fWall); card.appendChild(fKind); card.appendChild(rm);
 
-  card.appendChild(fWall); card.appendChild(fKind); card.appendChild(rm); card.appendChild(fPos);
+  if (SHOW_PLACEMENT) {
+    const fPos = document.createElement('div'); fPos.className = 'oc-field oc-pos';
+    const lPos = document.createElement('label');
+    lPos.textContent = 'Pozycja na ścianie: ' + Math.round((o.t == null ? 0.5 : o.t) * 100) + '%';
+    const rng = document.createElement('input');
+    rng.type = 'range'; rng.min = '0'; rng.max = '100'; rng.step = '5';
+    rng.value = String(Math.round((o.t == null ? 0.5 : o.t) * 100));
+    rng.addEventListener('input', () => {
+      lPos.textContent = 'Pozycja na ścianie: ' + rng.value + '%';
+      updateOpening(idx, 't', parseInt(rng.value, 10) / 100, true);
+    });
+    fPos.appendChild(lPos); fPos.appendChild(rng);
+    card.appendChild(fPos);
+  }
 
-  if (o.kind === 'door') {
+  if (SHOW_PLACEMENT && o.kind === 'door') {
     const fH = document.createElement('div'); fH.className = 'oc-hinge';
     const lH = document.createElement('span');
     lH.style.cssText = 'font-size:.68rem;text-transform:uppercase;color:var(--t3);font-weight:600';
@@ -2276,7 +2297,7 @@ function renderOpenings() {
 }
 
 function addOpening() {
-  state.openings.push({ wall: 'A', kind: 'okn', t: 0.5, hinge: 'left' });
+  state.openings.push(newOpening('A', 'okn', 0.5));
   saveState();
   renderOpenings();
   updatePreview();
@@ -2301,9 +2322,20 @@ function removeOpening(idx) {
 function openingsSummary() {
   if (!state.openings.length) return '—';
   const names = { wit: 'witryna', door: 'drzwi', okn: 'okno' };
+  const walls = { A: 'przód', B: 'prawy bok', C: 'tył', D: 'lewy bok' };
+  // Grupujemy po rodzaju i ścianie — klient ma w podsumowaniu dokładnie to, co pójdzie do wyceny.
   const cnt = {};
-  state.openings.forEach(o => { cnt[o.kind] = (cnt[o.kind] || 0) + 1; });
-  return Object.keys(cnt).map(k => cnt[k] + '× ' + (names[k] || k)).join(', ');
+  const order = [];
+  state.openings.forEach(o => {
+    const key = o.kind + '|' + o.wall;
+    if (cnt[key] == null) { cnt[key] = 0; order.push(key); }
+    cnt[key]++;
+  });
+  return order.map(key => {
+    const [kind, wall] = key.split('|');
+    const n = cnt[key];
+    return (n > 1 ? n + '× ' : '') + (names[kind] || kind) + ' (' + (walls[wall] || wall) + ')';
+  }).join(', ');
 }
 
 function buildSummary() {
@@ -2419,11 +2451,7 @@ updateBar();
 updateOkuciaUI();
 updatePreview();
 
-// 3D: gdy silnik (defer) się załaduje, zamontuj podgląd w aktywnym kroku
-(function waitFor3D() {
-  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) { mount3D(state.step); }
-  else { setTimeout(waitFor3D, 80); }
-})();
+
 </script>
   <script type="application/ld+json">
   {
@@ -2435,10 +2463,7 @@ updatePreview();
     ]
   }
   </script>
-  <!-- Konfigurator 3D — silnik pawilonu (lazy, tylko ta strona) -->
-  <script src="assets/3d/three.min.js" defer></script>
-  <script src="assets/3d/stago-pavilion-core.js" defer></script>
-  <script src="assets/3d/configurator-viewer.js" defer></script>
+  
   <script src="form-handler.js"></script>
   <script src="cookies.js" defer></script>
 </body>

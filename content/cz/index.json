@@ -9,8 +9,8 @@
     "city": "Jędrzejów",
     "postalCode": "28-300",
     "region": "Polsko",
-    "hours": "Po-Pá: 7:00-20:00",
-    "hoursSat": "So: 8:00-14:00",
+    "hours": "Po-Pá: 7:00-15:00",
+    "hoursSat": "So-Ne: zavřeno",
     "cities": "Dodávka do České republiky — Praha, Brno, Ostrava a celé ČR"
   },
   "hero": {

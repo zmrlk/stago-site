@@ -121,15 +121,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <div class="container">
       <div class="story-hero-block reveal">
         <div class="story-hero-img">
-          <img src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
+          <img id="story-img" src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
         </div>
         <div class="story-hero-text">
           <p class="eyebrow">Historia de un cliente</p>
-          <p class="story-intro">¿Paga alquiler por un local que nunca será suyo? Quizá es hora de un cambio — como hizo Tomek.</p>
-          <h2 class="story-h2">Tomek trasladó su frutería. <span class="accent">Bajo sus propias reglas.</span></h2>
+          <p class="story-intro" id="story-intro">¿Paga alquiler por un local que nunca será suyo? Quizá es hora de un cambio — como hizo Tomek.</p>
+          <h2 class="story-h2" id="story-h2">Tomek trasladó su frutería. <span class="accent">Bajo sus propias reglas.</span></h2>
         </div>
       </div>
-      <div class="story-narrative">
+      <div class="story-narrative" id="story-narrative">
         
         <div class="story-chapter reveal">
           <div class="story-chapter-label">Situación</div>
@@ -148,7 +148,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         
       </div>
       <div class="story-bottom reveal">
-        <blockquote class="story-pullquote">"Solo lamento una cosa — no haber llamado antes."<cite>— Tomek, frutería, Busko-Zdrój (Polonia)</cite></blockquote>
+        <blockquote class="story-pullquote" id="story-quote">"Solo lamento una cosa — no haber llamado antes."<cite id="story-cite">— Tomek, frutería, Busko-Zdrój (Polonia)</cite></blockquote>
         <a href="mailto:kontakt@stago.com.pl?subject=ES%20—%20Presupuesto" class="btn btn-primary">Yo también quiero — presupuesto gratis</a>
       </div>
     </div>
@@ -551,7 +551,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <div class="info-card reveal">
             <h3>Llamar</h3>
             <a href="tel:+48509508210" class="info-phone">509 508 210</a>
-            <p>Lun-Vie: 7:00-20:00<br>Sáb: 8:00-14:00</p>
+            <p>Lun-Vie: 7:00-15:00<br>Sáb-Dom: cerrado</p>
           </div>
           <div class="info-card reveal">
             <h3>Visítenos</h3>
@@ -642,7 +642,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       "reviewCount": "13",
       "bestRating": "5"
     },
-    "openingHours": ["Mo-Fr 07:00-20:00", "Sa 08:00-14:00"],
+    "openingHours": ["Mo-Fr 07:00-15:00"],
     "priceRange": "$$",
     "image": "https://stago.com.pl/assets/hero.jpg",
     "description": "STAGO — fabricante de pabellones modulares. Tienda, oficina, vivienda — llave en mano. Visualización gratuita, montaje en el lugar, 2 años de garantía. Entrega en España.",

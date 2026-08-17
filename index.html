@@ -121,15 +121,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <div class="container">
       <div class="story-hero-block reveal">
         <div class="story-hero-img">
-          <img src="assets/warzywniak-tomek-800.webp" srcset="assets/warzywniak-tomek-480.webp 480w, assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
+          <img id="story-img" src="assets/warzywniak-tomek-800.webp" srcset="assets/warzywniak-tomek-480.webp 480w, assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
         </div>
         <div class="story-hero-text">
           <p class="eyebrow">Historia klienta</p>
-          <p class="story-intro">Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Tomek.</p>
-          <h2 class="story-h2">Tomek przeniósł warzywniak. <span class="accent">Na swoich zasadach.</span></h2>
+          <p class="story-intro" id="story-intro">Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Tomek.</p>
+          <h2 class="story-h2" id="story-h2">Tomek przeniósł warzywniak. <span class="accent">Na swoich zasadach.</span></h2>
         </div>
       </div>
-      <div class="story-narrative">
+      <div class="story-narrative" id="story-narrative">
         
         <div class="story-chapter reveal">
           <div class="story-chapter-label">Sytuacja</div>
@@ -148,7 +148,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         
       </div>
       <div class="story-bottom reveal">
-        <blockquote class="story-pullquote">"Żałuję tylko jednego — że nie zadzwoniłem wcześniej."<cite>— Tomek, warzywniak, Busko-Zdrój</cite></blockquote>
+        <blockquote class="story-pullquote" id="story-quote">"Żałuję tylko jednego — że nie zadzwoniłem wcześniej."<cite id="story-cite">— Tomek, warzywniak, Busko-Zdrój</cite></blockquote>
         <a href="konfigurator.html" class="btn btn-primary">Chcę tak samo — wyceń za darmo</a>
       </div>
     </div>
@@ -551,7 +551,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <div class="info-card reveal">
             <h3>Zadzwoń</h3>
             <a href="tel:+48509508210" class="info-phone">509 508 210</a>
-            <p>Pon-Pt: 7:00-20:00<br>Sob: 8:00-14:00</p>
+            <p>Pon-Pt: 7:00-15:00<br>Sob-Niedz: zamknięte</p>
           </div>
           <div class="info-card reveal">
             <h3>Odwiedź nas</h3>
@@ -642,7 +642,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       "reviewCount": "13",
       "bestRating": "5"
     },
-    "openingHours": ["Mo-Fr 07:00-20:00", "Sa 08:00-14:00"],
+    "openingHours": ["Mo-Fr 07:00-15:00"],
     "priceRange": "$$",
     "image": "https://stago.com.pl/assets/hero.jpg",
     "description": "STAGO — producent kontenerów i pawilonów modułowych. Kiosk handlowy, pawilon biurowy, kontener biurowy, dom modułowy. 12 modeli, PIR 100mm.",

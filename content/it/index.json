@@ -9,8 +9,8 @@
     "city": "Jędrzejów",
     "postalCode": "28-300",
     "region": "Polonia",
-    "hours": "Lun-Ven: 7:00-20:00",
-    "hoursSat": "Sab: 8:00-14:00",
+    "hours": "Lun-Ven: 7:00-15:00",
+    "hoursSat": "Sab-Dom: chiuso",
     "cities": "Consegna in tutta Italia — Milano, Roma, Napoli, Torino, Bologna e oltre"
   },
   "hero": {

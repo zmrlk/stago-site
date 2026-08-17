@@ -50,8 +50,8 @@ const stories = [
   },
   {
     id: 'jan',
-    img: 'assets/historia-jan.webp',
-    alt: 'Serwis rowerowy Jana — pawilon STAGO z witryną',
+    img: 'assets/historia-rowery-800.webp',
+    alt: 'Serwis rowerowy w pawilonie STAGO — witryna, drewniane lamele',
     intro: 'Garaż pękał w szwach? Jan postanowił wyjść z garażu — dosłownie.',
     h2: 'Jan otworzył serwis rowerowy. <span class="accent">W prawdziwym lokalu.</span>',
     chapters: [
@@ -61,7 +61,7 @@ const stories = [
       },
       {
         label: 'Jeden telefon',
-        text: 'Zadzwonił do nas. Opowiedzieliśmy mu, że pawilon modułowy to coś pomiędzy — własny lokal, ale bez pozwolenia na budowę do 35 m², bez fundamentów, bez czekania miesiącami. Zaprojektowaliśmy układ: z przodu część kliencka z ladą i wystawą akcesoriów, z tyłu warsztat z porządnym oświetleniem i miejscem na stojaki. Jan chciał duże przeszklenie od frontu — żeby ludzie widzieli, że to profesjonalny serwis, nie garaż. Dobraliśmy ciemną elewację z pomarańczowym akcentem, żeby pasowało do jego logo.'
+        text: 'Zadzwonił do nas. Opowiedzieliśmy mu, że pawilon modułowy to coś pomiędzy — własny lokal, ale bez pozwolenia na budowę do 35 m², bez fundamentów, bez czekania miesiącami. Zaprojektowaliśmy układ: z przodu część kliencka z ladą i wystawą akcesoriów, z tyłu warsztat z porządnym oświetleniem i miejscem na stojaki. Jan chciał duże przeszklenie od frontu — żeby ludzie widzieli, że to profesjonalny serwis, nie garaż.'
       },
       {
         label: 'Efekt',
@@ -75,6 +75,9 @@ const stories = [
 
 // Pick random story and render (data is hardcoded above, not user input)
 (function initStory() {
+  // Historie są napisane po polsku — na wersjach obcojęzycznych zostaje treść z szablonu.
+  if ((document.documentElement.lang || 'pl') !== 'pl') return;
+
   const el = {
     img: document.getElementById('story-img'),
     intro: document.getElementById('story-intro'),
@@ -87,6 +90,10 @@ const stories = [
 
   const story = stories[Math.floor(Math.random() * stories.length)];
 
+  // srcset ma pierwszeństwo przed src — bez wyczyszczenia przeglądarka pokazywałaby
+  // wariant zdjęcia z szablonu zamiast zdjęcia wylosowanej historii.
+  el.img.removeAttribute('srcset');
+  el.img.removeAttribute('sizes');
   el.img.src = story.img;
   el.img.alt = story.alt;
   el.intro.textContent = story.intro;

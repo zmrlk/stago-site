@@ -121,15 +121,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <div class="container">
       <div class="story-hero-block reveal">
         <div class="story-hero-img">
-          <img src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
+          <img id="story-img" src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
         </div>
         <div class="story-hero-text">
           <p class="eyebrow">Ügyfél története</p>
-          <p class="story-intro">Bérleti díjat fizet egy helyiségért, amely soha nem lesz az Öné? Talán ideje változtatni — ahogy Tomek tette.</p>
-          <h2 class="story-h2">Tomek áthelyezte a zöldségesét. <span class="accent">A saját feltételei szerint.</span></h2>
+          <p class="story-intro" id="story-intro">Bérleti díjat fizet egy helyiségért, amely soha nem lesz az Öné? Talán ideje változtatni — ahogy Tomek tette.</p>
+          <h2 class="story-h2" id="story-h2">Tomek áthelyezte a zöldségesét. <span class="accent">A saját feltételei szerint.</span></h2>
         </div>
       </div>
-      <div class="story-narrative">
+      <div class="story-narrative" id="story-narrative">
         
         <div class="story-chapter reveal">
           <div class="story-chapter-label">Helyzet</div>
@@ -148,7 +148,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         
       </div>
       <div class="story-bottom reveal">
-        <blockquote class="story-pullquote">"Csak egy dolgot sajnálok — hogy nem hívtam korábban."<cite>— Tomek, zöldséges, Busko-Zdrój</cite></blockquote>
+        <blockquote class="story-pullquote" id="story-quote">"Csak egy dolgot sajnálok — hogy nem hívtam korábban."<cite id="story-cite">— Tomek, zöldséges, Busko-Zdrój</cite></blockquote>
         <a href="mailto:kontakt@stago.com.pl?subject=HU%20—%20Ajánlatkérés" class="btn btn-primary">Én is ilyet akarok — ingyenes árajánlat</a>
       </div>
     </div>
@@ -551,7 +551,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <div class="info-card reveal">
             <h3>Hívás</h3>
             <a href="tel:+48509508210" class="info-phone">509 508 210</a>
-            <p>H-P: 7:00-20:00<br>Szo: 8:00-14:00</p>
+            <p>H-P: 7:00-15:00<br>Szo-Vas: zárva</p>
           </div>
           <div class="info-card reveal">
             <h3>Látogasson el hozzánk</h3>
@@ -642,7 +642,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       "reviewCount": "13",
       "bestRating": "5"
     },
-    "openingHours": ["Mo-Fr 07:00-20:00", "Sa 08:00-14:00"],
+    "openingHours": ["Mo-Fr 07:00-15:00"],
     "priceRange": "$$",
     "image": "https://stago.com.pl/assets/hero.jpg",
     "description": "STAGO — moduláris pavilonok gyártója. Üzlet, iroda, lakás — kulcsrakészen. Ingyenes látványterv, telepítés a helyszínen, 2 év garancia. Szállítás Magyarországra.",

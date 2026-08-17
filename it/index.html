@@ -121,15 +121,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <div class="container">
       <div class="story-hero-block reveal">
         <div class="story-hero-img">
-          <img src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
+          <img id="story-img" src="../assets/warzywniak-tomek-800.webp" srcset="../assets/warzywniak-tomek-480.webp 480w, ../assets/warzywniak-tomek-800.webp 800w" sizes="(max-width:720px) 100vw, 720px" alt="Warzywniak w pawilonie modułowym STAGO — realizacja" width="800" height="450" loading="lazy">
         </div>
         <div class="story-hero-text">
           <p class="eyebrow">Storia di un cliente</p>
-          <p class="story-intro">Paghi l'affitto per un locale che non sarà mai tuo? Forse è ora di cambiare — come ha fatto Tomek.</p>
-          <h2 class="story-h2">Tomek ha spostato il suo negozio di frutta. <span class="accent">Alle sue condizioni.</span></h2>
+          <p class="story-intro" id="story-intro">Paghi l'affitto per un locale che non sarà mai tuo? Forse è ora di cambiare — come ha fatto Tomek.</p>
+          <h2 class="story-h2" id="story-h2">Tomek ha spostato il suo negozio di frutta. <span class="accent">Alle sue condizioni.</span></h2>
         </div>
       </div>
-      <div class="story-narrative">
+      <div class="story-narrative" id="story-narrative">
         
         <div class="story-chapter reveal">
           <div class="story-chapter-label">Situazione</div>
@@ -148,7 +148,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         
       </div>
       <div class="story-bottom reveal">
-        <blockquote class="story-pullquote">"Rimpiango solo una cosa — di non aver chiamato prima."<cite>— Tomek, fruttivendolo, Busko-Zdrój, Polonia</cite></blockquote>
+        <blockquote class="story-pullquote" id="story-quote">"Rimpiango solo una cosa — di non aver chiamato prima."<cite id="story-cite">— Tomek, fruttivendolo, Busko-Zdrój, Polonia</cite></blockquote>
         <a href="mailto:kontakt@stago.com.pl?subject=IT%20—%20Preventivo" class="btn btn-primary">Lo voglio anch'io — preventivo gratuito</a>
       </div>
     </div>
@@ -551,7 +551,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <div class="info-card reveal">
             <h3>Chiama</h3>
             <a href="tel:+48509508210" class="info-phone">509 508 210</a>
-            <p>Lun-Ven: 7:00-20:00<br>Sab: 8:00-14:00</p>
+            <p>Lun-Ven: 7:00-15:00<br>Sab-Dom: chiuso</p>
           </div>
           <div class="info-card reveal">
             <h3>Veniteci a trovare</h3>
@@ -642,7 +642,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       "reviewCount": "13",
       "bestRating": "5"
     },
-    "openingHours": ["Mo-Fr 07:00-20:00", "Sa 08:00-14:00"],
+    "openingHours": ["Mo-Fr 07:00-15:00"],
     "priceRange": "$$",
     "image": "https://stago.com.pl/assets/hero.jpg",
     "description": "STAGO — produttore di padiglioni modulari. Negozio, ufficio, casa — chiavi in mano. Visualizzazione gratuita, montaggio in loco, 2 anni di garanzia. Consegna in Italia.",
