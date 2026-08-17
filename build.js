@@ -67,6 +67,9 @@ function ostempluj(html, outputPath) {
   const katalog = path.dirname(outputPath);
   html = html.replace(/(<img\b[^>]*?\bsrc=")([^"]+)(")/gi,
     (_, a, adres, b) => a + zestempluj(adres, katalog) + b);
+  // data-full — pelne zdjecie otwierane w lightboxie, tez musi omijac cache
+  html = html.replace(/(\bdata-full=")([^"]+)(")/gi,
+    (_, a, adres, b) => a + zestempluj(adres, katalog) + b);
   html = html.replace(/(\bsrcset=")([^"]+)(")/gi, (_, a, lista, b) => {
     const nowa = lista.split(',').map(part => {
       const kawalki = part.trim().split(/\s+/);
@@ -252,6 +255,9 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
 
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
   data.hasCalculator = typeof data.body === 'string' && data.body.includes('id="calcRent"');
+
+  // Galeria realizacji obiecuje w tresci powiekszanie zdjec, wiec potrzebuje lightboxa
+  data.hasGallery = typeof data.body === 'string' && data.body.includes('realizacja-card');
 
   // Nav CTA href: PL uses konfigurator, export uses mailto from i18n
   if (isPl) {

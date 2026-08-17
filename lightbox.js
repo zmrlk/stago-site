@@ -1,7 +1,8 @@
 (function(){
   var imgs=document.querySelectorAll('.product-gallery-item img, .realizacja-card img');
   if(!imgs.length)return;
-  var allSrcs=[].map.call(imgs,function(i){return i.src});
+  // W siatce wisi lekki wariant zdjecia — po powiekszeniu pokazujemy pelny plik z data-full.
+  var allSrcs=[].map.call(imgs,function(i){return i.getAttribute('data-full')||i.src});
   var idx=0;
 
   var box=document.createElement('div');
