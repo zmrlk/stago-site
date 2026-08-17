@@ -3,27 +3,27 @@
 // ── CASE STUDY ROTATION ──
 const stories = [
   {
-    id: 'tomek',
+    id: 'emilia',
     img: 'assets/warzywniak-tomek.webp',
-    alt: 'Warzywniak Tomka — pawilon STAGO, Busko-Zdrój',
-    intro: 'Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Tomek.',
-    h2: 'Tomek przeniósł warzywniak. <span class="accent">Na swoich zasadach.</span>',
+    alt: 'Warzywniak Emilii — pawilon STAGO, Busko-Zdrój',
+    intro: 'Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Emilia.',
+    h2: 'Emilia przeniosła warzywniak. <span class="accent">Na swoich zasadach.</span>',
     chapters: [
       {
         label: 'Sytuacja',
-        text: 'Tomek prowadził warzywniak w wynajętym lokalu na rynku. Przez kilka lat płacił czynsz, który nie budował niczego jego — ani metra kwadratowego, ani jednej ściany. Właściciel lokalu podniósł stawkę z dnia na dzień. Tomek zaczął liczyć i szukać wyjścia. Nie chciał kolejnego wynajmu — chciał czegoś, co będzie jego.'
+        text: 'Emilia prowadziła warzywniak w wynajętym lokalu na rynku. Przez kilka lat płaciła czynsz, który nie budował niczego jej — ani metra kwadratowego, ani jednej ściany. Właściciel lokalu podniósł stawkę z dnia na dzień. Emilia zaczęła liczyć i szukać wyjścia. Nie chciała kolejnego wynajmu — chciała czegoś, co będzie jej.'
       },
       {
         label: 'Jeden telefon',
-        text: 'Zadzwonił do nas i opowiedział, co mu chodzi po głowie. Narysowaliśmy pawilon z dużą witryną przeszkloną — żeby owoce i warzywa były widoczne z ulicy — i zapleczem chłodniczym z tyłu. Tomek miał swoje pomysły na układ, kolory elewacji. Nie musieliśmy go przekonywać — po prostu dopasowaliśmy projekt do tego, co sobie wyobraził. Dwa spotkania, kilka poprawek i projekt był gotowy.'
+        text: 'Zadzwoniła do nas i opowiedziała, co jej chodzi po głowie. Narysowaliśmy pawilon z dużą witryną przeszkloną — żeby owoce i warzywa były widoczne z ulicy — i zapleczem chłodniczym z tyłu. Emilia miała swoje pomysły na układ, kolory elewacji. Nie musieliśmy jej przekonywać — po prostu dopasowaliśmy projekt do tego, co sobie wyobraziła. Dwa spotkania, kilka poprawek i projekt był gotowy.'
       },
       {
         label: 'Efekt',
-        text: 'Dziś Tomek stoi na własnej działce, we własnym pawilonie, na własnych zasadach. Rata leasingowa wychodzi go mniej niż dawny czynsz — a za kilka lat pawilon będzie w całości jego. Klienci mówią, że jego warzywniak wygląda lepiej niż połowa sklepów w mieście. Tomek mówi, że żałuje tylko jednego.'
+        text: 'Dziś Emilia stoi na własnej działce, we własnym pawilonie, na własnych zasadach. Rata leasingowa wychodzi ją mniej niż dawny czynsz — a za kilka lat pawilon będzie w całości jej. Klienci mówią, że jej warzywniak wygląda lepiej niż połowa sklepów w mieście. Emilia mówi, że żałuje tylko jednego.'
       }
     ],
-    quote: 'Żałuję tylko jednego — że nie zadzwoniłem wcześniej.',
-    cite: '— Tomek, warzywniak, Busko-Zdrój'
+    quote: 'Żałuję tylko jednego — że nie zadzwoniłam wcześniej.',
+    cite: '— Emilia, warzywniak, Busko-Zdrój'
   },
   {
     id: 'marek',
@@ -94,7 +94,9 @@ const stories = [
   // wariant zdjęcia z szablonu zamiast zdjęcia wylosowanej historii.
   el.img.removeAttribute('srcset');
   el.img.removeAttribute('sizes');
-  el.img.src = story.img;
+  // Odcisk tresci z builda — bez niego Cloudflare oddawalby zdjecie sprzed podmiany.
+  const v = (window.STAGO_ASSET_V || {})[story.img];
+  el.img.src = v ? `${story.img}?v=${v}` : story.img;
   el.img.alt = story.alt;
   el.intro.textContent = story.intro;
   el.h2.innerHTML = story.h2;

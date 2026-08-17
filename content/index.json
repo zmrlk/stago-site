@@ -169,25 +169,25 @@
   },
   "caseStudy": {
     "eyebrow": "Historia klienta",
-    "intro": "Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Tomek.",
-    "h2": "Tomek przeniósł warzywniak.",
+    "intro": "Płacisz czynsz za lokal, który nigdy nie będzie Twój? Może czas na zmianę — tak jak Emilia.",
+    "h2": "Emilia przeniosła warzywniak.",
     "h2accent": "Na swoich zasadach.",
     "steps": [
       {
         "label": "Sytuacja",
-        "text": "Tomek prowadził warzywniak w wynajętym lokalu. Przez lata płacił czynsz, który nie budował niczego jego. Pewnego dnia właściciel podniósł stawkę — i Tomek zaczął szukać innego wyjścia."
+        "text": "Emilia prowadziła warzywniak w wynajętym lokalu. Przez lata płaciła czynsz, który nie budował niczego jej. Pewnego dnia właściciel podniósł stawkę — i Emilia zaczęła szukać innego wyjścia."
       },
       {
         "label": "Jeden telefon",
-        "text": "Zadzwonił do nas. Narysowaliśmy pawilon z dużą witryną na wystawkę owoców i zapleczem chłodniczym. Tomek miał swoje pomysły — zmieniliśmy układ, dobraliśmy kolory. Dwa spotkania i gotowe."
+        "text": "Zadzwoniła do nas. Narysowaliśmy pawilon z dużą witryną na wystawkę owoców i zapleczem chłodniczym. Emilia miała swoje pomysły — zmieniliśmy układ, dobraliśmy kolory. Dwa spotkania i gotowe."
       },
       {
         "label": "Efekt",
-        "text": "Dziś stoi na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Klienci mówią, że wygląda lepiej niż połowa sklepów w mieście. Za kilka lat pawilon będzie w całości jego."
+        "text": "Dziś stoi na swojej działce, na swoich zasadach. Rata leasingowa niższa niż dawny czynsz. Klienci mówią, że wygląda lepiej niż połowa sklepów w mieście. Za kilka lat pawilon będzie w całości jej."
       }
     ],
-    "quote": "Żałuję tylko jednego — że nie zadzwoniłem wcześniej.",
-    "cite": "— Tomek, warzywniak, Busko-Zdrój"
+    "quote": "Żałuję tylko jednego — że nie zadzwoniłam wcześniej.",
+    "cite": "— Emilia, warzywniak, Busko-Zdrój"
   },
   "financing": {
     "eyebrow": "Finanse?",

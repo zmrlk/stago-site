@@ -40,6 +40,62 @@ function escapeHtml(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// ── Odcisk tresci obrazow (cache busting) ──
+const ODCISKI = new Map();
+
+function odcisk(plik) {
+  if (ODCISKI.has(plik)) return ODCISKI.get(plik);
+  let v = null;
+  try {
+    v = crypto.createHash('md5').update(fs.readFileSync(plik)).digest('hex').slice(0, 8);
+  } catch (e) {
+    v = null; // brak pliku na dysku — zostawiamy adres nietkniety
+  }
+  ODCISKI.set(plik, v);
+  return v;
+}
+
+// Adres w HTML jest wzgledny wobec strony, wiec rozwiazujemy go wzgledem katalogu wyjscia.
+function zestempluj(adres, katalogStrony) {
+  if (/^(https?:|data:|\/\/|#|mailto:)/.test(adres) || adres.includes('?')) return adres;
+  if (!/\.(webp|png|jpe?g|svg|gif|avif)$/i.test(adres)) return adres;
+  const v = odcisk(path.normalize(path.join(katalogStrony, adres)));
+  return v ? `${adres}?v=${v}` : adres;
+}
+
+function ostempluj(html, outputPath) {
+  const katalog = path.dirname(outputPath);
+  html = html.replace(/(<img\b[^>]*?\bsrc=")([^"]+)(")/gi,
+    (_, a, adres, b) => a + zestempluj(adres, katalog) + b);
+  html = html.replace(/(\bsrcset=")([^"]+)(")/gi, (_, a, lista, b) => {
+    const nowa = lista.split(',').map(part => {
+      const kawalki = part.trim().split(/\s+/);
+      if (!kawalki[0]) return part.trim();
+      kawalki[0] = zestempluj(kawalki[0], katalog);
+      return kawalki.join(' ');
+    }).join(', ');
+    return a + nowa + b;
+  });
+  return html;
+}
+
+// app.js podmienia zdjecia historii w locie, wiec adresy w nim tez potrzebuja odcisku.
+// Mape wstrzykujemy do strony glownej; app.js z niej korzysta, jesli jest dostepna.
+function mapaOdciskowAppJs() {
+  const mapa = {};
+  try {
+    const zrodlo = fs.readFileSync('app.js', 'utf8');
+    for (const m of zrodlo.matchAll(/'(assets\/[^']+\.(?:webp|png|jpe?g|svg|avif))'/gi)) {
+      const v = odcisk(m[1]);
+      if (v) mapa[m[1]] = v;
+    }
+  } catch (e) {
+    // brak app.js — strona dziala dalej, tylko bez mapy
+  }
+  return mapa;
+}
+const ASSET_V = JSON.stringify(mapaOdciskowAppJs());
+
 // ── i18n config ──
 const LANGS = {
   pl: { dir: '', i18n: 'content/i18n/pl.json' },
@@ -192,6 +248,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.pagePath = output; // e.g. "modele/nord.html" — used by language switcher
   data.ui = ui;
   data.cssV = CSS_V;
+  data.assetV = ASSET_V;
 
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
   data.hasCalculator = typeof data.body === 'string' && data.body.includes('id="calcRent"');
@@ -227,6 +284,11 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // URLs in canonical / og:url / hreflang / JSON-LD so a rebuild does not regress the
   // SEO clean-URL convention (commit e14ece1). Nav links are relative → untouched.
   html = html.replace(/"(https:\/\/stago\.com\.pl\/[^"]*?)\.html"/g, '"$1"');
+
+  // Odcisk tresci w adresach obrazow — Cloudflare serwuje statyki z naglowkiem
+  // "immutable, max-age=31536000", wiec podmiana pliku pod ta sama nazwa nigdy nie
+  // dotarlaby do odwiedzajacych. Zmiana tresci = inny adres = cache omijany sam z siebie.
+  html = ostempluj(html, outputPath);
 
   // Ensure output directory exists
   const outDir = path.dirname(outputPath);
