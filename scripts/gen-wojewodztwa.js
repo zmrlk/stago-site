@@ -136,7 +136,7 @@ ${w.popular.map(code => `        <a href="../../modele/${code.toLowerCase()}.htm
     <div class="container" style="text-align:center">
       <p class="eyebrow">Wycena dla regionu</p>
       <h2 class="h2">Pawilon — ${w.cities[0]}? <span class="accent">Zadzwoń.</span></h2>
-      <p style="color:var(--t-light2);font-size:1.05rem;max-width:600px;margin:16px auto 32px">Powiedz, czego potrzebujesz i gdzie ma stanąć. Wycena darmowa, w 24 godziny dostajesz konkretną propozycję z transportem i montażem w cenie.</p>
+      <p style="color:var(--t-light2);font-size:1.05rem;max-width:600px;margin:16px auto 32px">Powiedz, czego potrzebujesz i gdzie ma stanąć. Wycena darmowa, w 24 godziny dostajesz konkretną propozycję z wyceną transportu i montażu.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
         <a href="tel:+48509508210" class="btn btn-primary btn-lg">Zadzwoń: 509 508 210</a>
         <a href="../../konfigurator.html" class="btn btn-outline-light">Darmowa wycena online</a>
