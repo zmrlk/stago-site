@@ -108,20 +108,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  {{#facts}}
-  <!-- FAKTY — zwiezle dane pod cytowanie w wyszukiwarkach i asystentach AI -->
-  <section class="section section-facts" id="fakty">
-    <div class="container">
-      <h2 class="facts-heading">{{facts.heading}}</h2>
-      <dl class="facts-list">
-        {{#facts.items}}
-        <div class="facts-row"><dt>{{k}}</dt><dd>{{v}}</dd></div>
-        {{/facts.items}}
-      </dl>
-      <p class="facts-note">{{facts.note}}</p>
-    </div>
-  </section>
-  {{/facts}}
 
   <!-- CASE STUDY -->
   <section class="section" id="historia">

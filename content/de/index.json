@@ -382,35 +382,5 @@
     "h2": "Schreiben Sie, was Sie brauchen.",
     "h2accent": "Wir melden uns innerhalb von 24h.",
     "formNote": "Wir antworten innerhalb von 24 Stunden. Das Angebot ist kostenlos und unverbindlich."
-  },
-  "facts": {
-    "heading": "Die wichtigsten Fakten",
-    "note": "Stand: August 2026. Nettopreise.",
-    "items": [
-      {
-        "k": "Preis ab",
-        "v": "4 800 € netto für einen Pavillon 4×3 m; der Preis steigt mit Größe und Ausstattung"
-      },
-      {
-        "k": "Lieferzeit",
-        "v": "4–6 Wochen ab Projektfreigabe"
-      },
-      {
-        "k": "Transport",
-        "v": "separat berechnet ab unserem Werk in Jędrzejów; Montage wird getrennt kalkuliert"
-      },
-      {
-        "k": "Konstruktion",
-        "v": "PIR-Sandwichpaneel 100 mm, Stahlrahmen, ganzjährig nutzbar"
-      },
-      {
-        "k": "Formalitäten",
-        "v": "bis 35 m² nach polnischem Recht ohne Baugenehmigung"
-      },
-      {
-        "k": "Garantie",
-        "v": "2 Jahre auf Konstruktion und Ausbau"
-      }
-    ]
   }
 }

@@ -382,35 +382,5 @@
     "h2": "Scrivi di cosa hai bisogno.",
     "h2accent": "Ti richiamiamo entro 24h.",
     "formNote": "Rispondiamo entro 24 ore. Il preventivo è gratuito e senza impegno."
-  },
-  "facts": {
-    "heading": "I fatti principali",
-    "note": "Aggiornato ad agosto 2026. Prezzi netti.",
-    "items": [
-      {
-        "k": "Prezzo da",
-        "v": "4 800 € netti per un padiglione 4×3 m; il prezzo cresce con dimensioni e dotazioni"
-      },
-      {
-        "k": "Tempi",
-        "v": "4–6 settimane dall'approvazione del progetto"
-      },
-      {
-        "k": "Trasporto",
-        "v": "calcolato a parte dal nostro stabilimento di Jędrzejów; montaggio quotato separatamente"
-      },
-      {
-        "k": "Struttura",
-        "v": "pannello sandwich PIR 100 mm, telaio in acciaio, utilizzo tutto l'anno"
-      },
-      {
-        "k": "Permessi",
-        "v": "fino a 35 m² con semplice comunicazione, senza permesso di costruire"
-      },
-      {
-        "k": "Garanzia",
-        "v": "2 anni su struttura e finiture"
-      }
-    ]
   }
 }

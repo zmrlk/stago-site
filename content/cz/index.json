@@ -382,35 +382,5 @@
     "h2": "Napište, co potřebujete.",
     "h2accent": "Ozveme se do 24 hodin.",
     "formNote": "Odpovídáme do 24 hodin. Kalkulace je bezplatná a nezávazná."
-  },
-  "facts": {
-    "heading": "Nejdůležitější fakta",
-    "note": "Stav: srpen 2026. Ceny bez DPH.",
-    "items": [
-      {
-        "k": "Cena od",
-        "v": "4 800 € bez DPH za pavilon 4×3 m; cena roste s rozměrem a vybavením"
-      },
-      {
-        "k": "Termín",
-        "v": "4–6 týdnů od schválení projektu"
-      },
-      {
-        "k": "Doprava",
-        "v": "účtujeme zvlášť ze závodu v Jędrzejowě; montáž kalkulujeme samostatně"
-      },
-      {
-        "k": "Konstrukce",
-        "v": "sendvičový panel PIR 100 mm, ocelový rám, celoroční provoz"
-      },
-      {
-        "k": "Formality",
-        "v": "do 35 m² na ohlášení, bez stavebního povolení"
-      },
-      {
-        "k": "Záruka",
-        "v": "2 roky na konstrukci a povrchové úpravy"
-      }
-    ]
   }
 }

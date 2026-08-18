@@ -382,35 +382,5 @@
     "h2": "Napisz czego potrzebujesz.",
     "h2accent": "Oddzwonimy w 24h.",
     "formNote": "Odpowiadamy w ciągu 24 godzin. Wycena jest darmowa i niezobowiązująca."
-  },
-  "facts": {
-    "heading": "Najważniejsze fakty",
-    "note": "Stan na sierpień 2026. Ceny netto.",
-    "items": [
-      {
-        "k": "Cena od",
-        "v": "20 564 zł netto za pawilon 4×3 m; cena rośnie z wymiarem i wyposażeniem"
-      },
-      {
-        "k": "Termin",
-        "v": "4–6 tygodni od zatwierdzenia projektu"
-      },
-      {
-        "k": "Transport",
-        "v": "6 zł za kilometr w obie strony od zakładu w Jędrzejowie; montaż wyceniany osobno"
-      },
-      {
-        "k": "Konstrukcja",
-        "v": "płyta warstwowa PIR 100 mm, stalowa rama, obiekt całoroczny"
-      },
-      {
-        "k": "Formalności",
-        "v": "do 35 m² na zgłoszenie, bez pozwolenia na budowę"
-      },
-      {
-        "k": "Gwarancja",
-        "v": "2 lata na konstrukcję i wykończenie"
-      }
-    ]
   }
 }

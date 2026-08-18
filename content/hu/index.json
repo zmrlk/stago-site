@@ -382,35 +382,5 @@
     "h2": "Írja le, mire van szüksége.",
     "h2accent": "24 órán belül visszahívjuk.",
     "formNote": "24 órán belül válaszolunk. Az árajánlat ingyenes és kötelezettségmentes."
-  },
-  "facts": {
-    "heading": "A legfontosabb tények",
-    "note": "Állapot: 2026. augusztus. Nettó árak.",
-    "items": [
-      {
-        "k": "Ár",
-        "v": "4 800 € nettótól egy 4×3 m-es pavilonért; az ár a mérettel és felszereltséggel nő"
-      },
-      {
-        "k": "Határidő",
-        "v": "4–6 hét a terv jóváhagyásától"
-      },
-      {
-        "k": "Szállítás",
-        "v": "külön számoljuk a jędrzejówi üzemtől; a szerelést külön kalkuláljuk"
-      },
-      {
-        "k": "Szerkezet",
-        "v": "100 mm PIR szendvicspanel, acélváz, egész évben használható"
-      },
-      {
-        "k": "Engedélyek",
-        "v": "35 m²-ig bejelentéssel, építési engedély nélkül"
-      },
-      {
-        "k": "Garancia",
-        "v": "2 év a szerkezetre és a kivitelezésre"
-      }
-    ]
   }
 }

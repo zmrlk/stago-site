@@ -382,35 +382,5 @@
     "h2": "Escríbanos qué necesita.",
     "h2accent": "Respondemos en 24h.",
     "formNote": "Respondemos en un plazo de 24 horas. El presupuesto es gratuito y sin compromiso."
-  },
-  "facts": {
-    "heading": "Los datos clave",
-    "note": "Actualizado en agosto de 2026. Precios netos.",
-    "items": [
-      {
-        "k": "Precio desde",
-        "v": "4 800 € netos por un pabellón de 4×3 m; el precio sube con el tamaño y el equipamiento"
-      },
-      {
-        "k": "Plazo",
-        "v": "4–6 semanas desde la aprobación del proyecto"
-      },
-      {
-        "k": "Transporte",
-        "v": "se calcula aparte desde nuestra fábrica en Jędrzejów; el montaje se presupuesta por separado"
-      },
-      {
-        "k": "Construcción",
-        "v": "panel sándwich PIR de 100 mm, estructura de acero, uso todo el año"
-      },
-      {
-        "k": "Trámites",
-        "v": "hasta 35 m² con simple comunicación, sin licencia de obra"
-      },
-      {
-        "k": "Garantía",
-        "v": "2 años en estructura y acabados"
-      }
-    ]
   }
 }
