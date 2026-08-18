@@ -80,11 +80,17 @@
     g.async = true;
     g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
     document.head.appendChild(g);
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID + '&l=dataLayer';
-    document.head.appendChild(s);
-    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    // Tag Manager (GTM-WNJQZHX6) NIE jest ladowany — sprawdzone 2026-08-18:
+    // kontener jest pusty (zero tagow), a GA4, piksel Meta, TikTok i konwersje
+    // z formularza ida bezposrednio, z pominieciem GTM. Samo jego wczytanie
+    // kosztowalo 315 kB, a Google dociagalo przez nie DRUGA kopie gtag.js (489 kB) —
+    // razem 804 kB z 1293 kB analityki szlo w prozne.
+    // Gdy pojawi sie ktos zarzadzajacy tagami z panelu, wystarczy odkomentowac:
+    // var s = document.createElement('script');
+    // s.async = true;
+    // s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID + '&l=dataLayer';
+    // document.head.appendChild(s);
+    // window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
   }
   loadTags();
 
