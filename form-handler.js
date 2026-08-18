@@ -55,7 +55,8 @@
       rateLimit: 'Proszę poczekać 30 sekund przed ponownym wysłaniem.',
       invalidEmail: 'Proszę podać poprawny adres e-mail.',
       sending: 'Wysyłanie...',
-      consentRequired: 'Aby wysłać zapytanie, zaakceptuj informację o przetwarzaniu danych osobowych.'
+      consentRequired: 'Aby wysłać zapytanie, zaakceptuj informację o przetwarzaniu danych osobowych.',
+      contactRequired: 'Podaj numer telefonu albo adres e-mail, żebyśmy mogli odpowiedzieć.'
     },
     cz: {
       success: 'Děkujeme! Zpráva byla odeslána. Ozveme se co nejdříve.',
@@ -63,7 +64,8 @@
       rateLimit: 'Počkejte prosím 30 sekund před dalším odesláním.',
       invalidEmail: 'Zadejte prosím platnou e-mailovou adresu.',
       sending: 'Odesílání...',
-      consentRequired: 'Pro odeslání dotazu prosím potvrďte souhlas se zpracováním osobních údajů.'
+      consentRequired: 'Pro odeslání dotazu prosím potvrďte souhlas se zpracováním osobních údajů.',
+      contactRequired: 'Uveďte prosím telefon nebo e-mail, abychom vám mohli odpovědět.'
     },
     sk: {
       success: 'Ďakujeme! Správa bola odoslaná. Ozveme sa čo najskôr.',
@@ -71,7 +73,8 @@
       rateLimit: 'Počkajte prosím 30 sekúnd pred ďalším odoslaním.',
       invalidEmail: 'Zadajte prosím platnú e-mailovú adresu.',
       sending: 'Odosielanie...',
-      consentRequired: 'Pre odoslanie dopytu prosím potvrďte súhlas so spracovaním osobných údajov.'
+      consentRequired: 'Pre odoslanie dopytu prosím potvrďte súhlas so spracovaním osobných údajov.',
+      contactRequired: 'Uveďte prosím telefón alebo e-mail, aby sme vám mohli odpovedať.'
     },
     en: {
       success: 'Thank you! Your message has been sent. We\'ll get back to you soon.',
@@ -79,7 +82,8 @@
       rateLimit: 'Please wait 30 seconds before submitting again.',
       invalidEmail: 'Please enter a valid email address.',
       sending: 'Sending...',
-      consentRequired: 'To send the message, please accept the privacy notice.'
+      consentRequired: 'To send the message, please accept the privacy notice.',
+      contactRequired: 'Please provide a phone number or an e-mail address so we can reply.'
     }
   };
 
@@ -341,9 +345,15 @@
     // Map fields
     var data = mapFormFields(form);
 
-    // Validate required fields
-    if (!data.email || !isValidEmail(data.email)) {
+    // Kontakt jest mozliwy telefonem albo mailem — formularze wymagaja telefonu,
+    // a e-mail jest oznaczony jako opcjonalny. Blokujemy wiec tylko e-mail BLEDNY,
+    // nie pusty; wczesniej pusty e-mail przerywal wysylke mimo etykiety "opcjonalnie".
+    if (data.email && !isValidEmail(data.email)) {
       showMessage(form, msgs.invalidEmail, true);
+      return;
+    }
+    if (!data.email && !data.phone) {
+      showMessage(form, msgs.contactRequired, true);
       return;
     }
 
