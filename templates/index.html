@@ -287,7 +287,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="sub">{{{gallery.sub}}}</p>
       <div class="realizacje-grid" style="margin-top:40px">
         {{#gallery.top}}
-        <div class="realizacja-card"><img src="{{{img}}}" alt="{{alt}}" loading="lazy"><div class="realizacja-label">{{label}}</div></div>
+        <div class="realizacja-card"><img src="{{{img}}}" data-full="{{{pelny}}}" alt="{{alt}}" loading="lazy"><div class="realizacja-label">{{label}}</div></div>
         {{/gallery.top}}
       </div>
       <div class="section-cta reveal" style="margin-top:48px">
@@ -564,6 +564,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     window.STAGO_PLACE_ID = 'ChIJY7vHl1WZF0cRh3HPZovQvZw';
   </script>
   <script src="{{{root}}}reviews.js"></script>
+  <script src="{{{root}}}lightbox.js"></script>
   <script src="{{{root}}}form-handler.js"></script>
   <script>document.querySelector('.lang-btn')?.addEventListener('click',function(e){e.stopPropagation();var d=this.nextElementSibling;d.style.display=d.style.display==='none'?'grid':'none'});document.addEventListener('click',function(){var d=document.querySelector('.lang-dropdown');if(d)d.style.display='none'});</script>
   <script src="{{{root}}}cookies.js" defer></script>

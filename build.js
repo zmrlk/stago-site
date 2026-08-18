@@ -115,6 +115,47 @@ function mapaOdciskowAppJs() {
 }
 const ASSET_V = JSON.stringify(mapaOdciskowAppJs());
 
+
+// Trzy realizacje pokazywane na stronie glownej. Wczesniej wisialy tam zdjecia
+// pogladowe (k*.webp) — Karol 08-18: maja byc prawdziwe realizacje, losowane.
+// Pula to karty ze strony /realizacje danej wersji jezykowej; losujemy raz na build,
+// zeby wszystkie jezyki pokazaly ten sam zestaw.
+const KARTA_RE = /<div class="realizacja-card"><img src="([^"]+)"[^>]*?alt="([^"]*)"[^>]*>(?:<div class="realizacja-label">([^<]*)<\/div>)?/g;
+
+function losoweRealizacje(lang) {
+  const sciezka = lang === 'pl' ? 'content/pages/realizacje.json' : `content/${lang}/pages/realizacje.json`;
+  let body;
+  try {
+    body = JSON.parse(fs.readFileSync(sciezka, 'utf8')).body;
+  } catch (e) {
+    return null;
+  }
+  const karty = [];
+  for (const m of body.matchAll(KARTA_RE)) {
+    karty.push({ img: m[1], alt: m[2], label: m[3] || '', pelny: m[1].replace('-800.webp', '.webp') });
+  }
+  if (karty.length < 3) return null;
+  // Dwie bryly z zewnatrz i jedno wnetrze — sama galeria wnetrz slabo sprzedaje pawilon.
+  const zewn = karty.filter(k => /\/rz[\d-]/.test(k.img));
+  const wewn = karty.filter(k => /\/rw[\d-]/.test(k.img));
+  if (zewn.length < 2 || wewn.length < 1) return WYBOR_REALIZACJI.map(i => karty[i % karty.length]);
+  return [
+    zewn[WYBOR_REALIZACJI[0] % zewn.length],
+    zewn[(WYBOR_REALIZACJI[1] + 1) % zewn.length],
+    wewn[WYBOR_REALIZACJI[2] % wewn.length],
+  ];
+}
+
+// Indeksy losujemy raz — inaczej kazda wersja jezykowa dostalaby inne zdjecia.
+const WYBOR_REALIZACJI = (() => {
+  const pula = [...Array(59).keys()];
+  const wybrane = [];
+  while (wybrane.length < 3 && pula.length) {
+    wybrane.push(...pula.splice(Math.floor(Math.random() * pula.length), 1));
+  }
+  return wybrane;
+})();
+
 // ── i18n config ──
 const LANGS = {
   pl: { dir: '', i18n: 'content/i18n/pl.json' },
@@ -278,8 +319,10 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
 
   // Sekcja realizacji na stronie glownej: trzy pierwsze kafelki z tresci (przetlumaczone
   // w kazdej wersji jezykowej) zamiast wpisanych na sztywno polskich podpisow w szablonie.
-  if (data.gallery && Array.isArray(data.gallery.items)) {
-    data.gallery.top = data.gallery.items.slice(0, 3);
+  if (data.gallery) {
+    const zRealizacji = losoweRealizacje(lang);
+    data.gallery.top = zRealizacji
+      || (Array.isArray(data.gallery.items) ? data.gallery.items.slice(0, 3) : []);
   }
 
   // Nav CTA href: PL uses konfigurator, export uses mailto from i18n
