@@ -267,7 +267,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.pagePath = output; // e.g. "modele/nord.html" — used by language switcher
   data.ui = ui;
   data.cssV = CSS_V;
-  data.reviews = REVIEWS;
+  data.googleRating = REVIEWS;
   data.assetV = ASSET_V;
 
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści

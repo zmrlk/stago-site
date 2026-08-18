@@ -69,6 +69,10 @@ async function main() {
     updated: new Date().toISOString().slice(0, 10),
   };
 
+  // Liczniki sprawdzamy zawsze — plik z cache moze byc aktualny, a tresc nie
+  // (tak bylo 08-18: cache 24, a w naglowkach wciaz 13).
+  aktualizujLicznikiWTresci(liczba);
+
   if (stary && stary.reviewCount === nowy.reviewCount && stary.ratingValue === nowy.ratingValue) {
     console.log(`reviews: bez zmian (${nowy.reviewCount} opinii, ocena ${nowy.ratingValue})`);
     return;
@@ -77,6 +81,32 @@ async function main() {
   fs.writeFileSync(CACHE, JSON.stringify(nowy, null, 2) + '\n');
   const skad = stary ? `${stary.reviewCount} → ` : '';
   console.log(`reviews: ${skad}${nowy.reviewCount} opinii, ocena ${nowy.ratingValue}`);
+}
+
+// Naglowek sekcji opinii ma wlasna, przetlumaczona etykiete ("13 opinii",
+// "13 Bewertungen"). Widget podmienia ja na zywo, ale zanim wystartuje — i gdyby
+// nie wystartowal — powinna byc aktualna juz w HTML. Podmieniamy sama liczbe,
+// zostawiajac slowo w jezyku danej wersji.
+function aktualizujLicznikiWTresci(liczba) {
+  const pliki = ['content/index.json', 'content/de/index.json', 'content/cz/index.json',
+    'content/sk/index.json', 'content/hu/index.json', 'content/it/index.json', 'content/es/index.json'];
+  let zmienione = 0;
+  for (const f of pliki) {
+    let dane;
+    try {
+      dane = JSON.parse(fs.readFileSync(f, 'utf8'));
+    } catch (e) {
+      continue;
+    }
+    const stara = dane.reviews && dane.reviews.count;
+    if (typeof stara !== 'string') continue;
+    const nowa = stara.replace(/^\d+/, String(liczba));
+    if (nowa === stara) continue;
+    dane.reviews.count = nowa;
+    fs.writeFileSync(f, JSON.stringify(dane, null, 2) + '\n');
+    zmienione++;
+  }
+  if (zmienione) console.log(`reviews: licznik w naglowku odswiezony w ${zmienione} wersjach jezykowych`);
 }
 
 main();
