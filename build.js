@@ -2,6 +2,22 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
+// Ocena i liczba opinii Google — jedno zrodlo prawdy dla wszystkich szablonow.
+// Odswiezamy przed budowaniem, zeby dane strukturalne nie niosly liczby sprzed miesiecy
+// (przed 08-18 tkwilo tam 13 przy realnych 24). Awaria Google nie przerywa builda —
+// skrypt zostawia wtedy ostatnia znana wartosc.
+try {
+  require('child_process').execFileSync('node', ['scripts/update-reviews.js'], { stdio: 'inherit' });
+} catch (e) {
+  console.warn('reviews: aktualizacja nie powiodla sie — uzywam zapisanej wartosci');
+}
+let REVIEWS = { ratingValue: '5.0', reviewCount: '13' };
+try {
+  REVIEWS = { ...REVIEWS, ...JSON.parse(fs.readFileSync('content/reviews.json', 'utf8')) };
+} catch (e) {
+  console.warn('reviews: brak content/reviews.json — uzywam wartosci zapasowych');
+}
+
 // ── Odcisk treści style.css → ?v=… w <link> ──
 // Cloudflare cachuje statyki spod stałej nazwy (max-age 7 dni). Bez odcisku
 // świeży HTML wchodzi na prod ze STARYM CSS i nowe reguły nie działają.
@@ -251,6 +267,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.pagePath = output; // e.g. "modele/nord.html" — used by language switcher
   data.ui = ui;
   data.cssV = CSS_V;
+  data.reviews = REVIEWS;
   data.assetV = ASSET_V;
 
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
