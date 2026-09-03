@@ -20,7 +20,7 @@
   'use strict';
 
   var STORAGE_KEY = 'stago_cookie_consent_v1';
-  var CONSENT_POLICY_VERSION = '2026-09-03-v1';
+  var CONSENT_POLICY_VERSION = '2026-09-03-v2';
   var GTM_ID = 'GTM-WNJQZHX6';
   var GA4_ID = 'G-XZNVTYFPWR';
   // WŁASNY dataset strony („STAGO — strona", założony 2026-08-13).
@@ -82,17 +82,14 @@
     g.async = true;
     g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
     document.head.appendChild(g);
-    // Tag Manager (GTM-WNJQZHX6) NIE jest ladowany — sprawdzone 2026-08-18:
-    // kontener jest pusty (zero tagow), a GA4, piksel Meta, TikTok i konwersje
-    // z formularza ida bezposrednio, z pominieciem GTM. Samo jego wczytanie
-    // kosztowalo 315 kB, a Google dociagalo przez nie DRUGA kopie gtag.js (489 kB) —
-    // razem 804 kB z 1293 kB analityki szlo w prozne.
-    // Gdy pojawi sie ktos zarzadzajacy tagami z panelu, wystarczy odkomentowac:
-    // var s = document.createElement('script');
-    // s.async = true;
-    // s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID + '&l=dataLayer';
-    // document.head.appendChild(s);
-    // window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    // GTM jest centralnym miejscem dla kolejnych pikseli reklamowych. GA4 i
+    // obecny Meta Pixel pozostają chwilowo bezpośrednie, dopóki ich odpowiedniki
+    // w GTM nie przejdą testu bez podwójnych zdarzeń.
+    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID + '&l=dataLayer';
+    document.head.appendChild(s);
   }
   loadTags();
 
@@ -179,7 +176,8 @@
     window.dataLayer.push({
       event: 'stago_consent_update',
       consent_analytics: !!state.analytics,
-      consent_marketing: !!state.marketing
+      consent_marketing: !!state.marketing,
+      consent_openai_ads: !!state.marketing && state.version === CONSENT_POLICY_VERSION
     });
   }
 
@@ -463,6 +461,13 @@
   var existing = load();
   if (existing) {
     apply(existing);
+    if (existing.version !== CONSENT_POLICY_VERSION) {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () { show(existing); });
+      } else {
+        show(existing);
+      }
+    }
   } else {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', function () { show(); });

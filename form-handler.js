@@ -280,6 +280,7 @@
         container_type: payload.containerType || '',
         consent_marketing: payload.consent_marketing === true,
         consent_ads: payload.consent_ads === true,
+        consent_openai_ads: payload.consent_openai_ads === true,
         measurement_basis: payload.consent_analytics === true ? 'observed_consented' : 'cookieless_aggregate'
       };
 
@@ -289,6 +290,7 @@
       for (var k in params) {
         if (Object.prototype.hasOwnProperty.call(params, k)) dlEvent[k] = params[k];
       }
+      if (payload.event_id) dlEvent.event_id = payload.event_id;
       window.dataLayer.push(dlEvent);
 
       // 2) GA4 — recommended event (gtag dostępny tylko po zgodzie analytics)
@@ -382,6 +384,7 @@
     } catch (consentErr) {}
     var consentAnalytics = !!(cookieConsent && cookieConsent.analytics);
     var consentAds = !!(cookieConsent && cookieConsent.marketing);
+    var consentOpenAIAds = !!(consentAds && cookieConsent.version === '2026-09-03-v2');
     var consentState = consentAds
       ? (consentAnalytics ? 'analytics_and_ads_granted' : 'ads_granted')
       : (consentAnalytics ? 'analytics_granted' : 'denied');
@@ -445,6 +448,7 @@
       consent_marketing: consentRecord.consent_marketing,
       consent_analytics: consentAnalytics,
       consent_ads: consentAds,
+      consent_openai_ads: consentOpenAIAds,
       consent_state: consentState,
       consent_policy_version: cookieConsent && cookieConsent.version
         ? String(cookieConsent.version).slice(0, 40)
