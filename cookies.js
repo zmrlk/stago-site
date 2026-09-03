@@ -5,13 +5,14 @@
  *   marketing → ad_storage + ad_user_data + ad_personalization.
  * - Bez zgody Google dostaje wyłącznie bezcookiesowe pingi (bez identyfikatora
  *   użytkownika) — służą modelowaniu konwersji w GA4/Google Ads.
- * - Atrybucja first-party: gclid/utm z URL → localStorage (90 dni);
- *   form-handler.js dokleja ją do payloadu leada (window.STAGO_ATTRIBUTION.get()).
+ * - Atrybucja first-party: gclid/utm z URL → localStorage dopiero po zgodzie;
+ *   bez zgody formularz dostaje wyłącznie ogólny rodzaj źródła, bez click ID.
  * - phone_click: klik w link tel: → event GA4 + dataLayer (GTM).
  * - Meta Pixel + TikTok Pixel: ładowane WYŁĄCZNIE po zgodzie marketingowej
  *   (nie mają Consent Mode — każde odpalenie to od razu cookie dostawcy).
  *   Konwersję Lead/SubmitForm wysyła form-handler.js po potwierdzonej wysyłce.
- * - Stores consent in localStorage as JSON: { necessary:true, analytics:bool, marketing:bool, ts:number }
+ * - Stores consent in localStorage with a policy version. Legacy choices keep
+ *   working for their original scope, but do not authorize new quote telemetry.
  * - Banner appears on first visit. Footer link "Zgody cookies" reopens it.
  * - Strings come from window.STAGO_I18N_COOKIES (set by template) or fallback PL.
  */
@@ -19,6 +20,7 @@
   'use strict';
 
   var STORAGE_KEY = 'stago_cookie_consent_v1';
+  var CONSENT_POLICY_VERSION = '2026-09-03-v1';
   var GTM_ID = 'GTM-WNJQZHX6';
   var GA4_ID = 'G-XZNVTYFPWR';
   // WŁASNY dataset strony („STAGO — strona", założony 2026-08-13).
@@ -36,7 +38,7 @@
 
   var DEFAULT_STRINGS = {
     title: 'Cookies',
-    description: 'Używamy plików cookies, żeby strona działała poprawnie, a za Twoją zgodą także do analityki i marketingu.',
+    description: 'Pomóż nam dopasować treści i oferty. Za Twoją zgodą mierzymy, co jest przydatne, oraz skuteczność reklam. Odmowa nie ogranicza działania strony.',
     acceptAll: 'Akceptuję wszystkie',
     onlyNecessary: 'Tylko niezbędne',
     settings: 'Ustawienia',
@@ -44,9 +46,9 @@
     categoryNecessary: 'Niezbędne',
     categoryNecessaryDesc: 'Potrzebne do działania strony i formularzy. Zawsze aktywne.',
     categoryAnalytics: 'Analityczne',
-    categoryAnalyticsDesc: 'Pomiar ruchu i sposobu korzystania ze strony.',
+    categoryAnalyticsDesc: 'Pomiar korzystania ze strony i indywidualnej wyceny (czas i oglądane sekcje). AI może podpowiedzieć opiekunowi temat kontaktu, ale nie podejmuje decyzji za Ciebie.',
     categoryMarketing: 'Marketingowe',
-    categoryMarketingDesc: 'Pomiar skuteczności reklam i remarketing.',
+    categoryMarketingDesc: 'Pozwala mierzyć skuteczność reklam i lepiej dopasować komunikację.',
     moreInfo: 'Więcej w',
     moreInfoLink: 'Polityce cookies',
     moreInfoHref: 'polityka-cookies.html'
@@ -173,6 +175,7 @@
     // przestaje strzelać dopiero od następnej odsłony (guard __STAGO_*_LOADED
     // żyje w window, więc ginie razem ze stroną).
     if (state.marketing) loadMarketingPixels();
+    persistAttribution(state);
     window.dataLayer.push({
       event: 'stago_consent_update',
       consent_analytics: !!state.analytics,
@@ -180,16 +183,45 @@
     });
   }
 
-  // ─── ATRYBUCJA FIRST-PARTY (gclid/utm → localStorage) ─────────────
-  // Czyta form-handler.js przy wysyłce leada. Last-touch: nowsza kampania
-  // nadpisuje starszą. Dane wysyłane WYŁĄCZNIE razem z formularzem, który
-  // user świadomie wysyła (zgoda RODO w formularzu) — nie do analytics.
+  // ─── ATRYBUCJA FIRST-PARTY (gclid/utm → localStorage PO zgodzie) ───
+  // Click ID wymaga marketing=true; same UTM mogą być zachowane przy analytics=true.
+  // Bez obu zgód niczego nie zapisujemy w terminalu i ujawniamy formularzowi tylko
+  // ogólny rodzaj wejścia (np. google_ads), nigdy unikalny identyfikator kliknięcia.
   var ATTR_KEY = 'stago_attribution_v1';
   var ATTR_TTL_MS = 90 * 24 * 60 * 60 * 1000;
+  var CLICK_ID_PARAMS = ['gclid', 'gbraid', 'wbraid', 'fbclid', 'ttclid', 'msclkid', 'oppref'];
   var ATTR_PARAMS = [
-    'gclid', 'gbraid', 'wbraid', 'fbclid', 'ttclid', 'msclkid',
+    'gclid', 'gbraid', 'wbraid', 'fbclid', 'ttclid', 'msclkid', 'oppref',
     'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'
   ];
+  var pendingAttribution = null;
+
+  function filteredAttribution(source, state) {
+    if (!source || !state || (!state.analytics && !state.marketing)) return null;
+    var result = {};
+    for (var key in source) {
+      if (!Object.prototype.hasOwnProperty.call(source, key)) continue;
+      if (CLICK_ID_PARAMS.indexOf(key) !== -1 && !state.marketing) continue;
+      result[key] = source[key];
+    }
+    return result.ts ? result : null;
+  }
+
+  function persistAttribution(state) {
+    try {
+      var allowed = filteredAttribution(pendingAttribution, state);
+      if (allowed) localStorage.setItem(ATTR_KEY, JSON.stringify(allowed));
+      else if (!state || (!state.analytics && !state.marketing)) localStorage.removeItem(ATTR_KEY);
+      else {
+        var existing = localStorage.getItem(ATTR_KEY);
+        if (existing) {
+          var filtered = filteredAttribution(JSON.parse(existing), state);
+          if (filtered) localStorage.setItem(ATTR_KEY, JSON.stringify(filtered));
+          else localStorage.removeItem(ATTR_KEY);
+        }
+      }
+    } catch (e) {}
+  }
 
   function captureAttribution() {
     try {
@@ -211,12 +243,17 @@
       if (!has) return;
       found.landing_page = window.location.pathname;
       found.ts = Date.now();
-      localStorage.setItem(ATTR_KEY, JSON.stringify(found));
+      pendingAttribution = found;
+      persistAttribution(load());
     } catch (e) {}
   }
 
   function getAttribution() {
     try {
+      var state = load();
+      if (!state || (!state.analytics && !state.marketing)) return null;
+      var current = filteredAttribution(pendingAttribution, state);
+      if (current) return current;
       var raw = localStorage.getItem(ATTR_KEY);
       if (!raw) return null;
       var a = JSON.parse(raw);
@@ -224,12 +261,24 @@
         localStorage.removeItem(ATTR_KEY);
         return null;
       }
-      return a;
+      return filteredAttribution(a, state);
     } catch (e) { return null; }
+  }
+
+  function getAttributionSignal() {
+    var a = pendingAttribution;
+    if (!a) return null;
+    if (a.gclid || a.gbraid || a.wbraid) return 'google_ads';
+    if (a.fbclid) return 'meta_ads';
+    if (a.ttclid) return 'tiktok_ads';
+    if (a.oppref) return 'chatgpt_ads';
+    if (a.msclkid) return 'microsoft_ads';
+    if (a.utm_source) return 'utm';
+    return null;
   }
   captureAttribution();
 
-  window.STAGO_ATTRIBUTION = { get: getAttribution };
+  window.STAGO_ATTRIBUTION = { get: getAttribution, signal: getAttributionSignal };
 
   // ─── PHONE CLICK — konwersja miękka (działa też przed zgodą: cookieless ping) ──
   document.addEventListener('click', function (e) {
@@ -405,6 +454,7 @@
 
   function finalize(state) {
     state.ts = Date.now();
+    state.version = CONSENT_POLICY_VERSION;
     save(state);
     apply(state);
     hide();

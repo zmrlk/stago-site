@@ -101,7 +101,7 @@
   "areaServed": "Italy",
   "cookieBanner": {
     "title": "Cookie e privacy",
-    "description": "Utilizziamo cookie necessari per il funzionamento del sito. Con il tuo consenso attiveremo cookie analitici (Google Analytics) e di marketing (Meta Pixel, TikTok Pixel) per misurare l'efficacia del sito e delle campagne.",
+    "description": "Aiutaci ad adattare contenuti e offerte. Con il tuo consenso misuriamo l'uso del sito e della tua offerta individuale e l'efficacia della pubblicità.",
     "acceptAll": "Accetta tutti",
     "onlyNecessary": "Solo necessari",
     "settings": "Impostazioni",
@@ -109,7 +109,7 @@
     "categoryNecessary": "Necessari",
     "categoryNecessaryDesc": "Necessari per il funzionamento del sito, dei moduli e per memorizzare le impostazioni. Sempre attivi.",
     "categoryAnalytics": "Analitici",
-    "categoryAnalyticsDesc": "Google Analytics 4 — misurazione del traffico, delle fonti e degli eventi sul sito.",
+    "categoryAnalyticsDesc": "Misurazione del sito e dell'offerta individuale (tempo e sezioni). L'AI può suggerire al referente un tema di contatto, ma non decide per te.",
     "categoryMarketing": "Marketing",
     "categoryMarketingDesc": "Meta Pixel e TikTok Pixel — misurazione dell'efficacia delle inserzioni e remarketing.",
     "moreInfo": "Maggiori dettagli nella",

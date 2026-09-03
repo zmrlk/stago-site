@@ -101,7 +101,7 @@
   "areaServed": "Hungary",
   "cookieBanner": {
     "title": "Cookie-k és adatvédelem",
-    "description": "Az oldal működéséhez szükséges cookie-kat használunk. Hozzájárulásával analitikai cookie-kat (Google Analytics) és marketing cookie-kat (Meta Pixel, TikTok Pixel) is bekapcsolunk az oldal és a kampányok hatékonyságának mérése érdekében.",
+    "description": "Segítsen a tartalom és az ajánlatok személyre szabásában. Hozzájárulásával mérjük a weboldal és az Ön egyedi ajánlatának használatát, valamint a hirdetések hatékonyságát.",
     "acceptAll": "Mind elfogadom",
     "onlyNecessary": "Csak szükségesek",
     "settings": "Beállítások",
@@ -109,7 +109,7 @@
     "categoryNecessary": "Szükséges",
     "categoryNecessaryDesc": "Az oldal, az űrlapok és a beállítások mentésének működéséhez szükségesek. Mindig aktívak.",
     "categoryAnalytics": "Analitikai",
-    "categoryAnalyticsDesc": "Google Analytics 4 — forgalom, források és események mérése az oldalon.",
+    "categoryAnalyticsDesc": "A weboldal és az egyedi ajánlat mérése (idő és szakaszok). Az AI kapcsolati témát javasolhat az ügyintézőnek, de nem hoz döntést Ön helyett.",
     "categoryMarketing": "Marketing",
     "categoryMarketingDesc": "Meta Pixel és TikTok Pixel — hirdetések hatékonyságának mérése és remarketing.",
     "moreInfo": "Részletek a",

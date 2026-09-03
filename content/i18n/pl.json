@@ -101,7 +101,7 @@
   "areaServed": "Poland",
   "cookieBanner": {
     "title": "Cookies i prywatność",
-    "description": "Używamy cookies niezbędnych do działania strony. Za Twoją zgodą uruchomimy cookies analityczne (Google Analytics) i marketingowe (Meta Pixel, TikTok Pixel), żeby mierzyć skuteczność strony i kampanii. Zgodę możesz wycofać w dowolnym momencie.",
+    "description": "Pomóż nam dopasować treści i oferty. Za Twoją zgodą mierzymy korzystanie ze strony i indywidualnej wyceny oraz skuteczność reklam. Zgodę możesz wycofać w dowolnym momencie.",
     "acceptAll": "Akceptuję wszystkie",
     "onlyNecessary": "Tylko niezbędne",
     "settings": "Ustawienia",
@@ -109,7 +109,7 @@
     "categoryNecessary": "Niezbędne",
     "categoryNecessaryDesc": "Wymagane do działania strony, formularzy i zapamiętania ustawień. Zawsze aktywne.",
     "categoryAnalytics": "Analityczne",
-    "categoryAnalyticsDesc": "Google Analytics 4 — pomiar ruchu, źródeł i zdarzeń na stronie.",
+    "categoryAnalyticsDesc": "Pomiar strony i indywidualnej wyceny (czas i sekcje). AI może podpowiedzieć opiekunowi temat kontaktu, ale nie podejmuje decyzji za Ciebie.",
     "categoryMarketing": "Marketingowe",
     "categoryMarketingDesc": "Meta Pixel i TikTok Pixel — pomiar skuteczności reklam i remarketing.",
     "moreInfo": "Więcej w",

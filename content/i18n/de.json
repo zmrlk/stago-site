@@ -101,7 +101,7 @@
   "areaServed": "Germany",
   "cookieBanner": {
     "title": "Cookies und Datenschutz",
-    "description": "Wir verwenden notwendige Cookies für den Betrieb der Website. Mit Ihrer Einwilligung aktivieren wir analytische Cookies (Google Analytics) und Marketing-Cookies (Meta Pixel, TikTok Pixel), um die Wirksamkeit der Website und Kampagnen zu messen.",
+    "description": "Helfen Sie uns, Inhalte und Angebote anzupassen. Mit Ihrer Einwilligung messen wir die Nutzung der Website und Ihres individuellen Angebots sowie die Wirksamkeit von Werbung.",
     "acceptAll": "Alle akzeptieren",
     "onlyNecessary": "Nur notwendige",
     "settings": "Einstellungen",
@@ -109,7 +109,7 @@
     "categoryNecessary": "Notwendig",
     "categoryNecessaryDesc": "Erforderlich für die Funktion der Website, Formulare und das Speichern von Einstellungen. Immer aktiv.",
     "categoryAnalytics": "Analytisch",
-    "categoryAnalyticsDesc": "Google Analytics 4 — Messung von Traffic, Quellen und Ereignissen auf der Website.",
+    "categoryAnalyticsDesc": "Messung der Website und Ihres individuellen Angebots (Zeit und Bereiche). KI kann dem Betreuer ein Gesprächsthema empfehlen, entscheidet aber nicht über Sie.",
     "categoryMarketing": "Marketing",
     "categoryMarketingDesc": "Meta Pixel und TikTok Pixel — Messung der Werbewirksamkeit und Remarketing.",
     "moreInfo": "Mehr in der",

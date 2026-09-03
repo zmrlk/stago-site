@@ -101,7 +101,7 @@
   "areaServed": "Slovakia",
   "cookieBanner": {
     "title": "Cookies a súkromie",
-    "description": "Používame cookies nevyhnutné pre fungovanie stránky. S vaším súhlasom spustíme analytické cookies (Google Analytics) a marketingové cookies (Meta Pixel, TikTok Pixel), aby sme mohli merať účinnosť stránky a kampaní.",
+    "description": "Pomôžte nám prispôsobiť obsah a ponuky. S vaším súhlasom meriame používanie stránky a vašej individuálnej ponuky aj účinnosť reklám.",
     "acceptAll": "Prijať všetko",
     "onlyNecessary": "Iba nevyhnutné",
     "settings": "Nastavenia",
@@ -109,7 +109,7 @@
     "categoryNecessary": "Nevyhnutné",
     "categoryNecessaryDesc": "Potrebné pre funkčnosť stránky, formulárov a uloženie nastavení. Vždy aktívne.",
     "categoryAnalytics": "Analytické",
-    "categoryAnalyticsDesc": "Google Analytics 4 — meranie návštevnosti, zdrojov a udalostí na stránke.",
+    "categoryAnalyticsDesc": "Meranie stránky a individuálnej ponuky (čas a sekcie). AI môže poradiť obchodníkovi tému kontaktu, ale nerozhoduje za vás.",
     "categoryMarketing": "Marketingové",
     "categoryMarketingDesc": "Meta Pixel a TikTok Pixel — meranie účinnosti reklám a remarketing.",
     "moreInfo": "Viac v",

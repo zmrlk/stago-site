@@ -101,7 +101,7 @@
   "areaServed": "Czech Republic",
   "cookieBanner": {
     "title": "Cookies a soukromí",
-    "description": "Používáme cookies nezbytné pro fungování webu. S vaším souhlasem spustíme analytické cookies (Google Analytics) a marketingové cookies (Meta Pixel, TikTok Pixel), abychom mohli měřit efektivitu webu a kampaní.",
+    "description": "Pomozte nám přizpůsobit obsah a nabídky. S vaším souhlasem měříme používání webu a vaší individuální nabídky i účinnost reklam.",
     "acceptAll": "Přijmout vše",
     "onlyNecessary": "Pouze nezbytné",
     "settings": "Nastavení",
@@ -109,7 +109,7 @@
     "categoryNecessary": "Nezbytné",
     "categoryNecessaryDesc": "Potřebné pro funkčnost stránky, formulářů a uložení nastavení. Vždy aktivní.",
     "categoryAnalytics": "Analytické",
-    "categoryAnalyticsDesc": "Google Analytics 4 — měření návštěvnosti, zdrojů a událostí na stránce.",
+    "categoryAnalyticsDesc": "Měření webu a individuální nabídky (čas a sekce). AI může poradit obchodníkovi téma kontaktu, ale nerozhoduje za vás.",
     "categoryMarketing": "Marketingové",
     "categoryMarketingDesc": "Meta Pixel a TikTok Pixel — měření efektivity reklam a remarketing.",
     "moreInfo": "Více v",

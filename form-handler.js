@@ -267,7 +267,8 @@
   // Zero PII: imię/email/telefon NIE trafiają do analytics (wymóg GA4 §PII).
   // Dwa tory bo GA4 jest ładowany wprost przez gtag z cookies.js (nie przez GTM):
   //   1) dataLayer.push  → GTM (custom event 'generate_lead' dla tagów Meta/TikTok)
-  //   2) gtag('event')   → GA4 bezpośrednio (window.gtag istnieje dopiero po zgodzie analytics)
+  //   2) gtag('event')   → GA4 bezpośrednio; bez zgody to cookieless ping/modelowanie,
+  //      dlatego measurement_basis zawsze opisuje pochodzenie zdarzenia.
   function trackLead(form, payload) {
     try {
       var isConfigurator = (form.id === 'cfgForm' || form.classList.contains('cfg-form'));
@@ -277,7 +278,9 @@
         form_location: window.location.pathname,
         language: payload.language || '',
         container_type: payload.containerType || '',
-        consent_marketing: payload.consent_marketing === true
+        consent_marketing: payload.consent_marketing === true,
+        consent_ads: payload.consent_ads === true,
+        measurement_basis: payload.consent_analytics === true ? 'observed_consented' : 'cookieless_aggregate'
       };
 
       // 1) GTM — custom event
@@ -371,6 +374,17 @@
       consent_source_url: window.location.href,
       consent_form_id: form.id || form.getAttribute('data-form-name') || ''
     };
+    var cookieConsent = null;
+    try {
+      cookieConsent = window.STAGO_COOKIES && window.STAGO_COOKIES.state
+        ? window.STAGO_COOKIES.state()
+        : null;
+    } catch (consentErr) {}
+    var consentAnalytics = !!(cookieConsent && cookieConsent.analytics);
+    var consentAds = !!(cookieConsent && cookieConsent.marketing);
+    var consentState = consentAds
+      ? (consentAnalytics ? 'analytics_and_ads_granted' : 'ads_granted')
+      : (consentAnalytics ? 'analytics_granted' : 'denied');
 
     // Set loading state
     lastSubmitTime = now;
@@ -426,7 +440,20 @@
       containerType: data.containerType || '',
       language: lang,
       consent: consentRecord.consent,
+      // consent_marketing = dobrowolny kontakt handlowy z checkboxa formularza.
+      // consent_ads/analytics = osobna decyzja z banera cookies.
       consent_marketing: consentRecord.consent_marketing,
+      consent_analytics: consentAnalytics,
+      consent_ads: consentAds,
+      consent_state: consentState,
+      consent_policy_version: cookieConsent && cookieConsent.version
+        ? String(cookieConsent.version).slice(0, 40)
+        : 'legacy',
+      consent_policy_timestamp: cookieConsent && cookieConsent.ts
+        ? new Date(cookieConsent.ts).toISOString()
+        : null,
+      measurement_basis: 'crm_declared',
+      identity_state: 'declared',
       consent_timestamp: consentRecord.consent_timestamp,
       consent_source_url: consentRecord.consent_source_url,
       consent_form_id: consentRecord.consent_form_id
@@ -446,6 +473,14 @@
         if (attr.ts) payload.attribution_ts = new Date(attr.ts).toISOString();
       }
     } catch (attrErr) {}
+    try {
+      var attrSignal = window.STAGO_ATTRIBUTION && window.STAGO_ATTRIBUTION.signal
+        ? window.STAGO_ATTRIBUTION.signal()
+        : null;
+      if (attrSignal && !payload.utm_source && !payload.gclid && !payload.fbclid && !payload.ttclid && !payload.oppref) {
+        payload.attribution_signal = attrSignal;
+      }
+    } catch (signalErr) {}
 
     // Deduplikacja Meta (piksel ↔ API konwersji) — #667.
     // To samo zgłoszenie leci DWOMA kanałami: fbq('track','Lead') z przeglądarki
@@ -456,8 +491,8 @@
     // Dokładamy też ciasteczka Meta — serwer sam ich nie widzi (są na domenie klienta),
     // a to one wiążą zgłoszenie z konkretnym klikiem w reklamę.
     payload.event_id = makeEventId();
-    var fbcCookie = readCookie('_fbc');
-    var fbpCookie = readCookie('_fbp');
+    var fbcCookie = consentAds ? readCookie('_fbc') : '';
+    var fbpCookie = consentAds ? readCookie('_fbp') : '';
     if (fbcCookie) payload.fbc = fbcCookie;
     if (fbpCookie) payload.fbp = fbpCookie;
 

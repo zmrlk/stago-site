@@ -15,5 +15,12 @@ Allow: /form-handler.js
 User-agent: Googlebot-Image
 Allow: /assets/
 
+# ChatGPT Search + walidacja landingow ChatGPT Ads.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: OAI-AdsBot
+Allow: /
+
 Sitemap: https://stago.com.pl/sitemap.xml
 Sitemap: https://stago.com.pl/sitemap-images.xml
