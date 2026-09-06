@@ -149,7 +149,7 @@
     ],
     containerType: [
       'typ kontenera', 'container type', 'rodzaj kontenera', 'typ kontejneru',
-      'typ kontajnera', 'typ kontenera*'
+      'typ kontajnera', 'typ kontenera*', 'type', 'typ', 'containertype'
     ]
   };
 
