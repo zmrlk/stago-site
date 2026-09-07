@@ -1,0 +1,43 @@
+# Oferta z ERP → strona. ERP (STAGO v2) wystawia /api/public/oferta.json; ten workflow
+# pobiera ceny modeli, wstrzykuje je do content/**/modele/*.json (PL + 6 języków),
+# builduje HTML i commituje. Jeden pisarz do repo = bot; ERP nigdy nie pushuje tutaj.
+# Sekrety repo: OFERTA_PUBLIC_KEY (ten sam co env ERP). Zmienna (opcjonalnie): OFERTA_URL.
+name: oferta-sync
+
+on:
+  schedule:
+    - cron: '15 4 * * *' # codziennie 06:15 CEST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oferta-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Pobierz ceny z ERP i wstrzyknij do content
+        id: sync
+        env:
+          OFERTA_PUBLIC_KEY: ${{ secrets.OFERTA_PUBLIC_KEY }}
+          OFERTA_URL: ${{ vars.OFERTA_URL }}
+        run: node scripts/oferta-sync.js
+      - name: Build strony
+        if: steps.sync.outputs.changed == 'true'
+        run: node build.js
+      - name: Commit i push
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git config user.name 'stago-oferta-bot'
+          git config user.email 'oferta-bot@stago.com.pl'
+          git add -A content modele */modele *.html
+          git commit -m "chore(oferta): ceny modeli z ERP $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          git push
