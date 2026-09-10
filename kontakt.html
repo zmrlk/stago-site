@@ -156,44 +156,80 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  <section class="section section-light">
+  <style>
+    .contact-cards-grid .contact-card{min-width:0}
+    .contact-cards-grid .contact-value{overflow-wrap:anywhere}
+    .quote-section .contact-form-grid{gap:48px;align-items:center}
+    .quote-form{order:2;background:var(--white);padding:36px;border:1px solid var(--border);border-top:4px solid var(--accent);border-radius:var(--r);box-shadow:var(--shadow)}
+    .quote-form .eyebrow{text-align:left;margin:0 0 10px}
+    .quote-form .h2{text-align:left;font-size:clamp(1.75rem,3vw,2.2rem);margin:0 0 12px}
+    .quote-intro{color:var(--t2);font-size:.95rem;line-height:1.65;margin-bottom:6px}
+    .quote-field{display:flex;flex-direction:column;gap:7px;font-size:.85rem;font-weight:700}
+    .quote-field input,.quote-field textarea{width:100%}
+    .quote-details{border-block:1px solid var(--border);margin:2px 0}
+    .quote-details summary{cursor:pointer;font-size:.85rem;font-weight:700;padding:14px 0;color:var(--t2)}
+    .quote-details summary span{font-weight:400}
+    .quote-details .quote-field{margin:0 0 16px}
+    .quote-details .quote-field span{font-weight:400;color:var(--t2)}
+    .quote-form .form-consent input[type="checkbox"]{width:18px;height:18px;padding:0;flex-shrink:0}
+    .quote-form .form-consent{align-items:flex-start}
+    .quote-form .form-consent span{font-size:.75rem}
+    .quote-section .quote-form .form-consent a{color:#A82E0E}
+    .quote-form .btn{min-height:54px;font-size:1rem}
+    .quote-section .quote-form .form-note{font-size:.78rem;margin:0}
+    .quote-story{order:1;min-width:0}
+    .quote-story .eyebrow{text-align:left}
+    .quote-story h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2;letter-spacing:-.03em;max-width:400px}
+    .quote-story>p:not(.eyebrow){color:var(--t2);margin:16px 0 24px;line-height:1.7}
+    .quote-story figure{margin:0}
+    .quote-story img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 75%;border-radius:var(--r-sm)}
+    .quote-story figcaption{font-size:.75rem;color:var(--t2);margin-top:9px}
+    .quote-story .contact-info-list{gap:10px;margin-top:20px}
+    .quote-story .contact-info-list li{font-size:.85rem}
+    @media(max-width:880px){.quote-section{padding:40px 0}.quote-section .contact-form-grid{gap:36px}.quote-form{order:1;padding:26px}.quote-story{order:2}}
+    @media(max-width:480px){.quote-section>.container{padding:0 16px}.quote-form{padding:24px 20px}.quote-form .h2{font-size:1.75rem}.quote-intro{font-size:.9rem}.quote-story{padding:0 8px}}
+  </style>
+  <section class="section section-light quote-section" aria-label="Bezpłatna wycena pawilonu">
     <div class="container">
       <div class="contact-form-grid">
-        <div class="contact-form-info">
-          <p class="eyebrow">Darmowa wycena</p>
-          <h2 class="h2" style="text-align:left">Napisz, czego potrzebujesz.</h2>
-          <p style="font-size:1.05rem;color:var(--t2);line-height:1.7;margin:16px 0 24px">Powiedz nam, jaki chcesz pawilon, jaki rozmiar i gdzie ma stać. Resztą zajmiemy się my. Wycena jest darmowa i niezobowiązująca.</p>
+        <form class="product-form quote-form" id="contact-form" data-stago-form aria-labelledby="quote-title">
+          <div>
+            <p class="eyebrow">Bezpłatna wycena</p>
+            <h2 class="h2" id="quote-title">Twój pawilon zaczyna się <span class="accent">od rozmowy.</span></h2>
+            <p class="quote-intro">Zostaw imię i telefon. Oddzwonimy, ustalimy szczegóły i przygotujemy wycenę. Nie musisz jeszcze znać wymiarów.</p>
+          </div>
+          <label class="quote-field" for="quote-name">Imię
+            <input type="text" id="quote-name" name="name" placeholder="Jak masz na imię?" autocomplete="given-name" maxlength="100" required>
+          </label>
+          <label class="quote-field" for="quote-phone">Telefon
+            <input type="tel" id="quote-phone" name="phone" placeholder="Numer, pod który oddzwonimy" autocomplete="tel" inputmode="tel" maxlength="30" required>
+          </label>
+          <details class="quote-details">
+            <summary>Dodaj szczegóły <span>(opcjonalnie)</span></summary>
+            <label class="quote-field" for="quote-email">E-mail <span>Jeśli chcesz podać go już teraz.</span>
+              <input type="email" id="quote-email" name="email" oninvalid="this.closest('details').open=true" placeholder="twoj@email.pl" autocomplete="email" maxlength="254">
+            </label>
+            <label class="quote-field" for="quote-message">Co planujesz? <span>Możesz dopisać przeznaczenie, wymiary lub lokalizację.</span>
+              <textarea id="quote-message" name="message" rows="3" maxlength="2000" placeholder="Np. mały pawilon pod kawiarnię w Kielcach"></textarea>
+            </label>
+          </details>
+          <label class="form-consent"><input type="checkbox" name="consent" required><span>Wyrażam zgodę na przetwarzanie danych osobowych. <a href="polityka-prywatnosci.html" target="_blank" rel="noopener">Polityka prywatności</a></span></label>
+          <button type="submit" class="btn btn-primary btn-full">Poproś o wycenę</button>
+          <p class="form-note">Bezpłatnie i bez zobowiązań.</p>
+        </form>
+        <div class="quote-story">
+          <p class="eyebrow">Bezpośrednio od producenta</p>
+          <h2>Masz pomysł na swoje miejsce? Pomożemy go zbudować.</h2>
+          <p>Sklep, biuro, gastronomia czy własna przestrzeń. Dobierzemy układ, wykończenie i wyposażenie do tego, czego potrzebujesz.</p>
+          <figure>
+            <img src="assets/gallery/realizacje/rz21.webp?v=231b8a24" alt="Grafitowy pawilon STAGO z dużymi przeszkleniami podczas montażu" width="1400" height="1050" loading="lazy">
+            <figcaption>Jedna z naszych realizacji. Pawilon podczas montażu.</figcaption>
+          </figure>
           <ul class="contact-info-list">
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Wizualizacja 3D — zobaczysz, zanim zamówisz</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Wycena z transportem i montażem w jednej ofercie</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Pomoc z dokumentami i zgłoszeniem</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Odpowiedź w ciągu 24 godzin</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Wymiary i układ ustalimy wspólnie</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Wycena z transportem i montażem</li>
           </ul>
         </div>
-
-        <form class="product-form" id="contact-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="Imię i nazwisko" required>
-          <input type="tel" name="phone" placeholder="Telefon" required>
-          <input type="email" name="email" placeholder="Email (opcjonalnie)">
-          <select name="type">
-            <option value="">Co Cię interesuje?</option>
-            <option value="handlowy">Pawilon handlowy</option>
-            <option value="gastronomiczny">Pawilon gastronomiczny</option>
-            <option value="biurowy">Kontener biurowy</option>
-            <option value="uslugowy">Pawilon usługowy</option>
-            <option value="mieszkalny">Domek mieszkalny</option>
-            <option value="socjalny">Kontener socjalny</option>
-            <option value="specjalny">Pawilon specjalny</option>
-            <option value="inny">Inny / nie wiem jeszcze</option>
-          </select>
-          <textarea name="message" rows="5" placeholder="Powiedz coś o swoim projekcie. Wymiar, miejsce, do czego ma być, na kiedy potrzebujesz."></textarea>
-          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
-          <label class="form-consent"><input type="checkbox" name="consent" required> Wyrażam zgodę na przetwarzanie danych osobowych. <a href="polityka-prywatnosci.html" target="_blank">Polityka prywatności</a></label>
-          <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie</button>
-          <p class="form-note">Oddzwaniamy w ciągu 24 godzin. Wycena za darmo, bez zobowiązań.</p>
-          <p class="form-success" id="contact-form-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">Wysłano! Odezwiemy się w ciągu 24 godzin.</p>
-          <p class="form-error" id="contact-form-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:12px"></p>
-        </form>
       </div>
     </div>
   </section>
