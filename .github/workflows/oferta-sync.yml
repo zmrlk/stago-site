@@ -38,6 +38,6 @@ jobs:
         run: |
           git config user.name 'stago-oferta-bot'
           git config user.email 'oferta-bot@stago.com.pl'
-          git add -A content modele */modele *.html
-          git commit -m "chore(oferta): ceny modeli z ERP $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          git add -A content modele */modele *.html */realizacje.html assets/gallery/realizacje
+          git commit -m "chore(oferta): ceny modeli i realizacje z ERP $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
           git push
