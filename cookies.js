@@ -179,6 +179,7 @@
       consent_marketing: !!state.marketing,
       consent_openai_ads: !!state.marketing && state.version === CONSENT_POLICY_VERSION
     });
+    window.dispatchEvent(new Event('stago:consent-update'));
   }
 
   // ─── ATRYBUCJA FIRST-PARTY (gclid/utm → localStorage PO zgodzie) ───

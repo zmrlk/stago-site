@@ -114,6 +114,94 @@
     return 'ev-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 12);
   }
 
+  // Etapy lejka mają własne nazwy, żeby nie dublować automatycznego form_start z GA4.
+  // Identyfikatory żyją tylko w tej odsłonie; nigdy nie wysyłamy wartości pól.
+  function trackFormEvent(form, stage, attempt, errorType, fieldName) {
+    try {
+      var consent = window.STAGO_COOKIES && window.STAGO_COOKIES.state();
+      if (!consent || (!consent.analytics && !consent.marketing)) return;
+      var funnel = form._stagoFunnel || (form._stagoFunnel = {
+        id: makeEventId(), ga4: {}, meta: {}
+      });
+      var params = {
+        form_id: form.id || 'contact-form',
+        form_location: window.location.pathname,
+        form_session_id: funnel.id,
+        measurement_basis: 'observed_consented'
+      };
+      if (attempt) params.form_attempt_id = attempt.id;
+      if (errorType) params.error_type = errorType;
+      if (fieldName) params.field_name = fieldName;
+      var once = stage === 'view' || stage === 'start';
+      if (consent.analytics && typeof window.gtag === 'function' && !(once && funnel.ga4[stage])) {
+        try {
+          window.gtag('event', 'lead_form_' + stage, params);
+          if (once) funnel.ga4[stage] = true;
+        } catch (e) {}
+      }
+      if (consent.marketing && typeof window.fbq === 'function' && !(once && funnel.meta[stage])) {
+        try {
+          window.fbq('trackCustom', 'lead_form_' + stage, params);
+          if (once) funnel.meta[stage] = true;
+        } catch (e) {}
+      }
+    } catch (e) {} // Analityka nie może zablokować kontaktu.
+  }
+
+  function trackFormStart(form) {
+    trackFormEvent(form, 'view');
+    trackFormEvent(form, 'start');
+  }
+
+  function startFormAttempt(form) {
+    // Przeglądarka emituje osobny invalid dla każdego błędnego pola w jednej próbie.
+    if (!form._stagoAttempt) {
+      form._stagoAttempt = { id: makeEventId(), errorTracked: false };
+      setTimeout(function () { form._stagoAttempt = null; }, 0);
+      trackFormStart(form);
+      trackFormEvent(form, 'submit', form._stagoAttempt);
+    }
+    return form._stagoAttempt;
+  }
+
+  function trackFormError(form, attempt, errorType, fieldName) {
+    if (attempt.errorTracked) return;
+    attempt.errorTracked = true;
+    trackFormEvent(form, 'error', attempt, errorType, fieldName);
+  }
+
+  function initFormTracking(form) {
+    function visible() {
+      var rect = form.getBoundingClientRect();
+      if (rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight) {
+        trackFormEvent(form, 'view');
+      }
+    }
+    function start(e) {
+      if (e.target.name !== CONFIG.HONEYPOT_FIELD && e.target.type !== 'hidden') trackFormStart(form);
+    }
+    form.addEventListener('focusin', start);
+    form.addEventListener('input', start);
+    form.addEventListener('change', start);
+    form.addEventListener('invalid', function (e) {
+      if (e.target.name === CONFIG.HONEYPOT_FIELD) return;
+      var field = e.target.name;
+      if (['name', 'phone', 'email', 'consent', 'message'].indexOf(field) === -1) field = 'other';
+      var reason = e.target.validity.valueMissing ? 'required' : 'format';
+      trackFormError(form, startFormAttempt(form), reason, field);
+    }, true);
+    if (typeof window.IntersectionObserver === 'function') {
+      var observer = new window.IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) visible();
+      });
+      observer.observe(form);
+    } else {
+      window.addEventListener('scroll', visible, { passive: true });
+    }
+    window.addEventListener('stago:consent-update', visible);
+    visible();
+  }
+
   // Ciasteczka Meta (_fbc = klik w reklamę, _fbp = identyfikator przeglądarki).
   // Ustawia je fbevents.js, czyli istnieją TYLKO po zgodzie marketingowej.
   function readCookie(name) {
@@ -295,7 +383,7 @@
 
       // 2) GA4 — recommended event (gtag dostępny tylko po zgodzie analytics)
       if (typeof window.gtag === 'function') {
-        window.gtag('event', 'generate_lead', params);
+        try { window.gtag('event', 'generate_lead', params); } catch (e) {}
       }
 
       // 3) Meta Pixel / TikTok Pixel — bezpośrednio, NIE przez GTM.
@@ -306,7 +394,9 @@
       // ⚠️ Czwarty argument { eventID } to CAŁA deduplikacja z API konwersji.
       // Ten sam identyfikator poszedł w payloadzie do STAGO v2 (payload.event_id).
       // Usunięcie go = Meta policzy każdy lead dwa razy.
-      if (typeof window.fbq === 'function') {
+      var currentConsent = window.STAGO_COOKIES && window.STAGO_COOKIES.state();
+      var adsAllowed = payload.consent_ads === true && currentConsent && currentConsent.marketing;
+      if (adsAllowed && typeof window.fbq === 'function') {
         window.fbq(
           'track',
           'Lead',
@@ -317,7 +407,7 @@
           payload.event_id ? { eventID: payload.event_id } : undefined
         );
       }
-      if (typeof window.ttq === 'object' && typeof window.ttq.track === 'function') {
+      if (adsAllowed && typeof window.ttq === 'object' && typeof window.ttq.track === 'function') {
         window.ttq.track('SubmitForm', { content_category: params.lead_type });
       }
     } catch (e) {
@@ -340,9 +430,12 @@
       return;
     }
 
+    var attempt = startFormAttempt(form);
+
     // Rate limiting
     var now = Date.now();
     if (now - lastSubmitTime < CONFIG.RATE_LIMIT_MS) {
+      trackFormError(form, attempt, 'rate_limit');
       showMessage(form, msgs.rateLimit, true);
       return;
     }
@@ -354,10 +447,12 @@
     // a e-mail jest oznaczony jako opcjonalny. Blokujemy wiec tylko e-mail BLEDNY,
     // nie pusty; wczesniej pusty e-mail przerywal wysylke mimo etykiety "opcjonalnie".
     if (data.email && !isValidEmail(data.email)) {
+      trackFormError(form, attempt, 'format', 'email');
       showMessage(form, msgs.invalidEmail, true);
       return;
     }
     if (!data.email && !data.phone) {
+      trackFormError(form, attempt, 'contact_missing');
       showMessage(form, msgs.contactRequired, true);
       return;
     }
@@ -366,6 +461,7 @@
     var consentBox = form.querySelector('[name="consent"]');
     var consentMarketingBox = form.querySelector('[name="consent_marketing"]');
     if (consentBox && !consentBox.checked) {
+      trackFormError(form, attempt, 'required', 'consent');
       showMessage(form, msgs.consentRequired, true);
       return;
     }
@@ -494,7 +590,7 @@
     // = podwójnie policzone konwersje i zawyżony wynik kampanii.
     // Dokładamy też ciasteczka Meta — serwer sam ich nie widzi (są na domenie klienta),
     // a to one wiążą zgłoszenie z konkretnym klikiem w reklamę.
-    payload.event_id = makeEventId();
+    payload.event_id = attempt.id;
     var fbcCookie = consentAds ? readCookie('_fbc') : '';
     var fbpCookie = consentAds ? readCookie('_fbp') : '';
     if (fbcCookie) payload.fbc = fbcCookie;
@@ -508,14 +604,26 @@
     })
       .then(function (response) {
         if (!response.ok) {
-          throw new Error('HTTP ' + response.status);
+          var httpError = new Error('HTTP ' + response.status);
+          httpError.formErrorType = 'http';
+          throw httpError;
         }
-        return response.json();
+        return response.json().catch(function () {
+          var parseError = new Error('Invalid intake response');
+          parseError.formErrorType = 'response';
+          throw parseError;
+        });
       })
-      .then(function () {
+      .then(function (result) {
+        if (!result || result.success !== true || typeof result.lead_id !== 'string' || !result.lead_id) {
+          var resultError = new Error('Unconfirmed lead');
+          resultError.formErrorType = 'response';
+          throw resultError;
+        }
         setSubmitButton(form, false, lang);
 
         // Konwersja: lead potwierdzony (przed reset — payload mamy w scope)
+        trackFormEvent(form, 'success', attempt);
         trackLead(form, payload);
 
         form.reset();
@@ -542,6 +650,7 @@
         }
       })
       .catch(function (err) {
+        trackFormError(form, attempt, err.formErrorType || 'network');
         console.error('[STAGO] Form submission error:', err);
         setSubmitButton(form, false, lang);
         showMessage(form, msgs.error, true);
@@ -553,6 +662,7 @@
     var forms = document.querySelectorAll('[data-contact-form], [data-stago-form], #contactForm, #contact-form, #product-form, #cfgForm, form.contact-form, form.product-form, form.cfg-form');
     for (var i = 0; i < forms.length; i++) {
       forms[i].addEventListener('submit', handleSubmit);
+      try { initFormTracking(forms[i]); } catch (e) {} // Awaria pomiaru nie blokuje pozostałych formularzy.
     }
 
     // Inject honeypot field into forms that don't have it
