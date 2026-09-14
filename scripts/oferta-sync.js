@@ -14,6 +14,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const { renderFeed, writeFeed } = require('./meta-catalog');
 
 const URL_ERP = process.env.OFERTA_URL || 'https://erp.stago.com.pl/api/public/oferta.json';
 const KEY = process.env.OFERTA_PUBLIC_KEY;
@@ -151,6 +152,7 @@ async function syncRealizacje(lista) {
 		process.exit(res.status === 503 ? 3 : 1);
 	}
 	const oferta = await res.json();
+	const metaFeed = renderFeed(oferta.modele); // Validate before changing any public files.
 	console.log(`ERP: ${oferta.modele.length} modeli, kurs € ${oferta.eur_rate} (${oferta.eur_rate_source}), ${oferta.generated_at}`);
 	let zmienione = 0;
 	const brak = [];
@@ -187,6 +189,7 @@ async function syncRealizacje(lista) {
 	}
 	if (brak.length) console.log(`Modele z ERP bez strony (pomijam): ${brak.join(', ')}`);
 	zmienione += await syncRealizacje(oferta.realizacje || []);
+	zmienione += writeFeed(metaFeed, DRY);
 	console.log(`${DRY ? '[dry-run] ' : ''}Zmienione pliki: ${zmienione}`);
 	// GitHub Actions: wynik do kolejnego kroku (commit tylko gdy coś się zmieniło)
 	if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${zmienione > 0 ? 'true' : 'false'}\n`);
