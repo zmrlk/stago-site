@@ -263,9 +263,9 @@ function adjustAssetPaths(obj, extraPrefix) {
     // Long values (body HTML): adjust asset paths inside HTML attributes
     if (value.length > 500) {
       return value
-        .replace(/(src|href)="((?:\.\.\/)*assets\/)/g, `$1="${extraPrefix}$2`)
+        .replace(/(src|href|data-full)="((?:\.\.\/)*assets\/)/g, `$1="${extraPrefix}$2`)
         .replace(/url\(((?:\.\.\/)*assets\/)/g, `url(${extraPrefix}$1`)
-        .replace(/(srcset=")((?:\.\.\/)*assets\/)/g, `$1${extraPrefix}$2`);
+        .replace(/srcset="([^"]*)"/g, (_, candidates) => `srcset="${candidates.replace(/(^|,\s*)((?:\.\.\/)*assets\/)/g, `$1${extraPrefix}$2`)}"`);
     }
     return value;
   });
@@ -317,12 +317,14 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // Galeria realizacji obiecuje w tresci powiekszanie zdjec, wiec potrzebuje lightboxa
   data.hasGallery = typeof data.body === 'string' && data.body.includes('realizacja-card');
 
-  // Sekcja realizacji na stronie glownej: trzy pierwsze kafelki z tresci (przetlumaczone
-  // w kazdej wersji jezykowej) zamiast wpisanych na sztywno polskich podpisow w szablonie.
+  // Wszystkie galerie korzystaja z aktualnego zestawu ERP, takze strony modeli i zastosowan.
   if (data.gallery) {
-    const zRealizacji = losoweRealizacje(lang);
+    const zRealizacji = losoweRealizacje(lang)?.map(r => ({
+      ...r, img: data.root + r.img, pelny: data.root + r.pelny,
+    }));
     data.gallery.top = zRealizacji
       || (Array.isArray(data.gallery.items) ? data.gallery.items.slice(0, 3) : []);
+    if (zRealizacji && Array.isArray(data.gallery.items)) data.gallery.items = zRealizacji;
   }
 
   // Nav CTA href: PL uses konfigurator, export uses mailto from i18n
