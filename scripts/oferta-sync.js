@@ -23,11 +23,6 @@ const LANGS = ['cz', 'de', 'es', 'hu', 'it', 'sk'];
 const NUMRUN = /\d[\d   .,]*\d/; // pierwszy ciąg cyfrowy w cenie („4 800", „20 564")
 const base = path.join(__dirname, '..', 'content');
 
-if (!KEY) {
-	console.error('Brak OFERTA_PUBLIC_KEY (secret repo) — nie pobieram.');
-	process.exit(2);
-}
-
 const fmt = (n) => String(Math.round(Number(n))).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); // „20 564" / „4 800" jak dotąd na stronie
 
 function patch(file, edit) {
@@ -63,11 +58,19 @@ async function pobierz(urlAbs, plik) {
 	return true;
 }
 
+// Numery produkcyjne zostają w ERP, nie w publicznych podpisach ani altach.
+function publicLabel(label) {
+	return String(label || '')
+		.replace(/\bSTA(?:GO)?-\d{4}-\d+(?:_[A-Z0-9]+)?\b/gi, '')
+		.replace(/\b[A-Z]\d[A-Z]\d{1,4}\b/gi, '')
+		.replace(/\s+/g, ' ').replace(/^[\s·,;|–—-]+|[\s·,;|–—-]+$/g, '').trim() || 'Realizacja STAGO';
+}
+
 function karta(r, nazwa, zPodpisem) {
 	const src = `assets/gallery/realizacje/${nazwa}-800.webp`,
 		full = `assets/gallery/realizacje/${nazwa}.webp`;
-	const alt = escapeHtml(r.label || 'Realizacja STAGO');
-	const podpis = zPodpisem && r.label ? `<div class="realizacja-label">${escapeHtml(r.label)}</div>` : '';
+	const alt = escapeHtml(publicLabel(r.label));
+	const podpis = zPodpisem && r.label ? `<div class="realizacja-label">${alt}</div>` : '';
 	return `<div class="realizacja-card"><img src="${src}" srcset="${src} 800w, ${full} 1400w" sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 380px" data-full="${full}" alt="${alt}" loading="lazy">${podpis}</div>`;
 }
 
@@ -145,6 +148,11 @@ async function syncRealizacje(lista) {
 	return zmienione + pliki;
 }
 
+if (require.main === module) {
+if (!KEY) {
+	console.error('Brak OFERTA_PUBLIC_KEY (secret repo) — nie pobieram.');
+	process.exit(2);
+}
 (async () => {
 	const res = await fetch(`${URL_ERP}?key=${encodeURIComponent(KEY)}`, { headers: { Accept: 'application/json' } });
 	if (!res.ok) {
@@ -197,3 +205,6 @@ async function syncRealizacje(lista) {
 	console.error('Błąd synchronizacji:', e.message);
 	process.exit(1);
 });
+}
+
+module.exports = { publicLabel, karta, przepiszSiatki };

@@ -81,6 +81,8 @@ function zestempluj(adres, katalogStrony) {
 
 function ostempluj(html, outputPath) {
   const katalog = path.dirname(outputPath);
+  html = html.replace(/(<script\b[^>]*?\bsrc=")([^"]*lightbox\.js)(")/gi,
+    (_, a, adres, b) => a + adres + '?v=' + odcisk(path.normalize(path.join(katalog, adres))) + b);
   html = html.replace(/(<img\b[^>]*?\bsrc=")([^"]+)(")/gi,
     (_, a, adres, b) => a + zestempluj(adres, katalog) + b);
   // data-full — pelne zdjecie otwierane w lightboxie, tez musi omijac cache
