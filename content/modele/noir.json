@@ -14,7 +14,7 @@
     "imgAlt": "Pawilon modułowy STAGO NOIR — wydłużony monolit z lamelami",
     "h1": "NOIR — wydłużony monolit z lamelami.",
     "subtitle": "Czerń na czerni — pionowe lamele i wąskie, wysokie okna. Ma w sobie coś z bocznej uliczki w Berlinie: kameralny, trochę tajemniczy, z charakterem. Pod butik, studio albo małą kawiarnię.",
-    "price": "od 20 564 zł",
+    "price": "od 26 215 zł",
     "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=noir",
     "articleHref": "../modele.html",
@@ -112,6 +112,49 @@
         "text": "Elektryka, oświetlenie LED, rozdzielnia — w standardzie. Woda, kanalizacja, wentylacja, klimatyzacja — według Twojego przeznaczenia. Gotowe do podłączenia na działce."
       }
     ]
+  },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model NOIR (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true.",
+    "pokaz": true,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu NOIR = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model NOIR",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła NOIR — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu NOIR przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model NOIR",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
   },
   "benefits": {
     "eyebrow": "W cenie",
@@ -254,7 +297,7 @@
     "name": "Pawilon modułowy STAGO NOIR",
     "description": "NOIR. Smukła, wydłużona bryła z pionowymi lamelami i podłużnymi oknami. Butikowy charakter, bez zbędnych detali. Materiał lameli i kolorystykę ustalamy z Tobą.",
     "image": "https://stago.com.pl/assets/modele/noir.webp",
-    "lowPrice": "20564",
+    "lowPrice": "26215",
     "highPrice": "90000"
   }
 }

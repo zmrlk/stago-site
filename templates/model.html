@@ -153,6 +153,45 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
+  <!-- CO JEST W CENIE (cennik 28.10.2026; opisy modeli uzupełnia STAGO — patrz wCenie._todo w content) -->
+  {{#wCenie.pokaz}}
+  <section class="wcenie-section section" id="co-jest-w-cenie">
+    <div class="container">
+      <p class="eyebrow">{{wCenie.eyebrow}}</p>
+      <h2 class="h2">{{{wCenie.h2}}}</h2>
+      <p class="section-sub">{{{wCenie.intro}}}</p>
+      <div class="wcenie-grid">
+        <div class="wcenie-card">
+          <h3>{{{wCenie.baza.h3}}}</h3>
+          <ul>{{#wCenie.baza.items}}<li>{{{text}}}</li>{{/wCenie.baza.items}}</ul>
+        </div>
+        <div class="wcenie-card">
+          <h3>{{{wCenie.model.h3}}}</h3>
+          <ul>{{#wCenie.model.items}}<li>{{{text}}}</li>{{/wCenie.model.items}}</ul>
+          {{#wCenie.model.placeholder}}<p class="wcenie-note">{{{wCenie.model.placeholder}}}</p>{{/wCenie.model.placeholder}}
+        </div>
+        <div class="wcenie-card">
+          <h3>{{{wCenie.osobno.h3}}}</h3>
+          <ul>{{#wCenie.osobno.items}}<li>{{{text}}}</li>{{/wCenie.osobno.items}}</ul>
+        </div>
+      </div>
+      {{#maCennikModelu}}
+      <div class="wcenie-tabela">
+        <h3>{{{wCenie.tabelaH3}}}</h3>
+        <table>
+          <thead><tr><th>Wymiar</th><th>Powierzchnia</th><th>Cena netto od</th></tr></thead>
+          <tbody>
+            {{#cennikModelu}}<tr><td>{{rozmiar}}</td><td>{{m2}} m²</td><td>{{cena}}</td></tr>{{/cennikModelu}}
+          </tbody>
+        </table>
+        <p class="wcenie-note">{{{wCenie.tabelaNote}}}</p>
+        <a href="{{hero.ctaHref}}" class="btn btn-primary">Skonfiguruj i sprawdź cenę</a>
+      </div>
+      {{/maCennikModelu}}
+    </div>
+  </section>
+  {{/wCenie.pokaz}}
+
   <!-- BENEFITS -->
   <section class="benefits-section">
     <div class="container">

@@ -112,6 +112,49 @@
       }
     ]
   },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model NOIR (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",
+    "pokaz": false,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu NOIR = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model NOIR",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła NOIR — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu NOIR przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model NOIR",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
+  },
   "benefits": {
     "eyebrow": "Incluso nel prezzo",
     "h2": "Cosa ricevi da STAGO",
@@ -253,7 +296,7 @@
     "name": "Padiglione modulare STAGO NOIR",
     "description": "NOIR. Forma slanciata e allungata con listelli verticali e finestre allungate. Carattere boutique, senza dettagli superflui. Materiale dei listelli e colori li definiamo con te.",
     "image": "https://stago.com.pl/assets/modele/noir.webp",
-    "lowPrice": "20564",
+    "lowPrice": "26215",
     "highPrice": "80000"
   }
 }

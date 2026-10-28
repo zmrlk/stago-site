@@ -36,14 +36,18 @@ for (const p of links) {
   if (!exists) errors.push(`llms.txt linkuje nieistniejącą stronę: /${p}`);
 }
 
-// 4. Cena bazowa = jedno źródło prawdy (strony modeli)
-const nordRaw = fs.readFileSync('content/modele/nord.json', 'utf8');
-const priceMatch = nordRaw.match(/"price":\s*"od (\d{2})[\s ]?(\d{3}) zł/);
-const priceDigits = priceMatch;
-if (priceDigits) {
-  const canonical = `${priceDigits[1]} ${priceDigits[2]}`;
-  const re = new RegExp(`${priceDigits[1]}[\\s ]?${priceDigits[2]}`);
-  if (!re.test(llms)) errors.push(`llms.txt nie podaje ceny bazowej ${canonical} zł ze stron modeli — dryf cen`);
+// 4. Cena „od” = jedno źródło prawdy (strony modeli; od 28.10.2026 każdy model ma własną cenę
+//    z cennika rozmiar × model). llms.txt musi podawać NAJNIŻSZĄ cenę „od” spośród modeli.
+const modelDir = 'content/modele';
+const ceny = fs.readdirSync(modelDir).filter(f => f.endsWith('.json')).map(f => {
+  const m = fs.readFileSync(`${modelDir}/${f}`, 'utf8').match(/"price":\s*"od (\d{2})[\s ]?(\d{3}) zł/);
+  return m ? { digits: m, value: Number(m[1] + m[2]) } : null;
+}).filter(Boolean);
+if (ceny.length) {
+  const min = ceny.reduce((a, b) => (b.value < a.value ? b : a));
+  const canonical = `${min.digits[1]} ${min.digits[2]}`;
+  const re = new RegExp(`${min.digits[1]}[\\s ]?${min.digits[2]}`);
+  if (!re.test(llms)) errors.push(`llms.txt nie podaje najniższej ceny „od” ${canonical} zł ze stron modeli — dryf cen`);
 }
 
 // 5. Kontakt = spójny z content/pages/kontakt.json

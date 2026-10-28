@@ -316,6 +316,21 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.googleRating = REVIEWS;
   data.assetV = ASSET_V;
 
+  // „Co jest w cenie” na stronach modeli: tabela cen z cennika (tylko PL — ceny w PLN; € do decyzji)
+  const modelMatch = contentRel.match(/^modele\/([a-z]+)\.json$/);
+  if (modelMatch && isPl) {
+    const M = modelMatch[1].toUpperCase();
+    const zl = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' zł';
+    if (CENNIK.modele.includes(M)) {
+      data.cennikModelu = CENNIK.rozmiary.map((r) => ({
+        rozmiar: `${r.dlugosc}×${r.szerokosc} m`,
+        m2: r.m2,
+        cena: r.doplaty[M] == null ? `dostępny od ${CENNIK.od[M].rozmiar.replace('x', '×')} m` : zl(r.podstawa + r.doplaty[M]),
+      }));
+      data.maCennikModelu = true;
+    }
+  }
+
   // Cennik pawilonów (macierz rozmiar × model) — konfigurator liczy cenę orientacyjną w przeglądarce
   if (tmplPath.endsWith('konfigurator.html')) {
     data.cennikJson = JSON.stringify(CENNIK).replace(/</g, '\\u003c');

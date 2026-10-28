@@ -1147,3 +1147,18 @@ body.nav-open{overflow:hidden}
 .mc-row .pc-v{font-size:.95rem;color:var(--t2);line-height:1.5}
 .mc-row .pc-v b{color:var(--accent);font-weight:700}
 @media(max-width:768px){.model-config-grid{grid-template-columns:1fr;gap:0}.mc-row{grid-template-columns:96px 1fr;gap:14px}}
+
+/* ── Co jest w cenie (strony modeli) ── */
+.wcenie-section{padding:64px 0}
+.wcenie-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+.wcenie-card{background:#fff;border:1px solid #eee;border-radius:16px;padding:22px}
+.wcenie-card h3{font-size:1.02rem;margin:0 0 10px}
+.wcenie-card ul{margin:0;padding-left:18px;line-height:1.6;color:var(--t2,#444)}
+.wcenie-note{font-size:.82rem;color:var(--t3,#777);margin-top:10px}
+.wcenie-tabela{margin-top:32px;max-width:640px}
+.wcenie-tabela h3{font-size:1.05rem;margin:0 0 12px}
+.wcenie-tabela table{width:100%;border-collapse:collapse;font-size:.95rem}
+.wcenie-tabela th,.wcenie-tabela td{padding:9px 10px;border-bottom:1px solid #eee;text-align:left}
+.wcenie-tabela td:last-child,.wcenie-tabela th:last-child{text-align:right;font-weight:700}
+.wcenie-tabela .btn{margin-top:16px}
+@media(max-width:900px){.wcenie-grid{grid-template-columns:1fr}}

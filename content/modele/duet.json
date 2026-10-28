@@ -14,7 +14,7 @@
     "imgAlt": "Pawilon modułowy STAGO DUET — bryła z bocznymi akcentami i frontem",
     "h1": "DUET — bryła z bocznymi akcentami i frontem.",
     "subtitle": "Grafitowa bryła spięta dwoma drewnianymi pasami, z witryną na środku. Wpada w oko z daleka — zauważysz go, jadąc nawet drugim pasem. Co w nim ustawisz, to już Twoja decyzja: sklep, showroom, biuro.",
-    "price": "od 20 564 zł",
+    "price": "od 24 515 zł",
     "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=duet",
     "articleHref": "../modele.html",
@@ -112,6 +112,49 @@
         "text": "Elektryka, oświetlenie LED, rozdzielnia — w standardzie. Woda, kanalizacja, wentylacja, klimatyzacja — według Twojego przeznaczenia. Gotowe do podłączenia na działce."
       }
     ]
+  },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model DUET (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true.",
+    "pokaz": true,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu DUET = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model DUET",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła DUET — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu DUET przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model DUET",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
   },
   "benefits": {
     "eyebrow": "W cenie",
@@ -254,7 +297,7 @@
     "name": "Pawilon modułowy STAGO DUET",
     "description": "DUET. Bryła z wyraźnymi akcentami po bokach i trzema witrynami frontowymi. Dwa elementy w równowadze — mocny korpus i ciepłe akcenty. Materiały dwóch stref ustalamy razem.",
     "image": "https://stago.com.pl/assets/modele/duet.webp",
-    "lowPrice": "20564",
+    "lowPrice": "24515",
     "highPrice": "95000"
   }
 }
