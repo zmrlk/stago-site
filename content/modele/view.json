@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "VIEW — bryła z panoramicznymi narożnikami | Pawilon modułowy STAGO",
+    "title": "VIEW — pawilon przeszklony z panoramicznymi narożnikami | STAGO",
     "description": "VIEW STAGO — Dynamiczna forma z ogromnymi narożnymi szkleniami w skośnym układzie. Wymiar, materiał elewacji, kolor i wnętrze dopasujesz pod siebie. Darmowa wycena.",
     "canonical": "https://stago.com.pl/modele/view.html",
     "ogTitle": "VIEW — bryła z panoramicznymi narożnikami",
@@ -12,7 +12,7 @@
   "hero": {
     "img": "../assets/modele/view.webp",
     "imgAlt": "Pawilon modułowy STAGO VIEW — bryła z panoramicznymi narożnikami",
-    "h1": "VIEW — bryła z panoramicznymi narożnikami.",
+    "h1": "VIEW — przeszklony pawilon z panoramicznymi narożnikami.",
     "subtitle": "Tu szkło zastępuje ścianę — przeszklenia ciągną się za róg, a drewno wieńczy całość u góry. Siadasz w środku i patrzysz na świat, nie na tynk przed nosem. Biuro, recepcja, showroom — zależnie od tego, co chcesz mieć przed oczami.",
     "price": "od 35 588 zł",
     "priceNote": "netto · baza 7×3 m",
@@ -285,12 +285,12 @@
       "text": "Sklep, biuro, kawiarnia, dom — pokażemy, który model do czego."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
-      "alt": "Cennik pawilonów",
-      "label": "Poradnik",
-      "h3": "Cennik pawilonów 2026",
-      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+      "alt": "Cennik pawilonów handlowych STAGO",
+      "label": "Cennik",
+      "h3": "Cennik pawilonów",
+      "text": "Ceny 4×3–12×3 m od producenta. Sprawdź, ile zapłacisz."
     }
   ],
   "jsonLd": {

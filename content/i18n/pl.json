@@ -87,7 +87,29 @@
     "owz": "OWZ (PDF)",
     "cookies": "Zgody cookies",
     "madeBy": "Stworzone przez",
-    "aiNote": "Część zdjęć i wizualizacji na stronie ma charakter poglądowy. Mogą być generowane lub modyfikowane z użyciem sztucznej inteligencji (AI)."
+    "aiNote": "Część zdjęć i wizualizacji na stronie ma charakter poglądowy. Mogą być generowane lub modyfikowane z użyciem sztucznej inteligencji (AI).",
+    "oferta": [
+      {
+        "href": "cennik-pawilonow-handlowych.html",
+        "label": "Cennik pawilonów"
+      },
+      {
+        "href": "pawilony-pod-klucz.html",
+        "label": "Pawilony pod klucz"
+      },
+      {
+        "href": "pawilony-sprzedaz.html",
+        "label": "Pawilony na sprzedaż"
+      },
+      {
+        "href": "pawilon-na-dzialke.html",
+        "label": "Pawilon na działkę"
+      },
+      {
+        "href": "producent-kontenerow-modulowych.html",
+        "label": "Producent kontenerów"
+      }
+    ]
   },
   "index": {
     "seeMore": "Zobacz więcej",

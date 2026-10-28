@@ -336,6 +336,21 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
     data.cennikJson = JSON.stringify(CENNIK).replace(/</g, '\\u003c');
   }
 
+  // FAQPage JSON-LD na stronach zastosowań — z tych samych pytań, które widać na stronie
+  // (bez HTML w odpowiedziach; "<" kodowane, żeby treść nie zamknęła <script>).
+  if (tmplPath.endsWith('zastosowanie.html') && data.faq && Array.isArray(data.faq.items) && data.faq.items.length) {
+    const bezHtml = (s) => String(s).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    data.faqLd = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: data.faq.items.map((i) => ({
+        '@type': 'Question',
+        name: bezHtml(i.q),
+        acceptedAnswer: { '@type': 'Answer', text: bezHtml(i.a) },
+      })),
+    }).replace(/</g, '\\u003c');
+  }
+
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
   data.hasCalculator = typeof data.body === 'string' && data.body.includes('id="calcRent"');
 

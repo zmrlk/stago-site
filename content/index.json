@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "STAGO — Pawilony i kontenery modułowe | Producent pod klucz",
-    "description": "STAGO — producent kontenerów i pawilonów modułowych. Kiosk handlowy, pawilon biurowy, kontener biurowy, dom modułowy. 12 modeli, PIR 100mm.",
+    "title": "Producent pawilonów handlowych i modułowych — pod klucz | STAGO",
+    "description": "Producent pawilonów handlowych, usługowych i biurowych. 12 modeli, izolacja PIR 100 mm, dostawa w całej Polsce. Pawilon 4×3 m od 24 115 zł netto.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -15,9 +15,9 @@
   },
   "hero": {
     "badge": "Producent pawilonów modułowych &middot; Dostawa w całej Polsce",
-    "h1": "Twoja przestrzeń.",
+    "h1": "Pawilony handlowe i modułowe.",
     "h1accent": "Bez kompromisów.",
-    "sub": "Projektujemy i budujemy pod Ciebie. Darmowa wizualizacja, montaż na miejscu, 2 lata gwarancji."
+    "sub": "Producent z własnym zakładem pod Jędrzejowem. Projektujemy i budujemy pod Ciebie — pawilony pod klucz, darmowa wizualizacja, montaż na miejscu, 2 lata gwarancji."
   },
   "trust": [
     {

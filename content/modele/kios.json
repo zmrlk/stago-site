@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "KIOS — kompaktowa bryła z pełną witryną | Pawilon modułowy STAGO",
-    "description": "KIOS STAGO — Mały footprint, jedna duża szklana witryna na całym froncie. Wymiar, materiał elewacji, kolor i wnętrze dopasujesz pod siebie. Darmowa wycena.",
+    "title": "KIOS — kiosk handlowy z pełną witryną | Pawilon modułowy STAGO",
+    "description": "KIOS STAGO — kiosk handlowy od producenta: mały footprint, jedna duża szklana witryna na całym froncie. Wymiar, elewację i wnętrze dopasujesz pod siebie.",
     "canonical": "https://stago.com.pl/modele/kios.html",
     "ogTitle": "KIOS — kompaktowa bryła z pełną witryną",
     "ogDescription": "Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.",
@@ -12,7 +12,7 @@
   "hero": {
     "img": "../assets/modele/kios.webp",
     "imgAlt": "Pawilon modułowy STAGO KIOS — kompaktowa bryła z pełną witryną",
-    "h1": "KIOS — kompaktowa bryła z pełną witryną.",
+    "h1": "KIOS — kiosk handlowy z pełną witryną.",
     "subtitle": "Mały, ciemny, z witryną na cały front. Wciśniesz go tam, gdzie większe się nie mieszczą — róg podwórka, skrawek parkingu — i zaczyna na siebie zarabiać. Kiosk, punkt odbioru, mała sprzedaż.",
     "price": "od 24 115 zł",
     "priceNote": "netto · baza 4×3 m",
@@ -285,12 +285,12 @@
       "text": "Sklep, biuro, kawiarnia, dom — pokażemy, który model do czego."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
-      "alt": "Cennik pawilonów",
-      "label": "Poradnik",
-      "h3": "Cennik pawilonów 2026",
-      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+      "alt": "Cennik pawilonów handlowych STAGO",
+      "label": "Cennik",
+      "h3": "Cennik pawilonów",
+      "text": "Ceny 4×3–12×3 m od producenta. Sprawdź, ile zapłacisz."
     }
   ],
   "jsonLd": {
