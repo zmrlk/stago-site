@@ -221,7 +221,6 @@ function getPages() {
     // SEO landing pages (PL only for now)
     ...['pawilony-sprzedaz','pawilony-pod-klucz','cennik-pawilonow-handlowych',
        'cennik-kontenerow-biurowych','pawilon-bez-pozwolenia-przepisy',
-       'stago-vs-dampol','stago-vs-novi','stago-vs-defro','ranking-producentow-pawilonow',
        'producent-kontenerow-modulowych','pawilon-na-dzialke'].map(s => ({
       content: `pages/${s}.json`, template: 'templates/page.html', output: `${s}.html`, i18n: false
     })),
