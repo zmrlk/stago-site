@@ -1,0 +1,286 @@
+{
+  "_opis": "GENEROWANE z content/cennik-pawilonow.csv przez scripts/gen-cennik.js — nie edytuj ręcznie.",
+  "zrodlo": "Wyceny pawilonów.xlsx (Łukasz R. / Denis Górski, 28.10.2026)",
+  "waluta": "PLN",
+  "netto": true,
+  "uwagi": "Cena orientacyjna netto, bez transportu i montażu. Podstawa = 2 okna, drzwi, podstawowe obróbki.",
+  "modele": [
+    "ATRI",
+    "MILA",
+    "ICON",
+    "RYTM",
+    "NORD",
+    "LOFT",
+    "SAGA",
+    "VIEW",
+    "DUET",
+    "CUBE",
+    "NOIR",
+    "KIOS"
+  ],
+  "rozmiary": [
+    {
+      "rozmiar": "4x3",
+      "dlugosc": 4,
+      "szerokosc": 3,
+      "m2": 12,
+      "podstawa": 22715,
+      "doplaty": {
+        "ATRI": 3500,
+        "MILA": 2500,
+        "ICON": 1800,
+        "RYTM": 1500,
+        "NORD": 3000,
+        "LOFT": 2500,
+        "SAGA": 1800,
+        "VIEW": null,
+        "DUET": 1800,
+        "CUBE": 3000,
+        "NOIR": 3500,
+        "KIOS": 1400
+      }
+    },
+    {
+      "rozmiar": "5x3",
+      "dlugosc": 5,
+      "szerokosc": 3,
+      "m2": 15,
+      "podstawa": 25226,
+      "doplaty": {
+        "ATRI": 3900,
+        "MILA": 3000,
+        "ICON": 2300,
+        "RYTM": 1800,
+        "NORD": 3500,
+        "LOFT": 3000,
+        "SAGA": 2100,
+        "VIEW": null,
+        "DUET": 2200,
+        "CUBE": 3400,
+        "NOIR": 3800,
+        "KIOS": 1700
+      }
+    },
+    {
+      "rozmiar": "6x3",
+      "dlugosc": 6,
+      "szerokosc": 3,
+      "m2": 18,
+      "podstawa": 27032,
+      "doplaty": {
+        "ATRI": 4300,
+        "MILA": 3500,
+        "ICON": 3800,
+        "RYTM": 2100,
+        "NORD": 4000,
+        "LOFT": 3500,
+        "SAGA": 2500,
+        "VIEW": null,
+        "DUET": 2600,
+        "CUBE": 3800,
+        "NOIR": 4100,
+        "KIOS": 2000
+      }
+    },
+    {
+      "rozmiar": "7x3",
+      "dlugosc": 7,
+      "szerokosc": 3,
+      "m2": 21,
+      "podstawa": 31388.4,
+      "doplaty": {
+        "ATRI": 4500,
+        "MILA": 4000,
+        "ICON": 4200,
+        "RYTM": 2400,
+        "NORD": 4500,
+        "LOFT": 4000,
+        "SAGA": 2900,
+        "VIEW": 4200,
+        "DUET": 3000,
+        "CUBE": 4200,
+        "NOIR": 4400,
+        "KIOS": 2300
+      }
+    },
+    {
+      "rozmiar": "8x3",
+      "dlugosc": 8,
+      "szerokosc": 3,
+      "m2": 24,
+      "podstawa": 36674.4,
+      "doplaty": {
+        "ATRI": 5000,
+        "MILA": 4500,
+        "ICON": 5700,
+        "RYTM": 2700,
+        "NORD": 5000,
+        "LOFT": 4500,
+        "SAGA": 3300,
+        "VIEW": 4800,
+        "DUET": 3400,
+        "CUBE": 4600,
+        "NOIR": 4700,
+        "KIOS": 2600
+      }
+    },
+    {
+      "rozmiar": "9x3",
+      "dlugosc": 9,
+      "szerokosc": 3,
+      "m2": 27,
+      "podstawa": 40530.4,
+      "doplaty": {
+        "ATRI": 5500,
+        "MILA": 5000,
+        "ICON": 7200,
+        "RYTM": 3000,
+        "NORD": 5500,
+        "LOFT": 5000,
+        "SAGA": 3700,
+        "VIEW": 5400,
+        "DUET": 3800,
+        "CUBE": 5000,
+        "NOIR": 5000,
+        "KIOS": 3900
+      }
+    },
+    {
+      "rozmiar": "10x3",
+      "dlugosc": 10,
+      "szerokosc": 3,
+      "m2": 30,
+      "podstawa": 44086.4,
+      "doplaty": {
+        "ATRI": 6000,
+        "MILA": 5500,
+        "ICON": 8700,
+        "RYTM": 3300,
+        "NORD": 6000,
+        "LOFT": 5500,
+        "SAGA": 4100,
+        "VIEW": 6000,
+        "DUET": 4200,
+        "CUBE": 5400,
+        "NOIR": 5300,
+        "KIOS": 4200
+      }
+    },
+    {
+      "rozmiar": "11x3",
+      "dlugosc": 11,
+      "szerokosc": 3,
+      "m2": 33,
+      "podstawa": 49342.4,
+      "doplaty": {
+        "ATRI": 6500,
+        "MILA": 6000,
+        "ICON": 10200,
+        "RYTM": 3600,
+        "NORD": 6500,
+        "LOFT": 6000,
+        "SAGA": 4500,
+        "VIEW": 6600,
+        "DUET": 4600,
+        "CUBE": 5800,
+        "NOIR": 5600,
+        "KIOS": 4500
+      }
+    },
+    {
+      "rozmiar": "12x3",
+      "dlugosc": 12,
+      "szerokosc": 3,
+      "m2": 36,
+      "podstawa": 54848.4,
+      "doplaty": {
+        "ATRI": 7000,
+        "MILA": 6500,
+        "ICON": 10700,
+        "RYTM": 3900,
+        "NORD": 7000,
+        "LOFT": 6500,
+        "SAGA": 4900,
+        "VIEW": 7200,
+        "DUET": 5000,
+        "CUBE": 6200,
+        "NOIR": 5900,
+        "KIOS": 4800
+      }
+    }
+  ],
+  "od": {
+    "ATRI": {
+      "rozmiar": "4x3",
+      "cena": 26215,
+      "max": 61848.4,
+      "maxRozmiar": "12x3"
+    },
+    "MILA": {
+      "rozmiar": "4x3",
+      "cena": 25215,
+      "max": 61348.4,
+      "maxRozmiar": "12x3"
+    },
+    "ICON": {
+      "rozmiar": "4x3",
+      "cena": 24515,
+      "max": 65548.4,
+      "maxRozmiar": "12x3"
+    },
+    "RYTM": {
+      "rozmiar": "4x3",
+      "cena": 24215,
+      "max": 58748.4,
+      "maxRozmiar": "12x3"
+    },
+    "NORD": {
+      "rozmiar": "4x3",
+      "cena": 25715,
+      "max": 61848.4,
+      "maxRozmiar": "12x3"
+    },
+    "LOFT": {
+      "rozmiar": "4x3",
+      "cena": 25215,
+      "max": 61348.4,
+      "maxRozmiar": "12x3"
+    },
+    "SAGA": {
+      "rozmiar": "4x3",
+      "cena": 24515,
+      "max": 59748.4,
+      "maxRozmiar": "12x3"
+    },
+    "VIEW": {
+      "rozmiar": "7x3",
+      "cena": 35588.4,
+      "max": 62048.4,
+      "maxRozmiar": "12x3"
+    },
+    "DUET": {
+      "rozmiar": "4x3",
+      "cena": 24515,
+      "max": 59848.4,
+      "maxRozmiar": "12x3"
+    },
+    "CUBE": {
+      "rozmiar": "4x3",
+      "cena": 25715,
+      "max": 61048.4,
+      "maxRozmiar": "12x3"
+    },
+    "NOIR": {
+      "rozmiar": "4x3",
+      "cena": 26215,
+      "max": 60748.4,
+      "maxRozmiar": "12x3"
+    },
+    "KIOS": {
+      "rozmiar": "4x3",
+      "cena": 24115,
+      "max": 59648.4,
+      "maxRozmiar": "12x3"
+    }
+  }
+}
