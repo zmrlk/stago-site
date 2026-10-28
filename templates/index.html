@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- Consent Mode v2 advanced: tagi laduje cookies.js, consent default=denied przed tagami -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <script>window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{site.title}}</title>
@@ -347,12 +348,18 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <input type="email" name="email" placeholder="{{ui.form.email}}" aria-label="Email" autocomplete="email">
           <select name="typ" aria-label="Typ pawilonu">
             <option value="">Wybierz model</option>
-            <option value="model-s">Model S</option>
-            <option value="model-m">Model M</option>
-            <option value="model-l">Model L</option>
-            <option value="model-t">Model T</option>
-            <option value="model-x">Model X</option>
-            <option value="model-glass">Model Glass</option>
+            <option value="ATRI">ATRI</option>
+            <option value="MILA">MILA</option>
+            <option value="ICON">ICON</option>
+            <option value="RYTM">RYTM</option>
+            <option value="NORD">NORD</option>
+            <option value="LOFT">LOFT</option>
+            <option value="SAGA">SAGA</option>
+            <option value="VIEW">VIEW</option>
+            <option value="DUET">DUET</option>
+            <option value="CUBE">CUBE</option>
+            <option value="NOIR">NOIR</option>
+            <option value="KIOS">KIOS</option>
             <option value="inny">Inny / niestandardowy</option>
           </select>
           <textarea name="message" rows="4" placeholder="{{ui.form.messagePlaceholder}}" aria-label="{{ui.form.message}}"></textarea>
@@ -401,7 +408,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         </div>
       </div>
       <div class="footer-cols">
-        <div><h4>{{{ui.footer.modele}}}</h4><a href="{{{pageRoot}}}modele.html">{{{ui.footer.allModels}}}</a><a href="{{{pageRoot}}}modele/nord.html">NORD</a><a href="{{{pageRoot}}}modele/loft.html">LOFT</a><a href="{{{pageRoot}}}modele/duet.html">DUET</a><a href="{{{pageRoot}}}modele/icon.html">ICON</a><a href="{{{pageRoot}}}modele/mila.html">MILA</a></div>
+        <div><h4>{{{ui.footer.modele}}}</h4><a href="{{{pageRoot}}}modele.html">{{{ui.footer.allModels}}}</a><a href="{{{pageRoot}}}modele/nord.html">NORD</a><a href="{{{pageRoot}}}modele/loft.html">LOFT</a><a href="{{{pageRoot}}}modele/duet.html">DUET</a><a href="{{{pageRoot}}}modele/icon.html">ICON</a><a href="{{{pageRoot}}}modele/mila.html">MILA</a>{{#ui.footer.oferta}}<a href="{{{pageRoot}}}{{{href}}}">{{{label}}}</a>{{/ui.footer.oferta}}</div>
         <div><h4>{{{ui.footer.zastosowania}}}</h4><a href="{{{pageRoot}}}zastosowania.html">{{{ui.footer.all}}}</a><a href="{{{pageRoot}}}zastosowania/handlowy.html">{{{ui.footer.handlowe}}}</a><a href="{{{pageRoot}}}zastosowania/biurowy.html">{{{ui.footer.biurowe}}}</a><a href="{{{pageRoot}}}zastosowania/gastronomiczny.html">{{{ui.footer.gastronomiczne}}}</a><a href="{{{pageRoot}}}zastosowania/uslugowy.html">{{{ui.footer.uslugowe}}}</a><a href="{{{pageRoot}}}zastosowania/mieszkalny.html">{{{ui.footer.mieszkalne}}}</a></div>
         <div><h4>{{{ui.footer.firma}}}</h4><a href="{{{pageRoot}}}jak-kupic.html">{{{ui.footer.jakKupic}}}</a><a href="{{{pageRoot}}}technologia.html">{{{ui.footer.technologia}}}</a><a href="{{{pageRoot}}}finansowanie.html">{{{ui.nav.finansowanie}}}</a><a href="{{{pageRoot}}}pawilon-vs-najem.html">{{{ui.footer.pawilonVsNajem}}}</a><a href="{{{pageRoot}}}realizacje.html">{{{ui.nav.realizacje}}}</a><a href="{{{pageRoot}}}dostepne-od-reki.html">{{{ui.footer.dostepne}}}</a><a href="{{{pageRoot}}}faq.html">{{{ui.nav.faq}}}</a></div>
         <div><h4>{{{ui.footer.kontakt}}}</h4><a href="tel:+48509508210">+48 509 508 210</a><a href="tel:+48509508110">+48 509 508 110</a><a href="mailto:{{{ui.email}}}">{{{ui.email}}}</a><a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Jasionka 117, Jędrzejów</a><a href="{{{pageRoot}}}kontakt.html">{{{ui.footer.contactPage}}}</a></div>

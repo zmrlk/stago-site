@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "STAGO — Pawilony i kontenery modułowe | Producent pod klucz",
-    "description": "STAGO — producent kontenerów i pawilonów modułowych. Kiosk handlowy, pawilon biurowy, kontener biurowy, dom modułowy. 12 modeli, PIR 100mm.",
+    "title": "Producent pawilonów handlowych i modułowych — pod klucz | STAGO",
+    "description": "Producent pawilonów handlowych, usługowych i biurowych. 12 modeli, izolacja PIR 100 mm, dostawa w całej Polsce. Pawilon 4×3 m od 24 115 zł netto.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -15,9 +15,9 @@
   },
   "hero": {
     "badge": "Producent pawilonów modułowych &middot; Dostawa w całej Polsce",
-    "h1": "Twoja przestrzeń.",
+    "h1": "Pawilony handlowe i modułowe.",
     "h1accent": "Bez kompromisów.",
-    "sub": "Projektujemy i budujemy pod Ciebie. Darmowa wizualizacja, montaż na miejscu, 2 lata gwarancji."
+    "sub": "Producent z własnym zakładem pod Jędrzejowem. Projektujemy i budujemy pod Ciebie — pawilony pod klucz, darmowa wizualizacja, montaż na miejscu, 2 lata gwarancji."
   },
   "trust": [
     {
@@ -69,7 +69,7 @@
       {
         "name": "NORD",
         "desc": "Antracyt z drewnianymi akcentami w narożnikach, ogromne narożne szklenia. Skandynawski premium. Bryła, którą pamiętasz po pierwszym spojrzeniu.",
-        "price": "od 20 564 zł netto",
+        "price": "od 25 715 zł netto",
         "href": "modele/nord.html",
         "img": "assets/modele/nord.webp",
         "cta": "Zobacz NORD &rarr;"
@@ -77,7 +77,7 @@
       {
         "name": "LOFT",
         "desc": "Drewniane lamele, grafitowy dach, trzy duże witryny frontowe. Showroom-feel — klienci wchodzą, bo muszą zobaczyć, co w środku.",
-        "price": "od 20 564 zł netto",
+        "price": "od 25 215 zł netto",
         "href": "modele/loft.html",
         "img": "assets/modele/loft.webp",
         "cta": "Zobacz LOFT &rarr;"
@@ -85,7 +85,7 @@
       {
         "name": "DUET",
         "desc": "Grafitowy korpus, drewniane lamele po bokach, trzy witryny z drzwiami. Uniwersalny wzór do gastro, handlu i biura.",
-        "price": "od 20 564 zł netto",
+        "price": "od 24 515 zł netto",
         "href": "modele/duet.html",
         "img": "assets/modele/duet.webp",
         "cta": "Zobacz DUET &rarr;"
@@ -93,7 +93,7 @@
       {
         "name": "ICON",
         "desc": "Drewniana elewacja, wielkie narożne szkła od podłogi do sufitu. Wygląda jak studio architekta. Dla biznesów premium.",
-        "price": "od 20 564 zł netto",
+        "price": "od 24 515 zł netto",
         "href": "modele/icon.html",
         "img": "assets/modele/icon.webp",
         "cta": "Zobacz ICON &rarr;"
@@ -101,7 +101,7 @@
       {
         "name": "MILA",
         "desc": "Pełna drewniana elewacja w jasnym odcieniu. Skandynawski spokój. Idealny pod gabinet, domek, biuro w ciepłym tonie.",
-        "price": "od 20 564 zł netto",
+        "price": "od 25 215 zł netto",
         "href": "modele/mila.html",
         "img": "assets/modele/mila.webp",
         "cta": "Zobacz MILA &rarr;"
@@ -109,7 +109,7 @@
       {
         "name": "NOIR",
         "desc": "Pionowe czarne lamele, podłużne okna, butikowy charakter jak z Berlina. Dla biznesów, które chcą wyglądać premium.",
-        "price": "od 20 564 zł netto",
+        "price": "od 26 215 zł netto",
         "href": "modele/noir.html",
         "img": "assets/modele/noir.webp",
         "cta": "Zobacz NOIR &rarr;"
@@ -349,7 +349,7 @@
     "items": [
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od modelu, rozmiaru i tego co ma być w środku. Żebyś miał orientację — najprostszy moduł zaczyna się od ok. 12 000 zł netto, a większe, wykończone pod klucz to okolice 35 000–50 000 zł. Każdy projekt wyceniamy indywidualnie i zawsze za darmo. Zadzwoń albo napisz — podamy konkretną kwotę zanim zdecydujesz cokolwiek."
+        "a": "Zależy od modelu, rozmiaru i tego co ma być w środku. Żebyś miał orientację — pawilon 4×3 m zaczyna się od 24 115 zł netto, 6×3 m od 29 032 zł, a 12×3 m od 58 748 zł (ceny orientacyjne netto, bez transportu i montażu). Wyposażenie i wykończenie pod klucz wyceniamy osobno. Każdy projekt wyceniamy indywidualnie i zawsze za darmo. Zadzwoń albo napisz — podamy konkretną kwotę zanim zdecydujesz cokolwiek."
       },
       {
         "q": "Jak długo czeka się na pawilon?",

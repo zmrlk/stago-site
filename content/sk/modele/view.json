@@ -112,6 +112,49 @@
       }
     ]
   },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model VIEW (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",
+    "pokaz": false,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu VIEW = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model VIEW",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła VIEW — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu VIEW przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model VIEW",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
+  },
   "benefits": {
     "eyebrow": "V cene",
     "h2": "Čo dostanete od STAGO",
@@ -253,7 +296,7 @@
     "name": "Modulárny pavilón STAGO VIEW",
     "description": "VIEW. Dynamická forma s obrovskými rohovými zaskleniami v šikmom usporiadaní. Panoramatický výhľad zvnútra, silná prítomnosť zvonku. Materiál horného pásu a korpusu si vyberiete Vy.",
     "image": "https://stago.com.pl/assets/modele/view.webp",
-    "lowPrice": "20564",
+    "lowPrice": "35588",
     "highPrice": "80000"
   }
 }

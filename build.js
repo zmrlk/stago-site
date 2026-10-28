@@ -23,6 +23,9 @@ try {
 // świeży HTML wchodzi na prod ze STARYM CSS i nowe reguły nie działają.
 const CSS_V = crypto.createHash('md5').update(fs.readFileSync('style.css')).digest('hex').slice(0, 8);
 
+// ── Cennik pawilonów: content/cennik-pawilonow.json (generowany z CSV przez scripts/gen-cennik.js) ──
+const CENNIK = JSON.parse(fs.readFileSync('content/cennik-pawilonow.json', 'utf8'));
+
 // ── Mini Mustache renderer ──
 function render(template, data) {
   template = template.replace(/\{\{#(\w+(?:\.\w+)*)\}\}([\s\S]*?)\{\{\/\1\}\}/g, (_, key, inner) => {
@@ -218,7 +221,6 @@ function getPages() {
     // SEO landing pages (PL only for now)
     ...['pawilony-sprzedaz','pawilony-pod-klucz','cennik-pawilonow-handlowych',
        'cennik-kontenerow-biurowych','pawilon-bez-pozwolenia-przepisy',
-       'stago-vs-dampol','stago-vs-novi','stago-vs-defro','ranking-producentow-pawilonow',
        'producent-kontenerow-modulowych','pawilon-na-dzialke'].map(s => ({
       content: `pages/${s}.json`, template: 'templates/page.html', output: `${s}.html`, i18n: false
     })),
@@ -313,6 +315,41 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.googleRating = REVIEWS;
   data.assetV = ASSET_V;
 
+  // „Co jest w cenie” na stronach modeli: tabela cen z cennika (tylko PL — ceny w PLN; € do decyzji)
+  const modelMatch = contentRel.match(/^modele\/([a-z]+)\.json$/);
+  if (modelMatch && isPl) {
+    const M = modelMatch[1].toUpperCase();
+    const zl = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' zł';
+    if (CENNIK.modele.includes(M)) {
+      data.cennikModelu = CENNIK.rozmiary.map((r) => ({
+        rozmiar: `${r.dlugosc}×${r.szerokosc} m`,
+        m2: r.m2,
+        cena: r.doplaty[M] == null ? `dostępny od ${CENNIK.od[M].rozmiar.replace('x', '×')} m` : zl(r.podstawa + r.doplaty[M]),
+      }));
+      data.maCennikModelu = true;
+    }
+  }
+
+  // Cennik pawilonów (macierz rozmiar × model) — konfigurator liczy cenę orientacyjną w przeglądarce
+  if (tmplPath.endsWith('konfigurator.html')) {
+    data.cennikJson = JSON.stringify(CENNIK).replace(/</g, '\\u003c');
+  }
+
+  // FAQPage JSON-LD na stronach zastosowań — z tych samych pytań, które widać na stronie
+  // (bez HTML w odpowiedziach; "<" kodowane, żeby treść nie zamknęła <script>).
+  if (tmplPath.endsWith('zastosowanie.html') && data.faq && Array.isArray(data.faq.items) && data.faq.items.length) {
+    const bezHtml = (s) => String(s).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    data.faqLd = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: data.faq.items.map((i) => ({
+        '@type': 'Question',
+        name: bezHtml(i.q),
+        acceptedAnswer: { '@type': 'Answer', text: bezHtml(i.a) },
+      })),
+    }).replace(/</g, '\\u003c');
+  }
+
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
   data.hasCalculator = typeof data.body === 'string' && data.body.includes('id="calcRent"');
 
@@ -400,9 +437,9 @@ console.log(`\n✓ ${builtCount} pages built, ${skippedCount} skipped (no conten
 // sitemap <lastmod> liczony z gita źródeł treści; llms.txt sprawdzany
 // przeciwko treści strony (ceny, termin, transport, adresy, kontakt).
 const { execFileSync } = require('child_process');
-for (const script of ['scripts/update-sitemap.js', 'scripts/check-llms.js']) {
+for (const [script, ...args] of [['scripts/update-sitemap.js'], ['scripts/check-llms.js'], ['scripts/gen-cennik.js', '--check']]) {
   try {
-    execFileSync('node', [script], { stdio: 'inherit' });
+    execFileSync('node', [script, ...args], { stdio: 'inherit' });
   } catch {
     console.error(`✗ ${script} — build przerwany, napraw dryf zanim zdeployujesz`);
     process.exit(1);

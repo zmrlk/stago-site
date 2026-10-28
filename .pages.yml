@@ -235,7 +235,6 @@ content:
         fields:
           - { name: title, label: Nagłówek, type: string }
           - { name: sub, label: Podtytuł, type: string }
-          - { name: socialProof, label: Social proof, type: string }
           - name: types
             label: Typy pawilonów
             type: object

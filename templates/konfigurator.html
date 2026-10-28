@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- Consent Mode v2 advanced: tagi laduje cookies.js, consent default=denied przed tagami -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <script>window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{meta.title}}</title>
@@ -579,6 +580,14 @@ body { background: #F8F9FA; padding-bottom: 0; }
 }
 .preview-row .pr-label { display:block; font-size:.72rem; color: var(--t3); margin-bottom: 1px; text-transform: uppercase; letter-spacing: .06em; }
 .preview-row .pr-value { display:block; font-size:.95rem; font-weight: 700; color: var(--accent); }
+
+/* ── Cena orientacyjna (cennik 28.10.2026) ── */
+.price-box { margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: #faf7f5; border: 1px solid #f1e4dd; }
+.price-box .pb-label { display:block; font-size:.72rem; color: var(--t3); text-transform: uppercase; letter-spacing: .06em; }
+.price-box .pb-value { display:block; font-size:1.25rem; font-weight: 800; color: var(--primary); margin: 2px 0; }
+.price-box .pb-note { display:block; font-size:.74rem; color: var(--t3); line-height: 1.4; }
+.price-box.is-custom .pb-value { font-size: 1rem; color: var(--accent); }
+.dim-warn { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #fff4ef; color: #9a3412; font-size: .85rem; }
 .preview-footer {
   display: flex;
   gap: 8px;
@@ -1242,10 +1251,6 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
           <div style="text-align:center;margin:20px 0 8px">
             <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
           </div>
-          <p class="social-proof">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-            {{step1.socialProof}}
-          </p>
         </div>
 
         <aside class="preview-panel">
@@ -1260,6 +1265,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-model-1">— wybierz —</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Wybór możesz zmienić w każdej chwili.
@@ -1273,7 +1283,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 2 z 5</p>
-          <h1 class="step-head-title">{{step2.title}}</h1>
+          <h2 class="step-head-title">{{step2.title}}</h2>
           <p class="step-head-desc">{{{step2.description}}}</p>
         </div>
       </div>
@@ -1305,6 +1315,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <button class="preset-btn" onclick="setPreset({{l}},{{w}},this)">{{label}}</button>
               {{/step2.presets}}
             </div>
+            <p class="dim-warn" id="dimWarn" role="status" hidden></p>
           </div>
 
           <div class="s3-section">
@@ -1346,6 +1357,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-area">—</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Wymiary zewnętrzne. Wysokość dachu w środku.
@@ -1359,7 +1375,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 3 z 5</p>
-          <h1 class="step-head-title">{{step3.title}}</h1>
+          <h2 class="step-head-title">{{step3.title}}</h2>
           <p class="step-head-desc">{{{step3.description}}}</p>
         </div>
       </div>
@@ -1456,6 +1472,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-okucia">Podstawowe</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Podgląd ma charakter poglądowy.
@@ -1469,7 +1490,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 4 z 5</p>
-          <h1 class="step-head-title">{{step4.title}}</h1>
+          <h2 class="step-head-title">{{step4.title}}</h2>
           <p class="step-head-desc">{{{step4.description}}}</p>
         </div>
       </div>
@@ -1530,6 +1551,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-extras">brak</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Wszystko można jeszcze doprecyzować w rozmowie.
@@ -1543,7 +1569,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 5 z 5</p>
-          <h1 class="step-head-title">{{step5.title}}</h1>
+          <h2 class="step-head-title">{{step5.title}}</h2>
           <p class="step-head-desc">{{{step5.description}}}</p>
         </div>
       </div>
@@ -1557,6 +1583,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
             Zdjęcie poglądowe wybranego modelu. Wygląd Twojego pawilonu ustalamy przy wycenie.{{/enable3d}}
           </p>
           <div id="summaryRows"></div>
+          <div class="price-box" data-price-box style="margin-top:16px">
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
         </div>
         <div class="contact-card">
           <h3>{{step5.contactHeading}}</h3>
@@ -1623,6 +1654,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
     </div>
   </div>
 
+<script id="cennikPawilonow" type="application/json">{{{cennikJson}}}</script>
 <script>
 // ── STATE ──
 const state = {
@@ -1960,7 +1992,71 @@ function setPrv(el, val) {
   el.classList.add('updated');
 }
 
+// ── CENA ORIENTACYJNA (content/cennik-pawilonow.json, generowane z arkusza 28.10.2026) ──
+// cena = podstawa[rozmiar] + dopłata[model, rozmiar]; netto, bez transportu i montażu.
+// Poza tabelą (inna szerokość, wymiar niecałkowity, >12 m) → „wycena indywidualna”.
+const CENNIK = (() => {
+  try { return JSON.parse(document.getElementById('cennikPawilonow').textContent); } catch (e) { return null; }
+})();
+const zl = (v) => Math.round(v).toLocaleString('pl-PL').replace(/\u00a0|\u202f/g, ' ') + ' zł';
+const rozmiarTxt = (r) => r.replace('x', '×') + ' m';
+
+function cenaOrientacyjna() {
+  if (!CENNIK) return { status: 'brak' };
+  const model = (state.type || '').toUpperCase();
+  if (!model || !CENNIK.od[model]) return { status: 'brak' };
+  const L = parseFloat(state.dimL), W = parseFloat(state.dimW);
+  const od = CENNIK.od[model];
+  if (!(L > 0 && W > 0)) return { status: 'od', model, cena: od.cena, rozmiar: od.rozmiar };
+  const row = CENNIK.rozmiary.find(r =>
+    (r.dlugosc === L && r.szerokosc === W) || (r.dlugosc === W && r.szerokosc === L));
+  if (!row) return { status: 'indywidualna', model };
+  const dop = row.doplaty[model];
+  if (dop == null) return { status: 'niedostepny', model, od: od.rozmiar };
+  return { status: 'cena', model, cena: row.podstawa + dop, rozmiar: row.rozmiar };
+}
+
+function updatePrice() {
+  const c = cenaOrientacyjna();
+  let value = '—', note = 'Wybierz model i wymiary', custom = false, warn = '';
+  const dopiski = [];
+  if (state.dimH && state.dimH !== '2.44') dopiski.push('cena dla wysokości 2,44 m — inną wysokość potwierdzimy w ofercie');
+  if (state.extras && state.extras.length) dopiski.push('bez wyposażenia dodatkowego');
+  const stopka = 'netto, bez transportu i montażu' + (dopiski.length ? '; ' + dopiski.join('; ') : '') + '. Ostateczna cena w ofercie.';
+  if (c.status === 'od') {
+    value = 'od ' + zl(c.cena);
+    note = c.model + ' ' + rozmiarTxt(c.rozmiar) + ' — cena orientacyjna ' + stopka;
+  } else if (c.status === 'cena') {
+    value = zl(c.cena);
+    note = c.model + ' ' + rozmiarTxt(c.rozmiar) + ' — cena orientacyjna ' + stopka;
+  } else if (c.status === 'indywidualna') {
+    value = 'Wycena indywidualna';
+    note = 'Ten wymiar wyceniamy indywidualnie. Ceny orientacyjne pokazujemy dla szerokości 3 m i długości 4–12 m.';
+    custom = true;
+  } else if (c.status === 'niedostepny') {
+    value = 'Wycena indywidualna';
+    note = 'Model ' + c.model + ' jest dostępny od ' + rozmiarTxt(c.od) + '.';
+    warn = 'Model ' + c.model + ' jest dostępny od ' + rozmiarTxt(c.od) + '. Wybierz większy wymiar albo wyślij zapytanie — przygotujemy wycenę indywidualną.';
+    custom = true;
+  }
+  document.querySelectorAll('[data-price-box]').forEach(box => {
+    box.classList.toggle('is-custom', custom);
+    setPrv(box.querySelector('[data-price-value]'), value);
+    const n = box.querySelector('[data-price-note]');
+    if (n) n.textContent = note;
+  });
+  const w = document.getElementById('dimWarn');
+  if (w) { w.textContent = warn; w.hidden = !warn; }
+  // Do zapytania (form-handler dopisuje to do treści wiadomości — pole tekstowe, schemat payloadu bez zmian)
+  state.cenaOrientacyjna = (c.status === 'cena') ? Math.round(c.cena) : null;
+  state.cenaOpis = (c.status === 'cena')
+    ? zl(c.cena) + ' netto (' + c.model + ' ' + rozmiarTxt(c.rozmiar) + ', bez transportu i montażu' + (dopiski.length ? '; ' + dopiski.join('; ') : '') + ')'
+    : (c.status === 'indywidualna' || c.status === 'niedostepny') ? 'wycena indywidualna (wymiar poza cennikiem)' : '';
+  return c;
+}
+
 function updatePreview() {
+  updatePrice();
   // Step 1 preview
   const prvModel1 = document.getElementById('prv-model-1');
   const previewHero1 = document.getElementById('previewHero1');
@@ -2252,6 +2348,9 @@ function buildSummary() {
   if (state.extras.length) {
     rows.push(['Wyposażenie dodatkowe', state.extras.join(', ')]);
   }
+  const cena = updatePrice();
+  rows.push(['Cena orientacyjna netto', cena.status === 'cena' ? zl(cena.cena)
+    : (cena.status === 'indywidualna' || cena.status === 'niedostepny') ? 'wycena indywidualna' : '—']);
   const container = document.getElementById('summaryRows');
   container.textContent = '';
   rows.forEach(([l, v]) => {
@@ -2269,25 +2368,7 @@ function buildSummary() {
   });
 }
 
-// ── FORM SUBMIT ──
-function submitForm(e) {
-  e.preventDefault();
-  const form = document.getElementById('cfgForm');
-  const fd = new FormData(form);
-  const data = Object.fromEntries(fd.entries());
-  data.config = { ...state };
-
-  // Log (replace with actual endpoint)
-  console.log('STAGO Konfigurator — zapytanie:', data);
-
-  // Show success
-  document.getElementById('configWrap').querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
-  document.getElementById('successScreen').classList.add('active');
-  document.getElementById('bottomBar').style.display = 'none';
-
-  // Clear storage
-  localStorage.removeItem('stago_cfg');
-}
+// Wysyłka formularza: form-handler.js (ERP /api/leads/intake).
 
 // ── MOBILE NAV ──
 document.getElementById('nav-toggle').addEventListener('click', function() {

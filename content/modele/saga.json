@@ -14,7 +14,7 @@
     "imgAlt": "Pawilon modułowy STAGO SAGA — wydłużona bryła z frontem witrynowym",
     "h1": "SAGA — wydłużona bryła z frontem witrynowym.",
     "subtitle": "Drewno na górze, grafit na dole, witryny prosto od frontu. Twarda, konkretna bryła, która zniesie tłum, parę z ekspresu i poranny ruch. Niejeden zrobił w niej bar albo małą gastronomię.",
-    "price": "od 20 564 zł",
+    "price": "od 24 515 zł",
     "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=saga",
     "articleHref": "../modele.html",
@@ -112,6 +112,49 @@
         "text": "Elektryka, oświetlenie LED, rozdzielnia — w standardzie. Woda, kanalizacja, wentylacja, klimatyzacja — według Twojego przeznaczenia. Gotowe do podłączenia na działce."
       }
     ]
+  },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model SAGA (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true.",
+    "pokaz": true,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu SAGA = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model SAGA",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła SAGA — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu SAGA przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model SAGA",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
   },
   "benefits": {
     "eyebrow": "W cenie",
@@ -242,19 +285,19 @@
       "text": "Sklep, biuro, kawiarnia, dom — pokażemy, który model do czego."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
-      "alt": "Cennik pawilonów",
-      "label": "Poradnik",
-      "h3": "Cennik pawilonów 2026",
-      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+      "alt": "Cennik pawilonów handlowych STAGO",
+      "label": "Cennik",
+      "h3": "Cennik pawilonów",
+      "text": "Ceny 4×3–12×3 m od producenta. Sprawdź, ile zapłacisz."
     }
   ],
   "jsonLd": {
     "name": "Pawilon modułowy STAGO SAGA",
     "description": "SAGA. Długa, niska forma z trzema dużymi witrynami i centralnym wejściem. Idealna pod gastro i sprzedaż — klient widzi wszystko z chodnika. Wykończenie elewacji wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "20564",
+    "lowPrice": "24515",
     "highPrice": "100000"
   }
 }
