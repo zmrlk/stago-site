@@ -23,6 +23,9 @@ try {
 // świeży HTML wchodzi na prod ze STARYM CSS i nowe reguły nie działają.
 const CSS_V = crypto.createHash('md5').update(fs.readFileSync('style.css')).digest('hex').slice(0, 8);
 
+// ── Cennik pawilonów: content/cennik-pawilonow.json (generowany z CSV przez scripts/gen-cennik.js) ──
+const CENNIK = JSON.parse(fs.readFileSync('content/cennik-pawilonow.json', 'utf8'));
+
 // ── Mini Mustache renderer ──
 function render(template, data) {
   template = template.replace(/\{\{#(\w+(?:\.\w+)*)\}\}([\s\S]*?)\{\{\/\1\}\}/g, (_, key, inner) => {
@@ -312,6 +315,11 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.cssV = CSS_V;
   data.googleRating = REVIEWS;
   data.assetV = ASSET_V;
+
+  // Cennik pawilonów (macierz rozmiar × model) — konfigurator liczy cenę orientacyjną w przeglądarce
+  if (tmplPath.endsWith('konfigurator.html')) {
+    data.cennikJson = JSON.stringify(CENNIK).replace(/</g, '\\u003c');
+  }
 
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
   data.hasCalculator = typeof data.body === 'string' && data.body.includes('id="calcRent"');

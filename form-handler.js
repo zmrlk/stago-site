@@ -525,6 +525,8 @@
         cfgLines.push('Stolarka: ' + parts.join('; '));
       }
       if (state.extras && state.extras.length) cfgLines.push('Wyposażenie: ' + state.extras.join(', '));
+      // Cena orientacyjna z konfiguratora — tylko dopisek w treści wiadomości (schemat payloadu bez zmian)
+      if (state.cenaOpis) cfgLines.push('Cena orientacyjna: ' + state.cenaOpis);
       if (data.message) cfgLines.push('Uwagi: ' + data.message);
       data.message = cfgLines.join('\n');
       data.containerType = state.type || data.containerType;

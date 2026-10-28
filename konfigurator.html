@@ -5,19 +5,19 @@
   <!-- Consent Mode v2 advanced: tagi laduje cookies.js, consent default=denied przed tagami -->
   <script>window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Konfigurator pawilonu — STAGO</title>
-  <meta name="description" content="Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h.">
+  <title>Konfigurator pawilonu modułowego z ceną orientacyjną | STAGO</title>
+  <meta name="description" content="Skonfiguruj pawilon modułowy STAGO online: 12 modeli, wymiary, wykończenie i wyposażenie. Cena orientacyjna netto od razu, wycena w 24h.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://stago.com.pl/konfigurator">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stago.com.pl/konfigurator">
-  <meta property="og:title" content="Konfigurator pawilonu — STAGO">
-  <meta property="og:description" content="Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h.">
+  <meta property="og:title" content="Konfigurator pawilonu modułowego z ceną orientacyjną | STAGO">
+  <meta property="og:description" content="Skonfiguruj pawilon modułowy STAGO online: 12 modeli, wymiary, wykończenie i wyposażenie. Cena orientacyjna netto od razu, wycena w 24h.">
   <meta property="og:image" content="https://stago.com.pl/assets/hero1.jpeg">
   <meta property="og:locale" content="pl_PL">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Konfigurator pawilonu — STAGO">
-  <meta name="twitter:description" content="Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h.">
+  <meta name="twitter:title" content="Konfigurator pawilonu modułowego z ceną orientacyjną | STAGO">
+  <meta name="twitter:description" content="Skonfiguruj pawilon modułowy STAGO online: 12 modeli, wymiary, wykończenie i wyposażenie. Cena orientacyjna netto od razu, wycena w 24h.">
   <meta name="twitter:image" content="https://stago.com.pl/assets/hero1.jpeg">
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -579,6 +579,14 @@ body { background: #F8F9FA; padding-bottom: 0; }
 }
 .preview-row .pr-label { display:block; font-size:.72rem; color: var(--t3); margin-bottom: 1px; text-transform: uppercase; letter-spacing: .06em; }
 .preview-row .pr-value { display:block; font-size:.95rem; font-weight: 700; color: var(--accent); }
+
+/* ── Cena orientacyjna (cennik 28.10.2026) ── */
+.price-box { margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: #faf7f5; border: 1px solid #f1e4dd; }
+.price-box .pb-label { display:block; font-size:.72rem; color: var(--t3); text-transform: uppercase; letter-spacing: .06em; }
+.price-box .pb-value { display:block; font-size:1.25rem; font-weight: 800; color: var(--primary); margin: 2px 0; }
+.price-box .pb-note { display:block; font-size:.74rem; color: var(--t3); line-height: 1.4; }
+.price-box.is-custom .pb-value { font-size: 1rem; color: var(--accent); }
+.dim-warn { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #fff4ef; color: #9a3412; font-size: .85rem; }
 .preview-footer {
   display: flex;
   gap: 8px;
@@ -1224,7 +1232,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 1 z 5</p>
-          <h1 class="step-head-title">Wybierz model</h1>
+          <h1 class="step-head-title">Konfigurator pawilonu — wybierz model</h1>
           <p class="step-head-desc">Każdy model ma swój charakter — od kompaktowego ATRI po panoramiczne KIOS. Wybierz bryłę, którą rozwiniemy w kolejnych krokach.</p>
         </div>
       </div>
@@ -1297,10 +1305,6 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
           <div style="text-align:center;margin:20px 0 8px">
             <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
           </div>
-          <p class="social-proof">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-            127 osób skonfigurowało pawilon w tym miesiącu
-          </p>
         </div>
 
         <aside class="preview-panel">
@@ -1315,6 +1319,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-model-1">— wybierz —</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Wybór możesz zmienić w każdej chwili.
@@ -1328,7 +1337,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 2 z 5</p>
-          <h1 class="step-head-title">Wymiary pawilonu</h1>
+          <h2 class="step-head-title">Wymiary pawilonu</h2>
           <p class="step-head-desc">Wymiary zewnętrzne pawilonu w metrach. Wysokość dachu w czterech standardach — różnica 10 cm w panelu.</p>
         </div>
       </div>
@@ -1361,15 +1370,24 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               
               <button class="preset-btn" onclick="setPreset(4,2.5,this)">4×2,5 m</button>
               
+              <button class="preset-btn" onclick="setPreset(4,3,this)">4×3 m</button>
+              
+              <button class="preset-btn" onclick="setPreset(5,3,this)">5×3 m</button>
+              
               <button class="preset-btn" onclick="setPreset(6,3,this)">6×3 m</button>
+              
+              <button class="preset-btn" onclick="setPreset(7,3,this)">7×3 m</button>
               
               <button class="preset-btn" onclick="setPreset(8,3,this)">8×3 m</button>
               
               <button class="preset-btn" onclick="setPreset(9,3,this)">9×3 m</button>
               
+              <button class="preset-btn" onclick="setPreset(10,3,this)">10×3 m</button>
+              
               <button class="preset-btn" onclick="setPreset(12,3,this)">12×3 m</button>
               
             </div>
+            <p class="dim-warn" id="dimWarn" role="status" hidden></p>
           </div>
 
           <div class="s3-section">
@@ -1411,6 +1429,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-area">—</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Wymiary zewnętrzne. Wysokość dachu w środku.
@@ -1424,7 +1447,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 3 z 5</p>
-          <h1 class="step-head-title">Wykończenie</h1>
+          <h2 class="step-head-title">Wykończenie</h2>
           <p class="step-head-desc">Dopasuj profil płyty warstwowej, kolor ścian i okucia do swoich potrzeb.</p>
         </div>
       </div>
@@ -1541,6 +1564,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-okucia">Podstawowe</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Podgląd ma charakter poglądowy.
@@ -1554,7 +1582,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 4 z 5</p>
-          <h1 class="step-head-title">Dodatki</h1>
+          <h2 class="step-head-title">Dodatki</h2>
           <p class="step-head-desc">Wybierz wyposażenie i dodatkowe instalacje. Wszystko da się jeszcze doprecyzować w rozmowie.</p>
         </div>
       </div>
@@ -1640,6 +1668,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <span class="pr-value" id="prv-extras">brak</span>
             </div>
           </div>
+          <div class="price-box" data-price-box>
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
           <p class="preview-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
             Wszystko można jeszcze doprecyzować w rozmowie.
@@ -1653,8 +1686,8 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="step-head">
         <div class="step-head-text">
           <p class="step-head-badge">Krok 5 z 5</p>
-          <h1 class="step-head-title">Podsumowanie</h1>
-          <p class="step-head-desc">Sprawdź konfigurację i zostaw kontakt. Wycenę indywidualną wysyłamy w 24h.</p>
+          <h2 class="step-head-title">Podsumowanie</h2>
+          <p class="step-head-desc">Sprawdź konfigurację i cenę orientacyjną netto (bez transportu i montażu) i zostaw kontakt. Ostateczną wycenę wysyłamy w 24h.</p>
         </div>
       </div>
       <div class="summary-layout">
@@ -1666,6 +1699,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
             Zdjęcie poglądowe wybranego modelu. Wygląd Twojego pawilonu ustalamy przy wycenie.
           </p>
           <div id="summaryRows"></div>
+          <div class="price-box" data-price-box style="margin-top:16px">
+            <span class="pb-label">Cena orientacyjna netto</span>
+            <span class="pb-value" data-price-value>—</span>
+            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+          </div>
         </div>
         <div class="contact-card">
           <h3>Dane kontaktowe</h3>
@@ -1725,6 +1763,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
     </div>
   </div>
 
+<script id="cennikPawilonow" type="application/json">{"_opis":"GENEROWANE z content/cennik-pawilonow.csv przez scripts/gen-cennik.js — nie edytuj ręcznie.","zrodlo":"Wyceny pawilonów.xlsx (Łukasz R. / Denis Górski, 28.10.2026)","waluta":"PLN","netto":true,"uwagi":"Cena orientacyjna netto, bez transportu i montażu. Podstawa = 2 okna, drzwi, podstawowe obróbki.","modele":["ATRI","MILA","ICON","RYTM","NORD","LOFT","SAGA","VIEW","DUET","CUBE","NOIR","KIOS"],"rozmiary":[{"rozmiar":"4x3","dlugosc":4,"szerokosc":3,"m2":12,"podstawa":22715,"doplaty":{"ATRI":3500,"MILA":2500,"ICON":1800,"RYTM":1500,"NORD":3000,"LOFT":2500,"SAGA":1800,"VIEW":null,"DUET":1800,"CUBE":3000,"NOIR":3500,"KIOS":1400}},{"rozmiar":"5x3","dlugosc":5,"szerokosc":3,"m2":15,"podstawa":25226,"doplaty":{"ATRI":3900,"MILA":3000,"ICON":2300,"RYTM":1800,"NORD":3500,"LOFT":3000,"SAGA":2100,"VIEW":null,"DUET":2200,"CUBE":3400,"NOIR":3800,"KIOS":1700}},{"rozmiar":"6x3","dlugosc":6,"szerokosc":3,"m2":18,"podstawa":27032,"doplaty":{"ATRI":4300,"MILA":3500,"ICON":3800,"RYTM":2100,"NORD":4000,"LOFT":3500,"SAGA":2500,"VIEW":null,"DUET":2600,"CUBE":3800,"NOIR":4100,"KIOS":2000}},{"rozmiar":"7x3","dlugosc":7,"szerokosc":3,"m2":21,"podstawa":31388.4,"doplaty":{"ATRI":4500,"MILA":4000,"ICON":4200,"RYTM":2400,"NORD":4500,"LOFT":4000,"SAGA":2900,"VIEW":4200,"DUET":3000,"CUBE":4200,"NOIR":4400,"KIOS":2300}},{"rozmiar":"8x3","dlugosc":8,"szerokosc":3,"m2":24,"podstawa":36674.4,"doplaty":{"ATRI":5000,"MILA":4500,"ICON":5700,"RYTM":2700,"NORD":5000,"LOFT":4500,"SAGA":3300,"VIEW":4800,"DUET":3400,"CUBE":4600,"NOIR":4700,"KIOS":2600}},{"rozmiar":"9x3","dlugosc":9,"szerokosc":3,"m2":27,"podstawa":40530.4,"doplaty":{"ATRI":5500,"MILA":5000,"ICON":7200,"RYTM":3000,"NORD":5500,"LOFT":5000,"SAGA":3700,"VIEW":5400,"DUET":3800,"CUBE":5000,"NOIR":5000,"KIOS":3900}},{"rozmiar":"10x3","dlugosc":10,"szerokosc":3,"m2":30,"podstawa":44086.4,"doplaty":{"ATRI":6000,"MILA":5500,"ICON":8700,"RYTM":3300,"NORD":6000,"LOFT":5500,"SAGA":4100,"VIEW":6000,"DUET":4200,"CUBE":5400,"NOIR":5300,"KIOS":4200}},{"rozmiar":"11x3","dlugosc":11,"szerokosc":3,"m2":33,"podstawa":49342.4,"doplaty":{"ATRI":6500,"MILA":6000,"ICON":10200,"RYTM":3600,"NORD":6500,"LOFT":6000,"SAGA":4500,"VIEW":6600,"DUET":4600,"CUBE":5800,"NOIR":5600,"KIOS":4500}},{"rozmiar":"12x3","dlugosc":12,"szerokosc":3,"m2":36,"podstawa":54848.4,"doplaty":{"ATRI":7000,"MILA":6500,"ICON":10700,"RYTM":3900,"NORD":7000,"LOFT":6500,"SAGA":4900,"VIEW":7200,"DUET":5000,"CUBE":6200,"NOIR":5900,"KIOS":4800}}],"od":{"ATRI":{"rozmiar":"4x3","cena":26215,"max":61848.4,"maxRozmiar":"12x3"},"MILA":{"rozmiar":"4x3","cena":25215,"max":61348.4,"maxRozmiar":"12x3"},"ICON":{"rozmiar":"4x3","cena":24515,"max":65548.4,"maxRozmiar":"12x3"},"RYTM":{"rozmiar":"4x3","cena":24215,"max":58748.4,"maxRozmiar":"12x3"},"NORD":{"rozmiar":"4x3","cena":25715,"max":61848.4,"maxRozmiar":"12x3"},"LOFT":{"rozmiar":"4x3","cena":25215,"max":61348.4,"maxRozmiar":"12x3"},"SAGA":{"rozmiar":"4x3","cena":24515,"max":59748.4,"maxRozmiar":"12x3"},"VIEW":{"rozmiar":"7x3","cena":35588.4,"max":62048.4,"maxRozmiar":"12x3"},"DUET":{"rozmiar":"4x3","cena":24515,"max":59848.4,"maxRozmiar":"12x3"},"CUBE":{"rozmiar":"4x3","cena":25715,"max":61048.4,"maxRozmiar":"12x3"},"NOIR":{"rozmiar":"4x3","cena":26215,"max":60748.4,"maxRozmiar":"12x3"},"KIOS":{"rozmiar":"4x3","cena":24115,"max":59648.4,"maxRozmiar":"12x3"}}}</script>
 <script>
 // ── STATE ──
 const state = {
@@ -2062,7 +2101,71 @@ function setPrv(el, val) {
   el.classList.add('updated');
 }
 
+// ── CENA ORIENTACYJNA (content/cennik-pawilonow.json, generowane z arkusza 28.10.2026) ──
+// cena = podstawa[rozmiar] + dopłata[model, rozmiar]; netto, bez transportu i montażu.
+// Poza tabelą (inna szerokość, wymiar niecałkowity, >12 m) → „wycena indywidualna”.
+const CENNIK = (() => {
+  try { return JSON.parse(document.getElementById('cennikPawilonow').textContent); } catch (e) { return null; }
+})();
+const zl = (v) => Math.round(v).toLocaleString('pl-PL').replace(/\u00a0|\u202f/g, ' ') + ' zł';
+const rozmiarTxt = (r) => r.replace('x', '×') + ' m';
+
+function cenaOrientacyjna() {
+  if (!CENNIK) return { status: 'brak' };
+  const model = (state.type || '').toUpperCase();
+  if (!model || !CENNIK.od[model]) return { status: 'brak' };
+  const L = parseFloat(state.dimL), W = parseFloat(state.dimW);
+  const od = CENNIK.od[model];
+  if (!(L > 0 && W > 0)) return { status: 'od', model, cena: od.cena, rozmiar: od.rozmiar };
+  const row = CENNIK.rozmiary.find(r =>
+    (r.dlugosc === L && r.szerokosc === W) || (r.dlugosc === W && r.szerokosc === L));
+  if (!row) return { status: 'indywidualna', model };
+  const dop = row.doplaty[model];
+  if (dop == null) return { status: 'niedostepny', model, od: od.rozmiar };
+  return { status: 'cena', model, cena: row.podstawa + dop, rozmiar: row.rozmiar };
+}
+
+function updatePrice() {
+  const c = cenaOrientacyjna();
+  let value = '—', note = 'Wybierz model i wymiary', custom = false, warn = '';
+  const dopiski = [];
+  if (state.dimH && state.dimH !== '2.44') dopiski.push('cena dla wysokości 2,44 m — inną wysokość potwierdzimy w ofercie');
+  if (state.extras && state.extras.length) dopiski.push('bez wyposażenia dodatkowego');
+  const stopka = 'netto, bez transportu i montażu' + (dopiski.length ? '; ' + dopiski.join('; ') : '') + '. Ostateczna cena w ofercie.';
+  if (c.status === 'od') {
+    value = 'od ' + zl(c.cena);
+    note = c.model + ' ' + rozmiarTxt(c.rozmiar) + ' — cena orientacyjna ' + stopka;
+  } else if (c.status === 'cena') {
+    value = zl(c.cena);
+    note = c.model + ' ' + rozmiarTxt(c.rozmiar) + ' — cena orientacyjna ' + stopka;
+  } else if (c.status === 'indywidualna') {
+    value = 'Wycena indywidualna';
+    note = 'Ten wymiar wyceniamy indywidualnie. Ceny orientacyjne pokazujemy dla szerokości 3 m i długości 4–12 m.';
+    custom = true;
+  } else if (c.status === 'niedostepny') {
+    value = 'Wycena indywidualna';
+    note = 'Model ' + c.model + ' jest dostępny od ' + rozmiarTxt(c.od) + '.';
+    warn = 'Model ' + c.model + ' jest dostępny od ' + rozmiarTxt(c.od) + '. Wybierz większy wymiar albo wyślij zapytanie — przygotujemy wycenę indywidualną.';
+    custom = true;
+  }
+  document.querySelectorAll('[data-price-box]').forEach(box => {
+    box.classList.toggle('is-custom', custom);
+    setPrv(box.querySelector('[data-price-value]'), value);
+    const n = box.querySelector('[data-price-note]');
+    if (n) n.textContent = note;
+  });
+  const w = document.getElementById('dimWarn');
+  if (w) { w.textContent = warn; w.hidden = !warn; }
+  // Do zapytania (form-handler dopisuje to do treści wiadomości — pole tekstowe, schemat payloadu bez zmian)
+  state.cenaOrientacyjna = (c.status === 'cena') ? Math.round(c.cena) : null;
+  state.cenaOpis = (c.status === 'cena')
+    ? zl(c.cena) + ' netto (' + c.model + ' ' + rozmiarTxt(c.rozmiar) + ', bez transportu i montażu' + (dopiski.length ? '; ' + dopiski.join('; ') : '') + ')'
+    : (c.status === 'indywidualna' || c.status === 'niedostepny') ? 'wycena indywidualna (wymiar poza cennikiem)' : '';
+  return c;
+}
+
 function updatePreview() {
+  updatePrice();
   // Step 1 preview
   const prvModel1 = document.getElementById('prv-model-1');
   const previewHero1 = document.getElementById('previewHero1');
@@ -2354,6 +2457,9 @@ function buildSummary() {
   if (state.extras.length) {
     rows.push(['Wyposażenie dodatkowe', state.extras.join(', ')]);
   }
+  const cena = updatePrice();
+  rows.push(['Cena orientacyjna netto', cena.status === 'cena' ? zl(cena.cena)
+    : (cena.status === 'indywidualna' || cena.status === 'niedostepny') ? 'wycena indywidualna' : '—']);
   const container = document.getElementById('summaryRows');
   container.textContent = '';
   rows.forEach(([l, v]) => {
@@ -2371,25 +2477,7 @@ function buildSummary() {
   });
 }
 
-// ── FORM SUBMIT ──
-function submitForm(e) {
-  e.preventDefault();
-  const form = document.getElementById('cfgForm');
-  const fd = new FormData(form);
-  const data = Object.fromEntries(fd.entries());
-  data.config = { ...state };
-
-  // Log (replace with actual endpoint)
-  console.log('STAGO Konfigurator — zapytanie:', data);
-
-  // Show success
-  document.getElementById('configWrap').querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
-  document.getElementById('successScreen').classList.add('active');
-  document.getElementById('bottomBar').style.display = 'none';
-
-  // Clear storage
-  localStorage.removeItem('stago_cfg');
-}
+// Wysyłka formularza: form-handler.js (ERP /api/leads/intake).
 
 // ── MOBILE NAV ──
 document.getElementById('nav-toggle').addEventListener('click', function() {
