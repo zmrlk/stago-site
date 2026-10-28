@@ -1153,7 +1153,7 @@ body.nav-open{overflow:hidden}
 .wcenie-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
 .wcenie-card{background:#fff;border:1px solid #eee;border-radius:16px;padding:22px}
 .wcenie-card h3{font-size:1.02rem;margin:0 0 10px}
-.wcenie-card ul{margin:0;padding-left:18px;line-height:1.6;color:var(--t2,#444)}
+.wcenie-card ul{margin:0;padding-left:18px;line-height:1.6;color:var(--t2,#444);list-style:disc}
 .wcenie-note{font-size:.82rem;color:var(--t3,#777);margin-top:10px}
 .wcenie-tabela{margin-top:32px;max-width:640px}
 .wcenie-tabela h3{font-size:1.05rem;margin:0 0 12px}
