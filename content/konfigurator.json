@@ -134,6 +134,24 @@
         "l": "12",
         "w": "3"
       }
+    ],
+    "purposeLabel": "Przeznaczenie",
+    "purposes": [
+      {
+        "name": "Handlowy"
+      },
+      {
+        "name": "Biurowy"
+      },
+      {
+        "name": "Usługowy"
+      },
+      {
+        "name": "Gastronomiczny"
+      },
+      {
+        "name": "Inne"
+      }
     ]
   },
   "step3": {

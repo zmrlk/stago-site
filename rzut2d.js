@@ -6,8 +6,8 @@
 (function (root) {
   var SCIANY = { A: 'przód', B: 'prawy bok', C: 'tył', D: 'lewy bok' };
   var NAZWY = { door: 'drzwi', okn: 'okno', wit: 'witryna' };
-  // Szerokości poglądowe w cm (rzut nie jest rysunkiem wykonawczym)
-  var SZER = { door: 100, okn: 120, wit: 200 };
+  // Szerokości w cm jak w opcjach konfiguratora (Drzwi ALU 90×210, Witryna 100×210, Okno 100×100)
+  var SZER = { door: 90, okn: 100, wit: 100 };
 
   function liczba(v) {
     return String(Math.round(v * 10) / 10).replace('.', ',');
@@ -43,10 +43,14 @@
       var sc = sciana(id);
       var suma = na.reduce(function (a, o) { return a + (SZER[o.kind] || 100); }, 0);
       var skala = Math.min(1, (sc.len * 0.8) / suma);
-      na.forEach(function (o, i) {
+      // Równe odstępy między otworami i od narożników — otwory nigdy na siebie nie nachodzą
+      var odstep = (sc.len - suma * skala) / (na.length + 1);
+      var pozycja = 0;
+      na.forEach(function (o) {
         var w = (SZER[o.kind] || 100) * skala;
-        var srodek = sc.len * (i + 1) / (na.length + 1);
-        var a = sc.p(srodek - w / 2), b = sc.p(srodek + w / 2);
+        pozycja += odstep;
+        var a = sc.p(pozycja), b = sc.p(pozycja + w);
+        pozycja += w;
         var x = Math.min(a[0], b[0]), y = Math.min(a[1], b[1]);
         // Otwór: przerwa w ścianie na całej grubości
         if (sc.poz) {

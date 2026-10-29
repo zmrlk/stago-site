@@ -581,6 +581,11 @@ body { background: #F8F9FA; padding-bottom: 0; }
 .preview-row .pr-label { display:block; font-size:.72rem; color: var(--t3); margin-bottom: 1px; text-transform: uppercase; letter-spacing: .06em; }
 .preview-row .pr-value { display:block; font-size:.95rem; font-weight: 700; color: var(--accent); }
 
+/* ── Rzut 2D (rzut2d.js, style .rzut2d w style.css) ── */
+.cfg-rzut{background:var(--bg-light,#F8F9FA);border-radius:12px;padding:12px;margin:12px 0}
+.cfg-rzut .rzut2d{max-height:220px}
+.cfg-rzut-cap{font-size:.75rem;color:var(--t2,#555);margin-top:8px;line-height:1.45}
+
 /* ── Cena orientacyjna (cennik 28.10.2026) ── */
 .price-box { margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: #faf7f5; border: 1px solid #f1e4dd; }
 .price-box .pb-label { display:block; font-size:.72rem; color: var(--t3); text-transform: uppercase; letter-spacing: .06em; }
@@ -1291,7 +1296,15 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="s-grid">
         <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
           <div class="s3-section">
-            <h3>1. Długość i szerokość</h3>
+            <h3>1. {{step2.purposeLabel}}</h3>
+            <p class="s3-hint">Do czego ma służyć pawilon? Opcjonalne — pomoże nam przygotować ofertę.</p>
+            <div class="pills" data-group="przeznaczenie">
+              {{#step2.purposes}}<div class="pill" role="button" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">{{name}}</div>{{/step2.purposes}}
+            </div>
+          </div>
+
+          <div class="s3-section">
+            <h3>2. Długość i szerokość</h3>
             <p class="s3-hint">W metrach. Wpisz dokładnie albo wybierz popularny rozmiar.</p>
             <div class="dim-inputs" style="justify-content:flex-start;max-width:420px">
               <div class="dim-group">
@@ -1316,10 +1329,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               {{/step2.presets}}
             </div>
             <p class="dim-warn" id="dimWarn" role="status" hidden></p>
+            <p class="s3-hint" style="margin-top:12px">Cenę orientacyjną pokazujemy dla wymiarów 4×3–12×3 m. Inne wymiary i rozwiązania niestandardowe wyceniamy indywidualnie.</p>
           </div>
 
           <div class="s3-section">
-            <h3>2. {{step2.heightLabel}}</h3>
+            <h3>3. {{step2.heightLabel}}</h3>
             <p class="s3-hint">Cztery standardy. Różnica 10 cm w panelu. Domyślnie 2,44 m.</p>
             <div class="pills" data-group="dimH">
               {{#step2.heights}}<div class="pill" data-val="{{val}}" onclick="selectHeight(this)">{{name}}</div>{{/step2.heights}}
@@ -1330,6 +1344,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
         <aside class="preview-panel">
           <h3>Twoje wymiary</h3>
           <div class="preview-hero" id="previewHero2"></div>
+          <div class="cfg-rzut" data-rzut></div>
           <div class="preview-row">
             <div class="preview-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
@@ -1524,6 +1539,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
         <aside class="preview-panel">
           <h3>Twoje dodatki</h3>
           <div class="preview-hero" id="previewHero4"></div>
+          <div class="cfg-rzut" data-rzut></div>
           <div class="preview-row">
             <div class="preview-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r="1"/></svg>
@@ -1582,6 +1598,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
             Podgląd 3D — obróć myszą. Render poglądowy.{{/enable3d}}{{^enable3d}}<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 15l-5-4-4.5 4-2-1.5L3 18"/></svg>
             Zdjęcie poglądowe wybranego modelu. Wygląd Twojego pawilonu ustalamy przy wycenie.{{/enable3d}}
           </p>
+          <div class="cfg-rzut" data-rzut></div>
           <div id="summaryRows"></div>
           <div class="price-box" data-price-box style="margin-top:16px">
             <span class="pb-label">Cena orientacyjna netto</span>
@@ -1654,12 +1671,14 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
     </div>
   </div>
 
+<script src="rzut2d.js"></script>
 <script id="cennikPawilonow" type="application/json">{{{cennikJson}}}</script>
 <script>
 // ── STATE ──
 const state = {
   step: 1,
   type: '',
+  przeznaczenie: '',
   dimL: '', dimW: '', dimH: '2.44',
   profil: 'Mikrofala',
   kolorScian: 'Antracyt',
@@ -1704,6 +1723,7 @@ function restoreUI() {
   if (state.dimW) document.getElementById('dimW').value = state.dimW;
   // Restore pills (rozmOkuc still pills)
   restorePills('rozmOkuc', state.rozmOkuc);
+  restorePills('przeznaczenie', state.przeznaczenie);
   // Restore profile cards (data-name based)
   document.querySelectorAll('.profile-card').forEach(c => {
     c.classList.toggle('selected', c.dataset.name === state.profil);
@@ -2055,8 +2075,21 @@ function updatePrice() {
   return c;
 }
 
+// Rzut 2D z góry (rzut2d.js): wymiary + otwory z kroku 4; przed krokiem 4 wersja podstawowa (drzwi i 2 okna)
+const OTWORY_BAZA = [{ wall: 'A', kind: 'door' }, { wall: 'A', kind: 'okn' }, { wall: 'C', kind: 'okn' }];
+function updateRzut() {
+  const svg = (typeof rzut2d === 'function')
+    ? rzut2d({ L: state.dimL, W: state.dimW, openings: state.openings.length ? state.openings : OTWORY_BAZA })
+    : '';
+  document.querySelectorAll('[data-rzut]').forEach(el => {
+    el.innerHTML = svg ? svg + '<p class="cfg-rzut-cap">Rzut poglądowy z góry — dokładne rozmieszczenie ustalimy przy wycenie.</p>' : '';
+    el.hidden = !svg;
+  });
+}
+
 function updatePreview() {
   updatePrice();
+  updateRzut();
   // Step 1 preview
   const prvModel1 = document.getElementById('prv-model-1');
   const previewHero1 = document.getElementById('previewHero1');
@@ -2336,7 +2369,8 @@ function openingsSummary() {
 function buildSummary() {
   const isPodstaw = state.okucia && state.okucia.toLowerCase().includes('podstaw');
   const rows = [
-    ['Przeznaczenie', state.type],
+    ['Model', state.type],
+    ['Przeznaczenie', state.przeznaczenie || '—'],
     ['Wymiary', `${state.dimL} × ${state.dimW} × ${state.dimH} m`],
     ['Profil płyty', state.profil],
     ['Kolor ścian', state.kolorScian],
@@ -2394,6 +2428,17 @@ if (urlType) {
   goToStep(2);
 }
 
+// ?l=6&w=3 — z kart wymiarów (/pawilon-6x3): ustaw wymiar
+(function () {
+  const l = parseFloat(params.get('l')), w = parseFloat(params.get('w'));
+  if (!(l > 0 && w > 0)) return;
+  state.dimL = String(l); state.dimW = String(w);
+  const iL = document.getElementById('dimL'), iW = document.getElementById('dimW');
+  if (iL) iL.value = state.dimL;
+  if (iW) iW.value = state.dimW;
+  saveState();
+})();
+
 // Init: select first pill/swatch in each group
 document.querySelectorAll('.pills').forEach(g => { const f = g.querySelector('.pill'); if (f) f.classList.add('selected'); });
 document.querySelectorAll('.swatches').forEach(g => { const f = g.querySelector('.swatch'); if (f) f.classList.add('selected'); });
@@ -2401,6 +2446,8 @@ document.querySelectorAll('.swatches').forEach(g => { const f = g.querySelector(
 document.querySelectorAll('[data-group="dimH"] .pill').forEach(p => {
   p.classList.toggle('selected', p.dataset.val === state.dimH);
 });
+// Przeznaczenie jest opcjonalne — bez wyboru żadna pigułka nie jest zaznaczona
+restorePills('przeznaczenie', state.przeznaczenie);
 // Profile cards default selection (state.profil)
 document.querySelectorAll('.profile-card').forEach(c => {
   c.classList.toggle('selected', c.dataset.name === state.profil);
