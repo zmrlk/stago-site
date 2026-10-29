@@ -295,8 +295,9 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
     data = adjustAssetPaths(data, '../');
   }
 
-  // For i18n: adjust canonical URL
-  if (!isPl && data.meta && data.meta.canonical) {
+  // For i18n: adjust canonical URL (część content/{lang}/pages/*.json ma już prefiks języka —
+  // bez tego warunku wychodziło https://stago.com.pl/es/es/faq na 52 stronach)
+  if (!isPl && data.meta && data.meta.canonical && !data.meta.canonical.startsWith(`https://stago.com.pl/${langDir}/`)) {
     data.meta.canonical = data.meta.canonical.replace(
       'https://stago.com.pl/',
       `https://stago.com.pl/${langDir}/`
