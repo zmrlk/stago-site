@@ -1360,7 +1360,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
             <h3>1. Przeznaczenie</h3>
             <p class="s3-hint">Do czego ma służyć pawilon? Opcjonalne — pomoże nam przygotować ofertę.</p>
             <div class="pills" data-group="przeznaczenie" role="radiogroup" aria-label="Przeznaczenie">
-              <div class="pill" role="radio" aria-checked="false" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Handlowy</div><div class="pill" role="radio" aria-checked="false" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Biurowy</div><div class="pill" role="radio" aria-checked="false" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Usługowy</div><div class="pill" role="radio" aria-checked="false" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Gastronomiczny</div><div class="pill" role="radio" aria-checked="false" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Inne</div>
+              <div class="pill" role="radio" aria-checked="false" tabindex="-1" onclick="selectPill(this)" onkeydown="radioKlawisz(event, this)">Handlowy</div><div class="pill" role="radio" aria-checked="false" tabindex="-1" onclick="selectPill(this)" onkeydown="radioKlawisz(event, this)">Biurowy</div><div class="pill" role="radio" aria-checked="false" tabindex="-1" onclick="selectPill(this)" onkeydown="radioKlawisz(event, this)">Usługowy</div><div class="pill" role="radio" aria-checked="false" tabindex="-1" onclick="selectPill(this)" onkeydown="radioKlawisz(event, this)">Gastronomiczny</div><div class="pill" role="radio" aria-checked="false" tabindex="-1" onclick="selectPill(this)" onkeydown="radioKlawisz(event, this)">Inne</div>
             </div>
           </div>
 
@@ -1905,9 +1905,31 @@ function restorePills(group, val) {
   document.querySelectorAll(`[data-group="${group}"]`).forEach(syncAriaChecked);
 }
 
-// Pigułki z role="radio" (przeznaczenie): czytnik ekranu dostaje stan zaznaczenia, nie tylko klasę CSS
+// Pigułki z role="radio" (przeznaczenie): czytnik ekranu dostaje stan zaznaczenia, nie tylko klasę CSS.
+// Wzorzec ARIA radiogroup: jeden punkt tabulacji (zaznaczony albo pierwszy), strzałki zmieniają wybór.
 function syncAriaChecked(group) {
-  group.querySelectorAll('.pill[role="radio"]').forEach(p => p.setAttribute('aria-checked', p.classList.contains('selected') ? 'true' : 'false'));
+  const radia = [...group.querySelectorAll('.pill[role="radio"]')];
+  if (!radia.length) return;
+  const wybrany = radia.find(p => p.classList.contains('selected'));
+  radia.forEach(p => {
+    p.setAttribute('aria-checked', p === wybrany ? 'true' : 'false');
+    p.tabIndex = p === (wybrany || radia[0]) ? 0 : -1;
+  });
+}
+
+function radioKlawisz(e, el) {
+  const radia = [...el.parentElement.querySelectorAll('.pill[role="radio"]')];
+  const i = radia.indexOf(el);
+  let cel = null;
+  if (e.key === 'Enter' || e.key === ' ') cel = el;
+  else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') cel = radia[(i + 1) % radia.length];
+  else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') cel = radia[(i - 1 + radia.length) % radia.length];
+  else if (e.key === 'Home') cel = radia[0];
+  else if (e.key === 'End') cel = radia[radia.length - 1];
+  if (!cel) return;
+  e.preventDefault();
+  selectPill(cel);
+  cel.focus();
 }
 
 // ── NAV ──
