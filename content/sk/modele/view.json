@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "VIEW — hmota s panoramatickými rohmi | Modulárny pavilón STAGO",
-    "description": "VIEW STAGO — Dynamická forma s obrovskými rohovými zaskleniami v šikmom usporiadaní. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba. Bezplatná cenová ponuka.",
+    "description": "VIEW STAGO — Dynamická forma s obrovskými rohovými zaskleniami v šikmom usporiadaní. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba.",
     "canonical": "https://stago.com.pl/modele/view.html",
     "ogTitle": "VIEW — hmota s panoramatickými rohmi",
     "ogDescription": "Dynamická forma s obrovskými rohovými zaskleniami v šikmom usporiadaní. Panoramatický výhľad zvnútra, silná prítomnosť zvonku. Materiál horného pásu a korpusu si vyberiete Vy.",
@@ -284,7 +284,7 @@
       "text": "Obchod, kancelária, kaviareň, dom — ukážeme, ktorý model na čo."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Cenník pavilónov",
       "label": "Poradňa",

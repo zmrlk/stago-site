@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NOIR — länglicher Monolith mit Lamellen | Modulpavillon STAGO",
-    "description": "NOIR STAGO — Schlanker, länglicher Baukörper mit vertikalen Lamellen und langen Fenstern. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "NOIR STAGO — Schlanker, länglicher Baukörper mit vertikalen Lamellen und langen Fenstern. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/noir.html",
     "ogTitle": "NOIR — länglicher Monolith mit Lamellen",
     "ogDescription": "Schlanker, länglicher Baukörper mit vertikalen Lamellen und langen Fenstern. Boutique-Charakter, ohne überflüssige Details. Lamellenmaterial und Farbgebung legen wir gemeinsam fest.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

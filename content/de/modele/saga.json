@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "SAGA — länglicher Baukörper mit Vitrinenfront | Modulpavillon STAGO",
-    "description": "SAGA STAGO — Lange, niedrige Form mit drei großen Vitrinen und zentralem Eingang. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "SAGA STAGO — Lange, niedrige Form mit drei großen Vitrinen und zentralem Eingang. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/saga.html",
     "ogTitle": "SAGA — länglicher Baukörper mit Vitrinenfront",
     "ogDescription": "Lange, niedrige Form mit drei großen Vitrinen und zentralem Eingang. Ideal für Gastro und Verkauf — der Kunde sieht alles vom Gehweg. Fassade wählen Sie selbst.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NORD — prémiová hmota s rohovými oknami | Modulárny pavilón STAGO",
-    "description": "NORD STAGO — Silná forma s akcentmi v rohoch a obrovskými rohovými zaskleniami. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba. Bezplatná cenová ponuka.",
+    "description": "NORD STAGO — Silná forma s akcentmi v rohoch a obrovskými rohovými zaskleniami. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba.",
     "canonical": "https://stago.com.pl/modele/nord.html",
     "ogTitle": "NORD — prémiová hmota s rohovými oknami",
     "ogDescription": "Silná forma s akcentmi v rohoch a obrovskými rohovými zaskleniami. Škandinávsky prémiový charakter — hmota, na ktorú sa nezabúda. Materiál fasády a akcentov dohodneme spolu.",
@@ -284,7 +284,7 @@
       "text": "Obchod, kancelária, kaviareň, dom — ukážeme, ktorý model na čo."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Cenník pavilónov",
       "label": "Poradňa",

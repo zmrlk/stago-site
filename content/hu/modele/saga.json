@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "SAGA — nyújtott forma kirakatfronttal | STAGO moduláris pavilon",
-    "description": "SAGA STAGO — Hosszú, alacsony forma három nagy kirakattal és központi bejárattal. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint. Ingyenes árajánlat.",
+    "description": "SAGA STAGO — Hosszú, alacsony forma három nagy kirakattal és központi bejárattal. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint.",
     "canonical": "https://stago.com.pl/modele/saga.html",
     "ogTitle": "SAGA — nyújtott forma kirakatfronttal",
     "ogDescription": "Hosszú, alacsony forma három nagy kirakattal és központi bejárattal. Ideális vendéglátásra és kereskedelemre — a járókelő mindent lát a járdáról. A homlokzat burkolatát Ön választja.",
@@ -284,7 +284,7 @@
       "text": "Bolt, iroda, kávézó, lakás — megmutatjuk, melyik modell mihez."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Pavilon árlista",
       "label": "Útmutató",

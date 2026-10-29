@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Pabellón de hostelería — cafetería, heladería, food truck | STAGO",
-    "description": "Pabellones de hostelería llave en mano. Cafetería, heladería, food truck, bar. Ventilación, ventana de despacho, acabados conformes con normativa sanitaria. Del fabricante.",
+    "description": "Pabellones de hostelería llave en mano. Cafetería, heladería, food truck, bar. Ventilación, ventana de despacho, acabados conformes con normativa sanitaria.",
     "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
     "ogTitle": "Pabellón de hostelería — cafetería, heladería, food truck | STAGO",
-    "ogDescription": "Pabellones de hostelería llave en mano. Cafetería, heladería, food truck, bar. Ventilación, ventana de despacho, acabados conformes con normativa sanitaria. Del fabricante.",
+    "ogDescription": "Pabellones de hostelería llave en mano. Cafetería, heladería, food truck, bar. Ventilación, ventana de despacho, acabados conformes con normativa sanitaria.",
     "ogImage": "https://stago.com.pl/assets/modele/saga.webp"
   },
   "breadcrumb": "Hostelería",
@@ -227,7 +227,7 @@
       "text": "Vea qué más hacemos — tienda, oficina, vivienda, hostelería, gabinete."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Precios 2026",
       "label": "Guía",

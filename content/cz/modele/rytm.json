@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "RYTM — dřevěný rám se symetrickým frontem | Modulární pavilon STAGO",
-    "description": "RYTM STAGO — Tvar s výrazným rámem a širokým frontem se skleněnými dveřmi uprostřed. Rozměr, materiál fasády, barvu a interiér přizpůsobíte na míru. Bezplatná kalkulace.",
+    "description": "RYTM STAGO — Tvar s výrazným rámem a širokým frontem se skleněnými dveřmi uprostřed. Rozměr, materiál fasády, barvu a interiér přizpůsobíte na míru.",
     "canonical": "https://stago.com.pl/modele/rytm.html",
     "ogTitle": "RYTM — dřevěný rám se symetrickým frontem",
     "ogDescription": "Tvar s výrazným rámem a širokým frontem se skleněnými dveřmi uprostřed. Symetrie, čistota proporcí, klasický rytmus. Materiál rámu a výplně domluvíme společně.",
@@ -284,7 +284,7 @@
       "text": "Obchod, kancelář, kavárna, dům — ukážeme, který model k čemu."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Ceník pavilonů",
       "label": "Poradce",

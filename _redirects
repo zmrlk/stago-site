@@ -53,5 +53,15 @@
 /katalog                               /modele 301
 /katalog.html                          /modele 301
 
+# Stuby HTML bez wpisu 301 (meta refresh). CF Pages ma iść 301, zanim odda plik.
+/kontenery-biurowe                 /zastosowania/biurowy.html 301
+/kontenery-biurowe.html            /zastosowania/biurowy.html 301
+/kontenery-budowlane               /zastosowania/socjalny.html 301
+/kontenery-budowlane.html          /zastosowania/socjalny.html 301
+/kontenery-handlowe                /zastosowania/handlowy.html 301
+/kontenery-handlowe.html           /zastosowania/handlowy.html 301
+/kontenery-mieszkalne              /zastosowania/mieszkalny.html 301
+/kontenery-mieszkalne.html         /zastosowania/mieszkalny.html 301
+
 # 404 fallback (Netlify obsługuje to automatycznie via 404.html)
 # BEZ catch-all 200 — to powoduje soft 404 w Google i masową karę SEO

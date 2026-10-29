@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "MILA — volumen de distribución clásica | Pabellón modular STAGO",
-    "description": "MILA STAGO — Forma compacta, proporciones simétricas, gran puerta de entrada central. Dimensiones, material de fachada, color e interior adaptables. Presupuesto gratuito.",
+    "description": "MILA STAGO — Forma compacta, proporciones simétricas, gran puerta de entrada central. Dimensiones, material de fachada, color e interior adaptables.",
     "canonical": "https://stago.com.pl/modele/mila.html",
     "ogTitle": "MILA — volumen de distribución clásica",
     "ogDescription": "Forma compacta, proporciones simétricas, gran puerta de entrada central. Distribución universal que se adapta a cualquier uso. Acabado — madera, chapa, HPL o paneles compuestos — lo elige usted.",
@@ -284,7 +284,7 @@
       "text": "Tienda, oficina, cafetería, vivienda — le mostramos qué modelo para qué."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Lista de precios de pabellones",
       "label": "Guía",

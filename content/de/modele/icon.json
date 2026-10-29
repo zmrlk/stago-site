@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ICON — Premium-Loft mit Eckverglasung | Modulpavillon STAGO",
-    "description": "ICON STAGO — Ausdrucksstarker Baukörper mit großen Eckfenstern vom Boden bis zur Decke. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "ICON STAGO — Ausdrucksstarker Baukörper mit großen Eckfenstern vom Boden bis zur Decke. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/icon.html",
     "ogTitle": "ICON — Premium-Loft mit Eckverglasung",
     "ogDescription": "Ausdrucksstarker Baukörper mit großen Eckfenstern vom Boden bis zur Decke. Architektur-Studio-Charakter — offen, premium, entworfen um Eindruck zu machen. Fassade wählen Sie selbst.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

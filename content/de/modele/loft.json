@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "LOFT — Showroom-Front mit drei Vitrinen | Modulpavillon STAGO",
-    "description": "LOFT STAGO — Länglicher Baukörper mit drei großen Frontverglasen und Tür in der Mitte. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "LOFT STAGO — Länglicher Baukörper mit drei großen Frontverglasen und Tür in der Mitte. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/loft.html",
     "ogTitle": "LOFT — Showroom-Front mit drei Vitrinen",
     "ogDescription": "Länglicher Baukörper mit drei großen Frontverglasen und Tür in der Mitte. Showroom-Feeling — innen hell, außen Wow. Fassadenmaterial wählen Sie selbst.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

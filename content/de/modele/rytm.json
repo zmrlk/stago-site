@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "RYTM — Holzrahmen mit symmetrischer Front | Modulpavillon STAGO",
-    "description": "RYTM STAGO — Baukörper mit markantem Rahmen und breiter Front mit Glastür in der Mitte. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "RYTM STAGO — Baukörper mit markantem Rahmen und breiter Front mit Glastür in der Mitte. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/rytm.html",
     "ogTitle": "RYTM — Holzrahmen mit symmetrischer Front",
     "ogDescription": "Baukörper mit markantem Rahmen und breiter Front mit Glastür in der Mitte. Symmetrie, klare Proportionen, klassischer Rhythmus. Rahmenmaterial und Füllung legen wir gemeinsam fest.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

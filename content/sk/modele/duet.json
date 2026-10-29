@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "DUET — hmota s bočnými akcentmi a frontom | Modulárny pavilón STAGO",
-    "description": "DUET STAGO — Hmota s výraznými akcentmi po bokoch a tromi prednými výkladmi. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba. Bezplatná cenová ponuka.",
+    "description": "DUET STAGO — Hmota s výraznými akcentmi po bokoch a tromi prednými výkladmi. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba.",
     "canonical": "https://stago.com.pl/modele/duet.html",
     "ogTitle": "DUET — hmota s bočnými akcentmi a frontom",
     "ogDescription": "Hmota s výraznými akcentmi po bokoch a tromi prednými výkladmi. Dva prvky v rovnováhe — silný korpus a teplé akcenty. Materiály dvoch zón dohodneme spolu.",
@@ -284,7 +284,7 @@
       "text": "Obchod, kancelária, kaviareň, dom — ukážeme, ktorý model na čo."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Cenník pavilónov",
       "label": "Poradňa",

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Container ufficio — ufficio vendite, reception, ufficio cantiere | STAGO",
+    "title": "Container ufficio — vendite, reception, cantiere | STAGO",
     "description": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
     "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
-    "ogTitle": "Container ufficio — ufficio vendite, reception, ufficio cantiere | STAGO",
+    "ogTitle": "Container ufficio — vendite, reception, cantiere | STAGO",
     "ogDescription": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
     "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
   },
@@ -227,7 +227,7 @@
       "text": "Scopri cos'altro facciamo — negozio, ufficio, casa, gastronomia, studio."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Listino 2026",
       "label": "Guida",

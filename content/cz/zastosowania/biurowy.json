@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Kancelářský kontejner — prodejní kancelář, recepce, stavební kancelář | STAGO",
+    "title": "Kancelářský kontejner — prodej, recepce, stavba | STAGO",
     "description": "Kancelářské kontejnery od výrobce. Prodejní kancelář, recepce, kancelář na stavbě, ordinace. Teplo, ticho, připraveno k práci. Od 5 100 € netto.",
     "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
-    "ogTitle": "Kancelářský kontejner — prodejní kancelář, recepce, stavební kancelář | STAGO",
+    "ogTitle": "Kancelářský kontejner — prodej, recepce, stavba | STAGO",
     "ogDescription": "Kancelářské kontejnery od výrobce. Prodejní kancelář, recepce, kancelář na stavbě, ordinace. Teplo, ticho, připraveno k práci. Od 5 100 € netto.",
     "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
   },
@@ -227,7 +227,7 @@
       "text": "Podívejte se, co ještě děláme — obchod, kancelář, dům, gastro, ordinace."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Ceník 2026",
       "label": "Poradce",

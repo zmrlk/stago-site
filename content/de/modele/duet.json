@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "DUET — Baukörper mit seitlichen Akzenten und Front | Modulpavillon STAGO",
-    "description": "DUET STAGO — Baukörper mit markanten seitlichen Akzenten und drei Frontverglasen. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "title": "DUET — Baukörper mit seitlichen Akzenten und Front | STAGO",
+    "description": "DUET STAGO — Baukörper mit markanten seitlichen Akzenten und drei Frontverglasen. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/duet.html",
     "ogTitle": "DUET — Baukörper mit seitlichen Akzenten und Front",
     "ogDescription": "Baukörper mit markanten seitlichen Akzenten und drei Frontverglasen. Zwei Elemente im Gleichgewicht — starker Korpus und warme Akzente. Materialien der zwei Zonen legen wir gemeinsam fest.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",
