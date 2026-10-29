@@ -463,6 +463,16 @@ for (const page of pages) {
 
 console.log(`\n✓ ${builtCount} pages built, ${skippedCount} skipped (no content)`);
 
+// Strony ręczne (poza szablonami) też dostają odcisk style.css — inaczej po zmianie CSS
+// przez 7 dni (max-age w _headers) dostają stary arkusz. Zmieniamy tylko ?v=, nic więcej.
+const RECZNE = ['404.html', 'regiony.html',
+  ...fs.readdirSync('pawilony/wojewodztwo').filter(f => f.endsWith('.html')).map(f => `pawilony/wojewodztwo/${f}`)];
+for (const plik of RECZNE) {
+  const html = fs.readFileSync(plik, 'utf8');
+  const nowy = html.replace(/(href="(?:\/|(?:\.\.\/)*)style\.css)(?:\?v=[0-9a-f]+)?"/g, `$1?v=${CSS_V}"`);
+  if (nowy !== html) fs.writeFileSync(plik, nowy);
+}
+
 // ── Warstwa LLM + sitemap: świeżość i spójność (build pada na dryfie) ──
 // sitemap <lastmod> liczony z gita źródeł treści; llms.txt sprawdzany
 // przeciwko treści strony (ceny, termin, transport, adresy, kontakt).
