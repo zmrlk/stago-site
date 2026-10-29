@@ -2518,20 +2518,20 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
 const typeMap = {Handlowy:'NORD',Biurowy:'CUBE',Mieszkalny:'MILA',Sanitarny:'CUBE',Magazynowy:'KIOS',Premium:'ICON'};
 const params = new URLSearchParams(window.location.search);
 let urlType = params.get('type') || (params.get('model') ? params.get('model').toUpperCase() : null);
+if (urlType) urlType = typeMap[urlType] || urlType;
+// Tylko model, który ma kartę na stronie (porównanie dataset.type — bez budowania selektora z parametru)
+const urlCard = urlType ? [...document.querySelectorAll('.type-card')].find(c => c.dataset.type === urlType) : null;
+if (!urlCard) urlType = null;
 if (urlType) {
-  urlType = typeMap[urlType] || urlType;
-  localStorage.removeItem('stago_cfg');
+  try { localStorage.removeItem('stago_cfg'); } catch (e) {}
   state.type = urlType;
   state.step = 2;
   state.extras = [];
   // Nowa konfiguracja z karty/modelu: stolarka od nowa (zapis i tak jest usuwany)
   state.openings = [];
   state.openingsInit = false;
-  const card = document.querySelector(`.type-card[data-type="${urlType}"]`);
-  if (card) {
-    document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
-    card.classList.add('selected');
-  }
+  document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
+  urlCard.classList.add('selected');
   saveState();
   goToStep(2);
 }
