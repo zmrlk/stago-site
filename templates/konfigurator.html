@@ -2314,7 +2314,8 @@ const SHOW_PLACEMENT = {{#enable3d}}true{{/enable3d}}{{^enable3d}}false{{/enable
 
 // Domyślny układ przy pierwszym wejściu (skalowany długością)
 function domyslneOtwory() {
-  const L = parseFloat(state.dimL) || 6;
+  // Dłuższy bok — 3×6 to ten sam pawilon co 6×3 (cennik i rzut też tak liczą)
+  const L = Math.max(parseFloat(state.dimL) || 0, parseFloat(state.dimW) || 0) || 6;
   const nWit = Math.max(1, Math.min(4, Math.round(L / 2) - 1));
   const arr = [newOpening('A', 'door', 0.85)];
   for (let i = 0; i < nWit; i++) arr.push(newOpening('A', 'wit', (i + 1) / (nWit + 2)));
