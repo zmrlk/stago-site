@@ -25,6 +25,7 @@
     var pad = Math.round(Math.max(cmL, 300) * 0.16);
     var fs = Math.round((cmL + 2 * pad) * 0.035);
     var t = 12; // grubość ściany na rysunku (cm)
+    if (cmW <= 4 * t) return ''; // za mały na rysunek (wnętrze nie może mieć ujemnego wymiaru)
     var vbW = cmL + 2 * pad + Math.round(fs * 1.6), vbH = cmW + 2 * pad; // z prawej miejsce na wymiar szerokości
     var x0 = pad, y0 = pad;
     var s = [];

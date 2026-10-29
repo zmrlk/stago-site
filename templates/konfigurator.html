@@ -1833,12 +1833,20 @@ function updateBar() {
 
 function canProceed() {
   if (state.step === 1) return !!state.type;
-  if (state.step === 2) return wymiarOk(state.dimL) && wymiarOk(state.dimW) && state.dimH;
+  if (state.step === 2) return wymiaryOk(state.dimL, state.dimW) && state.dimH;
   return true;
 }
 
-// Wymiar: dodatnia, skończona liczba (pole number, ?l=&w=, stan z localStorage)
-function wymiarOk(v) { const n = Number(v); return v !== '' && Number.isFinite(n) && n > 0; }
+// Wymiar, z którym można przejść dalej (pola, ?l=&w=, stan z localStorage): zakres pól formularza —
+// dłuższy bok 2–18 m, krótszy 2–6 m (kolejność dowolna, 3×10 = 10×3). Obejmuje cennik 4×3–12×3 i presety.
+// Cena orientacyjna tylko z cennika; reszta w zakresie = wycena indywidualna (cenaOrientacyjna).
+function wymiaryOk(L, W) {
+  if (L === '' || W === '' || L == null || W == null) return false;
+  const a = Number(L), b = Number(W);
+  if (!Number.isFinite(a) || !Number.isFinite(b)) return false;
+  const dl = Math.max(a, b), sz = Math.min(a, b);
+  return sz >= 2 && sz <= 6 && dl <= 18;
+}
 
 // ── STEP 1 ──
 function selectType(el) {
@@ -2081,6 +2089,9 @@ function updatePrice() {
     const n = box.querySelector('[data-price-note]');
     if (n) n.textContent = note;
   });
+  if (state.dimL !== '' && state.dimW !== '' && !wymiaryOk(state.dimL, state.dimW)) {
+    warn = 'Podaj wymiar od 2 do 18 m (dłuższy bok) i od 2 do 6 m (krótszy bok). Większy obiekt? Zadzwoń: 509 508 210 — przygotujemy wycenę indywidualną.';
+  }
   const w = document.getElementById('dimWarn');
   if (w) { w.textContent = warn; w.hidden = !warn; }
   // Do zapytania (form-handler dopisuje to do treści wiadomości — pole tekstowe, schemat payloadu bez zmian)
@@ -2095,7 +2106,7 @@ function updatePrice() {
 // Przed krokiem 4 — układ, który krok 4 zaproponuje; po świadomym usunięciu wszystkiego — bez otworów.
 function updateRzut() {
   const otwory = state.openings.length ? state.openings : (state.openingsInit ? [] : domyslneOtwory());
-  const svg = (typeof rzut2d === 'function')
+  const svg = (typeof rzut2d === 'function' && wymiaryOk(state.dimL, state.dimW))
     ? rzut2d({ L: state.dimL, W: state.dimW, openings: otwory })
     : '';
   document.querySelectorAll('[data-rzut]').forEach(el => {
@@ -2459,7 +2470,7 @@ if (urlType) {
 (function () {
   const liczba = (v) => /^\d{1,2}(\.\d{1,2})?$/.test(v || '') ? Number(v) : NaN;
   const l = liczba(params.get('l')), w = liczba(params.get('w'));
-  if (!(l >= 2 && l <= 18 && w >= 2 && w <= 6)) return;
+  if (!wymiaryOk(l, w)) return;
   state.dimL = String(l); state.dimW = String(w);
   const iL = document.getElementById('dimL'), iW = document.getElementById('dimW');
   if (iL) iL.value = state.dimL;
