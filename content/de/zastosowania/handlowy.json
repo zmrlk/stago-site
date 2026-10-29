@@ -38,7 +38,7 @@
   "related": [
     { "href": "../modele.html", "img": "../assets/modele/loft.webp", "alt": "Alle Modelle", "label": "Modelle", "h3": "Alle 12 Modelle ansehen", "text": "Jedes Modell passen wir an Ihren Verwendungszweck an. Durchstöbern Sie den Katalog." },
     { "href": "../zastosowania.html", "img": "../assets/gallery/realizacje/r5.webp", "alt": "Anwendungen", "label": "Anwendungen", "h3": "Andere Anwendungen", "text": "Sehen Sie, was wir noch machen — Laden, Büro, Haus, Gastro, Praxis." },
-    { "href": "../blog/cennik-pawilonow-2026.html", "img": "../assets/gallery/realizacje/r6.webp", "alt": "Preisliste 2026", "label": "Ratgeber", "h3": "Preisliste Pavillons 2026", "text": "Konkrete Preise, ohne Drumherum. Prüfen Sie, was es kostet." }
+    { "href": "../../cennik-pawilonow-handlowych.html", "img": "../assets/gallery/realizacje/r6.webp", "alt": "Preisliste 2026", "label": "Ratgeber", "h3": "Preisliste Pavillons 2026", "text": "Konkrete Preise, ohne Drumherum. Prüfen Sie, was es kostet." }
   ],
   "jsonLd": { "name": "Verkaufspavillon STAGO", "description": "Verkaufspavillons vom Hersteller. Laden, Kiosk, Verkaufsstand, Marktstand. Vitrinen für Warenpräsentation, Beleuchtung, bequemer Eingang. Ab 3 450 € netto. Lieferung nach Deutschland.", "image": "https://stago.com.pl/assets/modele/loft.webp", "lowPrice": "12000", "highPrice": "150000" }
 }

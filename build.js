@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { wymiary } = require('./scripts/img-size');
 
 // Ocena i liczba opinii Google — jedno zrodlo prawdy dla wszystkich szablonow.
 // Odswiezamy przed budowaniem, zeby dane strukturalne nie niosly liczby sprzed miesiecy
@@ -100,7 +101,35 @@ function ostempluj(html, outputPath) {
     }).join(', ');
     return a + nowa + b;
   });
+  html = uzupelnijWymiary(html, outputPath);
   return html;
+}
+
+const WYMIARY_CACHE = new Map();
+function wymiaryPliku(plik) {
+  if (WYMIARY_CACHE.has(plik)) return WYMIARY_CACHE.get(plik);
+  const v = wymiary(plik);
+  WYMIARY_CACHE.set(plik, v);
+  return v;
+}
+
+// width/height = wymiary pliku (albo ten sam stosunek). Brak albo zły
+// stosunek psuje CLS. Adres z ?v= rozwiązujemy bez query.
+function uzupelnijWymiary(html, outputPath) {
+  const katalog = path.dirname(outputPath);
+  return html.replace(/<img\b[^>]*>/gi, (tag) => {
+    const src = (tag.match(/\ssrc=["']([^"']+)["']/i) || [])[1];
+    if (!src || /^(https?:|data:)/i.test(src) || /\.svg(\?|$)/i.test(src)) return tag;
+    const lokalny = path.normalize(path.join(katalog, src.split('?')[0].split('#')[0]));
+    const dim = wymiaryPliku(lokalny);
+    if (!dim || !dim.w || !dim.h) return tag;
+    const w = Number((tag.match(/\swidth=["'](\d+)["']/i) || [])[1]);
+    const h = Number((tag.match(/\sheight=["'](\d+)["']/i) || [])[1]);
+    const ratioOk = w > 0 && h > 0 && Math.abs(w / h - dim.w / dim.h) / (dim.w / dim.h) < 0.08;
+    if (ratioOk) return tag;
+    const bez = tag.replace(/\s(?:width|height)=["'][^"']*["']/gi, '');
+    return bez.replace(/\/?>$/, (end) => ` width="${dim.w}" height="${dim.h}"${end}`);
+  });
 }
 
 // app.js podmienia zdjecia historii w locie, wiec adresy w nim tez potrzebuja odcisku.
@@ -151,15 +180,10 @@ function losoweRealizacje(lang) {
   ];
 }
 
-// Indeksy losujemy raz — inaczej kazda wersja jezykowa dostalaby inne zdjecia.
-const WYBOR_REALIZACJI = (() => {
-  const pula = [...Array(59).keys()];
-  const wybrane = [];
-  while (wybrane.length < 3 && pula.length) {
-    wybrane.push(...pula.splice(Math.floor(Math.random() * pula.length), 1));
-  }
-  return wybrane;
-})();
+// Stały wybór trzech realizacji (indeksy w puli zewnątrz / zewnątrz / wnętrze
+// z content/pages/realizacje.json). Losowanie przy każdym buildzie podmieniało
+// miniatury bez zmiany treści i rozjeżdżało diff.
+const WYBOR_REALIZACJI = [7, 50, 6];
 
 // ── i18n config ──
 const LANGS = {
@@ -228,20 +252,34 @@ function getPages() {
 }
 
 // ── Hreflang generation ──
-function hreflangTags(pagePath) {
+function hreflangTags(pagePath, contentRel) {
   const tags = [];
-  // CF Pages serves clean URLs (no .html) — hreflang must point to canonical clean URLs
+  // CF Pages serves clean URLs (no .html) — hreflang must point to canonical clean URLs.
+  // Pomijamy język, którego plik treści nie istnieje (inaczej alternate prowadzi na 404).
   const cleanPath = pagePath === 'index.html' ? '' : pagePath.replace(/\.html$/, '');
   for (const [langKey, cfg] of Object.entries(LANGS)) {
+    const contentPath = langKey === 'pl' ? `content/${contentRel}` : `content/${langKey}/${contentRel}`;
+    if (!fs.existsSync(contentPath)) continue;
     const i18nData = JSON.parse(fs.readFileSync(cfg.i18n, 'utf8'));
     const langCode = i18nData.lang; // 'pl', 'de', 'cs', 'sk', 'hu', 'it', 'es'
     const prefix = cfg.dir ? cfg.dir + '/' : '';
     const url = `https://stago.com.pl/${prefix}${cleanPath}`;
     tags.push(`<link rel="alternate" hreflang="${langCode}" href="${url}">`);
   }
-  // x-default → PL
+  if (tags.length < 2) return '';
   tags.push(`<link rel="alternate" hreflang="x-default" href="https://stago.com.pl/${cleanPath}">`);
   return tags.join('\n  ');
+}
+
+// Canonical w JSON bywa już z prefiksem języka (es/es/…) albo jeszcze po polsku.
+// Dopisujemy prefiks tylko raz.
+function lokalizujUrl(url, langDir) {
+  if (!url || !langDir) return url;
+  const host = 'https://stago.com.pl/';
+  if (!url.startsWith(host)) return url;
+  const rest = url.slice(host.length);
+  if (rest === langDir || rest.startsWith(langDir + '/')) return url;
+  return `${host}${langDir}/${rest}`;
 }
 
 // ── Compute path prefixes ──
@@ -295,12 +333,10 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
     data = adjustAssetPaths(data, '../');
   }
 
-  // For i18n: adjust canonical URL
-  if (!isPl && data.meta && data.meta.canonical) {
-    data.meta.canonical = data.meta.canonical.replace(
-      'https://stago.com.pl/',
-      `https://stago.com.pl/${langDir}/`
-    );
+  // For i18n: adjust canonical URL (idempotentnie — bez es/es/)
+  if (!isPl && data.meta) {
+    if (data.meta.canonical) data.meta.canonical = lokalizujUrl(data.meta.canonical, langDir);
+    if (data.meta.ogUrl) data.meta.ogUrl = lokalizujUrl(data.meta.ogUrl, langDir);
   }
 
   // Compute output path
@@ -372,9 +408,29 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   } else {
     data.navCtaHref = ui.cta.ctaHref || (data.pageRoot + 'konfigurator.html');
   }
+  data.isPl = isPl;
+  data.quoteHref = isPl
+    ? data.pageRoot + 'konfigurator.html'
+    : (ui.cta && ui.cta.ctaHref) || (data.root + 'konfigurator.html');
+  // Regiony są tylko po polsku. Wersje językowe prowadzą na tę stronę, nie na /{lang}/regiony (404).
+  data.regionyHref = data.root + 'regiony.html';
+  function hrefJezyka(targetLang) {
+    const cfg = LANGS[targetLang];
+    const sciezka = targetLang === 'pl' ? `content/${contentRel}` : `content/${targetLang}/${contentRel}`;
+    const prefix = cfg.dir ? cfg.dir + '/' : '';
+    if (fs.existsSync(sciezka)) return data.root + prefix + output;
+    return data.root + prefix + 'index.html';
+  }
+  data.langPl = hrefJezyka('pl');
+  data.langDe = hrefJezyka('de');
+  data.langCz = hrefJezyka('cz');
+  data.langSk = hrefJezyka('sk');
+  data.langHu = hrefJezyka('hu');
+  data.langIt = hrefJezyka('it');
+  data.langEs = hrefJezyka('es');
 
   // Hreflang tags (inject before </head>)
-  const hreflang = hreflangTags(output);
+  const hreflang = isI18n ? hreflangTags(output, contentRel) : '';
 
   // og:image fallback — pages without explicit meta.ogImage get the brand default
   if (!data.meta) data.meta = {};
@@ -389,7 +445,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   let html = render(tmpl, data);
 
   // Inject hreflang before </head>
-  if (isI18n) {
+  if (hreflang) {
     html = html.replace('</head>', `  ${hreflang}\n</head>`);
   }
 
@@ -437,7 +493,7 @@ console.log(`\n✓ ${builtCount} pages built, ${skippedCount} skipped (no conten
 // sitemap <lastmod> liczony z gita źródeł treści; llms.txt sprawdzany
 // przeciwko treści strony (ceny, termin, transport, adresy, kontakt).
 const { execFileSync } = require('child_process');
-for (const [script, ...args] of [['scripts/update-sitemap.js'], ['scripts/check-llms.js'], ['scripts/gen-cennik.js', '--check']]) {
+for (const [script, ...args] of [['scripts/gen-wojewodztwa.js'], ['scripts/update-sitemap.js'], ['scripts/check-llms.js'], ['scripts/gen-cennik.js', '--check'], ['scripts/check-seo.js']]) {
   try {
     execFileSync('node', [script, ...args], { stdio: 'inherit' });
   } catch {

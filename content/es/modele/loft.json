@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "LOFT — frente de showroom con tres vitrinas | Pabellón modular STAGO",
-    "description": "LOFT STAGO — Volumen alargado con tres grandes vitrinas frontales y puerta central. Dimensiones, material de fachada, color e interior adaptables. Presupuesto gratuito.",
+    "description": "LOFT STAGO — Volumen alargado con tres grandes vitrinas frontales y puerta central. Dimensiones, material de fachada, color e interior adaptables.",
     "canonical": "https://stago.com.pl/modele/loft.html",
     "ogTitle": "LOFT — frente de showroom con tres vitrinas",
     "ogDescription": "Volumen alargado con tres grandes vitrinas frontales y puerta central. Aspecto de showroom — interior luminoso, exterior impactante. Material de fachada a su elección.",
@@ -284,7 +284,7 @@
       "text": "Tienda, oficina, cafetería, vivienda — le mostramos qué modelo para qué."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Lista de precios de pabellones",
       "label": "Guía",

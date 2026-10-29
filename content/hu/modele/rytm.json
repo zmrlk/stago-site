@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "RYTM — fa keret szimmetrikus fronttal | STAGO moduláris pavilon",
-    "description": "RYTM STAGO — Határozott kerettel körülvett forma és széles front üvegajtókkal középen. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint. Ingyenes árajánlat.",
+    "description": "RYTM STAGO — Határozott kerettel körülvett forma és széles front üvegajtókkal középen. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint.",
     "canonical": "https://stago.com.pl/modele/rytm.html",
     "ogTitle": "RYTM — fa keret szimmetrikus fronttal",
     "ogDescription": "Határozott kerettel körülvett forma és széles front üvegajtókkal középen. Szimmetria, tiszta arányok, klasszikus ritmus. A keret és a kitöltés anyagát Önnel egyeztetjük.",
@@ -284,7 +284,7 @@
       "text": "Bolt, iroda, kávézó, lakás — megmutatjuk, melyik modell mihez."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Pavilon árlista",
       "label": "Útmutató",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "VIEW — Baukörper mit panoramischen Eckfenstern | Modulpavillon STAGO",
-    "description": "VIEW STAGO — Dynamische Form mit riesigen Eckverglasungen in Schrägstellung. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "VIEW STAGO — Dynamische Form mit riesigen Eckverglasungen in Schrägstellung. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/view.html",
     "ogTitle": "VIEW — Baukörper mit panoramischen Eckfenstern",
     "ogDescription": "Dynamische Form mit riesigen Eckverglasungen in Schrägstellung. Panoramablick von innen, starke Präsenz von außen. Oberer Streifen und Korpus — Material wählen Sie selbst.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

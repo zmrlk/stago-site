@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ATRI — otvorená hmota s veľkým zasklením | Modulárny pavilón STAGO",
-    "description": "ATRI STAGO — Kompaktná forma s výrazným posuvným vstupom a panoramatickým oknom. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba. Bezplatná cenová ponuka.",
+    "description": "ATRI STAGO — Kompaktná forma s výrazným posuvným vstupom a panoramatickým oknom. Rozmer, materiál fasády, farba a interiér prispôsobíte podľa seba.",
     "canonical": "https://stago.com.pl/modele/atri.html",
     "ogTitle": "ATRI — otvorená hmota s veľkým zasklením",
     "ogDescription": "Kompaktná forma s výrazným posuvným vstupom a panoramatickým oknom. Otvorený priestor, veľa svetla vo vnútri. Fasáda — drevo, plech, HPL — vyberiete si Vy.",
@@ -284,7 +284,7 @@
       "text": "Obchod, kancelária, kaviareň, dom — ukážeme, ktorý model na čo."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Cenník pavilónov",
       "label": "Poradňa",

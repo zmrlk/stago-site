@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "VIEW — volumen con esquinas panorámicas | Pabellón modular STAGO",
-    "description": "VIEW STAGO — Forma dinámica con enormes acristalamientos en esquina en disposición oblicua. Dimensiones, material de fachada, color e interior adaptables. Presupuesto gratuito.",
+    "description": "VIEW STAGO — Forma dinámica con enormes acristalamientos en esquina en disposición oblicua. Dimensiones, material de fachada, color e interior adaptables.",
     "canonical": "https://stago.com.pl/modele/view.html",
     "ogTitle": "VIEW — volumen con esquinas panorámicas",
     "ogDescription": "Forma dinámica con enormes acristalamientos en esquina en disposición oblicua. Vista panorámica desde el interior, presencia potente desde el exterior. Material de la franja superior y del cuerpo a su elección.",
@@ -284,7 +284,7 @@
       "text": "Tienda, oficina, cafetería, vivienda — le mostramos qué modelo para qué."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Lista de precios de pabellones",
       "label": "Guía",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "LOFT — showroomový front se třemi výkladci | Modulární pavilon STAGO",
-    "description": "LOFT STAGO — Podlouhlý tvar se třemi velkými předními výkladci a dveřmi uprostřed. Rozměr, materiál fasády, barvu a interiér přizpůsobíte na míru. Bezplatná kalkulace.",
+    "description": "LOFT STAGO — Podlouhlý tvar se třemi velkými předními výkladci a dveřmi uprostřed. Rozměr, materiál fasády, barvu a interiér přizpůsobíte na míru.",
     "canonical": "https://stago.com.pl/modele/loft.html",
     "ogTitle": "LOFT — showroomový front se třemi výkladci",
     "ogDescription": "Podlouhlý tvar se třemi velkými předními výkladci a dveřmi uprostřed. Showroom-feel — uvnitř světlo, zvenku wow. Materiál fasády vybíráte vy.",
@@ -284,7 +284,7 @@
       "text": "Obchod, kancelář, kavárna, dům — ukážeme, který model k čemu."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Ceník pavilonů",
       "label": "Poradce",

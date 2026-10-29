@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NORD — prémium forma sarokablakokkal | STAGO moduláris pavilon",
-    "description": "NORD STAGO — Erőteljes forma akcentusokkal a sarkokban és hatalmas saroküvegezéssel. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint. Ingyenes árajánlat.",
+    "description": "NORD STAGO — Erőteljes forma akcentusokkal a sarkokban és hatalmas saroküvegezéssel. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint.",
     "canonical": "https://stago.com.pl/modele/nord.html",
     "ogTitle": "NORD — prémium forma sarokablakokkal",
     "ogDescription": "Erőteljes forma akcentusokkal a sarkokban és hatalmas saroküvegezéssel. Skandináv prémium jelleg — forma, amelyet megjegyez. A homlokzat és akcentusok anyagát együtt egyeztetjük.",
@@ -284,7 +284,7 @@
       "text": "Bolt, iroda, kávézó, lakás — megmutatjuk, melyik modell mihez."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Pavilon árlista",
       "label": "Útmutató",

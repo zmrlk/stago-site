@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "NORD — volumen premium con ventanas en esquina | Pabellón modular STAGO",
-    "description": "NORD STAGO — Forma rotunda con acentos en las esquinas y enormes acristalamientos en esquina. Dimensiones, material de fachada, color e interior adaptables. Presupuesto gratuito.",
+    "title": "NORD — volumen premium con ventanas en esquina | STAGO",
+    "description": "NORD STAGO — Forma rotunda con acentos en las esquinas y enormes acristalamientos en esquina. Dimensiones, material de fachada, color e interior adaptables.",
     "canonical": "https://stago.com.pl/modele/nord.html",
     "ogTitle": "NORD — volumen premium con ventanas en esquina",
     "ogDescription": "Forma rotunda con acentos en las esquinas y enormes acristalamientos en esquina. Carácter premium escandinavo — un volumen que se recuerda. Material de fachada y acentos a su elección.",
@@ -284,7 +284,7 @@
       "text": "Tienda, oficina, cafetería, vivienda — le mostramos qué modelo para qué."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Lista de precios de pabellones",
       "label": "Guía",

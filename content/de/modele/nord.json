@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NORD — Premium-Baukörper mit Eckfenstern | Modulpavillon STAGO",
-    "description": "NORD STAGO — Starke Form mit Akzenten in den Ecken und riesigen Eckverglasungen. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "NORD STAGO — Starke Form mit Akzenten in den Ecken und riesigen Eckverglasungen. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/nord.html",
     "ogTitle": "NORD — Premium-Baukörper mit Eckfenstern",
     "ogDescription": "Starke Form mit Akzenten in den Ecken und riesigen Eckverglasungen. Skandinavischer Premium-Charakter — ein Baukörper, den man nicht vergisst. Fassadenmaterial und Akzente legen wir gemeinsam fest.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

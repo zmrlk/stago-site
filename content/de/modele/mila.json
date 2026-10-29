@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "MILA — Baukörper im klassischen Layout | Modulpavillon STAGO",
-    "description": "MILA STAGO — Kompakte Form, symmetrische Proportionen, große Eingangstür mittig. Maße, Fassadenmaterial, Farbe und Innenausbau passen wir individuell an. Kostenloses Angebot.",
+    "description": "MILA STAGO — Kompakte Form, symmetrische Proportionen, große Eingangstür mittig. Maße, Fassadenmaterial, Farbe und Innenausbau passen wir individuell an.",
     "canonical": "https://stago.com.pl/modele/mila.html",
     "ogTitle": "MILA — Baukörper im klassischen Layout",
     "ogDescription": "Kompakte Form, symmetrische Proportionen, große Eingangstür mittig. Universelles Layout für jeden Verwendungszweck. Fassade — Holz, Blech, HPL oder Kompositpaneele — Sie entscheiden.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

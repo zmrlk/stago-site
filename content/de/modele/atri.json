@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ATRI — offener Baukörper mit großer Verglasung | Modulpavillon STAGO",
-    "description": "ATRI STAGO — Kompakte Form mit markanter Schiebetür und Panoramafenster. Maße, Fassadenmaterial, Farbe und Innenausbau passen wir individuell an. Kostenloses Angebot.",
+    "description": "ATRI STAGO — Kompakte Form mit markanter Schiebetür und Panoramafenster. Maße, Fassadenmaterial, Farbe und Innenausbau passen wir individuell an.",
     "canonical": "https://stago.com.pl/modele/atri.html",
     "ogTitle": "ATRI — offener Baukörper mit großer Verglasung",
     "ogDescription": "Kompakte Form mit markanter Schiebetür und Panoramafenster. Offener Grundriss, viel Licht im Inneren. Fassade — Holz, Blech, HPL — Sie entscheiden.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

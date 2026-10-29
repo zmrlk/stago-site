@@ -9,9 +9,16 @@
   <title>{{meta.title}}</title>
   <meta name="description" content="{{meta.description}}">
   <link rel="canonical" href="{{meta.canonical}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{meta.canonical}}">
   <meta property="og:title" content="{{meta.title}}">
   <meta property="og:description" content="{{meta.description}}">
+  <meta property="og:locale" content="{{ui.locale}}">
   <meta property="og:image" content="{{meta.ogImage}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{meta.title}}">
+  <meta name="twitter:description" content="{{meta.description}}">
+  <meta name="twitter:image" content="{{meta.ogImage}}">
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="{{{root}}}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{{root}}}assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -39,13 +46,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <div class="lang-switch">
           <button class="lang-btn" aria-label="Language">{{{ui.flag}}}</button>
           <div class="lang-dropdown" style="display:none">
-            <a href="{{{root}}}{{{pagePath}}}">🇵🇱 Polski</a>
-            <a href="{{{root}}}de/{{{pagePath}}}">🇩🇪 Deutsch</a>
-            <a href="{{{root}}}cz/{{{pagePath}}}">🇨🇿 Čeština</a>
-            <a href="{{{root}}}sk/{{{pagePath}}}">🇸🇰 Slovenčina</a>
-            <a href="{{{root}}}hu/{{{pagePath}}}">🇭🇺 Magyar</a>
-            <a href="{{{root}}}it/{{{pagePath}}}">🇮🇹 Italiano</a>
-            <a href="{{{root}}}es/{{{pagePath}}}">🇪🇸 Español</a>
+            <a href="{{{langPl}}}">🇵🇱 Polski</a>
+            <a href="{{{langDe}}}">🇩🇪 Deutsch</a>
+            <a href="{{{langCz}}}">🇨🇿 Čeština</a>
+            <a href="{{{langSk}}}">🇸🇰 Slovenčina</a>
+            <a href="{{{langHu}}}">🇭🇺 Magyar</a>
+            <a href="{{{langIt}}}">🇮🇹 Italiano</a>
+            <a href="{{{langEs}}}">🇪🇸 Español</a>
           </div>
         </div>
         <a href="tel:+48509508210" class="nav-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>509 508 210</a>
@@ -86,7 +93,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <div class="container" style="text-align:center">
       <h2 class="h2">{{{cta.h2}}}</h2>
       <p>{{{cta.sub}}}</p>
-      <a href="{{{pageRoot}}}konfigurator.html" class="btn btn-primary btn-lg">{{{ui.cta.freeQuote}}}</a>
+      <a href="{{{navCtaHref}}}" class="btn btn-primary btn-lg">{{{ui.cta.freeQuote}}}</a>
     </div>
   </section>
 

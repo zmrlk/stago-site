@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "CUBE — modularer Kubus mit markantem Einsatz | Modulpavillon STAGO",
-    "description": "CUBE STAGO — Klare geometrische Form mit markantem Paneeleinsatz als Akzent. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar. Kostenloses Angebot.",
+    "description": "CUBE STAGO — Klare geometrische Form mit markantem Paneeleinsatz als Akzent. Maße, Fassadenmaterial, Farbe und Innenausbau individuell anpassbar.",
     "canonical": "https://stago.com.pl/modele/cube.html",
     "ogTitle": "CUBE — modularer Kubus mit markantem Einsatz",
     "ogDescription": "Klare geometrische Form mit markantem Paneeleinsatz als Akzent. Lässt sich leicht zu größeren Layouts verbinden. Solide, funktional, schnörkellos. Paneel- und Einsatzmaterial wählen Sie selbst.",
@@ -284,7 +284,7 @@
       "text": "Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Preisliste Pavillons",
       "label": "Ratgeber",

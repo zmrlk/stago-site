@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "NOIR — nyújtott monolit lamellákkal | STAGO moduláris pavilon",
-    "description": "NOIR STAGO — Karcsú, nyújtott forma függőleges lamellákkal és hosszúkás ablakokkal. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint. Ingyenes árajánlat.",
+    "description": "NOIR STAGO — Karcsú, nyújtott forma függőleges lamellákkal és hosszúkás ablakokkal. Méret, homlokzat anyaga, szín és belső tér az Ön igényei szerint.",
     "canonical": "https://stago.com.pl/modele/noir.html",
     "ogTitle": "NOIR — nyújtott monolit lamellákkal",
     "ogDescription": "Karcsú, nyújtott forma függőleges lamellákkal és hosszúkás ablakokkal. Butik jelleg, felesleges részletek nélkül. A lamellák anyagát és színvilágát Önnel egyeztetjük.",
@@ -284,7 +284,7 @@
       "text": "Bolt, iroda, kávézó, lakás — megmutatjuk, melyik modell mihez."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
       "alt": "Pavilon árlista",
       "label": "Útmutató",
