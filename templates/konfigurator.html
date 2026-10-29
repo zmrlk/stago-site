@@ -1704,12 +1704,36 @@ const state = {
 };
 
 // ── LOAD FROM STORAGE ──
+// Tylko znane pola o właściwym typie (zapis mógł pochodzić ze starszej wersji albo zostać zmieniony ręcznie).
+// Widok odtwarzamy na końcu inicjalizacji (restoreUI niżej) — wcześniej stałe kroków jeszcze nie istnieją.
+function stanZZapisu(s) {
+  const out = {};
+  if (!s || typeof s !== 'object' || Array.isArray(s)) return out;
+  ['type', 'przeznaczenie', 'dimL', 'dimW', 'dimH', 'profil', 'kolorScian', 'okucia', 'kolorOkuc', 'rozmOkuc',
+   'doorType', 'doorGlazing', 'windowType', 'woodName', 'woodHex', 'kolorScianRal', 'kolorScianHex', 'kolorOkucRal', 'kolorOkucHex']
+    .forEach(k => { if (typeof s[k] === 'string') out[k] = s[k]; });
+  ['okuciaMetal', 'openingsInit'].forEach(k => { if (typeof s[k] === 'boolean') out[k] = s[k]; });
+  ['doorQty', 'windowQty'].forEach(k => { if (Number.isInteger(s[k]) && s[k] >= 0 && s[k] <= 50) out[k] = s[k]; });
+  if (Number.isInteger(s.step) && s.step >= 1 && s.step <= 5) out.step = s.step;
+  if (Array.isArray(s.extras)) out.extras = s.extras.filter(x => typeof x === 'string');
+  if (Array.isArray(s.accents)) out.accents = s.accents.filter(x => typeof x === 'string');
+  if (Array.isArray(s.openings)) {
+    out.openings = s.openings
+      .filter(o => o && typeof o === 'object' && ['A', 'B', 'C', 'D'].includes(o.wall) && ['wit', 'door', 'okn'].includes(o.kind))
+      .map(o => Object.assign({ wall: o.wall, kind: o.kind },
+        typeof o.t === 'number' && o.t >= 0 && o.t <= 1 ? { t: o.t } : {},
+        o.hinge === 'left' || o.hinge === 'right' ? { hinge: o.hinge } : {}));
+  }
+  return out;
+}
+let zapisDoOdtworzenia = false;
 try {
   const saved = localStorage.getItem('stago_cfg');
   if (saved) {
-    const s = JSON.parse(saved);
-    Object.assign(state, s);
-    restoreUI();
+    Object.assign(state, stanZZapisu(JSON.parse(saved)));
+    const modele = [...document.querySelectorAll('.type-card')].map(c => c.dataset.type);
+    if (!modele.includes(state.type)) state.type = '';
+    zapisDoOdtworzenia = true;
   }
 } catch(e) {}
 
@@ -2511,6 +2535,14 @@ document.querySelectorAll('.okucia-row').forEach(c => {
     state.kolorScianHex = sel.querySelector('.color-dot').style.background;
   }
 })();
+
+// Odtworzenie widoku z zapisu — po zdefiniowaniu wszystkich stałych (panels, WALL_OPTS, KIND_OPTS…).
+// Krok nie dalej, niż pozwalają model i wymiar.
+if (zapisDoOdtworzenia) {
+  if (!state.type) state.step = 1;
+  else if (state.step > 2 && !wymiaryOk(state.dimL, state.dimW)) state.step = 2;
+  restoreUI();
+}
 
 // Init bar + okucia conditional UI + preview
 updateBar();
