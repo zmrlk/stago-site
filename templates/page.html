@@ -9,6 +9,8 @@
   <title>{{meta.title}}</title>
   <meta name="description" content="{{meta.description}}">
   <link rel="canonical" href="{{meta.canonical}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{meta.canonical}}">
   <meta property="og:title" content="{{meta.title}}">
   <meta property="og:description" content="{{meta.description}}">
   <meta property="og:locale" content="{{ui.locale}}">
@@ -22,6 +24,7 @@
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
   <link rel="icon" type="image/png" href="{{{root}}}assets/sygnet.png">
   {{{ldjson}}}
+  {{{pageLd}}}
 </head>
 <body>
 

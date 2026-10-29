@@ -385,6 +385,35 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   if (data.meta.canonical) data.meta.canonical = data.meta.canonical.replace(/\.html$/, '');
   if (data.meta.ogUrl) data.meta.ogUrl = data.meta.ogUrl.replace(/\.html$/, '');
 
+  // WebPage + BreadcrumbList JSON-LD dla stron z page.html i hubów — 84 strony nie miały
+  // żadnych danych strukturalnych. Tylko to, co już jest na stronie (title, description,
+  // canonical, okruszki); BreadcrumbList pomijany, gdy strona ma własny w ldjson.
+  const hub = tmplPath.endsWith('modele-hub.html') ? 'modele' : tmplPath.endsWith('zastosowania-hub.html') ? 'zastosowania' : null;
+  if ((tmplPath.endsWith('page.html') || hub) && data.meta.canonical) {
+    const home = `https://stago.com.pl/${langDir ? langDir + '/' : ''}`;
+    const crumb = hub ? ui.breadcrumb[hub] : data.breadcrumb;
+    const graph = [{
+      '@type': 'WebPage',
+      '@id': data.meta.canonical + '#webpage',
+      url: data.meta.canonical,
+      name: data.meta.title,
+      ...(data.meta.description ? { description: data.meta.description } : {}),
+      inLanguage: ui.lang,
+      isPartOf: { '@type': 'WebSite', url: 'https://stago.com.pl/', name: 'STAGO' },
+    }];
+    if (crumb && !/BreadcrumbList/.test(data.ldjson || '')) {
+      graph.push({
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: ui.breadcrumb.home, item: home },
+          { '@type': 'ListItem', position: 2, name: crumb, item: data.meta.canonical },
+        ],
+      });
+    }
+    data.pageLd = '<script type="application/ld+json">'
+      + JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c') + '</script>';
+  }
+
   // Load and render template
   const tmpl = fs.readFileSync(tmplPath, 'utf8');
   let html = render(tmpl, data);
