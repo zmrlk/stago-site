@@ -5,39 +5,63 @@
 # Stare strony z obecnej stago.com.pl (Lovable)
 /kontakty                    / 301
 /o-nas                       / 301
-/oferta                      /zastosowania.html 301
+/oferta                      /zastosowania 301
 /galeria                     / 301
-/produkty                    /modele.html 301
-/kontener-handlowy           /zastosowania/handlowy.html 301
-/kontener-handlowy.html      /zastosowania/handlowy.html 301
-/pawilon-modulowy            /modele.html 301
-/pawilony                    /modele.html 301
-/cennik                      /blog/cennik-pawilonow-2026.html 301
+/produkty                    /modele 301
+/kontener-handlowy           /zastosowania/handlowy 301
+/kontener-handlowy.html      /zastosowania/handlowy 301
+/pawilon-modulowy            /modele 301
+/pawilony                    /modele 301
+/cennik                      /blog/cennik-pawilonow-2026 301
+
+/kontakty.html               / 301
+/o-nas.html                  / 301
+/oferta.html                 /zastosowania 301
+/galeria.html                / 301
+/produkty.html               /modele 301
+/pawilon-modulowy.html       /modele 301
+/cennik.html                 /blog/cennik-pawilonow-2026 301
 
 # Stare modele S01-S15 → hub modeli
-/modele/s01.html             /modele.html 301
-/modele/s02.html             /modele.html 301
-/modele/s03.html             /modele.html 301
-/modele/s04.html             /modele.html 301
-/modele/s05.html             /modele/nord.html 301
-/modele/s06.html             /modele.html 301
-/modele/s07.html             /modele.html 301
-/modele/s08.html             /modele/loft.html 301
-/modele/s09.html             /modele.html 301
-/modele/s10.html             /modele/duet.html 301
-/modele/s11.html             /modele.html 301
-/modele/s12.html             /modele.html 301
-/modele/s13.html             /modele.html 301
-/modele/s14.html             /modele.html 301
-/modele/s15.html             /modele.html 301
+/modele/s01.html             /modele 301
+/modele/s02.html             /modele 301
+/modele/s03.html             /modele 301
+/modele/s04.html             /modele 301
+/modele/s05.html             /modele/nord 301
+/modele/s06.html             /modele 301
+/modele/s07.html             /modele 301
+/modele/s08.html             /modele/loft 301
+/modele/s09.html             /modele 301
+/modele/s10.html             /modele/duet 301
+/modele/s11.html             /modele 301
+/modele/s12.html             /modele 301
+/modele/s13.html             /modele 301
+/modele/s14.html             /modele 301
+/modele/s15.html             /modele 301
 
 # Stare strony produktowe → nowe zastosowania
-/pawilon-handlowy.html       /zastosowania/handlowy.html 301
-/pawilon-mieszkalny.html     /zastosowania/mieszkalny.html 301
-/pawilon-premium.html        /zastosowania/specjalny.html 301
-/kontener-biurowy.html       /zastosowania/biurowy.html 301
-/kontener-magazynowy.html    /zastosowania/socjalny.html 301
-/kontener-sanitarny.html     /zastosowania/specjalny.html 301
+/pawilon-handlowy.html       /zastosowania/handlowy 301
+/pawilon-mieszkalny.html     /zastosowania/mieszkalny 301
+/pawilon-premium.html        /zastosowania/specjalny 301
+/kontener-biurowy.html       /zastosowania/biurowy 301
+/kontener-magazynowy.html    /zastosowania/socjalny 301
+/kontener-sanitarny.html     /zastosowania/specjalny 301
+
+# Strony-zaślepki z meta refresh (noindex) — bez reguły serwowane jako 200 pod czystym URL
+/kontener-biurowy            /zastosowania/biurowy 301
+/kontener-magazynowy         /zastosowania/socjalny 301
+/kontener-sanitarny          /zastosowania/specjalny 301
+/kontenery-biurowe           /zastosowania/biurowy 301
+/kontenery-biurowe.html      /zastosowania/biurowy 301
+/kontenery-budowlane         /zastosowania/socjalny 301
+/kontenery-budowlane.html    /zastosowania/socjalny 301
+/kontenery-handlowe          /zastosowania/handlowy 301
+/kontenery-handlowe.html     /zastosowania/handlowy 301
+/kontenery-mieszkalne        /zastosowania/mieszkalny 301
+/kontenery-mieszkalne.html   /zastosowania/mieszkalny 301
+/pawilon-handlowy            /zastosowania/handlowy 301
+/pawilon-mieszkalny          /zastosowania/mieszkalny 301
+/pawilon-premium             /zastosowania/specjalny 301
 
 # Usunięte 28.10.2026: porównania z konkurencją, ranking, demo i katalog (PR #3)
 /stago-vs-defro                        / 301
