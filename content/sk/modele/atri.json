@@ -97,13 +97,13 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "Izolácia PIR 100mm",
-        "text": "Doska PIR 100 mm na stenách, streche a podlahe. Lambda 0,022 W/(m·K) — energeticky úsporná trieda. V zime drží teplo, v lete sa neprehrieva ako plech."
+        "h3": "Izolácia PIR: steny 100 mm, strecha 160 mm",
+        "text": "Doska PIR 100 mm na stenách a 160 mm na streche. Lambda 0,022 W/(m·K) — energeticky úsporná trieda. V zime drží teplo, v lete sa neprehrieva ako plech."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
-        "h3": "Hliníkové výplne",
-        "text": "Hliníkové okná a dvere s termickým prerušením. Energeticky úsporné profily, izolačné dvojsklá. Tesnenia, zámky, regulácia — certifikát výrobcu."
+        "h3": "Výplne z PVC alebo hliníka",
+        "text": "Okná a dvere z PVC alebo hliníka — podľa objednávky. Energeticky úsporné profily, izolačné dvojsklá. Tesnenia, zámky, regulácia — certifikát výrobcu."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
@@ -111,6 +111,49 @@
         "text": "Elektrika, LED osvetlenie, rozvádzač — v štandarde. Voda, kanalizácia, ventilácia, klimatizácia — podľa Vášho účelu. Pripravené na pripojenie na pozemku."
       }
     ]
+  },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model ATRI (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",
+    "pokaz": false,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu ATRI = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model ATRI",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła ATRI — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu ATRI przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model ATRI",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
   },
   "benefits": {
     "eyebrow": "V cene",
@@ -253,7 +296,7 @@
     "name": "Modulárny pavilón STAGO ATRI",
     "description": "ATRI. Kompaktná forma s výrazným posuvným vstupom a panoramatickým oknom. Otvorený priestor, veľa svetla vo vnútri. Fasáda — drevo, plech, HPL — vyberiete si Vy.",
     "image": "https://stago.com.pl/assets/modele/atri.webp",
-    "lowPrice": "20564",
+    "lowPrice": "26215",
     "highPrice": "80000"
   }
 }

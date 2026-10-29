@@ -97,13 +97,13 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "Isolamento PIR 100mm",
-        "text": "Pannello PIR 100 mm su pareti, tetto e pavimento. Lambda 0,022 W/(m·K) — classe ad alta efficienza energetica. D'inverno mantiene il calore, d'estate non si surriscalda come un container in lamiera."
+        "h3": "Isolamento PIR: pareti 100 mm, tetto 160 mm",
+        "text": "Pannello PIR 100 mm sulle pareti e 160 mm sul tetto. Lambda 0,022 W/(m·K) — classe ad alta efficienza energetica. D'inverno mantiene il calore, d'estate non si surriscalda come un container in lamiera."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
-        "h3": "Infissi in alluminio",
-        "text": "Finestre e porte in alluminio con taglio termico. Profili ad alta efficienza energetica, vetri camera. Guarnizioni, serrature, regolazione — certificato del produttore."
+        "h3": "Infissi in PVC o alluminio",
+        "text": "Finestre e porte in PVC o alluminio, a seconda dell'ordine. Profili ad alta efficienza energetica, vetri camera. Guarnizioni, serrature, regolazione — certificato del produttore."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
@@ -111,6 +111,49 @@
         "text": "Impianto elettrico, illuminazione LED, quadro elettrico — di serie. Acqua, fognatura, ventilazione, climatizzazione — secondo la tua destinazione. Pronto per l'allacciamento sul terreno."
       }
     ]
+  },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model VIEW (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",
+    "pokaz": false,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu VIEW = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model VIEW",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła VIEW — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu VIEW przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model VIEW",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
   },
   "benefits": {
     "eyebrow": "Incluso nel prezzo",
@@ -253,7 +296,7 @@
     "name": "Padiglione modulare STAGO VIEW",
     "description": "VIEW. Forma dinamica con enormi vetrate angolari in layout obliquo. Vista panoramica dall'interno, forte presenza dall'esterno. Materiale della fascia superiore e del corpo scegli tu.",
     "image": "https://stago.com.pl/assets/modele/view.webp",
-    "lowPrice": "20564",
+    "lowPrice": "35588",
     "highPrice": "80000"
   }
 }

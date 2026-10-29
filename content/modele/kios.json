@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "KIOS — kompaktowa bryła z pełną witryną | Pawilon modułowy STAGO",
-    "description": "KIOS STAGO — Mały footprint, jedna duża szklana witryna na całym froncie. Wymiar, materiał elewacji, kolor i wnętrze dopasujesz pod siebie. Darmowa wycena.",
+    "title": "KIOS — kiosk handlowy z pełną witryną | Pawilon modułowy STAGO",
+    "description": "KIOS STAGO — kiosk handlowy od producenta: mały footprint, jedna duża szklana witryna na całym froncie. Wymiar, elewację i wnętrze dopasujesz pod siebie.",
     "canonical": "https://stago.com.pl/modele/kios.html",
     "ogTitle": "KIOS — kompaktowa bryła z pełną witryną",
     "ogDescription": "Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.",
@@ -12,9 +12,9 @@
   "hero": {
     "img": "../assets/modele/kios.webp",
     "imgAlt": "Pawilon modułowy STAGO KIOS — kompaktowa bryła z pełną witryną",
-    "h1": "KIOS — kompaktowa bryła z pełną witryną.",
+    "h1": "KIOS — kiosk handlowy z pełną witryną.",
     "subtitle": "Mały, ciemny, z witryną na cały front. Wciśniesz go tam, gdzie większe się nie mieszczą — róg podwórka, skrawek parkingu — i zaczyna na siebie zarabiać. Kiosk, punkt odbioru, mała sprzedaż.",
-    "price": "od 20 564 zł",
+    "price": "od 24 115 zł",
     "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=kios",
     "articleHref": "../modele.html",
@@ -98,13 +98,13 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "Izolacja PIR 100mm",
-        "text": "Płyta PIR 100 mm na ścianach, dachu i podłodze. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak."
+        "h3": "Izolacja PIR: ściany 100 mm, dach 160 mm",
+        "text": "Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
-        "h3": "Stolarka aluminiowa",
-        "text": "Okna i drzwi aluminiowe z przekładką termiczną. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta."
+        "h3": "Stolarka PVC lub aluminiowa",
+        "text": "Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
@@ -112,6 +112,49 @@
         "text": "Elektryka, oświetlenie LED, rozdzielnia — w standardzie. Woda, kanalizacja, wentylacja, klimatyzacja — według Twojego przeznaczenia. Gotowe do podłączenia na działce."
       }
     ]
+  },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model KIOS (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true.",
+    "pokaz": true,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu KIOS = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model KIOS",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła KIOS — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu KIOS przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model KIOS",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
   },
   "benefits": {
     "eyebrow": "W cenie",
@@ -242,19 +285,19 @@
       "text": "Sklep, biuro, kawiarnia, dom — pokażemy, który model do czego."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
-      "alt": "Cennik pawilonów",
-      "label": "Poradnik",
-      "h3": "Cennik pawilonów 2026",
-      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+      "alt": "Cennik pawilonów handlowych STAGO",
+      "label": "Cennik",
+      "h3": "Cennik pawilonów",
+      "text": "Ceny 4×3–12×3 m od producenta. Sprawdź, ile zapłacisz."
     }
   ],
   "jsonLd": {
     "name": "Pawilon modułowy STAGO KIOS",
     "description": "KIOS. Mały footprint, jedna duża szklana witryna na całym froncie. Bryła zaprojektowana żeby sprzedawać z małej powierzchni. Materiał elewacji i kolor wybierasz Ty.",
     "image": "https://stago.com.pl/assets/modele/kios.webp",
-    "lowPrice": "20564",
+    "lowPrice": "24115",
     "highPrice": "60000"
   }
 }

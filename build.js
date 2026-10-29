@@ -23,6 +23,14 @@ try {
 // świeży HTML wchodzi na prod ze STARYM CSS i nowe reguły nie działają.
 const CSS_V = crypto.createHash('md5').update(fs.readFileSync('style.css')).digest('hex').slice(0, 8);
 
+// ── Cennik pawilonów: content/cennik-pawilonow.json (generowany z CSV przez scripts/gen-cennik.js) ──
+const CENNIK = JSON.parse(fs.readFileSync('content/cennik-pawilonow.json', 'utf8'));
+const rzut2d = require('./rzut2d.js');
+
+// ── Karty wymiarów (uwagi Denisa 29.10.2026): /pawilon-4x3 … /pawilon-10x3, tylko PL ──
+const WYMIARY_KART = ['4x3', '6x3', '8x3', '10x3'];
+const zlote = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' zł';
+
 // ── Mini Mustache renderer ──
 function render(template, data) {
   template = template.replace(/\{\{#(\w+(?:\.\w+)*)\}\}([\s\S]*?)\{\{\/\1\}\}/g, (_, key, inner) => {
@@ -97,7 +105,50 @@ function ostempluj(html, outputPath) {
     }).join(', ');
     return a + nowa + b;
   });
-  return html;
+  return zwymiaruj(html, katalog);
+}
+
+// ── width/height na <img> z wymiarów pliku ──
+// Bez nich przeglądarka nie rezerwuje miejsca przed pobraniem zdjęcia i treść skacze (CLS).
+// Wymiary naturalne + img{height:auto} w style.css = ten sam układ co bez atrybutów.
+const WYMIARY = new Map();
+
+function wymiary(plik) {
+  if (WYMIARY.has(plik)) return WYMIARY.get(plik);
+  let w = null;
+  try {
+    const b = fs.readFileSync(plik);
+    if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
+      const typ = b.toString('ascii', 12, 16);
+      if (typ === 'VP8X') w = [1 + b.readUIntLE(24, 3), 1 + b.readUIntLE(27, 3)];
+      else if (typ === 'VP8L') { const n = b.readUInt32LE(21); w = [1 + (n & 0x3fff), 1 + ((n >> 14) & 0x3fff)]; }
+      else if (typ === 'VP8 ') w = [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
+    } else if (b.readUInt32BE(0) === 0x89504e47) {
+      w = [b.readUInt32BE(16), b.readUInt32BE(20)];
+    } else if (b[0] === 0xff && b[1] === 0xd8) {
+      for (let i = 2; i < b.length - 9;) {
+        if (b[i] !== 0xff) break;
+        const znacznik = b[i + 1];
+        if (znacznik >= 0xc0 && znacznik <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(znacznik)) { w = [b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)]; break; }
+        i += 2 + b.readUInt16BE(i + 2);
+      }
+    }
+  } catch (e) {
+    w = null; // brak pliku albo nieznany format — atrybuty zostają bez zmian
+  }
+  if (w && !(w[0] > 0 && w[1] > 0)) w = null;
+  WYMIARY.set(plik, w);
+  return w;
+}
+
+function zwymiaruj(html, katalog) {
+  return html.replace(/<img\b[^>]*>/gi, (tag) => {
+    if (/\swidth="/i.test(tag) || /\sheight="/i.test(tag)) return tag;
+    const adres = tag.match(/\ssrc="([^"?#]+)/i)?.[1];
+    if (!adres || /^(https?:|data:|\/\/)/.test(adres)) return tag;
+    const w = wymiary(adres.startsWith('/') ? adres.slice(1) : path.normalize(path.join(katalog, adres)));
+    return w ? tag.replace(/^<img\b/i, `<img width="${w[0]}" height="${w[1]}"`) : tag;
+  });
 }
 
 // app.js podmienia zdjecia historii w locie, wiec adresy w nim tez potrzebuja odcisku.
@@ -204,6 +255,10 @@ function getPages() {
     ...MODELS.map(s => ({
       content: `modele/${s}.json`, template: 'templates/model.html', output: `modele/${s}.html`, i18n: true
     })),
+    // Karty wymiarów (PL) — treść wspólna w content/wymiary/_karta.json, ceny z cennika
+    ...WYMIARY_KART.map(s => ({
+      content: `wymiary/${s}.json`, template: 'templates/page.html', output: `pawilon-${s}.html`, i18n: false
+    })),
     // Zastosowania hub + uses
     { content: 'zastosowania-index.json', template: 'templates/zastosowania-hub.html', output: 'zastosowania.html', i18n: true },
     ...USES.map(s => ({
@@ -218,8 +273,9 @@ function getPages() {
     // SEO landing pages (PL only for now)
     ...['pawilony-sprzedaz','pawilony-pod-klucz','cennik-pawilonow-handlowych',
        'cennik-kontenerow-biurowych','pawilon-bez-pozwolenia-przepisy',
-       'stago-vs-dampol','stago-vs-novi','stago-vs-defro','ranking-producentow-pawilonow',
-       'producent-kontenerow-modulowych','pawilon-na-dzialke'].map(s => ({
+       'producent-kontenerow-modulowych','pawilon-na-dzialke',
+       // Szkielety (noindex, bez linków, poza sitemap) — uwagi Denisa 29.10.2026, 🟠
+       'realizacja-naprzod-jedrzejow','karta-techniczna-nord'].map(s => ({
       content: `pages/${s}.json`, template: 'templates/page.html', output: `${s}.html`, i18n: false
     })),
   ];
@@ -293,8 +349,9 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
     data = adjustAssetPaths(data, '../');
   }
 
-  // For i18n: adjust canonical URL
-  if (!isPl && data.meta && data.meta.canonical) {
+  // For i18n: adjust canonical URL (część content/{lang}/pages/*.json ma już prefiks języka —
+  // bez tego warunku wychodziło https://stago.com.pl/es/es/faq na 52 stronach)
+  if (!isPl && data.meta && data.meta.canonical && !data.meta.canonical.startsWith(`https://stago.com.pl/${langDir}/`)) {
     data.meta.canonical = data.meta.canonical.replace(
       'https://stago.com.pl/',
       `https://stago.com.pl/${langDir}/`
@@ -312,6 +369,110 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.cssV = CSS_V;
   data.googleRating = REVIEWS;
   data.assetV = ASSET_V;
+
+  // Przełącznik języka: link do przetłumaczonej strony, jeśli istnieje; inaczej na stronę główną
+  // danego języka (nie na nieistniejące /{lang}/<podstrona>, które dawało 404). Z PR #4.
+  function hrefJezyka(targetLang) {
+    const cfg = LANGS[targetLang];
+    const sciezka = targetLang === 'pl' ? `content/${contentRel}` : `content/${targetLang}/${contentRel}`;
+    const prefix = cfg.dir ? cfg.dir + '/' : '';
+    if (fs.existsSync(sciezka)) return data.root + prefix + output;
+    return data.root + prefix + 'index.html';
+  }
+  data.langPl = hrefJezyka('pl');
+  data.langDe = hrefJezyka('de');
+  data.langCz = hrefJezyka('cz');
+  data.langSk = hrefJezyka('sk');
+  data.langHu = hrefJezyka('hu');
+  data.langIt = hrefJezyka('it');
+  data.langEs = hrefJezyka('es');
+
+  // „Co jest w cenie” na stronach modeli: tabela cen z cennika (tylko PL — ceny w PLN; € do decyzji)
+  const modelMatch = contentRel.match(/^modele\/([a-z]+)\.json$/);
+  if (modelMatch && isPl) {
+    const M = modelMatch[1].toUpperCase();
+    const zl = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' zł';
+    if (CENNIK.modele.includes(M)) {
+      data.cennikModelu = CENNIK.rozmiary.map((r) => ({
+        rozmiar: `${r.dlugosc}×${r.szerokosc} m`,
+        kartaHref: WYMIARY_KART.includes(r.rozmiar) ? `../pawilon-${r.rozmiar}.html` : '',
+        m2: r.m2,
+        cena: r.doplaty[M] == null ? `dostępny od ${CENNIK.od[M].rozmiar.replace('x', '×')} m` : zl(r.podstawa + r.doplaty[M]),
+      }));
+      data.maCennikModelu = true;
+    }
+  }
+
+  // Karta wymiaru: ceny modeli w tym wymiarze z cennika + rzut 2D wersji podstawowej (drzwi i 2 okna)
+  const kartaMatch = contentRel.match(/^wymiary\/(\d+x\d+)\.json$/);
+  if (kartaMatch && isPl) {
+    const karta = JSON.parse(fs.readFileSync('content/wymiary/_karta.json', 'utf8'));
+    const r = CENNIK.rozmiary.find((x) => x.rozmiar === kartaMatch[1]);
+    if (!r) throw new Error(`karta wymiaru ${kartaMatch[1]}: brak rozmiaru w cenniku`);
+    const rozmiar = `${r.dlugosc}×${r.szerokosc} m`;
+    const modele = CENNIK.modele.map((M) => ({ M, cena: r.doplaty[M] == null ? null : r.podstawa + r.doplaty[M] }));
+    const dostepne = modele.filter((m) => m.cena != null).sort((a, b) => a.cena - b.cena);
+    const od = dostepne[0];
+    Object.assign(data, {
+      karta, rozmiar, L: r.dlugosc, W: r.szerokosc, m2: r.m2,
+      cenaOd: zlote(od.cena), modelOd: od.M,
+      h1: `Pawilon ${rozmiar} całoroczny`,
+      lead: `${r.m2} m² powierzchni, szerokość ${r.szerokosc} m. ${dostepne.length} z ${modele.length} modeli STAGO w tym wymiarze — od ${zlote(od.cena)} do ${zlote(dostepne[dostepne.length - 1].cena)} netto.`,
+      cenaNote: karta.cenaNote.replace('{{modelOd}}', od.M),
+      heroAlt: `Pawilon STAGO ${data.heroModel.toUpperCase()} — render poglądowy`,
+      breadcrumb: `Pawilon ${rozmiar}`,
+      dane: [
+        { label: 'Wymiar zewnętrzny', value: `${r.dlugosc} × ${r.szerokosc} m` },
+        { label: 'Powierzchnia', value: `${r.m2} m²` },
+        { label: 'Wysokość', value: karta.wysokosc },
+        { label: 'Konstrukcja', value: karta.konstrukcja },
+        { label: 'Ściany', value: karta.sciany },
+        { label: 'Dach', value: karta.dach },
+        { label: 'Stolarka', value: karta.stolarka },
+        data.masa ? { label: 'Masa pawilonu', value: data.masa }
+          : { label: 'Masa pawilonu', value: karta.masaTodo, todo: `masa ${r.rozmiar} — pytanie 11` },
+        { label: 'Termin', value: karta.termin },
+        { label: 'Transport', value: karta.transport },
+        { label: 'Montaż', value: karta.montaz },
+        ...(r.m2 <= 35 ? [{ label: 'Formalności', value: karta.zgloszenie }] : []),
+      ],
+      modeleWymiaru: [...dostepne, ...modele.filter((m) => m.cena == null)].map(({ M, cena }) => ({
+        nazwa: M, slug: M.toLowerCase(), href: `modele/${M.toLowerCase()}.html`,
+        cena: cena == null ? `dostępny od ${CENNIK.od[M].rozmiar.replace('x', '×')} m` : `od ${zlote(cena)}`,
+      })),
+      rzutSvg: rzut2d({ L: r.dlugosc, W: r.szerokosc, openings: [
+        { wall: 'A', kind: 'door' }, { wall: 'A', kind: 'okn' }, { wall: 'C', kind: 'okn' },
+      ] }),
+    });
+    data.meta = {
+      title: `Pawilon ${rozmiar} całoroczny — cena od ${zlote(od.cena)} netto | STAGO`,
+      description: `Pawilon ${rozmiar} (${r.m2} m²) od producenta: ${dostepne.length} modeli od ${zlote(od.cena)} netto, ściany PIR 100 mm, dach PIR 160 mm, spawana rama stalowa. Produkcja 4–6 tygodni. Skonfiguruj i wyślij po ofertę.`,
+      canonical: `https://stago.com.pl/pawilon-${r.rozmiar}.html`,
+      ogImage: `https://stago.com.pl/assets/modele/${data.heroModel}.webp`,
+      ...(data.meta || {}),
+    };
+    data.body = render(fs.readFileSync('templates/karta-wymiaru.html', 'utf8'), data);
+  }
+
+  // Cennik pawilonów (macierz rozmiar × model) — konfigurator liczy cenę orientacyjną w przeglądarce
+  if (tmplPath.endsWith('konfigurator.html')) {
+    data.cennikJson = JSON.stringify(CENNIK).replace(/</g, '\\u003c');
+  }
+
+  // FAQPage JSON-LD na stronach zastosowań — z tych samych pytań, które widać na stronie
+  // (bez HTML w odpowiedziach; "<" kodowane, żeby treść nie zamknęła <script>).
+  if (tmplPath.endsWith('zastosowanie.html') && data.faq && Array.isArray(data.faq.items) && data.faq.items.length) {
+    const bezHtml = (s) => String(s).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    data.faqLd = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: data.faq.items.map((i) => ({
+        '@type': 'Question',
+        name: bezHtml(i.q),
+        acceptedAnswer: { '@type': 'Answer', text: bezHtml(i.a) },
+      })),
+    }).replace(/</g, '\\u003c');
+  }
 
   // Kalkulator (pawilon-vs-najem, finansowanie) — skrypt doklejamy tylko tam, gdzie stoi w treści
   data.hasCalculator = typeof data.body === 'string' && data.body.includes('id="calcRent"');
@@ -346,6 +507,35 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // CF Pages serves clean URLs — canonical/og:url without .html (match served URL)
   if (data.meta.canonical) data.meta.canonical = data.meta.canonical.replace(/\.html$/, '');
   if (data.meta.ogUrl) data.meta.ogUrl = data.meta.ogUrl.replace(/\.html$/, '');
+
+  // WebPage + BreadcrumbList JSON-LD dla stron z page.html i hubów — 84 strony nie miały
+  // żadnych danych strukturalnych. Tylko to, co już jest na stronie (title, description,
+  // canonical, okruszki); BreadcrumbList pomijany, gdy strona ma własny w ldjson.
+  const hub = tmplPath.endsWith('modele-hub.html') ? 'modele' : tmplPath.endsWith('zastosowania-hub.html') ? 'zastosowania' : null;
+  if ((tmplPath.endsWith('page.html') || hub) && data.meta.canonical) {
+    const home = `https://stago.com.pl/${langDir ? langDir + '/' : ''}`;
+    const crumb = hub ? ui.breadcrumb[hub] : data.breadcrumb;
+    const graph = [{
+      '@type': 'WebPage',
+      '@id': data.meta.canonical + '#webpage',
+      url: data.meta.canonical,
+      name: data.meta.title,
+      ...(data.meta.description ? { description: data.meta.description } : {}),
+      inLanguage: ui.lang,
+      isPartOf: { '@type': 'WebSite', url: 'https://stago.com.pl/', name: 'STAGO' },
+    }];
+    if (crumb && !/BreadcrumbList/.test(data.ldjson || '')) {
+      graph.push({
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: ui.breadcrumb.home, item: home },
+          { '@type': 'ListItem', position: 2, name: crumb, item: data.meta.canonical },
+        ],
+      });
+    }
+    data.pageLd = '<script type="application/ld+json">'
+      + JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c') + '</script>';
+  }
 
   // Load and render template
   const tmpl = fs.readFileSync(tmplPath, 'utf8');
@@ -396,13 +586,23 @@ for (const page of pages) {
 
 console.log(`\n✓ ${builtCount} pages built, ${skippedCount} skipped (no content)`);
 
+// Strony ręczne (poza szablonami) też dostają odcisk style.css — inaczej po zmianie CSS
+// przez 7 dni (max-age w _headers) dostają stary arkusz. Zmieniamy tylko ?v= i wymiary <img>.
+const RECZNE = ['404.html', 'regiony.html',
+  ...fs.readdirSync('pawilony/wojewodztwo').filter(f => f.endsWith('.html')).map(f => `pawilony/wojewodztwo/${f}`)];
+for (const plik of RECZNE) {
+  const html = fs.readFileSync(plik, 'utf8');
+  const nowy = zwymiaruj(html.replace(/(href="(?:\/|(?:\.\.\/)*)style\.css)(?:\?v=[0-9a-f]+)?"/g, `$1?v=${CSS_V}"`), path.dirname(plik));
+  if (nowy !== html) fs.writeFileSync(plik, nowy);
+}
+
 // ── Warstwa LLM + sitemap: świeżość i spójność (build pada na dryfie) ──
 // sitemap <lastmod> liczony z gita źródeł treści; llms.txt sprawdzany
 // przeciwko treści strony (ceny, termin, transport, adresy, kontakt).
 const { execFileSync } = require('child_process');
-for (const script of ['scripts/update-sitemap.js', 'scripts/check-llms.js']) {
+for (const [script, ...args] of [['scripts/update-sitemap.js'], ['scripts/check-llms.js'], ['scripts/gen-cennik.js', '--check']]) {
   try {
-    execFileSync('node', [script], { stdio: 'inherit' });
+    execFileSync('node', [script, ...args], { stdio: 'inherit' });
   } catch {
     console.error(`✗ ${script} — build przerwany, napraw dryf zanim zdeployujesz`);
     process.exit(1);

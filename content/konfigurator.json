@@ -1,14 +1,13 @@
 {
   "meta": {
-    "title": "Konfigurator pawilonu — STAGO",
-    "description": "Skonfiguruj pawilon modułowy online. Wybierz typ, wymiary, wykończenie i wyposażenie. Darmowa wycena w 24h."
+    "title": "Konfigurator pawilonu modułowego z ceną orientacyjną | STAGO",
+    "description": "Skonfiguruj pawilon modułowy STAGO online: 12 modeli, wymiary, wykończenie i wyposażenie. Cena orientacyjna netto od razu, wycena w 24h."
   },
   "enable3d": false,
   "step1": {
-    "title": "Wybierz model",
+    "title": "Konfigurator pawilonu — wybierz model",
     "sub": "12 brył do wyboru — wymiar, materiał i wnętrze dopasujemy w kolejnych krokach",
     "description": "Każdy model ma swój charakter — od kompaktowego ATRI po panoramiczne KIOS. Wybierz bryłę, którą rozwiniemy w kolejnych krokach.",
-    "socialProof": "127 osób skonfigurowało pawilon w tym miesiącu",
     "types": [
       {
         "name": "ATRI",
@@ -96,8 +95,23 @@
         "w": "2.5"
       },
       {
+        "label": "4×3 m",
+        "l": "4",
+        "w": "3"
+      },
+      {
+        "label": "5×3 m",
+        "l": "5",
+        "w": "3"
+      },
+      {
         "label": "6×3 m",
         "l": "6",
+        "w": "3"
+      },
+      {
+        "label": "7×3 m",
+        "l": "7",
         "w": "3"
       },
       {
@@ -111,9 +125,32 @@
         "w": "3"
       },
       {
+        "label": "10×3 m",
+        "l": "10",
+        "w": "3"
+      },
+      {
         "label": "12×3 m",
         "l": "12",
         "w": "3"
+      }
+    ],
+    "purposeLabel": "Przeznaczenie",
+    "purposes": [
+      {
+        "name": "Handlowy"
+      },
+      {
+        "name": "Biurowy"
+      },
+      {
+        "name": "Usługowy"
+      },
+      {
+        "name": "Gastronomiczny"
+      },
+      {
+        "name": "Inne"
       }
     ]
   },
@@ -285,7 +322,7 @@
   "step5": {
     "title": "Podsumowanie",
     "sub": "Sprawdź dane i zostaw kontakt — odezwiemy się z wyceną",
-    "description": "Sprawdź konfigurację i zostaw kontakt. Wycenę indywidualną wysyłamy w 24h.",
+    "description": "Sprawdź konfigurację i cenę orientacyjną netto (bez transportu i montażu) i zostaw kontakt. Ostateczną wycenę wysyłamy w 24h.",
     "summaryHeading": "Twój pawilon",
     "contactHeading": "Dane kontaktowe",
     "submitLabel": "Wyślij zapytanie",

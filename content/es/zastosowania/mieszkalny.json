@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Aislamiento como en viviendas eficientes",
-        "text": "Paredes con aislamiento PIR de 100 mm, cubierta aislada y suelo con aislamiento térmico. En invierno se está caliente, en verano agradablemente fresco. La factura mensual de electricidad en temporada de invierno suele estar entre 60–100 €."
+        "text": "Paredes con aislamiento PIR de 100 mm, cubierta aislada y suelo (12 cm) con aislamiento térmico. En invierno se está caliente, en verano agradablemente fresco. La factura mensual de electricidad en temporada de invierno suele estar entre 60–100 €."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -84,8 +84,8 @@
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
-        "h3": "Carpintería de aluminio",
-        "text": "Ventanas y puertas de aluminio — eficientes, silenciosas, con rotura de puente térmico. Solo al abrirlas y cerrarlas se nota que esto no es algo provisional. Sin condensación en cristales ni corrientes de aire incluso en pleno invierno."
+        "h3": "Carpintería de PVC o aluminio",
+        "text": "Ventanas y puertas de PVC o aluminio (según el pedido) — eficientes, silenciosas. Solo al abrirlas y cerrarlas se nota que esto no es algo provisional. Sin condensación en cristales ni corrientes de aire incluso en pleno invierno."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",

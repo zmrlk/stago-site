@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Pawilon handlowy — sklep, kontener na sklep, kiosk od producenta | STAGO",
-    "description": "Pawilony handlowe od producenta. Sklep, kiosk, punkt sprzedaży na rynku. Witryny, oświetlenie, wygodne wejście. 12 modeli do wyboru. Darmowa wycena.",
+    "title": "Pawilony handlowe i kontenery handlowe od producenta | STAGO",
+    "description": "Producent pawilonów handlowych: sklep, kiosk handlowy, warzywniak, punkt sprzedaży z witryną. 12 modeli, PIR 100 mm. Pawilon 6×3 m od 29 032 zł netto.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
     "ogTitle": "Pawilon handlowy — sklep, kiosk, punkt sprzedaży od producenta",
     "ogDescription": "Pawilony handlowe od producenta. Sklep, kiosk, punkt sprzedaży. Witryny pod ekspozycję, oświetlenie, wygodne wejście. 12 modeli do wyboru.",
@@ -11,8 +11,8 @@
   "productType": "handlowy",
   "hero": {
     "img": "../assets/modele/loft.webp",
-    "imgAlt": "Pawilon do handlu STAGO — bryła LOFT",
-    "h1": "Pawilon handlowy. Sklep, kiosk, kontener na sklep.",
+    "imgAlt": "Pawilon handlowy z witrynami STAGO — model LOFT",
+    "h1": "Pawilony handlowe od producenta. Sklep, kiosk, kontener handlowy.",
     "subtitle": "Sklep, kiosk, punkt sprzedaży na rynku, ryneczek warzywny. Wiemy, że klient decyduje o wejściu w kilka sekund — dlatego projektujemy witryny pod ekspozycję, oświetlenie wydobywające produkt i wygodne wejście. Powiedz nam, co sprzedajesz — zaproponujemy układ, który pracuje na sprzedaż.",
     "price": "od 15 000 zł netto",
     "priceNote": "/ pawilon 3×2m gotowy do handlu",
@@ -141,7 +141,11 @@
     "items": [
       {
         "q": "Ile kosztuje pawilon do handlu?",
-        "a": "Mały kiosk 3×2 m zaczyna się od 15 000 zł netto. Sklep 6×3 m — od 28 000 zł. Większy punkt 12×3 m z witrynami i zapleczem — od 48 000 zł. Każdą wycenę przygotowujemy indywidualnie i bezpłatnie: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "Mały kiosk 3×2 m zaczyna się od 15 000 zł netto. Sklep 6×3 m — od 29 032 zł netto. Większy punkt 12×3 m — od 58 748 zł netto (zaplecze i wyposażenie wyceniamy osobno). Każdą wycenę przygotowujemy indywidualnie i bezpłatnie: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+      },
+      {
+        "q": "Jesteście producentem pawilonów handlowych czy pośrednikiem?",
+        "a": "Producentem. Pawilony handlowe spawamy i wykańczamy w naszym zakładzie w Jasionce pod Jędrzejowem (woj. świętokrzyskie), a potem dowozimy je na naczepie w całej Polsce. Możesz przyjechać do zakładu i zobaczyć produkcję na żywo."
       },
       {
         "q": "Czy potrzebuję pozwolenia na pawilon handlowy?",
@@ -161,7 +165,7 @@
       },
       {
         "q": "Szukam kontenera na sklep — czy to to samo?",
-        "a": "W praktyce tak. Kontener handlowy, pawilon handlowy, kontener na sklep — to różne nazwy na ten sam produkt. W STAGO budujemy je z PIR 100mm, stolarką aluminiową i pełnym wykończeniem wnętrza. Gotowe do handlu od pierwszego dnia."
+        "a": "W praktyce tak. Kontener handlowy, pawilon handlowy, kontener na sklep — to różne nazwy na ten sam produkt. W STAGO budujemy je z PIR 100mm, stolarką PVC lub aluminiową i pełnym wykończeniem wnętrza. Gotowe do handlu od pierwszego dnia."
       }
     ]
   },
@@ -235,12 +239,12 @@
       "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
-      "alt": "Cennik 2026",
-      "label": "Poradnik",
-      "h3": "Cennik pawilonów 2026",
-      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+      "alt": "Cennik pawilonów handlowych STAGO",
+      "label": "Cennik",
+      "h3": "Pawilon handlowy — cena",
+      "text": "Ceny pawilonów 4×3–12×3 m od producenta i to, co wpływa na kwotę."
     }
   ],
   "jsonLd": {

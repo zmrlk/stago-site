@@ -1,0 +1,99 @@
+<!-- Karta wymiaru (uwagi Denisa 29.10.2026, 🔴1). Ceny z content/cennik-pawilonow.json, liczone w build.js.
+     Dane bez źródła (masa, warstwy podłogi) = placeholder z data-todo; lista w content/wymiary/_karta.json → _todo. -->
+<section class="container karta-hero">
+  <div class="karta-hero-img">
+    <img src="{{{root}}}assets/modele/{{heroModel}}.webp" alt="{{heroAlt}}" fetchpriority="high">
+  </div>
+  <div class="karta-hero-text">
+    <p class="karta-eyebrow">{{{karta.eyebrow}}} · {{m2}} m²</p>
+    <h1 class="karta-h1">{{{h1}}}</h1>
+    <p class="karta-lead">{{{lead}}}</p>
+    <p class="karta-cena"><span class="karta-cena-od">od</span> {{cenaOd}} <span class="karta-cena-netto">netto</span></p>
+    <p class="karta-note">{{{cenaNote}}}</p>
+    <div class="karta-cta">
+      <a href="{{{root}}}konfigurator.html?l={{L}}&amp;w={{W}}" class="btn btn-primary btn-lg">Skonfiguruj {{rozmiar}}</a>
+      <a href="#modele-w-wymiarze" class="btn btn-outline-dark">Ceny wszystkich modeli</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light karta-sekcja" id="dane-techniczne">
+  <div class="container">
+    <p class="eyebrow">{{{karta.daneEyebrow}}}</p>
+    <h2 class="h2">{{{karta.daneH2}}}</h2>
+    <dl class="karta-dane">
+      {{#dane}}<div class="karta-dane-row"><dt>{{{label}}}</dt><dd{{#todo}} class="karta-todo" data-todo="{{todo}}"{{/todo}}>{{{value}}}</dd></div>{{/dane}}
+    </dl>
+    <p class="karta-note karta-note-center">{{{karta.daneNote}}}</p>
+  </div>
+</section>
+
+<section class="section karta-sekcja" id="przekroj">
+  <div class="container">
+    <p class="eyebrow">{{{karta.przekrojEyebrow}}}</p>
+    <h2 class="h2">{{{karta.przekrojH2}}}</h2>
+    <p class="section-sub">{{{karta.przekrojSub}}}</p>
+    <div class="karta-przekroj">
+      {{#karta.przekroj}}<div class="karta-warstwa">
+        <p class="karta-warstwa-nazwa">{{{nazwa}}}</p>
+        <p class="karta-warstwa-wartosc{{#todo}} karta-todo{{/todo}}"{{#todo}} data-todo="{{todo}}"{{/todo}}>{{{wartosc}}}</p>
+        <p class="karta-warstwa-opis">{{{opis}}}</p>
+      </div>{{/karta.przekroj}}
+    </div>
+    <p class="karta-link-center"><a href="{{{root}}}technologia.html#porownanie">{{{karta.przekrojLink}}}</a></p>
+  </div>
+</section>
+
+<section class="section section-light karta-sekcja" id="co-jest-w-cenie">
+  <div class="container">
+    <p class="eyebrow">{{{karta.wCenieEyebrow}}}</p>
+    <h2 class="h2">{{{karta.wCenieH2}}}</h2>
+    <div class="wcenie-grid">
+      {{#karta.wCenie}}<div class="wcenie-card">
+        <h3>{{{h3}}}</h3>
+        <ul>{{#items}}<li>{{{text}}}</li>{{/items}}</ul>
+      </div>{{/karta.wCenie}}
+    </div>
+  </div>
+</section>
+
+<section class="section karta-sekcja" id="uklad">
+  <div class="container karta-uklad">
+    <div class="karta-uklad-rzut">{{{rzutSvg}}}</div>
+    <div class="karta-uklad-text">
+      <p class="karta-eyebrow">{{{karta.ukladEyebrow}}}</p>
+      <h2 class="karta-h2">{{{karta.ukladH2}}}</h2>
+      <p>{{{karta.ukladText}}}</p>
+      <a href="{{{root}}}konfigurator.html?l={{L}}&amp;w={{W}}" class="btn btn-primary">Ułóż okna i drzwi w konfiguratorze</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light karta-sekcja" id="modele-w-wymiarze">
+  <div class="container">
+    <p class="eyebrow">{{{karta.modeleEyebrow}}}</p>
+    <h2 class="h2">Modele w wymiarze {{rozmiar}}</h2>
+    <p class="section-sub">{{{karta.modeleSub}}}</p>
+    <div class="karta-modele">
+      {{#modeleWymiaru}}<a href="{{{href}}}" class="karta-model">
+        <span class="karta-model-img"><img src="{{{root}}}assets/modele/{{slug}}.webp" alt="Pawilon STAGO {{nazwa}} — render poglądowy" loading="lazy"></span>
+        <span class="karta-model-body">
+          <span class="karta-model-nazwa">{{nazwa}}</span>
+          <span class="karta-model-cena">{{cena}}</span>
+        </span>
+      </a>{{/modeleWymiaru}}
+    </div>
+    <p class="karta-note karta-note-center">{{{karta.modeleNote}}}</p>
+  </div>
+</section>
+
+<section class="section section-dark karta-sekcja">
+  <div class="container karta-final">
+    <h2 class="h2">{{{karta.finalH2}}}</h2>
+    <p class="sub">{{{karta.finalText}}}</p>
+    <div class="karta-cta karta-cta-center">
+      <a href="{{{root}}}konfigurator.html?l={{L}}&amp;w={{W}}" class="btn btn-primary btn-lg">Skonfiguruj i wyślij po ofertę</a>
+      <a href="tel:+48509508210" class="btn btn-outline-light">Zadzwoń: 509 508 210</a>
+    </div>
+  </div>
+</section>

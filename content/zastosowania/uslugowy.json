@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Pawilon usługowy — kontenery usługowe od producenta | STAGO",
-    "description": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
+    "title": "Pawilon usługowy — fryzjer, barber, salon kosmetyczny | STAGO",
+    "description": "Pawilony usługowe na zamówienie: salon fryzjerski, barber shop, gabinet kosmetyczny, serwis. Instalacje pod Twoją branżę. Pawilon 5×3 m od 26 926 zł netto.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
     "ogTitle": "Pawilon usługowy — kontenery usługowe od producenta",
-    "ogDescription": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
+    "ogDescription": "Pawilony usługowe na zamówienie od producenta: salon fryzjerski, barber shop, gabinet kosmetyczny, serwis, pralnia. Pawilon 5×3 m od 26 926 zł netto.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
   "breadcrumb": "Usługowe",
@@ -12,10 +12,10 @@
   "hero": {
     "img": "../assets/modele/icon.webp",
     "imgAlt": "Pawilon usługowy STAGO — bryła ICON",
-    "h1": "Pawilon usługowy. Kontenery usługowe od producenta.",
+    "h1": "Pawilony usługowe na zamówienie. Kontener usługowy od producenta.",
     "subtitle": "Salon fryzjerski, gabinet kosmetyczny, serwis, pralnia, punkt naprawczy. Każda branża ma swoje wymagania — wodę, kanalizację, wentylację, mocniejszą instalację elektryczną, czasem konkretne certyfikaty. Powiedz nam, czym się zajmujesz, a przygotujemy pawilon tak, żeby sanepid przeszedł bez problemu.",
-    "price": "od 25 000 zł netto",
-    "priceNote": "/ pawilon usługowy 5×3 m, instalacje wliczone",
+    "price": "od 26 926 zł netto",
+    "priceNote": "/ pawilon 5×3 m, instalacje pod branżę wyceniamy w ofercie",
     "ctaHref": "../konfigurator.html?type=uslugowy",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje pawilon usługowy?",
-        "a": "Moduł 5×3 m z podstawowymi instalacjami zaczyna się od 25 000 zł netto. Większy salon z dwoma stanowiskami — 40 000–55 000 zł. Ostateczna cena zależy od ilości sprzętu, podpięć i wykończenia wnętrza."
+        "a": "Pawilon 5×3 m zaczyna się od 26 926 zł netto (cena z cennika, bez transportu, montażu i wyposażenia). Instalacje pod salon — wodę, kanalizację, mocniejszą elektrykę — wyceniamy w ofercie. Większy salon z dwoma stanowiskami to zwykle 40 000–55 000 zł. Ostateczna cena zależy od ilości sprzętu, podpięć i wykończenia wnętrza."
       },
       {
         "q": "Czy pawilon spełnia wymogi sanepidu?",
@@ -235,17 +235,17 @@
       "text": "Sprawdź, co jeszcze robimy — sklep, biuro, dom, gastro, gabinet."
     },
     {
-      "href": "../blog/cennik-pawilonow-2026.html",
+      "href": "../cennik-pawilonow-handlowych.html",
       "img": "../assets/gallery/realizacje/r6.webp",
-      "alt": "Cennik 2026",
-      "label": "Poradnik",
-      "h3": "Cennik pawilonów 2026",
-      "text": "Konkretne kwoty, bez ściemy. Sprawdź, ile zapłacisz."
+      "alt": "Cennik pawilonów handlowych STAGO",
+      "label": "Cennik",
+      "h3": "Pawilon handlowy — cena",
+      "text": "Ceny pawilonów 4×3–12×3 m od producenta i to, co wpływa na kwotę."
     }
   ],
   "jsonLd": {
     "name": "Pawilon usługowy STAGO",
-    "description": "Pawilony usługowe od producenta. Salon fryzjerski, kosmetyka, serwis, pralnia. Woda, prąd, kanalizacja — wszystko gotowe. Od 25 000 zł netto.",
+    "description": "Pawilony usługowe od producenta. Salon fryzjerski, barber shop, kosmetyka, serwis, pralnia. Instalacje pod branżę. Pawilon 5×3 m od 26 926 zł netto.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
     "lowPrice": "12000",
     "highPrice": "150000"

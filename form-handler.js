@@ -493,6 +493,7 @@
     if ((form.id === 'cfgForm' || form.classList.contains('cfg-form')) && typeof state !== 'undefined') {
       var cfgLines = [];
       if (state.type) cfgLines.push('Typ: ' + state.type);
+      if (state.przeznaczenie) cfgLines.push('Przeznaczenie: ' + state.przeznaczenie);
       if (state.dimL && state.dimW) cfgLines.push('Wymiary: ' + state.dimL + ' × ' + state.dimW + ' × ' + (state.dimH || '2.8') + ' m');
       if (state.profil) cfgLines.push('Profil blachy: ' + state.profil);
       if (state.kolorScian) cfgLines.push('Kolor ścian: ' + state.kolorScian);
@@ -525,6 +526,8 @@
         cfgLines.push('Stolarka: ' + parts.join('; '));
       }
       if (state.extras && state.extras.length) cfgLines.push('Wyposażenie: ' + state.extras.join(', '));
+      // Cena orientacyjna z konfiguratora — tylko dopisek w treści wiadomości (schemat payloadu bez zmian)
+      if (state.cenaOpis) cfgLines.push('Cena orientacyjna: ' + state.cenaOpis);
       if (data.message) cfgLines.push('Uwagi: ' + data.message);
       data.message = cfgLines.join('\n');
       data.containerType = state.type || data.containerType;

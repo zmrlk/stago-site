@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <!-- Consent Mode v2 advanced: tagi laduje cookies.js, consent default=denied przed tagami -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <script>window.dataLayer=window.dataLayer||[];</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{meta.title}}</title>
   <meta name="description" content="{{meta.description}}">
   <link rel="canonical" href="{{meta.canonical}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{meta.canonical}}">
   <meta property="og:title" content="{{meta.title}}">
   <meta property="og:description" content="{{meta.description}}">
   <meta property="og:locale" content="{{ui.locale}}">
@@ -20,6 +23,7 @@
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url({{{root}}}assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
   <link rel="icon" type="image/png" href="{{{root}}}assets/sygnet.png">
+  {{{pageLd}}}
 </head>
 <body>
 
@@ -39,13 +43,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <div class="lang-switch">
           <button class="lang-btn" aria-label="Language">{{{ui.flag}}}</button>
           <div class="lang-dropdown" style="display:none">
-            <a href="{{{root}}}{{{pagePath}}}">🇵🇱 Polski</a>
-            <a href="{{{root}}}de/{{{pagePath}}}">🇩🇪 Deutsch</a>
-            <a href="{{{root}}}cz/{{{pagePath}}}">🇨🇿 Čeština</a>
-            <a href="{{{root}}}sk/{{{pagePath}}}">🇸🇰 Slovenčina</a>
-            <a href="{{{root}}}hu/{{{pagePath}}}">🇭🇺 Magyar</a>
-            <a href="{{{root}}}it/{{{pagePath}}}">🇮🇹 Italiano</a>
-            <a href="{{{root}}}es/{{{pagePath}}}">🇪🇸 Español</a>
+            <a href="{{{langPl}}}">🇵🇱 Polski</a>
+            <a href="{{{langDe}}}">🇩🇪 Deutsch</a>
+            <a href="{{{langCz}}}">🇨🇿 Čeština</a>
+            <a href="{{{langSk}}}">🇸🇰 Slovenčina</a>
+            <a href="{{{langHu}}}">🇭🇺 Magyar</a>
+            <a href="{{{langIt}}}">🇮🇹 Italiano</a>
+            <a href="{{{langEs}}}">🇪🇸 Español</a>
           </div>
         </div>
         <a href="tel:+48509508210" class="nav-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>509 508 210</a>
@@ -71,7 +75,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <a href="{{href}}" class="hub-card hub-card-use">
           <div class="hub-card-icon">{{{icon}}}</div>
           <div class="hub-card-body">
-            <h3>{{name}}</h3>
+            <h2>{{name}}</h2>
             <p>{{{desc}}}</p>
             <span class="hub-card-cta">{{{ui.hub.see}}}</span>
           </div>
@@ -101,10 +105,10 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         </div>
       </div>
       <div class="footer-cols">
-        <div><h4>{{{ui.footer.modele}}}</h4><a href="{{{pageRoot}}}modele.html">{{{ui.footer.allModels}}}</a><a href="{{{pageRoot}}}modele/nord.html">NORD</a><a href="{{{pageRoot}}}modele/loft.html">LOFT</a><a href="{{{pageRoot}}}modele/duet.html">DUET</a><a href="{{{pageRoot}}}modele/icon.html">ICON</a><a href="{{{pageRoot}}}modele/mila.html">MILA</a></div>
-        <div><h4>{{{ui.footer.zastosowania}}}</h4><a href="{{{pageRoot}}}zastosowania.html">{{{ui.footer.all}}}</a><a href="{{{pageRoot}}}zastosowania/handlowy.html">{{{ui.footer.handlowe}}}</a><a href="{{{pageRoot}}}zastosowania/biurowy.html">{{{ui.footer.biurowe}}}</a><a href="{{{pageRoot}}}zastosowania/gastronomiczny.html">{{{ui.footer.gastronomiczne}}}</a><a href="{{{pageRoot}}}zastosowania/uslugowy.html">{{{ui.footer.uslugowe}}}</a><a href="{{{pageRoot}}}zastosowania/mieszkalny.html">{{{ui.footer.mieszkalne}}}</a></div>
-        <div><h4>{{{ui.footer.firma}}}</h4><a href="{{{pageRoot}}}jak-kupic.html">{{{ui.footer.jakKupic}}}</a><a href="{{{pageRoot}}}technologia.html">{{{ui.footer.technologia}}}</a><a href="{{{pageRoot}}}finansowanie.html">{{{ui.nav.finansowanie}}}</a><a href="{{{pageRoot}}}pawilon-vs-najem.html">{{{ui.footer.pawilonVsNajem}}}</a><a href="{{{pageRoot}}}realizacje.html">{{{ui.nav.realizacje}}}</a><a href="{{{pageRoot}}}dostepne-od-reki.html">{{{ui.footer.dostepne}}}</a><a href="{{{pageRoot}}}faq.html">{{{ui.nav.faq}}}</a></div>
-        <div><h4>{{{ui.footer.kontakt}}}</h4><a href="tel:+48509508210">+48 509 508 210</a><a href="tel:+48509508110">+48 509 508 110</a><a href="mailto:{{{ui.email}}}">{{{ui.email}}}</a><a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Jasionka 117, Jędrzejów</a><a href="{{{pageRoot}}}kontakt.html">{{{ui.footer.contactPage}}}</a></div>
+        <div><p class="footer-heading">{{{ui.footer.modele}}}</p><a href="{{{pageRoot}}}modele.html">{{{ui.footer.allModels}}}</a><a href="{{{pageRoot}}}modele/nord.html">NORD</a><a href="{{{pageRoot}}}modele/loft.html">LOFT</a><a href="{{{pageRoot}}}modele/duet.html">DUET</a><a href="{{{pageRoot}}}modele/icon.html">ICON</a><a href="{{{pageRoot}}}modele/mila.html">MILA</a>{{#ui.footer.oferta}}<a href="{{{pageRoot}}}{{{href}}}">{{{label}}}</a>{{/ui.footer.oferta}}</div>
+        <div><p class="footer-heading">{{{ui.footer.zastosowania}}}</p><a href="{{{pageRoot}}}zastosowania.html">{{{ui.footer.all}}}</a><a href="{{{pageRoot}}}zastosowania/handlowy.html">{{{ui.footer.handlowe}}}</a><a href="{{{pageRoot}}}zastosowania/biurowy.html">{{{ui.footer.biurowe}}}</a><a href="{{{pageRoot}}}zastosowania/gastronomiczny.html">{{{ui.footer.gastronomiczne}}}</a><a href="{{{pageRoot}}}zastosowania/uslugowy.html">{{{ui.footer.uslugowe}}}</a><a href="{{{pageRoot}}}zastosowania/mieszkalny.html">{{{ui.footer.mieszkalne}}}</a></div>
+        <div><p class="footer-heading">{{{ui.footer.firma}}}</p><a href="{{{pageRoot}}}jak-kupic.html">{{{ui.footer.jakKupic}}}</a><a href="{{{pageRoot}}}technologia.html">{{{ui.footer.technologia}}}</a><a href="{{{pageRoot}}}finansowanie.html">{{{ui.nav.finansowanie}}}</a><a href="{{{pageRoot}}}pawilon-vs-najem.html">{{{ui.footer.pawilonVsNajem}}}</a><a href="{{{pageRoot}}}realizacje.html">{{{ui.nav.realizacje}}}</a><a href="{{{pageRoot}}}dostepne-od-reki.html">{{{ui.footer.dostepne}}}</a><a href="{{{pageRoot}}}faq.html">{{{ui.nav.faq}}}</a></div>
+        <div><p class="footer-heading">{{{ui.footer.kontakt}}}</p><a href="tel:+48509508210">+48 509 508 210</a><a href="tel:+48509508110">+48 509 508 110</a><a href="mailto:{{{ui.email}}}">{{{ui.email}}}</a><a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Jasionka 117, Jędrzejów</a><a href="{{{pageRoot}}}kontakt.html">{{{ui.footer.contactPage}}}</a></div>
       </div>
     </div>
     <div class="container footer-note"><p>{{{ui.footer.aiNote}}}</p></div>

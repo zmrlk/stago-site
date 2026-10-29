@@ -97,13 +97,13 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "Aislamiento PIR 100mm",
-        "text": "Panel PIR de 100 mm en paredes, cubierta y suelo. Lambda 0,022 W/(m·K) — clase de eficiencia energética. En invierno mantiene el calor, en verano no se recalienta como una caseta metálica."
+        "h3": "Aislamiento PIR: paredes 100 mm, cubierta 160 mm",
+        "text": "Panel PIR de 100 mm en paredes y de 160 mm en la cubierta. Lambda 0,022 W/(m·K) — clase de eficiencia energética. En invierno mantiene el calor, en verano no se recalienta como una caseta metálica."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
-        "h3": "Carpintería de aluminio",
-        "text": "Ventanas y puertas de aluminio con rotura de puente térmico. Perfiles de alta eficiencia, acristalamiento doble. Juntas, cerraduras, regulación — certificado del fabricante."
+        "h3": "Carpintería de PVC o aluminio",
+        "text": "Ventanas y puertas de PVC o aluminio, según el pedido. Perfiles de alta eficiencia, acristalamiento doble. Juntas, cerraduras, regulación — certificado del fabricante."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
@@ -111,6 +111,49 @@
         "text": "Electricidad, iluminación LED, cuadro eléctrico — de serie. Agua, saneamiento, ventilación, climatización — según su uso. Listo para la conexión en su parcela."
       }
     ]
+  },
+  "wCenie": {
+    "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model ICON (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",
+    "pokaz": false,
+    "eyebrow": "Cena",
+    "h2": "Co jest w cenie",
+    "intro": "Cena modelu ICON = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.",
+    "baza": {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    "model": {
+      "h3": "W dopłacie za model ICON",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła ICON — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ],
+      "placeholder": "Szczegółowy opis wykończenia modelu ICON przygotowujemy — zapytaj o niego przy wycenie."
+    },
+    "osobno": {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        }
+      ]
+    },
+    "tabelaH3": "Ceny orientacyjne netto — model ICON",
+    "tabelaNote": "Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie."
   },
   "benefits": {
     "eyebrow": "Incluido",
@@ -253,7 +296,7 @@
     "name": "Pabellón modular STAGO ICON",
     "description": "ICON. Volumen expresivo con grandes ventanas en esquina del suelo al techo. Carácter de estudio de arquitectura — abierto, premium, diseñado para impresionar. Acabado de fachada a su elección.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "20564",
+    "lowPrice": "24515",
     "highPrice": "80000"
   }
 }

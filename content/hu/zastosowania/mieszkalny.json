@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Energiatakarékos házakéval azonos szigetelés",
-        "text": "Falak 100 mm PIR szigeteléssel, szigetelt tető és padló hőszigetelő réteggel. Télen meleg, nyáron kellemesen hűvös. A havi villanyszámla a téli időszakban jellemzően 60–105 € körül mozog."
+        "text": "Falak 100 mm PIR szigeteléssel, szigetelt tető és padló (12 cm) hőszigetelő réteggel. Télen meleg, nyáron kellemesen hűvös. A havi villanyszámla a téli időszakban jellemzően 60–105 € körül mozog."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -84,8 +84,8 @@
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
-        "h3": "Alumínium nyílászárók",
-        "text": "Alumínium ablakok és ajtók — energiatakarékos, csendes, hőhíd-megszakítással. Már a nyitás és csukás mutatja, hogy ez nem ideiglenes megoldás. Párásodás és huzat nélkül a tél közepén is."
+        "h3": "PVC vagy alumínium nyílászárók",
+        "text": "PVC vagy alumínium ablakok és ajtók (a megrendelés szerint) — energiatakarékos, csendes. Már a nyitás és csukás mutatja, hogy ez nem ideiglenes megoldás. Párásodás és huzat nélkül a tél közepén is."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",

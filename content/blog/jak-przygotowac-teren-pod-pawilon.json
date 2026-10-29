@@ -33,15 +33,15 @@
     ],
     "products": [
       {
-        "href": "../pawilon-handlowy.html",
+        "href": "../zastosowania/handlowy.html",
         "text": "Pawilon handlowy &rarr;"
       },
       {
-        "href": "../kontener-biurowy.html",
+        "href": "../zastosowania/biurowy.html",
         "text": "Kontener biurowy &rarr;"
       },
       {
-        "href": "../kontener-magazynowy.html",
+        "href": "../zastosowania/socjalny.html",
         "text": "Kontener magazynowy &rarr;"
       }
     ]
