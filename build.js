@@ -100,7 +100,50 @@ function ostempluj(html, outputPath) {
     }).join(', ');
     return a + nowa + b;
   });
-  return html;
+  return zwymiaruj(html, katalog);
+}
+
+// ── width/height na <img> z wymiarów pliku ──
+// Bez nich przeglądarka nie rezerwuje miejsca przed pobraniem zdjęcia i treść skacze (CLS).
+// Wymiary naturalne + img{height:auto} w style.css = ten sam układ co bez atrybutów.
+const WYMIARY = new Map();
+
+function wymiary(plik) {
+  if (WYMIARY.has(plik)) return WYMIARY.get(plik);
+  let w = null;
+  try {
+    const b = fs.readFileSync(plik);
+    if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
+      const typ = b.toString('ascii', 12, 16);
+      if (typ === 'VP8X') w = [1 + b.readUIntLE(24, 3), 1 + b.readUIntLE(27, 3)];
+      else if (typ === 'VP8L') { const n = b.readUInt32LE(21); w = [1 + (n & 0x3fff), 1 + ((n >> 14) & 0x3fff)]; }
+      else if (typ === 'VP8 ') w = [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
+    } else if (b.readUInt32BE(0) === 0x89504e47) {
+      w = [b.readUInt32BE(16), b.readUInt32BE(20)];
+    } else if (b[0] === 0xff && b[1] === 0xd8) {
+      for (let i = 2; i < b.length - 9;) {
+        if (b[i] !== 0xff) break;
+        const znacznik = b[i + 1];
+        if (znacznik >= 0xc0 && znacznik <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(znacznik)) { w = [b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)]; break; }
+        i += 2 + b.readUInt16BE(i + 2);
+      }
+    }
+  } catch (e) {
+    w = null; // brak pliku albo nieznany format — atrybuty zostają bez zmian
+  }
+  if (w && !(w[0] > 0 && w[1] > 0)) w = null;
+  WYMIARY.set(plik, w);
+  return w;
+}
+
+function zwymiaruj(html, katalog) {
+  return html.replace(/<img\b[^>]*>/gi, (tag) => {
+    if (/\swidth="/i.test(tag) || /\sheight="/i.test(tag)) return tag;
+    const adres = tag.match(/\ssrc="([^"?#]+)/i)?.[1];
+    if (!adres || /^(https?:|data:|\/\/)/.test(adres)) return tag;
+    const w = wymiary(adres.startsWith('/') ? adres.slice(1) : path.normalize(path.join(katalog, adres)));
+    return w ? tag.replace(/^<img\b/i, `<img width="${w[0]}" height="${w[1]}"`) : tag;
+  });
 }
 
 // app.js podmienia zdjecia historii w locie, wiec adresy w nim tez potrzebuja odcisku.
@@ -464,12 +507,12 @@ for (const page of pages) {
 console.log(`\n✓ ${builtCount} pages built, ${skippedCount} skipped (no content)`);
 
 // Strony ręczne (poza szablonami) też dostają odcisk style.css — inaczej po zmianie CSS
-// przez 7 dni (max-age w _headers) dostają stary arkusz. Zmieniamy tylko ?v=, nic więcej.
+// przez 7 dni (max-age w _headers) dostają stary arkusz. Zmieniamy tylko ?v= i wymiary <img>.
 const RECZNE = ['404.html', 'regiony.html',
   ...fs.readdirSync('pawilony/wojewodztwo').filter(f => f.endsWith('.html')).map(f => `pawilony/wojewodztwo/${f}`)];
 for (const plik of RECZNE) {
   const html = fs.readFileSync(plik, 'utf8');
-  const nowy = html.replace(/(href="(?:\/|(?:\.\.\/)*)style\.css)(?:\?v=[0-9a-f]+)?"/g, `$1?v=${CSS_V}"`);
+  const nowy = zwymiaruj(html.replace(/(href="(?:\/|(?:\.\.\/)*)style\.css)(?:\?v=[0-9a-f]+)?"/g, `$1?v=${CSS_V}"`), path.dirname(plik));
   if (nowy !== html) fs.writeFileSync(plik, nowy);
 }
 
