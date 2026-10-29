@@ -2352,8 +2352,10 @@ function domyslneOtwory() {
 }
 
 function ensureOpenings() {
+  if (state.openings && state.openings.length) { state.openingsInit = true; stripPlacement(); return; }
+  // Klient świadomie usunął wszystkie elementy — nie podstawiamy domyślnych przy ponownym wejściu w krok 4
+  if (state.openingsInit) return;
   state.openingsInit = true;
-  if (state.openings && state.openings.length) { stripPlacement(); return; }
   state.openings = domyslneOtwory();
   saveState();
 }
@@ -2551,6 +2553,9 @@ if (urlType) {
   state.type = urlType;
   state.step = 2;
   state.extras = [];
+  // Nowa konfiguracja z karty/modelu: stolarka od nowa (zapis i tak jest usuwany)
+  state.openings = [];
+  state.openingsInit = false;
   const card = document.querySelector(`.type-card[data-type="${urlType}"]`);
   if (card) {
     document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
