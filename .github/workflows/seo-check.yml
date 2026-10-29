@@ -1,0 +1,20 @@
+# Statyczna bramka SEO na zacommitowanym HTML (Cloudflare Pages serwuje dokładnie te pliki,
+# build command jest puste). Bez sieci i bez zależności — szczegóły w scripts/check-seo.mjs.
+name: seo-check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.4'
+      - run: node scripts/check-seo.mjs
