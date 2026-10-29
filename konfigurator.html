@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="style.css?v=3409e467" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css?v=3409e467"></noscript><style>
+  <link rel="preload" href="style.css?v=0b4c0341" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css?v=0b4c0341"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -580,6 +580,11 @@ body { background: #F8F9FA; padding-bottom: 0; }
 }
 .preview-row .pr-label { display:block; font-size:.72rem; color: var(--t3); margin-bottom: 1px; text-transform: uppercase; letter-spacing: .06em; }
 .preview-row .pr-value { display:block; font-size:.95rem; font-weight: 700; color: var(--accent); }
+
+/* ── Rzut 2D (rzut2d.js, style .rzut2d w style.css) ── */
+.cfg-rzut{background:var(--bg-light,#F8F9FA);border-radius:12px;padding:12px;margin:12px 0}
+.cfg-rzut .rzut2d{max-height:220px}
+.cfg-rzut-cap{font-size:.75rem;color:var(--t2,#555);margin-top:8px;line-height:1.45}
 
 /* ── Cena orientacyjna (cennik 28.10.2026) ── */
 .price-box { margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: #faf7f5; border: 1px solid #f1e4dd; }
@@ -1346,7 +1351,15 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="s-grid">
         <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
           <div class="s3-section">
-            <h3>1. Długość i szerokość</h3>
+            <h3>1. Przeznaczenie</h3>
+            <p class="s3-hint">Do czego ma służyć pawilon? Opcjonalne — pomoże nam przygotować ofertę.</p>
+            <div class="pills" data-group="przeznaczenie">
+              <div class="pill" role="button" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Handlowy</div><div class="pill" role="button" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Biurowy</div><div class="pill" role="button" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Usługowy</div><div class="pill" role="button" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Gastronomiczny</div><div class="pill" role="button" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">Inne</div>
+            </div>
+          </div>
+
+          <div class="s3-section">
+            <h3>2. Długość i szerokość</h3>
             <p class="s3-hint">W metrach. Wpisz dokładnie albo wybierz popularny rozmiar.</p>
             <div class="dim-inputs" style="justify-content:flex-start;max-width:420px">
               <div class="dim-group">
@@ -1389,10 +1402,11 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               
             </div>
             <p class="dim-warn" id="dimWarn" role="status" hidden></p>
+            <p class="s3-hint" style="margin-top:12px">Cenę orientacyjną pokazujemy dla wymiarów 4×3–12×3 m. Inne wymiary i rozwiązania niestandardowe wyceniamy indywidualnie.</p>
           </div>
 
           <div class="s3-section">
-            <h3>2. Wysokość dachu</h3>
+            <h3>3. Wysokość dachu</h3>
             <p class="s3-hint">Cztery standardy. Różnica 10 cm w panelu. Domyślnie 2,44 m.</p>
             <div class="pills" data-group="dimH">
               <div class="pill" data-val="2.44" onclick="selectHeight(this)">2,44 m</div><div class="pill" data-val="2.54" onclick="selectHeight(this)">2,54 m</div><div class="pill" data-val="2.64" onclick="selectHeight(this)">2,64 m</div><div class="pill" data-val="2.74" onclick="selectHeight(this)">2,74 m</div>
@@ -1403,6 +1417,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
         <aside class="preview-panel">
           <h3>Twoje wymiary</h3>
           <div class="preview-hero" id="previewHero2"></div>
+          <div class="cfg-rzut" data-rzut></div>
           <div class="preview-row">
             <div class="preview-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
@@ -1642,6 +1657,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
         <aside class="preview-panel">
           <h3>Twoje dodatki</h3>
           <div class="preview-hero" id="previewHero4"></div>
+          <div class="cfg-rzut" data-rzut></div>
           <div class="preview-row">
             <div class="preview-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r="1"/></svg>
@@ -1699,6 +1715,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 15l-5-4-4.5 4-2-1.5L3 18"/></svg>
             Zdjęcie poglądowe wybranego modelu. Wygląd Twojego pawilonu ustalamy przy wycenie.
           </p>
+          <div class="cfg-rzut" data-rzut></div>
           <div id="summaryRows"></div>
           <div class="price-box" data-price-box style="margin-top:16px">
             <span class="pb-label">Cena orientacyjna netto</span>
@@ -1764,12 +1781,14 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
     </div>
   </div>
 
+<script src="rzut2d.js"></script>
 <script id="cennikPawilonow" type="application/json">{"_opis":"GENEROWANE z content/cennik-pawilonow.csv przez scripts/gen-cennik.js — nie edytuj ręcznie.","zrodlo":"Wyceny pawilonów.xlsx (Łukasz R. / Denis Górski, 28.10.2026)","waluta":"PLN","netto":true,"uwagi":"Cena orientacyjna netto, bez transportu i montażu. Podstawa = 2 okna, drzwi, podstawowe obróbki.","modele":["ATRI","MILA","ICON","RYTM","NORD","LOFT","SAGA","VIEW","DUET","CUBE","NOIR","KIOS"],"rozmiary":[{"rozmiar":"4x3","dlugosc":4,"szerokosc":3,"m2":12,"podstawa":22715,"doplaty":{"ATRI":3500,"MILA":2500,"ICON":1800,"RYTM":1500,"NORD":3000,"LOFT":2500,"SAGA":1800,"VIEW":null,"DUET":1800,"CUBE":3000,"NOIR":3500,"KIOS":1400}},{"rozmiar":"5x3","dlugosc":5,"szerokosc":3,"m2":15,"podstawa":25226,"doplaty":{"ATRI":3900,"MILA":3000,"ICON":2300,"RYTM":1800,"NORD":3500,"LOFT":3000,"SAGA":2100,"VIEW":null,"DUET":2200,"CUBE":3400,"NOIR":3800,"KIOS":1700}},{"rozmiar":"6x3","dlugosc":6,"szerokosc":3,"m2":18,"podstawa":27032,"doplaty":{"ATRI":4300,"MILA":3500,"ICON":3800,"RYTM":2100,"NORD":4000,"LOFT":3500,"SAGA":2500,"VIEW":null,"DUET":2600,"CUBE":3800,"NOIR":4100,"KIOS":2000}},{"rozmiar":"7x3","dlugosc":7,"szerokosc":3,"m2":21,"podstawa":31388.4,"doplaty":{"ATRI":4500,"MILA":4000,"ICON":4200,"RYTM":2400,"NORD":4500,"LOFT":4000,"SAGA":2900,"VIEW":4200,"DUET":3000,"CUBE":4200,"NOIR":4400,"KIOS":2300}},{"rozmiar":"8x3","dlugosc":8,"szerokosc":3,"m2":24,"podstawa":36674.4,"doplaty":{"ATRI":5000,"MILA":4500,"ICON":5700,"RYTM":2700,"NORD":5000,"LOFT":4500,"SAGA":3300,"VIEW":4800,"DUET":3400,"CUBE":4600,"NOIR":4700,"KIOS":2600}},{"rozmiar":"9x3","dlugosc":9,"szerokosc":3,"m2":27,"podstawa":40530.4,"doplaty":{"ATRI":5500,"MILA":5000,"ICON":7200,"RYTM":3000,"NORD":5500,"LOFT":5000,"SAGA":3700,"VIEW":5400,"DUET":3800,"CUBE":5000,"NOIR":5000,"KIOS":3900}},{"rozmiar":"10x3","dlugosc":10,"szerokosc":3,"m2":30,"podstawa":44086.4,"doplaty":{"ATRI":6000,"MILA":5500,"ICON":8700,"RYTM":3300,"NORD":6000,"LOFT":5500,"SAGA":4100,"VIEW":6000,"DUET":4200,"CUBE":5400,"NOIR":5300,"KIOS":4200}},{"rozmiar":"11x3","dlugosc":11,"szerokosc":3,"m2":33,"podstawa":49342.4,"doplaty":{"ATRI":6500,"MILA":6000,"ICON":10200,"RYTM":3600,"NORD":6500,"LOFT":6000,"SAGA":4500,"VIEW":6600,"DUET":4600,"CUBE":5800,"NOIR":5600,"KIOS":4500}},{"rozmiar":"12x3","dlugosc":12,"szerokosc":3,"m2":36,"podstawa":54848.4,"doplaty":{"ATRI":7000,"MILA":6500,"ICON":10700,"RYTM":3900,"NORD":7000,"LOFT":6500,"SAGA":4900,"VIEW":7200,"DUET":5000,"CUBE":6200,"NOIR":5900,"KIOS":4800}}],"od":{"ATRI":{"rozmiar":"4x3","cena":26215,"max":61848.4,"maxRozmiar":"12x3"},"MILA":{"rozmiar":"4x3","cena":25215,"max":61348.4,"maxRozmiar":"12x3"},"ICON":{"rozmiar":"4x3","cena":24515,"max":65548.4,"maxRozmiar":"12x3"},"RYTM":{"rozmiar":"4x3","cena":24215,"max":58748.4,"maxRozmiar":"12x3"},"NORD":{"rozmiar":"4x3","cena":25715,"max":61848.4,"maxRozmiar":"12x3"},"LOFT":{"rozmiar":"4x3","cena":25215,"max":61348.4,"maxRozmiar":"12x3"},"SAGA":{"rozmiar":"4x3","cena":24515,"max":59748.4,"maxRozmiar":"12x3"},"VIEW":{"rozmiar":"7x3","cena":35588.4,"max":62048.4,"maxRozmiar":"12x3"},"DUET":{"rozmiar":"4x3","cena":24515,"max":59848.4,"maxRozmiar":"12x3"},"CUBE":{"rozmiar":"4x3","cena":25715,"max":61048.4,"maxRozmiar":"12x3"},"NOIR":{"rozmiar":"4x3","cena":26215,"max":60748.4,"maxRozmiar":"12x3"},"KIOS":{"rozmiar":"4x3","cena":24115,"max":59648.4,"maxRozmiar":"12x3"}}}</script>
 <script>
 // ── STATE ──
 const state = {
   step: 1,
   type: '',
+  przeznaczenie: '',
   dimL: '', dimW: '', dimH: '2.44',
   profil: 'Mikrofala',
   kolorScian: 'Antracyt',
@@ -1814,6 +1833,7 @@ function restoreUI() {
   if (state.dimW) document.getElementById('dimW').value = state.dimW;
   // Restore pills (rozmOkuc still pills)
   restorePills('rozmOkuc', state.rozmOkuc);
+  restorePills('przeznaczenie', state.przeznaczenie);
   // Restore profile cards (data-name based)
   document.querySelectorAll('.profile-card').forEach(c => {
     c.classList.toggle('selected', c.dataset.name === state.profil);
@@ -2165,8 +2185,21 @@ function updatePrice() {
   return c;
 }
 
+// Rzut 2D z góry (rzut2d.js): wymiary + otwory z kroku 4; przed krokiem 4 wersja podstawowa (drzwi i 2 okna)
+const OTWORY_BAZA = [{ wall: 'A', kind: 'door' }, { wall: 'A', kind: 'okn' }, { wall: 'C', kind: 'okn' }];
+function updateRzut() {
+  const svg = (typeof rzut2d === 'function')
+    ? rzut2d({ L: state.dimL, W: state.dimW, openings: state.openings.length ? state.openings : OTWORY_BAZA })
+    : '';
+  document.querySelectorAll('[data-rzut]').forEach(el => {
+    el.innerHTML = svg ? svg + '<p class="cfg-rzut-cap">Rzut poglądowy z góry — dokładne rozmieszczenie ustalimy przy wycenie.</p>' : '';
+    el.hidden = !svg;
+  });
+}
+
 function updatePreview() {
   updatePrice();
+  updateRzut();
   // Step 1 preview
   const prvModel1 = document.getElementById('prv-model-1');
   const previewHero1 = document.getElementById('previewHero1');
@@ -2446,7 +2479,8 @@ function openingsSummary() {
 function buildSummary() {
   const isPodstaw = state.okucia && state.okucia.toLowerCase().includes('podstaw');
   const rows = [
-    ['Przeznaczenie', state.type],
+    ['Model', state.type],
+    ['Przeznaczenie', state.przeznaczenie || '—'],
     ['Wymiary', `${state.dimL} × ${state.dimW} × ${state.dimH} m`],
     ['Profil płyty', state.profil],
     ['Kolor ścian', state.kolorScian],
@@ -2504,6 +2538,17 @@ if (urlType) {
   goToStep(2);
 }
 
+// ?l=6&w=3 — z kart wymiarów (/pawilon-6x3): ustaw wymiar
+(function () {
+  const l = parseFloat(params.get('l')), w = parseFloat(params.get('w'));
+  if (!(l > 0 && w > 0)) return;
+  state.dimL = String(l); state.dimW = String(w);
+  const iL = document.getElementById('dimL'), iW = document.getElementById('dimW');
+  if (iL) iL.value = state.dimL;
+  if (iW) iW.value = state.dimW;
+  saveState();
+})();
+
 // Init: select first pill/swatch in each group
 document.querySelectorAll('.pills').forEach(g => { const f = g.querySelector('.pill'); if (f) f.classList.add('selected'); });
 document.querySelectorAll('.swatches').forEach(g => { const f = g.querySelector('.swatch'); if (f) f.classList.add('selected'); });
@@ -2511,6 +2556,8 @@ document.querySelectorAll('.swatches').forEach(g => { const f = g.querySelector(
 document.querySelectorAll('[data-group="dimH"] .pill').forEach(p => {
   p.classList.toggle('selected', p.dataset.val === state.dimH);
 });
+// Przeznaczenie jest opcjonalne — bez wyboru żadna pigułka nie jest zaznaczona
+restorePills('przeznaczenie', state.przeznaczenie);
 // Profile cards default selection (state.profil)
 document.querySelectorAll('.profile-card').forEach(c => {
   c.classList.toggle('selected', c.dataset.name === state.profil);
