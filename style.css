@@ -1109,6 +1109,7 @@ body.nav-open{overflow:hidden}
 .seo-content .seo-highlight h3{color:#fff;font-size:1.2rem;margin-bottom:12px}
 .seo-content .seo-highlight p{color:var(--t-light2)}
 .seo-content .seo-highlight ul{color:var(--t-light2)}
+.section-dark .seo-content>p:not(.eyebrow),.section-dark .seo-content>ul,.section-dark .seo-content>ol{color:var(--t-light2)}
 
 /* ── MODEL HERO v2 — galeria ujęć + Hasło + konfiguracja (2026-06) ── */
 .product-hero-grid{align-items:start}
