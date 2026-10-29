@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Dom modułowy — kontener ocieplony, domek całoroczny na działkę | STAGO",
-    "description": "Domy modułowe od producenta. Domek całoroczny z łazienką i kuchnią. PIR 100mm, aluminiowe okna, 2 lata gwarancji. Darmowa wycena.",
+    "description": "Domy modułowe od producenta. Domek całoroczny z łazienką i kuchnią. PIR 100mm, okna PVC lub ALU, 2 lata gwarancji. Darmowa wycena.",
     "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
     "ogTitle": "Dom modułowy — domek całoroczny, kontener ocieplony",
-    "ogDescription": "Domy modułowe od producenta. Domek całoroczny z łazienką i kuchnią. PIR 100mm, aluminiowe okna.",
+    "ogDescription": "Domy modułowe od producenta. Domek całoroczny z łazienką i kuchnią. PIR 100mm, okna PVC lub ALU.",
     "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
   },
   "breadcrumb": "Mieszkalne",
@@ -84,8 +84,8 @@
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
-        "h3": "Stolarka aluminiowa",
-        "text": "Okna i drzwi aluminiowe — energooszczędne, ciche, z przekładką termiczną. Już samo otwieranie i zamykanie pokazuje, że to nie prowizorka. Bez parowania szyb i bez przeciągów nawet w środku zimy."
+        "h3": "Stolarka PVC lub aluminiowa",
+        "text": "Okna i drzwi z PVC lub aluminium (zależnie od zamówienia) — energooszczędne, ciche. Już samo otwieranie i zamykanie pokazuje, że to nie prowizorka. Bez parowania szyb i bez przeciągów nawet w środku zimy."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",

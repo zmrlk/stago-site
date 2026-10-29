@@ -98,13 +98,13 @@
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "Izolacja PIR 100mm",
-        "text": "Płyta PIR 100 mm na ścianach, dachu i podłodze. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak."
+        "h3": "Izolacja PIR: ściany 100 mm, dach 160 mm",
+        "text": "Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
-        "h3": "Stolarka aluminiowa",
-        "text": "Okna i drzwi aluminiowe z przekładką termiczną. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta."
+        "h3": "Stolarka PVC lub aluminiowa",
+        "text": "Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
