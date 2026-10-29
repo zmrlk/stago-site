@@ -2561,6 +2561,8 @@ document.querySelectorAll('.okucia-row').forEach(c => {
 // Odtworzenie widoku z zapisu — po zdefiniowaniu wszystkich stałych (panels, WALL_OPTS, KIND_OPTS…).
 // Krok nie dalej, niż pozwalają model i wymiar.
 if (zapisDoOdtworzenia) {
+  // Pozycja na ścianie i zawiasy tylko z podglądem 3D — bez niego nie wolno ich wysłać (także przy powrocie prosto do kroku 5)
+  stripPlacement();
   if (!state.type) state.step = 1;
   else if (state.step > 2 && !wymiaryOk(state.dimL, state.dimW)) state.step = 2;
   restoreUI();
