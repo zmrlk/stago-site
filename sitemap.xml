@@ -40,6 +40,12 @@
   <url><loc>https://stago.com.pl/faq</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://stago.com.pl/kontakt</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
+  <!-- STRONY PRAWNE (indeksowalne, z canonical i hreflang — więc też w mapie) -->
+  <url><loc>https://stago.com.pl/polityka-prywatnosci</loc><lastmod>2026-09-03</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://stago.com.pl/polityka-cookies</loc><lastmod>2026-09-03</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://stago.com.pl/regulamin</loc><lastmod>2026-05-12</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://stago.com.pl/regulamin-sprzedazy</loc><lastmod>2026-05-12</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+
   <!-- 16 WOJEWÓDZTW (geo SEO) -->
   <url><loc>https://stago.com.pl/pawilony/wojewodztwo/mazowieckie</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://stago.com.pl/pawilony/wojewodztwo/malopolskie</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -233,7 +239,11 @@
   <url><loc>https://stago.com.pl/cz/modele/saga</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/cz/modele/view</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/cz/pawilon-vs-najem</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/cz/polityka-cookies</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/cz/polityka-prywatnosci</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/cz/realizacje</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/cz/regulamin-sprzedazy</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/cz/regulamin</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/cz/technologia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/cz/zastosowania</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/cz/zastosowania/biurowy</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -262,7 +272,11 @@
   <url><loc>https://stago.com.pl/de/modele/saga</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/de/modele/view</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/de/pawilon-vs-najem</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/de/polityka-cookies</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/de/polityka-prywatnosci</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/de/realizacje</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/de/regulamin-sprzedazy</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/de/regulamin</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/de/technologia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/de/zastosowania</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/de/zastosowania/biurowy</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -291,7 +305,11 @@
   <url><loc>https://stago.com.pl/es/modele/saga</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/es/modele/view</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/es/pawilon-vs-najem</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/es/polityka-cookies</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/es/polityka-prywatnosci</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/es/realizacje</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/es/regulamin-sprzedazy</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/es/regulamin</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/es/technologia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/es/zastosowania</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/es/zastosowania/biurowy</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -320,7 +338,11 @@
   <url><loc>https://stago.com.pl/hu/modele/saga</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/hu/modele/view</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/hu/pawilon-vs-najem</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/hu/polityka-cookies</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/hu/polityka-prywatnosci</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/hu/realizacje</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/hu/regulamin-sprzedazy</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/hu/regulamin</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/hu/technologia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/hu/zastosowania</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/hu/zastosowania/biurowy</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -349,7 +371,11 @@
   <url><loc>https://stago.com.pl/it/modele/saga</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/it/modele/view</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/it/pawilon-vs-najem</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/it/polityka-cookies</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/it/polityka-prywatnosci</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/it/realizacje</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/it/regulamin-sprzedazy</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/it/regulamin</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/it/technologia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/it/zastosowania</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/it/zastosowania/biurowy</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -378,7 +404,11 @@
   <url><loc>https://stago.com.pl/sk/modele/saga</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/sk/modele/view</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/sk/pawilon-vs-najem</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/sk/polityka-cookies</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/sk/polityka-prywatnosci</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/sk/realizacje</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/sk/regulamin-sprzedazy</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://stago.com.pl/sk/regulamin</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/sk/technologia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/sk/zastosowania</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://stago.com.pl/sk/zastosowania/biurowy</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
