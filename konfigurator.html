@@ -1822,7 +1822,8 @@ const DOMYSLNE = JSON.parse(JSON.stringify(state));
 function stanZZapisu(s) {
   const out = {};
   if (!s || typeof s !== 'object' || Array.isArray(s)) return out;
-  ['type', 'przeznaczenie', 'dimL', 'dimW', 'dimH', 'profil', 'kolorScian', 'okucia', 'kolorOkuc', 'rozmOkuc',
+  ['dimL', 'dimW'].forEach(k => { const v = wymiar(s[k]); if (!Number.isNaN(v)) out[k] = String(v); });
+  ['type', 'przeznaczenie', 'dimH', 'profil', 'kolorScian', 'okucia', 'kolorOkuc', 'rozmOkuc',
    'doorType', 'doorGlazing', 'windowType', 'woodName', 'woodHex', 'kolorScianRal', 'kolorScianHex', 'kolorOkucRal', 'kolorOkucHex']
     .forEach(k => { if (typeof s[k] === 'string') out[k] = s[k]; });
   ['okuciaMetal', 'openingsInit'].forEach(k => { if (typeof s[k] === 'boolean') out[k] = s[k]; });
@@ -2020,10 +2021,16 @@ function canProceed() {
 // Wymiar, z którym można przejść dalej (pola, ?l=&w=, stan z localStorage): zakres pól formularza —
 // dłuższy bok 2–18 m, krótszy 2–6 m (kolejność dowolna, 3×10 = 10×3). Obejmuje cennik 4×3–12×3 i presety.
 // Cena orientacyjna tylko z cennika; reszta w zakresie = wycena indywidualna (cenaOrientacyjna).
+// Jedna konwersja wymiaru dla pól, ?l=&w=, zapisu, ceny, powierzchni i rzutu: tylko zapis dziesiętny
+// (6, 6.5) — bez 0x10, 1e1, Infinity, przecinka i spacji, które Number() i parseFloat() czytały różnie.
+function wymiar(v) {
+  if (typeof v === 'number') return Number.isFinite(v) ? v : NaN;
+  return typeof v === 'string' && /^\d{1,3}(\.\d{1,3})?$/.test(v) ? Number(v) : NaN;
+}
+
 function wymiaryOk(L, W) {
-  if (L === '' || W === '' || L == null || W == null) return false;
-  const a = Number(L), b = Number(W);
-  if (!Number.isFinite(a) || !Number.isFinite(b)) return false;
+  const a = wymiar(L), b = wymiar(W);
+  if (Number.isNaN(a) || Number.isNaN(b)) return false;
   const dl = Math.max(a, b), sz = Math.min(a, b);
   return sz >= 2 && sz <= 6 && dl <= 18;
 }
@@ -2229,7 +2236,7 @@ function cenaOrientacyjna() {
   if (!CENNIK) return { status: 'brak' };
   const model = (state.type || '').toUpperCase();
   if (!model || !CENNIK.od[model]) return { status: 'brak' };
-  const L = parseFloat(state.dimL), W = parseFloat(state.dimW);
+  const L = wymiar(state.dimL), W = wymiar(state.dimW);
   const od = CENNIK.od[model];
   if (!(L > 0 && W > 0)) return { status: 'od', model, cena: od.cena, rozmiar: od.rozmiar };
   const row = CENNIK.rozmiary.find(r =>
@@ -2287,7 +2294,7 @@ function updatePrice() {
 function updateRzut() {
   const otwory = state.openings.length ? state.openings : (state.openingsInit ? [] : domyslneOtwory());
   const svg = (typeof rzut2d === 'function' && wymiaryOk(state.dimL, state.dimW))
-    ? rzut2d({ L: state.dimL, W: state.dimW, openings: otwory })
+    ? rzut2d({ L: wymiar(state.dimL), W: wymiar(state.dimW), openings: otwory })
     : '';
   document.querySelectorAll('[data-rzut]').forEach(el => {
     el.innerHTML = svg ? svg + '<p class="cfg-rzut-cap">Rzut poglądowy z góry — dokładne rozmieszczenie ustalimy przy wycenie.</p>' : '';
@@ -2328,8 +2335,8 @@ function updatePreview() {
     setPrv(prvDim, L + ' × ' + W + ' × ' + H + ' m');
   }
   if (prvArea) {
-    const L = parseFloat(state.dimL);
-    const W = parseFloat(state.dimW);
+    const L = wymiar(state.dimL);
+    const W = wymiar(state.dimW);
     setPrv(prvArea, (L > 0 && W > 0) ? (L * W).toFixed(1) + ' m²' : '—');
   }
 
@@ -2425,7 +2432,7 @@ const SHOW_PLACEMENT = false;
 // Domyślny układ przy pierwszym wejściu (skalowany długością)
 function domyslneOtwory() {
   // Dłuższy bok — 3×6 to ten sam pawilon co 6×3 (cennik i rzut też tak liczą)
-  const L = Math.max(parseFloat(state.dimL) || 0, parseFloat(state.dimW) || 0) || 6;
+  const L = Math.max(wymiar(state.dimL) || 0, wymiar(state.dimW) || 0) || 6;
   const nWit = Math.max(1, Math.min(4, Math.round(L / 2) - 1));
   const arr = [newOpening('A', 'door', 0.85)];
   for (let i = 0; i < nWit; i++) arr.push(newOpening('A', 'wit', (i + 1) / (nWit + 2)));
@@ -2649,8 +2656,7 @@ if (urlType) {
 
 // ?l=6&w=3 — z kart wymiarów (/pawilon-6x3): ustaw wymiar
 (function () {
-  const liczba = (v) => /^\d{1,2}(\.\d{1,2})?$/.test(v || '') ? Number(v) : NaN;
-  const l = liczba(params.get('l')), w = liczba(params.get('w'));
+  const l = wymiar(params.get('l')), w = wymiar(params.get('w'));
   if (!wymiaryOk(l, w)) return;
   state.dimL = String(l); state.dimW = String(w);
   const iL = document.getElementById('dimL'), iW = document.getElementById('dimW');
