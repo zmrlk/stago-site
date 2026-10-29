@@ -2699,6 +2699,9 @@ if (zapisDoOdtworzenia) {
   // Pozycja na ścianie i zawiasy tylko z podglądem 3D — bez niego nie wolno ich wysłać (także przy powrocie prosto do kroku 5)
   stripPlacement();
   poprawWybory();
+  // Krok 5 z pustą stolarką: klient przeszedł krok 4, który zawsze podstawia domyślne elementy — pusta lista
+  // = świadomie usunięta (także stare zapisy bez openingsInit). Rzut, podsumowanie i zapytanie spójnie bez stolarki.
+  if (!state.openings.length && state.step >= 5) state.openingsInit = true;
   if (!state.type) state.step = 1;
   else if (state.step > 2 && !wymiaryOk(state.dimL, state.dimW)) state.step = 2;
   restoreUI();
