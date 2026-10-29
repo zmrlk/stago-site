@@ -359,6 +359,23 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   data.googleRating = REVIEWS;
   data.assetV = ASSET_V;
 
+  // Przełącznik języka: link do przetłumaczonej strony, jeśli istnieje; inaczej na stronę główną
+  // danego języka (nie na nieistniejące /{lang}/<podstrona>, które dawało 404). Z PR #4.
+  function hrefJezyka(targetLang) {
+    const cfg = LANGS[targetLang];
+    const sciezka = targetLang === 'pl' ? `content/${contentRel}` : `content/${targetLang}/${contentRel}`;
+    const prefix = cfg.dir ? cfg.dir + '/' : '';
+    if (fs.existsSync(sciezka)) return data.root + prefix + output;
+    return data.root + prefix + 'index.html';
+  }
+  data.langPl = hrefJezyka('pl');
+  data.langDe = hrefJezyka('de');
+  data.langCz = hrefJezyka('cz');
+  data.langSk = hrefJezyka('sk');
+  data.langHu = hrefJezyka('hu');
+  data.langIt = hrefJezyka('it');
+  data.langEs = hrefJezyka('es');
+
   // „Co jest w cenie” na stronach modeli: tabela cen z cennika (tylko PL — ceny w PLN; € do decyzji)
   const modelMatch = contentRel.match(/^modele\/([a-z]+)\.json$/);
   if (modelMatch && isPl) {

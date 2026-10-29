@@ -73,13 +73,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <div class="lang-switch">
           <button class="lang-btn" aria-label="Language">{{{ui.flag}}}</button>
           <div class="lang-dropdown" style="display:none">
-            <a href="{{{root}}}{{{pagePath}}}">🇵🇱 Polski</a>
-            <a href="{{{root}}}de/{{{pagePath}}}">🇩🇪 Deutsch</a>
-            <a href="{{{root}}}cz/{{{pagePath}}}">🇨🇿 Čeština</a>
-            <a href="{{{root}}}sk/{{{pagePath}}}">🇸🇰 Slovenčina</a>
-            <a href="{{{root}}}hu/{{{pagePath}}}">🇭🇺 Magyar</a>
-            <a href="{{{root}}}it/{{{pagePath}}}">🇮🇹 Italiano</a>
-            <a href="{{{root}}}es/{{{pagePath}}}">🇪🇸 Español</a>
+            <a href="{{{langPl}}}">🇵🇱 Polski</a>
+            <a href="{{{langDe}}}">🇩🇪 Deutsch</a>
+            <a href="{{{langCz}}}">🇨🇿 Čeština</a>
+            <a href="{{{langSk}}}">🇸🇰 Slovenčina</a>
+            <a href="{{{langHu}}}">🇭🇺 Magyar</a>
+            <a href="{{{langIt}}}">🇮🇹 Italiano</a>
+            <a href="{{{langEs}}}">🇪🇸 Español</a>
           </div>
         </div>
         <a href="tel:{{site.phoneLink}}" class="nav-phone">
@@ -305,7 +305,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="sub">{{blog.sub}}</p>
       <div class="blog-grid">
         {{#blog.items}}
-        <a href="{{href}}" class="blog-card reveal">
+        <a href="{{{root}}}{{href}}" class="blog-card reveal">
           <div class="blog-img"><img src="{{img}}" alt="{{title}}" loading="lazy"></div>
           <div class="blog-body">
             <span class="blog-date">{{date}}</span>
