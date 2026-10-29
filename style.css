@@ -1163,3 +1163,72 @@ body.nav-open{overflow:hidden}
 .wcenie-tabela td:last-child,.wcenie-tabela th:last-child{text-align:right;font-weight:700}
 .wcenie-tabela .btn{margin-top:16px}
 @media(max-width:900px){.wcenie-grid{grid-template-columns:1fr}}
+
+/* ── Karty wymiarów /pawilon-4x3…10x3 (uwagi Denisa 29.10.2026) ── */
+.karta-hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding-top:32px;padding-bottom:64px}
+.karta-hero-img{border-radius:var(--r);overflow:hidden;background:var(--bg-light);aspect-ratio:4/3}
+.karta-hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+.karta-eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#A82E0E;margin-bottom:12px}
+.karta-h1{font-size:clamp(2rem,4.5vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--primary);margin-bottom:16px}
+.karta-h2{font-size:clamp(1.5rem,3.5vw,2rem);font-weight:800;letter-spacing:-.02em;line-height:1.2;color:var(--primary);margin-bottom:12px}
+.karta-lead{font-size:1.05rem;color:var(--t2);line-height:1.6;margin-bottom:24px}
+.karta-cena{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;color:var(--primary);font-variant-numeric:tabular-nums;margin-bottom:8px}
+.karta-cena-od,.karta-cena-netto{font-size:1rem;font-weight:600;color:var(--t2);letter-spacing:0}
+.karta-note{font-size:.85rem;color:var(--t2);line-height:1.5}
+.karta-note-center{text-align:center;margin-top:24px}
+.karta-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.karta-cta-center{justify-content:center}
+.karta-sekcja{padding:64px 0}
+.karta-dane{max-width:760px;margin:32px auto 0;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:8px 24px}
+.karta-dane-row{display:grid;grid-template-columns:200px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--border)}
+.karta-dane-row:last-child{border-bottom:none}
+.karta-dane dt{font-size:.88rem;font-weight:700;color:var(--primary)}
+.karta-dane dd{font-size:.95rem;color:var(--t2);line-height:1.5}
+.karta-todo{font-style:italic}
+.karta-przekroj{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+.karta-warstwa{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:24px}
+.karta-warstwa-nazwa{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--t2);margin-bottom:8px}
+.karta-warstwa-wartosc{font-size:1.5rem;font-weight:800;color:var(--primary);line-height:1.2;margin-bottom:8px;font-variant-numeric:tabular-nums}
+.karta-warstwa-wartosc.karta-todo{font-size:1.05rem;font-weight:600;color:var(--t2)}
+.karta-warstwa-opis{font-size:.9rem;color:var(--t2);line-height:1.55}
+.karta-link-center{text-align:center;margin-top:24px;font-weight:700}
+.karta-link-center a{color:#A82E0E;display:inline-block;padding:12px 0}
+.karta-uklad{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.karta-uklad-text p{color:var(--t2);line-height:1.6;margin-bottom:24px}
+.karta-modele{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
+.karta-model{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;color:var(--text);transition:border-color .2s,transform .2s var(--ease)}
+.karta-model:hover{border-color:var(--accent)}
+.karta-model:active{transform:scale(.98)}
+.karta-model-img{aspect-ratio:4/3;background:var(--bg-light);overflow:hidden}
+.karta-model-img img{width:100%;height:100%;object-fit:cover;display:block}
+.karta-model-body{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:12px 16px}
+.karta-model-nazwa{font-weight:800;font-size:.95rem;letter-spacing:.04em}
+.karta-model-cena{font-size:.85rem;font-weight:700;color:#A82E0E;font-variant-numeric:tabular-nums;text-align:right}
+.karta-final{text-align:center}
+.wcenie-tabela td a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){
+  .karta-hero,.karta-uklad{grid-template-columns:1fr;gap:32px}
+  .karta-przekroj{grid-template-columns:1fr}
+  .karta-modele{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .karta-dane{padding:4px 16px}
+  .karta-dane-row{grid-template-columns:1fr;gap:4px}
+  .karta-model-body{flex-direction:column;gap:4px}
+  .karta-model-cena{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.karta-model{transition:none}.karta-model:active{transform:none}}
+
+/* ── Rzut 2D (rzut2d.js): karty wymiarów i konfigurator ── */
+.rzut2d{display:block;width:100%;height:auto;max-height:420px}
+.rzut2d .rz-sciana{fill:var(--primary)}
+.rzut2d .rz-wnetrze{fill:var(--white)}
+.rzut2d .rz-otwor{fill:var(--white)}
+.rzut2d .rz-okno{fill:#9CC3E0}
+.rzut2d .rz-witryna{fill:var(--accent)}
+.rzut2d .rz-skrzydlo{stroke:var(--primary);stroke-width:4}
+.rzut2d .rz-luk{fill:none;stroke:var(--t3);stroke-width:2;stroke-dasharray:8 6}
+.rzut2d .rz-wymiar{stroke:var(--t2);stroke-width:2}
+.rzut2d .rz-tekst{fill:var(--primary);font-weight:700;font-family:var(--font)}
+.rzut2d .rz-sciana-id{fill:var(--t2);font-weight:600;font-family:var(--font)}
+.karta-uklad-rzut{background:var(--bg-light);border-radius:var(--r);padding:24px}

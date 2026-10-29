@@ -25,6 +25,11 @@ const CSS_V = crypto.createHash('md5').update(fs.readFileSync('style.css')).dige
 
 // ── Cennik pawilonów: content/cennik-pawilonow.json (generowany z CSV przez scripts/gen-cennik.js) ──
 const CENNIK = JSON.parse(fs.readFileSync('content/cennik-pawilonow.json', 'utf8'));
+const rzut2d = require('./rzut2d.js');
+
+// ── Karty wymiarów (uwagi Denisa 29.10.2026): /pawilon-4x3 … /pawilon-10x3, tylko PL ──
+const WYMIARY_KART = ['4x3', '6x3', '8x3', '10x3'];
+const zlote = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' zł';
 
 // ── Mini Mustache renderer ──
 function render(template, data) {
@@ -250,6 +255,10 @@ function getPages() {
     ...MODELS.map(s => ({
       content: `modele/${s}.json`, template: 'templates/model.html', output: `modele/${s}.html`, i18n: true
     })),
+    // Karty wymiarów (PL) — treść wspólna w content/wymiary/_karta.json, ceny z cennika
+    ...WYMIARY_KART.map(s => ({
+      content: `wymiary/${s}.json`, template: 'templates/page.html', output: `pawilon-${s}.html`, i18n: false
+    })),
     // Zastosowania hub + uses
     { content: 'zastosowania-index.json', template: 'templates/zastosowania-hub.html', output: 'zastosowania.html', i18n: true },
     ...USES.map(s => ({
@@ -384,11 +393,63 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
     if (CENNIK.modele.includes(M)) {
       data.cennikModelu = CENNIK.rozmiary.map((r) => ({
         rozmiar: `${r.dlugosc}×${r.szerokosc} m`,
+        kartaHref: WYMIARY_KART.includes(r.rozmiar) ? `../pawilon-${r.rozmiar}.html` : '',
         m2: r.m2,
         cena: r.doplaty[M] == null ? `dostępny od ${CENNIK.od[M].rozmiar.replace('x', '×')} m` : zl(r.podstawa + r.doplaty[M]),
       }));
       data.maCennikModelu = true;
     }
+  }
+
+  // Karta wymiaru: ceny modeli w tym wymiarze z cennika + rzut 2D wersji podstawowej (drzwi i 2 okna)
+  const kartaMatch = contentRel.match(/^wymiary\/(\d+x\d+)\.json$/);
+  if (kartaMatch && isPl) {
+    const karta = JSON.parse(fs.readFileSync('content/wymiary/_karta.json', 'utf8'));
+    const r = CENNIK.rozmiary.find((x) => x.rozmiar === kartaMatch[1]);
+    if (!r) throw new Error(`karta wymiaru ${kartaMatch[1]}: brak rozmiaru w cenniku`);
+    const rozmiar = `${r.dlugosc}×${r.szerokosc} m`;
+    const modele = CENNIK.modele.map((M) => ({ M, cena: r.doplaty[M] == null ? null : r.podstawa + r.doplaty[M] }));
+    const dostepne = modele.filter((m) => m.cena != null).sort((a, b) => a.cena - b.cena);
+    const od = dostepne[0];
+    Object.assign(data, {
+      karta, rozmiar, L: r.dlugosc, W: r.szerokosc, m2: r.m2,
+      cenaOd: zlote(od.cena), modelOd: od.M,
+      h1: `Pawilon ${rozmiar} całoroczny`,
+      lead: `${r.m2} m² powierzchni, szerokość ${r.szerokosc} m. ${dostepne.length} z ${modele.length} modeli STAGO w tym wymiarze — od ${zlote(od.cena)} do ${zlote(dostepne[dostepne.length - 1].cena)} netto.`,
+      cenaNote: karta.cenaNote.replace('{{modelOd}}', od.M),
+      heroAlt: `Pawilon STAGO ${data.heroModel.toUpperCase()} — render poglądowy`,
+      breadcrumb: `Pawilon ${rozmiar}`,
+      dane: [
+        { label: 'Wymiar zewnętrzny', value: `${r.dlugosc} × ${r.szerokosc} m` },
+        { label: 'Powierzchnia', value: `${r.m2} m²` },
+        { label: 'Wysokość', value: karta.wysokosc },
+        { label: 'Konstrukcja', value: karta.konstrukcja },
+        { label: 'Ściany', value: karta.sciany },
+        { label: 'Dach', value: karta.dach },
+        { label: 'Stolarka', value: karta.stolarka },
+        data.masa ? { label: 'Masa pawilonu', value: data.masa }
+          : { label: 'Masa pawilonu', value: karta.masaTodo, todo: `masa ${r.rozmiar} — pytanie 11` },
+        { label: 'Termin', value: karta.termin },
+        { label: 'Transport', value: karta.transport },
+        { label: 'Montaż', value: karta.montaz },
+        ...(r.m2 <= 35 ? [{ label: 'Formalności', value: karta.zgloszenie }] : []),
+      ],
+      modeleWymiaru: [...dostepne, ...modele.filter((m) => m.cena == null)].map(({ M, cena }) => ({
+        nazwa: M, slug: M.toLowerCase(), href: `modele/${M.toLowerCase()}.html`,
+        cena: cena == null ? `dostępny od ${CENNIK.od[M].rozmiar.replace('x', '×')} m` : `od ${zlote(cena)}`,
+      })),
+      rzutSvg: rzut2d({ L: r.dlugosc, W: r.szerokosc, openings: [
+        { wall: 'A', kind: 'door' }, { wall: 'A', kind: 'okn' }, { wall: 'C', kind: 'okn' },
+      ] }),
+    });
+    data.meta = {
+      title: `Pawilon ${rozmiar} całoroczny — cena od ${zlote(od.cena)} netto | STAGO`,
+      description: `Pawilon ${rozmiar} (${r.m2} m²) od producenta: ${dostepne.length} modeli od ${zlote(od.cena)} netto, ściany PIR 100 mm, dach PIR 160 mm, spawana rama stalowa. Produkcja 4–6 tygodni. Skonfiguruj i wyślij po ofertę.`,
+      canonical: `https://stago.com.pl/pawilon-${r.rozmiar}.html`,
+      ogImage: `https://stago.com.pl/assets/modele/${data.heroModel}.webp`,
+      ...(data.meta || {}),
+    };
+    data.body = render(fs.readFileSync('templates/karta-wymiaru.html', 'utf8'), data);
   }
 
   // Cennik pawilonów (macierz rozmiar × model) — konfigurator liczy cenę orientacyjną w przeglądarce

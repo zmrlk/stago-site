@@ -1,0 +1,47 @@
+{
+  "_opis": "Wspólne treści kart wymiarów (/pawilon-4x3, -6x3, -8x3, -10x3). Ceny liczy build.js z content/cennik-pawilonow.json. Źródła: cennik 28.10.2026; termin, transport, montaż, zgłoszenie do 35 m² — llms.txt i /jak-kupic; ściany PIR 100 mm, dach PIR 160 mm, stolarka PVC/ALU — uwagi Denisa 29.10.2026.",
+  "_todo": [
+    "TODO(STAGO): masa pawilonu w każdym wymiarze (pole 'masa' w content/wymiary/<wymiar>.json) — pytanie 11 w rada/SEO-STAGO-PYTANIA-KAROL.md",
+    "TODO(STAGO): warstwy podłogi (przekroj[2]) — pytanie 12",
+    "TODO(STAGO): potwierdzić, że ściany PIR 100 mm i dach PIR 160 mm to standard każdego modelu — pytanie 13"
+  ],
+  "eyebrow": "Pawilon całoroczny",
+  "cenaNote": "Najtańszy model w tym wymiarze ({{modelOd}}). Cena netto, bez transportu i montażu, wg cennika z 28.10.2026. Pełną kwotę poznasz w ofercie przed podpisem.",
+  "daneEyebrow": "Karta techniczna",
+  "daneH2": "Najważniejsze dane",
+  "daneNote": "Wymiary zewnętrzne. Inne wymiary i rozwiązania niestandardowe wyceniamy indywidualnie.",
+  "wysokosc": "2,44 m standardowo (także 2,54 / 2,64 / 2,74 m — potwierdzamy w ofercie)",
+  "konstrukcja": "Spawana rama stalowa z profili zamkniętych, zabezpieczona antykorozyjnie",
+  "sciany": "Płyta warstwowa PIR 100 mm",
+  "dach": "Płyta warstwowa PIR 160 mm",
+  "stolarka": "PVC lub aluminium — zależnie od zamówienia",
+  "masaTodo": "Podamy w ofercie",
+  "termin": "Produkcja zwykle 4–6 tygodni od akceptacji projektu",
+  "transport": "6 zł za kilometr, liczone w obie strony od zakładu w Jędrzejowie",
+  "montaz": "Wyceniamy zależnie od warunków na miejscu",
+  "zgloszenie": "Do 35 m² wystarczy zgłoszenie, bez pozwolenia na budowę",
+  "przekrojEyebrow": "Przekrój",
+  "przekrojH2": "Ściana, dach, podłoga",
+  "przekrojSub": "Dwa pawilony mogą wyglądać identycznie. Różnicę poznasz po tym, z czego zostały zbudowane.",
+  "przekroj": [
+    { "nazwa": "Ściana", "wartosc": "PIR 100 mm", "opis": "Płyta warstwowa z rdzeniem PIR na spawanej ramie stalowej." },
+    { "nazwa": "Dach", "wartosc": "PIR 160 mm", "opis": "Grubsza płyta warstwowa PIR na dachu." },
+    { "nazwa": "Podłoga", "wartosc": "Opis warstw podamy w ofercie", "opis": "", "todo": "warstwy podłogi — pytanie 12" }
+  ],
+  "przekrojLink": "Porównaj konstrukcje i zobacz, jak produkujemy &rarr;",
+  "wCenieEyebrow": "Cena",
+  "wCenieH2": "Co jest w cenie",
+  "wCenie": [
+    { "h3": "W cenie podstawy", "items": [ { "text": "Pawilon w wybranym wymiarze" }, { "text": "2 okna i drzwi" }, { "text": "Podstawowe obróbki blacharskie" } ] },
+    { "h3": "W dopłacie za model", "items": [ { "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła modelu — cena obejmuje wszystkie okna z konfiguracji modelu" } ] },
+    { "h3": "Wyceniamy osobno", "items": [ { "text": "Transport (6 zł/km w obie strony) i montaż" }, { "text": "Wyposażenie dodatkowe wybrane w konfiguratorze" }, { "text": "Rozwiązania niestandardowe" } ] }
+  ],
+  "ukladEyebrow": "Konfiguracja",
+  "ukladH2": "Wersja podstawowa: drzwi i 2 okna",
+  "ukladText": "Rzut poglądowy z góry. Miejsce drzwi, okien, witryn i okna podawczego ustalasz sam — w konfiguratorze albo przy wycenie. Do tego kolor ścian, lamele, klimatyzacja i instalacje.",
+  "modeleEyebrow": "Elewacje",
+  "modeleSub": "Ten sam wymiar, inna bryła i elewacja. Ceny netto od, bez transportu i montażu.",
+  "modeleNote": "Rendery poglądowe modeli. Elewację, kolor i stolarkę dobierasz pod siebie.",
+  "finalH2": "Wyślij swoją konfigurację po ofertę",
+  "finalText": "Wybierz model, ułóż okna i drzwi, zobacz cenę orientacyjną. Odpowiemy z pełną wyceną z transportem i montażem."
+}

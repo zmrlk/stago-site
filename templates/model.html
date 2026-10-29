@@ -182,7 +182,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <table>
           <thead><tr><th>Wymiar</th><th>Powierzchnia</th><th>Cena netto od</th></tr></thead>
           <tbody>
-            {{#cennikModelu}}<tr><td>{{rozmiar}}</td><td>{{m2}} m²</td><td>{{cena}}</td></tr>{{/cennikModelu}}
+            {{#cennikModelu}}<tr><td>{{#kartaHref}}<a href="{{{kartaHref}}}">{{rozmiar}}</a>{{/kartaHref}}{{^kartaHref}}{{rozmiar}}{{/kartaHref}}</td><td>{{m2}} m²</td><td>{{cena}}</td></tr>{{/cennikModelu}}
           </tbody>
         </table>
         <p class="wcenie-note">{{{wCenie.tabelaNote}}}</p>
