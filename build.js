@@ -273,7 +273,9 @@ function getPages() {
     // SEO landing pages (PL only for now)
     ...['pawilony-sprzedaz','pawilony-pod-klucz','cennik-pawilonow-handlowych',
        'cennik-kontenerow-biurowych','pawilon-bez-pozwolenia-przepisy',
-       'producent-kontenerow-modulowych','pawilon-na-dzialke'].map(s => ({
+       'producent-kontenerow-modulowych','pawilon-na-dzialke',
+       // Szkielety (noindex, bez linków, poza sitemap) — uwagi Denisa 29.10.2026, 🟠
+       'realizacja-naprzod-jedrzejow','karta-techniczna-nord'].map(s => ({
       content: `pages/${s}.json`, template: 'templates/page.html', output: `${s}.html`, i18n: false
     })),
   ];
