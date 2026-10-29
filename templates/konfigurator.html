@@ -34,6 +34,9 @@ body { background: #F8F9FA; padding-bottom: 0; }
 
 /* ── STEP CONTAINER ── */
 .config-wrap {
+  /* Wejście kroku (stepIn: translateX 24px) chwilowo wystaje w prawo; na telefonie Chrome rozszerzał
+     wtedy widok (390 px → 398, 280 → 289) i zostawał przewijany w poziomie. clip nie psuje position: sticky. */
+  overflow-x: clip;
   margin-top: 57px;
   min-height: calc(100vh - 57px - 64px);
   display: flex;
@@ -856,7 +859,8 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
 /* ── STEP 5: SUMMARY + FORM ── */
 .summary-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* minmax(0,1fr): kolumna może być węższa niż domyślna szerokość pól formularza (280 px: było 331 px, poziome przewijanie) */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 28px;
   align-items: start;
 }
@@ -941,7 +945,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
 }
 .summary-row:last-child { border-bottom: none; }
 .summary-row .s-label { color: var(--t3); }
-.summary-row .s-value { font-weight: 600; color: var(--primary); text-align: right; }
+.summary-row .s-value { font-weight: 600; color: var(--primary); text-align: right; min-width: 0; overflow-wrap: anywhere; }
 
 .contact-card {
   background: #fff;
@@ -959,6 +963,8 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
 }
 .cfg-form { display: flex; flex-direction: column; gap: 12px; }
 .cfg-form input, .cfg-form textarea {
+  width: 100%;
+  min-width: 0;
   padding: 12px 14px;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -1118,7 +1124,7 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
   .dim-group { max-width: 100%; }
   .finish-grid { grid-template-columns: 1fr; }
   .toggles-grid { grid-template-columns: 1fr; }
-  .summary-layout { grid-template-columns: 1fr; }
+  .summary-layout { grid-template-columns: minmax(0, 1fr); }
   .config-wrap { padding: 24px 16px 80px; }
   .bar-chips { display: none; }
   .bottom-bar { padding: 10px 16px; }
