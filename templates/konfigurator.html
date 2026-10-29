@@ -1298,8 +1298,8 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
           <div class="s3-section">
             <h3>1. {{step2.purposeLabel}}</h3>
             <p class="s3-hint">Do czego ma służyć pawilon? Opcjonalne — pomoże nam przygotować ofertę.</p>
-            <div class="pills" data-group="przeznaczenie">
-              {{#step2.purposes}}<div class="pill" role="button" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">{{name}}</div>{{/step2.purposes}}
+            <div class="pills" data-group="przeznaczenie" role="radiogroup" aria-label="{{step2.purposeLabel}}">
+              {{#step2.purposes}}<div class="pill" role="radio" aria-checked="false" tabindex="0" onclick="selectPill(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPill(this)}">{{name}}</div>{{/step2.purposes}}
             </div>
           </div>
 
@@ -1762,6 +1762,12 @@ function restorePills(group, val) {
   document.querySelectorAll(`[data-group="${group}"] .pill`).forEach(p => {
     p.classList.toggle('selected', p.textContent === val);
   });
+  document.querySelectorAll(`[data-group="${group}"]`).forEach(syncAriaChecked);
+}
+
+// Pigułki z role="radio" (przeznaczenie): czytnik ekranu dostaje stan zaznaczenia, nie tylko klasę CSS
+function syncAriaChecked(group) {
+  group.querySelectorAll('.pill[role="radio"]').forEach(p => p.setAttribute('aria-checked', p.classList.contains('selected') ? 'true' : 'false'));
 }
 
 // ── NAV ──
@@ -1783,7 +1789,7 @@ function goToStep(n) {
     if (parseInt(p.dataset.step) === n) p.classList.add('active');
   });
   if (n === 3) { ensureAccents(); syncAccentUI(); }
-  if (n === 4) { ensureOpenings(); renderOpenings(); }
+  if (n === 4) { ensureOpenings(); renderOpenings(); updateRzut(); }
   mount3D(n);
   if (n === 5) buildSummary();
   updateBar();
@@ -1821,9 +1827,12 @@ function updateBar() {
 
 function canProceed() {
   if (state.step === 1) return !!state.type;
-  if (state.step === 2) return state.dimL && state.dimW && state.dimH;
+  if (state.step === 2) return wymiarOk(state.dimL) && wymiarOk(state.dimW) && state.dimH;
   return true;
 }
+
+// Wymiar: dodatnia, skończona liczba (pole number, ?l=&w=, stan z localStorage)
+function wymiarOk(v) { const n = Number(v); return v !== '' && Number.isFinite(n) && n > 0; }
 
 // ── STEP 1 ──
 function selectType(el) {
@@ -1873,6 +1882,7 @@ function selectPill(el) {
   const group = el.parentElement;
   group.querySelectorAll('.pill').forEach(p => p.classList.remove('selected'));
   el.classList.add('selected');
+  syncAriaChecked(group);
   const groupName = group.dataset.group;
   if (groupName) state[groupName] = el.textContent;
   saveState();
@@ -2075,11 +2085,12 @@ function updatePrice() {
   return c;
 }
 
-// Rzut 2D z góry (rzut2d.js): wymiary + otwory z kroku 4; przed krokiem 4 wersja podstawowa (drzwi i 2 okna)
-const OTWORY_BAZA = [{ wall: 'A', kind: 'door' }, { wall: 'A', kind: 'okn' }, { wall: 'C', kind: 'okn' }];
+// Rzut 2D z góry (rzut2d.js): ta sama stolarka, którą pokazuje krok 4 i która idzie w zapytaniu.
+// Przed krokiem 4 — układ, który krok 4 zaproponuje; po świadomym usunięciu wszystkiego — bez otworów.
 function updateRzut() {
+  const otwory = state.openings.length ? state.openings : (state.openingsInit ? [] : domyslneOtwory());
   const svg = (typeof rzut2d === 'function')
-    ? rzut2d({ L: state.dimL, W: state.dimW, openings: state.openings.length ? state.openings : OTWORY_BAZA })
+    ? rzut2d({ L: state.dimL, W: state.dimW, openings: otwory })
     : '';
   document.querySelectorAll('[data-rzut]').forEach(el => {
     el.innerHTML = svg ? svg + '<p class="cfg-rzut-cap">Rzut poglądowy z góry — dokładne rozmieszczenie ustalimy przy wycenie.</p>' : '';
@@ -2215,14 +2226,19 @@ const KIND_OPTS = [
 const SHOW_PLACEMENT = {{#enable3d}}true{{/enable3d}}{{^enable3d}}false{{/enable3d}};
 
 // Domyślny układ przy pierwszym wejściu (skalowany długością)
-function ensureOpenings() {
-  if (state.openings && state.openings.length) { stripPlacement(); return; }
+function domyslneOtwory() {
   const L = parseFloat(state.dimL) || 6;
   const nWit = Math.max(1, Math.min(4, Math.round(L / 2) - 1));
   const arr = [newOpening('A', 'door', 0.85)];
   for (let i = 0; i < nWit; i++) arr.push(newOpening('A', 'wit', (i + 1) / (nWit + 2)));
   arr.push(newOpening('B', 'okn', 0.5));
-  state.openings = arr;
+  return arr;
+}
+
+function ensureOpenings() {
+  state.openingsInit = true;
+  if (state.openings && state.openings.length) { stripPlacement(); return; }
+  state.openings = domyslneOtwory();
   saveState();
 }
 
@@ -2430,8 +2446,9 @@ if (urlType) {
 
 // ?l=6&w=3 — z kart wymiarów (/pawilon-6x3): ustaw wymiar
 (function () {
-  const l = parseFloat(params.get('l')), w = parseFloat(params.get('w'));
-  if (!(l > 0 && w > 0)) return;
+  const liczba = (v) => /^\d{1,2}(\.\d{1,2})?$/.test(v || '') ? Number(v) : NaN;
+  const l = liczba(params.get('l')), w = liczba(params.get('w'));
+  if (!(l >= 2 && l <= 18 && w >= 2 && w <= 6)) return;
   state.dimL = String(l); state.dimW = String(w);
   const iL = document.getElementById('dimL'), iW = document.getElementById('dimW');
   if (iL) iL.value = state.dimL;

@@ -14,10 +14,13 @@
   }
 
   function rzut2d(opts) {
-    var L = parseFloat(opts.L), W = parseFloat(opts.W);
-    if (!(L > 0 && W > 0)) return '';
+    var L = Number(opts.L), W = Number(opts.W);
+    if (!(isFinite(L) && isFinite(W) && L > 0 && W > 0)) return '';
     var dl = Math.max(L, W), sz = Math.min(L, W); // dłuższy bok zawsze poziomo
-    var otwory = opts.openings || [];
+    // Tylko znane ściany i rodzaje — stan może pochodzić z localStorage
+    var otwory = (opts.openings || []).filter(function (o) {
+      return o && SCIANY.hasOwnProperty(o.wall) && NAZWY.hasOwnProperty(o.kind);
+    });
     var cmL = dl * 100, cmW = sz * 100;
     var pad = Math.round(Math.max(cmL, 300) * 0.16);
     var fs = Math.round((cmL + 2 * pad) * 0.035);
@@ -95,6 +98,7 @@
     if (otwory.length) {
       opis += ': ' + otwory.map(function (o) { return (NAZWY[o.kind] || o.kind) + ' (' + (SCIANY[o.wall] || o.wall) + ')'; }).join(', ');
     }
+    opis = opis.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     return '<svg class="rzut2d" viewBox="0 0 ' + vbW + ' ' + vbH + '" role="img" aria-label="' + opis + '" xmlns="http://www.w3.org/2000/svg">' + s.join('') + '</svg>';
   }
 
