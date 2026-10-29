@@ -453,6 +453,8 @@ body.nav-open{overflow:hidden}
     padding:14px 0;
   }
   .nav-links a:hover{color:var(--accent-text)}
+  /* Menu mobilne ma ciemne tło — tekst akcentu bez przyciemnienia (pyt. 5) */
+  .nav-links,.nav-mobile-bottom{--accent-text:var(--accent)}
   .nav-links .btn-nav{
     margin-top:16px;
     padding:14px 28px;
