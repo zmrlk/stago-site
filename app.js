@@ -230,12 +230,17 @@ if (stickyCta && 'IntersectionObserver' in window) {
   sentinel.setAttribute('aria-hidden', 'true');
   sentinel.style.cssText = 'position:absolute;top:300px;left:0;width:1px;height:1px;pointer-events:none';
   document.body.appendChild(sentinel);
+  // Pasek czeka też, aż zjadą z ekranu przyciski nagłówka strony modelu (9.11: dwa pomarańczowe CTA naraz na telefonie)
+  const heroCta = document.querySelector('.product-hero-cta');
+  const widoczne = new Map([[sentinel, true], [heroCta, false]]);
   const io = new IntersectionObserver((entries) => {
-    const visible = !entries[0].isIntersecting;
+    for (const e of entries) widoczne.set(e.target, e.isIntersecting);
+    const visible = !widoczne.get(sentinel) && !widoczne.get(heroCta);
     stickyCta.classList.toggle('is-visible', visible);
     document.body.classList.toggle('has-sticky-cta', visible);
   }, { threshold: 0 });
   io.observe(sentinel);
+  if (heroCta) io.observe(heroCta);
 }
 
 // ── SCROLL REVEAL WITH INTERSECTION OBSERVER ──
