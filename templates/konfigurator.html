@@ -274,8 +274,9 @@ details.k-sek[open] { padding-bottom: 24px; }
         <h1 class="k-h1">Skonfiguruj <span id="h1m">pawilon</span></h1>
         <p class="k-sub">Wymiar daje cenę od razu. Wygląd, okna i wyposażenie możesz dopracować albo zostawić nam.</p>
 
-        <div class="k-sek">
+        <div class="k-sek" id="wymiary">
           <h2>Wymiary <small id="wymStan"></small></h2>
+          <p class="k-ostrz" id="kBlad" role="alert" hidden></p>
           <p class="k-etyk" id="etDl">Długość (m)</p>
           <div class="k-chipy" id="kChipy" role="group" aria-labelledby="etDl"></div>
           <p class="k-uwaga">Szerokość 3 m, wysokość 2,44 m (standard).</p>
@@ -332,7 +333,7 @@ details.k-sek[open] { padding-bottom: 24px; }
           </div>
         </details>
 
-        <div class="k-sek k-zap" id="zapytanie">
+        <div class="k-sek" id="zapytanie">
           <h2>Zapytanie</h2>
           <p class="k-etyk" id="etPrz">Do czego? (opcjonalnie)</p>
           <div class="k-pigulki" id="kPrzezn" role="group" aria-labelledby="etPrz">
@@ -483,6 +484,7 @@ const zl = (v) => Math.round(v).toLocaleString('pl-PL').replace(/\u00a0|\u202f/g
 const rozmiarTxt = (r) => r.replace('x', '×') + ' m';
 const rozmiarLadny = (r) => r.replace('x', ' × ') + ' m';
 const lic = (v) => String(Math.round(v * 100) / 100).replace('.', ',');
+const pole = (v) => String(v).replace('.', ',');   // pola „Inny wymiar”: pełna precyzja, jak w zapytaniu
 const twarde = (s) => s.replace(/ /g, '\u00a0');   // kwota w pasku nie łamie się na dwie linie
 
 function cenaOrientacyjna() {
@@ -505,15 +507,12 @@ function wymiarTxt() {
   return L > 0 && W > 0 ? lic(L) + ' × ' + lic(W) + ' m' : '';
 }
 
-// Po zmianie modelu, gdy długość z przycisku nie istnieje dla nowego modelu (VIEW od 7 m), do następnej zmiany wymiaru
-let notaModelu = '';
-
 function updatePrice() {
   const c = cenaOrientacyjna();
   const dopiski = [];
   if (state.dimH && state.dimH !== '2.44') dopiski.push('cena dla wysokości 2,44 m — inną wysokość potwierdzimy w ofercie');
   if (state.extras && state.extras.length) dopiski.push('bez wyposażenia dodatkowego');
-  const wym = twarde(wymiarTxt()), H = twarde(lic(wymiar(state.dimH) || 2.44) + ' m');
+  const wym = twarde(wymiarTxt()), H = state.dimH ? twarde(lic(wymiar(state.dimH)) + ' m') : 'do podania';
   const zlT = (v) => twarde(zl(v)), rozT = (r) => twarde(rozmiarLadny(r));
   let cena = 'Wybierz model', mocno = '', reszta = 'Wybierz model z listy, a pokażemy cenę z cennika.', dop = '';
   if (c.status === 'od') {
@@ -525,7 +524,7 @@ function updatePrice() {
     cena = twarde(zl(c.cena));
     mocno = c.model + ' ' + rozT(c.rozmiar) + ': ' + zlT(c.cena) + ' netto';
     reszta = 'z cennika, bez transportu i montażu.'
-      + (state.dimH !== '2.44' ? ' Cena dla wysokości 2,44\u00a0m; wysokość ' + H + ' potwierdzimy w ofercie.' : '')
+      + (state.dimH && state.dimH !== '2.44' ? ' Cena dla wysokości 2,44\u00a0m; wysokość ' + H + ' potwierdzimy w ofercie.' : '')
       + (state.extras.length ? ' Wyposażenie wycenimy w ofercie.' : '');
     dop = ' · netto, bez transportu i montażu';
   } else if (c.status === 'indywidualna') {
@@ -539,7 +538,6 @@ function updatePrice() {
     reszta = 'Wybierz większy wymiar albo wyślij zapytanie, a ten wymiar wycenimy indywidualnie.';
     dop = ' · wymiar indywidualny';
   }
-  if (notaModelu) reszta += ' ' + notaModelu;
   $('stanB').textContent = mocno;
   $('stanR').textContent = reszta;
   $('bCena').textContent = cena;
@@ -568,8 +566,7 @@ function ostrzezenieWymiaru() {
   if (zly('iL') || zly('iW') || (state.dimL !== '' && state.dimW !== '' && !wymiaryOk(state.dimL, state.dimW))) {
     return 'Podaj wymiar od 2 do 18 m (dłuższy bok) i od 2 do 6 m (krótszy bok). Większy obiekt? Zadzwoń: 509 508 210, przygotujemy wycenę indywidualną.';
   }
-  const h = $('iH').value.trim();
-  if (h !== '' && Number.isNaN(wysokosc(h))) return 'Wysokość podaj od 2,2 do 3,2 m.';
+  if (state.dimH === '') return 'Wysokość podaj od 2,2 do 3,2 m.';
   return '';
 }
 
@@ -583,7 +580,7 @@ function rysujWymiary() {
     b.setAttribute('aria-pressed', String(!innyOtwarty && W === 3 && L === l));
   });
   $('wymStan').textContent = L > 0 && W > 0
-    ? [lic(L) + ' × ' + lic(W) + ' m', lic(L * W) + ' m²', lic(wymiar(state.dimH)) + ' m'].map(twarde).join(' · ')
+    ? [lic(L) + ' × ' + lic(W) + ' m', lic(L * W) + ' m²'].concat(state.dimH ? [lic(wymiar(state.dimH)) + ' m'] : []).map(twarde).join(' · ')
     : 'wybierz długość';
   $('inne').hidden = !innyOtwarty;
   $('inneBtn').setAttribute('aria-expanded', String(innyOtwarty));
@@ -594,7 +591,6 @@ function rysujWymiary() {
 
 function wybierzDlugosc(l) {
   innyOtwarty = false;
-  notaModelu = '';
   state.dimL = String(l); state.dimW = '3'; state.dimH = '2.44';
   saveState();
   rysuj();
@@ -603,9 +599,9 @@ function wybierzDlugosc(l) {
 function otworzInny() {
   innyOtwarty = true;
   const L = wymiar(state.dimL), W = wymiar(state.dimW);
-  $('iL').value = L > 0 ? lic(L) : '';
-  $('iW').value = W > 0 ? lic(W) : '';
-  $('iH').value = lic(wymiar(state.dimH));
+  $('iL').value = L > 0 ? pole(L) : '';
+  $('iW').value = W > 0 ? pole(W) : '';
+  $('iH').value = state.dimH ? pole(wymiar(state.dimH)) : '';
   rysuj();
   $('iL').focus();
 }
@@ -614,28 +610,19 @@ function poleWymiaru(e) {
   const v = e.target.value.trim().replace(',', '.');
   if (e.target.id === 'iH') {
     const h = wysokosc(v);
-    if (!Number.isNaN(h)) state.dimH = String(h);
+    state.dimH = Number.isNaN(h) ? '' : String(h);
   } else {
     const n = wymiar(v);
     state[e.target.id === 'iL' ? 'dimL' : 'dimW'] = Number.isNaN(n) ? '' : String(n);
   }
-  notaModelu = '';
   saveState();
   rysuj();
 }
 
 // ── MODEL ──
+// Zmiana modelu nie rusza wymiaru; gdy model go nie ma (VIEW od 7 m), linia ceny mówi od jakiego jest
 function wybierzModel(M) {
   state.type = M;
-  notaModelu = '';
-  // Makieta v4: długość z przycisku, której model nie ma (VIEW od 7 m) → najmniejsza dostępna; wpisanego wymiaru nie ruszamy
-  const L = wymiar(state.dimL), W = wymiar(state.dimW);
-  const r = CENNIK && CENNIK.rozmiary.find(x => x.dlugosc === L && x.szerokosc === W);
-  if (!innyOtwarty && r && r.doplaty[M] == null && CENNIK.od[M]) {
-    const od = CENNIK.od[M].rozmiar.split('x');
-    state.dimL = od[0]; state.dimW = od[1];
-    notaModelu = M + ' zaczyna się od ' + twarde(rozmiarLadny(CENNIK.od[M].rozmiar)) + ', więc ustawiliśmy tę długość.';
-  }
   saveState();
   rysuj();
 }
@@ -717,9 +704,9 @@ function rysujWyglad() {
 const SCIANY = { A: 'Przód', B: 'Prawy bok', C: 'Tył', D: 'Lewy bok' };
 const NAZWY = { door: 'drzwi', okn: 'okno', wit: 'witryna' };
 
-// Dokładne umiejscowienie (pozycja, zawiasy) ma sens tylko z podglądem 3D —
-// bez niego klient ustawiałby je na ślepo, więc idzie w parze z tą samą flagą.
-const SHOW_PLACEMENT = {{#enable3d}}true{{/enable3d}}{{^enable3d}}false{{/enable3d}};
+// Układ v4 nie ma edycji pozycji ani zawiasów (także z podglądem 3D): klient ich nie ustawia, więc nie idą w zapytaniu.
+// Podgląd 3D dostaje otwory rozłożone równo na ścianie (stanDla3D), tak jak rysuje je rzut2d.
+const SHOW_PLACEMENT = false;
 
 // Domyślny układ (skalowany długością); do pierwszej zmiany klienta rośnie razem z wymiarem
 function domyslneOtwory() {
@@ -806,10 +793,18 @@ function rysujReszte() {
 }
 
 // ── 3D PODGLĄD (enable3d): canvas w miejscu zdjęcia modelu ──
+function stanDla3D() {
+  const ot = otworyWidoczne(), ile = {}, nr = {};
+  ot.forEach(o => { ile[o.wall] = (ile[o.wall] || 0) + 1; });
+  return Object.assign({}, state, { openings: ot.map(o => {
+    nr[o.wall] = (nr[o.wall] || 0) + 1;
+    return { wall: o.wall, kind: o.kind, t: nr[o.wall] / (ile[o.wall] + 1), hinge: 'left' };
+  }) });
+}
 function mount3D() {
   if (!window.StagoConfigurator3D || !StagoConfigurator3D.ready()) return;
   StagoConfigurator3D.mount($('vBryla'));
-  StagoConfigurator3D.update(state);
+  StagoConfigurator3D.update(stanDla3D());
 }
 
 function rysuj() {
@@ -819,7 +814,8 @@ function rysuj() {
   rysujWymiary();
   rysujOtwory();
   rysujReszte();
-  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) StagoConfigurator3D.update(state);
+  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) StagoConfigurator3D.update(stanDla3D());
+  if (!$('kBlad').hidden) { const b = bladKonfiguracji(); $('kBlad').hidden = !b; if (b) $('kBlad').textContent = b.tekst; }
 }
 
 // Pola wyboru z zapisu tylko spośród opcji widocznych na stronie; inaczej wartość domyślna
@@ -831,6 +827,8 @@ function poprawWybory() {
   if (!lista('#kKolory .k-kolor', b => b.dataset.name).includes(state.kolorScian)) state.kolorScian = DOMYSLNE.kolorScian;
   // Okucia podstawowe/premium, kolor i rozmieszczenie okuć nie mają kontrolki na stronie
   ['okucia', 'kolorOkuc', 'rozmOkuc'].forEach(k => { state[k] = DOMYSLNE[k]; });
+  const dawne = { Handlowy: 'Handel i usługi', 'Usługowy': 'Handel i usługi', Biurowy: 'Biuro', Gastronomiczny: 'Gastronomia' };
+  if (dawne[state.przeznaczenie]) state.przeznaczenie = dawne[state.przeznaczenie];
   if (!lista('#kPrzezn .k-pig', b => b.dataset.name).includes(state.przeznaczenie)) state.przeznaczenie = '';
   const wyposazenie = lista('[data-equip]', i => i.dataset.equip);
   state.extras = state.extras.filter(x => wyposazenie.includes(x));
@@ -866,6 +864,7 @@ if (urlType && !MODELE.includes(urlType)) urlType = null;
 if (urlType) {
   try { localStorage.removeItem('stago_cfg'); } catch (e) {}
   state.type = urlType;
+  state.step = 1;
   state.extras = [];
   // Nowa konfiguracja z karty/modelu: stolarka od nowa (zapis i tak jest usuwany)
   state.openings = [];
@@ -877,7 +876,7 @@ if (urlType) {
 (function () {
   const l = wymiar(params.get('l')), w = wymiar(params.get('w'));
   if (!wymiaryOk(l, w)) return;
-  state.dimL = String(l); state.dimW = String(w); state.dimH = '2.44';
+  state.dimL = String(l); state.dimW = String(w);
   saveState();
 })();
 
@@ -897,7 +896,7 @@ if (zapisDoOdtworzenia) {
 })();
 innyOtwarty = state.dimL !== '' && state.dimW !== '' && !standardowy();
 if (innyOtwarty) {
-  $('iL').value = lic(wymiar(state.dimL)); $('iW').value = lic(wymiar(state.dimW)); $('iH').value = lic(wymiar(state.dimH));
+  $('iL').value = pole(wymiar(state.dimL)); $('iW').value = pole(wymiar(state.dimW)); $('iH').value = pole(wymiar(state.dimH));
 }
 
 // ── ZDARZENIA ──
@@ -910,6 +909,7 @@ $('tRzut').addEventListener('click', () => tryb(true));
 $('pokazRzut').addEventListener('click', () => {
   tryb(true);
   if (!window.matchMedia('(min-width: 1024px)').matches) $('kLewa').scrollIntoView({ block: 'start' });
+  $('tRzut').focus({ preventScroll: true });
 });
 $('kSciany').addEventListener('click', e => {
   const b = e.target.closest('button');
@@ -947,16 +947,37 @@ $('kPrzezn').addEventListener('click', e => {
   state.przeznaczenie = state.przeznaczenie === b.dataset.name ? '' : b.dataset.name;
   saveState(); rysujReszte();
 });
-// Przycisk w pasku: niepełny formularz → najpierw sekcja zapytania, potem komunikat przeglądarki przy pierwszym polu
+// Zapytanie wychodzi tylko z modelem i poprawnym wymiarem (dawny kreator blokował to krokami 1–2)
+function bladKonfiguracji() {
+  if (!state.type) return { tekst: 'Wybierz model, zanim wyślesz zapytanie.', model: true, cel: document.querySelector('.k-mod') };
+  if (ostrzezenieWymiaru()) return { tekst: '', cel: $('iL') };   // „Inny wymiar”: komunikat już stoi pod polami
+  if (!wymiaryOk(state.dimL, state.dimW)) return { tekst: 'Wybierz długość albo podaj inny wymiar, zanim wyślesz zapytanie.', cel: innyOtwarty ? $('iL') : $('kChipy').querySelector('.k-chip:not(:disabled)') };
+  return null;
+}
+function pokazBlad(b) {
+  $('kBlad').textContent = b.tekst;
+  $('kBlad').hidden = !b.tekst;
+  const telefon = !window.matchMedia('(min-width: 1024px)').matches;
+  (b.model && telefon ? $('kLewa') : $('wymiary')).scrollIntoView({ block: 'start' });
+  if (b.cel) b.cel.focus({ preventScroll: true });
+}
+// Przycisk w pasku: najpierw konfiguracja, potem pola zapytania (komunikat przeglądarki przy pierwszym pustym)
 $('kWyslij').addEventListener('click', e => {
+  const b = bladKonfiguracji();
+  if (b) { e.preventDefault(); pokazBlad(b); return; }
   const f = $('cfgForm');
   if (f.checkValidity()) return;
   e.preventDefault();
   $('zapytanie').scrollIntoView({ block: 'start' });
   f.reportValidity();
 });
-// Przed form-handler.js (rejestrowany później): stolarka i cena w stanie, który pójdzie w treści zapytania
-$('cfgForm').addEventListener('submit', () => { ensureOpenings(); updatePrice(); saveState(); });
+// Przed form-handler.js (rejestrowany później): błąd konfiguracji zatrzymuje też jego wysyłkę;
+// inaczej stolarka i cena trafiają do stanu, który pójdzie w treści zapytania
+$('cfgForm').addEventListener('submit', e => {
+  const b = bladKonfiguracji();
+  if (b) { e.preventDefault(); e.stopImmediatePropagation(); pokazBlad(b); return; }
+  ensureOpenings(); updatePrice(); saveState();
+});
 
 rysuj();
 // Telefon: wybrany model widoczny w przewijanym pasku modeli (bez przewijania całej strony)
