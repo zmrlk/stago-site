@@ -324,7 +324,9 @@
   }
 
   function setSubmitButton(form, loading, lang) {
-    var btn = form.querySelector('button[type="submit"], input[type="submit"]');
+    // Przycisk może stać poza formularzem i wskazywać go atrybutem form (pasek konfiguratora)
+    var btn = form.querySelector('button[type="submit"], input[type="submit"]')
+      || (form.id ? document.querySelector('button[type="submit"][form="' + form.id + '"]') : null);
     if (!btn) return;
 
     if (loading) {
@@ -494,6 +496,9 @@
       var cfgLines = [];
       if (state.type) cfgLines.push('Typ: ' + state.type);
       if (state.przeznaczenie) cfgLines.push('Przeznaczenie: ' + state.przeznaczenie);
+      // Miejscowość montażu (konfigurator v4): tylko w treści wiadomości, schemat payloadu bez zmian
+      var miejsce = form.querySelector('[name="miejscowosc"]');
+      if (miejsce && miejsce.value.trim()) cfgLines.push('Miejscowość montażu: ' + sanitize(miejsce.value.trim()));
       if (state.dimL && state.dimW) cfgLines.push('Wymiary: ' + state.dimL + ' × ' + state.dimW + ' × ' + (state.dimH || '2.8') + ' m');
       if (state.profil) cfgLines.push('Profil blachy: ' + state.profil);
       if (state.kolorScian) cfgLines.push('Kolor ścian: ' + state.kolorScian);

@@ -27,1201 +27,189 @@
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url({{{root}}}assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url({{{root}}}assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}
-/* Ciemne paski konfiguratora: tekst akcentu bez przyciemnienia (pyt. 5) */
-.step-head-hero, .bottom-bar { --accent-text: var(--accent); }
 </style>
   <link rel="icon" type="image/png" href="assets/sygnet.png">
 <style>
-/* ── CONFIGURATOR BASE ── */
-body { background: #F8F9FA; padding-bottom: 0; }
+/* Konfigurator v4 (makieta zaakceptowana przez Karola 9.11.2026): jedna strona bez kroków.
+   Lewa kolumna = model (bryła albo rzut z oknami i drzwiami), prawa = wymiary, wygląd, wyposażenie, zapytanie,
+   pasek ceny na dole. Pismo 12/15/17/22/30/44, odstępy 4/8/12/16/24/32/48/64. */
+body { background: var(--bg-light); }
+[hidden] { display: none !important; }
+/* Pod stałą nawigacją: 73 px na desktopie, 69 px na telefonie */
+.config-wrap { margin-top: 73px; }
+.step-panel { display: none; }
+.step-panel.active { display: grid; }
+.k { max-width: 1240px; margin: 0 auto; padding: 16px 16px 128px; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+.k > section { min-width: 0; }
+.k :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 
-/* ── STEP CONTAINER ── */
-.config-wrap {
-  /* Wejście kroku (stepIn: translateX 24px) chwilowo wystaje w prawo; na telefonie Chrome rozszerzał
-     wtedy widok (390 px → 398, 280 → 289) i zostawał przewijany w poziomie. clip nie psuje position: sticky. */
-  overflow-x: clip;
-  margin-top: 57px;
-  min-height: calc(100vh - 57px - 64px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 24px 80px;
-}
+/* ── Lewa: model ── */
+.k-lewa { display: flex; flex-direction: column; gap: 12px; }
+.k-tryb { display: inline-flex; align-self: flex-start; gap: 4px; padding: 4px; background: var(--white); border: 1px solid var(--border); border-radius: 999px; }
+.k-tryb button { min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px; background: none; font: inherit; font-size: 15px; line-height: 20px; font-weight: 700; color: var(--t2); cursor: pointer; }
+.k-tryb button[aria-pressed="true"] { background: var(--primary); color: var(--white); }
+.k-obraz { position: relative; min-height: 200px; aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--r); background: var(--border); }
+.k-obraz img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.k-obraz.is-empty img, .k-obraz.is-empty .k-nazwa, .k-obraz.is-empty .k-probki { display: none; }
+.k-obraz.is-empty::after { content: attr(data-pusty); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 24px; text-align: center; font-size: 17px; line-height: 24px; color: var(--t2); }
+.k-nazwa { position: absolute; left: 16px; top: 12px; font-size: 30px; line-height: 36px; font-weight: 800; letter-spacing: -.04em; color: var(--white); text-shadow: 0 2px 12px rgba(0, 0, 0, .35); }
+.k-probki { position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 8px; padding: 4px 12px 4px 4px; border-radius: 999px; background: rgba(255, 255, 255, .94); font-size: 15px; line-height: 20px; font-weight: 600; color: var(--primary); }
+.k-probka { flex: none; width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, .15); }
+.k-modele { display: grid; grid-auto-flow: column; grid-auto-columns: 76px; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+.k-mod { display: block; padding: 0; overflow: hidden; border: 1px solid var(--border); border-radius: var(--r-sm); background: var(--white); font: inherit; text-align: center; cursor: pointer; }
+.k-mod img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.k-mod span { display: block; padding: 4px 0; font-size: 12px; line-height: 16px; font-weight: 800; color: var(--primary); }
+.k-mod[aria-pressed="true"] { border-color: var(--primary); box-shadow: inset 0 0 0 1px var(--primary); }
+.k-podpis { margin: 0; font-size: 12px; line-height: 16px; color: var(--t2); }
+.k-lewa.rzut .k-modele, .k-lewa.rzut #kPodpis { display: none; }
+.k-planbox { display: flex; flex-direction: column; gap: 12px; padding: 16px; overflow: auto; background: var(--white); border: 1px solid var(--border); border-radius: var(--r); }
+.k-planbox .rzut2d { max-height: 34vh; }
+.k-sciany { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.k-sciana { padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--r-sm); }
+.k-sciana b { display: block; margin-bottom: 4px; font-size: 15px; line-height: 20px; }
+.k-tagi { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.k-tagi:empty { display: none; }
+.k-tag { display: inline-flex; align-items: center; min-height: 32px; padding-left: 12px; border-radius: 999px; background: var(--bg-light); font-size: 15px; line-height: 20px; font-weight: 600; }
+.k-tag button { min-width: 32px; min-height: 32px; border: 0; background: none; font: inherit; color: var(--t2); cursor: pointer; }
+.k-dodaj { display: flex; flex-wrap: wrap; gap: 4px; }
+.k-dodaj button { min-height: 36px; padding: 0 12px; border: 1px dashed var(--t3); border-radius: 999px; background: none; font: inherit; font-size: 12px; line-height: 16px; font-weight: 700; color: var(--primary); cursor: pointer; }
+@media (pointer: coarse) { .k-dodaj button, .k-tag button { min-height: 44px; min-width: 44px; } }
 
-/* ── STEP PANELS ── */
-.step-panel {
-  display: none;
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  animation: stepIn .35s ease both;
-}
-.step-panel.active { display: block; }
-.step-panel.step-wide { max-width: 960px; }
+/* ── Prawa: konfiguracja ── */
+.k-h1 { margin: 0; font-size: 30px; line-height: 36px; font-weight: 800; letter-spacing: -.025em; color: var(--primary); }
+.k-sub { margin: 4px 0 16px; font-size: 17px; line-height: 24px; color: var(--t2); }
+.k-sek { margin-bottom: 12px; padding: 16px; background: var(--white); border: 1px solid var(--border); border-radius: var(--r); }
+details.k-sek { padding-top: 12px; padding-bottom: 12px; }
+details.k-sek[open] { padding-bottom: 24px; }
+.k-sek > h2, .k-sek > summary { display: flex; align-items: baseline; gap: 12px; margin: 0; font-size: 17px; line-height: 24px; font-weight: 800; color: var(--primary); }
+.k-sek > summary { align-items: center; min-height: 44px; list-style: none; cursor: pointer; }
+.k-sek > summary::-webkit-details-marker { display: none; }
+.k-sek > summary::after { content: "+"; margin-left: 12px; font-size: 22px; line-height: 24px; font-weight: 400; color: var(--t2); }
+.k-sek[open] > summary::after { content: "\2212"; }
+.k-sek h2 small, .k-sek summary small { margin-left: auto; font-size: 15px; line-height: 20px; font-weight: 600; color: var(--t2); text-align: right; font-variant-numeric: tabular-nums; }
+.k-etyk { margin: 24px 0 8px; font-size: 15px; line-height: 20px; font-weight: 700; color: var(--t2); }
+.k-etyk span { margin-left: 8px; font-weight: 500; color: var(--primary); }
+.k-uwaga { margin: 8px 0 0; font-size: 15px; line-height: 22px; color: var(--t2); }
+.k-chipy { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 8px; min-height: 48px; }
+.k-chip { min-height: 48px; padding: 0; border: 1px solid var(--border); border-radius: var(--r-sm); background: var(--white); font: inherit; font-size: 17px; line-height: 24px; font-weight: 700; color: var(--primary); font-variant-numeric: tabular-nums; cursor: pointer; }
+.k-chip[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--white); }
+.k-chip:disabled { opacity: .35; cursor: not-allowed; }
+.k-link { min-height: 44px; padding: 12px 0; border: 0; background: none; font: inherit; font-size: 15px; line-height: 20px; font-weight: 700; color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.k-uwaga .k-link { min-height: 0; padding: 0; }
+.k-wym { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 4px; }
+.k-wym label { display: block; font-size: 15px; line-height: 20px; font-weight: 700; color: var(--t2); }
+.k-pole { display: flex; align-items: center; margin-top: 4px; background: var(--white); border: 1px solid var(--border); border-radius: var(--r-sm); }
+.k-pole:focus-within { outline: 2px solid var(--primary); outline-offset: 1px; }
+.k-pole input { flex: 1; min-width: 0; min-height: 48px; padding: 0 0 0 12px; border: 0; background: none; font: inherit; font-size: 17px; line-height: 24px; font-weight: 700; color: var(--primary); font-variant-numeric: tabular-nums; }
+.k-pole input:focus { outline: none; }
+.k-pole span { padding: 0 12px; color: var(--t2); }
+.k-ostrz { margin: 12px 0 0; font-size: 15px; line-height: 22px; font-weight: 600; color: var(--accent-text); }
+.k-stan { margin: 16px 0 0; padding: 12px 16px; border-radius: var(--r-sm); background: var(--bg-light); font-size: 15px; line-height: 22px; color: var(--primary); font-variant-numeric: tabular-nums; }
+.k-pigulki { display: flex; flex-wrap: wrap; gap: 8px; }
+.k-pig { min-height: 44px; padding: 0 16px; border: 1px solid var(--border); border-radius: 999px; background: var(--white); font: inherit; font-size: 15px; line-height: 20px; font-weight: 600; color: var(--primary); cursor: pointer; }
+.k-pig[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--white); }
+.k-kolory { display: flex; flex-wrap: wrap; gap: 12px; }
+.k-kolor { width: 44px; height: 44px; padding: 0; border: 1px solid rgba(0, 0, 0, .15); border-radius: 50%; cursor: pointer; }
+.k-kolor[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary); }
+.k-checki { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0 16px; margin-top: 12px; }
+.k-check { display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 15px; line-height: 22px; cursor: pointer; }
+.k-check input { flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--primary); }
+.k-pola { display: grid; gap: 12px; margin-top: 16px; }
+.k-pola input:not([type="checkbox"]), .k-pola textarea { width: 100%; min-height: 48px; padding: 12px 16px; border: 1px solid var(--border); border-radius: var(--r-sm); background: var(--white); font: inherit; font-size: 17px; line-height: 24px; color: var(--primary); }
+.k-pola textarea { resize: vertical; }
+.k-zgoda { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 22px; color: var(--t2); cursor: pointer; }
+.k-zgoda input { flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--primary); }
+.k-zgoda a { color: var(--accent-text); font-weight: 700; text-decoration: underline; }
+.k-pola .k-uwaga { margin: 0; }
 
-@keyframes stepIn {
-  from { opacity: 0; transform: translateX(24px); }
-  to   { opacity: 1; transform: translateX(0); }
+/* ── Pasek ceny ── */
+.k-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: var(--white); border-top: 1px solid var(--border); box-shadow: 0 -8px 24px rgba(0, 0, 0, .06); }
+.k-bar-i { flex: 1; min-width: 0; }
+.k-bar-i b { display: block; font-size: 17px; line-height: 22px; font-weight: 800; color: var(--primary); font-variant-numeric: tabular-nums; }
+.k-bar-i small { display: block; font-size: 12px; line-height: 16px; color: var(--t2); }
+.k-tel { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border: 1px solid var(--border); border-radius: var(--r-sm); color: var(--primary); }
+.k-bar .k-wyslij { flex: none; min-height: 48px; padding: 12px 16px; }
+.k-dop { display: none; }
+/* Wąski telefon: „Wycena indywidualna” w pasku mieści się obok telefonu i przycisku (360 px: 121 px na 114 px tekstu) */
+@media (max-width: 379px) {
+  .k-bar { gap: 8px; }
+  .k-tel { width: 44px; height: 44px; }
+  .k-bar .k-wyslij { padding: 12px; }
 }
-
-/* ── STEP HEADER ── */
-.step-title {
-  font-size: clamp(1.4rem, 3.5vw, 1.8rem);
-  font-weight: 800;
-  letter-spacing: -.03em;
-  color: var(--primary);
-  text-align: center;
-  margin-bottom: 6px;
-}
-.step-sub {
-  text-align: center;
-  color: var(--t2);
-  font-size: .92rem;
-  margin-bottom: 28px;
-}
-
-/* ── STEP 1: TYPE CARDS ── */
-.type-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-bottom: 20px;
-}
-.type-card {
-  background: #fff;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  padding: 0;
-  cursor: pointer;
-  transition: all .25s ease;
-  overflow: hidden;
-  text-align: center;
-}
-.type-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
-  border-color: #ccc;
-}
-.type-card.selected {
-  border-color: var(--accent);
-  background: rgba(232,70,28,.04);
-}
-.type-card img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  display: block;
-}
-.type-card span {
-  display: block;
-  padding: 12px 8px;
-  font-size: .88rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-.social-proof {
-  text-align: center;
-  font-size: .82rem;
-  color: var(--t2);
-  margin-top: 8px;
-}
-.social-proof svg { vertical-align: -2px; margin-right: 4px; }
-
-/* ── STEP 2: DIMENSIONS ── */
-.dim-inputs {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-.dim-group {
-  flex: 1;
-  max-width: 180px;
-}
-.dim-group label {
-  display: block;
-  font-size: .78rem;
-  font-weight: 600;
-  color: var(--t2);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin-bottom: 6px;
-}
-.dim-field {
-  position: relative;
-}
-.dim-field input {
-  width: 100%;
-  padding: 12px 36px 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  outline: none;
-  background: #fff;
-  transition: border-color .2s;
-}
-.dim-field input:focus { border-color: var(--accent); }
-.dim-field .unit {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: .82rem;
-  color: var(--t2);
-  font-weight: 600;
-  pointer-events: none;
-}
-.preset-label {
-  text-align: center;
-  font-size: .78rem;
-  font-weight: 600;
-  color: var(--t2);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin-bottom: 10px;
-}
-.presets {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-}
-.preset-btn {
-  padding: 8px 18px;
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  background: #fff;
-  font-size: .85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all .2s;
-  color: var(--primary);
-}
-.preset-btn:hover { border-color: var(--accent); color: var(--accent); }
-.preset-btn.selected { border-color: var(--accent); background: rgba(232,70,28,.08); color: var(--accent); }
-
-/* ── STEP 3: FINISH ── */
-.finish-section {
-  margin-bottom: 18px;
-}
-.finish-section:last-child { margin-bottom: 0; }
-.finish-label {
-  font-size: .78rem;
-  font-weight: 700;
-  color: var(--t2);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin-bottom: 8px;
-}
-.pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.pill {
-  padding: 8px 16px;
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  background: #fff;
-  font-size: .82rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all .2s;
-  color: var(--primary);
-}
-.pill:hover { border-color: var(--accent); }
-.pill.selected { border-color: var(--accent); background: rgba(232,70,28,.08); color: var(--accent-text); }
-
-/* Color swatches */
-.swatches {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.swatch {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid var(--border);
-  cursor: pointer;
-  transition: all .2s;
-  position: relative;
-}
-.swatch:hover { transform: scale(1.1); }
-.swatch.selected { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(232,70,28,.25); }
-.swatch[title]::after {
-  content: attr(title);
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: .65rem;
-  white-space: nowrap;
-  color: var(--t2);
-  font-weight: 600;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity .2s;
-}
-.swatch:hover::after, .swatch.selected::after { opacity: 1; }
-
-.finish-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px 48px;
-  align-items: start;
-  max-width: 880px;
-  margin: 0 auto;
-}
-.finish-section {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 18px 20px;
-}
-.okucia-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 4px;
-}
-.okucia-card {
-  background: #fff;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  padding: 10px;
-  cursor: pointer;
-  text-align: center;
-  transition: all .2s;
-  overflow: hidden;
-}
-.okucia-card:hover { transform: translateY(-2px); border-color: #ccc; box-shadow: var(--shadow-hover); }
-.okucia-card.selected { border-color: var(--accent); background: rgba(232,70,28,.04); }
-.okucia-card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; display: block; margin-bottom: 8px; background: #f0f0f0; }
-.okucia-card strong { display: block; font-size: .9rem; font-weight: 700; color: var(--primary); margin-bottom: 2px; }
-.okucia-card span { display: block; font-size: .76rem; color: var(--t2); line-height: 1.3; }
-@media(max-width:600px){ .finish-grid{ grid-template-columns: 1fr; gap: 16px; } }
-
-/* ── NEW: STEP HEADER (per-step) ── */
-.step-head {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: start;
-  max-width: 1200px;
-  margin: 0 auto 32px;
-  padding: 0 8px;
-}
-.step-head-text { min-width: 0; }
-.step-head-badge {
-  display: inline-block;
-  font-size: .72rem;
-  font-weight: 800;
-  letter-spacing: .14em;
-  color: var(--accent-text);
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.step-head-title {
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
-  font-weight: 800;
-  letter-spacing: -.03em;
-  color: var(--primary);
-  margin: 0 0 10px;
-}
-.step-head-desc {
-  font-size: .95rem;
-  color: var(--t2);
-  line-height: 1.5;
-  margin: 0;
-  max-width: 640px;
-}
-.step-head-hero {
-  width: clamp(180px, 22vw, 280px);
-  aspect-ratio: 4/3;
-  border-radius: 12px;
-  background: #1D1D1B center/cover no-repeat;
-  box-shadow: 0 8px 32px rgba(0,0,0,.12);
-}
-@media(max-width:768px){
-  .step-head{ grid-template-columns: 1fr; }
-  .step-head-hero{ display:none; }
+@media (max-width: 359px) {
+  /* Tytuł sekcji i podsumowanie nie mieszczą się w jednym wierszu: podsumowanie schodzi pod tytuł */
+  .k-sek > h2, .k-sek > summary { flex-wrap: wrap; }
+  .k-sek h2 small, .k-sek summary small { order: 3; flex-basis: 100%; margin-left: 0; text-align: left; }
+  .k-bar { flex-wrap: wrap; }
+  .k-bar-i { flex: 1 0 100%; }
+  .k-bar .k-wyslij { flex: 1; }
 }
 
-/* ── NEW: STEP 3 GRID 3-col with preview ── */
-.s3-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr minmax(280px, 360px);
-  gap: 28px;
-  max-width: 1280px;
-  margin: 0 auto;
+/* ── Ruch i stany ── */
+.k-chip, .k-pig, .k-mod, .k-kolor, .k-tryb button, .k-dodaj button { transition: transform .1s cubic-bezier(.4, 0, .2, 1), background-color .15s cubic-bezier(.4, 0, .2, 1), border-color .15s cubic-bezier(.4, 0, .2, 1), color .15s cubic-bezier(.4, 0, .2, 1); }
+.k-chip:not(:disabled):active, .k-pig:active, .k-mod:active, .k-kolor:active, .k-tryb button:active, .k-dodaj button:active { transform: scale(.97); }
+@media (hover: hover) and (pointer: fine) {
+  .k-chip:not(:disabled):not([aria-pressed="true"]):hover, .k-pig:not([aria-pressed="true"]):hover, .k-mod:hover, .k-dodaj button:hover { border-color: var(--primary); }
+  .k-tryb button:not([aria-pressed="true"]):hover { color: var(--primary); }
 }
-.s3-col { display: flex; flex-direction: column; gap: 20px; }
-.s3-section {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 22px 24px;
-}
-.s3-section h3 {
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin: 0 0 4px;
-}
-.s3-section .s3-hint {
-  font-size: .82rem;
-  color: var(--t2);
-  margin: 0 0 16px;
+@media (prefers-reduced-motion: reduce) {
+  .k *, .k-bar * { transition: none !important; }
+  .k-chip:active, .k-pig:active, .k-mod:active, .k-kolor:active, .k-tryb button:active, .k-dodaj button:active { transform: none; }
 }
 
-/* Profile cards (2-col) */
-.profile-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+/* ── Szerokości ── */
+@media (max-width: 600px) {
+  .k-chipy { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .k-sciany { grid-template-columns: minmax(0, 1fr); }
+  .k-wym { grid-template-columns: minmax(0, 1fr); }
 }
-.profile-card {
-  position: relative;
-  background: #fff;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all .2s;
+@media (min-width: 768px) {
+  .k-sek { padding: 24px; }
+  details.k-sek { padding-top: 12px; padding-bottom: 12px; }
+  details.k-sek[open] { padding-bottom: 24px; }
 }
-.profile-card:hover { border-color: #ccc; transform: translateY(-2px); }
-.profile-card.selected { border-color: var(--accent); }
-.profile-card .pc-img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  display: block;
-  background: linear-gradient(135deg,#f0f0f0,#e0e0e0);
+@media (min-width: 1024px) {
+  .k { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; padding: 24px 24px 128px; }
+  /* Przyklejona pod nawigacją (73 + 24) i nad paskiem ceny (87 + 16): zawsze mieści się w oknie */
+  .k-lewa { position: sticky; top: 97px; align-self: start; height: calc(100vh - 97px - 87px - 16px); }
+  .k-obraz { flex: 1; min-height: 0; aspect-ratio: auto; }
+  .k-planbox { flex: 1; min-height: 0; }
+  /* Rysunek bierze to, co zostaje po ścianach i podpisie (ściany zawsze widoczne) */
+  #kPlan { display: flex; flex: 1; min-height: 96px; }
+  #kPlan .rzut2d { width: 100%; height: 100%; max-height: none; }
+  .k-modele { grid-auto-flow: row; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-columns: auto; overflow: visible; }
+  .k-nazwa { font-size: 44px; line-height: 48px; }
+  .k-bar { padding: 16px max(24px, calc((100% - 1240px) / 2 + 24px)); }
+  .k-bar-i { display: flex; align-items: baseline; gap: 16px; }
+  .k-bar-i b { font-size: 22px; line-height: 28px; }
+  .k-bar-i small { font-size: 15px; line-height: 20px; }
+  .k-tel { display: none; }
+  .k-dop { display: inline; }
+  .k-bar .k-wyslij { padding: 16px 32px; }
 }
-.profile-card .pc-name {
-  display: block;
-  text-align: center;
-  padding: 10px 8px;
-  font-size: .92rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-.profile-card-text {
-  padding: 20px 18px;
-  text-align: center;
-}
-.profile-card-text .pc-name {
-  display: block;
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 6px;
-}
-.profile-card-text .pc-desc {
-  display: block;
-  font-size: .82rem;
-  color: var(--t2);
-  line-height: 1.4;
-}
-.profile-card .pc-check {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--accent);
-  color: #fff;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: .7rem;
-}
-.profile-card.selected .pc-check { display: flex; }
-
-/* Color cards (swatches with RAL labels) */
-.color-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-.color-card {
-  position: relative;
-  background: #fff;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 8px 10px;
-  cursor: pointer;
-  text-align: center;
-  transition: all .2s;
-}
-.color-card:hover { border-color: #ccc; }
-.color-card.selected { border-color: var(--accent); background: rgba(232,70,28,.04); }
-.color-dot {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  margin: 0 auto 8px;
-  border: 1px solid rgba(0,0,0,.08);
-}
-.color-card strong { display: block; font-size: .85rem; font-weight: 700; color: var(--primary); }
-.color-card span { display: block; font-size: .72rem; color: var(--t2); margin-top: 1px; }
-.color-card .pc-check {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 18px; height: 18px;
-  border-radius: 50%;
-  background: var(--accent);
-  color:#fff;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: .6rem;
-}
-.color-card.selected .pc-check { display: flex; }
-
-/* Hint box (info pod sekcją) */
-.s3-info {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  margin-top: 14px;
-  padding: 10px 12px;
-  background: rgba(232,70,28,.04);
-  border-radius: 8px;
-  font-size: .78rem;
-  color: var(--t2);
-  line-height: 1.4;
-}
-.s3-info svg { flex-shrink: 0; color: var(--accent-text); margin-top: 1px; }
-
-/* Okucia horizontal cards */
-.okucia-list { display: flex; flex-direction: column; gap: 10px; }
-.okucia-row {
-  display: grid;
-  grid-template-columns: 22px 1fr auto;
-  gap: 14px;
-  align-items: center;
-  background: #fff;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  padding: 14px 16px;
-  cursor: pointer;
-  transition: all .2s;
-}
-.okucia-row:hover { border-color: #ccc; }
-.okucia-row.selected { border-color: var(--accent); background: rgba(232,70,28,.04); }
-.okucia-radio {
-  width: 22px; height: 22px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  position: relative;
-  flex-shrink: 0;
-}
-.okucia-row.selected .okucia-radio { border-color: var(--accent); }
-.okucia-row.selected .okucia-radio::after {
-  content: '';
-  position: absolute;
-  inset: 4px;
-  background: var(--accent);
-  border-radius: 50%;
-}
-.okucia-info strong { display:block; font-size:.95rem; font-weight:700; color:var(--primary); margin-bottom:2px; }
-.okucia-info span { display:block; font-size:.78rem; color:var(--t2); line-height:1.35; }
-.okucia-thumbs { display:flex; gap:6px; align-items:center; }
-.okucia-thumbs img,
-.okucia-thumbs .thumb-ph {
-  width: 44px; height: 44px;
-  border-radius: 8px;
-  object-fit: cover;
-  background: linear-gradient(135deg,#f0f0f0,#e0e0e0);
-  display: block;
-}
-@media(max-width:520px){ .okucia-thumbs{ display:none; } }
-
-/* Right preview panel */
-.preview-panel {
-  position: sticky;
-  top: 80px;
-  align-self: start;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 20px;
-}
-.preview-panel h3, .preview-panel h2 {
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin: 0 0 14px;
-}
-.preview-hero {
-  width: 100%;
-  aspect-ratio: 4/3;
-  border-radius: 10px;
-  background: linear-gradient(135deg,#1D1D1B,#3C3C3C) center/cover no-repeat;
-  margin-bottom: 16px;
-}
-.preview-hero.is-empty {
-  display: grid;
-  place-items: center;
-  background: var(--bg-light);
-}
-.preview-hero.is-empty::after {
-  content: attr(data-pusty);
-  max-width: 24ch;
-  padding: 16px;
-  text-align: center;
-  font-size: .9rem;
-  line-height: 1.5;
-  color: var(--t2);
-}
-.preview-row {
-  display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 12px;
-  padding: 10px 0;
-  border-top: 1px solid #f0f0f0;
-  align-items: center;
-}
-.preview-row:first-of-type { border-top: none; }
-.preview-icon {
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  background: #f6f6f6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary);
-  flex-shrink: 0;
-}
-.preview-row .pr-label { display:block; font-size:.72rem; color: var(--t2); margin-bottom: 1px; text-transform: uppercase; letter-spacing: .06em; }
-.preview-row .pr-value { display:block; font-size:.95rem; font-weight: 700; color: var(--accent-text); }
-
-/* ── Rzut 2D (rzut2d.js, style .rzut2d w style.css) ── */
-.cfg-rzut{background:var(--bg-light,#F8F9FA);border-radius:12px;padding:12px;margin:12px 0}
-.cfg-rzut .rzut2d{max-height:220px}
-.cfg-rzut-cap{font-size:.75rem;color:var(--t2,#555);margin-top:8px;line-height:1.45}
-
-/* ── Cena orientacyjna (cennik 28.10.2026) ── */
-.price-box { margin: 0 0 16px; padding: 16px; border-radius: 12px; background: #faf7f5; border: 1px solid #f1e4dd; }
-.price-box .pb-label { display:block; font-size:.72rem; font-weight:700; color: var(--t2); text-transform: uppercase; letter-spacing: .06em; }
-.price-box .pb-value { display:block; font-size:1.75rem; font-weight: 800; letter-spacing:-.02em; line-height:1.15; color: var(--primary); margin: 4px 0; font-variant-numeric: tabular-nums; }
-.price-box .pb-note { display:block; font-size:.8rem; color: var(--t2); line-height: 1.4; }
-.price-box-duzy { padding: 24px; }
-.price-box-duzy .pb-value { font-size: clamp(2rem, 3.4vw, 2.75rem); }
-.summary-side { display:flex; flex-direction:column; gap:0; position: sticky; top: 88px; }
-.price-box.is-custom .pb-value { font-size: 1rem; color: var(--accent-text); }
-.dim-warn { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #fff4ef; color: #9a3412; font-size: .85rem; }
-.preview-footer {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid #f0f0f0;
-  font-size: .72rem;
-  color: var(--t2);
-}
-@media(max-width:1100px){
-  .s3-grid{ grid-template-columns: 1fr 1fr; }
-  .preview-panel{ grid-column: 1 / -1; position: static; }
-}
-@media(max-width:720px){
-  .s3-grid{ grid-template-columns: 1fr; }
+/* Niskie okno: lewa kolumna nie mieści się przyklejona, więc przewija się z treścią */
+@media (min-width: 1024px) and (max-height: 640px) {
+  .k-lewa { position: static; height: auto; }
+  .k-obraz { flex: none; aspect-ratio: 16 / 10; }
 }
 
-/* ── NEW: 5-step progress bar (bottom) ── */
-.bb-steps {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  overflow: hidden;
-}
-.bb-step {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255,255,255,.5);
-  font-size: .82rem;
-  font-weight: 600;
-  white-space: nowrap;
-  cursor: default;
-}
-.bb-step + .bb-step { margin-left: 0; }
-.bb-step::before {
-  content: attr(data-n);
-  width: 22px; height: 22px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: .72rem;
-  font-weight: 700;
-  color: rgba(255,255,255,.7);
-}
-.bb-step.active { color: #fff; }
-.bb-step.active::before { background: var(--accent); color: #fff; }
-.bb-step.done { color: rgba(255,255,255,.8); }
-.bb-step.done::before { background: rgba(255,255,255,.25); color: #fff; }
-.bb-sep {
-  width: 18px;
-  height: 2px;
-  background: rgba(255,255,255,.15);
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-@media(max-width:900px){ .bb-step span{ display:none; } .bb-sep{ width:10px; } }
-
-/* ── NEW: SHARED 2-col step layout (main + preview) for steps 1, 2, 4 ── */
-.s-grid {
-  display: grid;
-  grid-template-columns: 1fr minmax(340px, 460px);
-  gap: 28px;
-  max-width: 1320px;
-  margin: 0 auto;
-  align-items: start;
-}
-.s-grid > .preview-panel { position: sticky; top: 80px; }
-.s-main { min-width: 0; }
-@media(max-width:1100px){
-  .s-grid{ grid-template-columns: 1fr; }
-  .s-grid .preview-panel{ position: static; }
-}
-
-/* ── MOBILE PASS (< 768px) ── */
-@media(max-width:768px){
-  .step-head{ margin-bottom: 20px; padding: 0 4px; gap: 16px; }
-  .step-head-title{ font-size: clamp(1.4rem, 6vw, 1.8rem); margin: 0 0 6px; }
-  .step-head-desc{ font-size: .88rem; }
-  .step-head-badge{ font-size: .68rem; margin-bottom: 6px; }
-  .config-wrap{ padding: 20px 12px 90px; }
-  .s3-section{ padding: 16px 14px; border-radius: 10px; }
-  .s3-section h3{ font-size: .98rem; }
-  .s3-section .s3-hint{ font-size: .78rem; margin-bottom: 12px; }
-  .profile-grid{ gap: 10px; }
-  .profile-card-text{ padding: 16px 14px; }
-  .color-grid{ grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .color-card{ padding: 10px 6px 8px; }
-  .color-dot{ width: 36px; height: 36px; margin-bottom: 6px; }
-  .color-card strong{ font-size: .8rem; }
-  .color-card span{ font-size: .68rem; }
-  .okucia-row{ grid-template-columns: 22px 1fr; padding: 12px 14px; gap: 10px; }
-  .okucia-row .okucia-thumbs{ grid-column: 1 / -1; padding-left: 32px; }
-  .okucia-thumbs img,
-  .okucia-thumbs .thumb-ph{ width: 38px; height: 38px; }
-  .preview-panel{ padding: 16px; margin-top: 8px; }
-  .preview-panel h3, .preview-panel h2{ font-size: 1rem; margin-bottom: 10px; }
-  .preview-hero{ aspect-ratio: 16/9; }
-  .preview-row{ padding: 8px 0; }
-  .preview-row .pr-value{ font-size: .88rem; }
-  .preview-icon{ width: 32px; height: 32px; }
-  .equip-row{ flex-wrap: wrap; gap: 8px; padding: 8px 10px; }
-  .equip-row label{ min-width: auto; flex: 0 0 100%; font-size: .8rem; margin-bottom: 2px; }
-  .equip-row select{ flex: 1 1 100%; font-size: .9rem; padding: 10px 12px; }
-  .equip-row .qty-control{ margin-left: auto; }
-  .toggles-grid{ grid-template-columns: 1fr; gap: 8px; }
-  .pills{ gap: 6px; }
-  .pill{ padding: 8px 14px; font-size: .8rem; }
-  .swatch{ width: 44px; height: 44px; }
-}
-
-/* ── EXTRA SMALL (< 480px) ── */
-@media(max-width:480px){
-  .step-head-title{ font-size: 1.4rem; }
-  .step-head-desc{ font-size: .82rem; }
-  .bb-step{ font-size: 0; }
-  .bb-step::before{ width: 20px; height: 20px; font-size: .7rem; }
-  .bb-step.active{ font-size: .76rem; padding-left: 4px; }
-  .bb-sep{ width: 8px; }
-  .bottom-bar{ padding: 8px 12px; height: 64px; }
-  .bar-btn{ min-height: 44px; padding: 10px 16px; font-size: .82rem; }
-  .dim-inputs{ flex-direction: column; align-items: stretch; gap: 10px; max-width: none !important; }
-  .dim-group{ max-width: none; }
-  .profile-grid{ grid-template-columns: 1fr; }
-  .color-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-
-/* ── A11Y + POLISH ── */
-.profile-card:focus-visible,
-.color-card:focus-visible,
-.okucia-row:focus-visible,
-.type-card:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
-.pr-value{ transition: color .25s ease; }
-.preview-row .pr-value.updated{ animation: prvFlash .8s ease; }
-@keyframes prvFlash {
-  0% { background: rgba(232,70,28,.18); }
-  100% { background: transparent; }
-}
-.preview-panel{ transition: box-shadow .2s; }
-.preview-panel:hover{ box-shadow: 0 4px 20px rgba(0,0,0,.05); }
-.profile-card,
-.color-card,
-.okucia-row{ user-select: none; -webkit-tap-highlight-color: transparent; }
-button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
-
-/* ── STEP 4: EQUIPMENT ── */
-.equip-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-  background: #fff;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
-.equip-row label {
-  font-size: .88rem;
-  font-weight: 600;
-  color: var(--primary);
-  min-width: 52px;
-}
-.equip-row select {
-  flex: 1;
-  padding: 8px 12px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: .85rem;
-  outline: none;
-  background: #fff;
-  cursor: pointer;
-}
-.equip-row select:focus { border-color: var(--accent); }
-.qty-control {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.qty-btn {
-  width: 32px;
-  height: 32px;
-  border: none;
-  background: var(--bg-light);
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background .2s;
-}
-.qty-btn:hover { background: #e0e0e0; }
-.qty-val {
-  width: 32px;
-  text-align: center;
-  font-size: .88rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.toggles-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.toggle-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 14px;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  cursor: pointer;
-  transition: border-color .2s;
-}
-.toggle-item:hover { border-color: #ccc; }
-.toggle-item span {
-  font-size: .85rem;
-  font-weight: 600;
-  color: var(--primary);
-}
-.toggle-switch {
-  width: 40px;
-  height: 22px;
-  border-radius: 100px;
-  background: #ddd;
-  position: relative;
-  transition: background .25s;
-  flex-shrink: 0;
-}
-.toggle-switch::after {
-  content: '';
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  transition: transform .25s;
-  box-shadow: 0 1px 3px rgba(0,0,0,.15);
-}
-.toggle-item.on .toggle-switch {
-  background: var(--accent);
-}
-.toggle-item.on .toggle-switch::after {
-  transform: translateX(18px);
-}
-.toggle-item.on { border-color: var(--accent); }
-
-/* ── STEP 5: SUMMARY + FORM ── */
-.summary-layout {
-  display: grid;
-  /* minmax(0,1fr): kolumna może być węższa niż domyślna szerokość pól formularza (280 px: było 331 px, poziome przewijanie) */
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 28px;
-  align-items: start;
-}
-.summary-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-}
-.summary-card h3 {
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-.summary-render {
-  width: 100%;
-  aspect-ratio: 4/3;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 18px;
-  background: linear-gradient(135deg, #E7EBEE, #d5dbdf) center/cover no-repeat;
-}
-.summary-render-cap {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: .72rem;
-  color: var(--t2);
-  margin: -10px 0 16px;
-}
-/* Przycisk „powiększ" na renderze 3D */
-.stago3d-max {
-  position: absolute;
-  top: 8px; right: 8px;
-  width: 32px; height: 32px;
-  border-radius: 8px; border: none;
-  background: rgba(29,29,27,.5); color: #fff;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; z-index: 3; transition: background .2s;
-}
-.stago3d-max:hover { background: rgba(29,29,27,.8); }
-/* Modal pełnoekranowego renderu 3D */
-.r3d-modal {
-  display: none;
-  position: fixed; inset: 0; z-index: 300;
-  background: rgba(20,22,24,.82);
-  align-items: center; justify-content: center; padding: 24px;
-}
-.r3d-modal.open { display: flex; }
-.r3d-modal-inner {
-  position: relative;
-  width: min(1100px, 94vw);
-  height: min(78vh, 820px);
-  background: linear-gradient(135deg, #E7EBEE, #d5dbdf);
-  border-radius: 16px; overflow: hidden;
-  box-shadow: 0 24px 80px rgba(0,0,0,.4);
-}
-.r3d-modal-stage { width: 100%; height: 100%; }
-.r3d-close {
-  position: absolute; top: 12px; right: 12px;
-  width: 38px; height: 38px; border-radius: 10px; border: none;
-  background: rgba(29,29,27,.6); color: #fff;
-  font-size: 1.5rem; line-height: 1; cursor: pointer; z-index: 4;
-  display: flex; align-items: center; justify-content: center;
-}
-.r3d-close:hover { background: rgba(29,29,27,.85); }
-.r3d-modal-hint {
-  position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
-  font-size: .78rem; color: var(--t2);
-  background: rgba(255,255,255,.82); padding: 5px 12px; border-radius: 100px;
-  pointer-events: none; margin: 0;
-}
-.summary-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 7px 0;
-  font-size: .85rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-.summary-row:last-child { border-bottom: none; }
-.summary-row .s-label { color: var(--t2); }
-.summary-row .s-value { font-weight: 600; color: var(--primary); text-align: right; min-width: 0; overflow-wrap: anywhere; }
-
-.cfg-kontakt {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-}
-.cfg-kontakt h3 {
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-.cfg-form { display: flex; flex-direction: column; gap: 12px; }
-.cfg-form input, .cfg-form textarea {
-  width: 100%;
-  min-width: 0;
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: .9rem;
-  outline: none;
-  background: #fff;
-  transition: border-color .2s;
-  color: var(--primary);
-}
-.cfg-form input:focus, .cfg-form textarea:focus { border-color: var(--accent); }
-.cfg-form textarea { resize: vertical; min-height: 60px; }
-.cfg-form .required-note {
-  font-size: .75rem;
-  color: var(--t2);
-}
-.cfg-submit {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  background: #C03311;
-  color: #fff;
-  font-size: .95rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color .15s, transform .15s, box-shadow .15s;
-}
-.cfg-submit:hover { background: #A82E0E; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(232,70,28,.25); }
-.form-promise {
-  text-align: center;
-  font-size: .78rem;
-  color: var(--t2);
-  margin-top: 2px;
-}
-.form-promise svg { vertical-align: -2px; margin-right: 3px; }
-
-/* ── BOTTOM BAR ── */
-.bottom-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 150;
-  background: var(--primary);
-  padding: 12px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  height: 64px;
-}
-.bar-left {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-}
-.bar-step {
-  font-size: .82rem;
-  font-weight: 600;
-  color: rgba(255,255,255,.5);
-  white-space: nowrap;
-}
-.bar-chips {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.bar-chips::-webkit-scrollbar { display: none; }
-.bar-chip {
-  padding: 4px 12px;
-  border-radius: 100px;
-  background: rgba(255,255,255,.1);
-  color: rgba(255,255,255,.8);
-  font-size: .75rem;
-  font-weight: 600;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.bar-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-.bar-btn {
-  min-height: 44px;
-  padding: 10px 22px;
-  border-radius: 8px;
-  font-size: .85rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all .2s;
-  border: none;
-  white-space: nowrap;
-}
-.bar-back {
-  background: transparent;
-  color: rgba(255,255,255,.7);
-  border: 1px solid rgba(255,255,255,.2);
-}
-.bar-back:hover { border-color: rgba(255,255,255,.5); color: #fff; }
-.bar-back:disabled { opacity: .3; cursor: default; }
-.bar-next {
-  background: #C03311;
-  color: #fff;
-}
-.bar-next:hover { background: #A82E0E; transform: translateY(-1px); }
-.bar-next:disabled { opacity: .4; cursor: default; transform: none; }
-
-/* ── SUCCESS ── */
-.success-screen {
-  display: none;
-  text-align: center;
-  padding: 60px 24px;
-}
+/* ── Wysłane ── */
+.success-screen { display: none; padding: 64px 24px; text-align: center; }
 .success-screen.active { display: block; }
-.success-icon {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: rgba(232,70,28,.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-}
+.success-icon { display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; margin: 0 auto 24px; border-radius: 50%; background: rgba(232, 70, 28, .1); }
 .success-icon svg { color: var(--accent-text); }
-.success-screen h2 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 8px;
-}
-.success-screen p {
-  font-size: .95rem;
-  color: var(--t2);
-  margin-bottom: 6px;
-}
-.success-screen .phone-link {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--accent-text);
-  margin-top: 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
+.success-screen h2 { margin: 0 0 8px; font-size: 30px; line-height: 36px; font-weight: 800; color: var(--primary); }
+.success-screen p { margin: 0 0 4px; font-size: 17px; line-height: 24px; color: var(--t2); }
+.success-screen .phone-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 17px; line-height: 24px; font-weight: 700; color: var(--accent-text); }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  .type-grid { grid-template-columns: repeat(2, 1fr); }
-  .dim-inputs { flex-direction: column; align-items: stretch; }
-  .dim-group { max-width: 100%; }
-  .finish-grid { grid-template-columns: 1fr; }
-  .toggles-grid { grid-template-columns: 1fr; }
-  .summary-layout { grid-template-columns: minmax(0, 1fr); }
-  .summary-side { position: static; }
-  .config-wrap { padding: 24px 16px 80px; }
-  .bar-chips { display: none; }
-  .bottom-bar { padding: 10px 16px; }
-}
-@media (max-width: 480px) {
-  .type-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .type-card span { font-size: .8rem; padding: 8px 4px; }
-}
-
-/* ── STOLARKA — edytor otworów per-ściana ── */
-.wall-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 14px;
-  margin-bottom: 14px;
-  font-size: .74rem;
-  color: var(--t2);
-}
-.wall-legend span { white-space: nowrap; }
-.wall-legend b {
-  display: inline-flex;
-  width: 18px; height: 18px;
-  align-items: center; justify-content: center;
-  border-radius: 5px;
-  background: var(--primary);
-  color: #fff;
-  font-size: .68rem;
-  margin-right: 4px;
-  vertical-align: -3px;
-}
-.openings-list { display: flex; flex-direction: column; gap: 10px; }
-.opening-card {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 14px;
-  background: #fff;
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  gap: 10px 12px;
-  align-items: center;
-}
-.opening-card .oc-field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-.opening-card .oc-field label {
-  font-size: .68rem; font-weight: 600; color: var(--t2);
-  text-transform: uppercase; letter-spacing: .05em;
-}
-.opening-card select {
-  padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px;
-  font-size: .85rem; background: #fff; outline: none; cursor: pointer; color: var(--primary);
-}
-.opening-card select:focus { border-color: var(--accent); }
-.opening-card .oc-pos { grid-column: 1 / 3; }
-.opening-card .oc-pos input[type=range] { width: 100%; accent-color: var(--accent); }
-.opening-card .oc-hinge { grid-column: 1 / 3; display: flex; gap: 6px; align-items: center; }
-.opening-card .oc-hinge .pill { padding: 5px 12px; font-size: .76rem; }
-.oc-remove {
-  grid-column: 3; grid-row: 1;
-  width: 30px; height: 30px; border-radius: 8px;
-  border: 1px solid var(--border); background: #fff; cursor: pointer;
-  color: var(--t2); font-size: 1.1rem; line-height: 1;
-  display: flex; align-items: center; justify-content: center;
-  transition: all .2s;
-}
-.oc-remove:hover { border-color: #e53935; color: #e53935; }
-.add-opening-btn {
-  margin-top: 12px; width: 100%;
-  padding: 11px; border: 1.5px dashed var(--border); border-radius: 10px;
-  background: #fff; color: var(--primary); font-size: .88rem; font-weight: 600;
-  cursor: pointer; transition: all .2s;
-}
-.add-opening-btn:hover { border-color: var(--accent); color: var(--accent); }
-.openings-empty { font-size: .82rem; color: var(--t2); padding: 8px 0; }
-@media(max-width:520px){
-  .opening-card { grid-template-columns: 1fr auto; }
-  .opening-card .oc-pos, .opening-card .oc-hinge { grid-column: 1 / 2; }
-}
+/* ── Podgląd 3D (enable3d) ── */
+.stago3d-max { position: absolute; top: 8px; right: 8px; z-index: 3; display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: none; border-radius: 8px; background: rgba(29, 29, 27, .5); color: var(--white); cursor: pointer; }
+.r3d-modal { position: fixed; inset: 0; z-index: 300; display: none; align-items: center; justify-content: center; padding: 24px; background: rgba(20, 22, 24, .82); }
+.r3d-modal.open { display: flex; }
+.r3d-modal-inner { position: relative; width: min(1100px, 94vw); height: min(78vh, 820px); overflow: hidden; border-radius: 16px; background: var(--bg-light); box-shadow: 0 16px 48px rgba(0, 0, 0, .3); }
+.r3d-modal-stage { width: 100%; height: 100%; }
+.r3d-close { position: absolute; top: 12px; right: 12px; z-index: 4; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: none; border-radius: 12px; background: rgba(29, 29, 27, .6); color: var(--white); font-size: 22px; line-height: 1; cursor: pointer; }
+.r3d-modal-hint { position: absolute; bottom: 16px; left: 50%; margin: 0; padding: 4px 12px; border-radius: 999px; background: rgba(255, 255, 255, .82); transform: translateX(-50%); font-size: 12px; line-height: 16px; color: var(--t2); pointer-events: none; }
 </style>
 </head>
 <body>
@@ -1257,404 +245,113 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
     </div>
   </nav>
 
-  <!-- CONFIGURATOR -->
+  <!-- KONFIGURATOR v4 (Karol 9.11.2026): jedna strona; wymiar daje cenę od razu, reszta opcjonalna -->
   <div class="config-wrap" id="configWrap">
+    <div class="step-panel k active">
 
-    <!-- STEP 1: PRZEZNACZENIE -->
-    <div class="step-panel step-wide active" data-step="1">
-      <div class="step-head">
-        <div class="step-head-text">
-          <p class="step-head-badge">Krok 1 z 5</p>
-          <h1 class="step-head-title">{{step1.title}}</h1>
-          <p class="step-head-desc">{{{step1.description}}}</p>
+      <section class="k-lewa" id="kLewa" aria-label="Model">
+        <div class="k-tryb" role="group" aria-label="Widok">
+          <button type="button" id="tBryla" aria-pressed="true">Bryła</button>
+          <button type="button" id="tRzut" aria-pressed="false">Rzut, okna i drzwi</button>
         </div>
-      </div>
-
-      <div class="s-grid">
-        <div class="s-main">
-          <div class="type-grid">
-            {{#step1.types}}
-            <div class="type-card" data-type="{{name}}" onclick="selectType(this)">
-              <img src="{{img}}" alt="{{name}}" loading="lazy">
-              <span>{{name}}</span>
-            </div>
-            {{/step1.types}}
-          </div>
-          <div style="text-align:center;margin:20px 0 8px">
-            <a href="modele.html" class="btn btn-outline-dark">Zobacz wszystkie 12 modeli &rarr;</a>
-          </div>
+        <div class="k-obraz is-empty" id="vBryla" data-pusty="Wybierz model z listy poniżej.">
+          <img id="kObraz" alt="" width="1200" height="750">
+          <span class="k-nazwa" id="kNazwa" aria-hidden="true"></span>
+          <div class="k-probki"><span class="k-probka" id="pS"></span><span class="k-probka" id="pL" hidden></span><span id="pOpis"></span></div>
         </div>
-
-        <aside class="preview-panel">
-          <h2>Twój wybór</h2>
-          <div class="preview-hero is-empty" id="previewHero1" data-pusty="Wybierz model, a tutaj zobaczysz jego bryłę."></div>
-          <div class="price-box" data-price-box>
-            <span class="pb-label">Cena orientacyjna netto</span>
-            <span class="pb-value" data-price-value>—</span>
-            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
-          </div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Model</span>
-              <span class="pr-value" id="prv-model-1">— wybierz —</span>
-            </div>
-          </div>
-          <p class="preview-footer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-            Wybór możesz zmienić w każdej chwili.
-          </p>
-        </aside>
-      </div>
-    </div>
-
-    <!-- STEP 2: WYMIARY -->
-    <div class="step-panel step-wide" data-step="2">
-      <div class="step-head">
-        <div class="step-head-text">
-          <p class="step-head-badge">Krok 2 z 5</p>
-          <h2 class="step-head-title">{{step2.title}}</h2>
-          <p class="step-head-desc">{{{step2.description}}}</p>
+        <div class="k-planbox" id="vRzut" hidden>
+          <div id="kPlan"></div>
+          <div class="k-sciany" id="kSciany"></div>
+          <p class="k-podpis">Drzwi ALU 90×210 cm, witryna 100×210 cm, okno 100×100 cm (standard STAGO). Rzut poglądowy: dokładne miejsca ustalimy przy wycenie.</p>
         </div>
-      </div>
+        <div class="k-modele" id="kModele" role="group" aria-label="Wybierz model">
+          {{#step1.types}}<button type="button" class="k-mod" data-type="{{name}}" aria-pressed="false"><img src="{{img}}" alt="" loading="lazy" width="76" height="57"><span>{{name}}</span></button>{{/step1.types}}
+        </div>
+        <p class="k-podpis" id="kPodpis">Zdjęcie poglądowe modelu; kolor i lamele z Twojego wyboru pokazują próbki.</p>
+      </section>
 
-      <div class="s-grid">
-        <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
-          <div class="s3-section">
-            <h3>1. {{step2.purposeLabel}}</h3>
-            <p class="s3-hint">Do czego ma służyć pawilon? Opcjonalne — pomoże nam przygotować ofertę.</p>
-            <div class="pills" data-group="przeznaczenie" role="radiogroup" aria-label="{{step2.purposeLabel}}">
-              {{#step2.purposes}}<div class="pill" role="radio" aria-checked="false" tabindex="-1" onclick="selectPill(this)" onkeydown="radioKlawisz(event, this)">{{name}}</div>{{/step2.purposes}}
-            </div>
-          </div>
+      <section class="k-prawa" aria-label="Konfiguracja">
+        <h1 class="k-h1">Skonfiguruj <span id="h1m">pawilon</span></h1>
+        <p class="k-sub">Wymiar daje cenę od razu. Wygląd, okna i wyposażenie możesz dopracować albo zostawić nam.</p>
 
-          <div class="s3-section">
-            <h3>2. Długość i szerokość</h3>
-            <p class="s3-hint">W metrach. Wpisz dokładnie albo wybierz popularny rozmiar.</p>
-            <div class="dim-inputs" style="justify-content:flex-start;max-width:420px">
-              <div class="dim-group">
-                <label>Długość</label>
-                <div class="dim-field">
-                  <input type="number" id="dimL" aria-label="Długość (m)" step="0.1" min="2" max="18" placeholder="6" oninput="updateDims()">
-                  <span class="unit">m</span>
-                </div>
-              </div>
-              <div class="dim-group">
-                <label>Szerokość</label>
-                <div class="dim-field">
-                  <input type="number" id="dimW" aria-label="Szerokość (m)" step="0.1" min="2" max="6" placeholder="3" oninput="updateDims()">
-                  <span class="unit">m</span>
-                </div>
-              </div>
-            </div>
-            <p class="preset-label" style="margin-top:18px">{{step2.presetLabel}}</p>
-            <div class="presets">
-              {{#step2.presets}}
-              <button class="preset-btn" onclick="setPreset({{l}},{{w}},this)">{{label}}</button>
-              {{/step2.presets}}
-            </div>
-            <p class="dim-warn" id="dimWarn" role="status" hidden></p>
-            <p class="s3-hint" style="margin-top:12px">Cenę orientacyjną pokazujemy dla wymiarów 4×3–12×3 m. Inne wymiary i rozwiązania niestandardowe wyceniamy indywidualnie.</p>
+        <div class="k-sek">
+          <h2>Wymiary <small id="wymStan"></small></h2>
+          <p class="k-etyk" id="etDl">Długość (m)</p>
+          <div class="k-chipy" id="kChipy" role="group" aria-labelledby="etDl"></div>
+          <p class="k-uwaga">Szerokość 3 m, wysokość 2,44 m (standard).</p>
+          <button class="k-link" type="button" id="inneBtn" aria-expanded="false" aria-controls="inne">Inny wymiar</button>
+          <div class="k-wym" id="inne" hidden>
+            <div><label for="iL">Długość</label><div class="k-pole"><input id="iL" inputmode="decimal" autocomplete="off" maxlength="6"><span>m</span></div></div>
+            <div><label for="iW">Szerokość</label><div class="k-pole"><input id="iW" inputmode="decimal" autocomplete="off" maxlength="6"><span>m</span></div></div>
+            <div><label for="iH">Wysokość</label><div class="k-pole"><input id="iH" inputmode="decimal" autocomplete="off" maxlength="6"><span>m</span></div></div>
           </div>
-
-          <div class="s3-section">
-            <h3>3. {{step2.heightLabel}}</h3>
-            <p class="s3-hint">Cztery standardy. Różnica 10 cm w panelu. Domyślnie 2,44 m.</p>
-            <div class="pills" data-group="dimH">
-              {{#step2.heights}}<div class="pill" data-val="{{val}}" onclick="selectHeight(this)">{{name}}</div>{{/step2.heights}}
-            </div>
-          </div>
+          <p class="k-ostrz" id="dimWarn" role="status" hidden></p>
+          <p class="k-stan" aria-live="polite"><b id="stanB"></b> <span id="stanR"></span></p>
         </div>
 
-        <aside class="preview-panel">
-          <h3>Twoje wymiary</h3>
-          <div class="preview-hero is-empty" id="previewHero2" data-pusty="Wybierz model, a tutaj zobaczysz jego bryłę."></div>
-          <div class="price-box" data-price-box>
-            <span class="pb-label">Cena orientacyjna netto</span>
-            <span class="pb-value" data-price-value>—</span>
-            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
-          </div>
-          <div class="cfg-rzut" data-rzut></div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Model</span>
-              <span class="pr-value" id="prv-model-2">—</span>
-            </div>
-          </div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Wymiary</span>
-              <span class="pr-value" id="prv-dim">— × — × — m</span>
-            </div>
-          </div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Powierzchnia</span>
-              <span class="pr-value" id="prv-area">—</span>
-            </div>
-          </div>
-          <p class="preview-footer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-            Wymiary zewnętrzne. Wysokość dachu w środku.
-          </p>
-        </aside>
-      </div>
-    </div>
-
-    <!-- STEP 3: WYKOŃCZENIE -->
-    <div class="step-panel step-wide" data-step="3">
-      <div class="step-head">
-        <div class="step-head-text">
-          <p class="step-head-badge">Krok 3 z 5</p>
-          <h2 class="step-head-title">{{step3.title}}</h2>
-          <p class="step-head-desc">{{{step3.description}}}</p>
-        </div>
-      </div>
-
-      <div class="s-grid">
-        <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
-          <div class="s3-section">
-            <h3>1. Profil płyty warstwowej</h3>
-            <p class="s3-hint">Wybierz fakturę zewnętrzną płyty ściennej.</p>
-            <div class="profile-grid" data-group="profil">
-              {{#step3.profiles}}
-              <div class="profile-card profile-card-text" data-name="{{name}}" onclick="selectProfile(this)">
-                <strong class="pc-name">{{name}}</strong>
-                <span class="pc-desc">{{desc}}</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              {{/step3.profiles}}
-            </div>
-          </div>
-
-          <div class="s3-section">
-            <h3>2. Kolor ścian</h3>
-            <p class="s3-hint">Wybierz kolor zewnętrzny płyty.</p>
-            <div class="color-grid" data-group="kolorScian">
-              {{#step3.wallColors}}
-              <div class="color-card" data-name="{{name}}" onclick="selectWallColor(this)">
-                <div class="color-dot" style="background:{{{color}}}"></div>
-                <strong>{{name}}</strong>
-                <span>{{ral}}</span>
-                <span class="pc-check">&#10003;</span>
-              </div>
-              {{/step3.wallColors}}
-            </div>
-            <div class="s3-info">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-              <span>Możesz wybrać dowolny kolor z palety RAL.</span>
-            </div>
-          </div>
-
-          <div class="s3-section">
-            <h3>3. Akcenty lamelowe</h3>
-            <p class="s3-hint">Gdzie nałożyć lamele / okładziny ozdobne. Można wybrać kilka zakresów naraz. „Całość" obejmuje pozostałe.</p>
-            <div class="pills" id="accentsGroup">
-              <div class="pill" data-acc="corners" onclick="toggleAccent(this,'corners')">Narożniki</div>
-              <div class="pill" data-acc="entrance" onclick="toggleAccent(this,'entrance')">Wejście</div>
-              <div class="pill" data-acc="band" onclick="toggleAccent(this,'band')">Pas górny</div>
-              <div class="pill" data-acc="squares" onclick="toggleAccent(this,'squares')">Kwadraty</div>
-              <div class="pill" data-acc="cassette" onclick="toggleAccent(this,'cassette')">Kasetony</div>
-              <div class="pill" data-acc="full" onclick="toggleAccent(this,'full')">Całość</div>
-            </div>
-          </div>
-
-          <div class="s3-section" id="kolorLameliSection">
-            <h3>4. Kolor lameli</h3>
-            <p class="s3-hint">Kolor akcentów — drewno (ze słojami) albo gładki RAL. Aktywne, gdy wybrany jest akcent.</p>
-            <div class="color-grid" id="woodGroup"></div>
-          </div>
-
-          <div class="s3-section">
-            <h3>5. Okucia narożne (metal)</h3>
-            <p class="s3-hint">Metalowe profile ochronne na narożnikach bryły.</p>
-            <div class="pills" data-group="okuciaMetal">
-              <div class="pill selected" data-metal="off" onclick="setOkuciaMetal(this,false)">Brak</div>
-              <div class="pill" data-metal="on" onclick="setOkuciaMetal(this,true)">Okucia</div>
-            </div>
-          </div>
+        <div class="k-sek">
+          <h2>Okna i drzwi <small id="otwStan"></small></h2>
+          <p class="k-uwaga">Układasz je na rzucie, przy wybranej ścianie. <button class="k-link" type="button" id="pokazRzut">Pokaż rzut</button></p>
         </div>
 
-        <aside class="preview-panel">
-          <h3>Podgląd wykończenia</h3>
-          <div class="preview-hero is-empty" id="previewHero" data-pusty="Wybierz model, a tutaj zobaczysz jego bryłę."></div>
-          <div class="price-box" data-price-box>
-            <span class="pb-label">Cena orientacyjna netto</span>
-            <span class="pb-value" data-price-value>—</span>
-            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
+        <details class="k-sek" id="wyglad">
+          <summary>Wygląd <small id="wygStan"></small></summary>
+          <p class="k-etyk">Kolor ścian<span id="etKolor"></span></p>
+          <div class="k-kolory" id="kKolory" role="group" aria-label="Kolor ścian">
+            {{#step3.wallColors}}<button type="button" class="k-kolor" data-name="{{name}}" data-ral="{{ral}}" style="background:{{{color}}}" aria-label="{{name}}, {{ral}}" title="{{name}}, {{ral}}" aria-pressed="false"></button>{{/step3.wallColors}}
           </div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 14c2-3 4-3 6 0s4 3 6 0 4-3 6 0"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Profil płyty</span>
-              <span class="pr-value" id="prv-profil">Mikrofala</span>
-            </div>
+          <p class="k-etyk">Faktura płyty</p>
+          <div class="k-pigulki" id="kProfil" role="group" aria-label="Faktura płyty">
+            {{#step3.profiles}}<button type="button" class="k-pig" data-name="{{name}}" aria-pressed="false">{{name}}</button>{{/step3.profiles}}
           </div>
-          <div class="preview-row">
-            <div class="preview-icon" id="prv-kolor-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg></div>
-            <div>
-              <span class="pr-label">Kolor ścian</span>
-              <span class="pr-value" id="prv-kolor">Czarny (RAL 9005)</span>
-            </div>
+          <p class="k-etyk">Lamele drewniane</p>
+          <div class="k-pigulki" id="kLamele" role="group" aria-label="Lamele drewniane">
+            <button type="button" class="k-pig" data-acc="" aria-pressed="true">Bez lameli</button>
+            <button type="button" class="k-pig" data-acc="corners" aria-pressed="false">Narożniki</button>
+            <button type="button" class="k-pig" data-acc="entrance" aria-pressed="false">Wejście</button>
+            <button type="button" class="k-pig" data-acc="band" aria-pressed="false">Pas górny</button>
+            <button type="button" class="k-pig" data-acc="squares" aria-pressed="false">Kwadraty</button>
+            <button type="button" class="k-pig" data-acc="cassette" aria-pressed="false">Kasetony</button>
+            <button type="button" class="k-pig" data-acc="full" aria-pressed="false">Całość</button>
           </div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r="1"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Okucia</span>
-              <span class="pr-value" id="prv-okucia">Podstawowe</span>
-            </div>
+          <div id="lamK" hidden>
+            <p class="k-etyk">Kolor lameli<span id="etDrewno"></span></p>
+            <div class="k-kolory" id="kDrewno" role="group" aria-label="Kolor lameli"></div>
           </div>
-          <p class="preview-footer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-            Podgląd ma charakter poglądowy.
-          </p>
-        </aside>
-      </div>
-    </div>
+          <p class="k-etyk">Okucia narożne</p>
+          <div class="k-pigulki" id="kOkucia" role="group" aria-label="Okucia narożne">
+            <button type="button" class="k-pig" data-metal="0" aria-pressed="true">Bez okuć</button>
+            <button type="button" class="k-pig" data-metal="1" aria-pressed="false">Metalowe okucia</button>
+          </div>
+        </details>
 
-    <!-- STEP 4: DODATKI -->
-    <div class="step-panel step-wide" data-step="4">
-      <div class="step-head">
-        <div class="step-head-text">
-          <p class="step-head-badge">Krok 4 z 5</p>
-          <h2 class="step-head-title">{{step4.title}}</h2>
-          <p class="step-head-desc">{{{step4.description}}}</p>
-        </div>
-      </div>
+        <details class="k-sek">
+          <summary>Wyposażenie <small id="wypStan"></small></summary>
+          <div class="k-checki">
+            {{#step4.extras}}<label class="k-check"><input type="checkbox" data-equip="{{name}}"> {{name}}</label>{{/step4.extras}}
+          </div>
+        </details>
 
-      <div class="s-grid">
-        <div class="s-main" style="display:flex;flex-direction:column;gap:20px">
-          <div class="s3-section">
-            <h3>1. Stolarka — okna i drzwi</h3>
-            <p class="s3-hint">{{#enable3d}}Dodaj elementy i rozmieść je na ścianach. Bryła po prawej pokazuje układ na żywo. Rozmiary wg standardu STAGO.{{/enable3d}}{{^enable3d}}Wybierz, jakie elementy potrzebujesz i na której ścianie. Dokładne rozmieszczenie ustalimy razem przy wycenie. Rozmiary wg standardu STAGO.{{/enable3d}}</p>
-            <div class="wall-legend">
-              <span><b>A</b>przód</span><span><b>B</b>prawy bok</span><span><b>C</b>tył</span><span><b>D</b>lewy bok</span>
-            </div>
-            <div class="openings-list" id="openingsList"></div>
-            <button type="button" class="add-opening-btn" onclick="addOpening()">+ Dodaj element</button>
+        <div class="k-sek k-zap" id="zapytanie">
+          <h2>Zapytanie</h2>
+          <p class="k-etyk" id="etPrz">Do czego? (opcjonalnie)</p>
+          <div class="k-pigulki" id="kPrzezn" role="group" aria-labelledby="etPrz">
+            {{#step2.purposes}}<button type="button" class="k-pig" data-name="{{name}}" aria-pressed="false">{{name}}</button>{{/step2.purposes}}
           </div>
-
-          <div class="s3-section">
-            <h3>2. Dodatkowe wyposażenie</h3>
-            <p class="s3-hint">Wybierz opcje, które potrzebujesz. Wszystkie opcjonalne.</p>
-            <div class="toggles-grid">
-              {{#step4.extras}}
-              <div class="toggle-item" onclick="toggleItem(this)" data-equip="{{name}}">
-                <span>{{name}}</span>
-                <div class="toggle-switch"></div>
-              </div>
-              {{/step4.extras}}
-            </div>
-          </div>
-        </div>
-
-        <aside class="preview-panel">
-          <h3>Twoje dodatki</h3>
-          <div class="preview-hero is-empty" id="previewHero4" data-pusty="Wybierz model, a tutaj zobaczysz jego bryłę."></div>
-          <div class="price-box" data-price-box>
-            <span class="pb-label">Cena orientacyjna netto</span>
-            <span class="pb-value" data-price-value>—</span>
-            <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
-          </div>
-          <div class="cfg-rzut" data-rzut></div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r="1"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Drzwi</span>
-              <span class="pr-value" id="prv-drzwi">—</span>
-            </div>
-          </div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 12h18M12 3v18"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Okna</span>
-              <span class="pr-value" id="prv-okna">—</span>
-            </div>
-          </div>
-          <div class="preview-row">
-            <div class="preview-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div>
-              <span class="pr-label">Dodatki</span>
-              <span class="pr-value" id="prv-extras">brak</span>
-            </div>
-          </div>
-          <p class="preview-footer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-            Wszystko można jeszcze doprecyzować w rozmowie.
-          </p>
-        </aside>
-      </div>
-    </div>
-
-    <!-- STEP 5: PODSUMOWANIE -->
-    <div class="step-panel step-wide" data-step="5">
-      <div class="step-head">
-        <div class="step-head-text">
-          <p class="step-head-badge">Krok 5 z 5</p>
-          <h2 class="step-head-title">{{step5.title}}</h2>
-          <p class="step-head-desc">{{{step5.description}}}</p>
-        </div>
-      </div>
-      <div class="summary-layout">
-        <div class="summary-card">
-          <h3>{{step5.summaryHeading}}</h3>
-          <div class="summary-render" id="summaryRender"></div>
-          <p class="summary-render-cap">
-            {{#enable3d}}<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
-            Podgląd 3D — obróć myszą. Render poglądowy.{{/enable3d}}{{^enable3d}}<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 15l-5-4-4.5 4-2-1.5L3 18"/></svg>
-            Zdjęcie poglądowe wybranego modelu. Wygląd Twojego pawilonu ustalamy przy wycenie.{{/enable3d}}
-          </p>
-          <div class="cfg-rzut" data-rzut></div>
-          <div id="summaryRows"></div>
-        </div>
-        <div class="summary-side">
-        <div class="price-box price-box-duzy" data-price-box>
-          <span class="pb-label">Cena orientacyjna netto</span>
-          <span class="pb-value" data-price-value>—</span>
-          <span class="pb-note" data-price-note>Wybierz model i wymiary</span>
-        </div>
-        <div class="cfg-kontakt">
-          <h3>{{step5.contactHeading}}</h3>
-          <form class="cfg-form" id="cfgForm" data-stago-form>
-            <input type="text" name="name" placeholder="Imię i nazwisko *" aria-label="Imię i nazwisko" required>
-            <input type="tel" name="phone" placeholder="Telefon *" aria-label="Telefon" required>
-            <input type="email" name="email" placeholder="Email" aria-label="Email">
-            <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)" aria-label="Uwagi (opcjonalnie)"></textarea>
-            <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
-            <button type="submit" class="cfg-submit">{{step5.submitLabel}}</button>
-            <p class="form-error" id="cfgForm-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:8px"></p>
-            <p class="form-promise">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              {{step5.formPromise}}
-            </p>
+          <form class="cfg-form k-pola" id="cfgForm" data-stago-form>
+            <input type="text" name="name" placeholder="Imię i nazwisko *" aria-label="Imię i nazwisko" autocomplete="name" required>
+            <input type="tel" name="phone" placeholder="Telefon *" aria-label="Telefon" autocomplete="tel" required>
+            <input type="text" name="miejscowosc" placeholder="Miejscowość montażu (opcjonalnie)" aria-label="Miejscowość montażu (opcjonalnie)" autocomplete="address-level2" maxlength="80">
+            <input type="email" name="email" placeholder="E-mail (opcjonalnie)" aria-label="E-mail (opcjonalnie)" autocomplete="email">
+            <textarea name="notes" rows="3" placeholder="Uwagi (opcjonalnie)" aria-label="Uwagi (opcjonalnie)"></textarea>
+            <label class="k-zgoda"><input type="checkbox" name="consent" required> <span>{{{ui.form.consent}}} <a href="polityka-prywatnosci.html" target="_blank">{{{ui.form.privacyLink}}}</a></span></label>
+            <p class="k-uwaga">Wysyłasz przyciskiem na dole. {{step5.formPromise}}.</p>
           </form>
         </div>
-        </div>
-      </div>
+      </section>
     </div>
 
-    <!-- SUCCESS -->
+    <!-- WYSŁANE (form-handler.js chowa .step-panel i pasek, pokazuje ten ekran) -->
     <div class="success-screen" id="successScreen">
       <div class="success-icon">
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
@@ -1667,7 +364,6 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
         {{success.phone}}
       </a>
     </div>
-
   </div>
 
   {{#enable3d}}<!-- MODAL: pełnoekranowy render 3D -->
@@ -1679,31 +375,18 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
     </div>
   </div>{{/enable3d}}
 
-  <!-- BOTTOM BAR -->
-  <div class="bottom-bar" id="bottomBar">
-    <div class="bar-right" style="flex-shrink:0">
-      <button class="bar-btn bar-back" id="btnBack" onclick="goBack()" disabled>&#8592; Wstecz</button>
-    </div>
-    <div class="bb-steps" id="bbSteps">
-      <span class="bb-step" data-n="1"><span>Model</span></span>
-      <span class="bb-sep"></span>
-      <span class="bb-step" data-n="2"><span>Wymiary</span></span>
-      <span class="bb-sep"></span>
-      <span class="bb-step" data-n="3"><span>Wykończenie</span></span>
-      <span class="bb-sep"></span>
-      <span class="bb-step" data-n="4"><span>Dodatki</span></span>
-      <span class="bb-sep"></span>
-      <span class="bb-step" data-n="5"><span>Podsumowanie</span></span>
-    </div>
-    <div class="bar-right" style="flex-shrink:0">
-      <button class="bar-btn bar-next" id="btnNext" onclick="goNext()" disabled>Dalej &#8594;</button>
-    </div>
+  <!-- PASEK CENY: jedyny przycisk wysyłki (atrybut form wiąże go z formularzem zapytania) -->
+  <div class="k-bar" id="bottomBar">
+    <div class="k-bar-i"><b id="bCena"></b><small><span id="bOpis"></span><span class="k-dop" id="bDop"></span></small></div>
+    <a class="k-tel" href="tel:+48509508210" aria-label="Zadzwoń: 509 508 210"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+    <button type="submit" form="cfgForm" class="btn btn-primary k-wyslij" id="kWyslij">{{step5.submitLabel}}</button>
   </div>
 
 <script src="rzut2d.js"></script>
 <script id="cennikPawilonow" type="application/json">{{{cennikJson}}}</script>
 <script>
-// ── STATE ──
+// ── STAN (kontrakt: pola stanu, zapis stago_cfg, form-handler.js czyta `state` przy wysyłce) ──
+// `step` zostaje w stanie dla zgodności zapisów sprzed 9.11.2026 (kreator 5 kroków); strona nie ma już kroków.
 const state = {
   step: 1,
   type: '',
@@ -1728,10 +411,11 @@ const state = {
 
 // Wartości domyślne — do nich wracają pola z zapisu, których nie ma wśród opcji na stronie
 const DOMYSLNE = JSON.parse(JSON.stringify(state));
+const MODELE = [...document.querySelectorAll('.k-mod')].map(b => b.dataset.type);
+const $ = (id) => document.getElementById(id);
 
-// ── LOAD FROM STORAGE ──
+// ── ODCZYT ZAPISU ──
 // Tylko znane pola o właściwym typie (zapis mógł pochodzić ze starszej wersji albo zostać zmieniony ręcznie).
-// Widok odtwarzamy na końcu inicjalizacji (restoreUI niżej) — wcześniej stałe kroków jeszcze nie istnieją.
 function stanZZapisu(s) {
   const out = {};
   if (!s || typeof s !== 'object' || Array.isArray(s)) return out;
@@ -1758,8 +442,7 @@ try {
   const saved = localStorage.getItem('stago_cfg');
   if (saved) {
     Object.assign(state, stanZZapisu(JSON.parse(saved)));
-    const modele = [...document.querySelectorAll('.type-card')].map(c => c.dataset.type);
-    if (!modele.includes(state.type)) state.type = '';
+    if (!MODELE.includes(state.type)) state.type = '';
     zapisDoOdtworzenia = true;
   }
 } catch(e) {}
@@ -1768,172 +451,6 @@ function saveState() {
   try { localStorage.setItem('stago_cfg', JSON.stringify(state)); } catch(e) {}
 }
 
-function restoreUI() {
-  // Restore type
-  if (state.type) {
-    document.querySelectorAll('.type-card').forEach(c => {
-      if (c.dataset.type === state.type) c.classList.add('selected');
-    });
-  }
-  // Restore dims (L/W only — H is a pill group)
-  if (state.dimL) document.getElementById('dimL').value = state.dimL;
-  if (state.dimW) document.getElementById('dimW').value = state.dimW;
-  // Restore pills (rozmOkuc still pills)
-  restorePills('rozmOkuc', state.rozmOkuc);
-  restorePills('przeznaczenie', state.przeznaczenie);
-  // Restore profile cards (data-name based)
-  document.querySelectorAll('.profile-card').forEach(c => {
-    c.classList.toggle('selected', c.dataset.name === state.profil);
-  });
-  // Restore wall color cards
-  document.querySelectorAll('[data-group="kolorScian"] .color-card').forEach(c => {
-    c.classList.toggle('selected', c.dataset.name === state.kolorScian);
-  });
-  // Restore kolor okuc cards
-  document.querySelectorAll('[data-group="kolorOkuc"] .color-card').forEach(c => {
-    c.classList.toggle('selected', c.dataset.name === state.kolorOkuc);
-  });
-  // Restore okucia (rows, data-name based)
-  document.querySelectorAll('.okucia-row').forEach(c => {
-    c.classList.toggle('selected', c.dataset.name === state.okucia);
-  });
-  // Restore height pill (data-val based)
-  document.querySelectorAll('[data-group="dimH"] .pill').forEach(p => {
-    p.classList.toggle('selected', p.dataset.val === state.dimH);
-  });
-  // Restore stolarka (openings)
-  renderOpenings();
-  // Restore akcenty / kolor lameli / okucia
-  syncAccentUI();
-  updateOkuciaUI();
-  // Restore toggles
-  document.querySelectorAll('.toggle-item').forEach(t => {
-    if (state.extras.includes(t.dataset.equip)) t.classList.add('on');
-  });
-  // Go to saved step
-  if (state.step > 1) goToStep(state.step);
-  updateBar();
-}
-
-// Pola wyboru z zapisu tylko spośród opcji widocznych na stronie; inaczej wartość domyślna
-function poprawWybory() {
-  const lista = (sel, f) => [...document.querySelectorAll(sel)].map(f);
-  const slowniki = {
-    dimH: lista('[data-group="dimH"] .pill', p => p.dataset.val),
-    profil: lista('.profile-card', c => c.dataset.name),
-    kolorScian: lista('[data-group="kolorScian"] .color-card', c => c.dataset.name),
-    kolorOkuc: lista('[data-group="kolorOkuc"] .color-card', c => c.dataset.name),
-    okucia: lista('.okucia-row', c => c.dataset.name),
-    rozmOkuc: lista('[data-group="rozmOkuc"] .pill', p => p.textContent),
-  };
-  Object.keys(slowniki).forEach(k => { if (!slowniki[k].includes(state[k])) state[k] = DOMYSLNE[k]; });
-  const przeznaczenia = lista('[data-group="przeznaczenie"] .pill', p => p.textContent);
-  if (!przeznaczenia.includes(state.przeznaczenie)) state.przeznaczenie = '';
-  const wyposazenie = lista('.toggle-item', t => t.dataset.equip);
-  state.extras = state.extras.filter(x => wyposazenie.includes(x));
-  state.accents = state.accents.filter(a => Object.prototype.hasOwnProperty.call(ACC_NAMES, a));
-  const drewno = WOODS.find(w => w[0] === state.woodName && w[1].toLowerCase() === String(state.woodHex).toLowerCase());
-  if (!drewno) { state.woodName = ''; state.woodHex = ''; }
-}
-
-function restorePills(group, val) {
-  document.querySelectorAll(`[data-group="${group}"] .pill`).forEach(p => {
-    p.classList.toggle('selected', p.textContent === val);
-  });
-  document.querySelectorAll(`[data-group="${group}"]`).forEach(syncAriaChecked);
-}
-
-// Pigułki z role="radio" (przeznaczenie): czytnik ekranu dostaje stan zaznaczenia, nie tylko klasę CSS.
-// Wzorzec ARIA radiogroup: jeden punkt tabulacji (zaznaczony albo pierwszy), strzałki zmieniają wybór.
-function syncAriaChecked(group) {
-  const radia = [...group.querySelectorAll('.pill[role="radio"]')];
-  if (!radia.length) return;
-  const wybrany = radia.find(p => p.classList.contains('selected'));
-  radia.forEach(p => {
-    p.setAttribute('aria-checked', p === wybrany ? 'true' : 'false');
-    p.tabIndex = p === (wybrany || radia[0]) ? 0 : -1;
-  });
-}
-
-function radioKlawisz(e, el) {
-  const radia = [...el.parentElement.querySelectorAll('.pill[role="radio"]')];
-  const i = radia.indexOf(el);
-  let cel = null;
-  if (e.key === 'Enter' || e.key === ' ') cel = el;
-  else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') cel = radia[(i + 1) % radia.length];
-  else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') cel = radia[(i - 1 + radia.length) % radia.length];
-  else if (e.key === 'Home') cel = radia[0];
-  else if (e.key === 'End') cel = radia[radia.length - 1];
-  if (!cel) return;
-  e.preventDefault();
-  selectPill(cel);
-  cel.focus();
-}
-
-// ── NAV ──
-const panels = document.querySelectorAll('.step-panel');
-const totalSteps = 5;
-
-// ── 3D PODGLĄD: przenieś canvas do preview-hero aktywnego kroku ──
-const HERO_BY_STEP = { 1: 'previewHero1', 2: 'previewHero2', 3: 'previewHero', 4: 'previewHero4', 5: 'summaryRender' };
-function mount3D(n) {
-  if (!window.StagoConfigurator3D || !StagoConfigurator3D.ready()) return;
-  const host = document.getElementById(HERO_BY_STEP[n]);
-  if (host) { StagoConfigurator3D.mount(host); StagoConfigurator3D.update(state); }
-}
-
-function goToStep(n) {
-  state.step = n;
-  panels.forEach(p => {
-    p.classList.remove('active');
-    if (parseInt(p.dataset.step) === n) p.classList.add('active');
-  });
-  if (n === 3) { ensureAccents(); syncAccentUI(); }
-  if (n === 4) { ensureOpenings(); renderOpenings(); updateRzut(); }
-  mount3D(n);
-  if (n === 5) buildSummary();
-  updateBar();
-  saveState();
-  window.scrollTo(0, 0);
-}
-
-function goNext() {
-  if (state.step < totalSteps) goToStep(state.step + 1);
-}
-
-function goBack() {
-  if (state.step > 1) goToStep(state.step - 1);
-}
-
-function updateBar() {
-  document.getElementById('btnBack').disabled = state.step === 1;
-
-  // Next button logic
-  const btnNext = document.getElementById('btnNext');
-  if (state.step === 5) {
-    btnNext.style.display = 'none';
-  } else {
-    btnNext.style.display = '';
-    btnNext.disabled = !canProceed();
-  }
-
-  // Highlight active step in progress bar
-  document.querySelectorAll('.bb-step').forEach(el => {
-    const n = parseInt(el.dataset.n);
-    el.classList.toggle('active', n === state.step);
-    el.classList.toggle('done', n < state.step);
-  });
-}
-
-function canProceed() {
-  if (state.step === 1) return !!state.type;
-  if (state.step === 2) return wymiaryOk(state.dimL, state.dimW) && state.dimH;
-  return true;
-}
-
-// Wymiar, z którym można przejść dalej (pola, ?l=&w=, stan z localStorage): zakres pól formularza —
-// dłuższy bok 2–18 m, krótszy 2–6 m (kolejność dowolna, 3×10 = 10×3). Obejmuje cennik 4×3–12×3 i presety.
-// Cena orientacyjna tylko z cennika; reszta w zakresie = wycena indywidualna (cenaOrientacyjna).
 // Jedna konwersja wymiaru dla pól, ?l=&w=, zapisu, ceny, powierzchni i rzutu: tylko zapis dziesiętny
 // (6, 6.5) — bez 0x10, 1e1, Infinity, przecinka i spacji, które Number() i parseFloat() czytały różnie.
 function wymiar(v) {
@@ -1941,6 +458,8 @@ function wymiar(v) {
   return typeof v === 'string' && /^\d{1,3}(\.\d{1,3})?$/.test(v) ? Number(v) : NaN;
 }
 
+// Wymiar w zakresie pól: dłuższy bok 2–18 m, krótszy 2–6 m (kolejność dowolna, 3×10 = 10×3).
+// Cena orientacyjna tylko z cennika; reszta w zakresie = wycena indywidualna (cenaOrientacyjna).
 function wymiaryOk(L, W) {
   const a = wymiar(L), b = wymiar(W);
   if (Number.isNaN(a) || Number.isNaN(b)) return false;
@@ -1948,103 +467,199 @@ function wymiaryOk(L, W) {
   return sz >= 2 && sz <= 6 && dl <= 18;
 }
 
-// ── STEP 1 ──
-function selectType(el) {
-  document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  state.type = el.dataset.type;
-  saveState();
-  updateBar();
-  updatePreview();
-  setTimeout(() => goNext(), 300);
+// Wysokość z pola „Inny wymiar”: 2,2–3,2 m (standard 2,44)
+function wysokosc(v) {
+  const h = wymiar(String(v).trim().replace(',', '.'));
+  return h >= 2.2 && h <= 3.2 ? h : NaN;
 }
 
-// ── STEP 2 ──
-function updateDims() {
-  state.dimL = document.getElementById('dimL').value;
-  state.dimW = document.getElementById('dimW').value;
-  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('selected'));
-  saveState();
-  updateBar();
-  updatePreview();
+// ── CENA ORIENTACYJNA (content/cennik-pawilonow.json, generowane z arkusza 28.10.2026) ──
+// cena = podstawa[rozmiar] + dopłata[model, rozmiar]; netto, bez transportu i montażu.
+// Poza tabelą (inna szerokość, wymiar niecałkowity, >12 m) → „wycena indywidualna”.
+const CENNIK = (() => {
+  try { return JSON.parse(document.getElementById('cennikPawilonow').textContent); } catch (e) { return null; }
+})();
+const zl = (v) => Math.round(v).toLocaleString('pl-PL').replace(/\u00a0|\u202f/g, ' ') + ' zł';
+const rozmiarTxt = (r) => r.replace('x', '×') + ' m';
+const rozmiarLadny = (r) => r.replace('x', ' × ') + ' m';
+const lic = (v) => String(Math.round(v * 100) / 100).replace('.', ',');
+const twarde = (s) => s.replace(/ /g, '\u00a0');   // kwota w pasku nie łamie się na dwie linie
+
+function cenaOrientacyjna() {
+  if (!CENNIK) return { status: 'brak' };
+  const model = (state.type || '').toUpperCase();
+  if (!model || !CENNIK.od[model]) return { status: 'brak' };
+  const L = wymiar(state.dimL), W = wymiar(state.dimW);
+  const od = CENNIK.od[model];
+  if (!(L > 0 && W > 0)) return { status: 'od', model, cena: od.cena, rozmiar: od.rozmiar };
+  const row = CENNIK.rozmiary.find(r =>
+    (r.dlugosc === L && r.szerokosc === W) || (r.dlugosc === W && r.szerokosc === L));
+  if (!row) return { status: 'indywidualna', model };
+  const dop = row.doplaty[model];
+  if (dop == null) return { status: 'niedostepny', model, od: od.rozmiar };
+  return { status: 'cena', model, cena: row.podstawa + dop, rozmiar: row.rozmiar };
 }
 
-function setPreset(l, w, el) {
-  document.getElementById('dimL').value = l;
-  document.getElementById('dimW').value = w;
-  state.dimL = String(l);
-  state.dimW = String(w);
-  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('selected'));
-  el.classList.add('selected');
-  saveState();
-  updateBar();
-  updatePreview();
+function wymiarTxt() {
+  const L = wymiar(state.dimL), W = wymiar(state.dimW);
+  return L > 0 && W > 0 ? lic(L) + ' × ' + lic(W) + ' m' : '';
 }
 
-function selectHeight(el) {
-  const parent = el.parentElement;
-  parent.querySelectorAll('.pill').forEach(p => p.classList.remove('selected'));
-  el.classList.add('selected');
-  state.dimH = el.dataset.val;
-  saveState();
-  updateBar();
-  updatePreview();
+// Po zmianie modelu, gdy długość z przycisku nie istnieje dla nowego modelu (VIEW od 7 m), do następnej zmiany wymiaru
+let notaModelu = '';
+
+function updatePrice() {
+  const c = cenaOrientacyjna();
+  const dopiski = [];
+  if (state.dimH && state.dimH !== '2.44') dopiski.push('cena dla wysokości 2,44 m — inną wysokość potwierdzimy w ofercie');
+  if (state.extras && state.extras.length) dopiski.push('bez wyposażenia dodatkowego');
+  const wym = twarde(wymiarTxt()), H = twarde(lic(wymiar(state.dimH) || 2.44) + ' m');
+  const zlT = (v) => twarde(zl(v)), rozT = (r) => twarde(rozmiarLadny(r));
+  let cena = 'Wybierz model', mocno = '', reszta = 'Wybierz model z listy, a pokażemy cenę z cennika.', dop = '';
+  if (c.status === 'od') {
+    cena = twarde('od ' + zl(c.cena));
+    mocno = c.model + ' od ' + zlT(c.cena) + ' netto';
+    reszta = '(' + rozT(c.rozmiar) + '). Wybierz długość, a pokażemy cenę Twojego wymiaru.';
+    dop = ' · netto, bez transportu i montażu';
+  } else if (c.status === 'cena') {
+    cena = twarde(zl(c.cena));
+    mocno = c.model + ' ' + rozT(c.rozmiar) + ': ' + zlT(c.cena) + ' netto';
+    reszta = 'z cennika, bez transportu i montażu.'
+      + (state.dimH !== '2.44' ? ' Cena dla wysokości 2,44\u00a0m; wysokość ' + H + ' potwierdzimy w ofercie.' : '')
+      + (state.extras.length ? ' Wyposażenie wycenimy w ofercie.' : '');
+    dop = ' · netto, bez transportu i montażu';
+  } else if (c.status === 'indywidualna') {
+    cena = 'Wycena indywidualna';
+    mocno = 'Wymiar indywidualny ' + wym + ', wysokość ' + H + '.';
+    reszta = 'Cenę podamy w ofercie.';
+    dop = ' · wymiar indywidualny';
+  } else if (c.status === 'niedostepny') {
+    cena = 'Wycena indywidualna';
+    mocno = c.model + ' jest dostępny od ' + rozT(c.od) + '.';
+    reszta = 'Wybierz większy wymiar albo wyślij zapytanie, a ten wymiar wycenimy indywidualnie.';
+    dop = ' · wymiar indywidualny';
+  }
+  if (notaModelu) reszta += ' ' + notaModelu;
+  $('stanB').textContent = mocno;
+  $('stanR').textContent = reszta;
+  $('bCena').textContent = cena;
+  $('bOpis').textContent = [state.type, wym || (state.type ? 'wybierz długość' : 'wybierz model i długość')].filter(Boolean).join(' · ');
+  $('bDop').textContent = dop;
+  // Do zapytania (form-handler dopisuje to do treści wiadomości — pole tekstowe, schemat payloadu bez zmian)
+  state.cenaOrientacyjna = (c.status === 'cena') ? Math.round(c.cena) : null;
+  state.cenaOpis = (c.status === 'cena')
+    ? zl(c.cena) + ' netto (' + c.model + ' ' + rozmiarTxt(c.rozmiar) + ', bez transportu i montażu' + (dopiski.length ? '; ' + dopiski.join('; ') : '') + ')'
+    : (c.status === 'indywidualna' || c.status === 'niedostepny') ? 'wycena indywidualna (wymiar poza cennikiem)' : '';
+  return c;
 }
 
-// ── STEP 3 ──
-function selectPill(el) {
-  const group = el.parentElement;
-  group.querySelectorAll('.pill').forEach(p => p.classList.remove('selected'));
-  el.classList.add('selected');
-  syncAriaChecked(group);
-  const groupName = group.dataset.group;
-  if (groupName) state[groupName] = el.textContent;
-  saveState();
-  updatePreview();
+// ── WYMIARY ──
+// Przycisk długości = wymiar z cennika (szerokość 3, wysokość 2,44). „Inny wymiar” = trzy pola;
+// wpisanego wymiaru nic nie nadpisuje (ani podpowiedź, ani zmiana modelu).
+let innyOtwarty = false;
+function standardowy() {
+  const L = wymiar(state.dimL), W = wymiar(state.dimW);
+  return W === 3 && Number.isInteger(L) && L >= 4 && L <= 12 && state.dimH === '2.44';
 }
 
-function selectOkucia(el) {
-  const group = el.parentElement;
-  group.querySelectorAll('.okucia-row').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  state.okucia = el.dataset.name;
-  saveState();
-  updateOkuciaUI();
-  updatePreview();
+function ostrzezenieWymiaru() {
+  if (!innyOtwarty) return '';
+  const zly = (id) => { const v = $(id).value.trim(); return v !== '' && Number.isNaN(wymiar(v.replace(',', '.'))); };
+  if (zly('iL') || zly('iW') || (state.dimL !== '' && state.dimW !== '' && !wymiaryOk(state.dimL, state.dimW))) {
+    return 'Podaj wymiar od 2 do 18 m (dłuższy bok) i od 2 do 6 m (krótszy bok). Większy obiekt? Zadzwoń: 509 508 210, przygotujemy wycenę indywidualną.';
+  }
+  const h = $('iH').value.trim();
+  if (h !== '' && Number.isNaN(wysokosc(h))) return 'Wysokość podaj od 2,2 do 3,2 m.';
+  return '';
 }
 
-function selectProfile(el) {
-  const group = el.parentElement;
-  group.querySelectorAll('.profile-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  state.profil = el.dataset.name;
-  saveState();
-  updatePreview();
+function rysujWymiary() {
+  const L = wymiar(state.dimL), W = wymiar(state.dimW), M = (state.type || '').toUpperCase();
+  $('kChipy').querySelectorAll('.k-chip').forEach(b => {
+    const l = Number(b.dataset.l), r = CENNIK.rozmiary.find(x => x.dlugosc === l);
+    const brak = !!(M && CENNIK.od[M] && r && r.doplaty[M] == null);
+    b.disabled = brak;
+    b.title = brak ? M + ' jest dostępny od ' + rozmiarLadny(CENNIK.od[M].rozmiar) : '';
+    b.setAttribute('aria-pressed', String(!innyOtwarty && W === 3 && L === l));
+  });
+  $('wymStan').textContent = L > 0 && W > 0
+    ? [lic(L) + ' × ' + lic(W) + ' m', lic(L * W) + ' m²', lic(wymiar(state.dimH)) + ' m'].map(twarde).join(' · ')
+    : 'wybierz długość';
+  $('inne').hidden = !innyOtwarty;
+  $('inneBtn').setAttribute('aria-expanded', String(innyOtwarty));
+  const w = ostrzezenieWymiaru();
+  $('dimWarn').textContent = w;
+  $('dimWarn').hidden = !w;
 }
 
-function selectWallColor(el) {
-  const group = el.parentElement;
-  group.querySelectorAll('.color-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  state.kolorScian = el.dataset.name;
-  state.kolorScianRal = el.querySelector('span').textContent;
-  state.kolorScianHex = el.querySelector('.color-dot').style.background;
+function wybierzDlugosc(l) {
+  innyOtwarty = false;
+  notaModelu = '';
+  state.dimL = String(l); state.dimW = '3'; state.dimH = '2.44';
   saveState();
-  updatePreview();
+  rysuj();
 }
 
-function selectKolorOkuc(el) {
-  const group = el.parentElement;
-  group.querySelectorAll('.color-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  state.kolorOkuc = el.dataset.name;
-  state.kolorOkucRal = el.querySelector('span').textContent;
-  state.kolorOkucHex = el.querySelector('.color-dot').style.background;
-  saveState();
-  updatePreview();
+function otworzInny() {
+  innyOtwarty = true;
+  const L = wymiar(state.dimL), W = wymiar(state.dimW);
+  $('iL').value = L > 0 ? lic(L) : '';
+  $('iW').value = W > 0 ? lic(W) : '';
+  $('iH').value = lic(wymiar(state.dimH));
+  rysuj();
+  $('iL').focus();
 }
 
-// ── STEP 3: AKCENTY LAMELOWE / KOLOR LAMELI / OKUCIA METAL (parytet konfiguratora 3D) ──
+function poleWymiaru(e) {
+  const v = e.target.value.trim().replace(',', '.');
+  if (e.target.id === 'iH') {
+    const h = wysokosc(v);
+    if (!Number.isNaN(h)) state.dimH = String(h);
+  } else {
+    const n = wymiar(v);
+    state[e.target.id === 'iL' ? 'dimL' : 'dimW'] = Number.isNaN(n) ? '' : String(n);
+  }
+  notaModelu = '';
+  saveState();
+  rysuj();
+}
+
+// ── MODEL ──
+function wybierzModel(M) {
+  state.type = M;
+  notaModelu = '';
+  // Makieta v4: długość z przycisku, której model nie ma (VIEW od 7 m) → najmniejsza dostępna; wpisanego wymiaru nie ruszamy
+  const L = wymiar(state.dimL), W = wymiar(state.dimW);
+  const r = CENNIK && CENNIK.rozmiary.find(x => x.dlugosc === L && x.szerokosc === W);
+  if (!innyOtwarty && r && r.doplaty[M] == null && CENNIK.od[M]) {
+    const od = CENNIK.od[M].rozmiar.split('x');
+    state.dimL = od[0]; state.dimW = od[1];
+    notaModelu = M + ' zaczyna się od ' + twarde(rozmiarLadny(CENNIK.od[M].rozmiar)) + ', więc ustawiliśmy tę długość.';
+  }
+  saveState();
+  rysuj();
+}
+
+function rysujModel() {
+  const m = state.type;
+  $('h1m').textContent = m || 'pawilon';
+  $('kNazwa').textContent = m;
+  $('vBryla').classList.toggle('is-empty', !m);
+  if (m) {
+    const img = $('kObraz'), src = 'assets/modele/' + m.toLowerCase() + '.webp';
+    if (img.getAttribute('src') !== src) img.src = src;
+    img.alt = 'Model ' + m + ', zdjęcie poglądowe';
+  }
+  document.querySelectorAll('.k-mod').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.type === m)));
+  const kolor = [...document.querySelectorAll('#kKolory .k-kolor')].find(b => b.dataset.name === state.kolorScian);
+  $('pS').style.background = kolor ? kolor.style.background : '';
+  const lamele = state.accents.length > 0 && !!state.woodHex;
+  $('pL').hidden = !lamele;
+  $('pL').style.background = lamele ? state.woodHex : '';
+  $('pOpis').textContent = state.kolorScian.toLowerCase() + (lamele && state.woodName ? ' · lamele ' + state.woodName.toLowerCase() : '');
+}
+
+// ── WYGLĄD: KOLOR ŚCIAN, FAKTURA, LAMELE, OKUCIA (parytet konfiguratora 3D) ──
 const WOODS = [
   ['Dąb naturalny', '#C7A06A'], ['Dąb jasny', '#B08D5F'], ['Orzech', '#8A6A48'],
   ['Heban', '#4A3A2C'], ['Antracyt', '#3A4045'], ['Czarny', '#17191B'],
@@ -2052,7 +667,7 @@ const WOODS = [
 ];
 const ACC_NAMES = { corners: 'narożniki', entrance: 'wejście', band: 'pas górny', squares: 'kwadraty', cassette: 'kasetony', full: 'całość' };
 
-// Domyślne akcenty/kolor/okucia z presetu modelu (spójność bryła↔UI)
+// Domyślne akcenty/kolor/okucia z presetu modelu (spójność bryła↔UI) — tylko z silnikiem 3D
 function ensureAccents() {
   if (state._accInit) return;
   if (!window.StagoPavilionCore || !window.THREE) return;
@@ -2071,280 +686,42 @@ function ensureAccents() {
   } catch (e) {}
 }
 
-function syncAccentUI() {
-  document.querySelectorAll('#accentsGroup .pill').forEach(p => {
-    p.classList.toggle('selected', state.accents.indexOf(p.dataset.acc) >= 0);
-  });
-  document.querySelectorAll('[data-group="okuciaMetal"] .pill').forEach(p => {
-    p.classList.toggle('selected', (p.dataset.metal === 'on') === !!state.okuciaMetal);
-  });
-  renderWoods();
-}
-
-function toggleAccent(el, val) {
-  if (val === 'full') {
-    state.accents = el.classList.contains('selected') ? [] : ['full'];
-  } else {
+function toggleAccent(val) {
+  if (!val) state.accents = [];
+  else if (val === 'full') state.accents = state.accents.includes('full') ? [] : ['full'];
+  else {
     state.accents = state.accents.filter(a => a !== 'full');
     const i = state.accents.indexOf(val);
     if (i >= 0) state.accents.splice(i, 1); else state.accents.push(val);
   }
-  saveState();
-  syncAccentUI();
-  updatePreview();
 }
 
-function renderWoods() {
-  const g = document.getElementById('woodGroup');
-  if (!g) return;
-  g.textContent = '';
-  WOODS.forEach(w => {
-    const card = document.createElement('div');
-    card.className = 'color-card' + (state.woodHex && state.woodHex.toLowerCase() === w[1].toLowerCase() ? ' selected' : '');
-    const dot = document.createElement('div'); dot.className = 'color-dot'; dot.style.background = w[1];
-    const name = document.createElement('strong'); name.textContent = w[0];
-    const chk = document.createElement('span'); chk.className = 'pc-check'; chk.textContent = '✓';
-    card.appendChild(dot); card.appendChild(name); card.appendChild(chk);
-    card.addEventListener('click', () => selectWood(w[0], w[1]));
-    g.appendChild(card);
-  });
+const ustawWcisniete = (sel, f) => document.querySelectorAll(sel).forEach(b => b.setAttribute('aria-pressed', String(f(b))));
+
+function rysujWyglad() {
+  ustawWcisniete('#kKolory .k-kolor', b => b.dataset.name === state.kolorScian);
+  ustawWcisniete('#kProfil .k-pig', b => b.dataset.name === state.profil);
+  ustawWcisniete('#kLamele .k-pig', b => b.dataset.acc ? state.accents.includes(b.dataset.acc) : !state.accents.length);
+  ustawWcisniete('#kDrewno .k-kolor', b => b.dataset.hex.toLowerCase() === String(state.woodHex).toLowerCase());
+  ustawWcisniete('#kOkucia .k-pig', b => (b.dataset.metal === '1') === !!state.okuciaMetal);
+  $('lamK').hidden = !state.accents.length;
+  $('etKolor').textContent = state.kolorScian + (state.kolorScianRal ? ' · ' + state.kolorScianRal : '');
+  $('etDrewno').textContent = state.woodName || 'nie wybrano';
+  $('wygStan').textContent = [
+    state.kolorScian.toLowerCase(), state.profil.toLowerCase(),
+    state.accents.length ? 'lamele: ' + state.accents.map(a => ACC_NAMES[a] || a).join(', ') : 'bez lameli',
+  ].concat(state.okuciaMetal ? ['okucia'] : []).join(' · ');
 }
 
-function selectWood(name, hex) {
-  state.woodName = name; state.woodHex = hex;
-  saveState();
-  renderWoods();
-  updatePreview();
-}
+// ── OKNA I DRZWI (otwory per ściana, edytor na rzucie po lewej) ──
+const SCIANY = { A: 'Przód', B: 'Prawy bok', C: 'Tył', D: 'Lewy bok' };
+const NAZWY = { door: 'drzwi', okn: 'okno', wit: 'witryna' };
 
-function setOkuciaMetal(el, on) {
-  document.querySelectorAll('[data-group="okuciaMetal"] .pill').forEach(p => p.classList.remove('selected'));
-  el.classList.add('selected');
-  state.okuciaMetal = on;
-  saveState();
-  updatePreview();
-}
-
-function setPrv(el, val) {
-  if (!el) return;
-  const newVal = val == null ? '—' : String(val);
-  if (el.textContent === newVal) return;
-  el.textContent = newVal;
-  el.classList.remove('updated');
-  // Force reflow then re-add class to retrigger animation
-  void el.offsetWidth;
-  el.classList.add('updated');
-}
-
-// ── CENA ORIENTACYJNA (content/cennik-pawilonow.json, generowane z arkusza 28.10.2026) ──
-// cena = podstawa[rozmiar] + dopłata[model, rozmiar]; netto, bez transportu i montażu.
-// Poza tabelą (inna szerokość, wymiar niecałkowity, >12 m) → „wycena indywidualna”.
-const CENNIK = (() => {
-  try { return JSON.parse(document.getElementById('cennikPawilonow').textContent); } catch (e) { return null; }
-})();
-const zl = (v) => Math.round(v).toLocaleString('pl-PL').replace(/\u00a0|\u202f/g, ' ') + ' zł';
-const rozmiarTxt = (r) => r.replace('x', '×') + ' m';
-
-function cenaOrientacyjna() {
-  if (!CENNIK) return { status: 'brak' };
-  const model = (state.type || '').toUpperCase();
-  if (!model || !CENNIK.od[model]) return { status: 'brak' };
-  const L = wymiar(state.dimL), W = wymiar(state.dimW);
-  const od = CENNIK.od[model];
-  if (!(L > 0 && W > 0)) return { status: 'od', model, cena: od.cena, rozmiar: od.rozmiar };
-  const row = CENNIK.rozmiary.find(r =>
-    (r.dlugosc === L && r.szerokosc === W) || (r.dlugosc === W && r.szerokosc === L));
-  if (!row) return { status: 'indywidualna', model };
-  const dop = row.doplaty[model];
-  if (dop == null) return { status: 'niedostepny', model, od: od.rozmiar };
-  return { status: 'cena', model, cena: row.podstawa + dop, rozmiar: row.rozmiar };
-}
-
-function updatePrice() {
-  const c = cenaOrientacyjna();
-  let value = '—', note = 'Wybierz model i wymiary', custom = false, warn = '';
-  const dopiski = [];
-  if (state.dimH && state.dimH !== '2.44') dopiski.push('cena dla wysokości 2,44 m — inną wysokość potwierdzimy w ofercie');
-  if (state.extras && state.extras.length) dopiski.push('bez wyposażenia dodatkowego');
-  const stopka = 'netto, bez transportu i montażu' + (dopiski.length ? '; ' + dopiski.join('; ') : '');
-  if (c.status === 'od') {
-    value = 'od ' + zl(c.cena);
-    note = c.model + ' ' + rozmiarTxt(c.rozmiar) + ' · ' + stopka;
-  } else if (c.status === 'cena') {
-    value = zl(c.cena);
-    note = c.model + ' ' + rozmiarTxt(c.rozmiar) + ' · ' + stopka;
-  } else if (c.status === 'indywidualna') {
-    value = 'Wycena indywidualna';
-    note = 'Ten wymiar wyceniamy indywidualnie. Ceny orientacyjne pokazujemy dla szerokości 3 m i długości 4–12 m.';
-    custom = true;
-  } else if (c.status === 'niedostepny') {
-    value = 'Wycena indywidualna';
-    note = 'Model ' + c.model + ' jest dostępny od ' + rozmiarTxt(c.od) + '.';
-    warn = 'Model ' + c.model + ' jest dostępny od ' + rozmiarTxt(c.od) + '. Wybierz większy wymiar albo wyślij zapytanie — przygotujemy wycenę indywidualną.';
-    custom = true;
-  }
-  document.querySelectorAll('[data-price-box]').forEach(box => {
-    box.classList.toggle('is-custom', custom);
-    setPrv(box.querySelector('[data-price-value]'), value);
-    const n = box.querySelector('[data-price-note]');
-    if (n) n.textContent = note;
-  });
-  if (state.dimL !== '' && state.dimW !== '' && !wymiaryOk(state.dimL, state.dimW)) {
-    warn = 'Podaj wymiar od 2 do 18 m (dłuższy bok) i od 2 do 6 m (krótszy bok). Większy obiekt? Zadzwoń: 509 508 210 — przygotujemy wycenę indywidualną.';
-  }
-  const w = document.getElementById('dimWarn');
-  if (w) { w.textContent = warn; w.hidden = !warn; }
-  // Do zapytania (form-handler dopisuje to do treści wiadomości — pole tekstowe, schemat payloadu bez zmian)
-  state.cenaOrientacyjna = (c.status === 'cena') ? Math.round(c.cena) : null;
-  state.cenaOpis = (c.status === 'cena')
-    ? zl(c.cena) + ' netto (' + c.model + ' ' + rozmiarTxt(c.rozmiar) + ', bez transportu i montażu' + (dopiski.length ? '; ' + dopiski.join('; ') : '') + ')'
-    : (c.status === 'indywidualna' || c.status === 'niedostepny') ? 'wycena indywidualna (wymiar poza cennikiem)' : '';
-  return c;
-}
-
-// Rzut 2D z góry (rzut2d.js): ta sama stolarka, którą pokazuje krok 4 i która idzie w zapytaniu.
-// Przed krokiem 4 — układ, który krok 4 zaproponuje; po świadomym usunięciu wszystkiego — bez otworów.
-function updateRzut() {
-  const otwory = state.openings.length ? state.openings : (state.openingsInit ? [] : domyslneOtwory());
-  const svg = (typeof rzut2d === 'function' && wymiaryOk(state.dimL, state.dimW))
-    ? rzut2d({ L: wymiar(state.dimL), W: wymiar(state.dimW), openings: otwory })
-    : '';
-  document.querySelectorAll('[data-rzut]').forEach(el => {
-    el.innerHTML = svg ? svg + '<p class="cfg-rzut-cap">Rzut poglądowy z góry — dokładne rozmieszczenie ustalimy przy wycenie.</p>' : '';
-    el.hidden = !svg;
-  });
-}
-
-function updatePreview() {
-  updatePrice();
-  updateRzut();
-  // Step 1 preview
-  const prvModel1 = document.getElementById('prv-model-1');
-  const previewHero1 = document.getElementById('previewHero1');
-  setPrv(prvModel1, state.type || '— wybierz —');
-
-  // Step 2 preview
-  const prvModel2 = document.getElementById('prv-model-2');
-  const prvDim = document.getElementById('prv-dim');
-  const prvArea = document.getElementById('prv-area');
-  const previewHero2 = document.getElementById('previewHero2');
-  // Step 4 preview
-  const prvDrzwi = document.getElementById('prv-drzwi');
-  const prvOkna = document.getElementById('prv-okna');
-  const prvExtras = document.getElementById('prv-extras');
-  const previewHero4 = document.getElementById('previewHero4');
-  const _drzwi = state.openings.filter(o => o.kind === 'door').length;
-  const _okna = state.openings.filter(o => o.kind === 'wit' || o.kind === 'okn').length;
-  setPrv(prvDrzwi, _drzwi ? _drzwi + ' szt.' : 'brak');
-  setPrv(prvOkna, _okna ? _okna + ' szt.' : 'brak');
-  setPrv(prvExtras, state.extras.length
-    ? state.extras.join(', ')
-    : 'brak');
-  setPrv(prvModel2, state.type || '—');
-  if (prvDim) {
-    const L = state.dimL || '—';
-    const W = state.dimW || '—';
-    const H = state.dimH || '—';
-    setPrv(prvDim, L + ' × ' + W + ' × ' + H + ' m');
-  }
-  if (prvArea) {
-    const L = wymiar(state.dimL);
-    const W = wymiar(state.dimW);
-    setPrv(prvArea, (L > 0 && W > 0) ? (L * W).toFixed(1) + ' m²' : '—');
-  }
-
-  // Step 3 preview
-  const prvProfil = document.getElementById('prv-profil');
-  const prvKolor = document.getElementById('prv-kolor');
-  const prvOkucia = document.getElementById('prv-okucia');
-  const prvKolorIcon = document.getElementById('prv-kolor-icon');
-  const previewHero = document.getElementById('previewHero');
-  const stepHero3 = document.getElementById('stepHeadHero3');
-
-  setPrv(prvProfil, state.profil || '—');
-  setPrv(prvKolor, state.kolorScian
-    ? state.kolorScian + (state.kolorScianRal ? ' (' + state.kolorScianRal + ')' : '')
-    : '—');
-  setPrv(prvOkucia, state.okucia || '—');
-  if (prvKolorIcon && state.kolorScianHex) {
-    const circle = prvKolorIcon.querySelector('circle');
-    if (circle) circle.setAttribute('fill', state.kolorScianHex.includes('gradient') ? '#888' : state.kolorScianHex);
-  }
-
-  // Hero image — model from step 1 (fallback gradient if missing)
-  const modelImg = state.type ? 'assets/modele/' + state.type.toLowerCase() + '.webp' : '';
-  const bg = modelImg
-    ? "url('" + modelImg + "'), linear-gradient(135deg,#1D1D1B,#3C3C3C)"
-    : "linear-gradient(135deg,#1D1D1B,#3C3C3C)";
-  // Bez wybranego modelu: jasne pole z podpowiedzią zamiast ciemnego prostokąta (9.11)
-  for (const h of [previewHero1, previewHero2, previewHero4, previewHero]) {
-    if (!h) continue;
-    h.style.backgroundImage = modelImg ? bg : 'none';
-    h.classList.toggle('is-empty', !modelImg);
-  }
-  if (stepHero3) stepHero3.style.backgroundImage = bg;
-  // Podsumowanie: przy wyłączonym 3D to jedyny obraz pawilonu, przy włączonym canvas i tak je przykryje
-  const summaryHero = document.getElementById('summaryRender');
-  if (summaryHero) summaryHero.style.backgroundImage = bg;
-
-  // Zaktualizuj bryłę 3D na żywo (jeśli silnik już załadowany)
-  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) StagoConfigurator3D.update(state);
-}
-
-function updateOkuciaUI() {
-  const sec = document.getElementById('kolorOkucSection');
-  if (!sec) return;
-  sec.style.display = (state.okucia && state.okucia.toLowerCase().includes('podstaw')) ? 'none' : '';
-}
-
-function selectSwatch(el) {
-  const parent = el.parentElement;
-  parent.querySelectorAll('.swatch').forEach(s => s.classList.remove('selected'));
-  el.classList.add('selected');
-  state.kolorScian = el.title;
-  saveState();
-}
-
-// ── STEP 4 ──
-function changeQty(id, delta) {
-  const el = document.getElementById(id);
-  let val = parseInt(el.textContent) + delta;
-  if (val < 0) val = 0;
-  if (val > 10) val = 10;
-  el.textContent = val;
-  state[id] = val;
-  saveState();
-  updatePreview();
-}
-
-function toggleItem(el) {
-  el.classList.toggle('on');
-  const name = el.dataset.equip;
-  if (el.classList.contains('on')) {
-    if (!state.extras.includes(name)) state.extras.push(name);
-  } else {
-    state.extras = state.extras.filter(e => e !== name);
-  }
-  saveState();
-  updatePreview();
-}
-
-// ── STEP 4: STOLARKA (otwory per-ściana) ──
-const WALL_OPTS = [
-  { v: 'A', n: 'A · przód' }, { v: 'B', n: 'B · prawy bok' },
-  { v: 'C', n: 'C · tył' }, { v: 'D', n: 'D · lewy bok' }
-];
-const KIND_OPTS = [
-  { v: 'wit', n: 'Witryna 100×210' },
-  { v: 'door', n: 'Drzwi ALU 90×210' },
-  { v: 'okn', n: 'Okno 100×100' }
-];
-
-// Dokładne umiejscowienie (suwak pozycji, zawiasy) ma sens tylko z podglądem 3D —
+// Dokładne umiejscowienie (pozycja, zawiasy) ma sens tylko z podglądem 3D —
 // bez niego klient ustawiałby je na ślepo, więc idzie w parze z tą samą flagą.
 const SHOW_PLACEMENT = {{#enable3d}}true{{/enable3d}}{{^enable3d}}false{{/enable3d}};
 
-// Domyślny układ przy pierwszym wejściu (skalowany długością)
+// Domyślny układ (skalowany długością); do pierwszej zmiany klienta rośnie razem z wymiarem
 function domyslneOtwory() {
   // Dłuższy bok — 3×6 to ten sam pawilon co 6×3 (cennik i rzut też tak liczą)
   const L = Math.max(wymiar(state.dimL) || 0, wymiar(state.dimW) || 0) || 6;
@@ -2355,9 +732,10 @@ function domyslneOtwory() {
   return arr;
 }
 
+// Utrwala widoczny układ w stanie: przed pierwszą zmianą klienta i przed wysyłką (zapytanie zawsze ze stolarką,
+// jak w kreatorze, który podstawiał układ domyślny w kroku 4). Pusta lista po świadomym usunięciu zostaje pusta.
 function ensureOpenings() {
   if (state.openings && state.openings.length) { state.openingsInit = true; stripPlacement(); return; }
-  // Klient świadomie usunął wszystkie elementy — nie podstawiamy domyślnych przy ponownym wejściu w krok 4
   if (state.openingsInit) return;
   state.openingsInit = true;
   state.openings = domyslneOtwory();
@@ -2371,7 +749,7 @@ function newOpening(wall, kind, t) {
 }
 
 // Stan zapisany w przeglądarce sprzed uproszczenia może nieść pozycję i zawiasy —
-// bez suwaka nikt ich nie potwierdził, więc nie wolno ich wysłać do wyceny.
+// bez podglądu 3D nikt ich nie potwierdził, więc nie wolno ich wysłać do wyceny.
 function stripPlacement() {
   if (SHOW_PLACEMENT || !state.openings) return;
   let dirty = false;
@@ -2382,163 +760,92 @@ function stripPlacement() {
   if (dirty) saveState();
 }
 
-function makeSelect(opts, val, onChange) {
-  const s = document.createElement('select');
-  opts.forEach(o => {
-    const opt = document.createElement('option');
-    opt.value = o.v; opt.textContent = o.n;
-    if (o.v === val) opt.selected = true;
-    s.appendChild(opt);
-  });
-  s.addEventListener('change', () => onChange(s.value));
-  return s;
+function otworyWidoczne() {
+  return state.openings.length ? state.openings : (state.openingsInit ? [] : domyslneOtwory());
 }
 
-function openingCard(o, idx) {
-  const card = document.createElement('div');
-  card.className = 'opening-card';
-
-  const fWall = document.createElement('div'); fWall.className = 'oc-field';
-  const lWall = document.createElement('label'); lWall.textContent = 'Ściana';
-  fWall.appendChild(lWall);
-  fWall.appendChild(makeSelect(WALL_OPTS, o.wall, v => updateOpening(idx, 'wall', v)));
-
-  const fKind = document.createElement('div'); fKind.className = 'oc-field';
-  const lKind = document.createElement('label'); lKind.textContent = 'Element';
-  fKind.appendChild(lKind);
-  fKind.appendChild(makeSelect(KIND_OPTS, o.kind, v => updateOpening(idx, 'kind', v)));
-
-  const rm = document.createElement('button');
-  rm.type = 'button'; rm.className = 'oc-remove'; rm.textContent = '×';
-  rm.setAttribute('aria-label', 'Usuń element');
-  rm.addEventListener('click', () => removeOpening(idx));
-
-  card.appendChild(fWall); card.appendChild(fKind); card.appendChild(rm);
-
-  if (SHOW_PLACEMENT) {
-    const fPos = document.createElement('div'); fPos.className = 'oc-field oc-pos';
-    const lPos = document.createElement('label');
-    lPos.textContent = 'Pozycja na ścianie: ' + Math.round((o.t == null ? 0.5 : o.t) * 100) + '%';
-    const rng = document.createElement('input');
-    rng.type = 'range'; rng.min = '0'; rng.max = '100'; rng.step = '5';
-    rng.value = String(Math.round((o.t == null ? 0.5 : o.t) * 100));
-    rng.addEventListener('input', () => {
-      lPos.textContent = 'Pozycja na ścianie: ' + rng.value + '%';
-      updateOpening(idx, 't', parseInt(rng.value, 10) / 100, true);
-    });
-    fPos.appendChild(lPos); fPos.appendChild(rng);
-    card.appendChild(fPos);
-  }
-
-  if (SHOW_PLACEMENT && o.kind === 'door') {
-    const fH = document.createElement('div'); fH.className = 'oc-hinge';
-    const lH = document.createElement('span');
-    lH.style.cssText = 'font-size:.68rem;text-transform:uppercase;color:var(--t2);font-weight:600';
-    lH.textContent = 'Zawiasy:';
-    fH.appendChild(lH);
-    ['left', 'right'].forEach(side => {
-      const p = document.createElement('div');
-      p.className = 'pill' + (o.hinge === side ? ' selected' : '');
-      p.textContent = side === 'left' ? 'lewe' : 'prawe';
-      p.addEventListener('click', () => updateOpening(idx, 'hinge', side));
-      fH.appendChild(p);
-    });
-    card.appendChild(fH);
-  }
-  return card;
+function odmiana(n, jeden, kilka, wiele) {
+  if (n === 1) return jeden;
+  const d = n % 10, s = n % 100;
+  return d >= 2 && d <= 4 && (s < 12 || s > 14) ? kilka : wiele;
 }
 
-function renderOpenings() {
-  const list = document.getElementById('openingsList');
-  if (!list) return;
-  list.textContent = '';
-  if (!state.openings.length) {
-    const e = document.createElement('p');
-    e.className = 'openings-empty';
-    e.textContent = 'Brak elementów. Kliknij „Dodaj element", aby zacząć.';
-    list.appendChild(e);
-    return;
-  }
-  state.openings.forEach((o, idx) => list.appendChild(openingCard(o, idx)));
+function rysujOtwory() {
+  const ot = otworyWidoczne();
+  const svg = (typeof rzut2d === 'function' && wymiaryOk(state.dimL, state.dimW))
+    ? rzut2d({ L: wymiar(state.dimL), W: wymiar(state.dimW), openings: ot })
+    : '';
+  $('kPlan').innerHTML = svg || '<p class="k-uwaga">Wybierz wymiar, a pokażemy rzut z góry.</p>';
+  // Tylko stałe z SCIANY/NAZWY i numery: otwory z zapisu są przefiltrowane w stanZZapisu
+  $('kSciany').innerHTML = Object.keys(SCIANY).map(w =>
+    '<div class="k-sciana"><b>' + SCIANY[w] + ' (' + w + ')</b><div class="k-tagi">'
+    + ot.map((o, i) => o.wall === w
+      ? '<span class="k-tag">' + NAZWY[o.kind] + '<button type="button" data-usun="' + i + '" aria-label="Usuń: ' + NAZWY[o.kind] + ', ' + SCIANY[w].toLowerCase() + '">×</button></span>'
+      : '').join('')
+    + '</div><div class="k-dodaj">'
+    + ['okn', 'wit', 'door'].map(k => '<button type="button" data-dodaj="' + w + ':' + k + '" aria-label="Dodaj: ' + NAZWY[k] + ', ' + SCIANY[w].toLowerCase() + '">+ ' + NAZWY[k] + '</button>').join('')
+    + '</div></div>').join('');
+  const n = (k) => ot.filter(o => o.kind === k).length;
+  $('otwStan').textContent = [[n('door'), 'drzwi', 'drzwi', 'drzwi'], [n('wit'), 'witryna', 'witryny', 'witryn'], [n('okn'), 'okno', 'okna', 'okien']]
+    .filter(x => x[0]).map(x => x[0] + '\u00a0' + odmiana(x[0], x[1], x[2], x[3])).join(' · ') || 'bez okien i drzwi';
 }
 
-function addOpening() {
-  state.openings.push(newOpening('A', 'okn', 0.5));
-  saveState();
-  renderOpenings();
-  updatePreview();
+function tryb(rzut) {
+  $('kLewa').classList.toggle('rzut', rzut);
+  $('vBryla').hidden = rzut;
+  $('vRzut').hidden = !rzut;
+  $('tBryla').setAttribute('aria-pressed', String(!rzut));
+  $('tRzut').setAttribute('aria-pressed', String(rzut));
 }
 
-function updateOpening(idx, field, val, skipRerender) {
-  if (!state.openings[idx]) return;
-  state.openings[idx][field] = val;
-  saveState();
-  if (!skipRerender) renderOpenings();
-  updatePreview();
+// ── WYPOSAŻENIE I ZAPYTANIE ──
+function rysujReszte() {
+  document.querySelectorAll('[data-equip]').forEach(i => { i.checked = state.extras.includes(i.dataset.equip); });
+  $('wypStan').textContent = (state.extras.length ? 'wybrano ' + state.extras.length + ' · ' : '') + 'wyceniamy w ofercie';
+  ustawWcisniete('#kPrzezn .k-pig', b => b.dataset.name === state.przeznaczenie);
 }
 
-function removeOpening(idx) {
-  state.openings.splice(idx, 1);
-  saveState();
-  renderOpenings();
-  updatePreview();
+// ── 3D PODGLĄD (enable3d): canvas w miejscu zdjęcia modelu ──
+function mount3D() {
+  if (!window.StagoConfigurator3D || !StagoConfigurator3D.ready()) return;
+  StagoConfigurator3D.mount($('vBryla'));
+  StagoConfigurator3D.update(state);
 }
 
-// ── STEP 5 ──
-function openingsSummary() {
-  if (!state.openings.length) return '—';
-  const names = { wit: 'witryna', door: 'drzwi', okn: 'okno' };
-  const walls = { A: 'przód', B: 'prawy bok', C: 'tył', D: 'lewy bok' };
-  // Grupujemy po rodzaju i ścianie — klient ma w podsumowaniu dokładnie to, co pójdzie do wyceny.
-  const cnt = {};
-  const order = [];
-  state.openings.forEach(o => {
-    const key = o.kind + '|' + o.wall;
-    if (cnt[key] == null) { cnt[key] = 0; order.push(key); }
-    cnt[key]++;
-  });
-  return order.map(key => {
-    const [kind, wall] = key.split('|');
-    const n = cnt[key];
-    return (n > 1 ? n + '× ' : '') + (names[kind] || kind) + ' (' + (walls[wall] || wall) + ')';
-  }).join(', ');
+function rysuj() {
+  updatePrice();
+  rysujWyglad();
+  rysujModel();
+  rysujWymiary();
+  rysujOtwory();
+  rysujReszte();
+  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) StagoConfigurator3D.update(state);
 }
 
-function buildSummary() {
-  const isPodstaw = state.okucia && state.okucia.toLowerCase().includes('podstaw');
-  const rows = [
-    ['Model', state.type],
-    ['Przeznaczenie', state.przeznaczenie || '—'],
-    ['Wymiary', `${state.dimL} × ${state.dimW} × ${state.dimH} m`],
-    ['Profil płyty', state.profil],
-    ['Kolor ścian', state.kolorScian],
-    ['Akcenty lamelowe', state.accents.length ? state.accents.map(a => ACC_NAMES[a] || a).join(', ') : 'brak'],
-    ['Kolor lameli', state.woodName || '—'],
-    ['Okucia narożne', state.okuciaMetal ? 'tak' : 'brak'],
-    ['Stolarka', openingsSummary()],
-  ];
-  if (state.extras.length) {
-    rows.push(['Wyposażenie dodatkowe', state.extras.join(', ')]);
-  }
-  updatePrice(); // cena: raz, w bloku nad formularzem (9.11), nie jako wiersz tabeli
-  const container = document.getElementById('summaryRows');
-  container.textContent = '';
-  rows.forEach(([l, v]) => {
-    const row = document.createElement('div');
-    row.className = 'summary-row';
-    const label = document.createElement('span');
-    label.className = 's-label';
-    label.textContent = l;
-    const value = document.createElement('span');
-    value.className = 's-value';
-    value.textContent = v || '—';
-    row.appendChild(label);
-    row.appendChild(value);
-    container.appendChild(row);
-  });
+// Pola wyboru z zapisu tylko spośród opcji widocznych na stronie; inaczej wartość domyślna
+function poprawWybory() {
+  const lista = (sel, f) => [...document.querySelectorAll(sel)].map(f);
+  const h = wysokosc(state.dimH);
+  state.dimH = Number.isNaN(h) ? DOMYSLNE.dimH : String(h);
+  if (!lista('#kProfil .k-pig', b => b.dataset.name).includes(state.profil)) state.profil = DOMYSLNE.profil;
+  if (!lista('#kKolory .k-kolor', b => b.dataset.name).includes(state.kolorScian)) state.kolorScian = DOMYSLNE.kolorScian;
+  // Okucia podstawowe/premium, kolor i rozmieszczenie okuć nie mają kontrolki na stronie
+  ['okucia', 'kolorOkuc', 'rozmOkuc'].forEach(k => { state[k] = DOMYSLNE[k]; });
+  if (!lista('#kPrzezn .k-pig', b => b.dataset.name).includes(state.przeznaczenie)) state.przeznaczenie = '';
+  const wyposazenie = lista('[data-equip]', i => i.dataset.equip);
+  state.extras = state.extras.filter(x => wyposazenie.includes(x));
+  state.accents = state.accents.filter(a => Object.prototype.hasOwnProperty.call(ACC_NAMES, a));
+  const drewno = WOODS.find(w => w[0] === state.woodName && w[1].toLowerCase() === String(state.woodHex).toLowerCase());
+  if (!drewno) { state.woodName = ''; state.woodHex = ''; }
 }
 
-// Wysyłka formularza: form-handler.js (ERP /api/leads/intake).
+// ── PRZYCISKI Z DANYCH: długości z cennika, kolory lameli ──
+if (CENNIK) {
+  $('kChipy').innerHTML = CENNIK.rozmiary.map(r =>
+    '<button type="button" class="k-chip" data-l="' + Number(r.dlugosc) + '" aria-label="' + Number(r.dlugosc) + ' m">' + Number(r.dlugosc) + '</button>').join('');
+}
+$('kDrewno').innerHTML = WOODS.map(w =>
+  '<button type="button" class="k-kolor" data-name="' + w[0] + '" data-hex="' + w[1] + '" style="background:' + w[1] + '" aria-label="' + w[0] + '" title="' + w[0] + '" aria-pressed="false"></button>').join('');
 
 // ── MOBILE NAV ──
 document.getElementById('nav-toggle').addEventListener('click', function() {
@@ -2546,102 +853,121 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
 });
 
 // ── URL PARAMS (pre-select type, always override) ──
+// Podstrony zastosowań linkują ?type=handlowy (małą literą): nazwa bez względu na wielkość liter
 const typeMap = {Handlowy:'NORD',Biurowy:'CUBE',Mieszkalny:'MILA',Sanitarny:'CUBE',Magazynowy:'KIOS',Premium:'ICON'};
 const params = new URLSearchParams(window.location.search);
 let urlType = params.get('type') || (params.get('model') ? params.get('model').toUpperCase() : null);
-if (urlType) urlType = typeMap[urlType] || urlType;
-// Tylko model, który ma kartę na stronie (porównanie dataset.type — bez budowania selektora z parametru)
-const urlCard = urlType ? [...document.querySelectorAll('.type-card')].find(c => c.dataset.type === urlType) : null;
-if (!urlCard) urlType = null;
+if (urlType) {
+  const klucz = Object.keys(typeMap).find(k => k.toLowerCase() === urlType.toLowerCase());
+  urlType = klucz ? typeMap[klucz] : urlType.toUpperCase();
+}
+// Tylko model, który ma przycisk na stronie (porównanie z listą — bez budowania selektora z parametru)
+if (urlType && !MODELE.includes(urlType)) urlType = null;
 if (urlType) {
   try { localStorage.removeItem('stago_cfg'); } catch (e) {}
   state.type = urlType;
-  state.step = 2;
   state.extras = [];
   // Nowa konfiguracja z karty/modelu: stolarka od nowa (zapis i tak jest usuwany)
   state.openings = [];
   state.openingsInit = false;
-  document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
-  urlCard.classList.add('selected');
   saveState();
-  goToStep(2);
 }
 
-// ?l=6&w=3 — z kart wymiarów (/pawilon-6x3): ustaw wymiar
+// ?l=6&w=3 — z kart wymiarów (/pawilon-6x3) i strony modelu: ustaw wymiar
 (function () {
   const l = wymiar(params.get('l')), w = wymiar(params.get('w'));
   if (!wymiaryOk(l, w)) return;
-  state.dimL = String(l); state.dimW = String(w);
-  const iL = document.getElementById('dimL'), iW = document.getElementById('dimW');
-  if (iL) iL.value = state.dimL;
-  if (iW) iW.value = state.dimW;
+  state.dimL = String(l); state.dimW = String(w); state.dimH = '2.44';
   saveState();
 })();
 
-// Init: select first pill/swatch in each group
-document.querySelectorAll('.pills').forEach(g => { const f = g.querySelector('.pill'); if (f) f.classList.add('selected'); });
-document.querySelectorAll('.swatches').forEach(g => { const f = g.querySelector('.swatch'); if (f) f.classList.add('selected'); });
-// Override: dimH group selects pill matching state.dimH (default 2.44), not first
-document.querySelectorAll('[data-group="dimH"] .pill').forEach(p => {
-  p.classList.toggle('selected', p.dataset.val === state.dimH);
-});
-// Przeznaczenie jest opcjonalne — bez wyboru żadna pigułka nie jest zaznaczona
-restorePills('przeznaczenie', state.przeznaczenie);
-// Profile cards default selection (state.profil)
-document.querySelectorAll('.profile-card').forEach(c => {
-  c.classList.toggle('selected', c.dataset.name === state.profil);
-});
-// Wall color cards (state.kolorScian)
-document.querySelectorAll('[data-group="kolorScian"] .color-card').forEach(c => {
-  c.classList.toggle('selected', c.dataset.name === state.kolorScian);
-});
-// Kolor okuc cards (state.kolorOkuc)
-document.querySelectorAll('[data-group="kolorOkuc"] .color-card').forEach(c => {
-  c.classList.toggle('selected', c.dataset.name === state.kolorOkuc);
-});
-// Okucia rows (state.okucia)
-document.querySelectorAll('.okucia-row').forEach(c => {
-  c.classList.toggle('selected', c.dataset.name === state.okucia);
-});
-// Capture default wall color RAL + hex from the selected card
-(function(){
-  const sel = document.querySelector('[data-group="kolorScian"] .color-card.selected');
-  if (sel) {
-    state.kolorScianRal = sel.querySelector('span').textContent;
-    state.kolorScianHex = sel.querySelector('.color-dot').style.background;
-  }
-})();
-
-// Odtworzenie widoku z zapisu — po zdefiniowaniu wszystkich stałych (panels, WALL_OPTS, KIND_OPTS…).
-// Krok nie dalej, niż pozwalają model i wymiar.
+// Odtworzenie z zapisu. Pozycja na ścianie i zawiasy tylko z podglądem 3D — bez niego nie wolno ich wysłać.
 if (zapisDoOdtworzenia) {
-  // Pozycja na ścianie i zawiasy tylko z podglądem 3D — bez niego nie wolno ich wysłać (także przy powrocie prosto do kroku 5)
   stripPlacement();
   poprawWybory();
-  // Krok 5 z pustą stolarką: klient przeszedł krok 4, który zawsze podstawia domyślne elementy — pusta lista
-  // = świadomie usunięta (także stare zapisy bez openingsInit). Rzut, podsumowanie i zapytanie spójnie bez stolarki.
+  // Zapis z kroku 5 kreatora z pustą stolarką: klient przeszedł krok 4, który zawsze podstawiał układ domyślny,
+  // więc pusta lista = świadomie usunięta. Rzut, podsumowanie i zapytanie spójnie bez stolarki.
   if (!state.openings.length && state.step >= 5) state.openingsInit = true;
-  if (!state.type) state.step = 1;
-  else if (state.step > 2 && !wymiaryOk(state.dimL, state.dimW)) state.step = 2;
-  restoreUI();
-  // RAL i kolor wyliczane z zaznaczonych kart, nie brane z zapisu
-  const sc = document.querySelector('[data-group="kolorScian"] .color-card.selected');
-  state.kolorScianRal = sc ? sc.querySelector('span').textContent : '';
-  state.kolorScianHex = sc ? sc.querySelector('.color-dot').style.background : '';
-  const ok = document.querySelector('[data-group="kolorOkuc"] .color-card.selected');
-  state.kolorOkucRal = ok ? ok.querySelector('span').textContent : '';
-  state.kolorOkucHex = ok ? ok.querySelector('.color-dot').style.background : '';
-  saveState();
+}
+// RAL i kolor wyliczane z przycisku koloru, nie brane z zapisu
+(function () {
+  const sc = [...document.querySelectorAll('#kKolory .k-kolor')].find(b => b.dataset.name === state.kolorScian);
+  state.kolorScianRal = sc ? sc.dataset.ral : '';
+  state.kolorScianHex = sc ? sc.style.background : '';
+})();
+innyOtwarty = state.dimL !== '' && state.dimW !== '' && !standardowy();
+if (innyOtwarty) {
+  $('iL').value = lic(wymiar(state.dimL)); $('iW').value = lic(wymiar(state.dimW)); $('iH').value = lic(wymiar(state.dimH));
 }
 
-// Init bar + okucia conditional UI + preview
-updateBar();
-updateOkuciaUI();
-updatePreview();
+// ── ZDARZENIA ──
+$('kModele').addEventListener('click', e => { const b = e.target.closest('.k-mod'); if (b) wybierzModel(b.dataset.type); });
+$('kChipy').addEventListener('click', e => { const b = e.target.closest('.k-chip'); if (b && !b.disabled) wybierzDlugosc(Number(b.dataset.l)); });
+$('inneBtn').addEventListener('click', () => { if (innyOtwarty) $('iL').focus(); else otworzInny(); });
+['iL', 'iW', 'iH'].forEach(id => $(id).addEventListener('input', poleWymiaru));
+$('tBryla').addEventListener('click', () => tryb(false));
+$('tRzut').addEventListener('click', () => tryb(true));
+$('pokazRzut').addEventListener('click', () => {
+  tryb(true);
+  if (!window.matchMedia('(min-width: 1024px)').matches) $('kLewa').scrollIntoView({ block: 'start' });
+});
+$('kSciany').addEventListener('click', e => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  ensureOpenings();
+  let fokus = b.dataset.dodaj;
+  if (b.dataset.dodaj) {
+    const [w, k] = b.dataset.dodaj.split(':');
+    state.openings.push(newOpening(w, k, 0.5));
+  } else if (b.dataset.usun != null) {
+    const o = state.openings[Number(b.dataset.usun)];
+    if (o) { state.openings.splice(Number(b.dataset.usun), 1); fokus = o.wall + ':' + o.kind; }
+  }
+  saveState();
+  rysuj();
+  const cel = fokus && [...$('kSciany').querySelectorAll('[data-dodaj]')].find(x => x.dataset.dodaj === fokus);
+  if (cel) cel.focus();
+});
+$('kKolory').addEventListener('click', e => {
+  const b = e.target.closest('.k-kolor'); if (!b) return;
+  state.kolorScian = b.dataset.name; state.kolorScianRal = b.dataset.ral; state.kolorScianHex = b.style.background;
+  saveState(); rysuj();
+});
+$('kProfil').addEventListener('click', e => { const b = e.target.closest('.k-pig'); if (!b) return; state.profil = b.dataset.name; saveState(); rysuj(); });
+$('kLamele').addEventListener('click', e => { const b = e.target.closest('.k-pig'); if (!b) return; toggleAccent(b.dataset.acc); saveState(); rysuj(); });
+$('kDrewno').addEventListener('click', e => { const b = e.target.closest('.k-kolor'); if (!b) return; state.woodName = b.dataset.name; state.woodHex = b.dataset.hex; saveState(); rysuj(); });
+$('kOkucia').addEventListener('click', e => { const b = e.target.closest('.k-pig'); if (!b) return; state.okuciaMetal = b.dataset.metal === '1'; saveState(); rysuj(); });
+document.querySelectorAll('[data-equip]').forEach(i => i.addEventListener('change', () => {
+  const n = i.dataset.equip;
+  state.extras = state.extras.filter(x => x !== n).concat(i.checked ? [n] : []);
+  saveState(); rysuj();
+}));
+$('kPrzezn').addEventListener('click', e => {
+  const b = e.target.closest('.k-pig'); if (!b) return;
+  state.przeznaczenie = state.przeznaczenie === b.dataset.name ? '' : b.dataset.name;
+  saveState(); rysujReszte();
+});
+// Przycisk w pasku: niepełny formularz → najpierw sekcja zapytania, potem komunikat przeglądarki przy pierwszym polu
+$('kWyslij').addEventListener('click', e => {
+  const f = $('cfgForm');
+  if (f.checkValidity()) return;
+  e.preventDefault();
+  $('zapytanie').scrollIntoView({ block: 'start' });
+  f.reportValidity();
+});
+// Przed form-handler.js (rejestrowany później): stolarka i cena w stanie, który pójdzie w treści zapytania
+$('cfgForm').addEventListener('submit', () => { ensureOpenings(); updatePrice(); saveState(); });
 
-{{#enable3d}}// 3D: gdy silnik (defer) się załaduje, zamontuj podgląd w aktywnym kroku
+rysuj();
+// Telefon: wybrany model widoczny w przewijanym pasku modeli (bez przewijania całej strony)
+(function () {
+  const pas = $('kModele'), b = pas.querySelector('.k-mod[aria-pressed="true"]');
+  if (b && pas.scrollWidth > pas.clientWidth) pas.scrollLeft = b.offsetLeft - pas.offsetLeft - 16;
+})();
+
+{{#enable3d}}// 3D: gdy silnik (defer) się załaduje, zamontuj podgląd w miejscu zdjęcia
 (function waitFor3D() {
-  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) { mount3D(state.step); }
+  if (window.StagoConfigurator3D && StagoConfigurator3D.ready()) { ensureAccents(); mount3D(); rysuj(); }
   else { setTimeout(waitFor3D, 80); }
 })();{{/enable3d}}
 </script>
