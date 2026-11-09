@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Pawilony handlowe i kontenery handlowe od producenta | STAGO",
-    "description": "Producent pawilonów handlowych: sklep, kiosk handlowy, warzywniak, punkt sprzedaży z witryną. 12 modeli, PIR 100 mm. Pawilon 6×3 m od 29 032 zł netto.",
+    "description": "Producent pawilonów handlowych: sklep, kiosk handlowy, warzywniak, punkt sprzedaży z witryną. 12 modeli, PIR 100 mm. Pawilon 6×3 m od [[cena:6x3]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
     "ogTitle": "Pawilon handlowy — sklep, kiosk, punkt sprzedaży od producenta",
     "ogDescription": "Pawilony handlowe od producenta. Sklep, kiosk, punkt sprzedaży. Witryny pod ekspozycję, oświetlenie, wygodne wejście. 12 modeli do wyboru.",
@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon handlowy z witrynami STAGO — model LOFT",
     "h1": "Pawilony handlowe od producenta. Sklep, kiosk, kontener handlowy.",
     "subtitle": "Sklep, kiosk, punkt sprzedaży na rynku, ryneczek warzywny. Wiemy, że klient decyduje o wejściu w kilka sekund — dlatego projektujemy witryny pod ekspozycję, oświetlenie wydobywające produkt i wygodne wejście. Powiedz nam, co sprzedajesz — zaproponujemy układ, który pracuje na sprzedaż.",
-    "price": "od 15 000 zł netto",
-    "priceNote": "/ pawilon 3×2m gotowy do handlu",
+    "price": "od [[cena:4x3]] netto",
+    "priceNote": "/ pawilon 4×3 m, wersja podstawowa",
     "ctaHref": "../konfigurator.html?type=handlowy",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "W cenie",
+    "eyebrow": "Współpraca",
     "h2": "Co dostajesz od STAGO",
     "items": [
       {
@@ -104,7 +104,7 @@
       },
       {
         "h3": "Transport i montaż na miejscu",
-        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie, a nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać. Transport liczymy 6 zł za kilometr w obie strony, montaż według warunków na miejscu."
       },
       {
         "h3": "2 lata gwarancji + serwis",
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje pawilon do handlu?",
-        "a": "Mały kiosk 3×2 m zaczyna się od 15 000 zł netto. Sklep 6×3 m — od 29 032 zł netto. Większy punkt 12×3 m — od 58 748 zł netto (zaplecze i wyposażenie wyceniamy osobno). Każdą wycenę przygotowujemy indywidualnie i bezpłatnie: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "Mały kiosk 4×3 m zaczyna się od [[cena:4x3]] netto. Sklep 6×3 m od [[cena:6x3]] netto. Większy punkt 12×3 m od [[cena:12x3]] netto (zaplecze i wyposażenie wyceniamy osobno). Każdą wycenę przygotowujemy indywidualnie i bezpłatnie: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Jesteście producentem pawilonów handlowych czy pośrednikiem?",
@@ -149,15 +149,15 @@
       },
       {
         "q": "Czy potrzebuję pozwolenia na pawilon handlowy?",
-        "a": "W przypadku pawilonów do 35 m² wystarczy zgłoszenie w urzędzie — pełne pozwolenie na budowę nie jest potrzebne. Procedura trwa kilka dni. Pomagamy przygotować dokumenty: wzory, wnioski, instrukcje, co i gdzie wpisać."
+        "a": "W przypadku pawilonów do 35 m² wystarczy zgłoszenie w urzędzie — pełne pozwolenie na budowę nie jest potrzebne. Pomagamy przygotować dokumenty: wzory, wnioski, instrukcje, co i gdzie wpisać."
       },
       {
         "q": "Czy mogę mieć okno podawcze i jednocześnie miejsce dla klientów w środku?",
         "a": "Oczywiście. Wykonujemy okna podawcze do obsługi z zewnątrz, pełnowymiarowe witryny sklepowe oraz drzwi z roletami antywłamaniowymi — w dowolnej konfiguracji. Powiedz nam, jak wyobrażasz sobie obsługę klienta, a układ otworów dopasujemy do Twojego pomysłu."
       },
       {
-        "q": "Jak ogrzewam pawilon zimą i ile to kosztuje?",
-        "a": "Najpopularniejsze rozwiązanie to klimatyzacja z pompą ciepła — grzeje zimą i chłodzi latem. Ściany z izolacją PIR 100 mm trzymają ciepło jak murowany budynek. Przy małym pawilonie miesięczny rachunek za ogrzewanie w sezonie zimowym to zwykle 350–500 zł."
+        "q": "Jak ogrzewam pawilon zimą?",
+        "a": "Najpopularniejsze rozwiązanie to klimatyzacja z pompą ciepła — grzeje zimą i chłodzi latem. Ściany z izolacją PIR 100 mm trzymają ciepło jak murowany budynek. Ogrzewanie dobieramy w ofercie jako wyposażenie."
       },
       {
         "q": "Czy pawilon nadaje się na warzywniak?",
@@ -165,7 +165,7 @@
       },
       {
         "q": "Szukam kontenera na sklep — czy to to samo?",
-        "a": "W praktyce tak. Kontener handlowy, pawilon handlowy, kontener na sklep — to różne nazwy na ten sam produkt. W STAGO budujemy je z PIR 100mm, stolarką PVC lub aluminiową i pełnym wykończeniem wnętrza. Gotowe do handlu od pierwszego dnia."
+        "a": "W praktyce tak. Kontener handlowy, pawilon handlowy, kontener na sklep — to różne nazwy na ten sam produkt. W STAGO to pawilon modułowy na spawanej ramie stalowej, w 12 modelach, ze ścianami PIR 100 mm i stolarką PVC lub aluminiową. Wykończenie wnętrza dobieramy pod Twój sklep."
       }
     ]
   },
@@ -249,9 +249,9 @@
   ],
   "jsonLd": {
     "name": "Pawilon do handlu STAGO",
-    "description": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od 15 000 zł netto.",
+    "description": "Pawilony do handlu od producenta. Sklep, kiosk, punkt sprzedaży, ryneczek. Witryny pod ekspozycję, oświetlenie, wygodne wejście. Od [[cena:4x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/loft.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Pawilon gastronomiczny od producenta — kawiarnia, kebab, bar | STAGO",
+    "title": "Pawilon gastronomiczny: kawiarnia, kebab, bar | STAGO",
     "description": "Pawilony i kontenery gastronomiczne od producenta: kawiarnia, kebab, lodziarnia, food truck stacjonarny. Okno podawcze, wentylacja, wykończenie HACCP.",
     "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
     "ogTitle": "Pawilon gastronomiczny — kontener gastronomiczny, food truck",
@@ -14,8 +14,8 @@
     "imgAlt": "Pawilon pod gastro STAGO — bryła SAGA",
     "h1": "Pawilon gastronomiczny od producenta. Pod kawiarnię, kebab, food truck.",
     "subtitle": "Kawiarnia, kebab, lodziarnia, food truck, mała kuchnia, bar. Znamy specyfikę branży — wentylację, wymogi sanepidu, układ z oknem podawczym. Wiemy też, że w sezonie nie ma czasu na poprawki, dlatego wszystko ma działać od pierwszego dnia. Powiedz nam, co podajesz, a dopasujemy resztę.",
-    "price": "od 22 000 zł netto",
-    "priceNote": "/ moduł gastronomiczny 4×2,4 m, gotowy do otwarcia",
+    "price": "od [[cena:4x3]] netto",
+    "priceNote": "/ pawilon 4×3 m, instalacje gastro wyceniamy w ofercie",
     "ctaHref": "../konfigurator.html?type=gastronomiczny",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "W cenie",
+    "eyebrow": "Współpraca",
     "h2": "Co dostajesz od STAGO",
     "items": [
       {
@@ -104,7 +104,7 @@
       },
       {
         "h3": "Transport i montaż na miejscu",
-        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie, a nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać. Transport liczymy 6 zł za kilometr w obie strony, montaż według warunków na miejscu."
       },
       {
         "h3": "2 lata gwarancji + serwis",
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje pawilon gastronomiczny?",
-        "a": "Mały moduł na kawę zaczyna się od 22 000 zł netto. Większa lodziarnia z zapleczem chłodniczym — 40 000–60 000 zł. Bar z pełną kuchnią — od 70 000 zł. Każdą wycenę przygotowujemy bezpłatnie po krótkiej rozmowie."
+        "a": "Pawilon 4×3 m zaczyna się od [[cena:4x3]] netto, 6×3 m od [[cena:6x3]], a 8×3 m od [[cena:8x3]] (ceny z cennika, bez transportu, montażu i wyposażenia). Wentylację, instalacje wodne i wyposażenie kuchni wyceniamy w ofercie, bo zależą od tego, co podajesz. Każdą wycenę przygotowujemy bezpłatnie po krótkiej rozmowie."
       },
       {
         "q": "Czy mogę mieć okno podawcze i jednocześnie miejsce dla klientów w środku?",
@@ -251,7 +251,7 @@
     "name": "Pawilon pod gastro STAGO",
     "description": "Pawilony gastronomiczne pod klucz. Kawiarnia, lodziarnia, food truck, bar. Wentylacja, okno podawcze, wykończenia HACCP. Od producenta z Jędrzejowa.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

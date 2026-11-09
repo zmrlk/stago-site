@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Dom modułowy — kontener ocieplony, domek całoroczny na działkę | STAGO",
+    "title": "Dom modułowy: kontener ocieplony, domek na działkę | STAGO",
     "description": "Domy modułowe od producenta. Domek całoroczny z łazienką i kuchnią. PIR 100mm, okna PVC lub ALU, 2 lata gwarancji. Darmowa wycena.",
     "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
     "ogTitle": "Dom modułowy — domek całoroczny, kontener ocieplony",
@@ -14,8 +14,8 @@
     "imgAlt": "Domek całoroczny STAGO — bryła MILA",
     "h1": "Dom modułowy. Kontener mieszkalny ocieplony.",
     "subtitle": "Mały dom na działce, dom dla teściowej, gabinet w ogrodzie, domek wakacyjny nad jeziorem. Pełne ściany z izolacją PIR 100 mm, łazienka, aneks kuchenny — pełnowartościowe miejsce do mieszkania, a nie tymczasowy barakowóz.",
-    "price": "od 45 000 zł netto",
-    "priceNote": "/ domek 6×3 m z łazienką",
+    "price": "od [[cena:6x3]] netto",
+    "priceNote": "/ domek 6×3 m, łazienkę i kuchnię wyceniamy w ofercie",
     "ctaHref": "../konfigurator.html?type=mieszkalny",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Izolacja jak w domach energooszczędnych",
-        "text": "Ściany z izolacją PIR 100 mm, ocieplony dach i podłoga (12 cm) z izolacją termiczną. Zimą jest ciepło, latem przyjemnie chłodno. Miesięczny rachunek za prąd w sezonie zimowym mieści się zwykle w przedziale 250–450 zł."
+        "text": "Ściany z izolacją PIR 100 mm, ocieplony dach i podłoga (12 cm) z izolacją termiczną. Zimą jest ciepło, latem przyjemnie chłodno."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -90,12 +90,12 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>",
         "h3": "Bez pozwolenia na budowę (do 35 m²)",
-        "text": "Dla domków do 35 m² wystarczy zgłoszenie w urzędzie — pełne pozwolenie na budowę nie jest potrzebne. Kilka dni formalności zamiast miesięcy. Pomagamy z dokumentami od pierwszego wniosku po finał."
+        "text": "Dla domków do 35 m² wystarczy zgłoszenie w urzędzie — pełne pozwolenie na budowę nie jest potrzebne. Pomagamy z dokumentami od pierwszego wniosku po finał."
       }
     ]
   },
   "benefits": {
-    "eyebrow": "W cenie",
+    "eyebrow": "Współpraca",
     "h2": "Co dostajesz od STAGO",
     "items": [
       {
@@ -104,7 +104,7 @@
       },
       {
         "h3": "Transport i montaż na miejscu",
-        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie, a nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać. Transport liczymy 6 zł za kilometr w obie strony, montaż według warunków na miejscu."
       },
       {
         "h3": "2 lata gwarancji + serwis",
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje domek całoroczny?",
-        "a": "Domek 6×3 m z łazienką zaczyna się od 45 000 zł netto. Większy domek 8×4 m z kuchnią i sypialnią — 65 000–90 000 zł. Wykończenia premium wyceniamy indywidualnie."
+        "a": "Domek STAGO to pawilon modułowy na spawanej ramie stalowej. Wymiar 6×3 m kosztuje od [[cena:6x3]] netto w wersji podstawowej (cena z cennika, bez transportu i montażu). Łazienkę, aneks kuchenny i instalacje wyceniamy osobno. Najdłuższy pojedynczy moduł to 12×3 m, większy dom składamy z kilku modułów stawianych obok siebie. Wykończenia premium wyceniamy indywidualnie."
       },
       {
         "q": "Czy mogę w nim mieszkać przez cały rok?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Domek całoroczny STAGO",
-    "description": "Domki modułowe całoroczne. Mały dom na działce, ADU, holiday house, gabinet w ogrodzie. PIR 100mm, łazienka, kuchnia. Od 45 000 zł netto.",
+    "description": "Domki modułowe całoroczne. Mały dom na działce, ADU, holiday house, gabinet w ogrodzie. PIR 100mm, łazienka, kuchnia. Domek 6×3 m od [[cena:6x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

@@ -14,8 +14,8 @@
     "imgAlt": "Kontener pod biuro STAGO — bryła NORD",
     "h1": "Pawilon biurowy od producenta. Biuro modułowe i kontener biurowy całoroczny.",
     "subtitle": "Biuro sprzedaży, recepcja przy firmie, biuro tymczasowe na budowie, gabinet konsultacyjny. Ciepło zimą, cicho przez cały rok, prąd i internet od pierwszego dnia. Wchodzisz z laptopem i od razu zaczynasz pracować — bez miesięcy remontu i bez kompromisów.",
-    "price": "od 22 000 zł netto",
-    "priceNote": "/ kontener biurowy 6×2,4 m, gotowy do pracy",
+    "price": "od [[cena:4x3]] netto",
+    "priceNote": "/ pawilon biurowy 4×3 m, wersja podstawowa",
     "ctaHref": "../konfigurator.html?type=biurowy",
     "articleHref": "../modele.html",
     "articleText": "Zobacz wszystkie 12 modeli &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "W cenie",
+    "eyebrow": "Współpraca",
     "h2": "Co dostajesz od STAGO",
     "items": [
       {
@@ -104,7 +104,7 @@
       },
       {
         "h3": "Transport i montaż na miejscu",
-        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie, a nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać. Transport liczymy 6 zł za kilometr w obie strony, montaż według warunków na miejscu."
       },
       {
         "h3": "2 lata gwarancji + serwis",
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Ile kosztuje kontener biurowy?",
-        "a": "Pojedynczy moduł 6×2,4 m zaczyna się od 22 000 zł netto. Większe biuro z toaletą i aneksem kuchennym — 35 000–50 000 zł. Jeśli potrzebujesz większej powierzchni, łączymy moduły obok siebie w jeden większy obiekt."
+        "a": "Kontener biurowy STAGO to pawilon modułowy na spawanej ramie stalowej, w 12 modelach. Wymiar 4×3 m kosztuje od [[cena:4x3]] netto, 6×3 m od [[cena:6x3]], a 12×3 m od [[cena:12x3]] (ceny z cennika, bez transportu, montażu i wyposażenia). Toaletę i aneks kuchenny wyceniamy osobno. Jeśli potrzebujesz większej powierzchni, łączymy moduły obok siebie w jeden większy obiekt."
       },
       {
         "q": "Czy mogę mieć w nim toaletę?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "Jak długo posłuży kontener biurowy?",
-        "a": "Konstrukcja jest stalowa, zabezpieczona antykorozyjnie, z pełną izolacją PIR i dachem z odprowadzeniem wody opadowej. Wielu naszych klientów korzysta z biur w naszych kontenerach od 10–15 lat bez większych poprawek."
+        "a": "Konstrukcja jest stalowa, zabezpieczona antykorozyjnie, z pełną izolacją PIR i dachem z odprowadzeniem wody opadowej. Gwarancja na konstrukcję wynosi 2 lata."
       },
       {
         "q": "Czy mogę przewieźć kontener na inną budowę?",
-        "a": "Tak, to jedna z jego największych zalet. Załadunek na naczepę, transport, ustawienie w nowym miejscu — i kontener znów pracuje. Wielu naszych klientów z branży budowlanej obsługuje w ten sposób trzy lub cztery budowy w ciągu roku."
+        "a": "Tak, to jedna z jego największych zalet. Załadunek na naczepę, transport, ustawienie w nowym miejscu — i kontener znów pracuje."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Kontener pod biuro STAGO",
-    "description": "Kontenery biurowe od producenta. Biuro sprzedaży, recepcja, biuro na budowie, gabinet. Ciepło, cicho, gotowe do pracy. Od 22 000 zł netto.",
+    "description": "Kontenery biurowe od producenta. Biuro sprzedaży, recepcja, biuro na budowie, gabinet. Ciepło, cicho, gotowe do pracy. Od [[cena:4x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

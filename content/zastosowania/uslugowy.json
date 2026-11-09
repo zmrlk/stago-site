@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Pawilon usługowy — fryzjer, barber, salon kosmetyczny | STAGO",
-    "description": "Pawilony usługowe na zamówienie: salon fryzjerski, barber shop, gabinet kosmetyczny, serwis. Instalacje pod Twoją branżę. Pawilon 5×3 m od 26 926 zł netto.",
+    "description": "Pawilony usługowe na zamówienie: salon fryzjerski, barber shop, gabinet kosmetyczny, serwis. Instalacje pod Twoją branżę. Pawilon 5×3 m od [[cena:5x3]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
     "ogTitle": "Pawilon usługowy — kontenery usługowe od producenta",
-    "ogDescription": "Pawilony usługowe na zamówienie od producenta: salon fryzjerski, barber shop, gabinet kosmetyczny, serwis, pralnia. Pawilon 5×3 m od 26 926 zł netto.",
+    "ogDescription": "Pawilony usługowe na zamówienie od producenta: salon fryzjerski, barber shop, gabinet kosmetyczny, serwis, pralnia. Pawilon 5×3 m od [[cena:5x3]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
   "breadcrumb": "Usługowe",
@@ -14,7 +14,7 @@
     "imgAlt": "Pawilon usługowy STAGO — bryła ICON",
     "h1": "Pawilony usługowe na zamówienie. Kontener usługowy od producenta.",
     "subtitle": "Salon fryzjerski, gabinet kosmetyczny, serwis, pralnia, punkt naprawczy. Każda branża ma swoje wymagania — wodę, kanalizację, wentylację, mocniejszą instalację elektryczną, czasem konkretne certyfikaty. Powiedz nam, czym się zajmujesz, a przygotujemy pawilon tak, żeby sanepid przeszedł bez problemu.",
-    "price": "od 26 926 zł netto",
+    "price": "od [[cena:5x3]] netto",
     "priceNote": "/ pawilon 5×3 m, instalacje pod branżę wyceniamy w ofercie",
     "ctaHref": "../konfigurator.html?type=uslugowy",
     "articleHref": "../modele.html",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "W cenie",
+    "eyebrow": "Współpraca",
     "h2": "Co dostajesz od STAGO",
     "items": [
       {
@@ -104,7 +104,7 @@
       },
       {
         "h3": "Transport i montaż na miejscu",
-        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie. Nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać."
+        "text": "Pawilon jedzie na naczepie z naszego zakładu w Jędrzejowie, a nasza ekipa stawia go na miejscu. Ty wskazujesz, gdzie ma stać. Transport liczymy 6 zł za kilometr w obie strony, montaż według warunków na miejscu."
       },
       {
         "h3": "2 lata gwarancji + serwis",
@@ -141,15 +141,15 @@
     "items": [
       {
         "q": "Ile kosztuje pawilon usługowy?",
-        "a": "Pawilon 5×3 m zaczyna się od 26 926 zł netto (cena z cennika, bez transportu, montażu i wyposażenia). Instalacje pod salon — wodę, kanalizację, mocniejszą elektrykę — wyceniamy w ofercie. Większy salon z dwoma stanowiskami to zwykle 40 000–55 000 zł. Ostateczna cena zależy od ilości sprzętu, podpięć i wykończenia wnętrza."
+        "a": "Pawilon 5×3 m zaczyna się od [[cena:5x3]] netto (cena z cennika, bez transportu, montażu i wyposażenia). Instalacje pod salon — wodę, kanalizację, mocniejszą elektrykę — wyceniamy w ofercie. Większy salon 8×3 m zaczyna się od [[cena:8x3]] netto. Ostateczna cena zależy od ilości sprzętu, podpięć i wykończenia wnętrza."
       },
       {
         "q": "Czy pawilon spełnia wymogi sanepidu?",
-        "a": "Tak. Projektujemy go zgodnie z wymogami obowiązującymi w danej branży. Sanepid wchodzi, sprawdza i podpisuje protokół. Kilkudziesięciu naszych klientów prowadzi już salony i serwisy w pawilonach STAGO."
+        "a": "Tak. Projektujemy go zgodnie z wymogami obowiązującymi w danej branży. Sanepid wchodzi, sprawdza i podpisuje protokół."
       },
       {
         "q": "Czy mogę mieć więcej niż jedno stanowisko pracy?",
-        "a": "Tak. Łączymy moduły obok siebie, dzięki czemu powstają większe pawilony — 8×3 m lub 12×3 m — z dwoma lub trzema stanowiskami. Powiedz nam tylko, ile osób ma pracować jednocześnie, a zaproponujemy odpowiedni układ."
+        "a": "Tak. Wybierasz dłuższy pawilon, na przykład 8×3 m lub 12×3 m, z dwoma lub trzema stanowiskami. Większą powierzchnię składamy z kilku modułów stawianych obok siebie. Powiedz nam tylko, ile osób ma pracować jednocześnie, a zaproponujemy odpowiedni układ."
       },
       {
         "q": "A jeśli nie mam jeszcze pomysłu na układ wnętrza?",
@@ -245,9 +245,9 @@
   ],
   "jsonLd": {
     "name": "Pawilon usługowy STAGO",
-    "description": "Pawilony usługowe od producenta. Salon fryzjerski, barber shop, kosmetyka, serwis, pralnia. Instalacje pod branżę. Pawilon 5×3 m od 26 926 zł netto.",
+    "description": "Pawilony usługowe od producenta. Salon fryzjerski, barber shop, kosmetyka, serwis, pralnia. Instalacje pod branżę. Pawilon 5×3 m od [[cena:5x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

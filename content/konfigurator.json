@@ -85,16 +85,6 @@
     "presetLabel": "Popularne rozmiary (długość × szerokość)",
     "presets": [
       {
-        "label": "3×2 m",
-        "l": "3",
-        "w": "2"
-      },
-      {
-        "label": "4×2,5 m",
-        "l": "4",
-        "w": "2.5"
-      },
-      {
         "label": "4×3 m",
         "l": "4",
         "w": "3"
