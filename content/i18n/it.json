@@ -52,7 +52,8 @@
     "honeypot": "Campo ausiliario (non compilare)",
     "hours": "Lun-Ven: 7:00-15:00",
     "message": "Messaggio",
-    "messagePlaceholder": "Descrivi le tue esigenze — dimensioni, posizione, utilizzo..."
+    "messagePlaceholder": "Descrivi le tue esigenze — dimensioni, posizione, utilizzo...",
+    "typeLabel": "Destinazione del padiglione"
   },
   "related": {
     "eyebrow": "Potrebbe essere utile",
@@ -115,5 +116,14 @@
     "categoryMarketingDesc": "Meta Pixel e TikTok Pixel — misurazione dell'efficacia delle inserzioni e remarketing.",
     "moreInfo": "Maggiori dettagli nella",
     "moreInfoLink": "Cookie policy"
+  },
+  "fakty": {
+    "wymiaryOpis": "Dimensioni, larghezza 3 m",
+    "produkcja": "4–6 sett.",
+    "produkcjaOpis": "Produzione dall'approvazione del progetto",
+    "izolacja": "100 / 160 mm",
+    "izolacjaOpis": "Pannello PIR: pareti / tetto",
+    "gwarancja": "2 anni",
+    "gwarancjaOpis": "Garanzia sulla struttura"
   }
 }

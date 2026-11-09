@@ -339,9 +339,9 @@
       '#stago-cookie-banner h3{margin:0 0 8px;font-size:1.1rem;font-weight:800}',
       '#stago-cookie-banner p{margin:0 0 14px;font-size:.92rem;line-height:1.5;color:#444}',
       '#stago-cookie-banner .stago-cookie-actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}',
-      '#stago-cookie-banner button{padding:10px 18px;border-radius:8px;font-size:.88rem;font-weight:700;cursor:pointer;border:1px solid transparent;font-family:inherit}',
-      '#stago-cookie-banner .btn-accept{background:#E8461C;color:#fff;border-color:#E8461C}',
-      '#stago-cookie-banner .btn-accept:hover{background:#d23f17}',
+      '#stago-cookie-banner button{min-height:44px;padding:10px 18px;border-radius:8px;font-size:.88rem;font-weight:700;cursor:pointer;border:1px solid transparent;font-family:inherit}',
+      '#stago-cookie-banner .btn-accept{background:#C03311;color:#fff;border-color:#C03311}',
+      '#stago-cookie-banner .btn-accept:hover{background:#A82E0E}',
       '#stago-cookie-banner .btn-necessary{background:#fff;color:#1D1D1B;border-color:#1D1D1B}',
       '#stago-cookie-banner .btn-necessary:hover{background:#f6f6f6}',
       '#stago-cookie-banner .btn-settings{background:transparent;color:#1D1D1B;border-color:#e0e0e0}',
@@ -361,7 +361,7 @@
       '#stago-cookie-banner .stago-cookie-switch.on::after{transform:translateX(18px)}',
       '#stago-cookie-banner .stago-cookie-switch.locked{background:#1D1D1B;cursor:not-allowed}',
       '#stago-cookie-banner .stago-cookie-more{margin-top:8px;font-size:.82rem;color:#666}',
-      '#stago-cookie-banner .stago-cookie-more a{color:#E8461C;text-decoration:none}',
+      '#stago-cookie-banner .stago-cookie-more a{color:#C03311;text-decoration:none}',
       '#stago-cookie-banner .stago-cookie-more a:hover{text-decoration:underline}',
       '@media(max-width:600px){#stago-cookie-banner{left:8px;right:8px;bottom:8px;padding:16px}#stago-cookie-banner .stago-cookie-actions{flex-direction:column-reverse}#stago-cookie-banner button{width:100%}}'
     ].join('');

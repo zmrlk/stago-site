@@ -33,7 +33,7 @@ const zlote = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
 
 // ── Kwoty z cennika w treści PL (9.11.2026: ceny w tekstach rozjechały się z cennikiem na 79 stronach) ──
 // [[cena:4x3]] najtańszy model w wymiarze ([[cena:4x3:max]] najdroższy) · [[cena:NORD]] cena „od” modelu · [[cena:NORD:6x3]] · [[cena:NORD:max]]
-// [[cena:min]] / [[cena:max]] w całej ofercie · [[wymiar:VIEW]] najmniejszy wymiar modelu · [[liczba:…]] sama liczba (JSON-LD).
+// [[cena:min]] / [[cena:max]] w całej ofercie · [[wymiar:VIEW]] najmniejszy wymiar modelu · [[liczba:…]] sama liczba PLN (JSON-LD), [[liczbaEur:…]] sama liczba € (pola formularzy).
 // Nieznany znacznik przerywa build. Spacje twarde: kwota nie łamie się między wierszami.
 function cenaZCennika(arg) {
   const [a, b] = arg.split(':');
@@ -59,11 +59,12 @@ function cenyWTresci(html, plik) {
     .replace(/\[\[cena:([A-Za-z0-9:]+)\]\]/g, (_, a) => `${twardo(cenaZCennika(a))} zł`)
     .replace(/\[\[eur:([A-Za-z0-9:]+)\]\]/g, (_, a) => `${twardo(naEur(cenaZCennika(a)))} €`)
     .replace(/\[\[liczba:([A-Za-z0-9:]+)\]\]/g, (_, a) => String(cenaZCennika(a)))
+    .replace(/\[\[liczbaEur:([A-Za-z0-9:]+)\]\]/g, (_, a) => String(naEur(cenaZCennika(a))))
     .replace(/\[\[wymiar:([A-Z]+)\]\]/g, (_, M) => {
       if (!CENNIK.od[M]) throw new Error(`[[wymiar:${M}]] — nie ma modelu w cenniku`);
       return `${CENNIK.od[M].rozmiar.replace('x', '×')} m`;
     });
-  const zostal = html.match(/\[\[(?:cena|eur|liczba|wymiar):[^\]]*\]\]/);
+  const zostal = html.match(/\[\[(?:cena|eur|liczba|liczbaEur|wymiar):[^\]]*\]\]/);
   if (zostal) throw new Error(`${plik}: nierozpoznany znacznik ${zostal[0]}`);
   return html;
 }
@@ -212,18 +213,34 @@ const ASSET_V = JSON.stringify(mapaOdciskowAppJs());
 // zeby wszystkie jezyki pokazaly ten sam zestaw.
 const KARTA_RE = /<div class="realizacja-card"><img src="([^"]+)"[^>]*?alt="([^"]*)"[^>]*>(?:<div class="realizacja-label">([^<]*)<\/div>)?/g;
 
-function losoweRealizacje(lang) {
+function kartyRealizacji(lang) {
   const sciezka = lang === 'pl' ? 'content/pages/realizacje.json' : `content/${lang}/pages/realizacje.json`;
   let body;
   try {
     body = JSON.parse(fs.readFileSync(sciezka, 'utf8')).body;
   } catch (e) {
-    return null;
+    return [];
   }
   const karty = [];
   for (const m of body.matchAll(KARTA_RE)) {
     karty.push({ img: m[1], alt: m[2], label: m[3] || '', pelny: m[1].replace('-800.webp', '.webp') });
   }
+  return karty;
+}
+
+// Strona modelu: 4 bryły + 2 wnętrza, stały dobór per model (bez losowania przy każdym buildzie). Zdjęcia to realizacje
+// STAGO z ERP z ich podpisami — nie udajemy, że to ten model (pole model_code w ERP jest puste; case studies to zmienią).
+function realizacjeModelu(lang, klucz) {
+  const karty = kartyRealizacji(lang);
+  const zewn = karty.filter(k => /\/rz[\d-]/.test(k.img)), wewn = karty.filter(k => /\/rw[\d-]/.test(k.img));
+  if (zewn.length < 4 || wewn.length < 2) return null;
+  const h = [...klucz].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+  const z = (i) => zewn[(h + i * 7) % zewn.length], w = (i) => wewn[(h + i * 5) % wewn.length];
+  return [z(0), z(1), w(0), z(2), z(3), w(1)];
+}
+
+function losoweRealizacje(lang) {
+  const karty = kartyRealizacji(lang);
   if (karty.length < 3) return null;
   // Dwie bryly z zewnatrz i jedno wnetrze — sama galeria wnetrz slabo sprzedaje pawilon.
   const zewn = karty.filter(k => /\/rz[\d-]/.test(k.img));
@@ -426,7 +443,13 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
 
   // „Co jest w cenie” na stronach modeli: tabela cen z cennika (tylko PL — ceny w PLN; € do decyzji)
   const modelMatch = contentRel.match(/^modele\/([a-z]+)\.json$/);
+  // Nazwa modelu jako znak w nagłówku: „NORD — premium bryła…” → nazwa + reszta (treść bez zmian, wszystkie języki)
+  if (modelMatch && data.hero && typeof data.hero.h1 === 'string') {
+    const m = data.hero.h1.match(/^([A-ZĄĆĘŁŃÓŚŹŻ]{3,})\s+[—–-]\s+(.+)$/);
+    if (m) { data.h1Nazwa = m[1]; data.h1Reszta = m[2].charAt(0).toUpperCase() + m[2].slice(1); }
+  }
   // highPrice w Offer = największy wymiar z cennika (lowPrice ustawia oferta-sync z ERP), wszystkie języki
+  if (modelMatch && CENNIK.od[modelMatch[1].toUpperCase()]) data.wymiaryModelu = `${CENNIK.od[modelMatch[1].toUpperCase()].rozmiar.replace('x', '×')}–12×3 m`;
   if (modelMatch && data.jsonLd && CENNIK.od[modelMatch[1].toUpperCase()]) {
     data.jsonLd.highPrice = String(Math.round(CENNIK.od[modelMatch[1].toUpperCase()].max));
   }
@@ -455,8 +478,15 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
         kartaHref: WYMIARY_KART.includes(r.rozmiar) ? `../pawilon-${r.rozmiar}.html` : '',
         m2: r.m2,
         cena: r.doplaty[M] == null ? `dostępny od ${CENNIK.od[M].rozmiar.replace('x', '×')} m` : zl(r.podstawa + r.doplaty[M]),
+        // wybór wymiaru (sekcja „Wybierz wymiar”): liczby do rzutu w skali i link do konfiguratora z tym wymiarem
+        l: r.dlugosc, w: r.szerokosc, dostepny: r.doplaty[M] != null,
+        domyslny: r.rozmiar === CENNIK.od[M].rozmiar,
+        cenaKwota: r.doplaty[M] == null ? '' : zlote(r.podstawa + r.doplaty[M]).replace(/ /g, '\u00a0'),
       }));
+      data.cenaOdModelu = data.cennikModelu.find((r) => r.domyslny);
+      for (const r of data.cennikModelu) r.href = `${data.hero.ctaHref}${data.hero.ctaHref.includes('?') ? '&' : '?'}l=${r.l}&w=${r.w}`;
       data.maCennikModelu = true;
+      data.cenaMaxModelu = zlote(CENNIK.od[M].max).replace(/ /g, '\u00a0');
     }
   }
 
@@ -539,7 +569,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
 
   // Wszystkie galerie korzystaja z aktualnego zestawu ERP, takze strony modeli i zastosowan.
   if (data.gallery) {
-    const zRealizacji = losoweRealizacje(lang)?.map(r => ({
+    const zRealizacji = (modelMatch ? realizacjeModelu(lang, modelMatch[1]) : losoweRealizacje(lang))?.map(r => ({
       ...r, img: data.root + r.img, pelny: data.root + r.pelny,
     }));
     data.gallery.top = zRealizacji
@@ -607,7 +637,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
     if (!data._kwotaMin) throw new Error(`${outputPath}: [[kwotaMin]] poza stroną główną`);
     html = html.split('[[kwotaMin]]').join(data._kwotaMin.replace(/\s/g, ' '));
   }
-  html = cenyWTresci(html, outputPath);
+  html = cenyWTresci(html, outputPath).replace(/[ \t]+$/gm, ''); // bez końcowych spacji po warunkowych sekcjach szablonu
 
   // Inject hreflang before </head>
   if (isI18n) {

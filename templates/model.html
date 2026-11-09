@@ -88,21 +88,143 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         </div>
       </div>
       <div class="product-hero-text">
-        <p class="product-eyebrow-name">Model {{productType}}</p>
+        <p class="product-eyebrow-name">Model</p>
+        {{#h1Nazwa}}<h1 class="product-h1"><span class="product-nazwa">{{h1Nazwa}}</span><span class="product-h1-reszta">{{h1Reszta}}</span></h1>{{/h1Nazwa}}
+        {{^h1Nazwa}}<h1>{{{hero.h1}}}</h1>{{/h1Nazwa}}
         {{#hero.haslo}}<p class="product-haslo">{{{hero.haslo}}}</p>{{/hero.haslo}}
-        <h1>{{{hero.h1}}}</h1>
         <p class="product-subtitle">{{{hero.subtitle}}}</p>
-        <div class="product-price-range">{{{hero.price}}} <span>{{{hero.priceNote}}}</span></div>
+        <div class="product-cena">
+          <p class="product-cena-od">{{{hero.price}}} <span>{{{hero.priceNote}}}</span></p>
+          {{#cenaMaxModelu}}<p class="product-cena-max">{{{ui.fakty.najwiekszy}}} {{{cenaMaxModelu}}} · <a href="#co-jest-w-cenie">{{{ui.fakty.wszystkieCeny}}}</a></p>{{/cenaMaxModelu}}
+        </div>
         <div class="product-hero-cta">
-          <a href="{{hero.ctaHref}}" class="btn btn-primary btn-lg">{{{ui.cta.freeQuote}}}</a>
-          <a href="{{hero.articleHref}}" class="btn btn-outline-dark">{{{hero.articleText}}}</a>
+          <a href="{{hero.ctaHref}}" class="btn btn-primary btn-lg">{{#ui.fakty.skonfigurujWymiar}}{{{ui.fakty.skonfigurujWymiar}}} {{productType}}{{/ui.fakty.skonfigurujWymiar}}{{^ui.fakty.skonfigurujWymiar}}{{{ui.cta.freeQuote}}}{{/ui.fakty.skonfigurujWymiar}}</a>
+          {{#ui.fakty.zapytaj}}<a href="#wycena" class="btn btn-outline-dark btn-lg">{{{ui.fakty.zapytaj}}}</a>{{/ui.fakty.zapytaj}}
+          {{^ui.fakty.zapytaj}}<a href="{{hero.articleHref}}" class="btn btn-outline-dark btn-lg">{{{hero.articleText}}}</a>{{/ui.fakty.zapytaj}}
         </div>
       </div>
     </div>
+    {{#ui.fakty}}
+    <dl class="product-fakty">
+      {{#wymiaryModelu}}<div><dt>{{{ui.fakty.wymiaryOpis}}}</dt><dd>{{{wymiaryModelu}}}</dd></div>{{/wymiaryModelu}}
+      <div><dt>{{{ui.fakty.produkcjaOpis}}}</dt><dd>{{{ui.fakty.produkcja}}}</dd></div>
+      <div><dt>{{{ui.fakty.izolacjaOpis}}}</dt><dd>{{{ui.fakty.izolacja}}}</dd></div>
+      <div><dt>{{{ui.fakty.gwarancjaOpis}}}</dt><dd>{{{ui.fakty.gwarancja}}}</dd></div>
+    </dl>
+    {{/ui.fakty}}
   </section>
 
-  <!-- USECASES — do czego pasuje (NAJWYŻEJ) -->
-  <section class="usecases-section section section-light">
+
+
+
+
+
+  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+       Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
+  {{#wCenie.pokaz}}
+  <section class="wymiar-section section section-light" id="co-jest-w-cenie">
+    <div class="container">
+      <p class="eyebrow">{{wCenie.eyebrow}}</p>
+      <h2 class="h2">{{#ui.fakty}}{{{ui.fakty.wybierzH2}}}{{/ui.fakty}}{{^ui.fakty}}{{{wCenie.h2}}}{{/ui.fakty}}</h2>
+      <p class="section-sub">{{{wCenie.intro}}}</p>
+      {{#maCennikModelu}}
+      <div class="wymiar-uklad" data-wybor-wymiaru>
+        <div class="wymiar-wybor">
+          <p class="wymiar-etykieta" id="wymiar-etykieta">{{{ui.fakty.wymiar}}} <span>(m)</span></p>
+          <div class="wymiar-chipy" role="radiogroup" aria-labelledby="wymiar-etykieta">
+            {{#cennikModelu}}<button type="button" class="wymiar-chip" role="radio" aria-checked="{{#domyslny}}true{{/domyslny}}{{^domyslny}}false{{/domyslny}}" data-l="{{l}}" data-w="{{w}}" data-m2="{{m2}}" data-cena="{{cenaKwota}}" data-href="{{href}}" data-rozmiar="{{rozmiar}}" {{^dostepny}}disabled title="{{cena}}"{{/dostepny}}><span>{{l}}×{{w}}</span><small>{{m2}} m²</small></button>{{/cennikModelu}}
+          </div>
+        </div>
+        <figure class="wymiar-rzut" aria-hidden="true">
+          <div class="wymiar-rzut-pole" style="--l:{{cenaOdModelu.l}}">
+            <div class="wymiar-rzut-obrys"></div>
+            <div class="wymiar-rzut-bryla"></div>
+            <span class="wymiar-rzut-dl">{{cenaOdModelu.l}} × {{cenaOdModelu.w}} m</span>
+          </div>
+          <figcaption>{{{ui.fakty.rzut}}}</figcaption>
+        </figure>
+        <div class="wymiar-cena" aria-live="polite">
+          <p class="wymiar-panel-tytul">{{productType}} · <span data-pole="rozmiar">{{cenaOdModelu.rozmiar}}</span> · <span data-pole="m2">{{cenaOdModelu.m2}}</span> m²</p>
+          <p class="wymiar-panel-cena"><span data-pole="cena">{{{cenaOdModelu.cenaKwota}}}</span> <small>{{{ui.fakty.netto}}}</small></p>
+          <a href="{{cenaOdModelu.href}}" class="btn btn-primary btn-lg btn-full" data-pole="href"><span>{{{ui.fakty.skonfigurujWymiar}}} {{productType}} <span data-pole="rozmiar">{{cenaOdModelu.rozmiar}}</span></span></a>
+        </div>
+        <div class="wymiar-sklad">
+          <div><p class="wymiar-panel-h">{{{ui.fakty.wCenie}}}</p>
+            <ul class="wymiar-lista">{{#wCenie.baza.items}}<li>{{{text}}}</li>{{/wCenie.baza.items}}{{#wCenie.model.items}}<li>{{{text}}}</li>{{/wCenie.model.items}}</ul></div>
+          <div><p class="wymiar-panel-h">{{{ui.fakty.osobno}}}</p>
+            <ul class="wymiar-lista wymiar-lista-osobno">{{#wCenie.osobno.items}}<li>{{{text}}}</li>{{/wCenie.osobno.items}}</ul></div>
+        </div>
+      </div>
+      <details class="wymiar-tabela">
+        <summary>{{{ui.fakty.tabela}}} {{productType}}</summary>
+        <table>
+          <thead><tr><th>Wymiar</th><th>Powierzchnia</th><th>Cena netto od</th></tr></thead>
+          <tbody>
+            {{#cennikModelu}}<tr><td>{{#kartaHref}}<a href="{{{kartaHref}}}">{{rozmiar}}</a>{{/kartaHref}}{{^kartaHref}}{{rozmiar}}{{/kartaHref}}</td><td>{{m2}} m²</td><td>{{cena}}</td></tr>{{/cennikModelu}}
+          </tbody>
+        </table>
+        <p class="wcenie-note">{{{wCenie.tabelaNote}}}</p>
+      </details>
+      <script>
+      (function () {
+        var box = document.querySelector('[data-wybor-wymiaru]'); if (!box) return;
+        var pole = box.querySelector('.wymiar-rzut-pole'), dl = box.querySelector('.wymiar-rzut-dl');
+        function ustaw(chip) {
+          box.querySelectorAll('.wymiar-chip').forEach(function (c) { c.setAttribute('aria-checked', c === chip ? 'true' : 'false'); });
+          box.querySelectorAll('[data-pole="rozmiar"]').forEach(function (e) { e.textContent = chip.dataset.rozmiar; });
+          box.querySelector('[data-pole="m2"]').textContent = chip.dataset.m2;
+          box.querySelector('[data-pole="cena"]').textContent = chip.dataset.cena;
+          box.querySelector('[data-pole="href"]').href = chip.dataset.href;
+          pole.style.setProperty('--l', chip.dataset.l); dl.textContent = chip.dataset.l + ' × ' + chip.dataset.w + ' m';
+        }
+        box.addEventListener('click', function (e) { var c = e.target.closest('.wymiar-chip'); if (c && !c.disabled) ustaw(c); });
+        box.querySelector('[role=radiogroup]').addEventListener('keydown', function (e) {
+          if (['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'].indexOf(e.key) < 0) return;
+          var cs = [].slice.call(box.querySelectorAll('.wymiar-chip:not([disabled])')), i = cs.indexOf(document.activeElement);
+          if (i < 0) return; e.preventDefault();
+          var n = cs[(i + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : cs.length - 1)) % cs.length]; n.focus(); ustaw(n);
+        });
+      })();
+      </script>
+      {{/maCennikModelu}}
+    </div>
+  </section>
+  {{/wCenie.pokaz}}
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">{{gallery.eyebrow}}</p>
+      <h2 class="h2">{{gallery.h2}}</h2>
+      <div class="product-gallery">
+        {{#gallery.items}}
+        <figure class="product-gallery-item"><img src="{{img}}" data-full="{{pelny}}" alt="{{alt}}" loading="lazy">{{#label}}<figcaption>{{label}}</figcaption>{{/label}}</figure>
+        {{/gallery.items}}
+      </div>
+      <p class="product-gallery-link"><a href="{{{pageRoot}}}realizacje.html">{{{ui.nav.realizacje}}} &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">{{specs.eyebrow}}</p>
+      <h2 class="h2">{{specs.h2}}</h2>
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img src="{{{root}}}assets/konstrukcja/przekroj-pawilonu.webp" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          {{#specs.items}}<div class="karta-dane-row"><dt>{{h3}}</dt><dd>{{{text}}}</dd></div>{{/specs.items}}
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="{{{pageRoot}}}technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- USECASES — do czego pasuje -->
+  <section class="usecases-section section section-white">
     <div class="container">
       <p class="eyebrow">{{usecases.eyebrow}}</p>
       <h2 class="h2">{{{usecases.h2}}}</h2>
@@ -124,96 +246,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  <!-- GALLERY — realizacje (przeniesione wyżej: przełamuje rzędy kart zdjęciami) -->
-  <section class="gallery-section section">
-    <div class="container">
-      <p class="eyebrow">{{gallery.eyebrow}}</p>
-      <h2 class="h2">{{gallery.h2}}</h2>
-      <div class="product-gallery">
-        {{#gallery.items}}
-        <div class="product-gallery-item"><img src="{{img}}" data-full="{{pelny}}" alt="{{alt}}" loading="lazy"></div>
-        {{/gallery.items}}
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECS -->
-  <section class="specs-section section-light">
-    <div class="container">
-      <p class="eyebrow">{{specs.eyebrow}}</p>
-      <h2 class="h2">{{specs.h2}}</h2>
-      <div class="specs-grid">
-        {{#specs.items}}
-        <div class="spec-card">
-          <div class="spec-icon">{{{icon}}}</div>
-          <h3>{{h3}}</h3>
-          <p>{{{text}}}</p>
-        </div>
-        {{/specs.items}}
-      </div>
-    </div>
-  </section>
-
-  <!-- CO JEST W CENIE (cennik 28.10.2026; opisy modeli uzupełnia STAGO — patrz wCenie._todo w content) -->
-  {{#wCenie.pokaz}}
-  <section class="wcenie-section section" id="co-jest-w-cenie">
-    <div class="container">
-      <p class="eyebrow">{{wCenie.eyebrow}}</p>
-      <h2 class="h2">{{{wCenie.h2}}}</h2>
-      <p class="section-sub">{{{wCenie.intro}}}</p>
-      <div class="wcenie-grid">
-        <div class="wcenie-card">
-          <h3>{{{wCenie.baza.h3}}}</h3>
-          <ul>{{#wCenie.baza.items}}<li>{{{text}}}</li>{{/wCenie.baza.items}}</ul>
-        </div>
-        <div class="wcenie-card">
-          <h3>{{{wCenie.model.h3}}}</h3>
-          <ul>{{#wCenie.model.items}}<li>{{{text}}}</li>{{/wCenie.model.items}}</ul>
-          {{#wCenie.model.placeholder}}<p class="wcenie-note">{{{wCenie.model.placeholder}}}</p>{{/wCenie.model.placeholder}}
-        </div>
-        <div class="wcenie-card">
-          <h3>{{{wCenie.osobno.h3}}}</h3>
-          <ul>{{#wCenie.osobno.items}}<li>{{{text}}}</li>{{/wCenie.osobno.items}}</ul>
-        </div>
-      </div>
-      {{#maCennikModelu}}
-      <div class="wcenie-tabela">
-        <h3>{{{wCenie.tabelaH3}}}</h3>
-        <table>
-          <thead><tr><th>Wymiar</th><th>Powierzchnia</th><th>Cena netto od</th></tr></thead>
-          <tbody>
-            {{#cennikModelu}}<tr><td>{{#kartaHref}}<a href="{{{kartaHref}}}">{{rozmiar}}</a>{{/kartaHref}}{{^kartaHref}}{{rozmiar}}{{/kartaHref}}</td><td>{{m2}} m²</td><td>{{cena}}</td></tr>{{/cennikModelu}}
-          </tbody>
-        </table>
-        <p class="wcenie-note">{{{wCenie.tabelaNote}}}</p>
-        <a href="{{hero.ctaHref}}" class="btn btn-primary">Skonfiguruj i sprawdź cenę</a>
-      </div>
-      {{/maCennikModelu}}
-    </div>
-  </section>
-  {{/wCenie.pokaz}}
-
-  <!-- BENEFITS -->
-  <section class="benefits-section">
-    <div class="container">
-      <p class="eyebrow">{{benefits.eyebrow}}</p>
-      <h2 class="h2">{{benefits.h2}}</h2>
-      <div class="benefits-list">
-        {{#benefits.items}}
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>{{h3}}</h3>
-            <p>{{{text}}}</p>
-          </div>
-        </div>
-        {{/benefits.items}}
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
-  <section class="product-faq section" id="{{faq.id}}">
+  <section class="product-faq section section-light" id="{{faq.id}}">
     <div class="container">
       <p class="eyebrow">{{faq.eyebrow}}</p>
       <h2 class="h2">{{faq.h2}}</h2>
@@ -235,15 +269,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">{{form.h2}}</h2>
       <div class="product-form-grid">
         <form class="product-form" id="product-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="{{ui.form.name}}" required>
-          <input type="tel" name="phone" placeholder="{{ui.form.phone}}" required>
-          <input type="email" name="email" placeholder="{{ui.form.email}}">
-          <select name="type" data-default="{{form.selectedType}}">
+          <input type="text" name="name" placeholder="{{ui.form.name}}" aria-label="{{ui.form.name}}" required>
+          <input type="tel" name="phone" placeholder="{{ui.form.phone}}" aria-label="{{ui.form.phone}}" required>
+          <input type="email" name="email" placeholder="{{ui.form.email}}" aria-label="{{ui.form.email}}">
+          <select name="type" data-default="{{form.selectedType}}" aria-label="{{ui.form.typeLabel}}">
             {{#form.options}}
             <option value="{{value}}">{{label}}</option>
             {{/form.options}}
           </select>
-          <textarea name="message" rows="4" placeholder="{{form.textareaPlaceholder}}"></textarea>
+          <textarea name="message" rows="4" placeholder="{{form.textareaPlaceholder}}" aria-label="{{form.textareaPlaceholder}}"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="{{ui.form.honeypot}}"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> {{{ui.form.consent}}} <a href="{{{pageRoot}}}polityka-prywatnosci.html" target="_blank">{{{ui.form.privacyLink}}}</a></label>
           <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> {{{ui.form.consentOptional}}}</label>
@@ -256,9 +290,9 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <h3>{{form.infoH3}}</h3>
           <p>{{{form.infoText}}}</p>
           <ul>
-            {{#form.features}}
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>{{text}}</li>
-            {{/form.features}}
+            {{#benefits.items}}
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>{{h3}}</strong> {{{text}}}</span></li>
+            {{/benefits.items}}
           </ul>
           <div style="margin-top:24px">
             <a href="tel:+48509508210" style="font-size:1.3rem;font-weight:800;color:var(--white);display:block;margin-bottom:8px">{{{ui.cta.callLabel}}}</a>

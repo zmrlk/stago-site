@@ -85,18 +85,18 @@ button{-webkit-tap-highlight-color:transparent}
 .nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo-img{height:28px;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:22px}
-.nav-links a{font-size:.83rem;font-weight:600;color:var(--t2);transition:color .2s;-webkit-tap-highlight-color:transparent}
+.nav-links a{font-size:.83rem;font-weight:600;color:var(--t2);padding:4px 0;transition:color .2s;-webkit-tap-highlight-color:transparent}
 .nav-links a:hover{color:var(--primary)}
-.btn-nav{padding:10px 20px;font-size:.8rem;background:var(--accent);color:var(--white)!important;border-radius:var(--r-sm);font-weight:700}
-.btn-nav:hover{background:var(--accent-h);color:var(--white)!important}
+.btn-nav{padding:10px 20px;font-size:.8rem;background:#C03311;color:var(--white)!important;border-radius:var(--r-sm);font-weight:700}
+.btn-nav:hover{background:#A82E0E;color:var(--white)!important}
 .nav-right{display:flex;align-items:center;gap:16px}
 .nav-social{display:flex;align-items:center;gap:10px}
 .nav-social a{color:var(--t3);transition:color .2s;display:flex;align-items:center}
 .nav-social a:hover{color:var(--accent-text)}
-.nav-phone{display:flex;align-items:center;gap:5px;font-size:.83rem;font-weight:600;color:var(--primary)}
+.nav-phone{display:flex;align-items:center;gap:5px;font-size:.83rem;font-weight:600;color:var(--primary);white-space:nowrap}
 .nav-phone svg{color:var(--accent-text)}
 .nav-mobile-bottom{display:none}
-.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:10px;min-width:44px;min-height:44px}
 .nav-toggle span{width:22px;height:2px;background:var(--primary);border-radius:2px;transition:all .3s var(--ease);transform-origin:center}
 
 /* ── HERO ── */
@@ -107,7 +107,7 @@ button{-webkit-tap-highlight-color:transparent}
   100%{transform:scale(1.03) translate(-0.5%,0.5%)}
 }
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(26,26,26,.7) 0%,rgba(26,26,26,.45) 60%,rgba(26,26,26,.3) 100%);z-index:1}
-.hero-content{position:relative;z-index:2;padding:140px 0 80px;max-width:640px}
+.hero-content{position:relative;z-index:2;padding-top:140px;padding-bottom:80px;max-width:640px}
 .hero-badge{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--t-light3);margin-bottom:20px;padding:8px 16px;border:1px solid rgba(255,255,255,.12);border-radius:20px}
 .hero-h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-.04em;line-height:1.08;color:var(--white);margin-bottom:16px}
 .hero-sub{font-size:1.08rem;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:32px;max-width:480px}
@@ -248,7 +248,7 @@ button{-webkit-tap-highlight-color:transparent}
 .blog-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .blog-card:hover .blog-img img{transform:scale(1.05)}
 .blog-body{padding:24px 24px 28px;flex:1;display:flex;flex-direction:column}
-.blog-date{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);margin-bottom:10px}
+.blog-date{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--t2);margin-bottom:10px}
 .blog-body h3{font-size:1rem;font-weight:700;margin-bottom:10px;line-height:1.35;color:var(--primary)}
 .blog-body p{font-size:.86rem;color:var(--t2);line-height:1.55;flex:1}
 
@@ -514,7 +514,7 @@ body.nav-open{overflow:hidden}
       rgba(26,26,26,.88) 100%
     );
   }
-  .hero-content{padding:120px 0 100px}
+  .hero-content{padding-top:120px;padding-bottom:100px}
   .hero-h1{font-size:clamp(28px,7vw,3rem)}
   .hero-sub{font-size:1rem}
   .hero-badge{
@@ -632,12 +632,12 @@ body.nav-open{overflow:hidden}
 .steps .step-connector:last-child{display:none}
 
 /* ═══ PRODUCT PAGES ═══ */
-.breadcrumbs{padding-top:100px;font-size:.82rem;color:var(--t3)}
+.breadcrumbs{padding-top:100px;font-size:.82rem;color:var(--t2)}
 .breadcrumbs a{color:var(--t2);transition:color .2s}
 .breadcrumbs a:hover{color:var(--accent-text)}
-.breadcrumbs span{margin:0 8px;color:var(--t3)}
+.breadcrumbs span{margin:0 8px;color:var(--t2)}
 
-.product-hero{padding:32px 0 64px}
+.product-hero{padding-top:32px;padding-bottom:64px}
 .product-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .product-hero-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#f0f0f0}
 .product-hero-img img{width:100%;height:100%;object-fit:cover}
@@ -714,7 +714,7 @@ body.nav-open{overflow:hidden}
 }
 
 /* ═══ BLOG ARTICLES ═══ */
-.article-hero{padding:32px 0 48px}
+.article-hero{padding-top:32px;padding-bottom:48px}
 .article-hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;letter-spacing:-.03em;line-height:1.15;color:var(--primary);max-width:720px;margin:0 auto 16px}
 .article-meta{display:flex;align-items:center;gap:16px;font-size:.82rem;color:var(--t3);max-width:720px;margin:0 auto}
 .article-meta time{font-weight:600}
@@ -824,6 +824,7 @@ body.nav-open{overflow:hidden}
 .usecase-card-cta{background:var(--bg-dark);color:var(--white);border-color:var(--bg-dark)}
 .usecase-card-cta h3{color:var(--white)}
 .usecase-card-cta p{color:var(--t-light2)}
+.usecase-card-cta .usecase-arrow{color:#FF6B3D}
 .usecase-card-cta:hover{background:#222;transform:translateY(-3px)}
 
 /* ─── SEKCJA "POLECANE MODELE" (na stronie zastosowania) ─── */
@@ -1131,7 +1132,7 @@ body.nav-open{overflow:hidden}
 .product-hero-thumbs:empty{display:none}
 .phm-thumb{flex:1;position:relative;padding:0;border:2px solid transparent;border-radius:12px;overflow:hidden;background:var(--bg-light);cursor:pointer;aspect-ratio:4/3}
 .phm-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.phm-thumb span{position:absolute;left:8px;bottom:6px;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.55);pointer-events:none}
+.phm-thumb span{position:absolute;left:8px;bottom:8px;padding:2px 8px;border-radius:var(--r-sm);background:rgba(26,26,26,.72);font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--white);pointer-events:none}
 .phm-thumb.active,.phm-thumb:hover{border-color:var(--accent)}
 .product-eyebrow-name{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-text);margin-bottom:8px}
 .product-haslo{font-size:clamp(2rem,5vw,3.1rem);font-weight:800;letter-spacing:-.035em;line-height:1.03;color:var(--primary);margin:0 0 14px}
@@ -1287,3 +1288,94 @@ body.nav-open{overflow:hidden}
 .process-step{--accent-text:var(--accent-text-jasny)}
 /* Przyciski bez zmian (pyt. 5): gdy reguła tekstu (np. .article-content a) nadpisuje kolor przycisku, zostaje dawny akcent */
 .btn{--accent-text:var(--accent)}
+
+/* ── Strona modelu, układ 9.11: nazwa jako znak → cena → fakty; „Wybierz wymiar” (sygnaturowy ruch) → realizacje →
+   konstrukcja → zastosowania → FAQ → formularz. Jeden rytm sekcji 64 px (jak karty wymiarów), tła na zmianę. ── */
+.section-white{background:var(--white)}
+.product-hero~.wymiar-section,.product-hero~.gallery-section,.product-hero~.specs-section,.product-hero~.usecases-section,.product-hero~.product-faq{padding:64px 0}
+@media(max-width:768px){.product-hero~.wymiar-section,.product-hero~.gallery-section,.product-hero~.specs-section,.product-hero~.usecases-section,.product-hero~.product-faq{padding:48px 0}}
+.product-h1{margin:0 0 16px}
+.product-nazwa{display:block;font-size:clamp(4rem,9vw,7rem);font-weight:800;letter-spacing:-.045em;line-height:1;color:var(--primary)}
+.product-h1-reszta{display:block;margin-top:16px;font-size:clamp(1.15rem,1.8vw,1.375rem);font-weight:600;letter-spacing:-.01em;line-height:1.35;color:var(--primary)}
+.product-hero-text .product-haslo{font-size:1rem;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.5;color:var(--accent-text);margin:0 0 12px}
+.product-cena{margin:0 0 24px}
+.product-cena-od{font-size:clamp(2rem,3.4vw,2.75rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--primary);font-variant-numeric:tabular-nums;margin:0}
+.product-cena-od span{display:block;margin-top:4px;font-size:.95rem;font-weight:500;letter-spacing:0;line-height:1.4;color:var(--t2)}
+.product-cena-max{font-size:.92rem;color:var(--t2);line-height:1.5;margin:8px 0 0;font-variant-numeric:tabular-nums}
+.product-cena-max a{color:var(--accent-text);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.product-hero-cta{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.product-hero-cta .btn{width:100%;justify-content:center;text-align:center;padding-left:16px;padding-right:16px;white-space:nowrap}
+@media(max-width:1180px) and (min-width:901px),(max-width:480px){.product-hero-cta{grid-template-columns:1fr}}
+.product-fakty{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:48px 0 0;padding-top:32px;border-top:1px solid var(--border)}
+.product-fakty>div{display:flex;flex-direction:column-reverse;gap:4px}
+.product-fakty dd{margin:0;font-size:clamp(1.5rem,2.4vw,2rem);font-weight:800;letter-spacing:-.02em;line-height:1.15;color:var(--primary);font-variant-numeric:tabular-nums}
+.product-fakty dt{font-size:.88rem;color:var(--t2);line-height:1.4}
+@media(max-width:768px){.product-fakty{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:32px;padding-top:24px}}
+/* Wybierz wymiar: jedna karta — wymiary (pełna szerokość) / rzut | cena (ta sama wysokość) / w cenie | osobno */
+.wymiar-uklad{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);grid-template-areas:"wybor wybor" "rzut cena" "sklad sklad";gap:32px 48px;margin-top:40px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:32px}
+.wymiar-wybor{grid-area:wybor}.wymiar-rzut{grid-area:rzut;margin:0;align-self:center}.wymiar-cena{grid-area:cena;align-self:center}.wymiar-sklad{grid-area:sklad}
+.wymiar-etykieta{font-size:.88rem;font-weight:700;color:var(--primary);margin:0 0 12px}
+.wymiar-etykieta span{font-weight:500;color:var(--t2)}
+.wymiar-chipy{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px}
+@media(max-width:600px){.wymiar-chipy{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.wymiar-chip{min-height:56px;padding:8px 4px;border:1px solid var(--border);border-radius:var(--r-sm);background:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font:inherit;color:var(--primary);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s,transform .1s}
+.wymiar-chip span{font-size:.95rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wymiar-chip small{font-size:.75rem;color:var(--t2);white-space:nowrap}
+.wymiar-chip[aria-checked="true"]{background:var(--primary);border-color:var(--primary);color:var(--white)}
+.wymiar-chip[aria-checked="true"] small{color:var(--t-light3)}
+.wymiar-chip:active{transform:scale(.97)}
+.wymiar-chip:disabled{opacity:.4;cursor:not-allowed}
+.wymiar-chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(hover:hover) and (pointer:fine){.wymiar-chip:not(:disabled):not([aria-checked="true"]):hover{border-color:var(--primary)}}
+.wymiar-rzut-pole{position:relative;width:100%;aspect-ratio:12/3}
+.wymiar-rzut-obrys{position:absolute;inset:0;border:1px dashed var(--t3);border-radius:4px}
+/* bryła = rzut w skali; siatka 1×1 m, więc liczba kratek = metry kwadratowe */
+.wymiar-rzut-bryla{position:absolute;inset:0;border-radius:4px;background-color:var(--primary);background-image:linear-gradient(to right,rgba(255,255,255,.14) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.14) 1px,transparent 1px);background-size:calc(100% / 12) calc(100% / 3);clip-path:inset(0 calc((12 - var(--l)) / 12 * 100%) 0 0 round 4px);transition:clip-path .4s cubic-bezier(.2,.8,0,1)}
+.wymiar-rzut-dl{position:absolute;font-size:.85rem;font-weight:700;color:var(--primary);font-variant-numeric:tabular-nums;white-space:nowrap;transition:left .4s cubic-bezier(.2,.8,0,1)}
+.wymiar-rzut-dl{top:calc(100% + 6px);left:calc(var(--l) / 12 * 50%);transform:translateX(-50%)}
+.wymiar-rzut figcaption{margin-top:32px;font-size:.82rem;color:var(--t2)}
+.wymiar-sklad{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 48px;padding-top:32px;border-top:1px solid var(--border)}
+.wymiar-panel-tytul{font-size:.95rem;font-weight:700;color:var(--primary);margin:0;font-variant-numeric:tabular-nums}
+.wymiar-panel-cena{font-size:clamp(2.25rem,3.6vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.05;color:var(--primary);margin:8px 0 16px;font-variant-numeric:tabular-nums}
+.wymiar-panel-cena small{font-size:.95rem;font-weight:500;letter-spacing:0;color:var(--t2)}
+.wymiar-panel-h{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--t2);margin:0 0 8px}
+.wymiar-lista{list-style:none;padding:0;margin:0}
+.wymiar-lista li{position:relative;padding-left:24px;font-size:.92rem;line-height:1.5;color:var(--primary)}
+.wymiar-lista li+li{margin-top:8px}
+.wymiar-lista li::before{content:"";position:absolute;left:2px;top:.45em;width:10px;height:5px;border-left:2px solid var(--accent-text);border-bottom:2px solid var(--accent-text);transform:rotate(-45deg)}
+.wymiar-lista-osobno li{color:var(--t2)}
+.wymiar-lista-osobno li::before{top:.75em;width:10px;height:0;border-left:0;border-bottom:2px solid var(--t3);transform:none}
+.wymiar-tabela{margin-top:24px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:0 24px}
+.wymiar-tabela summary{display:flex;justify-content:space-between;align-items:center;min-height:56px;font-weight:700;color:var(--primary);cursor:pointer;list-style:none}
+.wymiar-tabela summary::-webkit-details-marker{display:none}
+.wymiar-tabela summary::after{content:"+";font-size:1.25rem;font-weight:400;color:var(--t2)}
+.wymiar-tabela[open] summary::after{content:"−"}
+.wymiar-tabela table{width:100%;border-collapse:collapse;font-size:.95rem;margin-bottom:8px}
+.wymiar-tabela th,.wymiar-tabela td{padding:12px 8px;border-bottom:1px solid var(--border);text-align:left}
+.wymiar-tabela th{font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--t2)}
+.wymiar-tabela td:last-child,.wymiar-tabela th:last-child{text-align:right}
+.wymiar-tabela td:last-child{font-weight:700;color:var(--primary);font-variant-numeric:tabular-nums}
+.wymiar-tabela td a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.wymiar-tabela .wcenie-note{padding-bottom:16px}
+@media(max-width:900px){.wymiar-uklad{grid-template-columns:1fr;grid-template-areas:"wybor" "rzut" "cena" "sklad";gap:24px}.wymiar-sklad{grid-template-columns:1fr;gap:24px}}
+@media(max-width:480px){.wymiar-uklad{padding:24px 16px}.wymiar-tabela{padding:0 16px}}
+@media(prefers-reduced-motion:reduce){.wymiar-rzut-bryla,.wymiar-rzut-dl,.wymiar-chip{transition:none}}
+.product-form-info li{align-items:flex-start}
+.product-form-info li span strong{display:block;color:var(--white);font-weight:700;margin-bottom:2px}
+.product-gallery-item{margin:0;position:relative}
+.product-gallery-item figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);padding:4px 8px;border-radius:var(--r-sm);background:rgba(26,26,26,.72);color:var(--white);font-size:.78rem;font-weight:600;line-height:1.4}
+.product-gallery-link{text-align:center;margin-top:24px;font-weight:700}
+.product-gallery-link a{color:var(--accent-text);display:inline-block;padding:12px 0}
+.konstrukcja-uklad{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:48px;align-items:center;margin-top:40px}
+.konstrukcja-uklad .karta-dane{margin:0;max-width:none}
+.konstrukcja-obraz{margin:0;text-align:center}
+.konstrukcja-obraz img{width:100%;max-width:520px;height:auto;display:block;margin:0 auto}
+.konstrukcja-obraz figcaption{margin-top:8px;font-size:.78rem;color:var(--t2)}
+@media(max-width:900px){.konstrukcja-uklad{grid-template-columns:1fr;gap:24px}.konstrukcja-obraz img{max-width:360px}}
+@media(max-width:400px){.wymiar-tabela table{font-size:.82rem}.wymiar-tabela th,.wymiar-tabela td{padding:8px 4px}.wymiar-tabela th{font-size:.68rem;letter-spacing:.02em}}
+@media(max-width:480px){.phm-thumb span{display:none}}
+@media(max-width:1100px){.nav-social{display:none}}
+/* cele trafienia (Helix G2 9.11): ikony i numer w menu min. 24 px (WCAG 2.5.8), na dotyku 44 px — wygląd bez zmian */
+.nav-social a,.footer-social a,.social-links a,.nav-mobile-socials a{min-width:24px;min-height:24px;justify-content:center}
+.nav-phone{min-height:24px}
+@media(pointer:coarse){.footer-social a,.social-links a,.nav-mobile-socials a{min-width:44px;min-height:44px}}

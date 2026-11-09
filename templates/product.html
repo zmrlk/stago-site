@@ -149,15 +149,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">{{form.h2}}</h2>
       <div class="product-form-grid">
         <form class="product-form" id="product-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="Imię i nazwisko" required>
-          <input type="tel" name="phone" placeholder="Telefon" required>
-          <input type="email" name="email" placeholder="Email (opcjonalnie)">
-          <select name="type" data-default="{{form.selectedType}}">
+          <input type="text" name="name" placeholder="Imię i nazwisko" aria-label="Imię i nazwisko" required>
+          <input type="tel" name="phone" placeholder="Telefon" aria-label="Telefon" required>
+          <input type="email" name="email" placeholder="Email (opcjonalnie)" aria-label="Email (opcjonalnie)">
+          <select name="type" data-default="{{form.selectedType}}" aria-label="{{ui.form.typeLabel}}">
             {{#form.options}}
             <option value="{{value}}">{{label}}</option>
             {{/form.options}}
           </select>
-          <textarea name="message" rows="4" placeholder="{{form.textareaPlaceholder}}"></textarea>
+          <textarea name="message" rows="4" placeholder="{{form.textareaPlaceholder}}" aria-label="{{form.textareaPlaceholder}}"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> Wyrażam zgodę na przetwarzanie danych osobowych. <a href="polityka-prywatnosci.html" target="_blank">Polityka prywatności</a></label>
           <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie</button>

@@ -52,7 +52,8 @@
     "honeypot": "Pomocné pole (nevyplňujte)",
     "hours": "Po-Pá: 7:00-15:00",
     "message": "Zpráva",
-    "messagePlaceholder": "Popište své potřeby — rozměry, lokalizace, účel..."
+    "messagePlaceholder": "Popište své potřeby — rozměry, lokalizace, účel...",
+    "typeLabel": "Účel pavilonu"
   },
   "related": {
     "eyebrow": "Mohlo by se hodit",
@@ -115,5 +116,14 @@
     "categoryMarketingDesc": "Meta Pixel a TikTok Pixel — měření efektivity reklam a remarketing.",
     "moreInfo": "Více v",
     "moreInfoLink": "Zásadách cookies"
+  },
+  "fakty": {
+    "wymiaryOpis": "Rozměry, šířka 3 m",
+    "produkcja": "4–6 týd.",
+    "produkcjaOpis": "Výroba od schválení projektu",
+    "izolacja": "100 / 160 mm",
+    "izolacjaOpis": "PIR panel: stěny / střecha",
+    "gwarancja": "2 roky",
+    "gwarancjaOpis": "Záruka na konstrukci"
   }
 }

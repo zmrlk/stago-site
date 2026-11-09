@@ -52,7 +52,8 @@
     "honeypot": "Pole pomocnicze (nie wypełniaj)",
     "hours": "Pon-Pt: 7:00-15:00",
     "message": "Wiadomość",
-    "messagePlaceholder": "Opisz swoje potrzeby — wymiary, lokalizacja, przeznaczenie..."
+    "messagePlaceholder": "Opisz swoje potrzeby — wymiary, lokalizacja, przeznaczenie...",
+    "typeLabel": "Przeznaczenie pawilonu"
   },
   "related": {
     "eyebrow": "Może Ci się przydać",
@@ -137,5 +138,27 @@
     "categoryMarketingDesc": "Meta Pixel i TikTok Pixel — pomiar skuteczności reklam i remarketing.",
     "moreInfo": "Więcej w",
     "moreInfoLink": "Polityce cookies"
+  },
+  "fakty": {
+    "wymiaryOpis": "Wymiary, szerokość 3 m",
+    "produkcja": "4–6 tyg.",
+    "produkcjaOpis": "Produkcja od akceptacji projektu",
+    "izolacja": "100 / 160 mm",
+    "izolacjaOpis": "Płyta PIR: ściany / dach",
+    "gwarancja": "2 lata",
+    "gwarancjaOpis": "Gwarancja na konstrukcję",
+    "najwiekszy": "12×3 m od",
+    "wszystkieCeny": "ceny we wszystkich wymiarach",
+    "skonfiguruj": "Skonfiguruj i sprawdź cenę",
+    "zapytaj": "Zapytaj o wycenę",
+    "wybierzH2": "Wybierz wymiar, cena od razu",
+    "wymiar": "Wymiar",
+    "wCenie": "W cenie",
+    "osobno": "Wyceniamy osobno",
+    "netto": "netto",
+    "skonfigurujWymiar": "Skonfiguruj",
+    "tabela": "Pełna tabela cen",
+    "rzut": "Rzut z góry w skali, obrys 12×3 m dla porównania",
+    "niedostepny": "dostępny od"
   }
 }

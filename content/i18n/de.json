@@ -52,7 +52,8 @@
     "honeypot": "Hilfsfeld (nicht ausfüllen)",
     "hours": "Mo-Fr: 7:00-15:00",
     "message": "Nachricht",
-    "messagePlaceholder": "Beschreiben Sie Ihre Anforderungen — Maße, Standort, Verwendung..."
+    "messagePlaceholder": "Beschreiben Sie Ihre Anforderungen — Maße, Standort, Verwendung...",
+    "typeLabel": "Verwendungszweck"
   },
   "related": {
     "eyebrow": "Könnte nützlich sein",
@@ -115,5 +116,14 @@
     "categoryMarketingDesc": "Meta Pixel und TikTok Pixel — Messung der Werbewirksamkeit und Remarketing.",
     "moreInfo": "Mehr in der",
     "moreInfoLink": "Cookie-Richtlinie"
+  },
+  "fakty": {
+    "wymiaryOpis": "Maße, 3 m breit",
+    "produkcja": "4–6 Wo.",
+    "produkcjaOpis": "Produktion ab Projektfreigabe",
+    "izolacja": "100 / 160 mm",
+    "izolacjaOpis": "PIR-Paneel: Wände / Dach",
+    "gwarancja": "2 Jahre",
+    "gwarancjaOpis": "Garantie auf die Konstruktion"
   }
 }

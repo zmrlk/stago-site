@@ -193,15 +193,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">{{form.h2}}</h2>
       <div class="product-form-grid">
         <form class="product-form" id="product-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="{{ui.form.name}}" required>
-          <input type="tel" name="phone" placeholder="{{ui.form.phone}}" required>
-          <input type="email" name="email" placeholder="{{ui.form.email}}">
-          <select name="type" data-default="{{form.selectedType}}">
+          <input type="text" name="name" placeholder="{{ui.form.name}}" aria-label="{{ui.form.name}}" required>
+          <input type="tel" name="phone" placeholder="{{ui.form.phone}}" aria-label="{{ui.form.phone}}" required>
+          <input type="email" name="email" placeholder="{{ui.form.email}}" aria-label="{{ui.form.email}}">
+          <select name="type" data-default="{{form.selectedType}}" aria-label="{{ui.form.typeLabel}}">
             {{#form.options}}
             <option value="{{value}}">{{label}}</option>
             {{/form.options}}
           </select>
-          <textarea name="message" rows="4" placeholder="{{form.textareaPlaceholder}}"></textarea>
+          <textarea name="message" rows="4" placeholder="{{form.textareaPlaceholder}}" aria-label="{{form.textareaPlaceholder}}"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="{{ui.form.honeypot}}"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> {{{ui.form.consent}}} <a href="{{{pageRoot}}}polityka-prywatnosci.html" target="_blank">{{{ui.form.privacyLink}}}</a></label>
           <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> {{{ui.form.consentOptional}}}</label>

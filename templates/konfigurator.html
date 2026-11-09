@@ -1333,14 +1333,14 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
               <div class="dim-group">
                 <label>Długość</label>
                 <div class="dim-field">
-                  <input type="number" id="dimL" step="0.1" min="2" max="18" placeholder="6" oninput="updateDims()">
+                  <input type="number" id="dimL" aria-label="Długość (m)" step="0.1" min="2" max="18" placeholder="6" oninput="updateDims()">
                   <span class="unit">m</span>
                 </div>
               </div>
               <div class="dim-group">
                 <label>Szerokość</label>
                 <div class="dim-field">
-                  <input type="number" id="dimW" step="0.1" min="2" max="6" placeholder="3" oninput="updateDims()">
+                  <input type="number" id="dimW" aria-label="Szerokość (m)" step="0.1" min="2" max="6" placeholder="3" oninput="updateDims()">
                   <span class="unit">m</span>
                 </div>
               </div>
@@ -1632,10 +1632,10 @@ button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
         <div class="contact-card">
           <h3>{{step5.contactHeading}}</h3>
           <form class="cfg-form" id="cfgForm" data-stago-form>
-            <input type="text" name="name" placeholder="Imię i nazwisko *" required>
-            <input type="tel" name="phone" placeholder="Telefon *" required>
-            <input type="email" name="email" placeholder="Email">
-            <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)"></textarea>
+            <input type="text" name="name" placeholder="Imię i nazwisko *" aria-label="Imię i nazwisko" required>
+            <input type="tel" name="phone" placeholder="Telefon *" aria-label="Telefon" required>
+            <input type="email" name="email" placeholder="Email" aria-label="Email">
+            <textarea name="notes" rows="2" placeholder="Uwagi (opcjonalnie)" aria-label="Uwagi (opcjonalnie)"></textarea>
             <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
             <button type="submit" class="cfg-submit">{{step5.submitLabel}}</button>
             <p class="form-error" id="cfgForm-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:8px"></p>
