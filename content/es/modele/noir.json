@@ -87,8 +87,8 @@
     ]
   },
   "specs": {
-    "eyebrow": "Construcción",
-    "h2": "Lo que es constante — independientemente del acabado",
+    "eyebrow": "Calidad STAGO",
+    "h2": "La calidad empieza por la estructura",
     "items": [
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
@@ -110,7 +110,8 @@
         "h3": "Instalaciones a medida",
         "text": "Electricidad, iluminación LED, agua, saneamiento, ventilación, climatización: las planificamos según su uso y las presupuestamos en la oferta. El pabellón llega listo para conectar en su parcela."
       }
-    ]
+    ],
+    "sub": "Cada pabellón STAGO se fabrica en nuestra planta cerca de Jędrzejów, sobre una estructura de acero soldada. El aislamiento y la estructura son iguales en los 12 modelos; cambia el volumen."
   },
   "wCenie": {
     "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model NOIR (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",

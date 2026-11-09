@@ -91,7 +91,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <p class="product-eyebrow-name">Model</p>
         {{#h1Nazwa}}<h1 class="product-h1"><span class="product-nazwa">{{h1Nazwa}}</span><span class="product-h1-reszta">{{h1Reszta}}</span></h1>{{/h1Nazwa}}
         {{^h1Nazwa}}<h1>{{{hero.h1}}}</h1>{{/h1Nazwa}}
-        {{#hero.haslo}}<p class="product-haslo">{{{hero.haslo}}}</p>{{/hero.haslo}}
         <p class="product-subtitle">{{{hero.subtitle}}}</p>
         <div class="product-cena">
           <p class="product-cena-od">{{{hero.price}}} <span>{{{hero.priceNote}}}</span></p>
@@ -119,14 +118,37 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
 
 
 
-  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+
+
+
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">{{specs.eyebrow}}</p>
+      <h2 class="h2">{{specs.h2}}</h2>
+      {{#specs.sub}}<p class="section-sub">{{{specs.sub}}}</p>{{/specs.sub}}
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img src="{{{root}}}assets/konstrukcja/przekroj-pawilonu.webp" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          {{#specs.items}}<div class="karta-dane-row"><dt>{{h3}}</dt><dd>{{{text}}}</dd></div>{{/specs.items}}
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="{{{pageRoot}}}technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- POZNAJ / SKONFIGURUJ (Karol 9.11: po konstrukcji, nie „wybierz wymiar, cena od razu”): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
        Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
   {{#wCenie.pokaz}}
-  <section class="wymiar-section section section-light" id="co-jest-w-cenie">
+  <section class="wymiar-section section section-white" id="co-jest-w-cenie">
     <div class="container">
-      <p class="eyebrow">{{wCenie.eyebrow}}</p>
-      <h2 class="h2">{{#ui.fakty}}{{{ui.fakty.wybierzH2}}}{{/ui.fakty}}{{^ui.fakty}}{{{wCenie.h2}}}{{/ui.fakty}}</h2>
-      <p class="section-sub">{{{wCenie.intro}}}</p>
+      <p class="eyebrow">{{#ui.fakty}}{{{ui.fakty.skonfigurujEyebrow}}}{{/ui.fakty}}{{^ui.fakty}}{{wCenie.eyebrow}}{{/ui.fakty}}</p>
+      <h2 class="h2">{{#ui.fakty}}{{{ui.fakty.skonfigurujH2}}} {{productType}}{{/ui.fakty}}{{^ui.fakty}}{{{wCenie.h2}}}{{/ui.fakty}}</h2>
+      <p class="section-sub">{{#ui.fakty}}{{{ui.fakty.skonfigurujIntro}}}{{/ui.fakty}}{{^ui.fakty}}{{{wCenie.intro}}}{{/ui.fakty}}</p>
       {{#maCennikModelu}}
       <div class="wymiar-uklad" data-wybor-wymiaru>
         <div class="wymiar-wybor">
@@ -191,40 +213,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   </section>
   {{/wCenie.pokaz}}
 
-  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
-  <section class="gallery-section section section-white">
-    <div class="container">
-      <p class="eyebrow">{{gallery.eyebrow}}</p>
-      <h2 class="h2">{{gallery.h2}}</h2>
-      <div class="product-gallery">
-        {{#gallery.items}}
-        <figure class="product-gallery-item"><img src="{{img}}" data-full="{{pelny}}" alt="{{alt}}" loading="lazy">{{#label}}<figcaption>{{label}}</figcaption>{{/label}}</figure>
-        {{/gallery.items}}
-      </div>
-      <p class="product-gallery-link"><a href="{{{pageRoot}}}realizacje.html">{{{ui.nav.realizacje}}} &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
-  <section class="specs-section section">
-    <div class="container">
-      <p class="eyebrow">{{specs.eyebrow}}</p>
-      <h2 class="h2">{{specs.h2}}</h2>
-      <div class="konstrukcja-uklad">
-        <figure class="konstrukcja-obraz">
-          <img src="{{{root}}}assets/konstrukcja/przekroj-pawilonu.webp" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
-          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
-        </figure>
-        <dl class="karta-dane">
-          {{#specs.items}}<div class="karta-dane-row"><dt>{{h3}}</dt><dd>{{{text}}}</dd></div>{{/specs.items}}
-        </dl>
-      </div>
-      <p class="product-gallery-link"><a href="{{{pageRoot}}}technologia.html">Technologia i etapy produkcji &rarr;</a></p>
-    </div>
-  </section>
-
   <!-- USECASES — do czego pasuje -->
-  <section class="usecases-section section section-white">
+  <section class="usecases-section section">
     <div class="container">
       <p class="eyebrow">{{usecases.eyebrow}}</p>
       <h2 class="h2">{{{usecases.h2}}}</h2>
@@ -243,6 +233,20 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <span class="usecase-arrow">{{{ui.hub.seeAll}}}</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">{{gallery.eyebrow}}</p>
+      <h2 class="h2">{{gallery.h2}}</h2>
+      <div class="product-gallery">
+        {{#gallery.items}}
+        <figure class="product-gallery-item"><img src="{{img}}" data-full="{{pelny}}" alt="{{alt}}" loading="lazy">{{#label}}<figcaption>{{label}}</figcaption>{{/label}}</figure>
+        {{/gallery.items}}
+      </div>
+      <p class="product-gallery-link"><a href="{{{pageRoot}}}realizacje.html">{{{ui.nav.realizacje}}} &rarr;</a></p>
     </div>
   </section>
 

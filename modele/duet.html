@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../style.css?v=17dcf090" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css?v=17dcf090"></noscript><style>
+  <link rel="preload" href="../style.css?v=d29522c9" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css?v=d29522c9"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -107,7 +107,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <p class="product-eyebrow-name">Model</p>
         <h1 class="product-h1"><span class="product-nazwa">DUET</span><span class="product-h1-reszta">Bryła z bocznymi akcentami i frontem.</span></h1>
 
-        <p class="product-haslo">Trudno go przeoczyć.</p>
         <p class="product-subtitle">Grafitowa bryła spięta dwoma drewnianymi pasami, z witryną na środku. Wpada w oko z daleka — zauważysz go, jadąc nawet drugim pasem. Co w nim ustawisz, to już Twoja decyzja: sklep, showroom, biuro.</p>
         <div class="product-cena">
           <p class="product-cena-od">od 24 515 zł <span>netto · baza 4×3 m</span></p>
@@ -115,7 +114,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         </div>
         <div class="product-hero-cta">
           <a href="../konfigurator.html?model=duet" class="btn btn-primary btn-lg">Skonfiguruj DUET</a>
-          <a href="#wycena" class="btn btn-outline-dark btn-lg">Zapytaj o wycenę</a>
+          <a href="#wycena" class="btn btn-outline-dark btn-lg">Darmowa wycena</a>
 
         </div>
       </div>
@@ -135,14 +134,37 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
 
 
 
-  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+
+
+
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">Jakość STAGO</p>
+      <h2 class="h2">Jakość zaczyna się od konstrukcji</h2>
+      <p class="section-sub">Każdy pawilon STAGO powstaje w naszym zakładzie pod Jędrzejowem, na spawanej ramie stalowej. Izolacja i konstrukcja są takie same w każdym z 12 modeli; różni je bryła.</p>
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img width="882" height="900" src="../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          <div class="karta-dane-row"><dt>Spawana rama stalowa</dt><dd>Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą.</dd></div><div class="karta-dane-row"><dt>Izolacja PIR: ściany 100 mm, dach 160 mm</dt><dd>Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak.</dd></div><div class="karta-dane-row"><dt>Stolarka PVC lub aluminiowa</dt><dd>Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta.</dd></div><div class="karta-dane-row"><dt>Instalacje pod zamówienie</dt><dd>Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce.</dd></div>
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="../technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- POZNAJ / SKONFIGURUJ (Karol 9.11: po konstrukcji, nie „wybierz wymiar, cena od razu”): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
        Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
 
-  <section class="wymiar-section section section-light" id="co-jest-w-cenie">
+  <section class="wymiar-section section section-white" id="co-jest-w-cenie">
     <div class="container">
-      <p class="eyebrow">Cena</p>
-      <h2 class="h2">Wybierz wymiar, cena od razu</h2>
-      <p class="section-sub">Cena modelu DUET = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.</p>
+      <p class="eyebrow">Wymiary i ceny</p>
+      <h2 class="h2">Poznaj i skonfiguruj DUET</h2>
+      <p class="section-sub">Wybierz wymiar i zobacz cenę netto. W konfiguratorze ułożysz okna i drzwi, a ofertę z transportem i montażem przygotujemy po zapytaniu.</p>
 
       <div class="wymiar-uklad" data-wybor-wymiaru>
         <div class="wymiar-wybor">
@@ -207,50 +229,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   </section>
 
 
-  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
-  <section class="gallery-section section section-white">
-    <div class="container">
-      <p class="eyebrow">Zobacz na żywo</p>
-      <h2 class="h2">Tak wyglądają nasze realizacje</h2>
-      <div class="product-gallery">
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-9db0d3ec-800.webp?v=6f0cfac4" data-full="../assets/gallery/realizacje/rz-9db0d3ec.webp?v=23e0e4ce" alt="Drewniana elewacja i pełne drzwi" loading="lazy"><figcaption>Drewniana elewacja i pełne drzwi</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-8a2652d5-800.webp?v=78946b1e" data-full="../assets/gallery/realizacje/rz-8a2652d5.webp?v=1d3cfa1d" alt="Dwa zestawy przeszkleń" loading="lazy"><figcaption>Dwa zestawy przeszkleń</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-e8f418e4-800.webp?v=b7011fed" data-full="../assets/gallery/realizacje/rw-e8f418e4.webp?v=fb2e050e" alt="Czarne profile i dwa okna" loading="lazy"><figcaption>Czarne profile i dwa okna</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-2251d748-800.webp?v=e8e7dc9f" data-full="../assets/gallery/realizacje/rz-2251d748.webp?v=c445758a" alt="Pełne drzwi i małe okno" loading="lazy"><figcaption>Pełne drzwi i małe okno</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-5fde87eb-800.webp?v=3c6cdca9" data-full="../assets/gallery/realizacje/rz-5fde87eb.webp?v=730be05a" alt="Antracyt i wysokie narożniki" loading="lazy"><figcaption>Antracyt i wysokie narożniki</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"><figcaption>Czarne profile i wydzielona toaleta</figcaption></figure>
-
-      </div>
-      <p class="product-gallery-link"><a href="../realizacje.html">Realizacje &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
-  <section class="specs-section section">
-    <div class="container">
-      <p class="eyebrow">Konstrukcja</p>
-      <h2 class="h2">Co jest stałe — niezależnie od wykończenia</h2>
-      <div class="konstrukcja-uklad">
-        <figure class="konstrukcja-obraz">
-          <img width="882" height="900" src="../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
-          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
-        </figure>
-        <dl class="karta-dane">
-          <div class="karta-dane-row"><dt>Spawana rama stalowa</dt><dd>Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą.</dd></div><div class="karta-dane-row"><dt>Izolacja PIR: ściany 100 mm, dach 160 mm</dt><dd>Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak.</dd></div><div class="karta-dane-row"><dt>Stolarka PVC lub aluminiowa</dt><dd>Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta.</dd></div><div class="karta-dane-row"><dt>Instalacje pod zamówienie</dt><dd>Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce.</dd></div>
-        </dl>
-      </div>
-      <p class="product-gallery-link"><a href="../technologia.html">Technologia i etapy produkcji &rarr;</a></p>
-    </div>
-  </section>
-
   <!-- USECASES — do czego pasuje -->
-  <section class="usecases-section section section-white">
+  <section class="usecases-section section">
     <div class="container">
       <p class="eyebrow">Do czego pasuje</p>
       <h2 class="h2">Gdzie DUET sprawdza się najlepiej</h2>
@@ -281,6 +261,30 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <span class="usecase-arrow">Zobacz wszystkie &rarr;</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">Zobacz na żywo</p>
+      <h2 class="h2">Tak wyglądają nasze realizacje</h2>
+      <div class="product-gallery">
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-9db0d3ec-800.webp?v=6f0cfac4" data-full="../assets/gallery/realizacje/rz-9db0d3ec.webp?v=23e0e4ce" alt="Drewniana elewacja i pełne drzwi" loading="lazy"><figcaption>Drewniana elewacja i pełne drzwi</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-8a2652d5-800.webp?v=78946b1e" data-full="../assets/gallery/realizacje/rz-8a2652d5.webp?v=1d3cfa1d" alt="Dwa zestawy przeszkleń" loading="lazy"><figcaption>Dwa zestawy przeszkleń</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-e8f418e4-800.webp?v=b7011fed" data-full="../assets/gallery/realizacje/rw-e8f418e4.webp?v=fb2e050e" alt="Czarne profile i dwa okna" loading="lazy"><figcaption>Czarne profile i dwa okna</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-2251d748-800.webp?v=e8e7dc9f" data-full="../assets/gallery/realizacje/rz-2251d748.webp?v=c445758a" alt="Pełne drzwi i małe okno" loading="lazy"><figcaption>Pełne drzwi i małe okno</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-5fde87eb-800.webp?v=3c6cdca9" data-full="../assets/gallery/realizacje/rz-5fde87eb.webp?v=730be05a" alt="Antracyt i wysokie narożniki" loading="lazy"><figcaption>Antracyt i wysokie narożniki</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"><figcaption>Czarne profile i wydzielona toaleta</figcaption></figure>
+
+      </div>
+      <p class="product-gallery-link"><a href="../realizacje.html">Realizacje &rarr;</a></p>
     </div>
   </section>
 

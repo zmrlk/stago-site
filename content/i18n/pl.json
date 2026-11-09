@@ -150,8 +150,7 @@
     "najwiekszy": "12×3 m od",
     "wszystkieCeny": "ceny we wszystkich wymiarach",
     "skonfiguruj": "Skonfiguruj i sprawdź cenę",
-    "zapytaj": "Zapytaj o wycenę",
-    "wybierzH2": "Wybierz wymiar, cena od razu",
+    "zapytaj": "Darmowa wycena",
     "wymiar": "Wymiar",
     "wCenie": "W cenie",
     "osobno": "Wyceniamy osobno",
@@ -159,6 +158,9 @@
     "skonfigurujWymiar": "Skonfiguruj",
     "tabela": "Pełna tabela cen",
     "rzut": "Rzut z góry w skali, obrys 12×3 m dla porównania",
-    "niedostepny": "dostępny od"
+    "niedostepny": "dostępny od",
+    "skonfigurujEyebrow": "Wymiary i ceny",
+    "skonfigurujH2": "Poznaj i skonfiguruj",
+    "skonfigurujIntro": "Wybierz wymiar i zobacz cenę netto. W konfiguratorze ułożysz okna i drzwi, a ofertę z transportem i montażem przygotujemy po zapytaniu."
   }
 }

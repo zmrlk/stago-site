@@ -87,8 +87,8 @@
     ]
   },
   "specs": {
-    "eyebrow": "Costruzione",
-    "h2": "Cosa è costante — indipendentemente dalla finitura",
+    "eyebrow": "Qualità STAGO",
+    "h2": "La qualità parte dalla struttura",
     "items": [
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
@@ -110,7 +110,8 @@
         "h3": "Impianti su ordinazione",
         "text": "Impianto elettrico, illuminazione LED, acqua, fognatura, ventilazione, climatizzazione: li progettiamo in base alla destinazione e li quotiamo nell'offerta. Il padiglione arriva pronto per l'allacciamento sul terreno."
       }
-    ]
+    ],
+    "sub": "Ogni padiglione STAGO nasce nel nostro stabilimento vicino a Jędrzejów, su un telaio in acciaio saldato. Isolamento e struttura sono uguali in tutti i 12 modelli; cambia la forma."
   },
   "wCenie": {
     "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model LOFT (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",

@@ -87,8 +87,8 @@
     ]
   },
   "specs": {
-    "eyebrow": "Konstruktion",
-    "h2": "Was immer gleich bleibt — unabhängig von der Ausstattung",
+    "eyebrow": "STAGO-Qualität",
+    "h2": "Qualität beginnt bei der Konstruktion",
     "items": [
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
@@ -110,7 +110,8 @@
         "h3": "Installationen nach Bedarf",
         "text": "Elektrik, LED-Beleuchtung, Wasser, Abwasser, Lüftung, Klimaanlage: wir planen sie nach Ihrem Verwendungszweck und kalkulieren sie im Angebot. Der Pavillon kommt anschlussfertig auf Ihr Grundstück."
       }
-    ]
+    ],
+    "sub": "Jeder STAGO-Pavillon entsteht in unserem Werk bei Jędrzejów auf einem geschweißten Stahlrahmen. Dämmung und Konstruktion sind bei allen 12 Modellen gleich, sie unterscheiden sich im Baukörper."
   },
   "wCenie": {
     "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model VIEW (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",

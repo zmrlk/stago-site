@@ -87,8 +87,8 @@
     ]
   },
   "specs": {
-    "eyebrow": "Konštrukcia",
-    "h2": "Čo je stále — bez ohľadu na dokončenie",
+    "eyebrow": "Kvalita STAGO",
+    "h2": "Kvalita začína konštrukciou",
     "items": [
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
@@ -110,7 +110,8 @@
         "h3": "Inštalácie na objednávku",
         "text": "Elektrika, LED osvetlenie, voda, kanalizácia, ventilácia, klimatizácia: navrhneme podľa vášho účelu a naceníme v ponuke. Pavilón príde pripravený na pripojenie na pozemku."
       }
-    ]
+    ],
+    "sub": "Každý pavilón STAGO vzniká v našom závode pri Jędrzejówe na zváranom oceľovom ráme. Izolácia a konštrukcia sú pri všetkých 12 modeloch rovnaké, líšia sa tvarom."
   },
   "wCenie": {
     "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model NORD (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true. TODO(tłumaczenie): przetłumaczyć z PL i ustawić 'pokaz': true.",

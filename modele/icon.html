@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../style.css?v=17dcf090" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css?v=17dcf090"></noscript><style>
+  <link rel="preload" href="../style.css?v=d29522c9" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css?v=d29522c9"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -107,7 +107,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <p class="product-eyebrow-name">Model</p>
         <h1 class="product-h1"><span class="product-nazwa">ICON</span><span class="product-h1-reszta">Pawilon premium z narożnym przeszkleniem.</span></h1>
 
-        <p class="product-haslo">Twoje wnętrze na wystawie.</p>
         <p class="product-subtitle">Drewno na ciemnym tle i przeszklenia od podłogi po sufit. To, co dzieje się w środku, widać z chodnika — i to ono przyciąga ludzi, zanim zdążysz się odezwać. Studio, showroom, biuro z charakterem.</p>
         <div class="product-cena">
           <p class="product-cena-od">od 24 515 zł <span>netto · baza 4×3 m</span></p>
@@ -115,7 +114,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         </div>
         <div class="product-hero-cta">
           <a href="../konfigurator.html?model=icon" class="btn btn-primary btn-lg">Skonfiguruj ICON</a>
-          <a href="#wycena" class="btn btn-outline-dark btn-lg">Zapytaj o wycenę</a>
+          <a href="#wycena" class="btn btn-outline-dark btn-lg">Darmowa wycena</a>
 
         </div>
       </div>
@@ -135,14 +134,37 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
 
 
 
-  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+
+
+
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">Jakość STAGO</p>
+      <h2 class="h2">Jakość zaczyna się od konstrukcji</h2>
+      <p class="section-sub">Każdy pawilon STAGO powstaje w naszym zakładzie pod Jędrzejowem, na spawanej ramie stalowej. Izolacja i konstrukcja są takie same w każdym z 12 modeli; różni je bryła.</p>
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img width="882" height="900" src="../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          <div class="karta-dane-row"><dt>Spawana rama stalowa</dt><dd>Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą.</dd></div><div class="karta-dane-row"><dt>Izolacja PIR: ściany 100 mm, dach 160 mm</dt><dd>Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak.</dd></div><div class="karta-dane-row"><dt>Stolarka PVC lub aluminiowa</dt><dd>Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta.</dd></div><div class="karta-dane-row"><dt>Instalacje pod zamówienie</dt><dd>Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce.</dd></div>
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="../technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- POZNAJ / SKONFIGURUJ (Karol 9.11: po konstrukcji, nie „wybierz wymiar, cena od razu”): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
        Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
 
-  <section class="wymiar-section section section-light" id="co-jest-w-cenie">
+  <section class="wymiar-section section section-white" id="co-jest-w-cenie">
     <div class="container">
-      <p class="eyebrow">Cena</p>
-      <h2 class="h2">Wybierz wymiar, cena od razu</h2>
-      <p class="section-sub">Cena modelu ICON = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.</p>
+      <p class="eyebrow">Wymiary i ceny</p>
+      <h2 class="h2">Poznaj i skonfiguruj ICON</h2>
+      <p class="section-sub">Wybierz wymiar i zobacz cenę netto. W konfiguratorze ułożysz okna i drzwi, a ofertę z transportem i montażem przygotujemy po zapytaniu.</p>
 
       <div class="wymiar-uklad" data-wybor-wymiaru>
         <div class="wymiar-wybor">
@@ -207,50 +229,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   </section>
 
 
-  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
-  <section class="gallery-section section section-white">
-    <div class="container">
-      <p class="eyebrow">Zobacz na żywo</p>
-      <h2 class="h2">Tak wyglądają nasze realizacje</h2>
-      <div class="product-gallery">
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-d483cbb9-800.webp?v=10afc557" data-full="../assets/gallery/realizacje/rz-d483cbb9.webp?v=5463daf3" alt="Okap i rynna" loading="lazy"><figcaption>Okap i rynna</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-5eeafed8-800.webp?v=7588562e" data-full="../assets/gallery/realizacje/rz-5eeafed8.webp?v=1acc4bab" alt="Antracyt i pięć pól · widok frontu" loading="lazy"><figcaption>Antracyt i pięć pól · widok frontu</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-ba60e071-800.webp?v=afce9b7f" data-full="../assets/gallery/realizacje/rw-ba60e071.webp?v=1390a47f" alt="Aneks kuchenny" loading="lazy"><figcaption>Aneks kuchenny</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-7b977666-800.webp?v=fde8aa5d" data-full="../assets/gallery/realizacje/rz-7b977666.webp?v=2246640f" alt="Asymetryczna bryła · widok frontu" loading="lazy"><figcaption>Asymetryczna bryła · widok frontu</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-746936c3-800.webp?v=300b0a69" data-full="../assets/gallery/realizacje/rz-746936c3.webp?v=a95269fb" alt="Pawilon na placu" loading="lazy"><figcaption>Pawilon na placu</figcaption></figure>
-
-        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-28877fcd-800.webp?v=f93a07fe" data-full="../assets/gallery/realizacje/rw-28877fcd.webp?v=46af0fcd" alt="Białe profile i podział pomieszczeń" loading="lazy"><figcaption>Białe profile i podział pomieszczeń</figcaption></figure>
-
-      </div>
-      <p class="product-gallery-link"><a href="../realizacje.html">Realizacje &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
-  <section class="specs-section section">
-    <div class="container">
-      <p class="eyebrow">Konstrukcja</p>
-      <h2 class="h2">Co jest stałe — niezależnie od wykończenia</h2>
-      <div class="konstrukcja-uklad">
-        <figure class="konstrukcja-obraz">
-          <img width="882" height="900" src="../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
-          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
-        </figure>
-        <dl class="karta-dane">
-          <div class="karta-dane-row"><dt>Spawana rama stalowa</dt><dd>Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą.</dd></div><div class="karta-dane-row"><dt>Izolacja PIR: ściany 100 mm, dach 160 mm</dt><dd>Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak.</dd></div><div class="karta-dane-row"><dt>Stolarka PVC lub aluminiowa</dt><dd>Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta.</dd></div><div class="karta-dane-row"><dt>Instalacje pod zamówienie</dt><dd>Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce.</dd></div>
-        </dl>
-      </div>
-      <p class="product-gallery-link"><a href="../technologia.html">Technologia i etapy produkcji &rarr;</a></p>
-    </div>
-  </section>
-
   <!-- USECASES — do czego pasuje -->
-  <section class="usecases-section section section-white">
+  <section class="usecases-section section">
     <div class="container">
       <p class="eyebrow">Do czego pasuje</p>
       <h2 class="h2">Gdzie ICON sprawdza się najlepiej</h2>
@@ -281,6 +261,30 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <span class="usecase-arrow">Zobacz wszystkie &rarr;</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">Zobacz na żywo</p>
+      <h2 class="h2">Tak wyglądają nasze realizacje</h2>
+      <div class="product-gallery">
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-d483cbb9-800.webp?v=10afc557" data-full="../assets/gallery/realizacje/rz-d483cbb9.webp?v=5463daf3" alt="Okap i rynna" loading="lazy"><figcaption>Okap i rynna</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-5eeafed8-800.webp?v=7588562e" data-full="../assets/gallery/realizacje/rz-5eeafed8.webp?v=1acc4bab" alt="Antracyt i pięć pól · widok frontu" loading="lazy"><figcaption>Antracyt i pięć pól · widok frontu</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-ba60e071-800.webp?v=afce9b7f" data-full="../assets/gallery/realizacje/rw-ba60e071.webp?v=1390a47f" alt="Aneks kuchenny" loading="lazy"><figcaption>Aneks kuchenny</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-7b977666-800.webp?v=fde8aa5d" data-full="../assets/gallery/realizacje/rz-7b977666.webp?v=2246640f" alt="Asymetryczna bryła · widok frontu" loading="lazy"><figcaption>Asymetryczna bryła · widok frontu</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-746936c3-800.webp?v=300b0a69" data-full="../assets/gallery/realizacje/rz-746936c3.webp?v=a95269fb" alt="Pawilon na placu" loading="lazy"><figcaption>Pawilon na placu</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-28877fcd-800.webp?v=f93a07fe" data-full="../assets/gallery/realizacje/rw-28877fcd.webp?v=46af0fcd" alt="Białe profile i podział pomieszczeń" loading="lazy"><figcaption>Białe profile i podział pomieszczeń</figcaption></figure>
+
+      </div>
+      <p class="product-gallery-link"><a href="../realizacje.html">Realizacje &rarr;</a></p>
     </div>
   </section>
 

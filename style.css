@@ -1297,7 +1297,7 @@ body.nav-open{overflow:hidden}
 @media(max-width:768px){.product-hero~.wymiar-section,.product-hero~.gallery-section,.product-hero~.specs-section,.product-hero~.usecases-section,.product-hero~.product-faq{padding:48px 0}}
 .product-h1{margin:0 0 16px}
 .product-nazwa{display:block;font-size:clamp(4rem,9vw,7rem);font-weight:800;letter-spacing:-.045em;line-height:1;color:var(--primary)}
-.product-h1-reszta{display:block;margin-top:16px;font-size:clamp(1.15rem,1.8vw,1.375rem);font-weight:600;letter-spacing:-.01em;line-height:1.35;color:var(--primary)}
+.product-h1-reszta{display:block;margin-top:12px;font-size:1.1rem;font-weight:700;letter-spacing:-.01em;line-height:1.4;color:var(--primary)}
 .product-hero-text .product-haslo{font-size:1rem;font-weight:600;font-style:italic;letter-spacing:0;line-height:1.5;color:var(--primary);margin:0 0 12px}
 .product-cena{margin:0 0 24px}
 .product-cena-od{font-size:clamp(2rem,3.4vw,2.75rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--primary);font-variant-numeric:tabular-nums;margin:0}

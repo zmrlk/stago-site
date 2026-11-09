@@ -88,8 +88,8 @@
     ]
   },
   "specs": {
-    "eyebrow": "Konstrukcja",
-    "h2": "Co jest stałe — niezależnie od wykończenia",
+    "eyebrow": "Jakość STAGO",
+    "h2": "Jakość zaczyna się od konstrukcji",
     "items": [
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
@@ -111,7 +111,8 @@
         "h3": "Instalacje pod zamówienie",
         "text": "Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce."
       }
-    ]
+    ],
+    "sub": "Każdy pawilon STAGO powstaje w naszym zakładzie pod Jędrzejowem, na spawanej ramie stalowej. Izolacja i konstrukcja są takie same w każdym z 12 modeli; różni je bryła."
   },
   "wCenie": {
     "_todo": "TODO(STAGO): uzupełnić opis, co dokładnie zawiera dopłata za model KIOS (lista 'model.items'). Sekcja widoczna, gdy 'pokaz' = true.",
