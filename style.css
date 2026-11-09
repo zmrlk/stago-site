@@ -4,7 +4,7 @@
    ═══════════════════════════════════════════ */
 
 /* ── ACCESSIBILITY ── */
-.skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:12px 24px;border-radius:0 0 8px 8px;z-index:9999;font-weight:700;font-size:.9rem;text-decoration:none;transition:top .2s}
+.skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);background:#C03311;color:#fff;padding:12px 24px;border-radius:0 0 8px 8px;z-index:9999;font-weight:700;font-size:.9rem;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:0}
 *:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
 input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(232,70,28,.2)}
@@ -188,7 +188,7 @@ button{-webkit-tap-highlight-color:transparent}
 .story-chapter p{font-size:1rem;line-height:1.7;color:var(--t2);margin:0}
 .story-bottom{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
 .story-pullquote{font-size:1.1rem;font-style:italic;color:var(--primary);line-height:1.6;padding:16px 0;margin:0;background:none;flex:1;min-width:min(280px,100%)}
-.story-pullquote cite{display:block;font-size:.82rem;color:var(--t3);font-style:normal;margin-top:8px}
+.story-pullquote cite{display:block;font-size:.82rem;color:var(--t2);font-style:normal;margin-top:8px}
 
 /* ── FINANCING ── */
 
@@ -1380,3 +1380,89 @@ body.nav-open{overflow:hidden}
 .nav-social a,.footer-social a,.social-links a,.nav-mobile-socials a{min-width:24px;min-height:24px;justify-content:center}
 .nav-phone{min-height:24px}
 @media(pointer:coarse){.footer-social a,.social-links a,.nav-mobile-socials a{min-width:44px;min-height:44px}}
+
+/* ─── STRONA GŁÓWNA: poprawki 9.11 (wygląd bez zmian; Karol: obecna bogatsza wersja zostaje) ─── */
+/* Kontrast tekstu (Helix G2): etykiety i dopiski kart porównania, gwiazdki na ciemnym tle. */
+.strona-glowna .compare-bad .compare-label,.strona-glowna .compare-bad .compare-price span{color:var(--t2);opacity:1}
+.strona-glowna .compare-good .compare-label,.strona-glowna .section-dark .review-stars{color:#FF6B3D}
+/* Dwie reguły .compare-list nakładały kółko i „•” w kształt pinezki; zostaje kółko. Kwota nie łamie się przy 280 px. */
+.strona-glowna .compare-list li::before{content:''}
+.compare-list strong{white-space:nowrap}
+/* Opinie: stała wysokość 380 px zostawiała pół karty pustej; karta ma wysokość treści, rząd równy. */
+.strona-glowna .review-card{height:auto}
+.strona-glowna .review-text{overflow:visible;flex:1 1 auto;padding-right:0}
+/* Menu strony głównej ma dodatkowy „Kontakt”; przy 769–900 px wypychał numer telefonu poza ekran (też na produkcji). */
+@media(min-width:769px) and (max-width:900px){.nav-kontakt{display:none}}
+/* Hero na telefonie: plakietka i opis stoją na jaśniejszej części zdjęcia, za mały kontrast. */
+@media(max-width:767px){.strona-glowna .hero-overlay{background:linear-gradient(180deg,rgba(26,26,26,.6) 0%,rgba(26,26,26,.78) 45%,rgba(26,26,26,.88) 100%)}}
+/* ─── Znak STAGO na stronie (Karol 9.11, rada 4 modeli): ptaszek to NAROŻNIK. W sygnecie domyka prawy górny róg S,
+   na stronie domyka prawy górny róg tego, co robi STAGO. Pojedynczo, pełny #F94608 (plik assets/ptaszek.svg z krzywych
+   księgi znaku), min. 24 px, bez obrotu, odbicia i przezroczystości, nigdy przy cyfrach. Wzór = rzut w siatce 1 m. ─── */
+.ptaszek{display:inline-block;height:24px;aspect-ratio:168.65/179.75;background:url(assets/ptaszek.svg) center/contain no-repeat;flex:none}
+.ptaszek-karta{position:absolute;top:16px;right:16px;height:32px}
+.ptaszek-cytat{margin-left:4px;vertical-align:-2px}
+/* zdjęcia modeli i realizacji: ptaszek wskakuje w narożnik po najechaniu myszą; na dotyku go nie ma */
+.ptaszek-hover{position:absolute;top:16px;right:16px;z-index:2;height:28px;pointer-events:none;visibility:hidden}
+.strona-glowna .product-img{position:relative}
+@media(hover:hover) and (pointer:fine){
+  .ptaszek-hover{visibility:visible;clip-path:inset(0 0 100% 100%);transform:translate(6px,-6px);transition:clip-path .22s cubic-bezier(.22,1,.36,1),transform .22s cubic-bezier(.22,1,.36,1)}
+  .product-card:hover .ptaszek-hover,.product-card:focus-visible .ptaszek-hover,.realizacja-card:hover .ptaszek-hover{clip-path:inset(0);transform:none}
+}
+/* Role sekcji strony głównej (Karol 9.11: „połowa sekcji jest pusta… trzeba to ogarnąć”):
+   zdjęcie (hero, historia, jak działamy, produkcja, realizacje, poradniki) · produkt (modele) · spokój (finansowanie)
+   · plac w bokach (czynsz vs własny, opinie) · sygnet w skali sekcji (wycena, finał strony) · układ na szerokość (FAQ). */
+/* plac: widok z góry na plac zakładu, rzuty 3 × N m w siatce 1 m, tylko w pustych bokach (środek wolny dla treści) */
+.wzor-plac{background-repeat:no-repeat;background-position:center top}
+.wzor-plac-porownanie{background-image:url(assets/wzor-plac-porownanie.svg)}
+.wzor-plac-opinie{background-image:url(assets/wzor-plac-opinie.svg)}
+@media(max-width:1199px){.wzor-plac{background-image:none}}
+/* opinie: rytm elewacji (lamele) w bokach; inny motyw niż plac, żeby wzór się nie powtarzał (Karol 9.11) */
+.wzor-lamele{position:relative;overflow:hidden}
+.wzor-lamele>.container{position:relative;z-index:1}
+.wzor-lamele::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(to right,#222221 0 8px,transparent 8px 20px);-webkit-mask-image:linear-gradient(to right,#000 calc(50% - 760px),transparent calc(50% - 500px),transparent calc(50% + 500px),#000 calc(50% + 760px));mask-image:linear-gradient(to right,#000 calc(50% - 760px),transparent calc(50% - 500px),transparent calc(50% + 500px),#000 calc(50% + 760px))}
+@media(max-width:1199px){.wzor-lamele::before{display:none}}
+/* wycena: sekcja układa sygnet. Wielka S w tonie tła po lewej (za danymi kontaktowymi), ptaszek domyka narożnik karty
+   formularza po prawej, czyli tam, gdzie stoi w sygnecie. Formularz bez zmian (pola, id, obsługa). */
+.wycena{background:#1A1A1A url(assets/wzor-eska.svg) calc(50% - 510px) calc(100% + 96px)/420px 560px no-repeat}
+.wycena-uklad{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:stretch}
+.wycena-info{display:flex;flex-direction:column}
+.wycena-info .h2{font-size:clamp(1.75rem,2.4vw,2.25rem);margin:0}
+.wycena-kontakt{margin-top:auto;padding-top:32px}
+.wycena-info .eyebrow,.wycena-info .h2{text-align:left}
+.wycena-etykieta{margin:32px 0 6px;font-size:1rem;line-height:1.4;font-weight:700;color:var(--white)}
+.wycena-kontakt>.wycena-etykieta:first-child{margin-top:0}
+.wycena-tel{display:block;width:max-content;font-size:clamp(1.75rem,2.4vw,2.125rem);font-weight:800;letter-spacing:-.02em;line-height:1.2;color:var(--white);font-variant-numeric:tabular-nums;white-space:nowrap;transition:color .15s}
+.wycena-tel:hover{color:#FF6B3D}
+.wycena-tekst{font-size:1rem;line-height:1.6;color:var(--t-light2);margin:8px 0 0}
+.wycena-social{display:flex;gap:8px;margin-top:24px}
+.wycena-social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:999px;border:1px solid var(--border-dark);color:var(--t-light2);transition:color .15s,border-color .15s}
+.wycena-social a:hover{color:var(--white);border-color:rgba(255,255,255,.3)}
+.wycena-karta{position:relative;padding:52px 32px 32px;border:1px solid var(--border-dark);border-radius:24px;background:rgba(255,255,255,.03)}
+.wycena-karta .ptaszek-karta{height:28px}
+/* pola formularza: wypełniają kolumnę i nie wychodzą poza kartę; lista modeli wygląda i ma wysokość jak pola (Safari) */
+.form-row>*{min-width:0}
+.contact-form input:not([type=checkbox]),.contact-form select,.contact-form textarea{width:100%;min-width:0;box-sizing:border-box}
+.contact-form select{-webkit-appearance:none;appearance:none;padding-right:44px;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1.5l5 5 5-5' fill='none' stroke='%23A3A3A0' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");background-repeat:no-repeat;background-position:right 18px center}
+.contact-form select option{color:#1D1D1B}
+@media(hover:hover) and (pointer:fine){.wycena .contact-form input:not([type=checkbox]),.wycena .contact-form select,.wycena .contact-form textarea{font-size:14px;padding:11px 14px}.wycena .contact-form select{padding-right:40px;background-position:right 16px center}}
+@media(max-width:1023px){
+  .wycena{background-image:none}
+  .wycena-tel{margin:0 auto}
+  .wycena-uklad{grid-template-columns:minmax(0,1fr);gap:40px}
+  .wycena-info{text-align:center}
+  .wycena-info .eyebrow,.wycena-info .h2{text-align:center}
+  .wycena-social{justify-content:center}
+}
+@media(max-width:767px){.wycena-karta{padding:52px 20px 24px;border-radius:16px}}
+/* FAQ na szerokość: nagłówek z telefonem po lewej, pytania po prawej (wcześniej wąska kolumna i puste boki) */
+@media(min-width:1024px){
+  .faq-uklad{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:start}
+  .faq-glowa{position:sticky;top:120px}
+  .faq-glowa .eyebrow,.faq-glowa .h2{text-align:left}
+  .faq-uklad .faq-list{margin:0;max-width:none}
+}
+.faq-tel{margin-top:24px}
+@media(max-width:1023px){.faq-glowa{text-align:center}.faq-tel{display:none}}
+/* strona modelu: ptaszek domyka prawy górny narożnik wybranego rzutu i jedzie razem z długością */
+.ptaszek-rzut{position:absolute;top:0;left:calc(var(--l) / 12 * 100%);transform:translateX(-100%);height:24px;transition:left .4s cubic-bezier(.2,.8,0,1)}
+@media(prefers-reduced-motion:reduce){.ptaszek-hover,.ptaszek-rzut{transition:none}}

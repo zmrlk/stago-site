@@ -27,7 +27,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="style.css?v=d29522c9" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css?v=d29522c9"></noscript><style>
+  <link rel="preload" href="style.css?v=84c727fa" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css?v=84c727fa"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -41,7 +41,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <link rel="alternate" hreflang="es" href="https://stago.com.pl/es/">
   <link rel="alternate" hreflang="x-default" href="https://stago.com.pl/">
 </head>
-<body>
+<body class="strona-glowna">
 
   <a href="#historia" class="skip-link">Przejdź do treści</a>
 
@@ -55,7 +55,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <a href="realizacje.html">Realizacje</a>
         <a href="finansowanie.html">Finansowanie</a>
         <a href="faq.html">FAQ</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html" class="nav-kontakt">Kontakt</a>
         <a href="konfigurator.html" class="btn btn-nav">Darmowa wycena</a>
         <div class="nav-mobile-bottom">
           <a href="tel:+48509508210" class="nav-mobile-phone">
@@ -109,7 +109,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="hero-sub">Producent z własnym zakładem pod Jędrzejowem. Projektujemy i budujemy pod Ciebie — pawilony pod klucz, darmowa wizualizacja, montaż na miejscu, 2 lata gwarancji.</p>
       <div class="hero-cta">
         <a href="konfigurator.html" class="btn btn-primary">Darmowa wycena</a>
-        <a href="#historia" class="btn btn-outline-light">Zobacz więcej</a>
+        <a href="#produkty" class="btn btn-outline-light">Zobacz więcej</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -117,6 +117,83 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
+
+  <!-- PRODUKTY -->
+  <section class="section section-light" id="produkty">
+    <div class="container">
+      <p class="eyebrow">Nasze modele</p>
+      <h2 class="h2">Wybierz wzór.<br><span class="accent">Przeznaczenie dopasujesz sam.</span></h2>
+      <p class="sub">Każdy wzór dopasujemy pod Ciebie — wymiar, materiał, kolor, stolarkę i wnętrze. Poniżej sześć najczęściej wybieranych przez klientów.</p>
+      <div class="products-grid">
+
+        <a href="modele/nord.html" class="product-card reveal">
+          <div class="product-img"><img width="1000" height="900" src="assets/modele/nord.webp?v=3a3ef357" alt="NORD" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span></div>
+          <div class="product-body">
+            <h3>NORD</h3>
+            <p>Antracyt z drewnianymi akcentami w narożnikach, ogromne narożne szklenia. Skandynawski premium. Bryła, którą pamiętasz po pierwszym spojrzeniu.</p>
+            <span class="product-price">od 25 715 zł netto</span>
+            <span class="product-cta">Zobacz NORD &rarr;</span>
+          </div>
+        </a>
+
+        <a href="modele/loft.html" class="product-card reveal">
+          <div class="product-img"><img width="1000" height="900" src="assets/modele/loft.webp?v=297e121f" alt="LOFT" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span></div>
+          <div class="product-body">
+            <h3>LOFT</h3>
+            <p>Drewniane lamele, grafitowy dach, trzy duże witryny frontowe. Showroom-feel — klienci wchodzą, bo muszą zobaczyć, co w środku.</p>
+            <span class="product-price">od 25 215 zł netto</span>
+            <span class="product-cta">Zobacz LOFT &rarr;</span>
+          </div>
+        </a>
+
+        <a href="modele/duet.html" class="product-card reveal">
+          <div class="product-img"><img width="1000" height="900" src="assets/modele/duet.webp?v=35dfb3bc" alt="DUET" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span></div>
+          <div class="product-body">
+            <h3>DUET</h3>
+            <p>Grafitowy korpus, drewniane lamele po bokach, trzy witryny z drzwiami. Uniwersalny wzór do gastro, handlu i biura.</p>
+            <span class="product-price">od 24 515 zł netto</span>
+            <span class="product-cta">Zobacz DUET &rarr;</span>
+          </div>
+        </a>
+
+        <a href="modele/icon.html" class="product-card reveal">
+          <div class="product-img"><img width="1000" height="900" src="assets/modele/icon.webp?v=5ffd8fc8" alt="ICON" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span></div>
+          <div class="product-body">
+            <h3>ICON</h3>
+            <p>Drewniana elewacja, wielkie narożne szkła od podłogi do sufitu. Wygląda jak studio architekta. Dla biznesów premium.</p>
+            <span class="product-price">od 24 515 zł netto</span>
+            <span class="product-cta">Zobacz ICON &rarr;</span>
+          </div>
+        </a>
+
+        <a href="modele/mila.html" class="product-card reveal">
+          <div class="product-img"><img width="1000" height="900" src="assets/modele/mila.webp?v=83074a66" alt="MILA" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span></div>
+          <div class="product-body">
+            <h3>MILA</h3>
+            <p>Pełna drewniana elewacja w jasnym odcieniu. Skandynawski spokój. Idealny pod gabinet, domek, biuro w ciepłym tonie.</p>
+            <span class="product-price">od 25 215 zł netto</span>
+            <span class="product-cta">Zobacz MILA &rarr;</span>
+          </div>
+        </a>
+
+        <a href="modele/noir.html" class="product-card reveal">
+          <div class="product-img"><img width="1000" height="900" src="assets/modele/noir.webp?v=def476ef" alt="NOIR" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span></div>
+          <div class="product-body">
+            <h3>NOIR</h3>
+            <p>Pionowe czarne lamele, podłużne okna, butikowy charakter jak z Berlina. Dla biznesów, które chcą wyglądać premium.</p>
+            <span class="product-price">od 26 215 zł netto</span>
+            <span class="product-cta">Zobacz NOIR &rarr;</span>
+          </div>
+        </a>
+
+      </div>
+      <div class="section-cta reveal">
+        <a href="modele.html" class="btn btn-primary">Zobacz wszystkie 12 modeli</a>
+        <a href="konfigurator.html" class="btn btn-outline-dark">Wyceń swój pawilon</a>
+        <a href="tel:+48509508210" class="btn btn-outline-dark">Zadzwoń: 509 508 210</a>
+      </div>
+    </div>
+  </section>
 
   <!-- CASE STUDY -->
   <section class="section" id="historia">
@@ -150,14 +227,14 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
 
       </div>
       <div class="story-bottom reveal">
-        <blockquote class="story-pullquote" id="story-quote">"Żałuję tylko jednego — że nie zadzwoniłam wcześniej."<cite id="story-cite">— Emilia, warzywniak, Busko-Zdrój</cite></blockquote>
+        <blockquote class="story-pullquote" id="story-quote">„Żałuję tylko jednego — że nie zadzwoniłam wcześniej.<span class="ptaszek ptaszek-cytat" aria-hidden="true"></span><cite id="story-cite">— Emilia, warzywniak, Busko-Zdrój</cite></blockquote>
         <a href="konfigurator.html" class="btn btn-primary">Chcę tak samo — wyceń za darmo</a>
       </div>
     </div>
   </section>
 
   <!-- CZYNSZ VS WŁASNY (czarne tło) -->
-  <section class="section section-dark" id="porownanie">
+  <section class="section section-dark wzor-plac wzor-plac-porownanie" id="porownanie">
     <div class="container">
       <p class="eyebrow">Czynsz vs własny lokal</p>
       <h2 class="h2">Wynajem czy własny pawilon?<br><span class="accent">Policz sam.</span></h2>
@@ -170,7 +247,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <li>36 miesięcy = <strong>36 × 3 000 zł</strong></li><li>Lokal nigdy nie będzie Twój</li><li>Podwyżka czynszu kiedy chce właściciel</li><li>Remont? Za Twoje pieniądze, w cudzym lokalu</li><li>Lokalizacja nie działa? Trudno, umowa wiąże</li>
           </ul>
         </div>
-        <div class="compare-card compare-good reveal">
+        <div class="compare-card compare-good reveal"><span class="ptaszek ptaszek-karta" aria-hidden="true"></span>
           <div class="compare-label">Masz swój pawilon</div>
           <div class="compare-price">29 032 zł<span> netto, raz</span></div>
           <ul class="compare-list">
@@ -221,13 +298,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <section class="section section-process-bg" id="proces">
     <div class="container">
       <p class="eyebrow">Jak działamy</p>
-      <h2 class="h2">Po Twojej stronie jest tylko telefon.<br><span class="accent">Resztę zostaw nam.</span></h2>
+      <h2 class="h2">Po Twojej stronie jest tylko telefon.<br><span class="accent">Resztę robimy u siebie.</span></h2>
       <div class="steps">
 
         <div class="step reveal">
           <div class="step-num">01</div>
           <h3>Kontakt</h3>
-          <p>Powiedz czego potrzebujesz. Nie musisz znać wymiarów co do centymetra — od tego jesteśmy my. Doradzimy, zaproponujemy rozwiązanie.</p>
+          <p>Powiedz, czego potrzebujesz. Nie musisz znać wymiarów co do centymetra. Nie wciskamy gotowców: doradzimy i zaproponujemy układ pod Twój pomysł.</p>
         </div>
         <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
 
@@ -241,7 +318,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <div class="step reveal">
           <div class="step-num">03</div>
           <h3>Produkcja</h3>
-          <p>Budujemy u siebie w zakładzie, pod własnym okiem. Kontrolujemy każdy etap — od spawania konstrukcji po montaż stolarki. Możesz przyjechać i zobaczyć postęp prac.</p>
+          <p>Spawamy i składamy pawilon w naszym zakładzie pod Jędrzejowem. Ściany z PIR 100 mm, okna PVC lub aluminium. Możesz przyjechać i zobaczyć.</p>
         </div>
         <div class="step-connector"><div class="step-line"></div><div class="step-arrow"></div></div>
 
@@ -255,127 +332,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       </div>
       <div class="section-cta reveal" style="margin-top:48px">
         <a href="jak-kupic.html" class="btn btn-primary">Cały proces krok po kroku &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUKTY -->
-  <section class="section section-light" id="produkty">
-    <div class="container">
-      <p class="eyebrow">Nasze modele</p>
-      <h2 class="h2">Wybierz wzór.<br><span class="accent">Przeznaczenie dopasujesz sam.</span></h2>
-      <p class="sub">Każdy wzór dopasujemy pod Ciebie — wymiar, materiał, kolor, stolarkę i wnętrze. Poniżej sześć najczęściej wybieranych przez klientów.</p>
-      <div class="products-grid">
-
-        <a href="modele/nord.html" class="product-card reveal">
-          <div class="product-img"><img width="1000" height="900" src="assets/modele/nord.webp?v=3a3ef357" alt="NORD" loading="lazy"></div>
-          <div class="product-body">
-            <h3>NORD</h3>
-            <p>Antracyt z drewnianymi akcentami w narożnikach, ogromne narożne szklenia. Skandynawski premium. Bryła, którą pamiętasz po pierwszym spojrzeniu.</p>
-            <span class="product-price">od 25 715 zł netto</span>
-            <span class="product-cta">Zobacz NORD &rarr;</span>
-          </div>
-        </a>
-
-        <a href="modele/loft.html" class="product-card reveal">
-          <div class="product-img"><img width="1000" height="900" src="assets/modele/loft.webp?v=297e121f" alt="LOFT" loading="lazy"></div>
-          <div class="product-body">
-            <h3>LOFT</h3>
-            <p>Drewniane lamele, grafitowy dach, trzy duże witryny frontowe. Showroom-feel — klienci wchodzą, bo muszą zobaczyć, co w środku.</p>
-            <span class="product-price">od 25 215 zł netto</span>
-            <span class="product-cta">Zobacz LOFT &rarr;</span>
-          </div>
-        </a>
-
-        <a href="modele/duet.html" class="product-card reveal">
-          <div class="product-img"><img width="1000" height="900" src="assets/modele/duet.webp?v=35dfb3bc" alt="DUET" loading="lazy"></div>
-          <div class="product-body">
-            <h3>DUET</h3>
-            <p>Grafitowy korpus, drewniane lamele po bokach, trzy witryny z drzwiami. Uniwersalny wzór do gastro, handlu i biura.</p>
-            <span class="product-price">od 24 515 zł netto</span>
-            <span class="product-cta">Zobacz DUET &rarr;</span>
-          </div>
-        </a>
-
-        <a href="modele/icon.html" class="product-card reveal">
-          <div class="product-img"><img width="1000" height="900" src="assets/modele/icon.webp?v=5ffd8fc8" alt="ICON" loading="lazy"></div>
-          <div class="product-body">
-            <h3>ICON</h3>
-            <p>Drewniana elewacja, wielkie narożne szkła od podłogi do sufitu. Wygląda jak studio architekta. Dla biznesów premium.</p>
-            <span class="product-price">od 24 515 zł netto</span>
-            <span class="product-cta">Zobacz ICON &rarr;</span>
-          </div>
-        </a>
-
-        <a href="modele/mila.html" class="product-card reveal">
-          <div class="product-img"><img width="1000" height="900" src="assets/modele/mila.webp?v=83074a66" alt="MILA" loading="lazy"></div>
-          <div class="product-body">
-            <h3>MILA</h3>
-            <p>Pełna drewniana elewacja w jasnym odcieniu. Skandynawski spokój. Idealny pod gabinet, domek, biuro w ciepłym tonie.</p>
-            <span class="product-price">od 25 215 zł netto</span>
-            <span class="product-cta">Zobacz MILA &rarr;</span>
-          </div>
-        </a>
-
-        <a href="modele/noir.html" class="product-card reveal">
-          <div class="product-img"><img width="1000" height="900" src="assets/modele/noir.webp?v=def476ef" alt="NOIR" loading="lazy"></div>
-          <div class="product-body">
-            <h3>NOIR</h3>
-            <p>Pionowe czarne lamele, podłużne okna, butikowy charakter jak z Berlina. Dla biznesów, które chcą wyglądać premium.</p>
-            <span class="product-price">od 26 215 zł netto</span>
-            <span class="product-cta">Zobacz NOIR &rarr;</span>
-          </div>
-        </a>
-
-      </div>
-      <div class="section-cta reveal">
-        <a href="modele.html" class="btn btn-primary">Zobacz wszystkie 12 modeli</a>
-        <a href="konfigurator.html" class="btn btn-outline-dark">Wyceń swój pawilon</a>
-        <a href="tel:+48509508210" class="btn btn-outline-dark">Zadzwoń: 509 508 210</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- O FIRMIE -->
-  <section class="section section-about-bg" id="o-firmie">
-    <div class="container">
-      <p class="eyebrow">Własna produkcja</p>
-      <h2 class="h2">Wszystko pod jednym dachem.<br><span class="accent"></span></h2>
-      <div class="about-features">
-
-        <div class="about-feature reveal">
-          <div class="about-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-          </div>
-          <h3>Robimy wszystko u siebie</h3>
-          <p>Konstrukcję spawamy sami, w naszym zakładzie pod Jędrzejowem. Ściany z PIR-u 100 mm, okna i drzwi z PVC lub aluminium, wszystko porządnie. Dzięki temu zimą trzymasz ciepło, a latem nic się nie nagrzewa jak blaszak — i rachunki są spokojnie niższe, niż byś myślał.</p>
-        </div>
-
-        <div class="about-feature reveal">
-          <div class="about-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Każdy pawilon jest inny</h3>
-          <p>Bo każdy klient ma inny pomysł. Jeden chce kiosk na rynku, drugi biuro na budowie, trzeci domek na działce. Dlatego nie wciskamy gotowców — siadamy z Tobą, pytamy o szczegóły i układamy projekt od zera. A jeśli nie wiesz jeszcze, jak to ma wyglądać, pokażemy kilka propozycji do wyboru.</p>
-        </div>
-
-        <div class="about-feature reveal">
-          <div class="about-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h3>Jeden telefon i tyle</h3>
-          <p>Nie musisz latać osobno do projektanta, producenta i ekipy montażowej. Dzwonisz do nas raz — rozmawiamy, rysujemy wizualizację, wyceniamy, budujemy i stawiamy Ci to na działce. Od pierwszej rozmowy po wręczenie kluczy zajmujemy się wszystkim my.</p>
-        </div>
-
-      </div>
-      <div class="section-cta reveal" style="margin-top:48px">
-        <a href="technologia.html" class="btn btn-primary">Poznaj nas bliżej &rarr;</a>
+        <a href="technologia.html" class="btn btn-outline-dark">Poznaj nas bliżej &rarr;</a>
       </div>
     </div>
   </section>
 
   <!-- OPINIE -->
-  <section class="section section-dark" id="opinie">
+  <section class="section section-dark wzor-lamele" id="opinie">
     <div class="container">
       <p class="eyebrow">Opinie klientów</p>
       <h2 class="h2">5.0 na Google. <span class="review-count">28 opinii</span><br><span class="accent">To nie my — to nasi klienci.</span></h2>
@@ -423,11 +386,11 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="sub">Każdy projekt inny — każdy pod klienta. Kliknij żeby powiększyć.</p>
       <div class="realizacje-grid" style="margin-top:40px">
 
-        <div class="realizacja-card"><img width="800" height="600" src="assets/gallery/realizacje/rz-1a2ebacd-800.webp?v=4a2f1cef" data-full="assets/gallery/realizacje/rz-1a2ebacd.webp?v=5d0c1df7" alt="Ukośne lamele" loading="lazy"><div class="realizacja-label">Ukośne lamele</div></div>
+        <div class="realizacja-card"><img width="800" height="600" src="assets/gallery/realizacje/rz-4c3ce074-800.webp?v=9e51dac0" data-full="assets/gallery/realizacje/rz-4c3ce074.webp?v=d255a4c6" alt="Drewniana rama i dwa przeszklenia" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span><div class="realizacja-label">Drewniana rama i dwa przeszklenia</div></div>
 
-        <div class="realizacja-card"><img width="800" height="600" src="assets/gallery/realizacje/rz-5649d531-800.webp?v=f505f76a" data-full="assets/gallery/realizacje/rz-5649d531.webp?v=95834a74" alt="Antracyt i pięć pól przeszklenia" loading="lazy"><div class="realizacja-label">Antracyt i pięć pól przeszklenia</div></div>
+        <div class="realizacja-card"><img width="800" height="600" src="assets/gallery/realizacje/rz-bf628bcd-800.webp?v=039011fb" data-full="assets/gallery/realizacje/rz-bf628bcd.webp?v=1a5d0b74" alt="Trzy pola frontu i klimatyzacja" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span><div class="realizacja-label">Trzy pola frontu i klimatyzacja</div></div>
 
-        <div class="realizacja-card"><img width="800" height="600" src="assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"><div class="realizacja-label">Czarne profile i wydzielona toaleta</div></div>
+        <div class="realizacja-card"><img width="800" height="600" src="assets/gallery/realizacje/rw-28877fcd-800.webp?v=f93a07fe" data-full="assets/gallery/realizacje/rw-28877fcd.webp?v=46af0fcd" alt="Białe profile i podział pomieszczeń" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span><div class="realizacja-label">Białe profile i podział pomieszczeń</div></div>
 
       </div>
       <div class="section-cta reveal" style="margin-top:48px">
@@ -477,9 +440,12 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
 
   <!-- FAQ -->
   <section class="section section-light" id="faq">
-    <div class="container">
-      <p class="eyebrow">FAQ</p>
-      <h2 class="h2">Klienci często pytają nas:</h2>
+    <div class="container faq-uklad">
+      <div class="faq-glowa">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h2">Klienci często pytają nas:</h2>
+        <a href="tel:+48509508210" class="btn btn-outline-dark faq-tel">Zadzwoń: 509 508 210</a>
+      </div>
       <div class="faq-list">
 
         <details class="faq-item reveal">
@@ -522,11 +488,26 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   </section>
 
   <!-- KONTAKT / WYCENA -->
-  <section class="section section-dark" id="kontakt">
-    <div class="container">
-      <p class="eyebrow">Darmowa wycena</p>
-      <h2 class="h2">Napisz czego potrzebujesz.<br><span class="accent">Oddzwonimy w 24h.</span></h2>
-      <div class="contact-grid">
+  <section class="section section-dark wycena" id="kontakt">
+    <div class="container wycena-uklad">
+      <div class="wycena-info">
+        <p class="eyebrow">Darmowa wycena</p>
+        <h2 class="h2">Napisz czego potrzebujesz.<br><span class="accent">Oddzwonimy w 24h.</span></h2>
+        <div class="wycena-kontakt">
+        <p class="wycena-etykieta">Zadzwoń</p>
+        <a href="tel:+48509508210" class="wycena-tel">509 508 210</a>
+        <a href="tel:+48509508110" class="wycena-tel">509 508 110</a>
+        <p class="wycena-tekst">Pon-Pt: 7:00-15:00<br>Sob-Niedz: zamknięte</p>
+        <p class="wycena-etykieta">Odwiedź nas</p>
+        <p class="wycena-tekst">Jasionka 117, 28-300 Jędrzejów<br>woj. świętokrzyskie</p>
+        <div class="wycena-social">
+          <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48V13a8.28 8.28 0 005.58 2.15V11.7a4.83 4.83 0 01-3.77-1.24V6.69h3.77z"/></svg></a>
+        </div>
+        </div>
+      </div>
+      <div class="wycena-karta"><span class="ptaszek ptaszek-karta" aria-hidden="true"></span>
         <form class="contact-form" id="contact-form" data-stago-form novalidate>
           <div class="form-row">
             <input type="text" name="name" placeholder="Imię i nazwisko" required aria-label="Imię i nazwisko" autocomplete="name">
@@ -559,25 +540,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <p class="form-success" id="contact-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">Wysłano! Odezwiemy się w ciągu 24 godzin.</p>
           <p class="form-error" id="contact-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:12px"></p>
         </form>
-        <div class="contact-info">
-          <div class="info-card reveal">
-            <h3>Zadzwoń</h3>
-            <a href="tel:+48509508210" class="info-phone">509 508 210</a>
-            <p>Pon-Pt: 7:00-15:00<br>Sob-Niedz: zamknięte</p>
-          </div>
-          <div class="info-card reveal">
-            <h3>Odwiedź nas</h3>
-            <p>Jasionka 117<br>28-300 Jędrzejów<br>woj. świętokrzyskie</p>
-          </div>
-          <div class="info-card reveal">
-            <h3>Social media</h3>
-            <div class="social-links">
-              <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank">Facebook</a>
-              <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank">Instagram</a>
-              <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank">TikTok</a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

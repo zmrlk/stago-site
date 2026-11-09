@@ -12,7 +12,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"></noscript>
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/style.css?v=d29522c9" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/style.css?v=d29522c9"></noscript><style>
+  <link rel="preload" href="/style.css?v=84c727fa" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/style.css?v=84c727fa"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 *,*::before,*::after{box-sizing:border-box}
@@ -24,70 +24,21 @@ img{max-width:100%;height:auto}
 </style>
   <link rel="icon" type="image/png" href="/assets/sygnet.webp">
   <style>
-    .error-page {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-    }
-    .error-inner {
-      max-width: 480px;
-    }
-    .error-code {
-      font-size: clamp(4rem, 12vw, 8rem);
-      font-weight: 900;
-      color: var(--primary);
-      letter-spacing: -0.04em;
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-    .error-accent {
-      width: 48px;
-      height: 4px;
-      background: var(--accent);
-      border-radius: 2px;
-      margin: 0 auto 24px;
-    }
-    .error-title {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 12px;
-    }
-    .error-text {
-      font-size: 1rem;
-      color: var(--t2);
-      line-height: 1.6;
-      margin-bottom: 32px;
-    }
-    .error-links {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      align-items: center;
-    }
-    .error-links a {
-      font-size: 0.95rem;
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      transition: color 0.2s;
-    }
-    .error-links a:hover {
-      color: var(--accent-h);
-    }
-    .error-phone {
-      margin-top: 32px;
-      font-size: 0.88rem;
-      color: var(--t3);
-    }
-    .error-phone a {
-      color: var(--primary);
-      font-weight: 600;
-      text-decoration: none;
-    }
+    /* 404 (9.11): pusta działka w siatce 1 m z obrysem pawilonu 6 × 3 m; ptaszek z sygnetu domyka narożnik (księga znaku 12.10) */
+    .error-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 24px 64px}
+    .error-inner{max-width:720px;width:100%;text-align:center}
+    .error-dzialka{position:relative;width:min(100%,384px);aspect-ratio:12/5;margin:0 auto 32px;background-image:linear-gradient(to right,#E4E5E3 1px,transparent 1px),linear-gradient(to bottom,#E4E5E3 1px,transparent 1px);background-size:calc(100% / 12) calc(100% / 5);border-right:1px solid #E4E5E3;border-bottom:1px solid #E4E5E3}
+    .error-obrys{position:absolute;left:calc(100% / 12 * 3);top:calc(100% / 5 * 1);width:calc(100% / 12 * 6);height:calc(100% / 5 * 3);border:2px dashed #9A9A95;border-radius:2px}
+    .error-ptaszek{position:absolute;top:-2px;right:-2px;height:28px;aspect-ratio:168.65/179.75;background:url(/assets/ptaszek.svg) center/contain no-repeat}
+    .error-miara{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);font-size:12px;line-height:16px;font-weight:600;color:#6E6E69;font-variant-numeric:tabular-nums;white-space:nowrap}
+    .error-kod{margin:0 0 8px;font-size:.88rem;font-weight:700;color:var(--accent-text)}
+    .error-title{margin:0 0 12px;font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;letter-spacing:-.02em;line-height:1.2;color:var(--primary)}
+    .error-text{margin:0 auto 32px;max-width:440px;font-size:1rem;line-height:1.6;color:var(--t2)}
+    .error-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    @media(max-width:600px){.error-links{display:grid;grid-template-columns:1fr 1fr}.error-links .btn{justify-content:center;text-align:center}}
+    .error-phone{margin-top:32px;font-size:.95rem;color:var(--t2)}
+    .error-phone a{display:inline-block;min-height:24px;color:var(--primary);font-weight:700;text-decoration:none;white-space:nowrap}
+    .error-phone a:hover{color:var(--accent-text)}
   </style>
 </head>
 <body>
@@ -97,9 +48,9 @@ img{max-width:100%;height:auto}
     <div class="nav-inner">
       <a href="/index.html" class="nav-logo"><img width="520" height="116" src="/assets/logo.webp" alt="STAGO" class="nav-logo-img"></a>
       <div class="nav-links" id="nav-links">
-        <a href="/index.html#o-firmie">O firmie</a>
-        <a href="/index.html#produkty">Oferta</a>
-        <a href="/index.html#realizacje">Realizacje</a>
+        <a href="/technologia.html">O firmie</a>
+        <a href="/modele.html">Modele</a>
+        <a href="/realizacje.html">Realizacje</a>
         <a href="/index.html#proces">Jak działamy</a>
         <a href="/index.html#opinie">Opinie</a>
         <a href="/index.html#faq">FAQ</a>
@@ -118,17 +69,17 @@ img{max-width:100%;height:auto}
   <!-- ERROR CONTENT -->
   <main class="error-page">
     <div class="error-inner">
-      <div class="error-code">404</div>
-      <div class="error-accent"></div>
-      <h1 class="error-title">Tej strony nie ma.</h1>
-      <p class="error-text">Możliwe, że link jest nieaktualny albo strona została przeniesiona. Nic straconego — znajdziesz to czego szukasz poniżej.</p>
+      <div class="error-dzialka" aria-hidden="true"><div class="error-obrys"><span class="error-ptaszek"></span><span class="error-miara">6 × 3 m</span></div></div>
+      <p class="error-kod">Błąd 404</p>
+      <h1 class="error-title">Tu jeszcze nie stoi żaden pawilon.</h1>
+      <p class="error-text">Tej strony nie ma albo została przeniesiona. Wybierz, dokąd chcesz przejść.</p>
       <div class="error-links">
-        <a href="/index.html">Strona główna</a>
-        <a href="/index.html#produkty">Oferta pawilonów</a>
-        <a href="/konfigurator.html">Darmowa wycena</a>
-        <a href="/index.html#blog">Baza wiedzy</a>
+        <a href="/modele.html" class="btn btn-primary">Modele pawilonów</a>
+        <a href="/realizacje.html" class="btn btn-outline-dark">Realizacje</a>
+        <a href="/konfigurator.html" class="btn btn-outline-dark">Darmowa wycena</a>
+        <a href="/index.html" class="btn btn-outline-dark">Strona główna</a>
       </div>
-      <p class="error-phone">Albo po prostu zadzwoń: <a href="tel:+48509508210">509 508 210</a></p>
+      <p class="error-phone">Albo zadzwoń: <a href="tel:+48509508210">509 508 210</a> lub <a href="tel:+48509508110">509 508 110</a></p>
     </div>
   </main>
 

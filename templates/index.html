@@ -33,7 +33,7 @@
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
   <link rel="icon" type="image/png" href="{{{root}}}assets/sygnet.png">
 </head>
-<body>
+<body class="strona-glowna">
 
   <a href="#historia" class="skip-link">{{{ui.skipLink}}}</a>
 
@@ -47,7 +47,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         <a href="{{{pageRoot}}}realizacje.html">{{{ui.nav.realizacje}}}</a>
         <a href="{{{pageRoot}}}finansowanie.html">{{{ui.nav.finansowanie}}}</a>
         <a href="{{{pageRoot}}}faq.html">{{{ui.nav.faq}}}</a>
-        <a href="{{{pageRoot}}}kontakt.html">{{{ui.nav.kontakt}}}</a>
+        <a href="{{{pageRoot}}}kontakt.html" class="nav-kontakt">{{{ui.nav.kontakt}}}</a>
         <a href="{{{navCtaHref}}}" class="btn btn-nav">{{{ui.cta.freeQuote}}}</a>
         <div class="nav-mobile-bottom">
           <a href="tel:{{site.phoneLink}}" class="nav-mobile-phone">
@@ -101,7 +101,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="hero-sub">{{{hero.sub}}}</p>
       <div class="hero-cta">
         <a href="{{{navCtaHref}}}" class="btn btn-primary">{{{ui.cta.freeQuote}}}</a>
-        <a href="#historia" class="btn btn-outline-light">{{{ui.index.seeMore}}}</a>
+        <a href="#produkty" class="btn btn-outline-light">{{{ui.index.seeMore}}}</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -109,6 +109,33 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
+
+  <!-- PRODUKTY -->
+  <section class="section section-light" id="produkty">
+    <div class="container">
+      <p class="eyebrow">{{products.eyebrow}}</p>
+      <h2 class="h2">{{products.h2}}<br><span class="accent">{{products.h2accent}}</span></h2>
+      <p class="sub">{{products.sub}}</p>
+      <div class="products-grid">
+        {{#products.items}}
+        <a href="{{href}}" class="product-card reveal">
+          <div class="product-img"><img src="{{img}}" alt="{{name}}" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span></div>
+          <div class="product-body">
+            <h3>{{name}}</h3>
+            <p>{{desc}}</p>
+            <span class="product-price">{{price}}</span>
+            <span class="product-cta">{{{cta}}}</span>
+          </div>
+        </a>
+        {{/products.items}}
+      </div>
+      <div class="section-cta reveal">
+        <a href="{{{pageRoot}}}modele.html" class="btn btn-primary">{{{ui.index.allModels}}}</a>
+        <a href="{{{navCtaHref}}}" class="btn btn-outline-dark">{{{ui.index.quotePavillon}}}</a>
+        <a href="tel:{{site.phoneLink}}" class="btn btn-outline-dark">{{{ui.cta.callLabel}}}</a>
+      </div>
+    </div>
+  </section>
 
   <!-- CASE STUDY -->
   <section class="section" id="historia">
@@ -132,14 +159,14 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         {{/caseStudy.steps}}
       </div>
       <div class="story-bottom reveal">
-        <blockquote class="story-pullquote" id="story-quote">"{{{caseStudy.quote}}}"<cite id="story-cite">{{{caseStudy.cite}}}</cite></blockquote>
+        <blockquote class="story-pullquote" id="story-quote">„{{{caseStudy.quote}}}<span class="ptaszek ptaszek-cytat" aria-hidden="true"></span><cite id="story-cite">{{{caseStudy.cite}}}</cite></blockquote>
         <a href="{{{navCtaHref}}}" class="btn btn-primary">{{{ui.index.wantSame}}}</a>
       </div>
     </div>
   </section>
 
   <!-- CZYNSZ VS WŁASNY (czarne tło) -->
-  <section class="section section-dark" id="porownanie">
+  <section class="section section-dark wzor-plac wzor-plac-porownanie" id="porownanie">
     <div class="container">
       <p class="eyebrow">{{compare.eyebrow}}</p>
       <h2 class="h2">{{compare.h2}}<br><span class="accent">{{compare.h2accent}}</span></h2>
@@ -152,7 +179,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             {{#compare.rent.items}}<li>{{{text}}}</li>{{/compare.rent.items}}
           </ul>
         </div>
-        <div class="compare-card compare-good reveal">
+        <div class="compare-card compare-good reveal"><span class="ptaszek ptaszek-karta" aria-hidden="true"></span>
           <div class="compare-label">{{compare.own.label}}</div>
           <div class="compare-price">{{{compare.own.price}}}<span>{{{compare.own.priceSuffix}}}</span></div>
           <ul class="compare-list">
@@ -204,61 +231,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       </div>
       <div class="section-cta reveal" style="margin-top:48px">
         <a href="{{{pageRoot}}}jak-kupic.html" class="btn btn-primary">{{{ui.index.fullProcess}}}</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUKTY -->
-  <section class="section section-light" id="produkty">
-    <div class="container">
-      <p class="eyebrow">{{products.eyebrow}}</p>
-      <h2 class="h2">{{products.h2}}<br><span class="accent">{{products.h2accent}}</span></h2>
-      <p class="sub">{{products.sub}}</p>
-      <div class="products-grid">
-        {{#products.items}}
-        <a href="{{href}}" class="product-card reveal">
-          <div class="product-img"><img src="{{img}}" alt="{{name}}" loading="lazy"></div>
-          <div class="product-body">
-            <h3>{{name}}</h3>
-            <p>{{desc}}</p>
-            <span class="product-price">{{price}}</span>
-            <span class="product-cta">{{{cta}}}</span>
-          </div>
-        </a>
-        {{/products.items}}
-      </div>
-      <div class="section-cta reveal">
-        <a href="{{{pageRoot}}}modele.html" class="btn btn-primary">Zobacz wszystkie 12 modeli</a>
-        <a href="{{{navCtaHref}}}" class="btn btn-outline-dark">{{{ui.index.quotePavillon}}}</a>
-        <a href="tel:{{site.phoneLink}}" class="btn btn-outline-dark">Zadzwoń: {{site.phone}}</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- O FIRMIE -->
-  <section class="section section-about-bg" id="o-firmie">
-    <div class="container">
-      <p class="eyebrow">{{about.eyebrow}}</p>
-      <h2 class="h2">{{{about.h2}}}<br><span class="accent">{{about.h2accent}}</span></h2>
-      <div class="about-features">
-        {{#about.features}}
-        <div class="about-feature reveal">
-          <div class="about-icon">
-            {{{icon}}}
-          </div>
-          <h3>{{title}}</h3>
-          <p>{{{text}}}</p>
-        </div>
-        {{/about.features}}
-      </div>
-      <div class="section-cta reveal" style="margin-top:48px">
-        <a href="{{{pageRoot}}}technologia.html" class="btn btn-primary">{{{ui.index.meetUs}}}</a>
+        <a href="{{{pageRoot}}}technologia.html" class="btn btn-outline-dark">{{{ui.index.meetUs}}}</a>
       </div>
     </div>
   </section>
 
   <!-- OPINIE -->
-  <section class="section section-dark" id="opinie">
+  <section class="section section-dark wzor-lamele" id="opinie">
     <div class="container">
       <p class="eyebrow">{{reviews.eyebrow}}</p>
       <h2 class="h2">{{reviews.h2}} <span class="review-count">{{reviews.count}}</span><br><span class="accent">{{reviews.h2accent}}</span></h2>
@@ -275,7 +254,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
         {{/reviews.items}}
       </div>
       <div class="reviews-cta">
-        <a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">Zobacz wszystkie opinie na Google &rarr;</a>
+        <a href="https://maps.app.goo.gl/YehaPostjwupY4zh7" target="_blank" rel="noopener">{{{ui.index.allReviews}}}</a>
       </div>
     </div>
   </section>
@@ -288,11 +267,11 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="sub">{{{gallery.sub}}}</p>
       <div class="realizacje-grid" style="margin-top:40px">
         {{#gallery.top}}
-        <div class="realizacja-card"><img src="{{{img}}}" data-full="{{{pelny}}}" alt="{{alt}}" loading="lazy"><div class="realizacja-label">{{label}}</div></div>
+        <div class="realizacja-card"><img src="{{{img}}}" data-full="{{{pelny}}}" alt="{{alt}}" loading="lazy"><span class="ptaszek ptaszek-hover" aria-hidden="true"></span><div class="realizacja-label">{{label}}</div></div>
         {{/gallery.top}}
       </div>
       <div class="section-cta reveal" style="margin-top:48px">
-        <a href="{{{pageRoot}}}realizacje.html" class="btn btn-primary">Zobacz wszystkie realizacje &rarr;</a>
+        <a href="{{{pageRoot}}}realizacje.html" class="btn btn-primary">{{{ui.index.allRealizations}}}</a>
       </div>
     </div>
   </section>
@@ -320,9 +299,12 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
 
   <!-- FAQ -->
   <section class="section section-light" id="faq">
-    <div class="container">
-      <p class="eyebrow">{{faq.eyebrow}}</p>
-      <h2 class="h2">{{faq.h2}}</h2>
+    <div class="container faq-uklad">
+      <div class="faq-glowa">
+        <p class="eyebrow">{{faq.eyebrow}}</p>
+        <h2 class="h2">{{faq.h2}}</h2>
+        <a href="tel:{{site.phoneLink}}" class="btn btn-outline-dark faq-tel">{{{ui.cta.callLabel}}}</a>
+      </div>
       <div class="faq-list">
         {{#faq.items}}
         <details class="faq-item reveal">
@@ -335,11 +317,26 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   </section>
 
   <!-- KONTAKT / WYCENA -->
-  <section class="section section-dark" id="kontakt">
-    <div class="container">
-      <p class="eyebrow">{{contact.eyebrow}}</p>
-      <h2 class="h2">{{contact.h2}}<br><span class="accent">{{contact.h2accent}}</span></h2>
-      <div class="contact-grid">
+  <section class="section section-dark wycena" id="kontakt">
+    <div class="container wycena-uklad">
+      <div class="wycena-info">
+        <p class="eyebrow">{{contact.eyebrow}}</p>
+        <h2 class="h2">{{contact.h2}}<br><span class="accent">{{contact.h2accent}}</span></h2>
+        <div class="wycena-kontakt">
+        <p class="wycena-etykieta">{{{ui.cta.call}}}</p>
+        <a href="tel:{{site.phoneLink}}" class="wycena-tel">{{site.phone}}</a>
+        <a href="tel:+48509508110" class="wycena-tel">509 508 110</a>
+        <p class="wycena-tekst">{{site.hours}}<br>{{site.hoursSat}}</p>
+        <p class="wycena-etykieta">{{{ui.index.visitUs}}}</p>
+        <p class="wycena-tekst">{{site.address}}, {{site.postalCode}} {{site.city}}<br>{{site.region}}</p>
+        <div class="wycena-social">
+          <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48V13a8.28 8.28 0 005.58 2.15V11.7a4.83 4.83 0 01-3.77-1.24V6.69h3.77z"/></svg></a>
+        </div>
+        </div>
+      </div>
+      <div class="wycena-karta"><span class="ptaszek ptaszek-karta" aria-hidden="true"></span>
         <form class="contact-form" id="contact-form" data-stago-form novalidate>
           <div class="form-row">
             <input type="text" name="name" placeholder="{{ui.form.name}}" required aria-label="{{ui.form.name}}" autocomplete="name">
@@ -372,25 +369,6 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <p class="form-success" id="contact-success" style="display:none;color:#4CAF50;font-weight:700;text-align:center;margin-top:12px">{{{ui.form.success}}}</p>
           <p class="form-error" id="contact-error" style="display:none;color:#e53935;font-weight:600;text-align:center;margin-top:12px"></p>
         </form>
-        <div class="contact-info">
-          <div class="info-card reveal">
-            <h3>{{{ui.cta.call}}}</h3>
-            <a href="tel:{{site.phoneLink}}" class="info-phone">{{site.phone}}</a>
-            <p>{{site.hours}}<br>{{site.hoursSat}}</p>
-          </div>
-          <div class="info-card reveal">
-            <h3>{{{ui.index.visitUs}}}</h3>
-            <p>{{site.address}}<br>{{site.postalCode}} {{site.city}}<br>{{site.region}}</p>
-          </div>
-          <div class="info-card reveal">
-            <h3>Social media</h3>
-            <div class="social-links">
-              <a href="https://www.facebook.com/share/1C5K2yNMj9/?mibextid=wwXIfr" target="_blank">Facebook</a>
-              <a href="https://instagram.com/stago_pawilony_modulowe" target="_blank">Instagram</a>
-              <a href="https://www.tiktok.com/@stago_pawilony_modulowe" target="_blank">TikTok</a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

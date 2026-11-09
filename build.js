@@ -246,11 +246,10 @@ function losoweRealizacje(lang) {
   const zewn = karty.filter(k => /\/rz[\d-]/.test(k.img));
   const wewn = karty.filter(k => /\/rw[\d-]/.test(k.img));
   if (zewn.length < 2 || wewn.length < 1) return WYBOR_REALIZACJI.map(i => karty[i % karty.length]);
-  return [
-    zewn[WYBOR_REALIZACJI[0] % zewn.length],
-    zewn[(WYBOR_REALIZACJI[1] + 1) % zewn.length],
-    wewn[WYBOR_REALIZACJI[2] % wewn.length],
-  ];
+  // Drugie zdjęcie przesunięte o 1..n-1 od pierwszego: dwa indeksy z puli 59 mogły dać tę samą bryłę (9.11 na głównej).
+  const a = WYBOR_REALIZACJI[0] % zewn.length;
+  const b = (a + 1 + (WYBOR_REALIZACJI[1] % (zewn.length - 1))) % zewn.length;
+  return [zewn[a], zewn[b], wewn[WYBOR_REALIZACJI[2] % wewn.length]];
 }
 
 // Indeksy losujemy raz — inaczej kazda wersja jezykowa dostalaby inne zdjecia.

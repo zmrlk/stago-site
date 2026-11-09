@@ -88,7 +88,10 @@ const stories = [
   // Update quote text (first text node) and cite separately
   const citeEl = el.quote.querySelector('cite');
   // Clear and rebuild blockquote content
-  el.quote.textContent = `\u201C${story.quote}\u201D`;
+  // Polski cudzysłów otwierający; zamyka go ptaszek z sygnetu (span z szablonu, przenoszony przy zmianie historii)
+  const ptaszekEl = el.quote.querySelector('.ptaszek-cytat');
+  el.quote.textContent = `\u201E${story.quote}`;
+  if (ptaszekEl) el.quote.appendChild(ptaszekEl);
   citeEl.textContent = story.cite;
   el.quote.appendChild(citeEl);
 })();

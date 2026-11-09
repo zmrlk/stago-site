@@ -44,18 +44,18 @@
     "features": [
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"M9 12l2 2 4-4\"/></svg>",
-        "title": "Robimy wszystko u siebie",
-        "text": "Konstrukcję spawamy sami, w naszym zakładzie pod Jędrzejowem. Ściany z PIR-u 100 mm, okna i drzwi z PVC lub aluminium, wszystko porządnie. Dzięki temu zimą trzymasz ciepło, a latem nic się nie nagrzewa jak blaszak — i rachunki są spokojnie niższe, niż byś myślał."
+        "title": "Spawamy sami",
+        "text": "Konstrukcję z profili zamkniętych spawamy w naszym zakładzie i zabezpieczamy przed korozją. Nie podzlecamy produkcji."
       },
       {
-        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
-        "title": "Każdy pawilon jest inny",
-        "text": "Bo każdy klient ma inny pomysł. Jeden chce kiosk na rynku, drugi biuro na budowie, trzeci domek na działce. Dlatego nie wciskamy gotowców — siadamy z Tobą, pytamy o szczegóły i układamy projekt od zera. A jeśli nie wiesz jeszcze, jak to ma wyglądać, pokażemy kilka propozycji do wyboru."
+        "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 14.76V4.5a2.5 2.5 0 00-5 0v10.26a4.5 4.5 0 105 0z\"/><path d=\"M11.5 8v8\"/></svg>",
+        "title": "Ciepło przez cały rok",
+        "text": "Ściany z płyt PIR 100 mm, okna i drzwi z PVC lub aluminium. Zimą trzymasz ciepło, latem pawilon nie nagrzewa się jak blaszak."
       },
       {
-        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
-        "title": "Jeden telefon i tyle",
-        "text": "Nie musisz latać osobno do projektanta, producenta i ekipy montażowej. Dzwonisz do nas raz — rozmawiamy, rysujemy wizualizację, wyceniamy, budujemy i stawiamy Ci to na działce. Od pierwszej rozmowy po wręczenie kluczy zajmujemy się wszystkim my."
+        "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg>",
+        "title": "Przyjedź i zobacz",
+        "text": "Zakład jest w Jasionce pod Jędrzejowem. Możesz przyjechać, zobaczyć, jak spawamy konstrukcję, i porozmawiać z ekipą."
       }
     ],
     "text": "Wszystko robimy u siebie w zakładzie pod Jędrzejowem — od pierwszej spawki do ostatniej śruby. Nie podzlecamy, nie szukamy ekip na telefon. Dlatego kontrolujemy jakość na każdym etapie. Możesz przyjechać do zakładu i na własne oczy zobaczyć jak Twój pawilon powstaje. Większość klientów to robi — i wychodzą spokojniejsi."
@@ -215,12 +215,12 @@
   "process": {
     "eyebrow": "Jak działamy",
     "h2": "Po Twojej stronie jest tylko telefon.",
-    "h2accent": "Resztę zostaw nam.",
+    "h2accent": "Resztę robimy u siebie.",
     "steps": [
       {
         "num": "01",
         "title": "Kontakt",
-        "text": "Powiedz czego potrzebujesz. Nie musisz znać wymiarów co do centymetra — od tego jesteśmy my. Doradzimy, zaproponujemy rozwiązanie."
+        "text": "Powiedz, czego potrzebujesz. Nie musisz znać wymiarów co do centymetra. Nie wciskamy gotowców: doradzimy i zaproponujemy układ pod Twój pomysł."
       },
       {
         "num": "02",
@@ -230,7 +230,7 @@
       {
         "num": "03",
         "title": "Produkcja",
-        "text": "Budujemy u siebie w zakładzie, pod własnym okiem. Kontrolujemy każdy etap — od spawania konstrukcji po montaż stolarki. Możesz przyjechać i zobaczyć postęp prac."
+        "text": "Spawamy i składamy pawilon w naszym zakładzie pod Jędrzejowem. Ściany z PIR 100 mm, okna PVC lub aluminium. Możesz przyjechać i zobaczyć."
       },
       {
         "num": "04",
