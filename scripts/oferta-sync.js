@@ -163,6 +163,21 @@ if (!KEY) {
 	const metaFeed = renderFeed(oferta.modele); // Validate before changing any public files.
 	console.log(`ERP: ${oferta.modele.length} modeli, kurs € ${oferta.eur_rate} (${oferta.eur_rate_source}), ${oferta.generated_at}`);
 	let zmienione = 0;
+	// Kurs i reguła € dla znaczników [[eur:…]] w treści (build.js). Zapis tylko przy zmianie ≥ 0,5% albo reguły,
+	// żeby bot nie commitował codziennie. ponytail: próg stały; jeśli € w tekstach ma iść za kursem dokładniej, obniż.
+	const KURS = path.join(base, 'oferta-kurs.json');
+	const r = oferta.eur_rule || {};
+	const nowy = { eur_rate: Number(oferta.eur_rate), eur_rate_source: oferta.eur_rate_source, bufor_zl: Number(r.bufor_zl), zaokraglenie_eur: Number(r.zaokraglenie_eur) };
+	const stary = fs.existsSync(KURS) ? JSON.parse(fs.readFileSync(KURS, 'utf8')) : null;
+	if (
+		[nowy.eur_rate, nowy.bufor_zl, nowy.zaokraglenie_eur].every((v) => Number.isFinite(v) && v >= 0) && nowy.eur_rate > 0 &&
+		(!stary || stary.bufor_zl !== nowy.bufor_zl || stary.zaokraglenie_eur !== nowy.zaokraglenie_eur ||
+			Math.abs(nowy.eur_rate - stary.eur_rate) / stary.eur_rate >= 0.005)
+	) {
+		if (!DRY) fs.writeFileSync(KURS, JSON.stringify(nowy, null, 2) + '\n');
+		console.log(`  kurs € do treści: ${nowy.eur_rate} (${nowy.eur_rate_source})`);
+		zmienione++;
+	}
 	const brak = [];
 	for (const m of oferta.modele) {
 		const code = String(m.code).toLowerCase();

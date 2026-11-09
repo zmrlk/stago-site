@@ -115,6 +115,28 @@ for (const field of ['title', 'description']) {
   for (const files of seen.values()) if (files.length > 1) errors.push(`duplicate ${field} within one locale: ${files.join(', ')}`);
 }
 
+// Oferta (decyzja Karola 9.11.2026): tylko 12 modeli, 4×3–12×3 m, ceny z cennika. Stary produkt albo kwota „od”
+// poniżej najtańszego modelu na stronie = błąd, niezależnie od tego, czy wniósł go szablon, treść czy stary generator.
+const cennik = JSON.parse(fs.readFileSync(path.join(root, 'content/cennik-pawilonow.json'), 'utf8'));
+const minCena = Math.min(...Object.values(cennik.od).map(o => o.cena));
+const zakazane = [
+  [/Model[\s ](?:S|M|L|T|X|Glass)\b/, 'nazwa sprzed oferty 12 modeli (Model S/M/L/Glass)'],
+  [/\b3\s?[×x]\s?2\s?m\b/, 'wymiar 3×2 m spoza oferty'],
+  [/\b\d{1,2}\s?[×x]\s?2[,.]4\s?m\b/, 'szerokość 2,4 m spoza oferty'],
+  [/\b(?:8|12)\s?[×x]\s?4\s?m\b/, 'wymiar ×4 m spoza oferty'],
+  [/\[\[(?:cena|eur|liczba|wymiar|kwota)[^\]]*\]\]/, 'nierozwinięty znacznik ceny'],
+];
+for (const [file, page] of indexable) {
+  const text = decode(fs.readFileSync(path.join(root, file), 'utf8').replace(/<(?:style)\b[\s\S]*?<\/style>/gi, ' '));
+  for (const [re, why] of zakazane) { const m = text.match(re); if (m) errors.push(`${file}: ${why}: „${m[0]}”`); }
+  if (page.locale === 'pl') {
+    for (const m of text.matchAll(/\bod\s+(?:ok\.\s+|około\s+)?(\d{1,3}(?:[\s .]\d{3})+)\s?zł/gi)) {
+      const v = Number(m[1].replace(/\D/g, ''));
+      if (v >= 5000 && v < minCena) errors.push(`${file}: kwota „${m[0]}” niższa niż najtańszy model z cennika (${minCena} zł)`);
+    }
+  }
+}
+
 const sitemap = [...fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
 for (const url of sitemap) if (!byUrl.has(url)) errors.push(`sitemap lists a missing or non-indexable page: ${url}`);
 for (const url of byUrl.keys()) if (!sitemap.includes(url)) errors.push(`indexable page missing from sitemap: ${url}`);

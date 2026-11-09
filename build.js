@@ -51,15 +51,19 @@ function cenaZCennika(arg) {
   return Math.round(v);
 }
 const twardo = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+// [[eur:…]] — ta sama kwota w € regułą ERP (lib/oferta/eur.ts: ÷ (kurs NBP + bufor), krok €); kurs zapisuje oferta-sync
+const KURS = JSON.parse(fs.readFileSync('content/oferta-kurs.json', 'utf8'));
+const naEur = (pln) => Math.round(pln / (KURS.eur_rate + KURS.bufor_zl) / KURS.zaokraglenie_eur) * KURS.zaokraglenie_eur;
 function cenyWTresci(html, plik) {
   html = html
     .replace(/\[\[cena:([A-Za-z0-9:]+)\]\]/g, (_, a) => `${twardo(cenaZCennika(a))} zł`)
+    .replace(/\[\[eur:([A-Za-z0-9:]+)\]\]/g, (_, a) => `${twardo(naEur(cenaZCennika(a)))} €`)
     .replace(/\[\[liczba:([A-Za-z0-9:]+)\]\]/g, (_, a) => String(cenaZCennika(a)))
     .replace(/\[\[wymiar:([A-Z]+)\]\]/g, (_, M) => {
       if (!CENNIK.od[M]) throw new Error(`[[wymiar:${M}]] — nie ma modelu w cenniku`);
       return `${CENNIK.od[M].rozmiar.replace('x', '×')} m`;
     });
-  const zostal = html.match(/\[\[(?:cena|liczba|wymiar):[^\]]*\]\]/);
+  const zostal = html.match(/\[\[(?:cena|eur|liczba|wymiar):[^\]]*\]\]/);
   if (zostal) throw new Error(`${plik}: nierozpoznany znacznik ${zostal[0]}`);
   return html;
 }
@@ -659,6 +663,9 @@ for (const plik of RECZNE) {
   const nowy = zwymiaruj(html.replace(/(href="(?:\/|(?:\.\.\/)*)style\.css)(?:\?v=[0-9a-f]+)?"/g, `$1?v=${CSS_V}"`), path.dirname(plik));
   if (nowy !== html) fs.writeFileSync(plik, nowy);
 }
+
+// llms.txt z content/llms.txt: kwoty z cennika tymi samymi znacznikami co strony (9.11: ręczne kwoty się rozjeżdżały)
+fs.writeFileSync('llms.txt', cenyWTresci(fs.readFileSync('content/llms.txt', 'utf8'), 'llms.txt').replace(/\u00a0/g, ' '));
 
 // ── Warstwa LLM + sitemap: świeżość i spójność (build pada na dryfie) ──
 // sitemap <lastmod> liczony z gita źródeł treści; llms.txt sprawdzany

@@ -22,17 +22,62 @@
   "przekrojH2": "Ściana, dach, podłoga",
   "przekrojSub": "Dwa pawilony mogą wyglądać identycznie. Różnicę poznasz po tym, z czego zostały zbudowane.",
   "przekroj": [
-    { "nazwa": "Ściana", "wartosc": "PIR 100 mm", "opis": "Płyta warstwowa z rdzeniem PIR na spawanej ramie stalowej." },
-    { "nazwa": "Dach", "wartosc": "PIR 160 mm", "opis": "Grubsza płyta warstwowa PIR na dachu." },
-    { "nazwa": "Podłoga", "wartosc": "12 cm", "opis": "" }
+    {
+      "nazwa": "Ściana",
+      "wartosc": "PIR 100 mm",
+      "opis": "Płyta warstwowa z rdzeniem PIR na spawanej ramie stalowej."
+    },
+    {
+      "nazwa": "Dach",
+      "wartosc": "PIR 160 mm",
+      "opis": "Grubsza płyta warstwowa PIR na dachu."
+    },
+    {
+      "nazwa": "Podłoga",
+      "wartosc": "12 cm",
+      "opis": "Ocieplona podłoga na ramie, wykonana w zakładzie, nie na Twojej działce."
+    }
   ],
   "przekrojLink": "Porównaj konstrukcje i zobacz, jak produkujemy &rarr;",
   "wCenieEyebrow": "Cena",
   "wCenieH2": "Co jest w cenie",
   "wCenie": [
-    { "h3": "W cenie podstawy", "items": [ { "text": "Pawilon w wybranym wymiarze" }, { "text": "2 okna i drzwi" }, { "text": "Podstawowe obróbki blacharskie" } ] },
-    { "h3": "W dopłacie za model", "items": [ { "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła modelu — cena obejmuje wszystkie okna z konfiguracji modelu" } ] },
-    { "h3": "Wyceniamy osobno", "items": [ { "text": "Transport (6 zł/km w obie strony) i montaż" }, { "text": "Wyposażenie dodatkowe wybrane w konfiguratorze" }, { "text": "Rozwiązania niestandardowe" } ] }
+    {
+      "h3": "W cenie podstawy",
+      "items": [
+        {
+          "text": "Pawilon w wybranym wymiarze"
+        },
+        {
+          "text": "2 okna i drzwi"
+        },
+        {
+          "text": "Podstawowe obróbki blacharskie"
+        }
+      ]
+    },
+    {
+      "h3": "W dopłacie za model",
+      "items": [
+        {
+          "text": "Dodatkowe okna i witryny, jeśli wymaga ich bryła modelu — cena obejmuje wszystkie okna z konfiguracji modelu"
+        }
+      ]
+    },
+    {
+      "h3": "Wyceniamy osobno",
+      "items": [
+        {
+          "text": "Transport (6 zł/km w obie strony) i montaż"
+        },
+        {
+          "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
+        },
+        {
+          "text": "Rozwiązania niestandardowe"
+        }
+      ]
+    }
   ],
   "ukladEyebrow": "Konfiguracja",
   "ukladH2": "Wersja podstawowa: drzwi i 2 okna",

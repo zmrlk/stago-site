@@ -1,0 +1,31 @@
+# STAGO — producent pawilonów modułowych
+
+> STAGO GROUP Sp. z o.o. (NIP 6562357986) to polski producent pawilonów modułowych na stalowej ramie. Zakład: Jasionka 117, 28-300 Jędrzejów (woj. świętokrzyskie). Dostawa i montaż w całej Polsce. Oferta: 12 modeli w szerokości 3 m i długości od 4 do 12 m (12–36 m²); większe powierzchnie z kilku modułów obok siebie. Cena orientacyjna netto = podstawa za wymiar + dopłata za model. Transport (6 zł za kilometr, liczone w obie strony od zakładu w Jędrzejowie) i montaż (zależnie od warunków na miejscu) wyceniane osobno; pełną kwotę klient poznaje w ofercie przed podpisaniem umowy (zasady w OWZ). Produkcja pawilonu trwa zwykle 4–6 tygodni od akceptacji projektu. Darmowa wycena i darmowa wizualizacja 3D przed produkcją. Pawilony do 35 m² zwykle stawiane na zgłoszenie, bez pozwolenia na budowę.
+
+## Ceny netto (cennik z 28.10.2026, bez transportu i montażu)
+- 4×3 m (12 m²): od [[cena:4x3]] (KIOS) do [[cena:4x3:max]]
+- 6×3 m (18 m²): od [[cena:6x3]] do [[cena:6x3:max]]
+- 8×3 m (24 m²): od [[cena:8x3]] do [[cena:8x3:max]]
+- 10×3 m (30 m²): od [[cena:10x3]] do [[cena:10x3:max]]
+- 12×3 m (36 m²): od [[cena:12x3]] do [[cena:12x3:max]]
+- VIEW, najbardziej przeszklony model, jest dostępny od 7×3 m: od [[cena:VIEW]]
+- Podstawa obejmuje pawilon w danym wymiarze, 2 okna, drzwi i podstawowe obróbki blacharskie. Dopłata za model obejmuje dodatkowe okna i witryny, jeśli wymaga ich bryła. Osobno wyceniane: transport, montaż, wyposażenie (instalacje, klimatyzacja, łazienka) i rozwiązania niestandardowe.
+- [Cennik pawilonów handlowych](https://stago.com.pl/cennik-pawilonow-handlowych), [cennik kontenerów biurowych](https://stago.com.pl/cennik-kontenerow-biurowych), [konfigurator z ceną orientacyjną](https://stago.com.pl/konfigurator)
+
+## Modele
+- [12 modeli](https://stago.com.pl/modele): ATRI, MILA, ICON, RYTM, NORD, LOFT, SAGA, VIEW, DUET, CUBE, NOIR, KIOS. Każdy ma stronę z tabelą cen 4×3–12×3 m, np. [NORD](https://stago.com.pl/modele/nord), [KIOS](https://stago.com.pl/modele/kios), [VIEW](https://stago.com.pl/modele/view).
+- Karty wymiarów z cenami wszystkich modeli: [4×3 m](https://stago.com.pl/pawilon-4x3), [6×3 m](https://stago.com.pl/pawilon-6x3), [8×3 m](https://stago.com.pl/pawilon-8x3), [10×3 m](https://stago.com.pl/pawilon-10x3)
+- [Dostępne od ręki](https://stago.com.pl/dostepne-od-reki)
+
+## Konstrukcja
+- [Technologia](https://stago.com.pl/technologia): spawana rama stalowa z profili zamkniętych, zabezpieczona antykorozyjnie; ściany z płyty warstwowej PIR 100 mm, dach PIR 160 mm; podłoga 12 cm; okna i drzwi PVC lub aluminium zależnie od zamówienia; obiekty całoroczne.
+- Wysokość standardowa 2,44 m; 2,54 / 2,64 / 2,74 m potwierdzane w ofercie.
+
+## Zastosowania
+- [Wszystkie zastosowania](https://stago.com.pl/zastosowania): [handlowe](https://stago.com.pl/zastosowania/handlowy), [usługowe](https://stago.com.pl/zastosowania/uslugowy), [gastronomiczne](https://stago.com.pl/zastosowania/gastronomiczny), [biurowe](https://stago.com.pl/zastosowania/biurowy), [socjalne](https://stago.com.pl/zastosowania/socjalny), [mieszkalne](https://stago.com.pl/zastosowania/mieszkalny)
+- [Pawilony w regionach (cała Polska)](https://stago.com.pl/regiony), [realizacje](https://stago.com.pl/realizacje)
+
+## Zakup
+- [Jak kupić](https://stago.com.pl/jak-kupic): umowa zwykle w 1–2 dni, produkcja 4–6 tygodni
+- [Finansowanie](https://stago.com.pl/finansowanie), [pawilon czy najem](https://stago.com.pl/pawilon-vs-najem), [pozwolenie i zgłoszenie](https://stago.com.pl/pawilon-bez-pozwolenia-przepisy), [FAQ](https://stago.com.pl/faq)
+- [Kontakt](https://stago.com.pl/kontakt): tel. +48 509 508 210, kontakt@stago.com.pl, Jasionka 117, 28-300 Jędrzejów
