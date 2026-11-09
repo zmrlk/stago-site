@@ -13,7 +13,7 @@
     "img": "../assets/modele/mila.webp",
     "imgAlt": "Pawilon modułowy STAGO MILA — bryła w klasycznym układzie",
     "h1": "MILA — bryła w klasycznym układzie.",
-    "subtitle": "Cała bryła w ciepłym drewnie, spokojny skandynawski rytm. Wtapia się w działkę zamiast z nią konkurować — i właśnie dlatego dobrze się w nim oddycha. Gabinet, letni dom, ciche biuro: sam zdecydujesz, co w nim ucichnie.",
+    "subtitle": "Gęste listwy z jasnego drewna pokrywają całą bryłę. Jedyny inny kolor to czarne pole na środku frontu, a w nim drzwi między dwoma przeszkleniami. MILA nie przyciąga uwagi na siłę, dlatego pasuje na domek na działce, gabinet albo ciche biuro.",
     "price": "od 25 215 zł",
     "priceNote": "netto · baza 4×3 m",
     "ctaHref": "../konfigurator.html?model=mila",
@@ -41,21 +41,21 @@
   "usecases": {
     "eyebrow": "Do czego pasuje",
     "h2": "Gdzie MILA sprawdza się najlepiej",
-    "sub": "Ta bryła jest uniwersalna — działa w kilku głównych kierunkach. Ale nie ogranicza się do nich. Każdy pawilon projektujemy pod konkretną sytuację klienta.",
+    "sub": "MILA sprawdza się jako domek na działce, ciche biuro albo gabinet, gdzie ważniejszy jest spokój niż szyld.",
     "items": [
       {
         "title": "Domek mieszkalny",
-        "text": "Domek całoroczny, ADU, holiday house. PIR 100mm, łazienka, kuchnia, wszystko gotowe.",
+        "text": "Domek całoroczny, ADU, holiday house. Ściany PIR 100 mm, dach 160 mm. Łazienkę i kuchnię wyceniamy w ofercie.",
         "href": "../zastosowania/mieszkalny.html"
       },
       {
         "title": "Kontener biurowy",
-        "text": "Biuro sprzedaży, recepcja, biuro na budowie. Ciepło, cicho, gotowe do pracy od pierwszego dnia.",
+        "text": "Biuro sprzedaży, recepcja, biuro na budowie. Ściany z płyty PIR 100 mm, instalacje dobieramy pod biuro i wyceniamy w ofercie.",
         "href": "../zastosowania/biurowy.html"
       },
       {
         "title": "Pawilon usługowy",
-        "text": "Salon, kosmetyka, serwis, pralnia. Woda, kanalizacja, prąd — wszystko podłączone.",
+        "text": "Salon, kosmetyka, serwis, pralnia. Wodę, kanalizację i prąd dobieramy pod usługę i wyceniamy w ofercie.",
         "href": "../zastosowania/uslugowy.html"
       }
     ]
@@ -93,23 +93,23 @@
     "items": [
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
-        "h3": "Spawana rama stalowa",
-        "text": "Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą."
+        "h3": "Rama stalowa i podłoga",
+        "text": "Rama z zamkniętych profili stalowych, spawana w naszym zakładzie pod Jędrzejowem i zabezpieczona antykorozyjnie. Podłoga ma 12 cm grubości."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "Izolacja PIR: ściany 100 mm, dach 160 mm",
-        "text": "Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak."
+        "h3": "Ściany i dach z PIR",
+        "text": "Ściany z płyty warstwowej PIR 100 mm, dach z płyty PIR 160 mm. Izolacja jest taka sama w każdym z 12 modeli."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
-        "h3": "Stolarka PVC lub aluminiowa",
-        "text": "Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta."
+        "h3": "Stolarka PVC lub aluminium",
+        "text": "Okna i drzwi z PVC albo aluminium, do wyboru. W MILA drzwi i dwa przeszklenia osadzamy w czarnym polu na środku frontu."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
         "h3": "Instalacje pod zamówienie",
-        "text": "Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce."
+        "text": "Elektrykę, oświetlenie, wodę, kanalizację, wentylację i klimatyzację dobieramy pod Twoje przeznaczenie. Wyceniamy je osobno, w ofercie przed podpisem."
       }
     ],
     "sub": "Każdy pawilon STAGO powstaje w naszym zakładzie pod Jędrzejowem, na spawanej ramie stalowej. Izolacja i konstrukcja są takie same w każdym z 12 modeli; różni je bryła."
@@ -204,19 +204,19 @@
     "items": [
       {
         "q": "Czy muszę wybrać taką elewację jak na renderze?",
-        "a": "Nie. Render pokazuje jeden z wariantów wykończenia. MILA jako bryła przyjmuje dowolną elewację — drewno w kilku odcieniach, blachę trapezową, płyty HPL, panele kompozytowe. Mówisz, jak ma wyglądać, my proponujemy materiały i pokazujemy próbki."
+        "a": "Nie. Render pokazuje jeden wariant wykończenia. W MILA wybierasz odcień drewna i kolor pola wokół przeszklenia. Do wyboru masz drewno w kilku odcieniach, blachę trapezową, płyty HPL i panele kompozytowe. Kolor dobierasz z palety RAL, a próbki pokazujemy przed zamówieniem."
       },
       {
         "q": "Mogę zmienić wymiar tej bryły?",
-        "a": "Tak. MILA powstaje w wymiarach od [[wymiar:MILA]] do 12×3 m, przy szerokości 3 m. Większą powierzchnię składamy z kilku modułów obok siebie. Proporcje dobieramy tak, żeby charakter MILA został, a wielkość pasowała do Twojej działki i funkcji. Inne wymiary wyceniamy indywidualnie."
+        "a": "Tak. MILA powstaje w wymiarach od [[wymiar:MILA]] do 12×3 m: szerokość zawsze 3 m, długość co metr. Większą powierzchnię składamy z kilku modułów stawianych obok siebie. Wysokość standardowa to 2,44 m, a 2,54, 2,64 lub 2,74 m potwierdzamy w ofercie. Układ okien i drzwi ustawisz w <a href=\"../konfigurator.html?model=mila\">konfiguratorze</a>."
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "MILA w wymiarze [[wymiar:MILA]] kosztuje od [[cena:MILA]] netto, a w 12×3 m od [[cena:MILA:max]] netto. Pełna tabela cen jest wyżej na tej stronie. Transport, montaż i wyposażenie wyceniamy osobno. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "MILA w wymiarze [[wymiar:MILA]] kosztuje od [[cena:MILA]] netto, a w 12×3 m od [[cena:MILA:max]] netto. Osobno wyceniamy transport (6 zł za kilometr, liczone w obie strony od zakładu w Jędrzejowie), montaż i wyposażenie. Pełną kwotę podajemy w ofercie przed podpisem. Wycena jest bezpłatna: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
-        "a": "Standardowo 4-6 tygodni od akceptacji projektu do dostawy na działkę. Konkretną datę odbioru znasz zanim wpłacisz zaliczkę — w umowie, nie ustnie."
+        "a": "Produkcja trwa zwykle 4–6 tygodni od akceptacji projektu. Termin dostawy wpisujemy do umowy, więc znasz go, zanim wpłacisz zaliczkę."
       }
     ]
   },

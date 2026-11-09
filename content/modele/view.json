@@ -12,8 +12,8 @@
   "hero": {
     "img": "../assets/modele/view.webp",
     "imgAlt": "Pawilon modułowy STAGO VIEW — bryła z panoramicznymi narożnikami",
-    "h1": "VIEW — przeszklony pawilon z panoramicznymi narożnikami.",
-    "subtitle": "Tu szkło zastępuje ścianę — przeszklenia ciągną się za róg, a drewno wieńczy całość u góry. Siadasz w środku i patrzysz na świat, nie na tynk przed nosem. Biuro, recepcja, showroom — zależnie od tego, co chcesz mieć przed oczami.",
+    "h1": "VIEW — przeszklony pawilon z panoramicznym narożnikiem.",
+    "subtitle": "Front i jeden bok to niemal same szyby w czarnych ramach, połączone na narożniku. Nad nimi biegnie pas drewnianych lamel, który na drugim boku schodzi skosem w dół. Z wnętrza widzisz dwie strony naraz, co doceni kawiarnia, showroom albo salon usługowy.",
     "price": "od 35 588 zł",
     "priceNote": "netto · baza 7×3 m",
     "ctaHref": "../konfigurator.html?model=view",
@@ -41,11 +41,11 @@
   "usecases": {
     "eyebrow": "Do czego pasuje",
     "h2": "Gdzie VIEW sprawdza się najlepiej",
-    "sub": "Ta bryła jest uniwersalna — działa w kilku głównych kierunkach. Ale nie ogranicza się do nich. Każdy pawilon projektujemy pod konkretną sytuację klienta.",
+    "sub": "VIEW to pawilon dla kawiarni, showroomu i salonu usługowego, w których klient ma patrzeć przez szkło na dwie strony.",
     "items": [
       {
         "title": "Pawilon gastronomiczny",
-        "text": "Kawiarnia, lodziarnia, food truck, bar. Okno podawcze, wentylacja, wykończenia HACCP.",
+        "text": "Kawiarnia, lodziarnia, bar. Okno podawcze, wentylację i wykończenie pod gastronomię dobieramy i wyceniamy w ofercie.",
         "href": "../zastosowania/gastronomiczny.html"
       },
       {
@@ -55,7 +55,7 @@
       },
       {
         "title": "Pawilon usługowy",
-        "text": "Salon, kosmetyka, serwis, pralnia. Woda, kanalizacja, prąd — wszystko podłączone.",
+        "text": "Salon, kosmetyka, serwis, pralnia. Wodę, kanalizację i prąd dobieramy pod usługę i wyceniamy w ofercie.",
         "href": "../zastosowania/uslugowy.html"
       }
     ]
@@ -93,23 +93,23 @@
     "items": [
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg>",
-        "h3": "Spawana rama stalowa",
-        "text": "Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą."
+        "h3": "Rama stalowa i podłoga",
+        "text": "Rama z zamkniętych profili stalowych, spawana w naszym zakładzie pod Jędrzejowem i zabezpieczona antykorozyjnie. Podłoga ma 12 cm grubości."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
-        "h3": "Izolacja PIR: ściany 100 mm, dach 160 mm",
-        "text": "Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak."
+        "h3": "Ściany i dach z PIR",
+        "text": "Ściany z płyty warstwowej PIR 100 mm, dach z płyty PIR 160 mm. Izolacja jest taka sama w każdym z 12 modeli."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
-        "h3": "Stolarka PVC lub aluminiowa",
-        "text": "Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta."
+        "h3": "Stolarka PVC lub aluminium",
+        "text": "Okna i drzwi z PVC albo aluminium, do wyboru. W VIEW szkło zajmuje front i jeden bok, ramy dobieramy pod przeszklenia łączone na narożniku."
       },
       {
         "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z\"/><path d=\"M6 1v3M10 1v3M14 1v3\"/></svg>",
         "h3": "Instalacje pod zamówienie",
-        "text": "Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce."
+        "text": "Elektrykę, oświetlenie, wodę, kanalizację, wentylację i klimatyzację dobieramy pod Twoje przeznaczenie. Wyceniamy je osobno, w ofercie przed podpisem."
       }
     ],
     "sub": "Każdy pawilon STAGO powstaje w naszym zakładzie pod Jędrzejowem, na spawanej ramie stalowej. Izolacja i konstrukcja są takie same w każdym z 12 modeli; różni je bryła."
@@ -204,19 +204,19 @@
     "items": [
       {
         "q": "Czy muszę wybrać taką elewację jak na renderze?",
-        "a": "Nie. Render pokazuje jeden z wariantów wykończenia. VIEW jako bryła przyjmuje dowolną elewację — drewno w kilku odcieniach, blachę trapezową, płyty HPL, panele kompozytowe. Mówisz, jak ma wyglądać, my proponujemy materiały i pokazujemy próbki."
+        "a": "Nie. Render pokazuje jeden wariant wykończenia. W VIEW zmienisz materiał pasa lamel i kolor korpusu. Do wyboru masz drewno w kilku odcieniach, blachę trapezową, płyty HPL i panele kompozytowe. Kolor dobierasz z palety RAL, a próbki pokazujemy przed zamówieniem."
       },
       {
         "q": "Mogę zmienić wymiar tej bryły?",
-        "a": "Tak. VIEW powstaje w wymiarach od [[wymiar:VIEW]] do 12×3 m, przy szerokości 3 m. Większą powierzchnię składamy z kilku modułów obok siebie. Proporcje dobieramy tak, żeby charakter VIEW został, a wielkość pasowała do Twojej działki i funkcji. Inne wymiary wyceniamy indywidualnie."
+        "a": "Tak, w zakresie od [[wymiar:VIEW]] do 12×3 m: szerokość zawsze 3 m, długość co metr. Krótszych wersji VIEW nie robimy. Mniejszy przeszklony pawilon od [[wymiar:ATRI]] to <a href=\"atri.html\">ATRI</a> albo <a href=\"icon.html\">ICON</a>. Wysokość standardowa to 2,44 m, a 2,54, 2,64 lub 2,74 m potwierdzamy w ofercie."
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "VIEW w wymiarze [[wymiar:VIEW]] kosztuje od [[cena:VIEW]] netto, a w 12×3 m od [[cena:VIEW:max]] netto. Pełna tabela cen jest wyżej na tej stronie. Transport, montaż i wyposażenie wyceniamy osobno. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "VIEW w wymiarze [[wymiar:VIEW]] kosztuje od [[cena:VIEW]] netto, a w 12×3 m od [[cena:VIEW:max]] netto. Osobno wyceniamy transport (6 zł za kilometr, liczone w obie strony od zakładu w Jędrzejowie), montaż i wyposażenie. Pełną kwotę podajemy w ofercie przed podpisem. Wycena jest bezpłatna: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",
-        "a": "Standardowo 4-6 tygodni od akceptacji projektu do dostawy na działkę. Konkretną datę odbioru znasz zanim wpłacisz zaliczkę — w umowie, nie ustnie."
+        "a": "Produkcja trwa zwykle 4–6 tygodni od akceptacji projektu. Termin dostawy wpisujemy do umowy, więc znasz go, zanim wpłacisz zaliczkę."
       }
     ]
   },
