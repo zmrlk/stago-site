@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../style.css?v=7d48b874" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../../style.css?v=7d48b874"></noscript><style>
+  <link rel="preload" href="../../style.css?v=914f8fe5" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../../style.css?v=914f8fe5"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -88,61 +88,125 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <img width="1000" height="900" id="phMain" src="../../assets/modele/view.webp?v=07949594" alt="Pabellón modular STAGO VIEW — volumen con esquinas panorámicas" loading="eager">
         </div>
         <div class="product-hero-thumbs">
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/view.webp" aria-label="Vista principal">
             <img width="1000" height="900" src="../../assets/modele/view.webp?v=07949594" alt="Pabellón modular STAGO VIEW" loading="lazy"><span>Vista principal</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/view-a.webp" aria-label="Frente">
             <img width="1000" height="900" src="../../assets/modele/view-a.webp?v=3af4975b" alt="Pabellón modular STAGO VIEW" loading="lazy"><span>Frente</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/view-b.webp" aria-label="Lateral">
             <img width="1000" height="901" src="../../assets/modele/view-b.webp?v=a66031e8" alt="Pabellón modular STAGO VIEW" loading="lazy"><span>Lateral</span>
           </button>
-          
+
         </div>
       </div>
       <div class="product-hero-text">
-        <p class="product-eyebrow-name">Model VIEW</p>
-        
-        <h1>VIEW — volumen con esquinas panorámicas.</h1>
+        <p class="product-eyebrow-name">Model</p>
+        <h1 class="product-h1"><span class="product-nazwa">VIEW</span><span class="product-h1-reszta">Volumen con esquinas panorámicas.</span></h1>
+
+
         <p class="product-subtitle">Forma dinámica con enormes acristalamientos en esquina en disposición oblicua. Vista panorámica desde el interior, presencia potente desde el exterior. Material de la franja superior y del cuerpo a su elección.</p>
-        <div class="product-price-range">desde 4 600 € neto <span>/ presupuesto individual para su proyecto</span></div>
+        <div class="product-cena">
+          <p class="product-cena-od">desde 8 000 € neto <span>/ presupuesto individual para su proyecto</span></p>
+
+        </div>
         <div class="product-hero-cta">
           <a href="mailto:kontakt@stago.com.pl?subject=ES%20—%20VIEW%20Inquiry" class="btn btn-primary btn-lg">Presupuesto gratis</a>
-          <a href="../modele.html" class="btn btn-outline-dark">Ver todos los modelos &rarr;</a>
+
+          <a href="../modele.html" class="btn btn-outline-dark btn-lg">Ver todos los modelos &rarr;</a>
         </div>
       </div>
     </div>
+
+    <dl class="product-fakty">
+      <div><dt>Medidas, 3 m de ancho</dt><dd>7×3–12×3 m</dd></div>
+      <div><dt>Producción desde la aprobación del proyecto</dt><dd>4–6 sem.</dd></div>
+      <div><dt>Panel PIR: paredes / techo</dt><dd>100 / 160 mm</dd></div>
+      <div><dt>Garantía de la estructura</dt><dd>2 años</dd></div>
+    </dl>
+
   </section>
 
-  <!-- USECASES — do czego pasuje (NAJWYŻEJ) -->
-  <section class="usecases-section section section-light">
+
+
+
+
+
+  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+       Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
+
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">Véalo en persona</p>
+      <h2 class="h2">Así son nuestras realizaciones</h2>
+      <div class="product-gallery">
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-b2ad306c-800.webp?v=981c23a8" data-full="../../assets/gallery/realizacje/rz-b2ad306c.webp?v=e2a57c45" alt="Okno i drzwi · widok frontu" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-8d70ca77-800.webp?v=25078a6d" data-full="../../assets/gallery/realizacje/rz-8d70ca77.webp?v=f13cd63d" alt="Zielona elewacja i trzy okna" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-b4bb9756-800.webp?v=398d0623" data-full="../../assets/gallery/realizacje/rz-b4bb9756.webp?v=64a94a20" alt="Pawilon" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-2af0576a-800.webp?v=f2d560d9" data-full="../../assets/gallery/realizacje/rz-2af0576a.webp?v=94f8c251" alt="Drewniana rama i wejście z lewej" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-0b8174b2-800.webp?v=1ebce080" data-full="../../assets/gallery/realizacje/rw-0b8174b2.webp?v=74574209" alt="Łazienka" loading="lazy"></figure>
+
+      </div>
+      <p class="product-gallery-link"><a href="../../es/realizacje.html">Realizaciones &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">Construcción</p>
+      <h2 class="h2">Lo que es constante — independientemente del acabado</h2>
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img width="882" height="900" src="../../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          <div class="karta-dane-row"><dt>Bastidor de acero soldado</dt><dd>Perfiles de acero cerrados, soldados sobre plantillas. Protección anticorrosiva. La estructura soporta transporte, montaje con grúa y cargas de nieve en invierno.</dd></div><div class="karta-dane-row"><dt>Aislamiento PIR: paredes 100 mm, cubierta 160 mm</dt><dd>Panel PIR de 100 mm en paredes y de 160 mm en la cubierta. Lambda 0,022 W/(m·K) — clase de eficiencia energética. En invierno mantiene el calor, en verano no se recalienta como una caseta metálica.</dd></div><div class="karta-dane-row"><dt>Carpintería de PVC o aluminio</dt><dd>Ventanas y puertas de PVC o aluminio, según el pedido. Perfiles de alta eficiencia, acristalamiento doble. Juntas, cerraduras, regulación — certificado del fabricante.</dd></div><div class="karta-dane-row"><dt>Instalaciones a medida</dt><dd>Electricidad, iluminación LED, agua, saneamiento, ventilación, climatización: las planificamos según su uso y las presupuestamos en la oferta. El pabellón llega listo para conectar en su parcela.</dd></div>
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="../../es/technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- USECASES — do czego pasuje -->
+  <section class="usecases-section section section-white">
     <div class="container">
       <p class="eyebrow">Para qué sirve</p>
       <h2 class="h2">Dónde VIEW funciona mejor</h2>
       <p class="section-sub">Este volumen es universal — funciona en varias direcciones principales. Pero no se limita a ellas. Cada pabellón lo diseñamos para la situación concreta del cliente.</p>
       <div class="usecases-grid">
-        
+
         <a href="../zastosowania/gastronomiczny.html" class="usecase-card">
           <h3>Pabellón de hostelería</h3>
           <p>Cafetería, heladería, food truck, bar. Ventana de despacho, ventilación, acabados conformes con normativa sanitaria.</p>
           <span class="usecase-arrow">Ver &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/handlowy.html" class="usecase-card">
           <h3>Pabellón comercial</h3>
           <p>Tienda, quiosco, punto de venta. Vitrinas, iluminación, entrada cómoda — todo para vender.</p>
           <span class="usecase-arrow">Ver &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/uslugowy.html" class="usecase-card">
           <h3>Pabellón de servicios</h3>
           <p>Salón, estética, taller, lavandería. Agua, saneamiento, electricidad — todo conectado.</p>
           <span class="usecase-arrow">Ver &rarr;</span>
         </a>
-        
+
         <a href="../../es/zastosowania.html" class="usecase-card usecase-card-cta">
           <h3>Todas las aplicaciones</h3>
           <p>7 direcciones, cada una con modelos recomendados. Vea todo para elegir la mejor solución.</p>
@@ -152,131 +216,33 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  <!-- GALLERY — realizacje (przeniesione wyżej: przełamuje rzędy kart zdjęciami) -->
-  <section class="gallery-section section">
-    <div class="container">
-      <p class="eyebrow">Véalo en persona</p>
-      <h2 class="h2">Así son nuestras realizaciones</h2>
-      <div class="product-gallery">
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-84056810-800.webp?v=97eddf3c" data-full="../../assets/gallery/realizacje/rz-84056810.webp?v=220da8c5" alt="Asymetryczna bryła z bocznym oknem" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-4f54b173-800.webp?v=c332d093" data-full="../../assets/gallery/realizacje/rz-4f54b173.webp?v=d33a794c" alt="Antracyt i dwa wąskie okna" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"></div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECS -->
-  <section class="specs-section section-light">
-    <div class="container">
-      <p class="eyebrow">Construcción</p>
-      <h2 class="h2">Lo que es constante — independientemente del acabado</h2>
-      <div class="specs-grid">
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <h3>Bastidor de acero soldado</h3>
-          <p>Perfiles de acero cerrados, soldados sobre plantillas. Protección anticorrosiva. La estructura soporta transporte, montaje con grúa y cargas de nieve en invierno.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Aislamiento PIR: paredes 100 mm, cubierta 160 mm</h3>
-          <p>Panel PIR de 100 mm en paredes y de 160 mm en la cubierta. Lambda 0,022 W/(m·K) — clase de eficiencia energética. En invierno mantiene el calor, en verano no se recalienta como una caseta metálica.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
-          <h3>Carpintería de PVC o aluminio</h3>
-          <p>Ventanas y puertas de PVC o aluminio, según el pedido. Perfiles de alta eficiencia, acristalamiento doble. Juntas, cerraduras, regulación — certificado del fabricante.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg></div>
-          <h3>Instalaciones a medida</h3>
-          <p>Electricidad, iluminación LED, cuadro eléctrico — de serie. Agua, saneamiento, ventilación, climatización — según su uso. Listo para la conexión en su parcela.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- CO JEST W CENIE (cennik 28.10.2026; opisy modeli uzupełnia STAGO — patrz wCenie._todo w content) -->
-  
-
-  <!-- BENEFITS -->
-  <section class="benefits-section">
-    <div class="container">
-      <p class="eyebrow">Incluido</p>
-      <h2 class="h2">Lo que recibe de STAGO</h2>
-      <div class="benefits-list">
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Visualización 3D gratuita</h3>
-            <p>Dibujamos el pabellón en 3D antes de que firme nada. Lo cambiamos tantas veces como haga falta — hasta que diga "sí". Gratuita, sin compromiso.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Organizamos transporte y montaje</h3>
-            <p>El pabellón viaja en camión desde nuestra fábrica. Nuestro equipo lo instala en su parcela. Incluido en el precio — sin recargos por kilómetros, sin costes ocultos. Entrega en España.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>2 años de garantía + servicio</h3>
-            <p>Garantía en estructura e instalaciones. Después de la garantía tampoco abandonamos a nuestros clientes — llame y venimos. Tenemos nuestro propio equipo.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Ayuda con la documentación</h3>
-            <p>Le asesoramos sobre la normativa local aplicable y le ayudamos a preparar la documentación necesaria. De forma rápida, eficaz y sin estrés.</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
-  <section class="product-faq section" id="faq-view">
+  <section class="product-faq section section-light" id="faq-view">
     <div class="container">
       <p class="eyebrow">Preguntas</p>
       <h2 class="h2">Lo que preguntan los clientes</h2>
       <div class="faq-list">
-        
+
         <details class="faq-item">
           <summary>¿Tengo que elegir la misma fachada que en el render?</summary>
           <p>No. El render muestra una de las variantes de acabado. VIEW como volumen acepta cualquier fachada — madera en varios tonos, chapa trapezoidal, paneles HPL, paneles compuestos. Díganos cómo debe ser, nosotros proponemos materiales y mostramos muestras.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>¿Puedo cambiar las dimensiones de este volumen?</summary>
-          <p>Sí. El volumen es flexible — desde 3×2m hasta 12×4m. También se pueden combinar módulos en paralelo para superficies mayores. Mantenemos las proporciones para conservar el carácter de VIEW, pero el tamaño lo adaptamos a su situación.</p>
+          <p>Sí. VIEW se fabrica desde 7×3 m hasta 12×3 m, con 3 m de ancho. Las superficies mayores las formamos con varios módulos en paralelo. Mantenemos las proporciones para conservar el carácter de VIEW. Otras medidas las presupuestamos de forma individual.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>¿Cuánto cuesta?</summary>
-          <p>Depende del tamaño, material de fachada y equipamiento. Los módulos más pequeños empiezan desde aprox. 4 140 € neto, los más grandes con equipamiento completo — 10 350–19 550 €. Presupuesto gratuito: <strong><a href="mailto:kontakt@stago.com.pl?subject=ES%20—%20VIEW%20Consulta">kontakt@stago.com.pl</a></strong>.</p>
+          <p>VIEW en 7×3 m parte de 8 000 € neto. Las medidas mayores hasta 12×3 m, el transporte, el montaje y el equipamiento los presupuestamos en la oferta. Presupuesto gratuito: <strong><a href="mailto:kontakt@stago.com.pl?subject=ES%20—%20VIEW%20Consulta">kontakt@stago.com.pl</a></strong>.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>¿Cuánto se tarda?</summary>
           <p>Normalmente 4-6 semanas desde la aprobación del proyecto hasta la entrega en su parcela. La fecha exacta de entrega la conoce antes de hacer ningún pago — por contrato, no de palabra.</p>
         </details>
-        
+
       </div>
     </div>
   </section>
@@ -288,25 +254,25 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">Díganos qué necesita</h2>
       <div class="product-form-grid">
         <form class="product-form" id="product-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="Nombre y apellidos" required>
-          <input type="tel" name="phone" placeholder="Teléfono" required>
-          <input type="email" name="email" placeholder="E-mail (opcional)">
-          <select name="type" data-default="inny">
-            
+          <input type="text" name="name" placeholder="Nombre y apellidos" aria-label="Nombre y apellidos" required>
+          <input type="tel" name="phone" placeholder="Teléfono" aria-label="Teléfono" required>
+          <input type="email" name="email" placeholder="E-mail (opcional)" aria-label="E-mail (opcional)">
+          <select name="type" data-default="inny" aria-label="Uso del pabellón">
+
             <option value="handlowy">Pabellón comercial</option>
-            
+
             <option value="gastronomiczny">Pabellón de hostelería</option>
-            
+
             <option value="biurowy">Contenedor de oficina</option>
-            
+
             <option value="uslugowy">Pabellón de servicios</option>
-            
+
             <option value="mieszkalny">Casita residencial</option>
-            
+
             <option value="inny">Otro</option>
-            
+
           </select>
-          <textarea name="message" rows="4" placeholder="¿Qué tamaño, qué material de fachada, dónde debe estar, para qué se usará?"></textarea>
+          <textarea name="message" rows="4" placeholder="¿Qué tamaño, qué material de fachada, dónde debe estar, para qué se usará?" aria-label="¿Qué tamaño, qué material de fachada, dónde debe estar, para qué se usará?"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Campo auxiliar (no rellenar)"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> He leído la información sobre el tratamiento de datos y acepto el contacto para el envío del material y la atención a mi consulta. <a href="../../es/polityka-prywatnosci.html" target="_blank">Política de privacidad</a></label>
           <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Acepto recibir de STAGO GROUP Sp. z o.o. información comercial y de marketing sobre la oferta de STAGO por correo electrónico, teléfono o SMS. Puedo retirar el consentimiento en cualquier momento.</label>
@@ -319,15 +285,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <h3>¿Cómo funciona?</h3>
           <p>Escríbenos o llámanos. Preguntamos detalles — dimensiones, material, uso, ubicación. Hacemos la visualización 3D. Le damos un presupuesto completo con transporte y montaje. Sin sorpresas.</p>
           <ul>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Visualización 3D — véalo antes de encargar</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Precio con organizamos transporte y montaje</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Ayuda con documentación y trámites</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Respuesta en un día laborable</li>
-            
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Visualización 3D gratuita</strong> Dibujamos el pabellón en 3D antes de que firme nada. Lo cambiamos tantas veces como haga falta — hasta que diga "sí". Gratuita, sin compromiso.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Organizamos transporte y montaje</strong> El pabellón viaja en camión desde nuestra fábrica. Nuestro equipo lo instala en su parcela. Incluido en el precio — sin recargos por kilómetros, sin costes ocultos. Entrega en España.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>2 años de garantía + servicio</strong> Garantía en estructura e instalaciones. Después de la garantía tampoco abandonamos a nuestros clientes — llame y venimos. Tenemos nuestro propio equipo.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Ayuda con la documentación</strong> Le asesoramos sobre la normativa local aplicable y le ayudamos a preparar la documentación necesaria. De forma rápida, eficaz y sin estrés.</span></li>
+
           </ul>
           <div style="margin-top:24px">
             <a href="tel:+48509508210" style="font-size:1.3rem;font-weight:800;color:var(--white);display:block;margin-bottom:8px">Llamar: 509 508 210</a>
@@ -344,7 +310,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="eyebrow">Puede ser útil</p>
       <h2 class="h2">Otros productos y guías</h2>
       <div class="blog-grid" style="margin-top:40px">
-        
+
         <a href="../modele.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="900" src="../../assets/modele/nord.webp?v=3a3ef357" alt="Todos los modelos STAGO" loading="lazy"></div>
           <div class="blog-body">
@@ -353,7 +319,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Explore todo el catálogo de diseños. Cada uno lo adaptamos a su medida.</p>
           </div>
         </a>
-        
+
         <a href="../zastosowania.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="750" src="../../assets/gallery/realizacje/r5.webp?v=db489cce" alt="Aplicaciones de pabellones" loading="lazy"></div>
           <div class="blog-body">
@@ -362,7 +328,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Tienda, oficina, cafetería, vivienda — le mostramos qué modelo para qué.</p>
           </div>
         </a>
-        
+
         <a href="../blog/cennik-pawilonow-2026.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="562" src="../../assets/gallery/realizacje/r6.webp?v=182c285e" alt="Lista de precios de pabellones" loading="lazy"></div>
           <div class="blog-body">
@@ -371,7 +337,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Cifras concretas, sin rodeos. Vea cuánto pagará.</p>
           </div>
         </a>
-        
+
       </div>
     </div>
   </section>
@@ -452,12 +418,12 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "35588",
-      "highPrice": "80000",
+      "highPrice": "62048",
       "priceCurrency": "PLN",
       "availability": "https://schema.org/InStock",
       "seller": {"@type": "Organization", "name": "STAGO"}
     },
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "26"}
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "28"}
   }
   </script>
   <script src="../../form-handler.js"></script>

@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../style.css?v=7d48b874" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css?v=7d48b874"></noscript><style>
+  <link rel="preload" href="../style.css?v=914f8fe5" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../style.css?v=914f8fe5"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -88,61 +88,193 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <img width="1000" height="900" id="phMain" src="../assets/modele/nord.webp?v=3a3ef357" alt="Pawilon modułowy STAGO NORD — premium bryła z narożnymi oknami" loading="eager">
         </div>
         <div class="product-hero-thumbs">
-          
+
           <button type="button" class="phm-thumb" data-src="../assets/modele/nord.webp" aria-label="Widok główny">
             <img width="1000" height="900" src="../assets/modele/nord.webp?v=3a3ef357" alt="Pawilon STAGO NORD — widok główny 3/4" loading="lazy"><span>Widok główny</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../assets/modele/nord-a.webp" aria-label="Front">
             <img width="1000" height="900" src="../assets/modele/nord-a.webp?v=82a14299" alt="Pawilon STAGO NORD — front" loading="lazy"><span>Front</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../assets/modele/nord-b.webp" aria-label="Z boku">
             <img width="1000" height="900" src="../assets/modele/nord-b.webp?v=0e6f8c6d" alt="Pawilon STAGO NORD — ujęcie z boku" loading="lazy"><span>Z boku</span>
           </button>
-          
+
         </div>
       </div>
       <div class="product-hero-text">
-        <p class="product-eyebrow-name">Model NORD</p>
+        <p class="product-eyebrow-name">Model</p>
+        <h1 class="product-h1"><span class="product-nazwa">NORD</span><span class="product-h1-reszta">Premium bryła z narożnymi oknami.</span></h1>
+
         <p class="product-haslo">Robi wrażenie, zanim powiesz słowo.</p>
-        <h1>NORD — premium bryła z narożnymi oknami.</h1>
         <p class="product-subtitle">Antracyt, drewno w narożnikach i szkło zawinięte za róg. Wygląda na drogi z każdej odległości — także z drugiej strony ulicy. Komuś będzie domem, komuś recepcją premium.</p>
-        <div class="product-price-range">od 25 715 zł <span>netto · baza 4×3 m</span></div>
+        <div class="product-cena">
+          <p class="product-cena-od">od 25 715 zł <span>netto · baza 4×3 m</span></p>
+          <p class="product-cena-max">12×3 m od 61 848 zł · <a href="#co-jest-w-cenie">ceny we wszystkich wymiarach</a></p>
+        </div>
         <div class="product-hero-cta">
-          <a href="../konfigurator.html?model=nord" class="btn btn-primary btn-lg">Darmowa wycena</a>
-          <a href="../modele.html" class="btn btn-outline-dark">Zobacz wszystkie modele &rarr;</a>
+          <a href="../konfigurator.html?model=nord" class="btn btn-primary btn-lg">Skonfiguruj NORD</a>
+          <a href="#wycena" class="btn btn-outline-dark btn-lg">Zapytaj o wycenę</a>
+
         </div>
       </div>
     </div>
+
+    <dl class="product-fakty">
+      <div><dt>Wymiary, szerokość 3 m</dt><dd>4×3–12×3 m</dd></div>
+      <div><dt>Produkcja od akceptacji projektu</dt><dd>4–6 tyg.</dd></div>
+      <div><dt>Płyta PIR: ściany / dach</dt><dd>100 / 160 mm</dd></div>
+      <div><dt>Gwarancja na konstrukcję</dt><dd>2 lata</dd></div>
+    </dl>
+
   </section>
 
-  <!-- USECASES — do czego pasuje (NAJWYŻEJ) -->
-  <section class="usecases-section section section-light">
+
+
+
+
+
+  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+       Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
+
+  <section class="wymiar-section section section-light" id="co-jest-w-cenie">
+    <div class="container">
+      <p class="eyebrow">Cena</p>
+      <h2 class="h2">Wybierz wymiar, cena od razu</h2>
+      <p class="section-sub">Cena modelu NORD = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.</p>
+
+      <div class="wymiar-uklad" data-wybor-wymiaru>
+        <div class="wymiar-wybor">
+          <p class="wymiar-etykieta" id="wymiar-etykieta">Wymiar <span>(m)</span></p>
+          <div class="wymiar-chipy" role="radiogroup" aria-labelledby="wymiar-etykieta">
+            <button type="button" class="wymiar-chip" role="radio" aria-checked="true" data-l="4" data-w="3" data-m2="12" data-cena="25 715 zł" data-href="../konfigurator.html?model=nord&amp;l=4&amp;w=3" data-rozmiar="4×3 m" ><span>4×3</span><small>12 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="5" data-w="3" data-m2="15" data-cena="28 726 zł" data-href="../konfigurator.html?model=nord&amp;l=5&amp;w=3" data-rozmiar="5×3 m" ><span>5×3</span><small>15 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="6" data-w="3" data-m2="18" data-cena="31 032 zł" data-href="../konfigurator.html?model=nord&amp;l=6&amp;w=3" data-rozmiar="6×3 m" ><span>6×3</span><small>18 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="7" data-w="3" data-m2="21" data-cena="35 888 zł" data-href="../konfigurator.html?model=nord&amp;l=7&amp;w=3" data-rozmiar="7×3 m" ><span>7×3</span><small>21 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="8" data-w="3" data-m2="24" data-cena="41 674 zł" data-href="../konfigurator.html?model=nord&amp;l=8&amp;w=3" data-rozmiar="8×3 m" ><span>8×3</span><small>24 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="9" data-w="3" data-m2="27" data-cena="46 030 zł" data-href="../konfigurator.html?model=nord&amp;l=9&amp;w=3" data-rozmiar="9×3 m" ><span>9×3</span><small>27 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="10" data-w="3" data-m2="30" data-cena="50 086 zł" data-href="../konfigurator.html?model=nord&amp;l=10&amp;w=3" data-rozmiar="10×3 m" ><span>10×3</span><small>30 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="11" data-w="3" data-m2="33" data-cena="55 842 zł" data-href="../konfigurator.html?model=nord&amp;l=11&amp;w=3" data-rozmiar="11×3 m" ><span>11×3</span><small>33 m²</small></button><button type="button" class="wymiar-chip" role="radio" aria-checked="false" data-l="12" data-w="3" data-m2="36" data-cena="61 848 zł" data-href="../konfigurator.html?model=nord&amp;l=12&amp;w=3" data-rozmiar="12×3 m" ><span>12×3</span><small>36 m²</small></button>
+          </div>
+        </div>
+        <figure class="wymiar-rzut" aria-hidden="true">
+          <div class="wymiar-rzut-pole" style="--l:4">
+            <div class="wymiar-rzut-obrys"></div>
+            <div class="wymiar-rzut-bryla"></div>
+            <span class="wymiar-rzut-dl">4 × 3 m</span>
+          </div>
+          <figcaption>Rzut z góry w skali, obrys 12×3 m dla porównania</figcaption>
+        </figure>
+        <div class="wymiar-cena" aria-live="polite">
+          <p class="wymiar-panel-tytul">NORD · <span data-pole="rozmiar">4×3 m</span> · <span data-pole="m2">12</span> m²</p>
+          <p class="wymiar-panel-cena"><span data-pole="cena">25 715 zł</span> <small>netto</small></p>
+          <a href="../konfigurator.html?model=nord&amp;l=4&amp;w=3" class="btn btn-primary btn-lg btn-full" data-pole="href"><span>Skonfiguruj NORD <span data-pole="rozmiar">4×3 m</span></span></a>
+        </div>
+        <div class="wymiar-sklad">
+          <div><p class="wymiar-panel-h">W cenie</p>
+            <ul class="wymiar-lista"><li>Pawilon w wybranym wymiarze</li><li>2 okna i drzwi</li><li>Podstawowe obróbki blacharskie</li><li>Dodatkowe okna i witryny, jeśli wymaga ich bryła NORD — cena obejmuje wszystkie okna z konfiguracji modelu</li></ul></div>
+          <div><p class="wymiar-panel-h">Wyceniamy osobno</p>
+            <ul class="wymiar-lista wymiar-lista-osobno"><li>Transport i montaż</li><li>Wyposażenie dodatkowe wybrane w konfiguratorze</li></ul></div>
+        </div>
+      </div>
+      <details class="wymiar-tabela">
+        <summary>Pełna tabela cen NORD</summary>
+        <table>
+          <thead><tr><th>Wymiar</th><th>Powierzchnia</th><th>Cena netto od</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../pawilon-4x3.html">4×3 m</a></td><td>12 m²</td><td>25 715 zł</td></tr><tr><td>5×3 m</td><td>15 m²</td><td>28 726 zł</td></tr><tr><td><a href="../pawilon-6x3.html">6×3 m</a></td><td>18 m²</td><td>31 032 zł</td></tr><tr><td>7×3 m</td><td>21 m²</td><td>35 888 zł</td></tr><tr><td><a href="../pawilon-8x3.html">8×3 m</a></td><td>24 m²</td><td>41 674 zł</td></tr><tr><td>9×3 m</td><td>27 m²</td><td>46 030 zł</td></tr><tr><td><a href="../pawilon-10x3.html">10×3 m</a></td><td>30 m²</td><td>50 086 zł</td></tr><tr><td>11×3 m</td><td>33 m²</td><td>55 842 zł</td></tr><tr><td>12×3 m</td><td>36 m²</td><td>61 848 zł</td></tr>
+          </tbody>
+        </table>
+        <p class="wcenie-note">Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie.</p>
+      </details>
+      <script>
+      (function () {
+        var box = document.querySelector('[data-wybor-wymiaru]'); if (!box) return;
+        var pole = box.querySelector('.wymiar-rzut-pole'), dl = box.querySelector('.wymiar-rzut-dl');
+        function ustaw(chip) {
+          box.querySelectorAll('.wymiar-chip').forEach(function (c) { c.setAttribute('aria-checked', c === chip ? 'true' : 'false'); });
+          box.querySelectorAll('[data-pole="rozmiar"]').forEach(function (e) { e.textContent = chip.dataset.rozmiar; });
+          box.querySelector('[data-pole="m2"]').textContent = chip.dataset.m2;
+          box.querySelector('[data-pole="cena"]').textContent = chip.dataset.cena;
+          box.querySelector('[data-pole="href"]').href = chip.dataset.href;
+          pole.style.setProperty('--l', chip.dataset.l); dl.textContent = chip.dataset.l + ' × ' + chip.dataset.w + ' m';
+        }
+        box.addEventListener('click', function (e) { var c = e.target.closest('.wymiar-chip'); if (c && !c.disabled) ustaw(c); });
+        box.querySelector('[role=radiogroup]').addEventListener('keydown', function (e) {
+          if (['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'].indexOf(e.key) < 0) return;
+          var cs = [].slice.call(box.querySelectorAll('.wymiar-chip:not([disabled])')), i = cs.indexOf(document.activeElement);
+          if (i < 0) return; e.preventDefault();
+          var n = cs[(i + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : cs.length - 1)) % cs.length]; n.focus(); ustaw(n);
+        });
+      })();
+      </script>
+
+    </div>
+  </section>
+
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">Zobacz na żywo</p>
+      <h2 class="h2">Tak wyglądają nasze realizacje</h2>
+      <div class="product-gallery">
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-f5692c14-800.webp?v=06419211" data-full="../assets/gallery/realizacje/rz-f5692c14.webp?v=228458e7" alt="Lamele · widok frontu" loading="lazy"><figcaption>Lamele · widok frontu</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-922d35be-800.webp?v=4b472528" data-full="../assets/gallery/realizacje/rz-922d35be.webp?v=142953db" alt="Drewniana elewacja i trzy wejścia" loading="lazy"><figcaption>Drewniana elewacja i trzy wejścia</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-9d28e849-800.webp?v=29dcb810" data-full="../assets/gallery/realizacje/rw-9d28e849.webp?v=61a874b5" alt="Jasna sala z przeszkleniem" loading="lazy"><figcaption>Jasna sala z przeszkleniem</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-6612d408-800.webp?v=7bd42f07" data-full="../assets/gallery/realizacje/rz-6612d408.webp?v=3bc1b134" alt="Zielone obramowania" loading="lazy"><figcaption>Zielone obramowania</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-4f54b173-800.webp?v=c332d093" data-full="../assets/gallery/realizacje/rz-4f54b173.webp?v=d33a794c" alt="Antracyt i dwa wąskie okna" loading="lazy"><figcaption>Antracyt i dwa wąskie okna</figcaption></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-e8f418e4-800.webp?v=b7011fed" data-full="../assets/gallery/realizacje/rw-e8f418e4.webp?v=fb2e050e" alt="Czarne profile i dwa okna" loading="lazy"><figcaption>Czarne profile i dwa okna</figcaption></figure>
+
+      </div>
+      <p class="product-gallery-link"><a href="../realizacje.html">Realizacje &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">Konstrukcja</p>
+      <h2 class="h2">Co jest stałe — niezależnie od wykończenia</h2>
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img width="882" height="900" src="../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          <div class="karta-dane-row"><dt>Spawana rama stalowa</dt><dd>Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą.</dd></div><div class="karta-dane-row"><dt>Izolacja PIR: ściany 100 mm, dach 160 mm</dt><dd>Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak.</dd></div><div class="karta-dane-row"><dt>Stolarka PVC lub aluminiowa</dt><dd>Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta.</dd></div><div class="karta-dane-row"><dt>Instalacje pod zamówienie</dt><dd>Elektryka, oświetlenie LED, woda, kanalizacja, wentylacja, klimatyzacja: dobieramy pod Twoje przeznaczenie i wyceniamy w ofercie. Pawilon przyjeżdża gotowy do podłączenia na działce.</dd></div>
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="../technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- USECASES — do czego pasuje -->
+  <section class="usecases-section section section-white">
     <div class="container">
       <p class="eyebrow">Do czego pasuje</p>
       <h2 class="h2">Gdzie NORD sprawdza się najlepiej</h2>
       <p class="section-sub">Ta bryła jest uniwersalna — działa w kilku głównych kierunkach. Ale nie ogranicza się do nich. Każdy pawilon projektujemy pod konkretną sytuację klienta.</p>
       <div class="usecases-grid">
-        
+
         <a href="../zastosowania/biurowy.html" class="usecase-card">
           <h3>Kontener biurowy</h3>
           <p>Biuro sprzedaży, recepcja, biuro na budowie. Ciepło, cicho, gotowe do pracy od pierwszego dnia.</p>
           <span class="usecase-arrow">Zobacz &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/gastronomiczny.html" class="usecase-card">
           <h3>Pawilon gastronomiczny</h3>
           <p>Kawiarnia, lodziarnia, food truck, bar. Okno podawcze, wentylacja, wykończenia HACCP.</p>
           <span class="usecase-arrow">Zobacz &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/uslugowy.html" class="usecase-card">
           <h3>Pawilon usługowy</h3>
           <p>Salon, kosmetyka, serwis, pralnia. Woda, kanalizacja, prąd — wszystko podłączone.</p>
           <span class="usecase-arrow">Zobacz &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania.html" class="usecase-card usecase-card-cta">
           <h3>Wszystkie zastosowania</h3>
           <p>7 kierunków, każdy z polecanymi modelami. Zobacz całość, żeby mieć pewność, że wybierasz najlepsze rozwiązanie.</p>
@@ -152,167 +284,33 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  <!-- GALLERY — realizacje (przeniesione wyżej: przełamuje rzędy kart zdjęciami) -->
-  <section class="gallery-section section">
-    <div class="container">
-      <p class="eyebrow">Zobacz na żywo</p>
-      <h2 class="h2">Tak wyglądają nasze realizacje</h2>
-      <div class="product-gallery">
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-84056810-800.webp?v=97eddf3c" data-full="../assets/gallery/realizacje/rz-84056810.webp?v=220da8c5" alt="Asymetryczna bryła z bocznym oknem" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rz-4f54b173-800.webp?v=c332d093" data-full="../assets/gallery/realizacje/rz-4f54b173.webp?v=d33a794c" alt="Antracyt i dwa wąskie okna" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"></div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECS -->
-  <section class="specs-section section-light">
-    <div class="container">
-      <p class="eyebrow">Konstrukcja</p>
-      <h2 class="h2">Co jest stałe — niezależnie od wykończenia</h2>
-      <div class="specs-grid">
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <h3>Spawana rama stalowa</h3>
-          <p>Profile stalowe zamknięte, spawane na szablonach. Zabezpieczone antykorozyjnie. Konstrukcja wytrzymuje transport, montaż dźwigiem i obciążenia śniegowe zimą.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Izolacja PIR: ściany 100 mm, dach 160 mm</h3>
-          <p>Płyta PIR 100 mm na ścianach i 160 mm na dachu. Lambda 0,022 W/(m·K) — klasa energooszczędna. Zimą trzyma ciepło, latem nie nagrzewa się jak blaszak.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
-          <h3>Stolarka PVC lub aluminiowa</h3>
-          <p>Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Profile energooszczędne, szyby zespolone. Uszczelki, zamki, regulacja — certyfikat producenta.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg></div>
-          <h3>Instalacje pod zamówienie</h3>
-          <p>Elektryka, oświetlenie LED, rozdzielnia — w standardzie. Woda, kanalizacja, wentylacja, klimatyzacja — według Twojego przeznaczenia. Gotowe do podłączenia na działce.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- CO JEST W CENIE (cennik 28.10.2026; opisy modeli uzupełnia STAGO — patrz wCenie._todo w content) -->
-  
-  <section class="wcenie-section section" id="co-jest-w-cenie">
-    <div class="container">
-      <p class="eyebrow">Cena</p>
-      <h2 class="h2">Co jest w cenie</h2>
-      <p class="section-sub">Cena modelu NORD = podstawa za wymiar + dopłata za model. Wszystkie kwoty netto, bez transportu i montażu — pełną kwotę poznasz w ofercie przed podpisem.</p>
-      <div class="wcenie-grid">
-        <div class="wcenie-card">
-          <h3>W cenie podstawy</h3>
-          <ul><li>Pawilon w wybranym wymiarze</li><li>2 okna i drzwi</li><li>Podstawowe obróbki blacharskie</li></ul>
-        </div>
-        <div class="wcenie-card">
-          <h3>W dopłacie za model NORD</h3>
-          <ul><li>Dodatkowe okna i witryny, jeśli wymaga ich bryła NORD — cena obejmuje wszystkie okna z konfiguracji modelu</li></ul>
-          <p class="wcenie-note">Szczegółowy opis wykończenia modelu NORD przygotowujemy — zapytaj o niego przy wycenie.</p>
-        </div>
-        <div class="wcenie-card">
-          <h3>Wyceniamy osobno</h3>
-          <ul><li>Transport i montaż</li><li>Wyposażenie dodatkowe wybrane w konfiguratorze</li></ul>
-        </div>
-      </div>
-      
-      <div class="wcenie-tabela">
-        <h3>Ceny orientacyjne netto — model NORD</h3>
-        <table>
-          <thead><tr><th>Wymiar</th><th>Powierzchnia</th><th>Cena netto od</th></tr></thead>
-          <tbody>
-            <tr><td><a href="../pawilon-4x3.html">4×3 m</a></td><td>12 m²</td><td>25 715 zł</td></tr><tr><td>5×3 m</td><td>15 m²</td><td>28 726 zł</td></tr><tr><td><a href="../pawilon-6x3.html">6×3 m</a></td><td>18 m²</td><td>31 032 zł</td></tr><tr><td>7×3 m</td><td>21 m²</td><td>35 888 zł</td></tr><tr><td><a href="../pawilon-8x3.html">8×3 m</a></td><td>24 m²</td><td>41 674 zł</td></tr><tr><td>9×3 m</td><td>27 m²</td><td>46 030 zł</td></tr><tr><td><a href="../pawilon-10x3.html">10×3 m</a></td><td>30 m²</td><td>50 086 zł</td></tr><tr><td>11×3 m</td><td>33 m²</td><td>55 842 zł</td></tr><tr><td>12×3 m</td><td>36 m²</td><td>61 848 zł</td></tr>
-          </tbody>
-        </table>
-        <p class="wcenie-note">Szerokość 3 m, wysokość standardowa. Inne wymiary wyceniamy indywidualnie.</p>
-        <a href="../konfigurator.html?model=nord" class="btn btn-primary">Skonfiguruj i sprawdź cenę</a>
-      </div>
-      
-    </div>
-  </section>
-  
-
-  <!-- BENEFITS -->
-  <section class="benefits-section">
-    <div class="container">
-      <p class="eyebrow">W cenie</p>
-      <h2 class="h2">Co dostajesz od STAGO</h2>
-      <div class="benefits-list">
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Darmowa wizualizacja 3D</h3>
-            <p>Rysujemy pawilon w 3D zanim cokolwiek podpisujesz. Zmieniamy tyle razy, ile trzeba — póki nie powiesz „tak". Darmowa, bez zobowiązań.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Dostawa i montaż</h3>
-            <p>Pawilon jedzie na naczepie z naszego zakładu. Nasza ekipa stawia go na Twojej działce. Organizujemy dostawę na terenie całej Polski, bez ukrytych kosztów.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>2 lata gwarancji + serwis</h3>
-            <p>Gwarancja na konstrukcję i instalacje. Po gwarancji też nie zostawiamy klientów — dzwonisz i przyjeżdżamy. Mamy własnych ludzi, nie szukamy na telefon.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Pomoc z dokumentami</h3>
-            <p>Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie. Szybciej, sprawniej, bez stresu.</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
-  <section class="product-faq section" id="faq-nord">
+  <section class="product-faq section section-light" id="faq-nord">
     <div class="container">
       <p class="eyebrow">Pytania</p>
       <h2 class="h2">To, o co pytają klienci</h2>
       <div class="faq-list">
-        
+
         <details class="faq-item">
           <summary>Czy muszę wybrać taką elewację jak na renderze?</summary>
           <p>Nie. Render pokazuje jeden z wariantów wykończenia. NORD jako bryła przyjmuje dowolną elewację — drewno w kilku odcieniach, blachę trapezową, płyty HPL, panele kompozytowe. Mówisz, jak ma wyglądać, my proponujemy materiały i pokazujemy próbki.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Mogę zmienić wymiar tej bryły?</summary>
-          <p>Tak. Bryła jest elastyczna — od 3×2m do 12×4m. Można też łączyć moduły obok siebie dla większych powierzchni. Proporcje zachowujemy, żeby charakter NORD był zachowany, ale wielkość dostosowujemy pod Twoją sytuację.</p>
+          <p>Tak. NORD powstaje w wymiarach od 4×3 m do 12×3 m, przy szerokości 3 m. Większą powierzchnię składamy z kilku modułów obok siebie. Proporcje dobieramy tak, żeby charakter NORD został, a wielkość pasowała do Twojej działki i funkcji. Inne wymiary wyceniamy indywidualnie.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Ile to kosztuje?</summary>
-          <p>Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href="tel:+48509508210">509 508 210</a></strong>.</p>
+          <p>NORD w wymiarze 4×3 m kosztuje od 25 715 zł netto, a w 12×3 m od 61 848 zł netto. Pełna tabela cen jest wyżej na tej stronie. Transport, montaż i wyposażenie wyceniamy osobno. Wycena darmowa: <strong><a href="tel:+48509508210">509 508 210</a></strong>.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Jak długo czekam?</summary>
           <p>Standardowo 4-6 tygodni od akceptacji projektu do dostawy na działkę. Konkretną datę odbioru znasz zanim wpłacisz zaliczkę — w umowie, nie ustnie.</p>
         </details>
-        
+
       </div>
     </div>
   </section>
@@ -324,25 +322,25 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">Powiedz, czego potrzebujesz</h2>
       <div class="product-form-grid">
         <form class="product-form" id="product-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="Imię i nazwisko" required>
-          <input type="tel" name="phone" placeholder="Telefon" required>
-          <input type="email" name="email" placeholder="Email (opcjonalnie)">
-          <select name="type" data-default="inny">
-            
+          <input type="text" name="name" placeholder="Imię i nazwisko" aria-label="Imię i nazwisko" required>
+          <input type="tel" name="phone" placeholder="Telefon" aria-label="Telefon" required>
+          <input type="email" name="email" placeholder="Email (opcjonalnie)" aria-label="Email (opcjonalnie)">
+          <select name="type" data-default="inny" aria-label="Przeznaczenie pawilonu">
+
             <option value="handlowy">Pawilon handlowy</option>
-            
+
             <option value="gastronomiczny">Pawilon gastronomiczny</option>
-            
+
             <option value="biurowy">Kontener biurowy</option>
-            
+
             <option value="uslugowy">Pawilon usługowy</option>
-            
+
             <option value="mieszkalny">Domek mieszkalny</option>
-            
+
             <option value="inny">Inny</option>
-            
+
           </select>
-          <textarea name="message" rows="4" placeholder="Jaki rozmiar, jaki materiał elewacji, gdzie ma stać, do czego ma być?"></textarea>
+          <textarea name="message" rows="4" placeholder="Jaki rozmiar, jaki materiał elewacji, gdzie ma stać, do czego ma być?" aria-label="Jaki rozmiar, jaki materiał elewacji, gdzie ma stać, do czego ma być?"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Pole pomocnicze (nie wypełniaj)"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> Zapoznałem/am się z informacją o przetwarzaniu danych i zgadzam się na kontakt w celu przekazania materiału oraz obsługi zapytania. <a href="../polityka-prywatnosci.html" target="_blank">Polityka prywatności</a></label>
           <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Wyrażam zgodę na otrzymywanie od STAGO GROUP Sp. z o.o. informacji handlowych i marketingowych dotyczących oferty STAGO drogą e-mail, telefonicznie lub SMS. Zgodę mogę wycofać w dowolnym momencie.</label>
@@ -355,15 +353,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <h3>Jak to wygląda?</h3>
           <p>Piszesz lub dzwonisz. Pytamy o szczegóły — wymiar, materiał, przeznaczenie, lokalizacja. Rysujemy wizualizację 3D. Podajemy pełną wycenę z dostawą i montażem. Bez niespodzianek.</p>
           <ul>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Wizualizacja 3D — zobaczysz, zanim zamówisz</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Wycena obejmuje dostawę i montaż</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Pomoc z dokumentami i zgłoszeniem</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Odpowiedź w ciągu jednego dnia</li>
-            
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Darmowa wizualizacja 3D</strong> Rysujemy pawilon w 3D zanim cokolwiek podpisujesz. Zmieniamy tyle razy, ile trzeba — póki nie powiesz „tak". Darmowa, bez zobowiązań.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Dostawa i montaż</strong> Pawilon jedzie na naczepie z naszego zakładu. Nasza ekipa stawia go na Twojej działce. Organizujemy dostawę na terenie całej Polski, bez ukrytych kosztów.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>2 lata gwarancji + serwis</strong> Gwarancja na konstrukcję i instalacje. Po gwarancji też nie zostawiamy klientów — dzwonisz i przyjeżdżamy. Mamy własnych ludzi, nie szukamy na telefon.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Pomoc z dokumentami</strong> Do 35 m² wystarczy zgłoszenie, nie pozwolenie. Pomagamy wypełnić papiery, żebyś nie musiał szukać wzorów po internecie. Szybciej, sprawniej, bez stresu.</span></li>
+
           </ul>
           <div style="margin-top:24px">
             <a href="tel:+48509508210" style="font-size:1.3rem;font-weight:800;color:var(--white);display:block;margin-bottom:8px">Zadzwoń: 509 508 210</a>
@@ -380,7 +378,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="eyebrow">Może Ci się przydać</p>
       <h2 class="h2">Inne produkty i poradniki</h2>
       <div class="blog-grid" style="margin-top:40px">
-        
+
         <a href="../modele.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="900" src="../assets/modele/nord.webp?v=3a3ef357" alt="Wszystkie modele STAGO" loading="lazy"></div>
           <div class="blog-body">
@@ -389,7 +387,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Przejrzyj cały katalog wzorów. Każdy dopasujesz pod siebie.</p>
           </div>
         </a>
-        
+
         <a href="../zastosowania.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="750" src="../assets/gallery/realizacje/r5.webp?v=db489cce" alt="Zastosowania pawilonów" loading="lazy"></div>
           <div class="blog-body">
@@ -398,7 +396,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Sklep, biuro, kawiarnia, dom — pokażemy, który model do czego.</p>
           </div>
         </a>
-        
+
         <a href="../cennik-pawilonow-handlowych.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="562" src="../assets/gallery/realizacje/r6.webp?v=182c285e" alt="Cennik pawilonów handlowych STAGO" loading="lazy"></div>
           <div class="blog-body">
@@ -407,7 +405,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Ceny 4×3–12×3 m od producenta. Sprawdź, ile zapłacisz.</p>
           </div>
         </a>
-        
+
       </div>
     </div>
   </section>
@@ -488,12 +486,12 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "25715",
-      "highPrice": "110000",
+      "highPrice": "61848",
       "priceCurrency": "PLN",
       "availability": "https://schema.org/InStock",
       "seller": {"@type": "Organization", "name": "STAGO"}
     },
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "26"}
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "28"}
   }
   </script>
   <script src="../form-handler.js"></script>

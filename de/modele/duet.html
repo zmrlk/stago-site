@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../style.css?v=7d48b874" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../../style.css?v=7d48b874"></noscript><style>
+  <link rel="preload" href="../../style.css?v=914f8fe5" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../../style.css?v=914f8fe5"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -88,61 +88,125 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <img width="1000" height="900" id="phMain" src="../../assets/modele/duet.webp?v=35dfb3bc" alt="Modulpavillon STAGO DUET — Baukörper mit seitlichen Akzenten und Front" loading="eager">
         </div>
         <div class="product-hero-thumbs">
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/duet.webp" aria-label="Hauptansicht">
             <img width="1000" height="900" src="../../assets/modele/duet.webp?v=35dfb3bc" alt="STAGO Modulpavillon DUET" loading="lazy"><span>Hauptansicht</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/duet-a.webp" aria-label="Vorne">
             <img width="1000" height="900" src="../../assets/modele/duet-a.webp?v=dea1343c" alt="STAGO Modulpavillon DUET" loading="lazy"><span>Vorne</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/duet-b.webp" aria-label="Seite">
             <img width="1000" height="900" src="../../assets/modele/duet-b.webp?v=8743e9b6" alt="STAGO Modulpavillon DUET" loading="lazy"><span>Seite</span>
           </button>
-          
+
         </div>
       </div>
       <div class="product-hero-text">
-        <p class="product-eyebrow-name">Model DUET</p>
-        
-        <h1>DUET — Baukörper mit seitlichen Akzenten und Front.</h1>
+        <p class="product-eyebrow-name">Model</p>
+        <h1 class="product-h1"><span class="product-nazwa">DUET</span><span class="product-h1-reszta">Baukörper mit seitlichen Akzenten und Front.</span></h1>
+
+
         <p class="product-subtitle">Baukörper mit markanten seitlichen Akzenten und drei Frontverglasen. Zwei Elemente im Gleichgewicht — starker Korpus und warme Akzente. Materialien der zwei Zonen legen wir gemeinsam fest.</p>
-        <div class="product-price-range">ab 4 600 € netto <span>/ individuelle Kalkulation für Ihr Projekt</span></div>
+        <div class="product-cena">
+          <p class="product-cena-od">ab 5 500 € netto <span>/ individuelle Kalkulation für Ihr Projekt</span></p>
+
+        </div>
         <div class="product-hero-cta">
           <a href="mailto:kontakt@stago.com.pl?subject=DE%20—%20DUET%20Inquiry" class="btn btn-primary btn-lg">Kostenloses Angebot</a>
-          <a href="../modele.html" class="btn btn-outline-dark">Alle Modelle ansehen &rarr;</a>
+
+          <a href="../modele.html" class="btn btn-outline-dark btn-lg">Alle Modelle ansehen &rarr;</a>
         </div>
       </div>
     </div>
+
+    <dl class="product-fakty">
+      <div><dt>Maße, 3 m breit</dt><dd>4×3–12×3 m</dd></div>
+      <div><dt>Produktion ab Projektfreigabe</dt><dd>4–6 Wo.</dd></div>
+      <div><dt>PIR-Paneel: Wände / Dach</dt><dd>100 / 160 mm</dd></div>
+      <div><dt>Garantie auf die Konstruktion</dt><dd>2 Jahre</dd></div>
+    </dl>
+
   </section>
 
-  <!-- USECASES — do czego pasuje (NAJWYŻEJ) -->
-  <section class="usecases-section section section-light">
+
+
+
+
+
+  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+       Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
+
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">Live ansehen</p>
+      <h2 class="h2">So sehen unsere Projekte aus</h2>
+      <div class="product-gallery">
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-9db0d3ec-800.webp?v=6f0cfac4" data-full="../../assets/gallery/realizacje/rz-9db0d3ec.webp?v=23e0e4ce" alt="Drewniana elewacja i pełne drzwi" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-8a2652d5-800.webp?v=78946b1e" data-full="../../assets/gallery/realizacje/rz-8a2652d5.webp?v=1d3cfa1d" alt="Dwa zestawy przeszkleń" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-e8f418e4-800.webp?v=b7011fed" data-full="../../assets/gallery/realizacje/rw-e8f418e4.webp?v=fb2e050e" alt="Czarne profile i dwa okna" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-2251d748-800.webp?v=e8e7dc9f" data-full="../../assets/gallery/realizacje/rz-2251d748.webp?v=c445758a" alt="Pełne drzwi i małe okno" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-5fde87eb-800.webp?v=3c6cdca9" data-full="../../assets/gallery/realizacje/rz-5fde87eb.webp?v=730be05a" alt="Antracyt i wysokie narożniki" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"></figure>
+
+      </div>
+      <p class="product-gallery-link"><a href="../../de/realizacje.html">Referenzen &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">Konstruktion</p>
+      <h2 class="h2">Was immer gleich bleibt — unabhängig von der Ausstattung</h2>
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img width="882" height="900" src="../../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          <div class="karta-dane-row"><dt>Geschweißter Stahlrahmen</dt><dd>Geschlossene Stahlprofile, auf Schablonen geschweißt. Korrosionsgeschützt. Die Konstruktion hält Transport, Kranmontage und Schneelasten im Winter stand.</dd></div><div class="karta-dane-row"><dt>PIR-Dämmung: Wände 100 mm, Dach 160 mm</dt><dd>PIR-Platte 100 mm in den Wänden und 160 mm im Dach. Lambda 0,022 W/(m·K) — Energieeffizienzklasse. Im Winter hält es warm, im Sommer heizt es sich nicht auf wie ein Blechcontainer.</dd></div><div class="karta-dane-row"><dt>Fensterelemente aus PVC oder Aluminium</dt><dd>Fenster und Türen aus PVC oder Aluminium — je nach Bestellung. Energieeffiziente Profile, Isolierverglasung. Dichtungen, Schlösser, Justierung — Herstellerzertifikat.</dd></div><div class="karta-dane-row"><dt>Installationen nach Bedarf</dt><dd>Elektrik, LED-Beleuchtung, Wasser, Abwasser, Lüftung, Klimaanlage: wir planen sie nach Ihrem Verwendungszweck und kalkulieren sie im Angebot. Der Pavillon kommt anschlussfertig auf Ihr Grundstück.</dd></div>
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="../../de/technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- USECASES — do czego pasuje -->
+  <section class="usecases-section section section-white">
     <div class="container">
       <p class="eyebrow">Einsatzbereiche</p>
       <h2 class="h2">Wo sich DUET am besten bewährt</h2>
       <p class="section-sub">Dieser Baukörper ist universell — er funktioniert in mehreren Richtungen. Aber er beschränkt sich nicht darauf. Jeden Pavillon planen wir individuell für Ihre Situation.</p>
       <div class="usecases-grid">
-        
+
         <a href="../zastosowania/gastronomiczny.html" class="usecase-card">
           <h3>Gastro-Pavillon</h3>
           <p>Café, Eisdiele, Foodtruck, Bar. Durchreichefenster, Lüftung, HACCP-konforme Ausstattung.</p>
           <span class="usecase-arrow">Ansehen &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/handlowy.html" class="usecase-card">
           <h3>Verkaufspavillon</h3>
           <p>Laden, Kiosk, Verkaufsstand. Vitrinen, Beleuchtung, bequemer Eingang — alles für den Verkauf.</p>
           <span class="usecase-arrow">Ansehen &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/biurowy.html" class="usecase-card">
           <h3>Bürocontainer</h3>
           <p>Verkaufsbüro, Empfang, Baubüro. Warm, leise, ab dem ersten Tag einsatzbereit.</p>
           <span class="usecase-arrow">Ansehen &rarr;</span>
         </a>
-        
+
         <a href="../../de/zastosowania.html" class="usecase-card usecase-card-cta">
           <h3>Alle Anwendungen</h3>
           <p>7 Richtungen, jede mit empfohlenen Modellen. Sehen Sie alles, um die beste Lösung zu finden.</p>
@@ -152,131 +216,33 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  <!-- GALLERY — realizacje (przeniesione wyżej: przełamuje rzędy kart zdjęciami) -->
-  <section class="gallery-section section">
-    <div class="container">
-      <p class="eyebrow">Live ansehen</p>
-      <h2 class="h2">So sehen unsere Projekte aus</h2>
-      <div class="product-gallery">
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-84056810-800.webp?v=97eddf3c" data-full="../../assets/gallery/realizacje/rz-84056810.webp?v=220da8c5" alt="Asymetryczna bryła z bocznym oknem" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-4f54b173-800.webp?v=c332d093" data-full="../../assets/gallery/realizacje/rz-4f54b173.webp?v=d33a794c" alt="Antracyt i dwa wąskie okna" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"></div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECS -->
-  <section class="specs-section section-light">
-    <div class="container">
-      <p class="eyebrow">Konstruktion</p>
-      <h2 class="h2">Was immer gleich bleibt — unabhängig von der Ausstattung</h2>
-      <div class="specs-grid">
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <h3>Geschweißter Stahlrahmen</h3>
-          <p>Geschlossene Stahlprofile, auf Schablonen geschweißt. Korrosionsgeschützt. Die Konstruktion hält Transport, Kranmontage und Schneelasten im Winter stand.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>PIR-Dämmung: Wände 100 mm, Dach 160 mm</h3>
-          <p>PIR-Platte 100 mm in den Wänden und 160 mm im Dach. Lambda 0,022 W/(m·K) — Energieeffizienzklasse. Im Winter hält es warm, im Sommer heizt es sich nicht auf wie ein Blechcontainer.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
-          <h3>Fensterelemente aus PVC oder Aluminium</h3>
-          <p>Fenster und Türen aus PVC oder Aluminium — je nach Bestellung. Energieeffiziente Profile, Isolierverglasung. Dichtungen, Schlösser, Justierung — Herstellerzertifikat.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg></div>
-          <h3>Installationen nach Bedarf</h3>
-          <p>Elektrik, LED-Beleuchtung, Verteilerkasten — im Standard. Wasser, Abwasser, Lüftung, Klimaanlage — nach Ihrem Verwendungszweck. Anschlussfertig auf Ihrem Grundstück.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- CO JEST W CENIE (cennik 28.10.2026; opisy modeli uzupełnia STAGO — patrz wCenie._todo w content) -->
-  
-
-  <!-- BENEFITS -->
-  <section class="benefits-section">
-    <div class="container">
-      <p class="eyebrow">Im Preis enthalten</p>
-      <h2 class="h2">Was Sie von STAGO bekommen</h2>
-      <div class="benefits-list">
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Kostenlose 3D-Visualisierung</h3>
-            <p>Wir zeichnen den Pavillon in 3D, bevor Sie etwas unterschreiben. Wir ändern so oft wie nötig — bis Sie „ja“ sagen. Kostenlos, ohne Verpflichtungen.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Transport und Montage aus Jędrzejów</h3>
-            <p>Der Pavillon kommt auf dem Sattelauflieger aus unserem Werk. Unser Team stellt ihn auf Ihrem Grundstück auf. Lieferung nach Deutschland — wir organisieren Transport und Montage.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>2 Jahre Garantie + Service</h3>
-            <p>Garantie auf Konstruktion und Installationen. Auch nach der Garantie lassen wir unsere Kunden nicht allein — rufen Sie an, wir kommen. Eigenes Serviceteam, keine Subunternehmer.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Hilfe bei Dokumenten</h3>
-            <p>Wir unterstützen Sie bei der Genehmigungsdokumentation für den deutschen Markt. Schneller, reibungsloser, ohne Stress.</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
-  <section class="product-faq section" id="faq-duet">
+  <section class="product-faq section section-light" id="faq-duet">
     <div class="container">
       <p class="eyebrow">Fragen</p>
       <h2 class="h2">Das fragen unsere Kunden</h2>
       <div class="faq-list">
-        
+
         <details class="faq-item">
           <summary>Muss ich die Fassade wie im Rendering wählen?</summary>
           <p>Nein. Das Rendering zeigt eine von vielen Ausführungsvarianten. DUET als Baukörper nimmt jede Fassade an — Holz in verschiedenen Tönen, Trapezblech, HPL-Platten, Kompositpaneele. Sie sagen, wie es aussehen soll, wir schlagen Materialien vor und zeigen Muster.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Kann ich die Maße dieses Baukörpers ändern?</summary>
-          <p>Ja. Der Baukörper ist flexibel — von 3×2 m bis 12×4 m. Module lassen sich auch nebeneinander verbinden für größere Flächen. Die Proportionen bleiben erhalten, damit der Charakter von DUET gewahrt bleibt, aber die Größe passen wir an Ihre Situation an.</p>
+          <p>Ja. DUET gibt es von 4×3 m bis 12×3 m bei 3 m Breite. Größere Flächen entstehen aus mehreren Modulen nebeneinander. Die Proportionen halten wir so, dass der Charakter von DUET erhalten bleibt. Andere Maße kalkulieren wir individuell.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Was kostet das?</summary>
-          <p>Abhängig von Größe, Fassadenmaterial und Ausstattung. Die kleinsten Module beginnen ab ca. 4 100 € netto, größere mit Vollausstattung — 10 000–19 500 €. Kostenloses Angebot: <strong><a href="tel:+48509508210">+48 509 508 210</a></strong>.</p>
+          <p>DUET in 4×3 m kostet ab 5 500 € netto. Größere Maße bis 12×3 m, Transport, Montage und Ausstattung kalkulieren wir im Angebot. Kostenloses Angebot: <strong><a href="tel:+48509508210">+48 509 508 210</a></strong>.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Wie lange dauert es?</summary>
           <p>Standardmäßig 4-6 Wochen von der Projektfreigabe bis zur Lieferung. Lieferung nach Deutschland möglich. Das genaue Lieferdatum kennen Sie vor der Anzahlung — vertraglich, nicht mündlich.</p>
         </details>
-        
+
       </div>
     </div>
   </section>
@@ -288,25 +254,25 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">Sagen Sie uns, was Sie brauchen</h2>
       <div class="product-form-grid">
         <form class="product-form" id="product-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="Vor- und Nachname" required>
-          <input type="tel" name="phone" placeholder="Telefon" required>
-          <input type="email" name="email" placeholder="E-Mail (optional)">
-          <select name="type" data-default="inny">
-            
+          <input type="text" name="name" placeholder="Vor- und Nachname" aria-label="Vor- und Nachname" required>
+          <input type="tel" name="phone" placeholder="Telefon" aria-label="Telefon" required>
+          <input type="email" name="email" placeholder="E-Mail (optional)" aria-label="E-Mail (optional)">
+          <select name="type" data-default="inny" aria-label="Verwendungszweck">
+
             <option value="handlowy">Verkaufspavillon</option>
-            
+
             <option value="gastronomiczny">Gastro-Pavillon</option>
-            
+
             <option value="biurowy">Bürocontainer</option>
-            
+
             <option value="uslugowy">Dienstleistungspavillon</option>
-            
+
             <option value="mieszkalny">Wohnhaus</option>
-            
+
             <option value="inny">Sonstiges</option>
-            
+
           </select>
-          <textarea name="message" rows="4" placeholder="Welche Größe, welches Fassadenmaterial, wo soll er stehen, wofür soll er genutzt werden?"></textarea>
+          <textarea name="message" rows="4" placeholder="Welche Größe, welches Fassadenmaterial, wo soll er stehen, wofür soll er genutzt werden?" aria-label="Welche Größe, welches Fassadenmaterial, wo soll er stehen, wofür soll er genutzt werden?"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Hilfsfeld (nicht ausfüllen)"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> Ich habe die Informationen zur Datenverarbeitung gelesen und stimme der Kontaktaufnahme zur Bereitstellung des Materials und zur Bearbeitung meiner Anfrage zu. <a href="../../de/polityka-prywatnosci.html" target="_blank">Datenschutz</a></label>
           <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Ich willige ein, dass STAGO GROUP Sp. z o.o. mir geschäftliche und werbliche Informationen zum STAGO-Angebot per E-Mail, Telefon oder SMS zusendet. Die Einwilligung kann ich jederzeit widerrufen.</label>
@@ -319,15 +285,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <h3>Wie läuft das ab?</h3>
           <p>Sie schreiben oder rufen an. Wir fragen nach Details — Maße, Material, Verwendungszweck, Standort. Wir erstellen eine 3D-Visualisierung. Wir nennen ein vollständiges Angebot mit Transport und Montage. Ohne Überraschungen.</p>
           <ul>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>3D-Visualisierung — sehen, bevor Sie bestellen</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Wir organisieren Transport und Montage</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Hilfe bei Dokumenten und Genehmigung</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Antwort innerhalb eines Tages</li>
-            
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Kostenlose 3D-Visualisierung</strong> Wir zeichnen den Pavillon in 3D, bevor Sie etwas unterschreiben. Wir ändern so oft wie nötig — bis Sie „ja“ sagen. Kostenlos, ohne Verpflichtungen.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Transport und Montage aus Jędrzejów</strong> Der Pavillon kommt auf dem Sattelauflieger aus unserem Werk. Unser Team stellt ihn auf Ihrem Grundstück auf. Lieferung nach Deutschland — wir organisieren Transport und Montage.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>2 Jahre Garantie + Service</strong> Garantie auf Konstruktion und Installationen. Auch nach der Garantie lassen wir unsere Kunden nicht allein — rufen Sie an, wir kommen. Eigenes Serviceteam, keine Subunternehmer.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Hilfe bei Dokumenten</strong> Wir unterstützen Sie bei der Genehmigungsdokumentation für den deutschen Markt. Schneller, reibungsloser, ohne Stress.</span></li>
+
           </ul>
           <div style="margin-top:24px">
             <a href="tel:+48509508210" style="font-size:1.3rem;font-weight:800;color:var(--white);display:block;margin-bottom:8px">Anrufen: 509 508 210</a>
@@ -344,7 +310,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="eyebrow">Könnte nützlich sein</p>
       <h2 class="h2">Weitere Produkte und Ratgeber</h2>
       <div class="blog-grid" style="margin-top:40px">
-        
+
         <a href="../modele.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="900" src="../../assets/modele/nord.webp?v=3a3ef357" alt="Alle STAGO Modelle" loading="lazy"></div>
           <div class="blog-body">
@@ -353,7 +319,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Durchstöbern Sie den kompletten Katalog. Jedes Modell passen wir an Ihre Bedürfnisse an.</p>
           </div>
         </a>
-        
+
         <a href="../zastosowania.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="750" src="../../assets/gallery/realizacje/r5.webp?v=db489cce" alt="Anwendungsbereiche" loading="lazy"></div>
           <div class="blog-body">
@@ -362,7 +328,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Laden, Büro, Café, Haus — wir zeigen, welches Modell wofür.</p>
           </div>
         </a>
-        
+
         <a href="../blog/cennik-pawilonow-2026.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="562" src="../../assets/gallery/realizacje/r6.webp?v=182c285e" alt="Preisliste Pavillons" loading="lazy"></div>
           <div class="blog-body">
@@ -371,7 +337,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Konkrete Preise, ohne Drumherum. Prüfen Sie, was es kostet.</p>
           </div>
         </a>
-        
+
       </div>
     </div>
   </section>
@@ -452,12 +418,12 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "24515",
-      "highPrice": "80000",
+      "highPrice": "59848",
       "priceCurrency": "PLN",
       "availability": "https://schema.org/InStock",
       "seller": {"@type": "Organization", "name": "STAGO"}
     },
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "26"}
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "28"}
   }
   </script>
   <script src="../../form-handler.js"></script>

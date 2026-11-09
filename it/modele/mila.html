@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../style.css?v=7d48b874" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../../style.css?v=7d48b874"></noscript><style>
+  <link rel="preload" href="../../style.css?v=914f8fe5" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="../../style.css?v=914f8fe5"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
@@ -88,61 +88,125 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <img width="1000" height="900" id="phMain" src="../../assets/modele/mila.webp?v=83074a66" alt="Padiglione modulare STAGO MILA — forma dal layout classico" loading="eager">
         </div>
         <div class="product-hero-thumbs">
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/mila.webp" aria-label="Vista principale">
             <img width="1000" height="900" src="../../assets/modele/mila.webp?v=83074a66" alt="Padiglione modulare STAGO MILA" loading="lazy"><span>Vista principale</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/mila-a.webp" aria-label="Fronte">
             <img width="1000" height="900" src="../../assets/modele/mila-a.webp?v=274584cc" alt="Padiglione modulare STAGO MILA" loading="lazy"><span>Fronte</span>
           </button>
-          
+
           <button type="button" class="phm-thumb" data-src="../../assets/modele/mila-b.webp" aria-label="Lato">
             <img width="1000" height="900" src="../../assets/modele/mila-b.webp?v=17e5b930" alt="Padiglione modulare STAGO MILA" loading="lazy"><span>Lato</span>
           </button>
-          
+
         </div>
       </div>
       <div class="product-hero-text">
-        <p class="product-eyebrow-name">Model MILA</p>
-        
-        <h1>MILA — forma dal layout classico.</h1>
+        <p class="product-eyebrow-name">Model</p>
+        <h1 class="product-h1"><span class="product-nazwa">MILA</span><span class="product-h1-reszta">Forma dal layout classico.</span></h1>
+
+
         <p class="product-subtitle">Forma compatta, proporzioni simmetriche, grande porta d'ingresso centrale. Layout universale adatto a ogni destinazione. Finitura — legno, lamiera, HPL o pannelli compositi — scegli tu.</p>
-        <div class="product-price-range">da 4 600 € netto <span>/ preventivo individuale per il tuo progetto</span></div>
+        <div class="product-cena">
+          <p class="product-cena-od">da 5 700 € netto <span>/ preventivo individuale per il tuo progetto</span></p>
+
+        </div>
         <div class="product-hero-cta">
           <a href="mailto:kontakt@stago.com.pl?subject=IT%20—%20MILA%20Inquiry" class="btn btn-primary btn-lg">Preventivo gratuito</a>
-          <a href="../modele.html" class="btn btn-outline-dark">Vedi tutti i modelli &rarr;</a>
+
+          <a href="../modele.html" class="btn btn-outline-dark btn-lg">Vedi tutti i modelli &rarr;</a>
         </div>
       </div>
     </div>
+
+    <dl class="product-fakty">
+      <div><dt>Dimensioni, larghezza 3 m</dt><dd>4×3–12×3 m</dd></div>
+      <div><dt>Produzione dall'approvazione del progetto</dt><dd>4–6 sett.</dd></div>
+      <div><dt>Pannello PIR: pareti / tetto</dt><dd>100 / 160 mm</dd></div>
+      <div><dt>Garanzia sulla struttura</dt><dd>2 anni</dd></div>
+    </dl>
+
   </section>
 
-  <!-- USECASES — do czego pasuje (NAJWYŻEJ) -->
-  <section class="usecases-section section section-light">
+
+
+
+
+
+  <!-- WYBIERZ WYMIAR (sygnaturowy ruch strony modelu, 9.11): przyciski wymiarów → rzut w skali + cena + co w cenie → konfigurator z tym wymiarem.
+       Bez JS: domyślny wymiar i pełna tabela cen (też dla wyszukiwarek i modeli językowych). -->
+
+
+  <!-- GALLERY — realizacje: zaraz po cenie, „tak to wygląda naprawdę” -->
+  <section class="gallery-section section section-white">
+    <div class="container">
+      <p class="eyebrow">Guarda dal vivo</p>
+      <h2 class="h2">Ecco come appaiono le nostre realizzazioni</h2>
+      <div class="product-gallery">
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-d483cbb9-800.webp?v=10afc557" data-full="../../assets/gallery/realizacje/rz-d483cbb9.webp?v=5463daf3" alt="Okap i rynna" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-5eeafed8-800.webp?v=7588562e" data-full="../../assets/gallery/realizacje/rz-5eeafed8.webp?v=1acc4bab" alt="Antracyt i pięć pól · widok frontu" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-ba60e071-800.webp?v=afce9b7f" data-full="../../assets/gallery/realizacje/rw-ba60e071.webp?v=1390a47f" alt="Aneks kuchenny" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-7b977666-800.webp?v=fde8aa5d" data-full="../../assets/gallery/realizacje/rz-7b977666.webp?v=2246640f" alt="Asymetryczna bryła · widok frontu" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-746936c3-800.webp?v=300b0a69" data-full="../../assets/gallery/realizacje/rz-746936c3.webp?v=a95269fb" alt="Pawilon na placu" loading="lazy"></figure>
+
+        <figure class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-28877fcd-800.webp?v=f93a07fe" data-full="../../assets/gallery/realizacje/rw-28877fcd.webp?v=46af0fcd" alt="Białe profile i podział pomieszczeń" loading="lazy"></figure>
+
+      </div>
+      <p class="product-gallery-link"><a href="../../it/realizacje.html">Realizzazioni &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- KONSTRUKCJA — lista specyfikacji (ten sam komponent co „Najważniejsze dane” na karcie wymiaru) -->
+  <section class="specs-section section">
+    <div class="container">
+      <p class="eyebrow">Costruzione</p>
+      <h2 class="h2">Cosa è costante — indipendentemente dalla finitura</h2>
+      <div class="konstrukcja-uklad">
+        <figure class="konstrukcja-obraz">
+          <img width="882" height="900" src="../../assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" alt="Przekrój narożnika pawilonu STAGO: spawana rama stalowa, płyta warstwowa PIR w ścianie i dachu, podłoga, okno i lamele" loading="lazy">
+          <figcaption>Wizualizacja poglądowa konstrukcji</figcaption>
+        </figure>
+        <dl class="karta-dane">
+          <div class="karta-dane-row"><dt>Telaio in acciaio saldato</dt><dd>Profili in acciaio chiusi, saldati su dime. Protetti con trattamento anticorrosivo. La struttura resiste al trasporto, al montaggio con gru e ai carichi neve invernali.</dd></div><div class="karta-dane-row"><dt>Isolamento PIR: pareti 100 mm, tetto 160 mm</dt><dd>Pannello PIR 100 mm sulle pareti e 160 mm sul tetto. Lambda 0,022 W/(m·K) — classe ad alta efficienza energetica. D'inverno mantiene il calore, d'estate non si surriscalda come un container in lamiera.</dd></div><div class="karta-dane-row"><dt>Infissi in PVC o alluminio</dt><dd>Finestre e porte in PVC o alluminio, a seconda dell'ordine. Profili ad alta efficienza energetica, vetri camera. Guarnizioni, serrature, regolazione — certificato del produttore.</dd></div><div class="karta-dane-row"><dt>Impianti su ordinazione</dt><dd>Impianto elettrico, illuminazione LED, acqua, fognatura, ventilazione, climatizzazione: li progettiamo in base alla destinazione e li quotiamo nell'offerta. Il padiglione arriva pronto per l'allacciamento sul terreno.</dd></div>
+        </dl>
+      </div>
+      <p class="product-gallery-link"><a href="../../it/technologia.html">Technologia i etapy produkcji &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- USECASES — do czego pasuje -->
+  <section class="usecases-section section section-white">
     <div class="container">
       <p class="eyebrow">A cosa è adatto</p>
       <h2 class="h2">Dove MILA funziona meglio</h2>
       <p class="section-sub">Questa forma è universale — funziona in diverse direzioni principali. Ma non si limita a queste. Ogni padiglione lo progettiamo per la situazione concreta del cliente.</p>
       <div class="usecases-grid">
-        
+
         <a href="../zastosowania/mieszkalny.html" class="usecase-card">
           <h3>Casetta abitativa</h3>
           <p>Casa tutto l'anno, ADU, holiday house. PIR 100mm, bagno, cucina, tutto pronto.</p>
           <span class="usecase-arrow">Vedi &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/biurowy.html" class="usecase-card">
           <h3>Container ufficio</h3>
           <p>Ufficio vendite, reception, ufficio in cantiere. Caldo, silenzioso, pronto a lavorare dal primo giorno.</p>
           <span class="usecase-arrow">Vedi &rarr;</span>
         </a>
-        
+
         <a href="../zastosowania/uslugowy.html" class="usecase-card">
           <h3>Padiglione servizi</h3>
           <p>Salone, estetica, officina, lavanderia. Acqua, fognatura, corrente — tutto collegato.</p>
           <span class="usecase-arrow">Vedi &rarr;</span>
         </a>
-        
+
         <a href="../../it/zastosowania.html" class="usecase-card usecase-card-cta">
           <h3>Tutte le applicazioni</h3>
           <p>7 direzioni, ognuna con modelli consigliati. Guardate tutto per trovare la soluzione migliore.</p>
@@ -152,131 +216,33 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     </div>
   </section>
 
-  <!-- GALLERY — realizacje (przeniesione wyżej: przełamuje rzędy kart zdjęciami) -->
-  <section class="gallery-section section">
-    <div class="container">
-      <p class="eyebrow">Guarda dal vivo</p>
-      <h2 class="h2">Ecco come appaiono le nostre realizzazioni</h2>
-      <div class="product-gallery">
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-84056810-800.webp?v=97eddf3c" data-full="../../assets/gallery/realizacje/rz-84056810.webp?v=220da8c5" alt="Asymetryczna bryła z bocznym oknem" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rz-4f54b173-800.webp?v=c332d093" data-full="../../assets/gallery/realizacje/rz-4f54b173.webp?v=d33a794c" alt="Antracyt i dwa wąskie okna" loading="lazy"></div>
-        
-        <div class="product-gallery-item"><img width="800" height="600" src="../../assets/gallery/realizacje/rw-f9e1d562-800.webp?v=b9c86721" data-full="../../assets/gallery/realizacje/rw-f9e1d562.webp?v=0bf1e320" alt="Czarne profile i wydzielona toaleta" loading="lazy"></div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECS -->
-  <section class="specs-section section-light">
-    <div class="container">
-      <p class="eyebrow">Costruzione</p>
-      <h2 class="h2">Cosa è costante — indipendentemente dalla finitura</h2>
-      <div class="specs-grid">
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <h3>Telaio in acciaio saldato</h3>
-          <p>Profili in acciaio chiusi, saldati su dime. Protetti con trattamento anticorrosivo. La struttura resiste al trasporto, al montaggio con gru e ai carichi neve invernali.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Isolamento PIR: pareti 100 mm, tetto 160 mm</h3>
-          <p>Pannello PIR 100 mm sulle pareti e 160 mm sul tetto. Lambda 0,022 W/(m·K) — classe ad alta efficienza energetica. D'inverno mantiene il calore, d'estate non si surriscalda come un container in lamiera.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
-          <h3>Infissi in PVC o alluminio</h3>
-          <p>Finestre e porte in PVC o alluminio, a seconda dell'ordine. Profili ad alta efficienza energetica, vetri camera. Guarnizioni, serrature, regolazione — certificato del produttore.</p>
-        </div>
-        
-        <div class="spec-card">
-          <div class="spec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg></div>
-          <h3>Impianti su ordinazione</h3>
-          <p>Impianto elettrico, illuminazione LED, quadro elettrico — di serie. Acqua, fognatura, ventilazione, climatizzazione — secondo la tua destinazione. Pronto per l'allacciamento sul terreno.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- CO JEST W CENIE (cennik 28.10.2026; opisy modeli uzupełnia STAGO — patrz wCenie._todo w content) -->
-  
-
-  <!-- BENEFITS -->
-  <section class="benefits-section">
-    <div class="container">
-      <p class="eyebrow">Incluso nel prezzo</p>
-      <h2 class="h2">Cosa ricevi da STAGO</h2>
-      <div class="benefits-list">
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Visualizzazione 3D gratuita</h3>
-            <p>Disegniamo il padiglione in 3D prima che tu firmi qualsiasi cosa. Lo modifichiamo quante volte serve — finché non dici "sì". Gratuita, senza impegno.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Organizziamo trasporto e montaggio</h3>
-            <p>Il padiglione viaggia su rimorchio dal nostro stabilimento. La nostra squadra lo installa sul tuo terreno. Incluso nel prezzo — nessun supplemento per chilometraggio, nessun costo nascosto. Consegna in Italia.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>2 anni di garanzia + assistenza</h3>
-            <p>Garanzia sulla struttura e sugli impianti. Anche dopo la garanzia non abbandoniamo i clienti — chiami e arriviamo. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto.</p>
-          </div>
-        </div>
-        
-        <div class="benefit-row">
-          <div class="benefit-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div>
-            <h3>Assistenza documentale</h3>
-            <p>Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo. Più veloce, più efficiente, senza stress.</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
-  <section class="product-faq section" id="faq-mila">
+  <section class="product-faq section section-light" id="faq-mila">
     <div class="container">
       <p class="eyebrow">Domande</p>
       <h2 class="h2">Quello che chiedono i clienti</h2>
       <div class="faq-list">
-        
+
         <details class="faq-item">
           <summary>Devo scegliere la stessa facciata del render?</summary>
           <p>No. Il render mostra una delle varianti di finitura. MILA come forma accetta qualsiasi facciata — legno in diverse tonalità, lamiera trapezoidale, pannelli HPL, pannelli compositi. Dicci come deve essere, noi proponiamo i materiali e mostriamo i campioni.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Posso cambiare le dimensioni di questa forma?</summary>
-          <p>Sì. La forma è flessibile — da 3×2m a 12×4m. Si possono anche collegare moduli affiancati per superfici maggiori. Manteniamo le proporzioni per preservare il carattere di MILA, ma le dimensioni le adattiamo alla tua situazione.</p>
+          <p>Sì. MILA è disponibile da 4×3 m a 12×3 m, con larghezza 3 m. Le superfici più grandi le otteniamo affiancando più moduli. Manteniamo le proporzioni per preservare il carattere di MILA. Altre misure le quotiamo su richiesta.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Quanto costa?</summary>
-          <p>Dipende dalle dimensioni, dal materiale della facciata e dalle attrezzature. I moduli più piccoli partono da circa 4 140 € netto, quelli più grandi con dotazione completa — 10 350-19 550 €. Preventivo gratuito: <strong><a href="tel:+48509508210">+48 509 508 210</a></strong>.</p>
+          <p>MILA nella misura 4×3 m parte da 5 700 € netto. Misure maggiori fino a 12×3 m, trasporto, montaggio e dotazioni li quotiamo nell’offerta. Preventivo gratuito: <strong><a href="tel:+48509508210">+48 509 508 210</a></strong>.</p>
         </details>
-        
+
         <details class="faq-item">
           <summary>Quanto tempo devo aspettare?</summary>
           <p>Di norma 4-6 settimane dall'approvazione del progetto alla consegna sul terreno. La data precisa di ritiro la conosci prima di versare l'acconto — nel contratto, non a voce.</p>
         </details>
-        
+
       </div>
     </div>
   </section>
@@ -288,25 +254,25 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">Dicci di cosa hai bisogno</h2>
       <div class="product-form-grid">
         <form class="product-form" id="product-form" data-stago-form novalidate>
-          <input type="text" name="name" placeholder="Nome e cognome" required>
-          <input type="tel" name="phone" placeholder="Telefono" required>
-          <input type="email" name="email" placeholder="E-mail (facoltativo)">
-          <select name="type" data-default="inny">
-            
+          <input type="text" name="name" placeholder="Nome e cognome" aria-label="Nome e cognome" required>
+          <input type="tel" name="phone" placeholder="Telefono" aria-label="Telefono" required>
+          <input type="email" name="email" placeholder="E-mail (facoltativo)" aria-label="E-mail (facoltativo)">
+          <select name="type" data-default="inny" aria-label="Destinazione del padiglione">
+
             <option value="handlowy">Padiglione commerciale</option>
-            
+
             <option value="gastronomiczny">Padiglione gastronomico</option>
-            
+
             <option value="biurowy">Container ufficio</option>
-            
+
             <option value="uslugowy">Padiglione servizi</option>
-            
+
             <option value="mieszkalny">Casetta abitativa</option>
-            
+
             <option value="inny">Altro</option>
-            
+
           </select>
-          <textarea name="message" rows="4" placeholder="Quali dimensioni, quale materiale di facciata, dove deve stare, a cosa deve servire?"></textarea>
+          <textarea name="message" rows="4" placeholder="Quali dimensioni, quale materiale di facciata, dove deve stare, a cosa deve servire?" aria-label="Quali dimensioni, quale materiale di facciata, dove deve stare, a cosa deve servire?"></textarea>
           <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Campo ausiliario (non compilare)"></div>
           <label class="form-consent"><input type="checkbox" name="consent" required> Ho preso visione dell'informativa sul trattamento dei dati e acconsento al contatto per la consegna del materiale e l'evasione della richiesta. <a href="../../it/polityka-prywatnosci.html" target="_blank">Privacy</a></label>
           <label class="form-consent form-consent-optional"><input type="checkbox" name="consent_marketing"> Acconsento a ricevere da STAGO GROUP Sp. z o.o. comunicazioni commerciali e di marketing relative all'offerta STAGO via e-mail, telefono o SMS. Posso revocare il consenso in qualsiasi momento.</label>
@@ -319,15 +285,15 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <h3>Come funziona?</h3>
           <p>Scrivi o chiama. Chiediamo i dettagli — dimensioni, materiale, destinazione, posizione. Disegniamo la visualizzazione 3D. Ti diamo un preventivo completo con trasporto e montaggio. Senza sorprese.</p>
           <ul>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Visualizzazione 3D — vedi prima di ordinare</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Preventivo con trasporto e montaggio</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Assistenza con documenti e comunicazione</li>
-            
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Risposta entro un giorno</li>
-            
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Visualizzazione 3D gratuita</strong> Disegniamo il padiglione in 3D prima che tu firmi qualsiasi cosa. Lo modifichiamo quante volte serve — finché non dici "sì". Gratuita, senza impegno.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Organizziamo trasporto e montaggio</strong> Il padiglione viaggia su rimorchio dal nostro stabilimento. La nostra squadra lo installa sul tuo terreno. Incluso nel prezzo — nessun supplemento per chilometraggio, nessun costo nascosto. Consegna in Italia.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>2 anni di garanzia + assistenza</strong> Garanzia sulla struttura e sugli impianti. Anche dopo la garanzia non abbandoniamo i clienti — chiami e arriviamo. Abbiamo i nostri tecnici, non cerchiamo qualcuno all'ultimo minuto.</span></li>
+
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Assistenza documentale</strong> Fino a 35 m² basta la comunicazione, non il permesso di costruire. Ti aiutiamo con le pratiche per non doverti arrangiare da solo. Più veloce, più efficiente, senza stress.</span></li>
+
           </ul>
           <div style="margin-top:24px">
             <a href="tel:+48509508210" style="font-size:1.3rem;font-weight:800;color:var(--white);display:block;margin-bottom:8px">Chiama: 509 508 210</a>
@@ -344,7 +310,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <p class="eyebrow">Potrebbe essere utile</p>
       <h2 class="h2">Altri prodotti e guide</h2>
       <div class="blog-grid" style="margin-top:40px">
-        
+
         <a href="../modele.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="900" src="../../assets/modele/nord.webp?v=3a3ef357" alt="Tutti i modelli STAGO" loading="lazy"></div>
           <div class="blog-body">
@@ -353,7 +319,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Sfoglia l'intero catalogo di design. Ognuno lo adatti su misura.</p>
           </div>
         </a>
-        
+
         <a href="../zastosowania.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="750" src="../../assets/gallery/realizacje/r5.webp?v=db489cce" alt="Applicazioni dei padiglioni" loading="lazy"></div>
           <div class="blog-body">
@@ -362,7 +328,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Negozio, ufficio, caffetteria, casa — ti mostriamo quale modello per cosa.</p>
           </div>
         </a>
-        
+
         <a href="../blog/cennik-pawilonow-2026.html" class="blog-card">
           <div class="blog-img"><img width="1000" height="562" src="../../assets/gallery/realizacje/r6.webp?v=182c285e" alt="Listino prezzi padiglioni" loading="lazy"></div>
           <div class="blog-body">
@@ -371,7 +337,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
             <p>Cifre concrete, senza giri di parole. Scopri quanto pagherai.</p>
           </div>
         </a>
-        
+
       </div>
     </div>
   </section>
@@ -452,12 +418,12 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "25215",
-      "highPrice": "80000",
+      "highPrice": "61348",
       "priceCurrency": "PLN",
       "availability": "https://schema.org/InStock",
       "seller": {"@type": "Organization", "name": "STAGO"}
     },
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "26"}
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "28"}
   }
   </script>
   <script src="../../form-handler.js"></script>
