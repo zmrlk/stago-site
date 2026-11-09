@@ -14,8 +14,8 @@
     "imgAlt": "STAGO vendéglátó pavilon — SAGA forma",
     "h1": "Vendéglátó pavilon.",
     "subtitle": "Kávézó, fagyizó, food truck, kis konyha, bár. Ismerjük az iparág sajátosságait — szellőztetés, egészségügyi követelmények, kiadóablakos elrendezés. Tudjuk azt is, hogy szezonban nincs idő javításokra, ezért mindennek az első naptól működnie kell. Mondja el, mit szolgál fel, a többit ráigazítjuk.",
-    "price": "kb. 5 060 € nettó-tól",
-    "priceNote": "/ 4×2,4 m-es vendéglátó modul, nyitásra kész",
+    "price": "nettó [[eur:min]]-tól",
+    "priceNote": "/ 4×3 m-es pavilon, a vendéglátó szereléseket az ajánlatban árazzuk",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Vendéglátó%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Tekintse meg mind a 12 modellt &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Az árban",
+    "eyebrow": "Együttműködés",
     "h2": "Mit kap a STAGO-tól",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Mennyibe kerül egy vendéglátó pavilon?",
-        "a": "Egy kis kávés modul kb. 5 060 € nettó-tól indul. Nagyobb fagyizó hűtőhelyiséggel — 9 200–13 800 €. Bár teljes konyhával — 16 100 €-tól. Minden árajánlatot díjmentesen készítünk egy rövid beszélgetés után."
+        "a": "A 4×3 m-es pavilon nettó [[eur:4x3]]-tól, a 6×3 m-es [[eur:6x3]]-tól, a 8×3 m-es [[eur:8x3]]-tól indul (árlista szerinti árak, szállítás, telepítés és felszerelés nélkül). A szellőzést, a vízszerelést és a konyhai felszerelést az ajánlatban árazzuk, mert attól függnek, mit szolgál fel. Minden árajánlatot díjmentesen készítünk egy rövid beszélgetés után."
       },
       {
         "q": "Lehet kiadóablakom és egyben belső vendégtér is?",
@@ -239,7 +239,7 @@
     "name": "STAGO vendéglátó pavilon",
     "description": "Kulcsrakész vendéglátó pavilonok. Kávézó, fagyizó, food truck, bár. Szellőztetés, kiadóablak, HACCP burkolatok. Gyártótól, Jędrzejówból.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

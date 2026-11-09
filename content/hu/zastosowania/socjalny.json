@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Építkezési konténer — öltöző, étkezde, szanitér | STAGO",
-    "description": "Szociális konténerek építkezésekhez és cégekhez. Öltöző, étkezde, szanitér konténer. Stabil, mobilis, azonnal kész. Kb. 2 760 € nettó-tól.",
+    "description": "Szociális konténerek építkezésekhez és cégekhez: STAGO moduláris pavilon 12 modellben öltözőnek, étkezdének, mosdónak. Nettó [[eur:min]]-tól.",
     "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
     "ogTitle": "Építkezési konténer — öltöző, étkezde, szanitér | STAGO",
-    "ogDescription": "Szociális konténerek építkezésekhez és cégekhez. Öltöző, étkezde, szanitér konténer. Stabil, mobilis, azonnal kész. Kb. 2 760 € nettó-tól.",
+    "ogDescription": "Szociális konténerek építkezésekhez és cégekhez: STAGO moduláris pavilon 12 modellben öltözőnek, étkezdének, mosdónak. Nettó [[eur:min]]-tól.",
     "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
   },
   "breadcrumb": "Szociális",
@@ -14,8 +14,8 @@
     "imgAlt": "STAGO építkezési konténer — CUBE forma",
     "h1": "Építkezési konténer.",
     "subtitle": "Öltöző, étkezde, szanitér, brigád háttere. Stabil, mobilis és kész a következő építkezésre szállításra, amikor a jelenlegi beruházás véget ér. A csapatnak van hol átöltözni, enni és pihenni — Önnek pedig nyugalma van.",
-    "price": "kb. 2 760 € nettó-tól",
-    "priceNote": "/ 6×2,4 m-es szociális konténer",
+    "price": "nettó [[eur:min]]-tól",
+    "priceNote": "/ 4×3 m-es szociális pavilon, alapkivitel",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Építkezési%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Tekintse meg mind a 12 modellt &rarr;"
@@ -80,7 +80,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
         "h3": "Gyors szállítás építkezések között",
-        "text": "Félpótkocsihoz igazított standard méretek. A felrakás, szállítás és lerakás néhány órát vesz igénybe — és a konténer már az új helyen dolgozik. Egy ilyen objektum évente három-négy építkezést tud kiszolgálni."
+        "text": "Félpótkocsihoz igazított standard méretek. A felrakás, szállítás és lerakás néhány órát vesz igénybe — és a konténer már az új helyen dolgozik."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Az árban",
+    "eyebrow": "Együttműködés",
     "h2": "Mit kap a STAGO-tól",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Mennyibe kerül egy szociális konténer?",
-        "a": "Egy alapkivitelű 6×2,4 m-es modul kb. 2 760 € nettó-tól indul. Teljes felszereléssel (öltöző és szanitér egység) — 5 750–8 050 €. Ez olcsóbb megoldás, mint a féléves bérlet, és a fizetés után a konténer az Ön tulajdona marad."
+        "a": "A STAGO szociális konténer moduláris pavilon. A 4×3 m-es méret nettó [[eur:4x3]]-tól, a 6×3 m-es [[eur:6x3]]-tól, a 8×3 m-es [[eur:8x3]]-tól kapható (árlista szerinti árak, szállítás és telepítés nélkül). Az öltözőt, a szanitér egységet és a bútorokat az ajánlatban külön árazzuk. Kifizetés után a pavilon az Ön tulajdona."
       },
       {
         "q": "Lízingelhetek is ahelyett, hogy azonnal megvásárolnám?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "Csatlakoztatható hozzá víz és csatorna?",
-        "a": "Igen. A szanitér konténerek mosdókkal, zuhanyzókkal és WC-vel rendelkeznek. Vízbekötés és elvezetés szükséges az építkezésen — segítünk megtervezni a csatlakozásokat, de a kivitelezés az Ön vízvezeték- vagy villanyszerelőjének feladata."
+        "a": "Igen. A pavilonba mosdók, zuhanyzók és WC kerülhetnek, ezeket felszerelésként árazzuk. Vízbekötés és elvezetés szükséges az építkezésen — segítünk megtervezni a csatlakozásokat, de a kivitelezés az Ön vízvezeték- vagy villanyszerelőjének feladata."
       },
       {
         "q": "Mennyi ideig szolgál a konténer?",
-        "a": "Jól karbantartva 15-20 évig dolgozik. Sok építőipari ügyfelünk egyetlen objektumot használ sikeresen több tucatnyi egymást követő építkezésen."
+        "a": "A szerkezet zárt szelvényekből hegesztett, korrózióvédett acélváz, 100 mm-es PIR falakkal és 160 mm-es PIR tetővel. A következő építkezésre a pavilon félpótkocsin utazik. A szerkezetre 2 év garanciát adunk."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "STAGO építkezési konténer",
-    "description": "Szociális konténerek építkezésekhez és cégekhez. Öltöző, étkezde, szanitér konténer. Stabil, mobilis, azonnal kész. Kb. 2 760 € nettó-tól.",
+    "description": "Szociális konténerek építkezésekhez és cégekhez: STAGO moduláris pavilon 12 modellben öltözőnek, étkezdének, mosdónak. Nettó [[eur:min]]-tól.",
     "image": "https://stago.com.pl/assets/modele/cube.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

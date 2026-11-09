@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Contenedor para obra — vestuario, comedor, sanitarios | STAGO",
-    "description": "Contenedores sociales para obras y empresas. Vestuario, comedor, contenedor sanitario. Sólidos, móviles, disponibles de inmediato. Desde 2 760 € neto.",
+    "description": "Contenedores sociales para obras y empresas: pabellón modular STAGO en 12 modelos para vestuario, comedor y aseos. Bastidor de acero. Desde [[eur:min]] neto.",
     "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
     "ogTitle": "Contenedor para obra — vestuario, comedor, sanitarios | STAGO",
-    "ogDescription": "Contenedores sociales para obras y empresas. Vestuario, comedor, contenedor sanitario. Sólidos, móviles, disponibles de inmediato. Desde 2 760 € neto.",
+    "ogDescription": "Contenedores sociales para obras y empresas: pabellón modular STAGO en 12 modelos para vestuario, comedor y aseos. Bastidor de acero. Desde [[eur:min]] neto.",
     "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
   },
   "breadcrumb": "Obra",
@@ -14,8 +14,8 @@
     "imgAlt": "Contenedor para obra STAGO — modelo CUBE",
     "h1": "Contenedor para obra.",
     "subtitle": "Vestuario, comedor, sanitarios, instalaciones para el equipo. Sólidos, móviles y listos para trasladar a la siguiente obra cuando la actual termine. El equipo tiene dónde cambiarse, comer y descansar — y usted tiene tranquilidad.",
-    "price": "desde 2 760 € neto",
-    "priceNote": "/ contenedor social 6×2,4 m",
+    "price": "desde [[eur:min]] neto",
+    "priceNote": "/ pabellón social 4×3 m, versión básica",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Contenedor%20Obra",
     "articleHref": "../modele.html",
     "articleText": "Ver los 12 modelos &rarr;"
@@ -80,12 +80,12 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
         "h3": "Transporte rápido entre obras",
-        "text": "Dimensiones estándar adaptadas a camiones. Carga, transporte y descarga en unas horas — y el contenedor ya trabaja en el nuevo sitio. Un solo módulo puede atender tres o cuatro obras al año."
+        "text": "Dimensiones estándar adaptadas a camiones. Carga, transporte y descarga en unas horas — y el contenedor ya trabaja en el nuevo sitio."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
         "h3": "Equipamiento adaptado al equipo",
-        "text": "Taquillas, bancos, mesas, lavabos, duchas — en la configuración que necesite. Vestuario completo, módulo sanitario independiente o ambos combinados en un solo módulo."
+        "text": "Taquillas, bancos, mesas, lavabos, duchas — en la configuración que necesite. Vestuario completo, zona de aseos independiente o ambos combinados en un solo módulo."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluido",
+    "eyebrow": "Colaboración",
     "h2": "Lo que recibe de STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "¿Cuánto cuesta un contenedor social?",
-        "a": "Un módulo básico de 6×2,4 m empieza desde 2 760 € neto. Con equipamiento completo (vestuario y módulo sanitario) — 5 750–8 050 €. Es una solución más económica que el alquiler a medio año, y tras el pago el contenedor sigue siendo suyo."
+        "a": "El contenedor social STAGO es un pabellón modular. El tamaño de 4×3 m cuesta desde [[eur:4x3]] neto, el de 6×3 m desde [[eur:6x3]] y el de 8×3 m desde [[eur:8x3]] (precios de tarifa, sin transporte ni montaje). El vestuario, los aseos y el mobiliario los presupuestamos aparte en la oferta. Tras el pago, el pabellón es suyo."
       },
       {
         "q": "¿Puedo financiarlo con leasing en vez de comprarlo al contado?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "¿Se puede conectar agua y saneamiento?",
-        "a": "Sí. Los contenedores sanitarios tienen lavabos, duchas e inodoros. Requieren acometida de agua y desagüe en la obra — le ayudamos a planificar las conexiones, pero su ejecución corre de su parte."
+        "a": "Sí. El pabellón puede tener lavabos, duchas e inodoros, que presupuestamos como equipamiento. Requieren acometida de agua y desagüe en la obra — le ayudamos a planificar las conexiones, pero su ejecución corre de su parte."
       },
       {
         "q": "¿Cuánto dura un contenedor?",
-        "a": "Un contenedor bien mantenido funciona 15-20 años. Muchos clientes del sector de la construcción usan un mismo módulo con éxito en decenas de obras consecutivas."
+        "a": "La estructura es un bastidor de acero soldado de perfiles cerrados con protección anticorrosiva, paredes de PIR 100 mm y cubierta de PIR 160 mm. A la siguiente obra el pabellón viaja en camión. La estructura tiene 2 años de garantía."
       }
     ]
   },
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "¿Cómo funciona?",
-    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el presupuesto con transporte y montaje. Sin sorpresas.",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
     "features": [
       {
         "text": "Visualización 3D — véalo antes de encargar"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Contenedor para obra STAGO",
-    "description": "Contenedores sociales para obras y empresas. Vestuario, comedor, contenedor sanitario. Sólidos, móviles, disponibles de inmediato. Desde 2 760 € neto.",
+    "description": "Contenedores sociales para obras y empresas: pabellón modular STAGO en 12 modelos para vestuario, comedor y aseos. Bastidor de acero. Desde [[eur:min]] neto.",
     "image": "https://stago.com.pl/assets/modele/cube.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

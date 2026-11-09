@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Padiglione gastronomico — caffetteria, gelateria, food truck | STAGO",
+    "title": "Padiglione gastronomico: caffetteria, gelateria | STAGO",
     "description": "Padiglioni gastronomici chiavi in mano. Caffetteria, gelateria, food truck, bar. Ventilazione, finestra di servizio, finiture HACCP. Dal produttore.",
     "canonical": "https://stago.com.pl/zastosowania/gastronomiczny.html",
-    "ogTitle": "Padiglione gastronomico — caffetteria, gelateria, food truck | STAGO",
+    "ogTitle": "Padiglione gastronomico: caffetteria, gelateria | STAGO",
     "ogDescription": "Padiglioni gastronomici chiavi in mano. Caffetteria, gelateria, food truck, bar. Ventilazione, finestra di servizio, finiture HACCP. Dal produttore.",
     "ogImage": "https://stago.com.pl/assets/modele/saga.webp"
   },
@@ -14,8 +14,8 @@
     "imgAlt": "Padiglione gastronomico STAGO — modello SAGA",
     "h1": "Padiglione gastronomico.",
     "subtitle": "Caffetteria, gelateria, food truck, piccola cucina, bar. Conosciamo le specificità del settore — ventilazione, requisiti sanitari, layout con finestra di servizio. Sappiamo anche che in stagione non c'è tempo per correzioni, per questo tutto deve funzionare dal primo giorno. Dicci cosa servi e adattiamo il resto.",
-    "price": "da 5 060 € netto",
-    "priceNote": "/ modulo gastronomico 4×2,4 m, pronto per l'apertura",
+    "price": "da [[eur:min]] netto",
+    "priceNote": "/ padiglione 4×3 m, gli impianti gastro li preventiviamo nell'offerta",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Gastronomico%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Vedi tutti i 12 modelli &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluso nel prezzo",
+    "eyebrow": "Collaborazione",
     "h2": "Cosa ricevi da STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Quanto costa un padiglione gastronomico?",
-        "a": "Un piccolo modulo per caffè parte da 5 060 € netto. Una gelateria più grande con retro refrigerato — 9 200-13 800 €. Un bar con cucina completa — da 16 100 €. Ogni preventivo lo prepariamo gratuitamente dopo una breve conversazione."
+        "a": "Un padiglione 4×3 m parte da [[eur:4x3]] netto, uno 6×3 m da [[eur:6x3]] e uno 8×3 m da [[eur:8x3]] (prezzi di listino, senza trasporto, montaggio e allestimento). Ventilazione, impianto idrico e attrezzatura della cucina li preventiviamo nell'offerta, perché dipendono da cosa servi. Ogni preventivo lo prepariamo gratuitamente dopo una breve conversazione."
       },
       {
         "q": "Posso avere la finestra di servizio e contemporaneamente posto per i clienti all'interno?",
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
@@ -239,7 +239,7 @@
     "name": "Padiglione gastronomico STAGO",
     "description": "Padiglioni gastronomici chiavi in mano. Caffetteria, gelateria, food truck, bar. Ventilazione, finestra di servizio, finiture HACCP. Dal produttore.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

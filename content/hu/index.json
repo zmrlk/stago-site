@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "STAGO — Moduláris pavilonok, konténerek, kulcsrakész épületek",
-    "description": "STAGO — moduláris pavilonok gyártója. Üzlet, iroda, lakás — kulcsrakészen. Ingyenes látványterv, telepítés a helyszínen, 2 év garancia. Szállítás Magyarországra.",
+    "title": "Moduláris pavilonok a gyártótól, kulcsrakészen | STAGO",
+    "description": "Moduláris pavilonok gyártója: üzlet, iroda, lakás kulcsrakészen. Ingyenes látványterv, telepítés a helyszínen, 2 év garancia. Szállítás Magyarországra.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -120,14 +120,14 @@
     "eyebrow": "Bérlés vs saját helyiség",
     "h2": "Bérelni vagy saját pavilont?",
     "h2accent": "Számolja ki maga.",
-    "sub": "Legtöbb ügyfelünk korábban bérelt. Aztán utánaszámoltak.",
+    "sub": "Vegye a bérleti díját, és tegye a pavilon ára mellé.",
     "rent": {
       "label": "Bérel",
       "price": "700 €",
-      "priceSuffix": "/hó",
+      "priceSuffix": "/hó, példa",
       "items": [
         {
-          "text": "36 hónap = <strong>25 200 €</strong>"
+          "text": "36 hónap = <strong>36 × 700 €</strong>"
         },
         {
           "text": "A helyiség soha nem lesz az Öné"
@@ -145,11 +145,11 @@
     },
     "own": {
       "label": "Saját pavilonja van",
-      "price": "~280 €",
-      "priceSuffix": "/hó részlet",
+      "price": "[[eur:6x3]]",
+      "priceSuffix": " nettó, egyszer",
       "items": [
         {
-          "text": "Törlesztés után = <strong>örökre az Öné</strong>"
+          "text": "Kifizetés után = <strong>örökre az Öné</strong>"
         },
         {
           "text": "Nulla bérleti díj élete végéig"
@@ -165,7 +165,7 @@
         }
       ]
     },
-    "footnote": "A lízingrészlet tájékoztató jellegű, kb. 8 000 € nettó értékű pavilonnál 36 hónapra. A pontos finanszírozási ajánlatot egyedileg állítjuk össze."
+    "footnote": "A havi 700 € bérleti díj csak példa, írja be a sajátját. A 6×3 m-es pavilon ára a legolcsóbb modellben, nettó, szállítás, telepítés és felszerelés nélkül. A lízinget és a részletfizetést egyedileg állítjuk össze."
   },
   "caseStudy": {
     "eyebrow": "Ügyfél története",
@@ -278,7 +278,7 @@
       {
         "img": "assets/gallery/k19.webp",
         "alt": "STAGO raktárkonténer — grafit lemez",
-        "label": "Raktár 6×2,4m, grafit lemez"
+        "label": "Pavilon grafit lemezzel"
       },
       {
         "img": "assets/gallery/k21.webp",
@@ -313,7 +313,7 @@
         "source": "Google Reviews"
       }
     ],
-    "count": "26 vélemény"
+    "count": "28 vélemény"
   },
   "blog": {
     "eyebrow": "Útmutatók",
@@ -349,11 +349,11 @@
     "items": [
       {
         "q": "Mennyibe kerül?",
-        "a": "A modelltől, mérettől és a belső felszereléstől függ. Hogy legyen egy képe — a legegyszerűbb modul kb. 2 800 € nettó-tól indul, a nagyobb, kulcsrakész pavilonok kb. 8 000–11 500 € körül mozognak. Minden projektet egyedileg és díjmentesen árazunk. Hívjon vagy írjon — konkrét összeget adunk, mielőtt bármit eldöntene."
+        "a": "A modelltől, a mérettől és a belső felszereléstől függ. Tájékoztatásul: a fenti modellek nettó [[kwotaMin]]-tól indulnak, szállítás és telepítés nélkül. A felszerelést és a kulcsrakész kialakítást külön árazzuk. Minden projektet egyedileg és díjmentesen árazunk. Hívjon vagy írjon, és konkrét összeget adunk, mielőtt bármit eldöntene."
       },
       {
         "q": "Mennyi az átfutási idő?",
-        "a": "A határidőt a szerződéskötéskor rögzítjük — és betartjuk. Attól függ, mit építünk. Egyszerűbb modul gyorsabban, összetettebb több időt igényel. A pontos átadási dátumot a foglalóbefizetés előtt ismeri — szerződésben, nem szóban."
+        "a": "A gyártás általában 4–6 hét a terv jóváhagyásától. Az átadás időpontját a szerződésbe írjuk, és betartjuk. A pontos dátumot a foglaló befizetése előtt ismeri."
       },
       {
         "q": "Kell-e építési engedély?",
@@ -361,11 +361,11 @@
       },
       {
         "q": "Magyarországra is szállítanak? Hol telepítenek?",
-        "a": "Igen, szállítunk Magyarországra. A pavilon félpótkocsin érkezik üzemünkből Jędrzejów mellől. Csapatunk a helyszínen telepíti — szilárd alapra (térkő, beton, lemezek) van szükség. A szállítást és telepítést megszervezzük van. Ön csak megmutatja, hol álljon."
+        "a": "Igen, szállítunk Magyarországra. A pavilon félpótkocsin érkezik üzemünkből Jędrzejów mellől. Csapatunk a helyszínen telepíti — szilárd alapra (térkő, beton, lemezek) van szükség. A szállítást és a telepítést megszervezzük, és az ajánlatban külön árazzuk. Ön csak megmutatja, hol álljon."
       },
       {
         "q": "Mi van télen? Meleg a pavilon?",
-        "a": "Pavilonjainkban PIR szigetelés van — ugyanaz a szigetelés, mint az energiatakarékos házakban. Télen belül meleg van, nyáron nem melegszik fel, mint egy bádogépület. Azok az ügyfelek, akiknek légkondicionálójuk van hőszivattyúval, havonta 50–100 €-t fizetnek a fűtésért. Ez nem ideiglenes megoldás — ez egész éves, teljes értékű tér."
+        "a": "Pavilonjainkban PIR szigetelés van — ugyanaz a szigetelés, mint az energiatakarékos házakban. Télen belül meleg van, nyáron nem melegszik fel, mint egy bádogépület. A fűtés költsége a pavilon méretétől, a fűtés módjától és a használattól függ. Ez nem ideiglenes megoldás — ez egész éves, teljes értékű tér."
       },
       {
         "q": "Mi a helyzet a garanciával?",

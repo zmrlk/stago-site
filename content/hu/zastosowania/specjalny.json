@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Különleges pavilon — orvosi rendelő, portásfülke, jegypénztár | STAGO",
+    "title": "Különleges pavilon: rendelő, portásfülke, pénztár | STAGO",
     "description": "Különleges célú pavilonok. Orvosi rendelő, portásfülke, jegypénztár, info pont, művelődési ház. Konkrét követelmények és előírások szerint.",
     "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
-    "ogTitle": "Különleges pavilon — orvosi rendelő, portásfülke, jegypénztár | STAGO",
+    "ogTitle": "Különleges pavilon: rendelő, portásfülke, pénztár | STAGO",
     "ogDescription": "Különleges célú pavilonok. Orvosi rendelő, portásfülke, jegypénztár, info pont, művelődési ház. Konkrét követelmények és előírások szerint.",
     "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
   },
@@ -80,7 +80,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
         "h3": "Különleges méretek és elrendezések",
-        "text": "2×2 m-es portásfülke, 8×4 m-es információs pont tetővel a várakozó zóna felett, kis könyvtár olvasóteremmel — a méreteket és a belső elrendezést a konkrét helyzethez tervezzük, nem merev katalógushoz."
+        "text": "Portásfülke, információs pont tetővel a várakozó zóna felett, kis könyvtár olvasóteremmel. A méretet 4×3 és 12×3 m között választja, nagyobb alapterületet több, egymás mellé állított modulból építünk. Az elrendezést a konkrét helyzethez tervezzük, a nem szabványos megoldásokat külön árazzuk."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
@@ -90,12 +90,12 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16\"/></svg>",
         "h3": "Együttműködés hatóságokkal és önkormányzatokkal",
-        "text": "ÁFÁ-s számlát állítunk ki, segítünk a dokumentáció előkészítésében és közbeszerzési pályázatok szerinti projekteket is megvalósítunk. Egész Európában dolgozunk együtt önkormányzatokkal."
+        "text": "ÁFÁ-s számlát állítunk ki, segítünk a dokumentáció előkészítésében és közbeszerzési pályázatok szerinti projekteket is megvalósítunk. Lengyelország-szerte dolgozunk együtt önkormányzatokkal."
       }
     ]
   },
   "benefits": {
-    "eyebrow": "Az árban",
+    "eyebrow": "Együttműködés",
     "h2": "Mit kap a STAGO-tól",
     "items": [
       {
@@ -145,7 +145,7 @@
       },
       {
         "q": "Mennyibe kerül egy orvosi rendelő?",
-        "a": "Az ár a specifikációtól függ. Kis kezelő rendelő kb. 8 050 € nettó-tól indul. Teljes orvosi modul váróteremmel, rendelővel és sterilizáló helyiséggel — 18 400–34 500 €. A végleges árajánlat a szakemberrel folytatott beszélgetés után készül."
+        "a": "Az ár a specifikációtól függ. A kiindulópont a pavilon árlista szerinti ára: 4×3 m nettó [[eur:4x3]]-tól, 6×3 m nettó [[eur:6x3]]-tól. Az orvosi szereléseket, a felszerelést és a nem szabványos megoldásokat külön árazzuk. A végleges árajánlat a szakemberrel folytatott beszélgetés után készül."
       },
       {
         "q": "Tudnak városi információs pontot megvalósítani?",
@@ -239,7 +239,7 @@
     "name": "STAGO különleges pavilon",
     "description": "Különleges célú pavilonok. Orvosi rendelő, portásfülke, jegypénztár, info pont, művelődési ház. Konkrét követelmények és előírások szerint.",
     "image": "https://stago.com.pl/assets/modele/noir.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

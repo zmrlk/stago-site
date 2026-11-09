@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Pabellón comercial — tienda, quiosco, punto de venta | STAGO",
-    "description": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde 3 450 € neto.",
+    "description": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde [[eur:min]] neto.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
     "ogTitle": "Pabellón comercial — tienda, quiosco, punto de venta | STAGO",
-    "ogDescription": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde 3 450 € neto.",
+    "ogDescription": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde [[eur:min]] neto.",
     "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
   },
   "breadcrumb": "Comerciales",
@@ -14,8 +14,8 @@
     "imgAlt": "Pabellón comercial STAGO — modelo LOFT",
     "h1": "Pabellón comercial.",
     "subtitle": "Tienda, quiosco, punto de venta en plaza, mercadillo. Sabemos que el cliente decide entrar en pocos segundos — por eso diseñamos vitrinas para la exposición, iluminación que realza el producto y una entrada cómoda. Díganos qué vende — le propondremos una distribución que trabaje para sus ventas.",
-    "price": "desde 3 450 € neto",
-    "priceNote": "/ pabellón 3×2m listo para el comercio",
+    "price": "desde [[eur:min]] neto",
+    "priceNote": "/ pabellón 4×3 m, versión básica",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Comercial",
     "articleHref": "../modele.html",
     "articleText": "Ver los 12 modelos &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluido",
+    "eyebrow": "Colaboración",
     "h2": "Lo que recibe de STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "¿Cuánto cuesta un pabellón comercial?",
-        "a": "Un pequeño quiosco de 3×2 m empieza desde 3 450 € neto. Una tienda de 6×3 m — desde 6 440 € neto. Un punto mayor de 12×3 m con vitrinas y trastienda — desde 11 040 € neto. Cada presupuesto lo preparamos individualmente y gratis: <strong><a href=\"mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Comercial\">kontakt@stago.com.pl</a></strong>."
+        "a": "Un quiosco pequeño de 4×3 m empieza desde [[eur:4x3]] neto, una tienda de 6×3 m desde [[eur:6x3]] neto y un punto mayor de 12×3 m desde [[eur:12x3]] neto (la trastienda y el equipamiento se presupuestan aparte). Cada presupuesto lo preparamos individualmente y gratis: <strong><a href=\"mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Comercial\">kontakt@stago.com.pl</a></strong>."
       },
       {
         "q": "¿Necesito licencia para un pabellón comercial?",
@@ -153,7 +153,7 @@
       },
       {
         "q": "¿Cómo se calienta el pabellón en invierno y cuánto cuesta?",
-        "a": "La solución más popular es climatización con bomba de calor — calienta en invierno y enfría en verano. Las paredes con aislamiento PIR de 100 mm retienen el calor como un edificio de ladrillo. En un pabellón pequeño, la factura mensual de calefacción en temporada de invierno suele ser de 80–120 €."
+        "a": "La solución más popular es climatización con bomba de calor — calienta en invierno y enfría en verano. Las paredes con aislamiento PIR de 100 mm retienen el calor como un edificio de ladrillo. El coste de la calefacción depende del tamaño, del sistema y del uso."
       }
     ]
   },
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "¿Cómo funciona?",
-    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el presupuesto con transporte y montaje. Sin sorpresas.",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
     "features": [
       {
         "text": "Visualización 3D — véalo antes de encargar"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Pabellón comercial STAGO",
-    "description": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde 3 450 € neto.",
+    "description": "Pabellones comerciales del fabricante. Tienda, quiosco, punto de venta, mercadillo. Vitrinas para exposición, iluminación, entrada cómoda. Desde [[eur:min]] neto.",
     "image": "https://stago.com.pl/assets/modele/loft.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Kancelářský kontejner — prodejní kancelář, recepce, stavební kancelář | STAGO",
-    "description": "Kancelářské kontejnery od výrobce. Prodejní kancelář, recepce, kancelář na stavbě, ordinace. Teplo, ticho, připraveno k práci. Od 5 100 € netto.",
+    "title": "Kancelářský kontejner: prodejní kancelář, recepce | STAGO",
+    "description": "Kancelářské kontejnery od výrobce: modulární pavilon na ocelovém rámu ve 12 modelech. Prodejní kancelář, recepce, kancelář na stavbě. Od [[eur:min]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
-    "ogTitle": "Kancelářský kontejner — prodejní kancelář, recepce, stavební kancelář | STAGO",
-    "ogDescription": "Kancelářské kontejnery od výrobce. Prodejní kancelář, recepce, kancelář na stavbě, ordinace. Teplo, ticho, připraveno k práci. Od 5 100 € netto.",
+    "ogTitle": "Kancelářský kontejner: prodejní kancelář, recepce | STAGO",
+    "ogDescription": "Kancelářské kontejnery od výrobce: modulární pavilon na ocelovém rámu ve 12 modelech. Prodejní kancelář, recepce, kancelář na stavbě. Od [[eur:min]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
   },
   "breadcrumb": "Kancelářské",
@@ -14,8 +14,8 @@
     "imgAlt": "Kancelářský kontejner STAGO — tvar NORD",
     "h1": "Kancelářský kontejner.",
     "subtitle": "Prodejní kancelář, recepce u firmy, dočasná kancelář na stavbě, poradenská ordinace. Teplo v zimě, ticho celý rok, elektřina a internet od prvního dne. Vejdete s notebookem a hned začnete pracovat — bez měsíců rekonstrukce a bez kompromisů.",
-    "price": "od 5 100 € netto",
-    "priceNote": "/ kancelářský kontejner 6×2,4 m, připravený k práci",
+    "price": "od [[eur:min]] netto",
+    "priceNote": "/ kancelářský kontejner 4×3 m, základní provedení",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Kancelar%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Zobrazit všech 12 modelů &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V ceně",
+    "eyebrow": "Spolupráce",
     "h2": "Co dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Kolik stojí kancelářský kontejner?",
-        "a": "Jednotlivý modul 6×2,4 m začíná od 5 100 € netto. Větší kancelář s toaletou a kuchyňkou — 8 100–11 500 €. Potřebujete-li větší plochu, spojujeme moduly vedle sebe v jeden větší objekt."
+        "a": "Kancelářský kontejner STAGO je modulární pavilon na svařovaném ocelovém rámu, ve 12 modelech. Rozměr 4×3 m stojí od [[eur:4x3]] netto, 6×3 m od [[eur:6x3]] a 12×3 m od [[eur:12x3]] (ceny podle ceníku, bez dopravy, montáže a vybavení). Toaletu a kuchyňku oceňujeme zvlášť. Potřebujete-li větší plochu, spojíme více modulů vedle sebe v jeden větší objekt."
       },
       {
         "q": "Mohu v něm mít toaletu?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "Jak dlouho poslouží kancelářský kontejner?",
-        "a": "Konstrukce je ocelová, antikorozně chráněná, s plnou izolací PIR a střechou s odvodem dešťové vody. Mnoho našich zákazníků používá kanceláře v našich kontejnerech 10–15 let bez větších oprav."
+        "a": "Konstrukce je ocelová, antikorozně chráněná, s plnou izolací PIR a střechou s odvodem dešťové vody. Na konstrukci dáváme záruku 2 roky."
       },
       {
         "q": "Mohu kontejner převézt na jinou stavbu?",
-        "a": "Ano, to je jedna z jeho největších výhod. Naložení na návěs, transport, postavení na novém místě — a kontejner zase pracuje. Mnoho našich zákazníků ze stavebnictví takto obsluhuje tři nebo čtyři stavby za rok."
+        "a": "Ano, to je jedna z jeho největších výhod. Naložení na návěs, transport, postavení na novém místě — a kontejner zase pracuje."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Kancelářský kontejner STAGO",
-    "description": "Kancelářské kontejnery od výrobce. Prodejní kancelář, recepce, kancelář na stavbě, ordinace. Teplo, ticho, připraveno k práci. Od 5 100 € netto.",
+    "description": "Kancelářské kontejnery od výrobce: modulární pavilon na ocelovém rámu ve 12 modelech. Prodejní kancelář, recepce, kancelář na stavbě. Od [[eur:min]] netto.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

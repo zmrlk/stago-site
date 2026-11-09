@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Pavilon pro obchod — prodejna, stánek, prodejní místo | STAGO",
-    "description": "Obchodní pavilony od výrobce. Prodejna, stánek, prodejní místo, tržiště. Výlohy pro expozici, osvětlení, pohodlný vstup. Od 3 500 € netto. Dodávka do ČR.",
+    "description": "Obchodní pavilony od výrobce. Prodejna, stánek, prodejní místo, tržiště. Výlohy pro expozici, osvětlení, pohodlný vstup. Od [[eur:min]] netto. Dodávka do ČR.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
     "ogTitle": "Pavilon pro obchod — prodejna, stánek, prodejní místo | STAGO",
-    "ogDescription": "Obchodní pavilony od výrobce. Prodejna, stánek, prodejní místo, tržiště. Výlohy pro expozici, osvětlení, pohodlný vstup. Od 3 500 € netto.",
+    "ogDescription": "Obchodní pavilony od výrobce. Prodejna, stánek, prodejní místo, tržiště. Výlohy pro expozici, osvětlení, pohodlný vstup. Od [[eur:min]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
   },
   "breadcrumb": "Obchodní",
@@ -14,8 +14,8 @@
     "imgAlt": "Obchodní pavilon STAGO — tvar LOFT",
     "h1": "Pavilon pro obchod.",
     "subtitle": "Prodejna, stánek, prodejní místo na náměstí, ovocný trh. Víme, že zákazník se rozhodne o vstupu za pár sekund — proto navrhujeme výlohy pro expozici, osvětlení zvýrazňující produkt a pohodlný vstup. Řekněte nám, co prodáváte — navrhneme dispozici, která pracuje pro prodej.",
-    "price": "od 3 500 € netto",
-    "priceNote": "/ pavilon 3×2m připravený k obchodu",
+    "price": "od [[eur:min]] netto",
+    "priceNote": "/ pavilon 4×3 m, základní provedení",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Obchodni%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Zobrazit všech 12 modelů &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V ceně",
+    "eyebrow": "Spolupráce",
     "h2": "Co dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Kolik stojí obchodní pavilon?",
-        "a": "Malý stánek 3×2 m začíná od 3 500 € netto. Prodejna 6×3 m — od 6 500 €. Větší bod 12×3 m s výlohami a zázemím — od 11 000 €. Každou kalkulaci připravíme individuálně a bezplatně: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "Malý stánek 4×3 m začíná od [[eur:4x3]] netto, prodejna 6×3 m od [[eur:6x3]] netto a větší prodejní místo 12×3 m od [[eur:12x3]] netto (zázemí a vybavení oceňujeme zvlášť). Každou kalkulaci připravíme individuálně a bezplatně: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Potřebuji stavební povolení na obchodní pavilon?",
@@ -153,7 +153,7 @@
       },
       {
         "q": "Jak vytápím pavilon v zimě a kolik to stojí?",
-        "a": "Nejoblíbenější řešení je klimatizace s tepelným čerpadlem — topí v zimě a chladí v létě. Stěny s izolací PIR 100 mm drží teplo jako zděná budova. U malého pavilonu měsíční účet za vytápění v zimní sezóně bývá obvykle 80–120 €."
+        "a": "Nejoblíbenější řešení je klimatizace s tepelným čerpadlem — topí v zimě a chladí v létě. Stěny s izolací PIR 100 mm drží teplo jako zděná budova. Náklady na vytápění závisí na velikosti, způsobu topení a provozu."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Obchodní pavilon STAGO",
-    "description": "Obchodní pavilony od výrobce. Prodejna, stánek, prodejní místo, tržiště. Výlohy pro expozici, osvětlení, pohodlný vstup. Od 3 500 € netto. Dodávka do ČR.",
+    "description": "Obchodní pavilony od výrobce. Prodejna, stánek, prodejní místo, tržiště. Výlohy pro expozici, osvětlení, pohodlný vstup. Od [[eur:min]] netto. Dodávka do ČR.",
     "image": "https://stago.com.pl/assets/modele/loft.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

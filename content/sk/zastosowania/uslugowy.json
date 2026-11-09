@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Prevádzkový pavilón — salón, kozmetika, servis | STAGO",
-    "description": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Voda, elektrika, kanalizácia — všetko hotové. Od 5 800 € netto. Dodávka na Slovensko.",
+    "description": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Inštalácie pre váš odbor. Pavilón 5×3 m od [[eur:5x3]] netto. Dodávka na Slovensko.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
     "ogTitle": "Prevádzkový pavilón — salón, kozmetika, servis | STAGO",
-    "ogDescription": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Voda, elektrika, kanalizácia — všetko hotové. Od 5 800 € netto. Dodávka na Slovensko.",
+    "ogDescription": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Inštalácie pre váš odbor. Pavilón 5×3 m od [[eur:5x3]] netto. Dodávka na Slovensko.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
   "breadcrumb": "Prevádzkové",
@@ -14,8 +14,8 @@
     "imgAlt": "Prevádzkový pavilón STAGO — hmota ICON",
     "h1": "Prevádzkový pavilón.",
     "subtitle": "Kaderníctvo, kozmetický salón, servis, práčovňa, opravovňa. Každý odbor má svoje požiadavky — vodu, kanalizáciu, ventiláciu, silnejšiu elektrickú inštaláciu, niekedy konkrétne certifikáty. Povedzte nám, čím sa zaoberáte, a pripravíme pavilón tak, aby hygiena prešla bez problémov.",
-    "price": "od 5 800 € netto",
-    "priceNote": "/ prevádzkový pavilón 5x3 m, inštalácie v ponuke",
+    "price": "od [[eur:5x3]] netto",
+    "priceNote": "/ prevádzkový pavilón 5×3 m, inštalácie oceníme v ponuke",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Prevadzkovy%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Pozrite si všetkých 12 modelov &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V cene",
+    "eyebrow": "Spolupráca",
     "h2": "Čo dostanete od STAGO",
     "items": [
       {
@@ -141,15 +141,15 @@
     "items": [
       {
         "q": "Koľko stojí prevádzkový pavilón?",
-        "a": "Modul 5x3 m so základnými inštaláciami začína od 5 800 € netto. Väčší salón s dvomi pracoviskami — 9 200–12 700 €. Konečná cena závisí od množstva zariadení, prípojok a dokončenia interiéru."
+        "a": "Pavilón 5×3 m začína od [[eur:5x3]] netto (cena podľa cenníka, bez dopravy, montáže a vybavenia). Inštalácie pre salón, teda vodu, kanalizáciu a silnejšiu elektriku, oceníme v ponuke. Väčší salón 8×3 m začína od [[eur:8x3]] netto. Konečná cena závisí od množstva zariadení, prípojok a dokončenia interiéru."
       },
       {
         "q": "Spĺňa pavilón požiadavky hygieny?",
-        "a": "Áno. Navrhujeme ho v súlade s požiadavkami platnými v danom odbore. Hygiena príde, skontroluje a podpíše protokol. Desiatky našich zákazníkov už prevádzkujú salóny a servisy v pavilónoch STAGO."
+        "a": "Áno. Navrhujeme ho v súlade s požiadavkami platnými v danom odbore. Hygiena príde, skontroluje a podpíše protokol."
       },
       {
         "q": "Môžem mať viac ako jedno pracovisko?",
-        "a": "Áno. Spájame moduly vedľa seba, vďaka čomu vznikajú väčšie pavilóny — 8x3 m alebo 12x3 m — s dvomi alebo tromi pracoviskami. Povedzte nám len, koľko ľudí má pracovať súčasne, a navrhneme vhodné usporiadanie."
+        "a": "Áno. Vyberiete si dlhší pavilón, napríklad 8×3 m alebo 12×3 m, s dvomi alebo tromi pracoviskami. Väčšiu plochu poskladáme z viacerých modulov postavených vedľa seba. Povedzte nám len, koľko ľudí má pracovať súčasne, a navrhneme vhodné usporiadanie."
       },
       {
         "q": "A ak ešte nemám nápad na usporiadanie interiéru?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Prevádzkový pavilón STAGO",
-    "description": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Voda, elektrika, kanalizácia — všetko hotové. Od 5 800 € netto. Dodávka na Slovensko.",
+    "description": "Prevádzkové pavilóny od výrobcu. Kaderníctvo, kozmetika, servis, práčovňa. Inštalácie pre váš odbor. Pavilón 5×3 m od [[eur:5x3]] netto. Dodávka na Slovensko.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

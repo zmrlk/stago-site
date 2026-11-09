@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Casita para todo el año — vivienda, ADU, holiday house | STAGO",
-    "description": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100mm, baño, cocina. Desde 10 350 € neto.",
+    "description": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100 mm, baño y cocina a medida. Desde [[eur:6x3]] neto.",
     "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
     "ogTitle": "Casita para todo el año — vivienda, ADU, holiday house | STAGO",
-    "ogDescription": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100mm, baño, cocina. Desde 10 350 € neto.",
+    "ogDescription": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100 mm, baño y cocina a medida. Desde [[eur:6x3]] neto.",
     "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
   },
   "breadcrumb": "Vivienda",
@@ -14,8 +14,8 @@
     "imgAlt": "Casita para todo el año STAGO — modelo MILA",
     "h1": "Casita para todo el año.",
     "subtitle": "Vivienda en parcela, casita para la familia, despacho en el jardín, casa vacacional junto al lago. Paredes completas con aislamiento PIR de 100 mm, baño, kitchenette — un lugar de pleno derecho para vivir, no una caravana provisional.",
-    "price": "desde 10 350 € neto",
-    "priceNote": "/ casita 6×3 m con baño",
+    "price": "desde [[eur:6x3]] neto",
+    "priceNote": "/ casita 6×3 m, baño y cocina van en la oferta",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Casita%20Residencial",
     "articleHref": "../modele.html",
     "articleText": "Ver los 12 modelos &rarr;"
@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Aislamiento como en viviendas eficientes",
-        "text": "Paredes con aislamiento PIR de 100 mm, cubierta aislada y suelo (12 cm) con aislamiento térmico. En invierno se está caliente, en verano agradablemente fresco. La factura mensual de electricidad en temporada de invierno suele estar entre 60–100 €."
+        "text": "Paredes con aislamiento PIR de 100 mm, cubierta aislada y suelo (12 cm) con aislamiento térmico. En invierno se está caliente, en verano agradablemente fresco."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluido",
+    "eyebrow": "Colaboración",
     "h2": "Lo que recibe de STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "¿Cuánto cuesta una casita para todo el año?",
-        "a": "Una casita de 6×3 m con baño empieza desde 10 350 € neto. Una casita más grande de 8×4 m con cocina y dormitorio — 14 950–20 700 €. Acabados premium los presupuestamos individualmente."
+        "a": "La casita STAGO es un pabellón modular sobre un bastidor de acero soldado. El tamaño de 6×3 m cuesta en versión básica desde [[eur:6x3]] neto (precio de tarifa, sin transporte ni montaje). El baño, el office y las instalaciones los presupuestamos aparte. El módulo individual más largo mide 12×3 m; una casa más grande la formamos con varios módulos colocados uno al lado del otro. Los acabados premium los presupuestamos individualmente."
       },
       {
         "q": "¿Se puede vivir en ella todo el año?",
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "¿Cómo funciona?",
-    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el presupuesto con transporte y montaje. Sin sorpresas.",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
     "features": [
       {
         "text": "Visualización 3D — véalo antes de encargar"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Casita para todo el año STAGO",
-    "description": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100mm, baño, cocina. Desde 10 350 € neto.",
+    "description": "Casitas modulares para todo el año. Vivienda en parcela, ADU, holiday house, despacho en el jardín. PIR 100 mm, baño y cocina a medida. Desde [[eur:6x3]] neto.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

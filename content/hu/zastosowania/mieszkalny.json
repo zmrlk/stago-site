@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Egész éves házikó — ház, ADU, nyaraló | STAGO",
-    "description": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba, konyha. Kb. 10 350 € nettó-tól.",
+    "description": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba és konyha igény szerint. Nettó [[eur:6x3]]-tól.",
     "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
     "ogTitle": "Egész éves házikó — ház, ADU, nyaraló | STAGO",
-    "ogDescription": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba, konyha. Kb. 10 350 € nettó-tól.",
+    "ogDescription": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba és konyha igény szerint. Nettó [[eur:6x3]]-tól.",
     "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
   },
   "breadcrumb": "Lakó",
@@ -14,8 +14,8 @@
     "imgAlt": "STAGO egész éves házikó — MILA forma",
     "h1": "Egész éves házikó.",
     "subtitle": "Kis ház a telken, ház az anyósnak, kerti iroda, tó melletti nyaraló. 100 mm PIR szigetelésű teljes falak, fürdőszoba, konyhai sarok — teljes értékű lakóhely, nem ideiglenes barakk.",
-    "price": "kb. 10 350 € nettó-tól",
-    "priceNote": "/ 6×3 m-es házikó fürdőszobával",
+    "price": "nettó [[eur:6x3]]-tól",
+    "priceNote": "/ 6×3 m-es házikó, a fürdőt és a konyhát az ajánlatban árazzuk",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Lakás%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Tekintse meg mind a 12 modellt &rarr;"
@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Energiatakarékos házakéval azonos szigetelés",
-        "text": "Falak 100 mm PIR szigeteléssel, szigetelt tető és padló (12 cm) hőszigetelő réteggel. Télen meleg, nyáron kellemesen hűvös. A havi villanyszámla a téli időszakban jellemzően 60–105 € körül mozog."
+        "text": "Falak 100 mm PIR szigeteléssel, szigetelt tető és padló (12 cm) hőszigetelő réteggel. Télen meleg, nyáron kellemesen hűvös."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Az árban",
+    "eyebrow": "Együttműködés",
     "h2": "Mit kap a STAGO-tól",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Mennyibe kerül egy egész éves házikó?",
-        "a": "Egy 6×3 m-es házikó fürdőszobával kb. 10 350 € nettó-tól indul. Nagyobb 8×4 m-es házikó konyhával és hálószobával — 14 950–20 700 €. Prémium burkolatokat egyedileg árazunk."
+        "a": "A STAGO házikó hegesztett acélvázas moduláris pavilon. A 6×3 m-es méret alapkivitelben nettó [[eur:6x3]]-tól kapható (árlista szerinti ár, szállítás és telepítés nélkül). A fürdőszobát, a teakonyhát és a szereléseket külön árazzuk. A leghosszabb önálló modul 12×3 m, nagyobb házat több, egymás mellé állított modulból építünk. A prémium burkolatokat egyedileg árazzuk."
       },
       {
         "q": "Egész évben lehet benne lakni?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "STAGO egész éves házikó",
-    "description": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba, konyha. Kb. 10 350 € nettó-tól.",
+    "description": "Egész éves moduláris házikók. Kis ház a telken, ADU, nyaraló, kerti iroda. PIR 100 mm, fürdőszoba és konyha igény szerint. Nettó [[eur:6x3]]-tól.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

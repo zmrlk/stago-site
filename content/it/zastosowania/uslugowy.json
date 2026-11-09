@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Padiglione servizi — salone, estetica, officina | STAGO",
-    "description": "Padiglioni per servizi dal produttore. Salone di parrucchiere, estetica, officina, lavanderia. Acqua, corrente, fognatura — tutto pronto. Da 5 750 € netto.",
+    "description": "Padiglioni per servizi dal produttore. Parrucchiere, estetica, officina, lavanderia. Impianti per il tuo settore. 5×3 m da [[eur:5x3]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
     "ogTitle": "Padiglione servizi — salone, estetica, officina | STAGO",
-    "ogDescription": "Padiglioni per servizi dal produttore. Salone di parrucchiere, estetica, officina, lavanderia. Acqua, corrente, fognatura — tutto pronto. Da 5 750 € netto.",
+    "ogDescription": "Padiglioni per servizi dal produttore. Parrucchiere, estetica, officina, lavanderia. Impianti per il tuo settore. 5×3 m da [[eur:5x3]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
   "breadcrumb": "Servizi",
@@ -14,8 +14,8 @@
     "imgAlt": "Padiglione servizi STAGO — modello ICON",
     "h1": "Padiglione servizi.",
     "subtitle": "Salone di parrucchiere, studio estetico, officina, lavanderia, punto riparazioni. Ogni settore ha le sue esigenze — acqua, fognatura, ventilazione, impianto elettrico potenziato, a volte certificazioni specifiche. Dicci di cosa ti occupi e prepariamo il padiglione in modo che l'ispezione sanitaria passi senza problemi.",
-    "price": "da 5 750 € netto",
-    "priceNote": "/ padiglione servizi 5×3 m, impianti compresi",
+    "price": "da [[eur:5x3]] netto",
+    "priceNote": "/ padiglione servizi 5×3 m, impianti preventivati nell'offerta",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Servizi%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Vedi tutti i 12 modelli &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluso nel prezzo",
+    "eyebrow": "Collaborazione",
     "h2": "Cosa ricevi da STAGO",
     "items": [
       {
@@ -141,15 +141,15 @@
     "items": [
       {
         "q": "Quanto costa un padiglione servizi?",
-        "a": "Un modulo 5×3 m con impianti base parte da 5 750 € netto. Un salone più grande con due postazioni — 9 200-12 650 €. Il prezzo finale dipende dalla quantità di attrezzature, allacciamenti e finiture interne."
+        "a": "Un padiglione 5×3 m parte da [[eur:5x3]] netto (prezzo di listino, senza trasporto, montaggio e allestimento). Gli impianti per il salone, cioè acqua, scarico e un impianto elettrico potenziato, li preventiviamo nell'offerta. Un salone più grande 8×3 m parte da [[eur:8x3]] netto. Il prezzo finale dipende dalla quantità di attrezzature, allacciamenti e finiture interne."
       },
       {
         "q": "Il padiglione soddisfa i requisiti sanitari?",
-        "a": "Sì. Lo progettiamo conformemente ai requisiti vigenti nel settore specifico. L'ispezione sanitaria entra, controlla e firma il verbale. Decine di nostri clienti gestiscono già saloni e officine in padiglioni STAGO."
+        "a": "Sì. Lo progettiamo conformemente ai requisiti vigenti nel settore specifico. L'ispezione sanitaria entra, controlla e firma il verbale."
       },
       {
         "q": "Posso avere più di una postazione di lavoro?",
-        "a": "Sì. Colleghiamo moduli affiancati, ottenendo padiglioni più grandi — 8×3 m o 12×3 m — con due o tre postazioni. Dicci solo quante persone devono lavorare contemporaneamente e proporremo il layout adatto."
+        "a": "Sì. Scegli un padiglione più lungo, per esempio 8×3 m o 12×3 m, con due o tre postazioni. Una superficie più grande la componiamo con più moduli affiancati. Dicci solo quante persone devono lavorare contemporaneamente e proporremo il layout adatto."
       },
       {
         "q": "E se non ho ancora un'idea per il layout interno?",
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Padiglione servizi STAGO",
-    "description": "Padiglioni per servizi dal produttore. Salone di parrucchiere, estetica, officina, lavanderia. Acqua, corrente, fognatura — tutto pronto. Da 5 750 € netto.",
+    "description": "Padiglioni per servizi dal produttore. Parrucchiere, estetica, officina, lavanderia. Impianti per il tuo settore. 5×3 m da [[eur:5x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

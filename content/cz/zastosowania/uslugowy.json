@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Servisní pavilon — salon, kosmetika, servis | STAGO",
-    "description": "Servisní pavilony od výrobce. Kadeřnictví, kosmetika, servis, prádelna. Voda, elektřina, kanalizace — vše připraveno. Od 5 800 € netto.",
+    "description": "Servisní pavilony od výrobce. Kadeřnictví, kosmetika, servis, prádelna. Instalace pro váš obor. Pavilon 5×3 m od [[eur:5x3]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
     "ogTitle": "Servisní pavilon — salon, kosmetika, servis | STAGO",
-    "ogDescription": "Servisní pavilony od výrobce. Kadeřnictví, kosmetika, servis, prádelna. Voda, elektřina, kanalizace — vše připraveno. Od 5 800 € netto.",
+    "ogDescription": "Servisní pavilony od výrobce. Kadeřnictví, kosmetika, servis, prádelna. Instalace pro váš obor. Pavilon 5×3 m od [[eur:5x3]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
   "breadcrumb": "Servisní",
@@ -14,8 +14,8 @@
     "imgAlt": "Servisní pavilon STAGO — tvar ICON",
     "h1": "Servisní pavilon.",
     "subtitle": "Kadeřnictví, kosmetický salon, servis, prádelna, opravna. Každá branže má své požadavky — vodu, kanalizaci, ventilaci, silnější elektrickou instalaci, někdy konkrétní certifikáty. Řekněte nám, čím se zabýváte, a připravíme pavilon tak, aby hygiena prošla bez problému.",
-    "price": "od 5 800 € netto",
-    "priceNote": "/ servisní pavilon 5×3 m, instalace v nabídce",
+    "price": "od [[eur:5x3]] netto",
+    "priceNote": "/ servisní pavilon 5×3 m, instalace oceníme v nabídce",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Sluzby%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Zobrazit všech 12 modelů &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V ceně",
+    "eyebrow": "Spolupráce",
     "h2": "Co dostanete od STAGO",
     "items": [
       {
@@ -141,15 +141,15 @@
     "items": [
       {
         "q": "Kolik stojí servisní pavilon?",
-        "a": "Modul 5×3 m se základními instalacemi začíná od 5 800 € netto. Větší salon se dvěma stanovišti — 9 200–12 600 €. Konečná cena závisí na množství vybavení, přípojek a provedení interiéru."
+        "a": "Pavilon 5×3 m začíná od [[eur:5x3]] netto (cena podle ceníku, bez dopravy, montáže a vybavení). Instalace pro salon, tedy vodu, kanalizaci a silnější elektřinu, oceníme v nabídce. Větší salon 8×3 m začíná od [[eur:8x3]] netto. Konečná cena závisí na množství vybavení, přípojek a provedení interiéru."
       },
       {
         "q": "Splňuje pavilon hygienické požadavky?",
-        "a": "Ano. Navrhujeme ho v souladu s požadavky platnými v dané branži. Hygiena přijde, zkontroluje a podepíše protokol. Desítky našich zákazníků už provozují salony a servisy v pavilonech STAGO."
+        "a": "Ano. Navrhujeme ho v souladu s požadavky platnými v dané branži. Hygiena přijde, zkontroluje a podepíše protokol."
       },
       {
         "q": "Mohu mít více než jedno pracovní místo?",
-        "a": "Ano. Spojujeme moduly vedle sebe, takže vznikají větší pavilony — 8×3 m nebo 12×3 m — se dvěma nebo třemi stanovišti. Řekněte nám jen, kolik lidí má pracovat současně, a navrhneme vhodné uspořádání."
+        "a": "Ano. Zvolíte delší pavilon, například 8×3 m nebo 12×3 m, se dvěma nebo třemi stanovišti. Větší plochu složíme z více modulů postavených vedle sebe. Řekněte nám jen, kolik lidí má pracovat současně, a navrhneme vhodné uspořádání."
       },
       {
         "q": "A pokud ještě nemám nápad na dispozici interiéru?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Servisní pavilon STAGO",
-    "description": "Servisní pavilony od výrobce. Kadeřnictví, kosmetika, servis, prádelna. Voda, elektřina, kanalizace — vše připraveno. Od 5 800 € netto.",
+    "description": "Servisní pavilony od výrobce. Kadeřnictví, kosmetika, servis, prádelna. Instalace pro váš obor. Pavilon 5×3 m od [[eur:5x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

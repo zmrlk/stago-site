@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Contenedor de oficina — oficina de ventas, recepción, oficina de obra | STAGO",
-    "description": "Contenedores de oficina del fabricante. Oficina de ventas, recepción, oficina en obra, despacho. Cálido, silencioso, listo para trabajar. Desde 5 060 € neto.",
+    "title": "Contenedor de oficina: oficina de ventas, recepción | STAGO",
+    "description": "Contenedores de oficina del fabricante: pabellón modular sobre bastidor de acero en 12 modelos. Oficina de ventas, recepción, obra. Desde [[eur:min]] neto.",
     "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
-    "ogTitle": "Contenedor de oficina — oficina de ventas, recepción, oficina de obra | STAGO",
-    "ogDescription": "Contenedores de oficina del fabricante. Oficina de ventas, recepción, oficina en obra, despacho. Cálido, silencioso, listo para trabajar. Desde 5 060 € neto.",
+    "ogTitle": "Contenedor de oficina: oficina de ventas, recepción | STAGO",
+    "ogDescription": "Contenedores de oficina del fabricante: pabellón modular sobre bastidor de acero en 12 modelos. Oficina de ventas, recepción, obra. Desde [[eur:min]] neto.",
     "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
   },
   "breadcrumb": "Oficina",
@@ -14,8 +14,8 @@
     "imgAlt": "Contenedor de oficina STAGO — modelo NORD",
     "h1": "Contenedor de oficina.",
     "subtitle": "Oficina de ventas, recepción junto a la empresa, oficina temporal en obra, despacho de consultas. Cálido en invierno, silencioso todo el año, electricidad e internet desde el primer día. Entra con el portátil y empieza a trabajar de inmediato — sin meses de reforma y sin compromisos.",
-    "price": "desde 5 060 € neto",
-    "priceNote": "/ contenedor de oficina 6×2,4 m, listo para trabajar",
+    "price": "desde [[eur:min]] neto",
+    "priceNote": "/ contenedor de oficina 4×3 m, versión básica",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Contenedor%20Oficina",
     "articleHref": "../modele.html",
     "articleText": "Ver los 12 modelos &rarr;"
@@ -90,12 +90,12 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
         "h3": "Aseo y office (opción)",
-        "text": "Podemos añadir un módulo sanitario completo, lavabo y office. Así obtiene una oficina real para el trabajo diario. Esta opción requiere acometida de agua en la parcela."
+        "text": "Podemos añadir un aseo completo con lavabo y un office. Así obtiene una oficina real para el trabajo diario. Esta opción requiere acometida de agua en la parcela."
       }
     ]
   },
   "benefits": {
-    "eyebrow": "Incluido",
+    "eyebrow": "Colaboración",
     "h2": "Lo que recibe de STAGO",
     "items": [
       {
@@ -141,19 +141,19 @@
     "items": [
       {
         "q": "¿Cuánto cuesta un contenedor de oficina?",
-        "a": "Un módulo individual de 6×2,4 m empieza desde 5 060 € neto. Una oficina mayor con aseo y office — 8 050–11 500 €. Si necesita más superficie, combinamos módulos en paralelo en una unidad más grande."
+        "a": "El contenedor de oficina STAGO es un pabellón modular sobre un bastidor de acero soldado, disponible en 12 modelos. El tamaño de 4×3 m cuesta desde [[eur:4x3]] neto, el de 6×3 m desde [[eur:6x3]] y el de 12×3 m desde [[eur:12x3]] (precios de tarifa, sin transporte, montaje ni equipamiento). El aseo y el office los presupuestamos aparte. Si necesita más superficie, colocamos varios módulos uno al lado del otro y formamos una unidad más grande."
       },
       {
         "q": "¿Puede tener aseo?",
-        "a": "Sí. Podemos instalar un módulo sanitario con lavabo y calentador de agua. Necesita acometida de agua y desagüe — le ayudamos a planificar las conexiones, pero su ejecución en la parcela corre de su parte."
+        "a": "Sí. Podemos instalar un aseo con lavabo y calentador de agua. Necesita acometida de agua y desagüe — le ayudamos a planificar las conexiones, pero su ejecución en la parcela corre de su parte."
       },
       {
         "q": "¿Cuánto dura un contenedor de oficina?",
-        "a": "La estructura es de acero, con protección anticorrosiva, aislamiento PIR completo y cubierta con evacuación de aguas pluviales. Muchos de nuestros clientes utilizan oficinas en nuestros contenedores desde hace 10-15 años sin reparaciones importantes."
+        "a": "La estructura es de acero, con protección anticorrosiva, aislamiento PIR completo y cubierta con evacuación de aguas pluviales. La estructura tiene 2 años de garantía."
       },
       {
         "q": "¿Se puede trasladar el contenedor a otra obra?",
-        "a": "Sí, esa es una de sus mayores ventajas. Carga en camión, transporte, colocación en el nuevo lugar — y el contenedor vuelve a funcionar. Muchos de nuestros clientes del sector de la construcción atienden así tres o cuatro obras al año."
+        "a": "Sí, esa es una de sus mayores ventajas. Carga en camión, transporte, colocación en el nuevo lugar — y el contenedor vuelve a funcionar."
       }
     ]
   },
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "¿Cómo funciona?",
-    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el presupuesto con transporte y montaje. Sin sorpresas.",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
     "features": [
       {
         "text": "Visualización 3D — véalo antes de encargar"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Contenedor de oficina STAGO",
-    "description": "Contenedores de oficina del fabricante. Oficina de ventas, recepción, oficina en obra, despacho. Cálido, silencioso, listo para trabajar. Desde 5 060 € neto.",
+    "description": "Contenedores de oficina del fabricante: pabellón modular sobre bastidor de acero en 12 modelos. Oficina de ventas, recepción, obra. Desde [[eur:min]] neto.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

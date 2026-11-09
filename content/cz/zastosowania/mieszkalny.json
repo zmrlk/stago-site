@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Celoroční domek — dům, ADU, holiday house | STAGO",
-    "description": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100mm, koupelna, kuchyň. Od 10 400 € netto.",
+    "description": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100 mm, koupelna a kuchyň na přání. Od [[eur:6x3]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
     "ogTitle": "Celoroční domek — dům, ADU, holiday house | STAGO",
-    "ogDescription": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100mm, koupelna, kuchyň. Od 10 400 € netto.",
+    "ogDescription": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100 mm, koupelna a kuchyň na přání. Od [[eur:6x3]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
   },
   "breadcrumb": "Obytné",
@@ -14,8 +14,8 @@
     "imgAlt": "Celoroční domek STAGO — tvar MILA",
     "h1": "Celoroční domek.",
     "subtitle": "Malý dům na pozemku, dům pro babičku, pracovna na zahradě, rekreační chata u jezera. Plné stěny s izolací PIR 100 mm, koupelna, kuchyňský kout — plnohodnotné místo k bydlení, ne dočasný barák.",
-    "price": "od 10 400 € netto",
-    "priceNote": "/ domek 6×3 m s koupelnou",
+    "price": "od [[eur:6x3]] netto",
+    "priceNote": "/ domek 6×3 m, koupelnu a kuchyň oceníme v nabídce",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Domek%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Zobrazit všech 12 modelů &rarr;"
@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Izolace jako v nízkoenergetických domech",
-        "text": "Stěny s izolací PIR 100 mm, zateplená střecha a podlaha (12 cm) s tepelnou izolací. V zimě je teplo, v létě příjemně chladně. Měsíční účet za elektřinu v zimní sezóně se obvykle vejde do 60–100 €."
+        "text": "Stěny s izolací PIR 100 mm, zateplená střecha a podlaha (12 cm) s tepelnou izolací. V zimě je teplo, v létě příjemně chladně."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V ceně",
+    "eyebrow": "Spolupráce",
     "h2": "Co dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Kolik stojí celoroční domek?",
-        "a": "Domek 6×3 m s koupelnou začíná od 10 400 € netto. Větší domek 8×4 m s kuchyní a ložnicí — 15 000–20 700 €. Prémiové provedení oceňujeme individuálně."
+        "a": "Domek STAGO je modulární pavilon na svařovaném ocelovém rámu. Rozměr 6×3 m stojí v základním provedení od [[eur:6x3]] netto (cena podle ceníku, bez dopravy a montáže). Koupelnu, kuchyňku a instalace oceňujeme zvlášť. Nejdelší samostatný modul měří 12×3 m, větší dům složíme z více modulů postavených vedle sebe. Prémiové provedení oceňujeme individuálně."
       },
       {
         "q": "Mohu v něm bydlet celý rok?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Celoroční domek STAGO",
-    "description": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100mm, koupelna, kuchyň. Od 10 400 € netto.",
+    "description": "Celoroční modulární domky. Malý dům na pozemku, ADU, holiday house, pracovna na zahradě. PIR 100 mm, koupelna a kuchyň na přání. Od [[eur:6x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

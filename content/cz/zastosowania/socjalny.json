@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Kontejner pro stavbu — šatna, jídelna, sanitárky | STAGO",
-    "description": "Sociální kontejnery pro stavby a firmy. Šatna, jídelna, sanitární kontejner. Solidní, mobilní, připraveno ihned. Od 2 800 € netto.",
+    "description": "Sociální kontejnery pro stavby a firmy: modulární pavilon STAGO ve 12 modelech pro šatnu, jídelnu a hygienické zázemí. Od [[eur:min]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
     "ogTitle": "Kontejner pro stavbu — šatna, jídelna, sanitárky | STAGO",
-    "ogDescription": "Sociální kontejnery pro stavby a firmy. Šatna, jídelna, sanitární kontejner. Solidní, mobilní, připraveno ihned. Od 2 800 € netto.",
+    "ogDescription": "Sociální kontejnery pro stavby a firmy: modulární pavilon STAGO ve 12 modelech pro šatnu, jídelnu a hygienické zázemí. Od [[eur:min]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
   },
   "breadcrumb": "Sociální",
@@ -14,8 +14,8 @@
     "imgAlt": "Kontejner pro stavbu STAGO — tvar CUBE",
     "h1": "Kontejner pro stavbu.",
     "subtitle": "Šatna, jídelna, sanitárky, zázemí pro pracovní četu. Solidní, mobilní a připravený k převozu na další staveniště, když aktuální investice končí. Pracovníci mají kde se převléknout, najíst a odpočinout — a vy máte svatý klid.",
-    "price": "od 2 800 € netto",
-    "priceNote": "/ sociální kontejner 6×2,4 m",
+    "price": "od [[eur:min]] netto",
+    "priceNote": "/ sociální pavilon 4×3 m, základní provedení",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=CZ%20—%20Stavba%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Zobrazit všech 12 modelů &rarr;"
@@ -80,7 +80,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
         "h3": "Rychlý převoz mezi stavbami",
-        "text": "Standardní rozměry přizpůsobené návěsům. Naložení, převoz a vyložení zaberou pár hodin — a kontejner už pracuje na novém místě. Jeden takový objekt zvládne obsloužit tři nebo čtyři stavby za rok."
+        "text": "Standardní rozměry přizpůsobené návěsům. Naložení, převoz a vyložení zaberou pár hodin — a kontejner už pracuje na novém místě."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V ceně",
+    "eyebrow": "Spolupráce",
     "h2": "Co dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Kolik stojí sociální kontejner?",
-        "a": "Základní modul 6×2,4 m začíná od 2 800 € netto. S plným vybavením (šatna a sanitární uzel) — 5 800–8 100 €. Je to levnější řešení než pronájem na půl roku, a po zaplacení kontejner zůstává vaším majetkem."
+        "a": "Sociální kontejner STAGO je modulární pavilon. Rozměr 4×3 m stojí od [[eur:4x3]] netto, 6×3 m od [[eur:6x3]] a 8×3 m od [[eur:8x3]] (ceny podle ceníku, bez dopravy a montáže). Šatnu, sanitární uzel a nábytek oceníme zvlášť v nabídce. Po zaplacení zůstává pavilon vaším majetkem."
       },
       {
         "q": "Mohu si ho vzít na leasing místo okamžitého nákupu?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "Lze k němu připojit vodu a kanalizaci?",
-        "a": "Ano. Sanitární kontejnery mají umyvadla, sprchy a toalety. Vyžadují přívod vody a odpad na staveništi — pomůžeme naplánovat přípojky, ale jejich provedení je na instalatérovi na vaší straně."
+        "a": "Ano. Pavilon může mít umyvadla, sprchy a toalety, které oceňujeme jako vybavení. Vyžadují přívod vody a odpad na staveništi — pomůžeme naplánovat přípojky, ale jejich provedení je na instalatérovi na vaší straně."
       },
       {
         "q": "Jak dlouho kontejner vydrží?",
-        "a": "Dobře udržovaný kontejner slouží 15–20 let. Mnoho zákazníků ze stavebnictví úspěšně používá jeden objekt na desítkách po sobě jdoucích staveb."
+        "a": "Konstrukci tvoří svařovaný ocelový rám z uzavřených profilů s antikorozní ochranou, stěny z PIR 100 mm a střecha z PIR 160 mm. Na další stavbu pavilon převezete na návěsu. Na konstrukci dáváme záruku 2 roky."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Kontejner pro stavbu STAGO",
-    "description": "Sociální kontejnery pro stavby a firmy. Šatna, jídelna, sanitární kontejner. Solidní, mobilní, připraveno ihned. Od 2 800 € netto.",
+    "description": "Sociální kontejnery pro stavby a firmy: modulární pavilon STAGO ve 12 modelech pro šatnu, jídelnu a hygienické zázemí. Od [[eur:min]] netto.",
     "image": "https://stago.com.pl/assets/modele/cube.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

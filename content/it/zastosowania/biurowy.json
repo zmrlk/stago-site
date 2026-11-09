@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Container ufficio — ufficio vendite, reception, ufficio cantiere | STAGO",
-    "description": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
+    "title": "Container ufficio: ufficio vendite, reception | STAGO",
+    "description": "Container ufficio dal produttore: padiglione modulare su telaio in acciaio in 12 modelli. Ufficio vendite, reception, cantiere. Da [[eur:min]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
-    "ogTitle": "Container ufficio — ufficio vendite, reception, ufficio cantiere | STAGO",
-    "ogDescription": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
+    "ogTitle": "Container ufficio: ufficio vendite, reception | STAGO",
+    "ogDescription": "Container ufficio dal produttore: padiglione modulare su telaio in acciaio in 12 modelli. Ufficio vendite, reception, cantiere. Da [[eur:min]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
   },
   "breadcrumb": "Uffici",
@@ -14,8 +14,8 @@
     "imgAlt": "Container ufficio STAGO — modello NORD",
     "h1": "Container ufficio.",
     "subtitle": "Ufficio vendite, reception aziendale, ufficio temporaneo in cantiere, studio di consulenza. Caldo d'inverno, silenzioso tutto l'anno, corrente e internet dal primo giorno. Entri con il laptop e inizi subito a lavorare — senza mesi di ristrutturazione e senza compromessi.",
-    "price": "da 5 060 € netto",
-    "priceNote": "/ container ufficio 6×2,4 m, pronto a lavorare",
+    "price": "da [[eur:min]] netto",
+    "priceNote": "/ container ufficio 4×3 m, versione base",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Ufficio%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Vedi tutti i 12 modelli &rarr;"
@@ -90,12 +90,12 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
         "h3": "Bagno e angolo cucina (opzionale)",
-        "text": "Possiamo aggiungere un blocco sanitario completo, lavandino e angolo cucina. Così ottieni un vero ufficio per il lavoro quotidiano, non solo una sala riunioni. L'opzione richiede l'allacciamento dell'acqua sul terreno."
+        "text": "Possiamo aggiungere un bagno completo con lavandino e un angolo cucina. Così ottieni un vero ufficio per il lavoro quotidiano, non solo una sala riunioni. L'opzione richiede l'allacciamento dell'acqua sul terreno."
       }
     ]
   },
   "benefits": {
-    "eyebrow": "Incluso nel prezzo",
+    "eyebrow": "Collaborazione",
     "h2": "Cosa ricevi da STAGO",
     "items": [
       {
@@ -141,19 +141,19 @@
     "items": [
       {
         "q": "Quanto costa un container ufficio?",
-        "a": "Un singolo modulo 6×2,4 m parte da 5 060 € netto. Un ufficio più grande con bagno e angolo cucina — 8 050-11 500 €. Se hai bisogno di più superficie, colleghiamo moduli affiancati in un unico edificio più grande."
+        "a": "Il container ufficio STAGO è un padiglione modulare su telaio in acciaio saldato, disponibile in 12 modelli. La misura 4×3 m costa da [[eur:4x3]] netto, 6×3 m da [[eur:6x3]] e 12×3 m da [[eur:12x3]] (prezzi di listino, senza trasporto, montaggio e allestimento). Bagno e angolo cucina li preventiviamo a parte. Se hai bisogno di più superficie, affianchiamo più moduli in un unico edificio più grande."
       },
       {
         "q": "Posso avere il bagno all'interno?",
-        "a": "Sì. Possiamo installare un blocco sanitario con lavandino e scaldabagno. È necessario l'allacciamento dell'acqua e dello scarico — ti aiutiamo a pianificare gli attacchi, ma la loro realizzazione sul terreno è a tuo carico."
+        "a": "Sì. Possiamo installare un bagno con lavandino e scaldabagno. È necessario l'allacciamento dell'acqua e dello scarico — ti aiutiamo a pianificare gli attacchi, ma la loro realizzazione sul terreno è a tuo carico."
       },
       {
         "q": "Quanto dura un container ufficio?",
-        "a": "La struttura è in acciaio, protetta con trattamento anticorrosivo, con isolamento PIR completo e tetto con deflusso dell'acqua piovana. Molti dei nostri clienti utilizzano uffici nei nostri container da 10-15 anni senza grandi interventi."
+        "a": "La struttura è in acciaio, protetta con trattamento anticorrosivo, con isolamento PIR completo e tetto con deflusso dell'acqua piovana. Sulla struttura diamo 2 anni di garanzia."
       },
       {
         "q": "Posso trasportare il container in un altro cantiere?",
-        "a": "Sì, è uno dei suoi maggiori vantaggi. Caricamento sul rimorchio, trasporto, posizionamento nel nuovo luogo — e il container lavora di nuovo. Molti dei nostri clienti dell'edilizia servono così tre o quattro cantieri all'anno."
+        "a": "Sì, è uno dei suoi maggiori vantaggi. Caricamento sul rimorchio, trasporto, posizionamento nel nuovo luogo — e il container lavora di nuovo."
       }
     ]
   },
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Container ufficio STAGO",
-    "description": "Container ufficio dal produttore. Ufficio vendite, reception, ufficio in cantiere, studio. Caldo, silenzioso, pronto a lavorare. Da 5 060 € netto.",
+    "description": "Container ufficio dal produttore: padiglione modulare su telaio in acciaio in 12 modelli. Ufficio vendite, reception, cantiere. Da [[eur:min]] netto.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

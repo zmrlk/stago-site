@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Padiglione speciale — studio medico, guardiola, biglietteria | STAGO",
+    "title": "Padiglione speciale: studio medico, biglietteria | STAGO",
     "description": "Padiglioni per applicazioni speciali. Studio medico, guardiola, biglietteria, info point, centro culturale. Secondo normative e requisiti specifici.",
     "canonical": "https://stago.com.pl/zastosowania/specjalny.html",
-    "ogTitle": "Padiglione speciale — studio medico, guardiola, biglietteria | STAGO",
+    "ogTitle": "Padiglione speciale: studio medico, biglietteria | STAGO",
     "ogDescription": "Padiglioni per applicazioni speciali. Studio medico, guardiola, biglietteria, info point, centro culturale. Secondo normative e requisiti specifici.",
     "ogImage": "https://stago.com.pl/assets/modele/noir.webp"
   },
@@ -80,7 +80,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 12h18M12 3v18\"/></svg>",
         "h3": "Dimensioni e layout atipici",
-        "text": "Guardiola 2×2 m, punto informazioni 8×4 m con tettoia sulla zona d'attesa, piccola biblioteca con sala lettura — dimensioni e layout li progettiamo per la situazione concreta, non per un catalogo rigido."
+        "text": "Guardiola, punto informazioni con tettoia sulla zona d'attesa, piccola biblioteca con sala lettura. La misura la scegli da 4×3 a 12×3 m, una superficie più grande la componiamo con più moduli affiancati. Il layout lo progettiamo per la situazione concreta, le soluzioni fuori standard le preventiviamo a parte."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22v-5M9 7V2M15 7V2M5 9h14l-1 7a3 3 0 01-3 3H9a3 3 0 01-3-3L5 9z\"/></svg>",
@@ -90,12 +90,12 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16\"/></svg>",
         "h3": "Collaborazione con enti pubblici",
-        "text": "Emettiamo fatture con IVA, aiutiamo nella preparazione della documentazione e realizziamo progetti per gare pubbliche. Collaboriamo con enti locali in tutta la Polonia e all'estero."
+        "text": "Emettiamo fatture con IVA, aiutiamo nella preparazione della documentazione e realizziamo progetti per gare pubbliche. Collaboriamo con enti locali in tutta la Polonia."
       }
     ]
   },
   "benefits": {
-    "eyebrow": "Incluso nel prezzo",
+    "eyebrow": "Collaborazione",
     "h2": "Cosa ricevi da STAGO",
     "items": [
       {
@@ -145,7 +145,7 @@
       },
       {
         "q": "Quanto costa uno studio medico?",
-        "a": "Il prezzo dipende dalle specifiche. Un piccolo studio ambulatoriale parte da 8 050 € netto. Un modulo medico completo con sala d'attesa, studio e sterilizzazione — 18 400-34 500 €. Il preventivo finale nasce dopo una conversazione con lo specialista."
+        "a": "Il prezzo dipende dalle specifiche. Il punto di partenza è il prezzo di listino del padiglione: 4×3 m da [[eur:4x3]] netto, 6×3 m da [[eur:6x3]] netto. Impianti medicali, allestimento e soluzioni fuori standard li preventiviamo a parte. Il preventivo finale nasce dopo una conversazione con lo specialista."
       },
       {
         "q": "Potete realizzare un punto informazioni per la città?",
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
@@ -239,7 +239,7 @@
     "name": "Padiglione speciale STAGO",
     "description": "Padiglioni per applicazioni speciali. Studio medico, guardiola, biglietteria, info point, centro culturale. Secondo normative e requisiti specifici.",
     "image": "https://stago.com.pl/assets/modele/noir.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Pabellón de servicios — peluquería, estética, taller | STAGO",
-    "description": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Agua, electricidad, saneamiento — todo listo. Desde 5 750 € neto.",
+    "description": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Instalaciones para su sector. Pabellón 5×3 m desde [[eur:5x3]] neto.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
     "ogTitle": "Pabellón de servicios — peluquería, estética, taller | STAGO",
-    "ogDescription": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Agua, electricidad, saneamiento — todo listo. Desde 5 750 € neto.",
+    "ogDescription": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Instalaciones para su sector. Pabellón 5×3 m desde [[eur:5x3]] neto.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
   "breadcrumb": "Servicios",
@@ -14,8 +14,8 @@
     "imgAlt": "Pabellón de servicios STAGO — modelo ICON",
     "h1": "Pabellón de servicios.",
     "subtitle": "Peluquería, gabinete de estética, taller, lavandería, punto de reparación. Cada sector tiene sus requisitos — agua, saneamiento, ventilación, instalación eléctrica reforzada, a veces certificados específicos. Díganos a qué se dedica y preparamos el pabellón para que pase la inspección sin problemas.",
-    "price": "desde 5 750 € neto",
-    "priceNote": "/ pabellón de servicios 5×3 m, instalaciones incluidas",
+    "price": "desde [[eur:5x3]] neto",
+    "priceNote": "/ pabellón de servicios 5×3 m, las instalaciones van en la oferta",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=ES%20—%20Pabell%C3%B3n%20Servicios",
     "articleHref": "../modele.html",
     "articleText": "Ver los 12 modelos &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluido",
+    "eyebrow": "Colaboración",
     "h2": "Lo que recibe de STAGO",
     "items": [
       {
@@ -141,15 +141,15 @@
     "items": [
       {
         "q": "¿Cuánto cuesta un pabellón de servicios?",
-        "a": "Un módulo de 5×3 m con instalaciones básicas empieza desde 5 750 € neto. Un salón más grande con dos puestos — 9 200–12 650 €. El precio final depende de la cantidad de equipos, conexiones y acabado interior."
+        "a": "Un pabellón de 5×3 m empieza desde [[eur:5x3]] neto (precio de tarifa, sin transporte, montaje ni equipamiento). Las instalaciones del salón, es decir agua, saneamiento y una instalación eléctrica reforzada, las presupuestamos en la oferta. Un salón más grande de 8×3 m empieza desde [[eur:8x3]] neto. El precio final depende de la cantidad de equipos, conexiones y acabado interior."
       },
       {
         "q": "¿El pabellón cumple los requisitos sanitarios?",
-        "a": "Sí. Lo diseñamos conforme a los requisitos vigentes en cada sector. La inspección entra, comprueba y firma el acta. Decenas de nuestros clientes ya gestionan salones y talleres en pabellones STAGO."
+        "a": "Sí. Lo diseñamos conforme a los requisitos vigentes en cada sector. La inspección entra, comprueba y firma el acta."
       },
       {
         "q": "¿Puedo tener más de un puesto de trabajo?",
-        "a": "Sí. Combinamos módulos en paralelo, creando pabellones más grandes — 8×3 m o 12×3 m — con dos o tres puestos. Solo díganos cuántas personas trabajarán a la vez y propondremos la distribución adecuada."
+        "a": "Sí. Elige un pabellón más largo, por ejemplo de 8×3 m o 12×3 m, con dos o tres puestos. Una superficie mayor la formamos con varios módulos colocados uno al lado del otro. Solo díganos cuántas personas trabajarán a la vez y propondremos la distribución adecuada."
       },
       {
         "q": "¿Y si aún no tengo una idea clara de la distribución interior?",
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "¿Cómo funciona?",
-    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el presupuesto con transporte y montaje. Sin sorpresas.",
+    "infoText": "Escríbenos o llámanos. Preguntamos detalles. Diseñamos el proyecto con visualización 3D. Le damos el precio con transporte y montaje. Sin sorpresas.",
     "features": [
       {
         "text": "Visualización 3D — véalo antes de encargar"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Pabellón de servicios STAGO",
-    "description": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Agua, electricidad, saneamiento — todo listo. Desde 5 750 € neto.",
+    "description": "Pabellones de servicios del fabricante. Peluquería, estética, taller, lavandería. Instalaciones para su sector. Pabellón 5×3 m desde [[eur:5x3]] neto.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

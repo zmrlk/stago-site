@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Szolgáltatási pavilon — szalon, kozmetika, szerviz | STAGO",
-    "description": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Víz, áram, csatorna — minden kész. Kb. 5 750 € nettó-tól.",
+    "description": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Szerelések az Ön szakmájához. 5×3 m nettó [[eur:5x3]]-tól.",
     "canonical": "https://stago.com.pl/zastosowania/uslugowy.html",
     "ogTitle": "Szolgáltatási pavilon — szalon, kozmetika, szerviz | STAGO",
-    "ogDescription": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Víz, áram, csatorna — minden kész. Kb. 5 750 € nettó-tól.",
+    "ogDescription": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Szerelések az Ön szakmájához. 5×3 m nettó [[eur:5x3]]-tól.",
     "ogImage": "https://stago.com.pl/assets/modele/icon.webp"
   },
   "breadcrumb": "Szolgáltatási",
@@ -14,8 +14,8 @@
     "imgAlt": "STAGO szolgáltatási pavilon — ICON forma",
     "h1": "Szolgáltatási pavilon.",
     "subtitle": "Fodrászszalon, kozmetikai szalon, szerviz, mosoda, javítóműhely. Minden iparágnak megvannak a saját követelményei — víz, csatorna, szellőztetés, megerősített elektromos hálózat, néha konkrét tanúsítványok. Mondja el, mivel foglalkozik, és úgy készítjük el a pavilont, hogy az egészségügyi ellenőrzés probléma nélkül átmenjen.",
-    "price": "kb. 5 750 € nettó-tól",
-    "priceNote": "/ 5×3 m-es szolgáltatási pavilon, szerelések az árban",
+    "price": "nettó [[eur:5x3]]-tól",
+    "priceNote": "/ 5×3 m-es szolgáltatási pavilon, a szereléseket az ajánlatban árazzuk",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Szolgáltatási%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Tekintse meg mind a 12 modellt &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Az árban",
+    "eyebrow": "Együttműködés",
     "h2": "Mit kap a STAGO-tól",
     "items": [
       {
@@ -141,15 +141,15 @@
     "items": [
       {
         "q": "Mennyibe kerül egy szolgáltatási pavilon?",
-        "a": "Egy 5×3 m-es modul alapszerelésekkel kb. 5 750 € nettó-tól indul. Nagyobb szalon két munkahellyel — 9 200–12 650 €. A végleges ár a berendezések számától, csatlakozásoktól és a belső burkolattól függ."
+        "a": "Az 5×3 m-es pavilon nettó [[eur:5x3]]-tól indul (árlista szerinti ár, szállítás, telepítés és felszerelés nélkül). A szalon szereléseit, vagyis a vizet, a csatornát és az erősebb elektromos hálózatot az ajánlatban árazzuk. Egy nagyobb, 8×3 m-es szalon nettó [[eur:8x3]]-tól indul. A végleges ár a berendezések számától, a csatlakozásoktól és a belső burkolattól függ."
       },
       {
         "q": "Megfelel a pavilon az egészségügyi követelményeknek?",
-        "a": "Igen. Az adott iparág követelményeinek megfelelően tervezzük. Az egészségügyi ellenőrzés bejön, megnézi és aláírja a jegyzőkönyvet. Több tucat ügyfelünk már üzemeltet szalonokat és szervizeket STAGO pavilonokban."
+        "a": "Igen. Az adott iparág követelményeinek megfelelően tervezzük. Az egészségügyi ellenőrzés bejön, megnézi és aláírja a jegyzőkönyvet."
       },
       {
         "q": "Lehet egynél több munkahelyem?",
-        "a": "Igen. Modulokat kapcsolunk egymás mellé, így nagyobb pavilonok jönnek létre — 8×3 m vagy 12×3 m — két vagy három munkahellyel. Csak mondja el, hány ember fog egyszerre dolgozni, és javasoljuk a megfelelő elrendezést."
+        "a": "Igen. Hosszabb pavilont választ, például 8×3 m-eset vagy 12×3 m-eset, két vagy három munkahellyel. Nagyobb alapterületet több, egymás mellé állított modulból építünk. Csak mondja el, hány ember fog egyszerre dolgozni, és javasoljuk a megfelelő elrendezést."
       },
       {
         "q": "Mi van, ha még nincs ötletem a belső elrendezésre?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "STAGO szolgáltatási pavilon",
-    "description": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Víz, áram, csatorna — minden kész. Kb. 5 750 € nettó-tól.",
+    "description": "Szolgáltatási pavilonok a gyártótól. Fodrászszalon, kozmetika, szerviz, mosoda. Szerelések az Ön szakmájához. 5×3 m nettó [[eur:5x3]]-tól.",
     "image": "https://stago.com.pl/assets/modele/icon.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

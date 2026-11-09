@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Celoročný domček — dom, ADU, holiday house | STAGO",
-    "description": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100mm, kúpeľňa, kuchyňa. Od 10 400 € netto. Dodávka na Slovensko.",
+    "description": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100 mm, kúpeľňa a kuchyňa na želanie. Od [[eur:6x3]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
     "ogTitle": "Celoročný domček — dom, ADU, holiday house | STAGO",
-    "ogDescription": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100mm, kúpeľňa, kuchyňa. Od 10 400 € netto. Dodávka na Slovensko.",
+    "ogDescription": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100 mm, kúpeľňa a kuchyňa na želanie. Od [[eur:6x3]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
   },
   "breadcrumb": "Obytné",
@@ -14,8 +14,8 @@
     "imgAlt": "Celoročný domček STAGO — hmota MILA",
     "h1": "Celoročný domček.",
     "subtitle": "Malý dom na pozemku, dom pre svokru, pracovňa v záhrade, dovolenkový domček pri jazere. Plné steny s izoláciou PIR 100 mm, kúpeľňa, kuchynský kút — plnohodnotné miesto na bývanie, nie dočasný barák.",
-    "price": "od 10 400 € netto",
-    "priceNote": "/ domček 6x3 m s kúpeľňou",
+    "price": "od [[eur:6x3]] netto",
+    "priceNote": "/ domček 6×3 m, kúpeľňu a kuchyňu oceníme v ponuke",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Domcek%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Pozrite si všetkých 12 modelov &rarr;"
@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Izolácia ako v energeticky úsporných domoch",
-        "text": "Steny s izoláciou PIR 100 mm, zateplená strecha a podlaha (12 cm) s tepelnou izoláciou. V zime je teplo, v lete príjemne chladno. Mesačný účet za elektriku v zimnej sezóne sa zvyčajne zmestí do 60–105 €."
+        "text": "Steny s izoláciou PIR 100 mm, zateplená strecha a podlaha (12 cm) s tepelnou izoláciou. V zime je teplo, v lete príjemne chladno."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V cene",
+    "eyebrow": "Spolupráca",
     "h2": "Čo dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Koľko stojí celoročný domček?",
-        "a": "Domček 6x3 m s kúpeľňou začína od 10 400 € netto. Väčší domček 8x4 m s kuchyňou a spálňou — 15 000–20 700 €. Prémiové dokončenia oceníme individuálne."
+        "a": "Domček STAGO je modulárny pavilón na zváranom oceľovom ráme. Rozmer 6×3 m stojí v základnom vyhotovení od [[eur:6x3]] netto (cena podľa cenníka, bez dopravy a montáže). Kúpeľňu, kuchynský kút a inštalácie oceňujeme zvlášť. Najdlhší samostatný modul meria 12×3 m, väčší dom poskladáme z viacerých modulov postavených vedľa seba. Prémiové dokončenia oceníme individuálne."
       },
       {
         "q": "Môžem v ňom bývať po celý rok?",
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Celoročný domček STAGO",
-    "description": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100mm, kúpeľňa, kuchyňa. Od 10 400 € netto. Dodávka na Slovensko.",
+    "description": "Celoročné modulárne domčeky. Malý dom na pozemku, ADU, holiday house, pracovňa v záhrade. PIR 100 mm, kúpeľňa a kuchyňa na želanie. Od [[eur:6x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

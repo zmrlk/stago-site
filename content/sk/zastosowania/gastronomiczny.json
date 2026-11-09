@@ -14,8 +14,8 @@
     "imgAlt": "Pavilón pre gastro STAGO — hmota SAGA",
     "h1": "Pavilón pre gastronómiu.",
     "subtitle": "Kaviareň, zmrzlináreň, food truck, malá kuchyňa, bar. Poznáme špecifiká odboru — ventiláciu, požiadavky hygieny, usporiadanie s podávacím oknom. Vieme aj, že v sezóne nie je čas na opravy, preto všetko musí fungovať od prvého dňa. Povedzte nám, čo podávate, a zvyšok prispôsobíme.",
-    "price": "od 5 100 € netto",
-    "priceNote": "/ gastronomický modul 4x2,4 m, pripravený na otvorenie",
+    "price": "od [[eur:min]] netto",
+    "priceNote": "/ pavilón 4×3 m, gastro inštalácie oceníme v ponuke",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Gastro%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Pozrite si všetkých 12 modelov &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V cene",
+    "eyebrow": "Spolupráca",
     "h2": "Čo dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Koľko stojí gastronomický pavilón?",
-        "a": "Malý modul na kávu začína od 5 100 € netto. Väčšia zmrzlináreň s chladiarenským zázemím — 9 200–14 000 €. Bar s plnou kuchyňou — od 16 000 €. Každú cenovú ponuku pripravíme bezplatne po krátkom rozhovore."
+        "a": "Pavilón 4×3 m začína od [[eur:4x3]] netto, 6×3 m od [[eur:6x3]] a 8×3 m od [[eur:8x3]] (ceny podľa cenníka, bez dopravy, montáže a vybavenia). Vzduchotechniku, rozvody vody a vybavenie kuchyne oceníme v ponuke, pretože závisia od toho, čo podávate. Každú cenovú ponuku pripravíme bezplatne po krátkom rozhovore."
       },
       {
         "q": "Môžem mať podávacie okno a zároveň miesto pre hostí vnútri?",
@@ -239,7 +239,7 @@
     "name": "Gastronomický pavilón STAGO",
     "description": "Gastronomické pavilóny na kľúč. Kaviareň, zmrzlináreň, food truck, bar. Ventilácia, podávacie okno, povrchy HACCP. Od výrobcu z Poľska. Dodávka na Slovensko.",
     "image": "https://stago.com.pl/assets/modele/saga.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

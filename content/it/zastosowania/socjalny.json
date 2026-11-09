@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Container per cantiere — spogliatoio, mensa, servizi igienici | STAGO",
-    "description": "Container sociali per cantieri e aziende. Spogliatoio, mensa, container sanitario. Solidi, mobili, pronti subito. Da 2 760 € netto.",
+    "title": "Container per cantiere: spogliatoio, mensa | STAGO",
+    "description": "Container per cantieri e aziende: padiglione modulare STAGO in 12 modelli per spogliatoio, mensa e servizi igienici. Telaio in acciaio. Da [[eur:min]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/socjalny.html",
-    "ogTitle": "Container per cantiere — spogliatoio, mensa, servizi igienici | STAGO",
-    "ogDescription": "Container sociali per cantieri e aziende. Spogliatoio, mensa, container sanitario. Solidi, mobili, pronti subito. Da 2 760 € netto.",
+    "ogTitle": "Container per cantiere: spogliatoio, mensa | STAGO",
+    "ogDescription": "Container per cantieri e aziende: padiglione modulare STAGO in 12 modelli per spogliatoio, mensa e servizi igienici. Telaio in acciaio. Da [[eur:min]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/cube.webp"
   },
   "breadcrumb": "Sociali",
@@ -14,8 +14,8 @@
     "imgAlt": "Container per cantiere STAGO — modello CUBE",
     "h1": "Container per cantiere.",
     "subtitle": "Spogliatoio, mensa, servizi igienici, base per la squadra. Solidi, mobili e pronti per essere spostati al prossimo cantiere quando l'attuale progetto è concluso. La squadra ha dove cambiarsi, mangiare e riposare — e tu hai la tranquillità.",
-    "price": "da 2 760 € netto",
-    "priceNote": "/ container sociale 6×2,4 m",
+    "price": "da [[eur:min]] netto",
+    "priceNote": "/ padiglione per cantiere 4×3 m, versione base",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Cantiere%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Vedi tutti i 12 modelli &rarr;"
@@ -80,12 +80,12 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><path d=\"M16 8h4l3 3v5h-7V8z\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/></svg>",
         "h3": "Trasporto rapido tra cantieri",
-        "text": "Dimensioni standard adatte ai rimorchi. Caricamento, trasporto e scaricamento richiedono poche ore — e il container lavora già nel nuovo luogo. Un solo container può servire tre o quattro cantieri all'anno."
+        "text": "Dimensioni standard adatte ai rimorchi. Caricamento, trasporto e scaricamento richiedono poche ore — e il container lavora già nel nuovo luogo."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M2 21h20M14 12h.01\"/></svg>",
         "h3": "Attrezzature su misura per la squadra",
-        "text": "Armadietti, panche, tavoli, lavandini, docce — nella configurazione di cui hai bisogno. Spogliatoio completo, blocco sanitario indipendente o entrambi combinati in un unico modulo."
+        "text": "Armadietti, panche, tavoli, lavandini, docce — nella configurazione di cui hai bisogno. Spogliatoio completo, zona servizi indipendente o entrambi combinati in un unico modulo."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluso nel prezzo",
+    "eyebrow": "Collaborazione",
     "h2": "Cosa ricevi da STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Quanto costa un container sociale?",
-        "a": "Un modulo base 6×2,4 m parte da 2 760 € netto. Con dotazione completa (spogliatoio e blocco sanitario) — 5 750-8 050 €. È una soluzione più economica del noleggio per sei mesi, e dopo il pagamento il container resta di tua proprietà."
+        "a": "Il container per cantiere STAGO è un padiglione modulare. La misura 4×3 m costa da [[eur:4x3]] netto, 6×3 m da [[eur:6x3]] e 8×3 m da [[eur:8x3]] (prezzi di listino, senza trasporto e montaggio). Spogliatoio, servizi igienici e arredi li preventiviamo a parte nell'offerta. Dopo il pagamento il padiglione è di tua proprietà."
       },
       {
         "q": "Posso prenderlo in leasing invece di comprarlo subito?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "Si può allacciare l'acqua e la fognatura?",
-        "a": "Sì. I container sanitari hanno lavandini, docce e servizi igienici. Richiedono l'allacciamento dell'acqua e dello scarico in cantiere — aiutiamo a pianificare gli attacchi, ma la loro realizzazione è a carico dell'idraulico o dell'elettricista da parte tua."
+        "a": "Sì. Il padiglione può avere lavandini, docce e servizi igienici, che preventiviamo come allestimento. Richiedono l'allacciamento dell'acqua e dello scarico in cantiere — aiutiamo a pianificare gli attacchi, ma la loro realizzazione è a carico dell'idraulico o dell'elettricista da parte tua."
       },
       {
         "q": "Quanto dura un container?",
-        "a": "Un container ben mantenuto lavora 15-20 anni. Molti clienti dell'edilizia usano lo stesso oggetto con successo su decine di cantieri successivi."
+        "a": "La struttura è un telaio in acciaio saldato in profili chiusi con trattamento anticorrosivo, pareti in PIR 100 mm e tetto in PIR 160 mm. Al cantiere successivo il padiglione viaggia su rimorchio. Sulla struttura diamo 2 anni di garanzia."
       }
     ]
   },
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Container per cantiere STAGO",
-    "description": "Container sociali per cantieri e aziende. Spogliatoio, mensa, container sanitario. Solidi, mobili, pronti subito. Da 2 760 € netto.",
+    "description": "Container per cantieri e aziende: padiglione modulare STAGO in 12 modelli per spogliatoio, mensa e servizi igienici. Telaio in acciaio. Da [[eur:min]] netto.",
     "image": "https://stago.com.pl/assets/modele/cube.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

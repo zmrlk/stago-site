@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Irodakonténer — értékesítési iroda, recepció, építkezési iroda | STAGO",
-    "description": "Irodakonténerek a gyártótól. Értékesítési iroda, recepció, építkezési iroda, rendelő. Meleg, csendes, munkakész. Kb. 5 060 € nettó-tól.",
+    "title": "Irodakonténer: értékesítési iroda, recepció | STAGO",
+    "description": "Irodakonténerek a gyártótól: acélvázas moduláris pavilon 12 modellben. Értékesítési iroda, recepció, építkezési iroda. Nettó [[eur:min]]-tól.",
     "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
-    "ogTitle": "Irodakonténer — értékesítési iroda, recepció, építkezési iroda | STAGO",
-    "ogDescription": "Irodakonténerek a gyártótól. Értékesítési iroda, recepció, építkezési iroda, rendelő. Meleg, csendes, munkakész. Kb. 5 060 € nettó-tól.",
+    "ogTitle": "Irodakonténer: értékesítési iroda, recepció | STAGO",
+    "ogDescription": "Irodakonténerek a gyártótól: acélvázas moduláris pavilon 12 modellben. Értékesítési iroda, recepció, építkezési iroda. Nettó [[eur:min]]-tól.",
     "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
   },
   "breadcrumb": "Irodai",
@@ -14,8 +14,8 @@
     "imgAlt": "STAGO irodakonténer — NORD forma",
     "h1": "Irodakonténer.",
     "subtitle": "Értékesítési iroda, recepció a cégnél, ideiglenes iroda az építkezésen, tanácsadói rendelő. Meleg télen, csendes egész évben, áram és internet az első naptól. Belép a laptopjával és azonnal elkezd dolgozni — hónapok felújítása és kompromisszumok nélkül.",
-    "price": "kb. 5 060 € nettó-tól",
-    "priceNote": "/ 6×2,4 m-es irodakonténer, munkakész",
+    "price": "nettó [[eur:min]]-tól",
+    "priceNote": "/ 4×3 m-es irodakonténer, alapkivitel",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Iroda%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Tekintse meg mind a 12 modellt &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Az árban",
+    "eyebrow": "Együttműködés",
     "h2": "Mit kap a STAGO-tól",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Mennyibe kerül egy irodakonténer?",
-        "a": "Egy 6×2,4 m-es modul kb. 5 060 € nettó-tól indul. Nagyobb iroda WC-vel és teakonyhával — 8 050–11 500 €. Ha nagyobb felületre van szüksége, modulokat kapcsolunk egymás mellé egy nagyobb objektummá."
+        "a": "A STAGO irodakonténer hegesztett acélvázas moduláris pavilon, 12 modellben. A 4×3 m-es méret nettó [[eur:4x3]]-tól, a 6×3 m-es [[eur:6x3]]-tól, a 12×3 m-es [[eur:12x3]]-tól kapható (árlista szerinti árak, szállítás, telepítés és felszerelés nélkül). A WC-t és a teakonyhát külön árazzuk. Ha nagyobb alapterületre van szüksége, több modult állítunk egymás mellé egy nagyobb objektummá."
       },
       {
         "q": "Lehet benne WC?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "Meddig szolgál az irodakonténer?",
-        "a": "A szerkezet acélból készül, korrózióvédelemmel, teljes PIR szigeteléssel és csapadékelvezetéses tetővel. Sok ügyfelünk 10-15 éve használja irodakonténereinket nagyobb javítások nélkül."
+        "a": "A szerkezet acélból készül, korrózióvédelemmel, teljes PIR szigeteléssel és csapadékelvezetéses tetővel. A szerkezetre 2 év garanciát adunk."
       },
       {
         "q": "Áthelyezhetem a konténert másik építkezésre?",
-        "a": "Igen, ez az egyik legnagyobb előnye. Felrakás a félpótkocsin, szállítás, felállítás az új helyen — és a konténer ismét dolgozik. Sok építőipari ügyfelünk évente három-négy építkezést szolgál ki így."
+        "a": "Igen, ez az egyik legnagyobb előnye. Felrakás a félpótkocsin, szállítás, felállítás az új helyen — és a konténer ismét dolgozik."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "STAGO irodakonténer",
-    "description": "Irodakonténerek a gyártótól. Értékesítési iroda, recepció, építkezési iroda, rendelő. Meleg, csendes, munkakész. Kb. 5 060 € nettó-tól.",
+    "description": "Irodakonténerek a gyártótól: acélvázas moduláris pavilon 12 modellben. Értékesítési iroda, recepció, építkezési iroda. Nettó [[eur:min]]-tól.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

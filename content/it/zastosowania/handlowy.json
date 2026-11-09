@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Padiglione commerciale — negozio, chiosco, punto vendita | STAGO",
-    "description": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da 3 450 € netto.",
+    "description": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da [[eur:min]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
     "ogTitle": "Padiglione commerciale — negozio, chiosco, punto vendita | STAGO",
-    "ogDescription": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da 3 450 € netto.",
+    "ogDescription": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da [[eur:min]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
   },
   "breadcrumb": "Commerciali",
@@ -14,8 +14,8 @@
     "imgAlt": "Padiglione commerciale STAGO — modello LOFT",
     "h1": "Padiglione commerciale.",
     "subtitle": "Negozio, chiosco, punto vendita in piazza, mercato ortofrutticolo. Sappiamo che il cliente decide di entrare in pochi secondi — per questo progettiamo vetrine per l'esposizione, illuminazione che valorizza il prodotto e un ingresso comodo. Dicci cosa vendi — ti proporremo un layout che lavora per le vendite.",
-    "price": "da 3 450 € netto",
-    "priceNote": "/ padiglione 3×2m pronto per il commercio",
+    "price": "da [[eur:min]] netto",
+    "priceNote": "/ padiglione 4×3 m, versione base",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Commerciale%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Vedi tutti i 12 modelli &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluso nel prezzo",
+    "eyebrow": "Collaborazione",
     "h2": "Cosa ricevi da STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Quanto costa un padiglione commerciale?",
-        "a": "Un piccolo chiosco 3×2 m parte da 3 450 € netto. Un negozio 6×3 m — da 6 440 €. Un punto vendita più grande 12×3 m con vetrine e retro — da 11 040 €. Ogni preventivo lo prepariamo individualmente e gratuitamente: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "Un piccolo chiosco 4×3 m parte da [[eur:4x3]] netto, un negozio 6×3 m da [[eur:6x3]] netto e un punto vendita più grande 12×3 m da [[eur:12x3]] netto (retro e allestimento li preventiviamo a parte). Ogni preventivo lo prepariamo individualmente e gratuitamente: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Ho bisogno del permesso di costruire per un padiglione commerciale?",
@@ -153,7 +153,7 @@
       },
       {
         "q": "Come riscaldo il padiglione d'inverno e quanto costa?",
-        "a": "La soluzione più popolare è il climatizzatore con pompa di calore — riscalda d'inverno e raffredda d'estate. Le pareti con isolamento PIR 100 mm mantengono il calore come un edificio in muratura. Per un piccolo padiglione la bolletta mensile per il riscaldamento in inverno è di solito 80-115 €."
+        "a": "La soluzione più popolare è il climatizzatore con pompa di calore — riscalda d'inverno e raffredda d'estate. Le pareti con isolamento PIR 100 mm mantengono il calore come un edificio in muratura. Il costo del riscaldamento dipende dalle dimensioni, dal sistema e dall'uso."
       }
     ]
   },
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Padiglione commerciale STAGO",
-    "description": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da 3 450 € netto.",
+    "description": "Padiglioni commerciali dal produttore. Negozio, chiosco, punto vendita, mercatino. Vetrine per esposizione, illuminazione, ingresso comodo. Da [[eur:min]] netto.",
     "image": "https://stago.com.pl/assets/modele/loft.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

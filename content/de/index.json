@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "STAGO — Modulpavillons, Container, schlüsselfertige Gebäude",
-    "description": "STAGO — Hersteller von Modulpavillons. Geschäft, Büro, Haus — schlüsselfertig. Kostenlose Visualisierung, Montage vor Ort, 2 Jahre Garantie. Lieferung nach Deutschland.",
+    "title": "Modulpavillons vom Hersteller, schlüsselfertig | STAGO",
+    "description": "Modulpavillons vom Hersteller: Geschäft, Büro, Haus, schlüsselfertig. Kostenlose Visualisierung, 2 Jahre Garantie, Lieferung nach Deutschland.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -120,14 +120,14 @@
     "eyebrow": "Miete vs. Eigentum",
     "h2": "Mieten oder eigener Pavillon?",
     "h2accent": "Rechnen Sie selbst.",
-    "sub": "Die meisten unserer Kunden haben vorher gemietet. Dann haben sie gerechnet.",
+    "sub": "Nehmen Sie Ihre Miete und stellen Sie sie dem Preis eines Pavillons gegenüber.",
     "rent": {
       "label": "Sie mieten",
       "price": "700 €",
-      "priceSuffix": "/Monat",
+      "priceSuffix": "/Monat, Beispiel",
       "items": [
         {
-          "text": "36 Monate = <strong>25 200 €</strong>"
+          "text": "36 Monate = <strong>36 × 700 €</strong>"
         },
         {
           "text": "Das Objekt wird nie Ihres sein"
@@ -145,11 +145,11 @@
     },
     "own": {
       "label": "Sie haben Ihren Pavillon",
-      "price": "~280 €",
-      "priceSuffix": "/Monat Rate",
+      "price": "[[eur:6x3]]",
+      "priceSuffix": " netto, einmalig",
       "items": [
         {
-          "text": "Nach Tilgung = <strong>Für immer Ihres</strong>"
+          "text": "Nach der Bezahlung = <strong>Für immer Ihres</strong>"
         },
         {
           "text": "Null Miete — ein Leben lang"
@@ -165,7 +165,7 @@
         }
       ]
     },
-    "footnote": "Orientierungsrate bei einem Pavillon ~8 000 € netto auf 36 Monate Leasing. Den genauen Finanzierungsvorschlag erstellen wir individuell."
+    "footnote": "Die Miete von 700 € im Monat ist ein Beispiel, setzen Sie Ihre eigene ein. Der Preis gilt für einen Pavillon 6×3 m im günstigsten Modell, netto, ohne Transport, Montage und Ausstattung. Leasing und Raten stimmen wir individuell ab."
   },
   "caseStudy": {
     "eyebrow": "Kundengeschichte",
@@ -278,7 +278,7 @@
       {
         "img": "assets/gallery/k19.webp",
         "alt": "STAGO Lagercontainer — Graphitblech",
-        "label": "Lager 6×2,4m, Graphitblech"
+        "label": "Pavillon mit Graphitblech"
       },
       {
         "img": "assets/gallery/k21.webp",
@@ -313,7 +313,7 @@
         "source": "Google Reviews"
       }
     ],
-    "count": "26 Bewertungen"
+    "count": "28 Bewertungen"
   },
   "blog": {
     "eyebrow": "Ratgeber",
@@ -349,11 +349,11 @@
     "items": [
       {
         "q": "Was kostet das?",
-        "a": "Hängt vom Modell, der Größe und der Innenausstattung ab. Zur Orientierung — das einfachste Modul beginnt ab ca. 2 800 € netto, größere schlüsselfertige Module liegen bei 8 000–11 500 €. Jedes Projekt kalkulieren wir individuell und immer kostenlos. Schreiben Sie an kontakt@stago.com.pl — wir nennen Ihnen einen konkreten Preis, bevor Sie sich entscheiden."
+        "a": "Das hängt vom Modell, von der Größe und von der Innenausstattung ab. Zur Orientierung: Die Modelle oben beginnen bei [[kwotaMin]] netto, ohne Transport und Montage. Ausstattung und schlüsselfertigen Innenausbau kalkulieren wir separat. Jedes Projekt kalkulieren wir individuell und immer kostenlos. Schreiben Sie an kontakt@stago.com.pl, wir nennen Ihnen einen konkreten Preis, bevor Sie sich entscheiden."
       },
       {
         "q": "Wie lange dauert es bis zum fertigen Pavillon?",
-        "a": "Den Termin legen wir bei Vertragsschluss fest — und halten ihn ein. Einfachere Module schneller, aufwendigere brauchen mehr Zeit. Das konkrete Lieferdatum kennen Sie, bevor Sie eine Anzahlung leisten — im Vertrag, nicht mündlich."
+        "a": "Die Produktion dauert in der Regel 4–6 Wochen ab Freigabe des Projekts. Den Liefertermin schreiben wir in den Vertrag, und wir halten ihn ein. Das konkrete Datum kennen Sie, bevor Sie eine Anzahlung leisten."
       },
       {
         "q": "Brauche ich eine Baugenehmigung?",
@@ -361,11 +361,11 @@
       },
       {
         "q": "Liefern Sie nach Deutschland?",
-        "a": "Ja. Der Pavillon wird auf einem Sattelauflieger direkt aus unserem Werk bei Jędrzejów geliefert. Unser Team montiert ihn vor Ort — Sie benötigen einen befestigten Untergrund (Pflaster, Beton, Platten). Wir organisieren Transport und Montage enthalten. Lieferung nach Deutschland und in die gesamte EU."
+        "a": "Ja. Der Pavillon wird auf einem Sattelauflieger direkt aus unserem Werk bei Jędrzejów geliefert. Unser Team montiert ihn vor Ort — Sie benötigen einen befestigten Untergrund (Pflaster, Beton, Platten). Transport und Montage organisieren wir, beides kalkulieren wir separat und nennen den Betrag im Angebot. Lieferung nach Deutschland und in die gesamte EU."
       },
       {
         "q": "Wie ist es im Winter? Ist der Pavillon warm?",
-        "a": "Unsere Pavillons haben eine PIR-Isolierung — das ist dieselbe Isolierung wie in Niedrigenergiehäusern. Im Winter ist es drinnen warm, im Sommer heizt es sich nicht auf wie ein Blechcontainer. Kunden mit Klimaanlage und Wärmepumpe zahlen 50–100 € monatlich für die Heizung. Das ist keine Provisorium — das ist ein vollwertiger Raum für das ganze Jahr."
+        "a": "Unsere Pavillons haben eine PIR-Isolierung — das ist dieselbe Isolierung wie in Niedrigenergiehäusern. Im Winter ist es drinnen warm, im Sommer heizt es sich nicht auf wie ein Blechcontainer. Die Heizkosten hängen von der Größe, der Heizart und der Nutzung ab. Das ist kein Provisorium — das ist ein vollwertiger Raum für das ganze Jahr."
       },
       {
         "q": "Was ist mit der Garantie?",

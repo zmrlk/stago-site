@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Casetta tutto l'anno — casa, ADU, holiday house | STAGO",
-    "description": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100mm, bagno, cucina. Da 10 350 € netto.",
+    "description": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100 mm, bagno e cucina su richiesta. Da [[eur:6x3]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/mieszkalny.html",
     "ogTitle": "Casetta tutto l'anno — casa, ADU, holiday house | STAGO",
-    "ogDescription": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100mm, bagno, cucina. Da 10 350 € netto.",
+    "ogDescription": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100 mm, bagno e cucina su richiesta. Da [[eur:6x3]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/mila.webp"
   },
   "breadcrumb": "Abitativi",
@@ -14,8 +14,8 @@
     "imgAlt": "Casetta tutto l'anno STAGO — modello MILA",
     "h1": "Casetta tutto l'anno.",
     "subtitle": "Piccola casa sul terreno, casa per i suoceri, studio in giardino, casa vacanze al lago. Pareti piene con isolamento PIR 100 mm, bagno, angolo cucina — un luogo abitativo completo, non una baracca temporanea.",
-    "price": "da 10 350 € netto",
-    "priceNote": "/ casetta 6×3 m con bagno",
+    "price": "da [[eur:6x3]] netto",
+    "priceNote": "/ casetta 6×3 m, bagno e cucina li preventiviamo nell'offerta",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=IT%20—%20Abitazione%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Vedi tutti i 12 modelli &rarr;"
@@ -75,7 +75,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>",
         "h3": "Isolamento come nelle case ad alta efficienza",
-        "text": "Pareti con isolamento PIR 100 mm, tetto coibentato e pavimento (12 cm) con isolamento termico. D'inverno è caldo, d'estate piacevolmente fresco. La bolletta mensile per la corrente in inverno si aggira di solito tra 60 e 100 €."
+        "text": "Pareti con isolamento PIR 100 mm, tetto coibentato e pavimento (12 cm) con isolamento termico. D'inverno è caldo, d'estate piacevolmente fresco."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2.69l5.66 5.66a8 8 0 11-11.31 0z\"/></svg>",
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Incluso nel prezzo",
+    "eyebrow": "Collaborazione",
     "h2": "Cosa ricevi da STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Quanto costa una casetta tutto l'anno?",
-        "a": "Una casetta 6×3 m con bagno parte da 10 350 € netto. Una casetta più grande 8×4 m con cucina e camera da letto — 14 950-20 700 €. Le finiture premium le preventiviamo individualmente."
+        "a": "La casetta STAGO è un padiglione modulare su telaio in acciaio saldato. La misura 6×3 m costa nella versione base da [[eur:6x3]] netto (prezzo di listino, senza trasporto e montaggio). Bagno, angolo cottura e impianti li preventiviamo a parte. Il modulo singolo più lungo misura 12×3 m; una casa più grande la componiamo con più moduli affiancati. Le finiture premium le preventiviamo individualmente."
       },
       {
         "q": "Posso abitarci tutto l'anno?",
@@ -192,7 +192,7 @@
       }
     ],
     "infoH3": "Come funziona?",
-    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il preventivo con trasporto e montaggio. Senza sorprese.",
+    "infoText": "Scrivi o chiama. Chiediamo i dettagli. Disegniamo il progetto con visualizzazione 3D. Ti diamo il prezzo con trasporto e montaggio. Senza sorprese.",
     "features": [
       {
         "text": "Visualizzazione 3D — vedi prima di ordinare"
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Casetta tutto l'anno STAGO",
-    "description": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100mm, bagno, cucina. Da 10 350 € netto.",
+    "description": "Casette modulari tutto l'anno. Piccola casa sul terreno, ADU, holiday house, studio in giardino. PIR 100 mm, bagno e cucina su richiesta. Da [[eur:6x3]] netto.",
     "image": "https://stago.com.pl/assets/modele/mila.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

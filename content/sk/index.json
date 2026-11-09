@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "STAGO — Modularne pavilony, kontajnery, budovy na kľúč",
+    "title": "Modulárne pavilóny od výrobcu, na kľúč | STAGO",
     "description": "STAGO — výrobca modulárnych pavilónov. Obchod, kancelária, dom — na kľúč. Bezplatná vizualizácia, montáž na mieste, záruka 2 roky. Dodávka na Slovensko.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
@@ -120,14 +120,14 @@
     "eyebrow": "Nájom vs vlastný priestor",
     "h2": "Prenájom alebo vlastný pavilón?",
     "h2accent": "Spočítajte si sami.",
-    "sub": "Väčšina našich zákazníkov predtým prenajímala. Potom si to spočítali.",
+    "sub": "Zoberte svoj nájom a postavte ho vedľa ceny pavilónu.",
     "rent": {
       "label": "Prenajímate",
       "price": "700 €",
-      "priceSuffix": "/mes.",
+      "priceSuffix": "/mes., príklad",
       "items": [
         {
-          "text": "36 mesiacov = <strong>25 200 €</strong>"
+          "text": "36 mesiacov = <strong>36 × 700 €</strong>"
         },
         {
           "text": "Priestor nikdy nebude Váš"
@@ -145,11 +145,11 @@
     },
     "own": {
       "label": "Máte vlastný pavilón",
-      "price": "~280 €",
-      "priceSuffix": "/mes. splátky",
+      "price": "[[eur:6x3]]",
+      "priceSuffix": " netto, raz",
       "items": [
         {
-          "text": "Po splatení = <strong>Váš navždy</strong>"
+          "text": "Po zaplatení = <strong>Váš navždy</strong>"
         },
         {
           "text": "Nulový nájom do konca života"
@@ -165,7 +165,7 @@
         }
       ]
     },
-    "footnote": "Lízingová splátka orientačná, pri pavilóne ~8 100 € netto na 36 mesiacov. Presnú ponuku financovania vyberieme individuálne."
+    "footnote": "Nájom 700 € mesačne je príklad, dosaďte svoj. Cena pavilónu 6×3 m v najlacnejšom modeli, netto, bez dopravy, montáže a vybavenia. Lízing a splátky vyberáme individuálne."
   },
   "caseStudy": {
     "eyebrow": "Príbeh zákazníka",
@@ -278,7 +278,7 @@
       {
         "img": "assets/gallery/k19.webp",
         "alt": "Skladový kontajner STAGO — grafitový plech",
-        "label": "Sklad 6x2,4m, grafitový plech"
+        "label": "Pavilón v grafitovom plechu"
       },
       {
         "img": "assets/gallery/k21.webp",
@@ -313,7 +313,7 @@
         "source": "Google Reviews"
       }
     ],
-    "count": "26 recenzií"
+    "count": "28 recenzií"
   },
   "blog": {
     "eyebrow": "Poradňa",
@@ -349,11 +349,11 @@
     "items": [
       {
         "q": "Koľko to stojí?",
-        "a": "Závisí od modelu, veľkosti a toho, čo má byť vo vnútri. Pre orientáciu — najjednoduchší modul začína od cca 2 800 € netto, väčšie, zariadené na kľúč sú v okolí 8 000–11 500 €. Každý projekt oceníme individuálne a vždy zadarmo. Zavolajte alebo napíšte — uvedieme konkrétnu sumu skôr, než sa rozhodnete."
+        "a": "Závisí od modelu, veľkosti a toho, čo má byť vo vnútri. Pre orientáciu: modely vyššie začínajú na [[kwotaMin]] netto, bez dopravy a montáže. Vybavenie a dokončenie na kľúč oceňujeme zvlášť. Každý projekt oceníme individuálne a vždy zadarmo. Zavolajte alebo napíšte a uvedieme konkrétnu sumu skôr, než sa rozhodnete."
       },
       {
         "q": "Ako dlho sa čaká na pavilón?",
-        "a": "Termín dohodneme pri podpise zmluvy — a dodržíme ho. Závisí od toho, čo staviame. Jednoduchší modul rýchlejšie, zložitejší potrebuje viac času. Konkrétny dátum prevzatia poznáte predtým, než zaplatíte euro."
+        "a": "Výroba trvá zvyčajne 4–6 týždňov od schválenia projektu. Termín dodania zapíšeme do zmluvy a dodržíme ho. Konkrétny dátum prevzatia poznáte skôr, než zaplatíte zálohu."
       },
       {
         "q": "Potrebujem stavebné povolenie?",
@@ -365,7 +365,7 @@
       },
       {
         "q": "A ako bude v zime? Je pavilón teplý?",
-        "a": "Naše pavilóny majú izoláciu PIR — rovnakú izoláciu ako energeticky úsporné domy. V zime je vo vnútri teplo, v lete sa neprehrieva ako plech. Zákazníci, ktorí majú klimatizáciu s tepelným čerpadlom, platia za kúrenie 50–100 € mesačne. Nie je to provizórium — je to plnohodnotný priestor na celý rok."
+        "a": "Naše pavilóny majú izoláciu PIR — rovnakú izoláciu ako energeticky úsporné domy. V zime je vo vnútri teplo, v lete sa neprehrieva ako plech. Náklady na kúrenie závisia od veľkosti pavilónu, spôsobu kúrenia a prevádzky. Nie je to provizórium — je to plnohodnotný priestor na celý rok."
       },
       {
         "q": "Čo so zárukou?",

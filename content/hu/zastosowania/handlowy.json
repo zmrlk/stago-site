@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Kereskedelmi pavilon — bolt, kioszk, értékesítési pont | STAGO",
-    "description": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, világítás, kényelmes bejárat. Kb. 3 450 € nettó-tól.",
+    "description": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, 12 modell. Nettó [[eur:min]]-tól.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
     "ogTitle": "Kereskedelmi pavilon — bolt, kioszk, értékesítési pont | STAGO",
-    "ogDescription": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, világítás, kényelmes bejárat. Kb. 3 450 € nettó-tól.",
+    "ogDescription": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, 12 modell. Nettó [[eur:min]]-tól.",
     "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
   },
   "breadcrumb": "Kereskedelmi",
@@ -14,8 +14,8 @@
     "imgAlt": "STAGO kereskedelmi pavilon — LOFT forma",
     "h1": "Kereskedelmi pavilon.",
     "subtitle": "Bolt, kioszk, értékesítési pont a piactéren, zöldségpiac. Tudjuk, hogy a vásárló másodpercek alatt dönt a belépésről — ezért a kirakatokat a termékbemutatáshoz, a világítást a termék kiemelésére és a bejáratot a kényelemre tervezzük. Mondja el, mit árul — olyan elrendezést javaslunk, amely az eladásért dolgozik.",
-    "price": "kb. 3 450 € nettó-tól",
-    "priceNote": "/ 3×2 m-es pavilon kereskedelemre kész",
+    "price": "nettó [[eur:min]]-tól",
+    "priceNote": "/ 4×3 m-es pavilon, alapkivitel",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=HU%20—%20Kereskedelmi%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Tekintse meg mind a 12 modellt &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "Az árban",
+    "eyebrow": "Együttműködés",
     "h2": "Mit kap a STAGO-tól",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Mennyibe kerül egy kereskedelmi pavilon?",
-        "a": "Egy kis 3×2 m-es kioszk kb. 3 450 € nettó-tól indul. 6×3 m-es bolt — kb. 6 440 €-tól. Nagyobb 12×3 m-es pont kirakattal és háttérhelyiséggel — kb. 11 040 €-tól. Minden árajánlatot egyedileg és díjmentesen készítünk: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "Egy kis 4×3 m-es kioszk nettó [[eur:4x3]]-tól, egy 6×3 m-es bolt nettó [[eur:6x3]]-tól, egy nagyobb 12×3 m-es pont nettó [[eur:12x3]]-tól indul (a háttérhelyiséget és a felszerelést külön árazzuk). Minden árajánlatot egyedileg és díjmentesen készítünk: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Kell-e építési engedély a kereskedelmi pavilonhoz?",
@@ -153,7 +153,7 @@
       },
       {
         "q": "Hogyan fűtöm a pavilont télen és mennyibe kerül?",
-        "a": "A legnépszerűbb megoldás a klímaberendezés hőszivattyúval — télen fűt, nyáron hűt. A 100 mm PIR szigetelésű falak úgy tartják a meleget, mint egy falazott épület. Kis pavilonnál a havi fűtésszámla télen általában 80–115 €."
+        "a": "A legnépszerűbb megoldás a klímaberendezés hőszivattyúval — télen fűt, nyáron hűt. A 100 mm PIR szigetelésű falak úgy tartják a meleget, mint egy falazott épület. A fűtés költsége a mérettől, a fűtés módjától és a használattól függ."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "STAGO kereskedelmi pavilon",
-    "description": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, világítás, kényelmes bejárat. Kb. 3 450 € nettó-tól.",
+    "description": "Kereskedelmi pavilonok a gyártótól. Bolt, kioszk, értékesítési pont, piaci stand. Kirakat a termékbemutatáshoz, 12 modell. Nettó [[eur:min]]-tól.",
     "image": "https://stago.com.pl/assets/modele/loft.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

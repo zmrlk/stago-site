@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Kontajner pre kanceláriu — predajná kancelária, recepcia, stavebná kancelária | STAGO",
-    "description": "Kancelárske kontajnery od výrobcu. Predajná kancelária, recepcia, kancelária na stavbe, kabinét. Teplo, ticho, pripravené na prácu. Od 5 100 € netto. Dodávka na Slovensko.",
+    "title": "Kontajner pre kanceláriu: predajná kancelária, recepcia | STAGO",
+    "description": "Kancelárske kontajnery od výrobcu: modulárny pavilón na oceľovom ráme v 12 modeloch. Predajná kancelária, recepcia, stavba. Od [[eur:min]] netto.",
     "canonical": "https://stago.com.pl/zastosowania/biurowy.html",
-    "ogTitle": "Kontajner pre kanceláriu — predajná kancelária, recepcia | STAGO",
-    "ogDescription": "Kancelárske kontajnery od výrobcu. Predajná kancelária, recepcia, kancelária na stavbe, kabinét. Teplo, ticho, pripravené na prácu. Od 5 100 € netto. Dodávka na Slovensko.",
+    "ogTitle": "Kontajner pre kanceláriu: predajná kancelária, recepcia | STAGO",
+    "ogDescription": "Kancelárske kontajnery od výrobcu: modulárny pavilón na oceľovom ráme v 12 modeloch. Predajná kancelária, recepcia, stavba. Od [[eur:min]] netto.",
     "ogImage": "https://stago.com.pl/assets/modele/nord.webp"
   },
   "breadcrumb": "Kancelárske",
@@ -14,8 +14,8 @@
     "imgAlt": "Kontajner pre kanceláriu STAGO — hmota NORD",
     "h1": "Kontajner pre kanceláriu.",
     "subtitle": "Predajná kancelária, recepcia pri firme, dočasná kancelária na stavbe, poradenský kabinét. Teplo v zime, ticho po celý rok, elektrika a internet od prvého dňa. Vstúpite s laptopom a hneď začínate pracovať — bez mesiacov rekonštrukcie a bez kompromisov.",
-    "price": "od 5 100 € netto",
-    "priceNote": "/ kancelársky kontajner 6x2,4 m, pripravený na prácu",
+    "price": "od [[eur:min]] netto",
+    "priceNote": "/ kancelársky kontajner 4×3 m, základné vyhotovenie",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Kancelaria%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Pozrite si všetkých 12 modelov &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V cene",
+    "eyebrow": "Spolupráca",
     "h2": "Čo dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Koľko stojí kancelársky kontajner?",
-        "a": "Jednotlivý modul 6x2,4 m začína od 5 100 € netto. Väčšia kancelária s toaletou a kuchynským kútom — 8 000–11 500 €. Ak potrebujete väčšiu plochu, spájame moduly vedľa seba do jedného väčšieho objektu."
+        "a": "Kancelársky kontajner STAGO je modulárny pavilón na zváranom oceľovom ráme, v 12 modeloch. Rozmer 4×3 m stojí od [[eur:4x3]] netto, 6×3 m od [[eur:6x3]] a 12×3 m od [[eur:12x3]] (ceny podľa cenníka, bez dopravy, montáže a vybavenia). Toaletu a kuchynský kút oceňujeme zvlášť. Ak potrebujete väčšiu plochu, spojíme viac modulov vedľa seba do jedného väčšieho objektu."
       },
       {
         "q": "Môžem v ňom mať toaletu?",
@@ -149,11 +149,11 @@
       },
       {
         "q": "Ako dlho vydrží kancelársky kontajner?",
-        "a": "Konštrukcia je oceľová, antikorózne ošetrená, s plnou izoláciou PIR a strechou s odvodom zrážkovej vody. Mnohí naši zákazníci používajú kancelárie v našich kontajneroch 10-15 rokov bez väčších opráv."
+        "a": "Konštrukcia je oceľová, antikorózne ošetrená, s plnou izoláciou PIR a strechou s odvodom zrážkovej vody. Na konštrukciu dávame záruku 2 roky."
       },
       {
         "q": "Môžem previezť kontajner na inú stavbu?",
-        "a": "Áno, to je jedna z jeho najväčších výhod. Naloženie na náves, transport, umiestnenie na novom mieste — a kontajner opäť pracuje. Mnohí naši zákazníci zo stavebníctva takto obslúžia tri až štyri stavby ročne."
+        "a": "Áno, to je jedna z jeho najväčších výhod. Naloženie na náves, transport, umiestnenie na novom mieste — a kontajner opäť pracuje."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Kancelársky kontajner STAGO",
-    "description": "Kancelárske kontajnery od výrobcu. Predajná kancelária, recepcia, kancelária na stavbe, kabinét. Teplo, ticho, pripravené na prácu. Od 5 100 € netto. Dodávka na Slovensko.",
+    "description": "Kancelárske kontajnery od výrobcu: modulárny pavilón na oceľovom ráme v 12 modeloch. Predajná kancelária, recepcia, stavba. Od [[eur:min]] netto.",
     "image": "https://stago.com.pl/assets/modele/nord.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }

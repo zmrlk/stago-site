@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "STAGO — Padiglioni modulari, container, edifici chiavi in mano",
-    "description": "STAGO — produttore di padiglioni modulari. Negozio, ufficio, casa — chiavi in mano. Visualizzazione gratuita, montaggio in loco, 2 anni di garanzia. Consegna in Italia.",
+    "title": "Padiglioni modulari dal produttore, chiavi in mano | STAGO",
+    "description": "Produttore di padiglioni modulari: negozio, ufficio, casa, chiavi in mano. Visualizzazione gratuita, montaggio in loco, 2 anni di garanzia. Consegna in Italia.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -120,14 +120,14 @@
     "eyebrow": "Affitto vs proprietà",
     "h2": "Affittare o avere il proprio padiglione?",
     "h2accent": "Fai il conto.",
-    "sub": "La maggior parte dei nostri clienti prima affittava. Poi hanno fatto i conti.",
+    "sub": "Prendi il tuo affitto e mettilo accanto al prezzo di un padiglione.",
     "rent": {
       "label": "Affitti",
       "price": "700 €",
-      "priceSuffix": "/mese",
+      "priceSuffix": "/mese, esempio",
       "items": [
         {
-          "text": "36 mesi = <strong>25 200 €</strong>"
+          "text": "36 mesi = <strong>36 × 700 €</strong>"
         },
         {
           "text": "Il locale non sarà mai tuo"
@@ -145,11 +145,11 @@
     },
     "own": {
       "label": "Hai il tuo padiglione",
-      "price": "~280 €",
-      "priceSuffix": "/mese rate",
+      "price": "[[eur:6x3]]",
+      "priceSuffix": " netto, una volta",
       "items": [
         {
-          "text": "Dopo il saldo = <strong>tuo per sempre</strong>"
+          "text": "Dopo il pagamento = <strong>tuo per sempre</strong>"
         },
         {
           "text": "Zero affitto per tutta la vita"
@@ -165,7 +165,7 @@
         }
       ]
     },
-    "footnote": "Rata di leasing indicativa, per un padiglione da ~8 000 € netto su 36 mesi. L'offerta di finanziamento esatta la studiamo su misura."
+    "footnote": "L'affitto di 700 € al mese è un esempio, inserisci il tuo. Prezzo di un padiglione 6×3 m nel modello più economico, netto, senza trasporto, montaggio e allestimento. Leasing e rate li studiamo su misura."
   },
   "caseStudy": {
     "eyebrow": "Storia di un cliente",
@@ -208,7 +208,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>",
         "title": "Finanziamenti agevolati",
-        "text": "Contributi fino a 30 000 PLN, micro-contributi comunali, programmi UE. Ti consigliamo cosa è possibile nella tua situazione."
+        "text": "Contributi pubblici, micro-contributi comunali, programmi UE. Ti consigliamo cosa è possibile nella tua situazione."
       }
     ]
   },
@@ -278,7 +278,7 @@
       {
         "img": "assets/gallery/k19.webp",
         "alt": "Container magazzino STAGO — lamiera grafite",
-        "label": "Magazzino 6×2,4m, lamiera grafite"
+        "label": "Padiglione in lamiera grafite"
       },
       {
         "img": "assets/gallery/k21.webp",
@@ -313,7 +313,7 @@
         "source": "Google Reviews"
       }
     ],
-    "count": "26 recensioni"
+    "count": "28 recensioni"
   },
   "blog": {
     "eyebrow": "Guide",
@@ -349,11 +349,11 @@
     "items": [
       {
         "q": "Quanto costa?",
-        "a": "Dipende dal modello, dalle dimensioni e da cosa deve esserci all'interno. Per darti un'idea — il modulo più semplice parte da circa 2 760 € netto, mentre quelli più grandi, finiti chiavi in mano, si aggirano tra gli 8 000 e gli 11 500 €. Ogni progetto lo preventivamo individualmente e sempre gratuitamente. Chiamaci o scrivici — ti daremo una cifra precisa prima che tu decida qualsiasi cosa."
+        "a": "Dipende dal modello, dalle dimensioni e da cosa deve esserci all'interno. Per darti un'idea: i modelli qui sopra partono da [[kwotaMin]] netto, senza trasporto e montaggio. L'allestimento e le finiture chiavi in mano li preventiviamo a parte. Ogni progetto lo preventiviamo individualmente e sempre gratuitamente. Chiamaci o scrivici e ti daremo una cifra precisa prima che tu decida qualsiasi cosa."
       },
       {
         "q": "Quanto tempo si aspetta per il padiglione?",
-        "a": "Il termine lo stabiliamo alla firma del contratto — e lo rispettiamo. Dipende da cosa costruiamo. Un modulo più semplice è più veloce, uno più complesso richiede più tempo. La data precisa di consegna la conosci prima di versare l'acconto — nel contratto, non a voce."
+        "a": "La produzione dura di norma 4–6 settimane dall'approvazione del progetto. La data di consegna la scriviamo nel contratto e la rispettiamo. La conosci prima di versare l'acconto."
       },
       {
         "q": "Ho bisogno del permesso di costruire?",
@@ -361,11 +361,11 @@
       },
       {
         "q": "Consegnate in Italia? Dove montate?",
-        "a": "Consegniamo in tutta Italia. Il padiglione viaggia su rimorchio direttamente dal nostro stabilimento vicino a Jędrzejów, in Polonia. La nostra squadra lo monta sul posto — serve un fondo solido (massetto, cemento, lastre). Trasporto e montaggio sono organizziamo. Tu indichi solo dove deve stare."
+        "a": "Consegniamo in tutta Italia. Il padiglione viaggia su rimorchio direttamente dal nostro stabilimento vicino a Jędrzejów, in Polonia. La nostra squadra lo monta sul posto — serve un fondo solido (massetto, cemento, lastre). Trasporto e montaggio li organizziamo noi e li calcoliamo a parte nell'offerta. Tu indichi solo dove deve stare."
       },
       {
         "q": "E d'inverno? Il padiglione è caldo?",
-        "a": "I nostri padiglioni hanno isolamento PIR — lo stesso isolamento delle case ad alta efficienza energetica. D'inverno dentro è caldo, d'estate non si surriscalda come un container in lamiera. I clienti con climatizzatore a pompa di calore pagano per il riscaldamento 50-100 € al mese. Non è una struttura provvisoria — è uno spazio completo per tutto l'anno."
+        "a": "I nostri padiglioni hanno isolamento PIR — lo stesso isolamento delle case ad alta efficienza energetica. D'inverno dentro è caldo, d'estate non si surriscalda come un container in lamiera. Il costo del riscaldamento dipende dalle dimensioni del padiglione, dal sistema e dall'uso. Non è una struttura provvisoria — è uno spazio completo per tutto l'anno."
       },
       {
         "q": "E la garanzia?",

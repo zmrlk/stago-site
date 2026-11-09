@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "STAGO — Pabellones modulares, contenedores, edificios llave en mano",
-    "description": "STAGO — fabricante de pabellones modulares. Tienda, oficina, vivienda — llave en mano. Visualización gratuita, montaje en el lugar, 2 años de garantía. Entrega en España.",
+    "title": "Pabellones modulares del fabricante, llave en mano | STAGO",
+    "description": "Fabricante de pabellones modulares: tienda, oficina, vivienda, llave en mano. Visualización gratuita, montaje in situ, 2 años de garantía. Entrega en España.",
     "phone": "509 508 210",
     "phoneLink": "+48509508210",
     "email": "kontakt@stago.com.pl",
@@ -120,14 +120,14 @@
     "eyebrow": "Alquiler vs local propio",
     "h2": "¿Alquilar o tener su propio pabellón?",
     "h2accent": "Haga las cuentas.",
-    "sub": "La mayoría de nuestros clientes antes alquilaba. Luego hicieron números.",
+    "sub": "Tome su alquiler y póngalo al lado del precio de un pabellón.",
     "rent": {
       "label": "Usted alquila",
       "price": "700 €",
-      "priceSuffix": "/mes",
+      "priceSuffix": "/mes, ejemplo",
       "items": [
         {
-          "text": "36 meses = <strong>25 200 €</strong>"
+          "text": "36 meses = <strong>36 × 700 €</strong>"
         },
         {
           "text": "El local nunca será suyo"
@@ -145,8 +145,8 @@
     },
     "own": {
       "label": "Tiene su pabellón",
-      "price": "~280 €",
-      "priceSuffix": "/mes cuotas",
+      "price": "[[eur:6x3]]",
+      "priceSuffix": " neto, una vez",
       "items": [
         {
           "text": "Tras el pago = <strong>suyo para siempre</strong>"
@@ -165,7 +165,7 @@
         }
       ]
     },
-    "footnote": "Cuota de leasing orientativa, para un pabellón de ~8 000 € neto a 36 meses. La oferta exacta de financiación la ajustamos individualmente."
+    "footnote": "El alquiler de 700 € al mes es un ejemplo, ponga el suyo. Precio de un pabellón de 6×3 m en el modelo más económico, neto, sin transporte, montaje ni equipamiento. El leasing y los pagos a plazos los ajustamos individualmente."
   },
   "caseStudy": {
     "eyebrow": "Historia de un cliente",
@@ -278,7 +278,7 @@
       {
         "img": "assets/gallery/k19.webp",
         "alt": "Contenedor almacén STAGO — chapa grafito",
-        "label": "Almacén 6×2,4m, chapa grafito"
+        "label": "Pabellón en chapa grafito"
       },
       {
         "img": "assets/gallery/k21.webp",
@@ -313,7 +313,7 @@
         "source": "Google Reviews"
       }
     ],
-    "count": "26 opiniones"
+    "count": "28 opiniones"
   },
   "blog": {
     "eyebrow": "Guías",
@@ -349,11 +349,11 @@
     "items": [
       {
         "q": "¿Cuánto cuesta?",
-        "a": "Depende del modelo, el tamaño y el equipamiento interior. Para que se haga una idea — el módulo más sencillo empieza desde aprox. 2 760 € neto, y los más grandes, acabados llave en mano, están en torno a 8 000–11 500 €. Cada proyecto lo presupuestamos individualmente y siempre gratis. Llame o escriba — le daremos una cifra concreta antes de que decida nada."
+        "a": "Depende del modelo, el tamaño y el equipamiento interior. Para que se haga una idea: los modelos de arriba empiezan en [[kwotaMin]] neto, sin transporte ni montaje. El equipamiento y el acabado llave en mano los presupuestamos aparte. Cada proyecto lo presupuestamos individualmente y siempre gratis. Llame o escriba y le daremos una cifra concreta antes de que decida nada."
       },
       {
         "q": "¿Cuánto se tarda en recibir el pabellón?",
-        "a": "El plazo lo fijamos al firmar el contrato — y lo cumplimos. Depende de lo que construya. Un módulo más sencillo es más rápido, uno más complejo necesita más tiempo. La fecha exacta de entrega la conoce antes de hacer ningún pago — por contrato, no de palabra."
+        "a": "La producción dura normalmente de 4 a 6 semanas desde la aprobación del proyecto. La fecha de entrega la ponemos en el contrato y la cumplimos. La conoce antes de hacer ningún pago."
       },
       {
         "q": "¿Necesito licencia de obras?",
@@ -361,11 +361,11 @@
       },
       {
         "q": "¿Entregan en España? ¿Dónde realizan el montaje?",
-        "a": "Entrega en toda España. El pabellón viaja en camión directamente desde nuestra fábrica en Jędrzejów (Polonia). Nuestro equipo lo monta in situ — necesita una superficie endurecida (adoquín, hormigón, losas). Transporte y montaje están organizamos. Usted solo indica dónde debe ir."
+        "a": "Entrega en toda España. El pabellón viaja en camión directamente desde nuestra fábrica en Jędrzejów (Polonia). Nuestro equipo lo monta in situ — necesita una superficie endurecida (adoquín, hormigón, losas). Organizamos el transporte y el montaje, y los presupuestamos aparte en la oferta. Usted solo indica dónde debe ir."
       },
       {
         "q": "¿Y en invierno? ¿El pabellón es cálido?",
-        "a": "Nuestros pabellones tienen aislamiento PIR — el mismo aislamiento que en viviendas de alta eficiencia energética. En invierno el interior está caliente, en verano no se recalienta como una caseta metálica. Los clientes con bomba de calor pagan entre 50–100 € al mes en calefacción. No es algo provisional — es un espacio de pleno derecho para todo el año."
+        "a": "Nuestros pabellones tienen aislamiento PIR — el mismo aislamiento que en viviendas de alta eficiencia energética. En invierno el interior está caliente, en verano no se recalienta como una caseta metálica. El coste de la calefacción depende del tamaño del pabellón, del sistema y del uso. No es algo provisional — es un espacio de pleno derecho para todo el año."
       },
       {
         "q": "¿Qué garantía tiene?",

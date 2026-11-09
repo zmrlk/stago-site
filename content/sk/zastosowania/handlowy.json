@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Pavilón pre obchod — predajňa, kiosk, predajné miesto | STAGO",
-    "description": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, osvetlenie, pohodlný vstup. Od 3 500 € netto. Dodávka na Slovensko.",
+    "description": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, 12 modelov. Od [[eur:min]] netto. Dodávka na Slovensko.",
     "canonical": "https://stago.com.pl/zastosowania/handlowy.html",
     "ogTitle": "Pavilón pre obchod — predajňa, kiosk, predajné miesto | STAGO",
-    "ogDescription": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, osvetlenie, pohodlný vstup. Od 3 500 € netto. Dodávka na Slovensko.",
+    "ogDescription": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, 12 modelov. Od [[eur:min]] netto. Dodávka na Slovensko.",
     "ogImage": "https://stago.com.pl/assets/modele/loft.webp"
   },
   "breadcrumb": "Obchodné",
@@ -14,8 +14,8 @@
     "imgAlt": "Obchodný pavilón STAGO — hmota LOFT",
     "h1": "Pavilón pre obchod.",
     "subtitle": "Predajňa, kiosk, predajné miesto na námestí, trhovisko so zeleninou. Vieme, že zákazník sa rozhodne vojsť za pár sekúnd — preto navrhujeme výklady na expozíciu, osvetlenie zvýrazňujúce tovar a pohodlný vstup. Povedzte nám, čo predávate — navrhneme usporiadanie, ktoré pracuje na predaj.",
-    "price": "od 3 500 € netto",
-    "priceNote": "/ pavilón 3x2m pripravený na obchod",
+    "price": "od [[eur:min]] netto",
+    "priceNote": "/ pavilón 4×3 m, základné vyhotovenie",
     "ctaHref": "mailto:kontakt@stago.com.pl?subject=SK%20—%20Obchodny%20Inquiry",
     "articleHref": "../modele.html",
     "articleText": "Pozrite si všetkých 12 modelov &rarr;"
@@ -95,7 +95,7 @@
     ]
   },
   "benefits": {
-    "eyebrow": "V cene",
+    "eyebrow": "Spolupráca",
     "h2": "Čo dostanete od STAGO",
     "items": [
       {
@@ -141,7 +141,7 @@
     "items": [
       {
         "q": "Koľko stojí obchodný pavilón?",
-        "a": "Malý kiosk 3x2 m začína od 3 500 € netto. Predajňa 6x3 m — od 6 400 €. Väčší bod 12x3 m s výkladmi a zázemím — od 11 000 €. Každú cenovú ponuku pripravíme individuálne a bezplatne: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "Malý kiosk 4×3 m začína od [[eur:4x3]] netto, predajňa 6×3 m od [[eur:6x3]] netto a väčšie predajné miesto 12×3 m od [[eur:12x3]] netto (zázemie a vybavenie oceňujeme zvlášť). Každú cenovú ponuku pripravíme individuálne a bezplatne: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Potrebujem stavebné povolenie na obchodný pavilón?",
@@ -153,7 +153,7 @@
       },
       {
         "q": "Ako kúrim pavilón v zime a koľko to stojí?",
-        "a": "Najpopulárnejšie riešenie je klimatizácia s tepelným čerpadlom — kúri v zime a chladí v lete. Steny s izoláciou PIR 100 mm držia teplo ako murovaná budova. Pri malom pavilóne mesačný účet za kúrenie v zimnej sezóne je zvyčajne 80–120 €."
+        "a": "Najpopulárnejšie riešenie je klimatizácia s tepelným čerpadlom — kúri v zime a chladí v lete. Steny s izoláciou PIR 100 mm držia teplo ako murovaná budova. Náklady na kúrenie závisia od veľkosti, spôsobu kúrenia a prevádzky."
       }
     ]
   },
@@ -237,9 +237,9 @@
   ],
   "jsonLd": {
     "name": "Obchodný pavilón STAGO",
-    "description": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, osvetlenie, pohodlný vstup. Od 3 500 € netto. Dodávka na Slovensko.",
+    "description": "Obchodné pavilóny od výrobcu. Predajňa, kiosk, predajné miesto, trhovisko. Výklady na expozíciu, 12 modelov. Od [[eur:min]] netto. Dodávka na Slovensko.",
     "image": "https://stago.com.pl/assets/modele/loft.webp",
-    "lowPrice": "12000",
-    "highPrice": "150000"
+    "lowPrice": "[[liczba:min]]",
+    "highPrice": "[[liczba:max]]"
   }
 }
