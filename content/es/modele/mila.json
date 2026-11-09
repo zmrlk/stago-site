@@ -67,7 +67,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
         "title": "Dimensiones",
-        "text": "Desde 3×2m (compacto) hasta 12×4m (módulo grande). Combinamos módulos en paralelo si necesita más superficie. Altura estándar o elevada."
+        "text": "Desde [[wymiar:MILA]] hasta 12×3 m: 3 m de ancho y largo por metros. Las superficies mayores las formamos con varios módulos en paralelo. Altura estándar de 2,44 m o elevada."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
@@ -206,11 +206,11 @@
       },
       {
         "q": "¿Puedo cambiar las dimensiones de este volumen?",
-        "a": "Sí. El volumen es flexible — desde 3×2m hasta 12×4m. También se pueden combinar módulos en paralelo para superficies mayores. Mantenemos las proporciones para conservar el carácter de MILA, pero el tamaño lo adaptamos a su situación."
+        "a": "Sí. MILA se fabrica desde [[wymiar:MILA]] hasta 12×3 m, con 3 m de ancho. Las superficies mayores las formamos con varios módulos en paralelo. Mantenemos las proporciones para conservar el carácter de MILA. Otras medidas las presupuestamos de forma individual."
       },
       {
         "q": "¿Cuánto cuesta?",
-        "a": "Depende del tamaño, material de fachada y equipamiento. Los módulos más pequeños empiezan desde aprox. 4 140 € neto, los más grandes con equipamiento completo — 10 350–19 550 €. Presupuesto gratuito: <strong><a href=\"mailto:kontakt@stago.com.pl?subject=ES%20—%20MILA%20Consulta\">kontakt@stago.com.pl</a></strong>."
+        "a": "MILA en [[wymiar:MILA]] parte de [[kwotaStrony]] neto. Las medidas mayores hasta 12×3 m, el transporte, el montaje y el equipamiento los presupuestamos en la oferta. Presupuesto gratuito: <strong><a href=\"mailto:kontakt@stago.com.pl?subject=ES%20—%20MILA%20Consulta\">kontakt@stago.com.pl</a></strong>."
       },
       {
         "q": "¿Cuánto se tarda?",

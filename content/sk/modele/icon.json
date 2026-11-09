@@ -67,7 +67,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
         "title": "Rozmery",
-        "text": "Od 3x2m (kompakt) do 12x4m (veľký modul). Spájame moduly vedľa seba, ak potrebujete väčšiu plochu. Štandardná alebo zvýšená výška."
+        "text": "Od [[wymiar:ICON]] do 12×3 m: šírka 3 m, dĺžka po metri. Väčšiu plochu skladáme z viacerých modulov vedľa seba. Štandardná výška 2,44 m alebo zvýšená."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
@@ -206,11 +206,11 @@
       },
       {
         "q": "Môžem zmeniť rozmer tejto hmoty?",
-        "a": "Áno. Hmota je flexibilná — od 3x2m do 12x4m. Dá sa aj spájať moduly vedľa seba pre väčšie plochy. Proporcie zachovávame, aby charakter ICON zostal, ale veľkosť prispôsobíme Vašej situácii."
+        "a": "Áno. ICON vyrábame v rozmeroch od [[wymiar:ICON]] do 12×3 m pri šírke 3 m. Väčšiu plochu skladáme z modulov vedľa seba. Proporcie držíme tak, aby charakter ICON zostal. Iné rozmery nacenime individuálne."
       },
       {
         "q": "Koľko to stojí?",
-        "a": "Závisí od veľkosti, materiálu fasády a vybavenia. Najmenšie moduly začínajú od cca 4 100 € netto, väčšie s kompletným vybavením — 10 000–19 500 €. Cenová ponuka zadarmo: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "ICON v rozmere [[wymiar:ICON]] stojí od [[kwotaStrony]] netto. Väčšie rozmery do 12×3 m, dopravu, montáž a vybavenie nacenime v ponuke. Cenová ponuka zadarmo: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Ako dlho čakám?",

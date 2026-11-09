@@ -31,6 +31,39 @@ const rzut2d = require('./rzut2d.js');
 const WYMIARY_KART = ['4x3', '6x3', '8x3', '10x3'];
 const zlote = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' zł';
 
+// ── Kwoty z cennika w treści PL (9.11.2026: ceny w tekstach rozjechały się z cennikiem na 79 stronach) ──
+// [[cena:4x3]] najtańszy model w wymiarze ([[cena:4x3:max]] najdroższy) · [[cena:NORD]] cena „od” modelu · [[cena:NORD:6x3]] · [[cena:NORD:max]]
+// [[cena:min]] / [[cena:max]] w całej ofercie · [[wymiar:VIEW]] najmniejszy wymiar modelu · [[liczba:…]] sama liczba (JSON-LD).
+// Nieznany znacznik przerywa build. Spacje twarde: kwota nie łamie się między wierszami.
+function cenaZCennika(arg) {
+  const [a, b] = arg.split(':');
+  const rozm = (r) => CENNIK.rozmiary.find((x) => x.rozmiar === r);
+  const wModelu = (M, r) => { const x = rozm(r); return x && x.doplaty[M] != null ? x.podstawa + x.doplaty[M] : null; };
+  let v = null;
+  if (a === 'min') v = Math.min(...CENNIK.modele.map((M) => CENNIK.od[M].cena));
+  else if (a === 'max') v = Math.max(...CENNIK.modele.map((M) => CENNIK.od[M].max));
+  else if (rozm(a) && (b === undefined || b === 'max')) {
+    const ceny = CENNIK.modele.map((M) => wModelu(M, a)).filter((x) => x != null);
+    v = b === 'max' ? Math.max(...ceny) : Math.min(...ceny);
+  }
+  else if (CENNIK.modele.includes(a)) v = b === undefined ? CENNIK.od[a].cena : b === 'max' ? CENNIK.od[a].max : wModelu(a, b);
+  if (v == null || !Number.isFinite(v)) throw new Error(`[[…:${arg}]] — nie ma takiej ceny w cenniku`);
+  return Math.round(v);
+}
+const twardo = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+function cenyWTresci(html, plik) {
+  html = html
+    .replace(/\[\[cena:([A-Za-z0-9:]+)\]\]/g, (_, a) => `${twardo(cenaZCennika(a))} zł`)
+    .replace(/\[\[liczba:([A-Za-z0-9:]+)\]\]/g, (_, a) => String(cenaZCennika(a)))
+    .replace(/\[\[wymiar:([A-Z]+)\]\]/g, (_, M) => {
+      if (!CENNIK.od[M]) throw new Error(`[[wymiar:${M}]] — nie ma modelu w cenniku`);
+      return `${CENNIK.od[M].rozmiar.replace('x', '×')} m`;
+    });
+  const zostal = html.match(/\[\[(?:cena|liczba|wymiar):[^\]]*\]\]/);
+  if (zostal) throw new Error(`${plik}: nierozpoznany znacznik ${zostal[0]}`);
+  return html;
+}
+
 // ── Mini Mustache renderer ──
 function render(template, data) {
   template = template.replace(/\{\{#(\w+(?:\.\w+)*)\}\}([\s\S]*?)\{\{\/\1\}\}/g, (_, key, inner) => {
@@ -389,6 +422,26 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
 
   // „Co jest w cenie” na stronach modeli: tabela cen z cennika (tylko PL — ceny w PLN; € do decyzji)
   const modelMatch = contentRel.match(/^modele\/([a-z]+)\.json$/);
+  // highPrice w Offer = największy wymiar z cennika (lowPrice ustawia oferta-sync z ERP), wszystkie języki
+  if (modelMatch && data.jsonLd && CENNIK.od[modelMatch[1].toUpperCase()]) {
+    data.jsonLd.highPrice = String(Math.round(CENNIK.od[modelMatch[1].toUpperCase()].max));
+  }
+
+  // Karty modeli na stronie głównej: cena ze strony modelu w tym języku (tę stronę bot oferta-sync trzyma
+  // w zgodzie z ERP, także w €), zamiast drugiej, ręcznie przepisywanej kwoty.
+  if (contentRel === 'index.json' && data.products && Array.isArray(data.products.items)) {
+    for (const it of data.products.items) {
+      const m = String(it.href || '').match(/modele\/([a-z]+)\.html$/);
+      const plik = m && (isPl ? `content/modele/${m[1]}.json` : `content/${lang}/modele/${m[1]}.json`);
+      const cena = plik && fs.existsSync(plik) && JSON.parse(fs.readFileSync(plik, 'utf8')).hero?.price;
+      if (!cena) throw new Error(`${contentPath}: karta ${it.href} bez ceny na stronie modelu`);
+      it.price = /net/i.test(cena) ? cena : `${cena} netto`;
+    }
+    // [[kwotaMin]] = najniższa z tych kwot (FAQ strony głównej w € w innych językach)
+    const kwoty = data.products.items.map((it) => (it.price.match(/\d[\d\s .,]*\d\s?(?:€|zł)/) || [])[0]).filter(Boolean);
+    const liczba = (k) => Number(k.replace(/[^\d]/g, ''));
+    data._kwotaMin = kwoty.reduce((a, b) => (liczba(b) < liczba(a) ? b : a));
+  }
   if (modelMatch && isPl) {
     const M = modelMatch[1].toUpperCase();
     const zl = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' zł';
@@ -461,7 +514,7 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
 
   // FAQPage JSON-LD na stronach zastosowań — z tych samych pytań, które widać na stronie
   // (bez HTML w odpowiedziach; "<" kodowane, żeby treść nie zamknęła <script>).
-  if (tmplPath.endsWith('zastosowanie.html') && data.faq && Array.isArray(data.faq.items) && data.faq.items.length) {
+  if ((tmplPath.endsWith('zastosowanie.html') || contentRel === 'index.json') && data.faq && Array.isArray(data.faq.items) && data.faq.items.length) {
     const bezHtml = (s) => String(s).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
     data.faqLd = JSON.stringify({
       '@context': 'https://schema.org',
@@ -540,6 +593,17 @@ function buildPage({ content: contentRel, template: tmplPath, output, i18n: isI1
   // Load and render template
   const tmpl = fs.readFileSync(tmplPath, 'utf8');
   let html = render(tmpl, data);
+  // [[kwotaStrony]] = kwota z nagłówka strony modelu (PLN albo € z ERP przez oferta-sync) — FAQ nie ma własnej liczby
+  if (html.includes('[[kwotaStrony]]')) {
+    const k = String(data.hero?.price || '').match(/\d[\d\s .,]*\d\s?(?:€|zł)/);
+    if (!k) throw new Error(`${outputPath}: [[kwotaStrony]] bez ceny w hero.price`);
+    html = html.split('[[kwotaStrony]]').join(k[0].replace(/\s/g, ' '));
+  }
+  if (html.includes('[[kwotaMin]]')) {
+    if (!data._kwotaMin) throw new Error(`${outputPath}: [[kwotaMin]] poza stroną główną`);
+    html = html.split('[[kwotaMin]]').join(data._kwotaMin.replace(/\s/g, ' '));
+  }
+  html = cenyWTresci(html, outputPath);
 
   // Inject hreflang before </head>
   if (isI18n) {

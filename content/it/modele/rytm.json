@@ -67,7 +67,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
         "title": "Dimensioni",
-        "text": "Da 3×2m (compatto) a 12×4m (modulo grande). Colleghiamo moduli affiancati se hai bisogno di più superficie. Altezza standard o rialzata."
+        "text": "Da [[wymiar:RYTM]] a 12×3 m: larghezza 3 m, lunghezza a passi di un metro. Le superfici più grandi le componiamo con più moduli affiancati. Altezza standard 2,44 m o rialzata."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
@@ -206,11 +206,11 @@
       },
       {
         "q": "Posso cambiare le dimensioni di questa forma?",
-        "a": "Sì. La forma è flessibile — da 3×2m a 12×4m. Si possono anche collegare moduli affiancati per superfici maggiori. Manteniamo le proporzioni per preservare il carattere di RYTM, ma le dimensioni le adattiamo alla tua situazione."
+        "a": "Sì. RYTM è disponibile da [[wymiar:RYTM]] a 12×3 m, con larghezza 3 m. Le superfici più grandi le otteniamo affiancando più moduli. Manteniamo le proporzioni per preservare il carattere di RYTM. Altre misure le quotiamo su richiesta."
       },
       {
         "q": "Quanto costa?",
-        "a": "Dipende dalle dimensioni, dal materiale della facciata e dalle attrezzature. I moduli più piccoli partono da circa 4 140 € netto, quelli più grandi con dotazione completa — 10 350-19 550 €. Preventivo gratuito: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "RYTM nella misura [[wymiar:RYTM]] parte da [[kwotaStrony]] netto. Misure maggiori fino a 12×3 m, trasporto, montaggio e dotazioni li quotiamo nell’offerta. Preventivo gratuito: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Quanto tempo devo aspettare?",

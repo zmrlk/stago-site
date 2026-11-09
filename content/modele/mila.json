@@ -68,7 +68,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
         "title": "Wymiary",
-        "text": "Od 3×2m (kompakt) do 12×4m (duży moduł). Łączymy moduły obok siebie, jeśli potrzebujesz większej powierzchni. Wysokość standardowa lub podwyższona."
+        "text": "Od [[wymiar:MILA]] do 12×3 m: szerokość 3 m, długość co metr. Większą powierzchnię składamy z modułów stawianych obok siebie. Wysokość standardowa 2,44 m albo podwyższona."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
@@ -207,11 +207,11 @@
       },
       {
         "q": "Mogę zmienić wymiar tej bryły?",
-        "a": "Tak. Bryła jest elastyczna — od 3×2m do 12×4m. Można też łączyć moduły obok siebie dla większych powierzchni. Proporcje zachowujemy, żeby charakter MILA był zachowany, ale wielkość dostosowujemy pod Twoją sytuację."
+        "a": "Tak. MILA powstaje w wymiarach od [[wymiar:MILA]] do 12×3 m, przy szerokości 3 m. Większą powierzchnię składamy z kilku modułów obok siebie. Proporcje dobieramy tak, żeby charakter MILA został, a wielkość pasowała do Twojej działki i funkcji. Inne wymiary wyceniamy indywidualnie."
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 20 564 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "MILA w wymiarze [[wymiar:MILA]] kosztuje od [[cena:MILA]] netto, a w 12×3 m od [[cena:MILA:max]] netto. Pełna tabela cen jest wyżej na tej stronie. Transport, montaż i wyposażenie wyceniamy osobno. Wycena darmowa: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",

@@ -67,7 +67,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
         "title": "Rozměry",
-        "text": "Od 3×2m (kompakt) po 12×4m (velký modul). Spojujeme moduly vedle sebe, pokud potřebujete větší plochu. Standardní nebo zvýšená výška."
+        "text": "Od [[wymiar:VIEW]] do 12×3 m: šířka 3 m, délka po metru. Větší plochu skládáme z několika modulů vedle sebe. Standardní výška 2,44 m nebo zvýšená."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
@@ -206,11 +206,11 @@
       },
       {
         "q": "Mohu změnit rozměr tohoto tvaru?",
-        "a": "Ano. Tvar je flexibilní — od 3×2m po 12×4m. Lze také spojovat moduly vedle sebe pro větší plochy. Proporce zachováváme, aby charakter VIEW zůstal, ale velikost přizpůsobíme vaší situaci."
+        "a": "Ano. VIEW vyrábíme v rozměrech od [[wymiar:VIEW]] do 12×3 m při šířce 3 m. Větší plochu skládáme z modulů vedle sebe. Proporce držíme tak, aby charakter VIEW zůstal. Jiné rozměry naceníme individuálně."
       },
       {
         "q": "Kolik to stojí?",
-        "a": "Záleží na velikosti, materiálu fasády a vybavení. Nejmenší moduly začínají od cca 4 200 € netto, větší s plným vybavením — 10 500–19 500 €. Kalkulace zdarma: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "VIEW v rozměru [[wymiar:VIEW]] stojí od [[kwotaStrony]] netto. Větší rozměry do 12×3 m, dopravu, montáž a vybavení naceníme v nabídce. Kalkulace zdarma: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Jak dlouho čekám?",

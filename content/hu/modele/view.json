@@ -67,7 +67,7 @@
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 3v18\"/></svg>",
         "title": "Méretek",
-        "text": "3×2 m-től (kompakt) 12×4 m-ig (nagy modul). Modulokat egymás mellé kapcsolunk, ha nagyobb felületre van szüksége. Standard vagy megemelt belmagasság."
+        "text": "[[wymiar:VIEW]]-től 12×3 m-ig: 3 m szélesség, a hossz méterenként. Nagyobb alapterületet több, egymás mellé állított modulból alakítunk ki. Standard 2,44 m vagy megemelt belmagasság."
       },
       {
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>",
@@ -206,11 +206,11 @@
       },
       {
         "q": "Megváltoztathatom ennek a formának a méretét?",
-        "a": "Igen. A forma rugalmas — 3×2 m-től 12×4 m-ig. Modulokat egymás mellé is kapcsolhatunk nagyobb felületek esetén. Az arányokat megtartjuk, hogy a VIEW jellege megmaradjon, de a méretet az Ön igényeihez igazítjuk."
+        "a": "Igen. A VIEW [[wymiar:VIEW]]-től 12×3 m-ig készül, 3 m szélességben. Nagyobb felületet egymás mellé állított modulokból alakítunk ki. Az arányokat úgy tartjuk, hogy a VIEW jellege megmaradjon. Más méreteket egyedileg árazunk."
       },
       {
         "q": "Mennyibe kerül?",
-        "a": "A mérettől, homlokzat anyagától és felszereltségtől függ. A legkisebb modulok kb. 4 140 € nettó-tól indulnak, a nagyobbak teljes felszereléssel — 10 350–19 550 €. Árajánlat díjmentesen: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
+        "a": "A VIEW ára [[wymiar:VIEW]] méretben nettó [[kwotaStrony]]-tól indul. A nagyobb méreteket 12×3 m-ig, a szállítást, a szerelést és a felszereltséget az ajánlatban árazzuk. Árajánlat díjmentesen: <strong><a href=\"tel:+48509508210\">+48 509 508 210</a></strong>."
       },
       {
         "q": "Mennyi az átfutási idő?",
