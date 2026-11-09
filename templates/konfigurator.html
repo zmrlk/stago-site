@@ -821,8 +821,8 @@ function rysuj() {
 // Pola wyboru z zapisu tylko spośród opcji widocznych na stronie; inaczej wartość domyślna
 function poprawWybory() {
   const lista = (sel, f) => [...document.querySelectorAll(sel)].map(f);
-  const h = wysokosc(state.dimH);
-  state.dimH = Number.isNaN(h) ? DOMYSLNE.dimH : String(h);
+  // Pusta wysokość = klient wpisał błędną albo ją usunął: zostaje pusta (blokada wysyłki przetrwa odświeżenie)
+  if (state.dimH !== '') { const h = wysokosc(state.dimH); state.dimH = Number.isNaN(h) ? DOMYSLNE.dimH : String(h); }
   if (!lista('#kProfil .k-pig', b => b.dataset.name).includes(state.profil)) state.profil = DOMYSLNE.profil;
   if (!lista('#kKolory .k-kolor', b => b.dataset.name).includes(state.kolorScian)) state.kolorScian = DOMYSLNE.kolorScian;
   // Okucia podstawowe/premium, kolor i rozmieszczenie okuć nie mają kontrolki na stronie
@@ -896,7 +896,7 @@ if (zapisDoOdtworzenia) {
 })();
 innyOtwarty = state.dimL !== '' && state.dimW !== '' && !standardowy();
 if (innyOtwarty) {
-  $('iL').value = pole(wymiar(state.dimL)); $('iW').value = pole(wymiar(state.dimW)); $('iH').value = pole(wymiar(state.dimH));
+  $('iL').value = pole(wymiar(state.dimL)); $('iW').value = pole(wymiar(state.dimW)); $('iH').value = state.dimH ? pole(wymiar(state.dimH)) : '';
 }
 
 // ── ZDARZENIA ──
@@ -950,7 +950,10 @@ $('kPrzezn').addEventListener('click', e => {
 // Zapytanie wychodzi tylko z modelem i poprawnym wymiarem (dawny kreator blokował to krokami 1–2)
 function bladKonfiguracji() {
   if (!state.type) return { tekst: 'Wybierz model, zanim wyślesz zapytanie.', model: true, cel: document.querySelector('.k-mod') };
-  if (ostrzezenieWymiaru()) return { tekst: '', cel: $('iL') };   // „Inny wymiar”: komunikat już stoi pod polami
+  if (ostrzezenieWymiaru()) {   // „Inny wymiar”: komunikat już stoi pod polami; fokus na polu do poprawy
+    const zle = (id) => Number.isNaN(wymiar($(id).value.trim().replace(',', '.')));
+    return { tekst: '', cel: state.dimH === '' && !zle('iL') && !zle('iW') ? $('iH') : zle('iW') && !zle('iL') ? $('iW') : $('iL') };
+  }
   if (!wymiaryOk(state.dimL, state.dimW)) return { tekst: 'Wybierz długość albo podaj inny wymiar, zanim wyślesz zapytanie.', cel: innyOtwarty ? $('iL') : $('kChipy').querySelector('.k-chip:not(:disabled)') };
   return null;
 }
@@ -959,6 +962,7 @@ function pokazBlad(b) {
   $('kBlad').hidden = !b.tekst;
   const telefon = !window.matchMedia('(min-width: 1024px)').matches;
   (b.model && telefon ? $('kLewa') : $('wymiary')).scrollIntoView({ block: 'start' });
+  if (b.model) tryb(false);   // miniatury modeli są ukryte w widoku rzutu
   if (b.cel) b.cel.focus({ preventScroll: true });
 }
 // Przycisk w pasku: najpierw konfiguracja, potem pola zapytania (komunikat przeglądarki przy pierwszym pustym)
