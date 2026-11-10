@@ -15,8 +15,9 @@
   },
   "hero": {
     "badge": "Twoja przestrzeń. Bez kompromisów.",
-    "h1": "STAGO.",
-    "h1accent": "Producent pawilonów modułowych.",
+    "logo": true,
+    "h1": "Producent pawilonów",
+    "h1accent": "modułowych.",
     "sub": "Projektujemy i budujemy pod Ciebie. Darmowa wizualizacja, montaż na miejscu, 2 lata gwarancji."
   },
   "trust": [
