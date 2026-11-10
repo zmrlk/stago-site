@@ -9,7 +9,8 @@
  *  - komputer: pigułka w rogu 8 s po decyzji o cookies; okno otwiera się tylko na klik, nigdy samo;
  *  - telefon: tylko poza dyżurem, przycisk „Zadzwoń” w dolnym pasku otwiera panel zamiast dzwonić w próżnię;
  *  - nie po polsku, na stronie kontaktu i w konfiguratorze: nic;
- *  - po zamknięciu pigułka wraca po 7 dniach, po wysłaniu numeru po 30 dniach (pamięć przeglądarki);
+ *  - po zamknięciu pigułka wraca po 7 dniach, po wysłaniu numeru po 30 dniach (pamięć przeglądarki); panel na telefonie
+ *    otwiera tylko świadome dotknięcie „Zadzwoń”, więc jego zamknięcie nie blokuje kolejnego dotknięcia;
  *  - ERP nie odpowiada, usługa wyłączona albo poza dyżurem z ustawieniem „ukryj”: nic, formularz działa dalej.
  */
 (function () {
@@ -21,7 +22,7 @@
   var PO_ZAMKNIECIU = 7 * DZIEN;
   var PO_WYSLANIU = 30 * DZIEN;
   var OPOZNIENIE_MS = 8000;
-  var TELEFON = matchMedia('(max-width: 640px)');
+  var TELEFON = matchMedia('(max-width: 768px)'); // ten sam próg co dolny pasek „Zadzwoń” (style.css)
 
   if ((document.documentElement.lang || '').slice(0, 2) !== 'pl') return;
   if (/\/(kontakt|konfigurator)(\.html)?$/.test(location.pathname)) return;
@@ -34,9 +35,10 @@
     p[pole] = Date.now();
     try { localStorage.setItem(KLUCZ, JSON.stringify(p)); } catch (e) {}
   }
-  var p0 = pamiec();
-  if (p0.wyslane && Date.now() - p0.wyslane < PO_WYSLANIU) return;
-  var pigulkaZamknieta = !!(p0.zamkniete && Date.now() - p0.zamkniete < PO_ZAMKNIECIU);
+  function wyslaneNiedawno() { var p = pamiec(); return !!(p.wyslane && Date.now() - p.wyslane < PO_WYSLANIU); }
+  function pigulkaZamknieta() { var p = pamiec(); return !!(p.zamkniete && Date.now() - p.zamkniete < PO_ZAMKNIECIU); }
+  if (wyslaneNiedawno()) return;
+  var timerPigulki = null;
 
   // Stan z ERP; brak odpowiedzi w 4 s = brak okna.
   function pobierzStan() {
@@ -170,6 +172,7 @@
       var dzwoni = teraz && odp && odp.stan === 'dzwoni';
       var h = el('h2', 'odz-h', dzwoni ? 'Dzwonimy.' : 'Zapisane.');
       h.id = 'odz-h';
+      h.tabIndex = -1;
       h.appendChild(el('span', null, dzwoni ? 'Miej telefon pod ręką.' : naglowek(stan.po_zgloszeniu || 'Oddzwonimy ' + (stan.kiedy || 'w dzień roboczy'))[1]));
       tresc.appendChild(h);
       if (dzwoni) {
@@ -190,29 +193,37 @@
       t.href = 'tel:+48509508210';
       p.appendChild(t);
       tresc.appendChild(p);
+      h.focus({ preventScroll: true }); // fokus z usuniętego formularza na nagłówek potwierdzenia (czytnik ekranu go odczyta)
       requestAnimationFrame(function () { requestAnimationFrame(function () { panel.classList.add('odz-gotowe'); }); });
     }
 
     var f = null;
     var wysylka = false;
-    function otworz() {
-      panel.classList.remove('odz-gotowe');
-      f = formularz();
+    var wyslane = false;
+    var wywolujacy = null;
+    function otworz(skad) {
+      wywolujacy = skad || document.activeElement;
+      clearTimeout(timerPigulki);
       pig.hidden = true;
       panel.hidden = false;
+      // w trakcie wysyłki i po niej zostaje ten sam formularz albo potwierdzenie (bez drugiego numeru w tle)
+      if (wysylka || wyslane) return;
+      panel.classList.remove('odz-gotowe');
+      f = formularz();
       f.tel.focus({ preventScroll: true });
     }
-    function zamknij(naStale) {
+    function zamknij() {
       clearInterval(licznik);
+      clearTimeout(timerPigulki);
       panel.hidden = true;
-      if (naStale) zapamietaj('zamkniete');
-      if (!TELEFON.matches && !naStale && !wyslane) { pig.hidden = false; pig.focus({ preventScroll: true }); }
+      if (!TELEFON.matches) zapamietaj('zamkniete'); // komputer: pigułka wraca po 7 dniach
+      if (wywolujacy && wywolujacy.offsetParent !== null && typeof wywolujacy.focus === 'function') wywolujacy.focus({ preventScroll: true });
+      else if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
     }
-    var wyslane = false;
 
-    x.addEventListener('click', function () { zamknij(true); });
-    panel.addEventListener('keydown', function (e) { if (e.key === 'Escape') zamknij(true); });
-    pig.addEventListener('click', otworz);
+    x.addEventListener('click', zamknij);
+    panel.addEventListener('keydown', function (e) { if (e.key === 'Escape') zamknij(); });
+    pig.addEventListener('click', function () { otworz(pig); });
 
     panel.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -284,13 +295,14 @@
           var a = e.target.closest && e.target.closest('.sticky-phone');
           if (!a || !TELEFON.matches || okno.wyslane()) return;
           e.preventDefault();
-          okno.otworz();
+          okno.otworz(a);
         });
       }
-      if (pigulkaZamknieta) return;
+      if (pigulkaZamknieta()) return;
       poDecyzjiCookies(function () {
-        setTimeout(function () {
-          if (!TELEFON.matches && !okno.wyslane() && document.getElementById('odz-panel').hidden) okno.pig.hidden = false;
+        timerPigulki = setTimeout(function () {
+          if (TELEFON.matches || okno.wyslane() || pigulkaZamknieta() || wyslaneNiedawno()) return;
+          if (document.getElementById('odz-panel').hidden) okno.pig.hidden = false;
         }, OPOZNIENIE_MS);
       });
     }).catch(function () {});

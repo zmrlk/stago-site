@@ -1540,7 +1540,7 @@ body.nav-open{overflow:hidden}
 .odz-pig small{display:block;margin-top:4px;font-weight:500;font-size:12px;line-height:1.3;color:var(--t-light3)}
 .odz-kropka{display:inline-block;width:8px;height:8px;margin-right:8px;border-radius:999px;background:var(--odz-ok);box-shadow:0 0 0 3px rgba(61,190,107,.18);vertical-align:1px}
 .odz-kropka.szara{background:#8A8F98;box-shadow:none}
-.odz-panel{position:fixed;right:24px;bottom:24px;z-index:901;width:400px;max-width:calc(100vw - 32px);box-sizing:border-box;padding:32px;border:1px solid var(--odz-ramka);border-radius:24px;background:var(--bg-dark);box-shadow:0 16px 48px rgba(0,0,0,.3);transform-origin:bottom right;animation:odzWejscie .4s cubic-bezier(.2,.8,0,1)}
+.odz-panel{position:fixed;right:24px;bottom:24px;z-index:901;width:400px;max-width:calc(100vw - 32px);box-sizing:border-box;padding:32px;border:1px solid var(--odz-ramka);border-radius:24px;background:var(--bg-dark);box-shadow:0 16px 48px rgba(0,0,0,.3);max-height:calc(100dvh - 48px);overflow-y:auto;overscroll-behavior:contain;transform-origin:bottom right;animation:odzWejscie .4s cubic-bezier(.2,.8,0,1)}
 @keyframes odzWejscie{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
 .odz-x{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:12px;background:transparent;color:var(--t-light3);cursor:pointer;transition:background .12s ease,color .12s ease}
 .odz-x svg{width:20px;height:20px}
@@ -1576,9 +1576,9 @@ body.nav-open{overflow:hidden}
 .odz-panel p:not([class]){margin:0;font-weight:500;font-size:15px;line-height:1.5;color:var(--t-light3)}
 .odz-panel p:not([class]) a{color:var(--white);font-weight:700;text-decoration:none;white-space:nowrap}
 .odz button:focus-visible,.odz a:focus-visible{outline:2px solid var(--white);outline-offset:2px}
-@media(max-width:640px){
+@media(max-width:768px){
   .odz-pig{display:none}
-  .odz-panel{left:0;right:0;bottom:0;width:auto;max-width:none;padding:32px 24px 24px;border-radius:24px 24px 0 0;border-bottom:0;transform-origin:bottom center;z-index:1001}
+  .odz-panel{left:0;right:0;bottom:0;width:auto;max-width:none;padding:32px 24px 24px;border-radius:24px 24px 0 0;border-bottom:0;max-height:calc(100dvh - 16px);transform-origin:bottom center;z-index:1001}
   .odz-panel::before{content:'';position:absolute;top:8px;left:50%;width:40px;height:4px;transform:translateX(-50%);border-radius:999px;background:rgba(255,255,255,.2)}
 }
 @media(prefers-reduced-motion:reduce){.odz-pig,.odz-panel{animation:none}.odz-ptak{transition:none}}
