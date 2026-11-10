@@ -819,7 +819,7 @@ body.nav-open{overflow:hidden}
 .usecase-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .usecase-card:active{transform:scale(.98)}
 @media(max-width:480px){.usecase-card{padding:24px}}
-.usecase-card h3{font-size:1.2rem;font-weight:800;color:var(--primary);margin:0;letter-spacing:-.02em}
+.usecase-card h3{font-size:1.2rem;font-weight:800;color:var(--primary);margin:0;letter-spacing:-.02em;overflow-wrap:break-word;hyphens:auto}
 .usecase-card p{font-size:.95rem;color:var(--t2);line-height:1.6;margin:0}
 .usecase-arrow{margin-top:6px;font-size:.82rem;font-weight:700;color:var(--accent-text)}
 .usecase-card-cta{background:var(--bg-dark);color:var(--white);border-color:var(--bg-dark)}

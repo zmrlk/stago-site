@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 640" role="img" aria-labelledby="pt">
+  <title id="pt">Przekrój pionowy pawilonu STAGO w skali: dach z płyty PIR 160 mm, ściana z płyty PIR 100 mm, podłoga 120 mm, spawana rama stalowa</title>
+  <!-- Skala 0,4 px/mm: 100 mm = 40 px, 160 mm = 64 px, 120 mm = 48 px. Wysokość ściany skrócona (linie zerwania). -->
+  <defs>
+    <pattern id="pir" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" fill="#F4E9C1"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#D9C67F" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="grunt" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#B9BDC4" stroke-width="1"/>
+    </pattern>
+    <marker id="gr" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+      <line x1="1" y1="7" x2="7" y2="1" stroke="#CC3A15" stroke-width="1.4"/>
+    </marker>
+  </defs>
+  <style>
+    .stal{fill:#2B2E33;stroke:#2B2E33;stroke-width:1;stroke-linejoin:round}
+    .otw{fill:#fff}
+    .blacha{fill:none;stroke:#2B2E33;stroke-width:2.2;stroke-linecap:square}
+    .zarys{fill:none;stroke:#8A8F98;stroke-width:1}
+    .zerw{fill:none;stroke:#8A8F98;stroke-width:1}
+    .wym{fill:none;stroke:#CC3A15;stroke-width:1;marker-start:url(#gr);marker-end:url(#gr)}
+    .pom{stroke:#CC3A15;stroke-width:.8;opacity:.55}
+    .liczba{font:600 15px Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;fill:#CC3A15;font-variant-numeric:tabular-nums}
+    .mat{font:600 11px Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;fill:#6B5E22;letter-spacing:.08em}
+  </style>
+
+  <g transform="translate(24 0)">
+  <!-- grunt i podpora -->
+  <rect x="96" y="588" width="384" height="14" fill="url(#grunt)"/>
+  <line x1="96" y1="588" x2="480" y2="588" stroke="#8A8F98" stroke-width="1"/>
+  <rect x="150" y="574" width="60" height="14" fill="#D5D8DD" stroke="#8A8F98" stroke-width="1"/>
+
+  <!-- podłoga 120 mm: y 526–574 -->
+  <polygon points="200,526 430,526 423,538 433,550 423,562 430,574 200,574" fill="#E7E9EC"/>
+  <polygon points="200,526 430,526 426,533 200,533" fill="#C9CDD3"/>
+  <path class="zarys" d="M200 526H430M200 574H430"/>
+  <path class="zerw" d="M430 526l-7 12 10 12 -10 12 7 12"/>
+
+  <!-- ściana 100 mm: x 160–200, płyta PIR między ryglami, wysokość skrócona -->
+  <polygon points="160,168 200,168 200,338 187,346 173,332 160,340" fill="url(#pir)"/>
+  <polygon points="160,356 173,348 187,362 200,354 200,534 160,534" fill="url(#pir)"/>
+  <path class="blacha" d="M160 168V340M200 168V338M160 356V534M200 354V534"/>
+  <path class="zerw" d="M146 345l14 -5 13 -8 14 14 13 -8 14 -5M146 361l14 -5 13 -8 14 14 13 -8 14 -5"/>
+
+  <!-- dach 160 mm: y 64–128 -->
+  <polygon points="150,64 430,64 423,80 433,96 423,112 430,128 150,128" fill="url(#pir)"/>
+  <path class="blacha" d="M150 64H430M150 128H430M150 64V128"/>
+  <path class="zerw" d="M430 64l-7 16 10 16 -10 16 7 16"/>
+  <!-- obróbka okapu -->
+  <path d="M144 59V136" fill="none" stroke="#2B2E33" stroke-width="2.2" stroke-linecap="square"/>
+  <path d="M144 59H172" fill="none" stroke="#E8461C" stroke-width="3" stroke-linecap="square"/>
+
+  <!-- rama: rygiel górny i dolny, profil zamknięty -->
+  <rect class="stal" x="160" y="128" width="40" height="40" rx="3"/>
+  <rect class="otw" x="165" y="133" width="30" height="30" rx="1.5"/>
+  <rect class="stal" x="160" y="534" width="40" height="40" rx="3"/>
+  <rect class="otw" x="165" y="539" width="30" height="30" rx="1.5"/>
+  <!-- słup w widoku, za płaszczyzną cięcia -->
+  <path class="zarys" stroke-dasharray="5 4" d="M207 170V330M241 170V330M207 366V524M241 366V524"/>
+
+  <!-- oznaczenie materiału -->
+  <text class="mat" x="290" y="100" text-anchor="middle">PIR</text>
+  <text class="mat" x="184" y="452" text-anchor="middle" transform="rotate(-90 184 452)">PIR</text>
+
+  <!-- wymiary -->
+  <path class="pom" d="M112 250H160"/>
+  <path class="wym" d="M160 250H200"/>
+  <text class="liczba" x="106" y="255" text-anchor="end">100 mm</text>
+
+  <path class="pom" d="M440 64H482M440 128H482"/>
+  <path class="wym" d="M472 64V128"/>
+  <text class="liczba" x="486" y="101">160 mm</text>
+
+  <path class="pom" d="M440 526H482M440 574H482"/>
+  <path class="wym" d="M472 526V574"/>
+  <text class="liczba" x="486" y="555">120 mm</text>
+  </g>
+</svg>
