@@ -96,7 +96,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <div class="hero-bg" style="background-image:url({{{root}}}assets/hero1.webp)"></div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <p class="hero-badge">{{{hero.badge}}}</p>
+      {{#hero.badge}}<p class="hero-badge">{{{hero.badge}}}</p>{{/hero.badge}}
       <h1 class="hero-h1">{{#hero.logo}}<img class="hero-logo" src="{{{root}}}assets/logo-white.webp" width="520" height="116" alt="STAGO">{{/hero.logo}}{{hero.h1}}<br><span class="accent">{{hero.h1accent}}</span></h1>
       <p class="hero-sub">{{{hero.sub}}}</p>
       <div class="hero-cta">
