@@ -212,7 +212,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "DUET w wymiarze [[wymiar:DUET]] kosztuje od [[cena:DUET]] netto, a w 12×3 m od [[cena:DUET:max]] netto. Osobno wyceniamy transport (6 zł za kilometr, liczone w obie strony od zakładu w Jędrzejowie), montaż i wyposażenie. Pełną kwotę podajemy w ofercie przed podpisem. Wycena jest bezpłatna: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "DUET w wymiarze [[wymiar:DUET]] kosztuje od [[cena:DUET]] netto, a w 12×3 m od [[cena:DUET:max]] netto. Osobno wyceniamy transport ([[transport:km]] za kilometr, liczone w obie strony od zakładu w Jędrzejowie), montaż i wyposażenie. Pełną kwotę podajemy w ofercie przed podpisem. Wycena jest bezpłatna: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",

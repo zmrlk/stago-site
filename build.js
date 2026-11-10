@@ -54,8 +54,14 @@ const twardo = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 // [[eur:…]] — ta sama kwota w € regułą ERP (lib/oferta/eur.ts: ÷ (kurs NBP + bufor), krok €); kurs zapisuje oferta-sync
 const KURS = JSON.parse(fs.readFileSync('content/oferta-kurs.json', 'utf8'));
 const naEur = (pln) => Math.round(pln / (KURS.eur_rate + KURS.bufor_zl) / KURS.zaokraglenie_eur) * KURS.zaokraglenie_eur;
+// [[transport:km]] stawka „7,50 zł”, [[transport:stawka]] sama liczba „7,50”, [[transport:150]] koszt dojazdu 150 km w obie strony.
+// Stawka z ERP (Ustawienia › Oferta PDF › Transport i dostawa), zapisana w content/oferta-warunki.json.
+const STAWKA_KM = JSON.parse(fs.readFileSync('content/oferta-warunki.json', 'utf8')).transport_zl_km;
+if (!(STAWKA_KM > 0)) throw new Error('content/oferta-warunki.json: brak stawki transportu');
+const stawkaTekst = STAWKA_KM.toFixed(2).replace('.', ',');
 function cenyWTresci(html, plik) {
   html = html
+    .replace(/\[\[transport:(km|stawka|\d+)\]\]/g, (_, a) => a === 'km' ? `${stawkaTekst} zł` : a === 'stawka' ? stawkaTekst : `${twardo(Math.round(Number(a) * 2 * STAWKA_KM))} zł`)
     .replace(/\[\[cena:([A-Za-z0-9:]+)\]\]/g, (_, a) => `${twardo(cenaZCennika(a))} zł`)
     .replace(/\[\[eur:([A-Za-z0-9:]+)\]\]/g, (_, a) => `${twardo(naEur(cenaZCennika(a)))} €`)
     .replace(/\[\[liczba:([A-Za-z0-9:]+)\]\]/g, (_, a) => String(cenaZCennika(a)))
@@ -64,7 +70,7 @@ function cenyWTresci(html, plik) {
       if (!CENNIK.od[M]) throw new Error(`[[wymiar:${M}]] — nie ma modelu w cenniku`);
       return `${CENNIK.od[M].rozmiar.replace('x', '×')} m`;
     });
-  const zostal = html.match(/\[\[(?:cena|eur|liczba|liczbaEur|wymiar):[^\]]*\]\]/);
+  const zostal = html.match(/\[\[(?:cena|eur|liczba|liczbaEur|wymiar|transport):[^\]]*\]\]/);
   if (zostal) throw new Error(`${plik}: nierozpoznany znacznik ${zostal[0]}`);
   return html;
 }

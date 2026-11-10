@@ -1,0 +1,5 @@
+{
+  "_opis": "Warunki oferty wspólne dla całej strony. Źródło: ERP, Ustawienia › Oferta PDF › Transport i dostawa. Po zmianie w ERP popraw tutaj; docelowo wpisuje to scripts/oferta-sync.js.",
+  "transport_zl_km": 7.5,
+  "zrodlo": "ERP prod, company_settings.pdf_config.delivery.rate_per_km, odczyt 2026-11-10"
+}

@@ -212,7 +212,7 @@
       },
       {
         "q": "Ile to kosztuje?",
-        "a": "NOIR w wymiarze [[wymiar:NOIR]] kosztuje od [[cena:NOIR]] netto, a w 12×3 m od [[cena:NOIR:max]] netto. Osobno wyceniamy transport (6 zł za kilometr, liczone w obie strony od zakładu w Jędrzejowie), montaż i wyposażenie. Pełną kwotę podajemy w ofercie przed podpisem. Wycena jest bezpłatna: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
+        "a": "NOIR w wymiarze [[wymiar:NOIR]] kosztuje od [[cena:NOIR]] netto, a w 12×3 m od [[cena:NOIR:max]] netto. Osobno wyceniamy transport ([[transport:km]] za kilometr, liczone w obie strony od zakładu w Jędrzejowie), montaż i wyposażenie. Pełną kwotę podajemy w ofercie przed podpisem. Wycena jest bezpłatna: <strong><a href=\"tel:+48509508210\">509 508 210</a></strong>."
       },
       {
         "q": "Jak długo czekam?",

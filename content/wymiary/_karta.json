@@ -15,7 +15,7 @@
   "stolarka": "PVC lub aluminium — zależnie od zamówienia",
   "masaTodo": "Podamy w ofercie",
   "termin": "Produkcja zwykle 4–6 tygodni od akceptacji projektu",
-  "transport": "6 zł za kilometr, liczone w obie strony od zakładu w Jędrzejowie",
+  "transport": "[[transport:km]] za kilometr, liczone w obie strony od zakładu w Jędrzejowie",
   "montaz": "Wyceniamy zależnie od warunków na miejscu",
   "zgloszenie": "Do 35 m² wystarczy zgłoszenie, bez pozwolenia na budowę",
   "przekrojEyebrow": "Przekrój",
@@ -68,7 +68,7 @@
       "h3": "Wyceniamy osobno",
       "items": [
         {
-          "text": "Transport (6 zł/km w obie strony) i montaż"
+          "text": "Transport ([[transport:km]]/km w obie strony) i montaż"
         },
         {
           "text": "Wyposażenie dodatkowe wybrane w konfiguratorze"
