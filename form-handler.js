@@ -361,10 +361,11 @@
   //      dlatego measurement_basis zawsze opisuje pochodzenie zdarzenia.
   function trackLead(form, payload) {
     try {
-      var isConfigurator = (form.id === 'cfgForm' || form.classList.contains('cfg-form'));
+      // form = null: zgłoszenie spoza formularza (okno „oddzwonimy”, oddzwon.js przez STAGO_LEAD)
+      var isConfigurator = !!form && (form.id === 'cfgForm' || form.classList.contains('cfg-form'));
       var params = {
-        lead_type: isConfigurator ? 'configurator' : 'contact',
-        form_id: payload.consent_form_id || form.id || '',
+        lead_type: isConfigurator ? 'configurator' : form ? 'contact' : 'callback',
+        form_id: payload.consent_form_id || (form && form.id) || '',
         form_location: window.location.pathname,
         language: payload.language || '',
         container_type: payload.containerType || '',
@@ -416,6 +417,118 @@
       // Tracking nigdy nie może zepsuć wysyłki formularza — połykamy błąd.
     }
   }
+
+  // ─── WSPÓLNE DLA FORMULARZY I OKNA „ODDZWONIMY” ───────────────────
+  // Zgody z banera cookies (osobna decyzja niż zgoda z formularza).
+  function zgodyCookies() {
+    var cookieConsent = null;
+    try {
+      cookieConsent = window.STAGO_COOKIES && window.STAGO_COOKIES.state
+        ? window.STAGO_COOKIES.state()
+        : null;
+    } catch (consentErr) {}
+    var consentAnalytics = !!(cookieConsent && cookieConsent.analytics);
+    var consentAds = !!(cookieConsent && cookieConsent.marketing);
+    return {
+      consent_analytics: consentAnalytics,
+      consent_ads: consentAds,
+      consent_openai_ads: !!(consentAds && cookieConsent.version === '2026-09-03-v2'),
+      consent_state: consentAds
+        ? (consentAnalytics ? 'analytics_and_ads_granted' : 'ads_granted')
+        : (consentAnalytics ? 'analytics_granted' : 'denied'),
+      consent_policy_version: cookieConsent && cookieConsent.version
+        ? String(cookieConsent.version).slice(0, 40)
+        : 'legacy',
+      consent_policy_timestamp: cookieConsent && cookieConsent.ts
+        ? new Date(cookieConsent.ts).toISOString()
+        : null
+    };
+  }
+
+  function dolaczAtrybucje(payload, eventId) {
+      // Atrybucja first-party (gclid/utm złapane przez cookies.js na landingu).
+      // Płaskie klucze top-level — endpoint intake czyta utm_*/gclid i buduje
+      // sekcję „Źródło leada" + strukturalną kolumnę attribution.
+      try {
+        var attr = (window.STAGO_ATTRIBUTION && window.STAGO_ATTRIBUTION.get()) || null;
+        if (attr) {
+          for (var ak in attr) {
+            if (Object.prototype.hasOwnProperty.call(attr, ak) && ak !== 'ts' && !(ak in payload)) {
+              payload[ak] = attr[ak];
+            }
+          }
+          if (attr.ts) payload.attribution_ts = new Date(attr.ts).toISOString();
+        }
+      } catch (attrErr) {}
+      try {
+        var attrSignal = window.STAGO_ATTRIBUTION && window.STAGO_ATTRIBUTION.signal
+          ? window.STAGO_ATTRIBUTION.signal()
+          : null;
+        if (attrSignal && !payload.utm_source && !payload.gclid && !payload.fbclid && !payload.ttclid && !payload.oppref) {
+          payload.attribution_signal = attrSignal;
+        }
+      } catch (signalErr) {}
+
+      // Deduplikacja Meta (piksel ↔ API konwersji) — #667.
+      // To samo zgłoszenie leci DWOMA kanałami: fbq('track','Lead') z przeglądarki
+      // ORAZ z serwera STAGO v2. Meta scala je po event_id i liczy JAKO JEDNO.
+      // ⚠️ event_id generujemy TUTAJ, bo obie wysyłki muszą dostać tę samą wartość:
+      // payload.event_id → serwer, ten sam string → trackLead → fbq. Osobne identyfikatory
+      // = podwójnie policzone konwersje i zawyżony wynik kampanii.
+      // Dokładamy też ciasteczka Meta — serwer sam ich nie widzi (są na domenie klienta),
+      // a to one wiążą zgłoszenie z konkretnym klikiem w reklamę.
+      payload.event_id = eventId;
+      var fbcCookie = payload.consent_ads ? readCookie('_fbc') : '';
+      var fbpCookie = payload.consent_ads ? readCookie('_fbp') : '';
+      if (fbcCookie) payload.fbc = fbcCookie;
+      if (fbpCookie) payload.fbp = fbpCookie;
+  }
+
+  // Wysyłka do STAGO v2; sukces tylko z potwierdzonym lead_id. Błąd niesie formErrorType do pomiaru.
+  function wyslijLead(payload) {
+    return fetch(CONFIG.ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          var httpError = new Error('HTTP ' + response.status);
+          httpError.formErrorType = 'http';
+          throw httpError;
+        }
+        return response.json().catch(function () {
+          var parseError = new Error('Invalid intake response');
+          parseError.formErrorType = 'response';
+          throw parseError;
+        });
+      })
+      .then(function (result) {
+        if (!result || result.success !== true || typeof result.lead_id !== 'string' || !result.lead_id) {
+          var resultError = new Error('Unconfirmed lead');
+          resultError.formErrorType = 'response';
+          throw resultError;
+        }
+        return result;
+      });
+  }
+
+  // Okno „oddzwonimy” (oddzwon.js): pola z okna + te same zgody cookies, atrybucja, event_id i pomiar co formularz.
+  window.STAGO_LEAD = {
+    wyslij: function (pola) {
+      var payload = {};
+      for (var k in pola) payload[k] = pola[k];
+      var cookie = zgodyCookies();
+      for (var ck in cookie) payload[ck] = cookie[ck];
+      payload.measurement_basis = 'crm_declared';
+      payload.identity_state = 'declared';
+      dolaczAtrybucje(payload, makeEventId());
+      return wyslijLead(payload).then(function (result) {
+        trackLead(null, payload);
+        return result;
+      });
+    }
+  };
 
   // ─── SUBMIT HANDLER ──────────────────────────────────────────────
   function handleSubmit(e) {
@@ -474,18 +587,7 @@
       consent_source_url: window.location.href,
       consent_form_id: form.id || form.getAttribute('data-form-name') || ''
     };
-    var cookieConsent = null;
-    try {
-      cookieConsent = window.STAGO_COOKIES && window.STAGO_COOKIES.state
-        ? window.STAGO_COOKIES.state()
-        : null;
-    } catch (consentErr) {}
-    var consentAnalytics = !!(cookieConsent && cookieConsent.analytics);
-    var consentAds = !!(cookieConsent && cookieConsent.marketing);
-    var consentOpenAIAds = !!(consentAds && cookieConsent.version === '2026-09-03-v2');
-    var consentState = consentAds
-      ? (consentAnalytics ? 'analytics_and_ads_granted' : 'ads_granted')
-      : (consentAnalytics ? 'analytics_granted' : 'denied');
+    var cookie = zgodyCookies();
 
     // Set loading state
     lastSubmitTime = now;
@@ -550,84 +652,19 @@
       // consent_marketing = dobrowolny kontakt handlowy z checkboxa formularza.
       // consent_ads/analytics = osobna decyzja z banera cookies.
       consent_marketing: consentRecord.consent_marketing,
-      consent_analytics: consentAnalytics,
-      consent_ads: consentAds,
-      consent_openai_ads: consentOpenAIAds,
-      consent_state: consentState,
-      consent_policy_version: cookieConsent && cookieConsent.version
-        ? String(cookieConsent.version).slice(0, 40)
-        : 'legacy',
-      consent_policy_timestamp: cookieConsent && cookieConsent.ts
-        ? new Date(cookieConsent.ts).toISOString()
-        : null,
       measurement_basis: 'crm_declared',
       identity_state: 'declared',
       consent_timestamp: consentRecord.consent_timestamp,
       consent_source_url: consentRecord.consent_source_url,
       consent_form_id: consentRecord.consent_form_id
     };
+    for (var ck in cookie) payload[ck] = cookie[ck];
 
-    // Atrybucja first-party (gclid/utm złapane przez cookies.js na landingu).
-    // Płaskie klucze top-level — endpoint intake czyta utm_*/gclid i buduje
-    // sekcję „Źródło leada" + strukturalną kolumnę attribution.
-    try {
-      var attr = (window.STAGO_ATTRIBUTION && window.STAGO_ATTRIBUTION.get()) || null;
-      if (attr) {
-        for (var ak in attr) {
-          if (Object.prototype.hasOwnProperty.call(attr, ak) && ak !== 'ts' && !(ak in payload)) {
-            payload[ak] = attr[ak];
-          }
-        }
-        if (attr.ts) payload.attribution_ts = new Date(attr.ts).toISOString();
-      }
-    } catch (attrErr) {}
-    try {
-      var attrSignal = window.STAGO_ATTRIBUTION && window.STAGO_ATTRIBUTION.signal
-        ? window.STAGO_ATTRIBUTION.signal()
-        : null;
-      if (attrSignal && !payload.utm_source && !payload.gclid && !payload.fbclid && !payload.ttclid && !payload.oppref) {
-        payload.attribution_signal = attrSignal;
-      }
-    } catch (signalErr) {}
-
-    // Deduplikacja Meta (piksel ↔ API konwersji) — #667.
-    // To samo zgłoszenie leci DWOMA kanałami: fbq('track','Lead') z przeglądarki
-    // ORAZ z serwera STAGO v2. Meta scala je po event_id i liczy JAKO JEDNO.
-    // ⚠️ event_id generujemy TUTAJ, bo obie wysyłki muszą dostać tę samą wartość:
-    // payload.event_id → serwer, ten sam string → trackLead → fbq. Osobne identyfikatory
-    // = podwójnie policzone konwersje i zawyżony wynik kampanii.
-    // Dokładamy też ciasteczka Meta — serwer sam ich nie widzi (są na domenie klienta),
-    // a to one wiążą zgłoszenie z konkretnym klikiem w reklamę.
-    payload.event_id = attempt.id;
-    var fbcCookie = consentAds ? readCookie('_fbc') : '';
-    var fbpCookie = consentAds ? readCookie('_fbp') : '';
-    if (fbcCookie) payload.fbc = fbcCookie;
-    if (fbpCookie) payload.fbp = fbpCookie;
+    dolaczAtrybucje(payload, attempt.id);
 
     // Send to Edge Function ONLY — no direct REST API insert
-    fetch(CONFIG.ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    })
-      .then(function (response) {
-        if (!response.ok) {
-          var httpError = new Error('HTTP ' + response.status);
-          httpError.formErrorType = 'http';
-          throw httpError;
-        }
-        return response.json().catch(function () {
-          var parseError = new Error('Invalid intake response');
-          parseError.formErrorType = 'response';
-          throw parseError;
-        });
-      })
-      .then(function (result) {
-        if (!result || result.success !== true || typeof result.lead_id !== 'string' || !result.lead_id) {
-          var resultError = new Error('Unconfirmed lead');
-          resultError.formErrorType = 'response';
-          throw resultError;
-        }
+    wyslijLead(payload)
+      .then(function () {
         setSubmitButton(form, false, lang);
 
         // Konwersja: lead potwierdzony (przed reset — payload mamy w scope)

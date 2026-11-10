@@ -1528,3 +1528,57 @@ body.nav-open{overflow:hidden}
   .jk-dalej{justify-content:flex-start}
 }
 @media(prefers-reduced-motion:reduce){.jk-mapa a,.jk-mapa-nr{transition:none}}
+
+/* ── Okno „Zostaw numer, oddzwonimy” (oddzwon.js, Karol 10.11.2026) ── */
+.odz{--odz-ramka:rgba(255,255,255,.12);--odz-pole:rgba(255,255,255,.06);--odz-ok:#3DBE6B;color:var(--white)}
+.odz,.odz button,.odz input,.odz textarea{font-family:inherit}
+.odz-pig{position:fixed;right:24px;bottom:24px;z-index:900;display:flex;align-items:center;gap:12px;height:56px;padding:0 24px 0 8px;border:1px solid var(--odz-ramka);border-radius:999px;background:var(--bg-dark);color:var(--white);text-align:left;font-weight:600;font-size:15px;line-height:1.2;letter-spacing:-.01em;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.18);animation:odzWejscie .4s cubic-bezier(.2,.8,0,1);transition:transform .15s cubic-bezier(.4,0,.2,1)}
+.odz-pig:active{transform:scale(.97)}
+.odz-pig[hidden],.odz-panel[hidden]{display:none}
+.odz-pig-ikona{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:999px;background:#C03311}
+.odz-pig-ikona svg{width:18px;height:18px}
+.odz-pig small{display:block;margin-top:4px;font-weight:500;font-size:12px;line-height:1.3;color:var(--t-light3)}
+.odz-kropka{display:inline-block;width:8px;height:8px;margin-right:8px;border-radius:999px;background:var(--odz-ok);box-shadow:0 0 0 3px rgba(61,190,107,.18);vertical-align:1px}
+.odz-kropka.szara{background:#8A8F98;box-shadow:none}
+.odz-panel{position:fixed;right:24px;bottom:24px;z-index:901;width:400px;max-width:calc(100vw - 32px);box-sizing:border-box;padding:32px;border:1px solid var(--odz-ramka);border-radius:24px;background:var(--bg-dark);box-shadow:0 16px 48px rgba(0,0,0,.3);transform-origin:bottom right;animation:odzWejscie .4s cubic-bezier(.2,.8,0,1)}
+@keyframes odzWejscie{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
+.odz-x{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:12px;background:transparent;color:var(--t-light3);cursor:pointer;transition:background .12s ease,color .12s ease}
+.odz-x svg{width:20px;height:20px}
+.odz-x:active{background:rgba(255,255,255,.08);color:var(--white)}
+.odz-stan{margin:0 0 16px;font-weight:500;font-size:13px;line-height:1.4;color:var(--t-light3)}
+.odz-h{margin:0 0 24px;padding-right:24px;font-weight:800;font-size:30px;line-height:1.1;letter-spacing:-.03em;color:var(--white)}
+.odz-h span{display:block;color:var(--accent)}
+.odz-pole{display:flex;align-items:center;height:56px;border:1px solid var(--odz-ramka);border-radius:12px;background:var(--odz-pole);transition:border-color .12s ease}
+.odz-pole.blad{border-color:var(--accent)}
+.odz-pole b{display:flex;align-items:center;height:24px;padding:0 12px 0 16px;border-right:1px solid var(--odz-ramka);font-weight:600;font-size:17px;color:var(--t-light3)}
+.odz-pole input{flex:1;min-width:0;height:100%;padding:0 16px 0 12px;border:0;background:transparent;color:var(--white);font-weight:600;font-size:17px;letter-spacing:.01em;font-variant-numeric:tabular-nums;outline:none}
+.odz-pole input:focus-visible{outline:none;box-shadow:none}
+.odz-pole:focus-within{box-shadow:0 0 0 3px rgba(232,70,28,.2);border-color:var(--accent)}
+.odz-pole input::placeholder{color:rgba(255,255,255,.35);font-weight:500}
+.odz-blad{margin:8px 0 0;font-weight:500;font-size:13px;line-height:1.4;color:#FF8A6B}
+.odz-blad:empty{display:none}
+.odz-link{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;padding:0;border:0;background:none;color:var(--white);font-weight:600;font-size:13px;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.35);cursor:pointer}
+.odz-link[hidden],.odz-kom[hidden]{display:none}
+.odz-kom{display:block;width:100%;box-sizing:border-box;min-height:72px;margin-top:12px;padding:12px 16px;border:1px solid var(--odz-ramka);border-radius:12px;background:var(--odz-pole);color:var(--white);font-weight:500;font-size:15px;line-height:1.45;resize:vertical;outline:none}
+.odz-kom:focus,.odz-kom:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(232,70,28,.2)}
+.odz-kom::placeholder{color:rgba(255,255,255,.35)}
+.odz-wyslij{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;margin-top:12px;border:0;border-radius:12px;background:#C03311;color:var(--white);font-weight:700;font-size:15px;cursor:pointer;transition:background .12s ease,transform .15s cubic-bezier(.4,0,.2,1)}
+.odz-wyslij svg{width:18px;height:18px}
+.odz-wyslij:active{transform:scale(.97);background:#A82E0E}
+.odz-wyslij:disabled{opacity:.6;cursor:default}
+.odz-zgoda{margin:16px 0 0;font-weight:500;font-size:12px;line-height:1.5;color:rgba(255,255,255,.5)}
+.odz-zgoda a{color:inherit}
+.odz-ptak{display:block;height:40px;aspect-ratio:168.65/179.75;margin:0 0 24px;background:url(assets/ptaszek.svg) center/contain no-repeat;clip-path:inset(0 0 100% 100%);transition:clip-path .5s cubic-bezier(.22,1,.36,1)}
+.odz-gotowe .odz-ptak{clip-path:inset(0)}
+.odz-licznik{display:flex;align-items:baseline;gap:12px;margin:0 0 8px}
+.odz-licznik strong{font-weight:800;font-size:44px;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.odz-licznik span{font-weight:500;font-size:15px;color:var(--t-light3)}
+.odz-panel p:not([class]){margin:0;font-weight:500;font-size:15px;line-height:1.5;color:var(--t-light3)}
+.odz-panel p:not([class]) a{color:var(--white);font-weight:700;text-decoration:none;white-space:nowrap}
+.odz button:focus-visible,.odz a:focus-visible{outline:2px solid var(--white);outline-offset:2px}
+@media(max-width:640px){
+  .odz-pig{display:none}
+  .odz-panel{left:0;right:0;bottom:0;width:auto;max-width:none;padding:32px 24px 24px;border-radius:24px 24px 0 0;border-bottom:0;transform-origin:bottom center;z-index:1001}
+  .odz-panel::before{content:'';position:absolute;top:8px;left:50%;width:40px;height:4px;transform:translateX(-50%);border-radius:999px;background:rgba(255,255,255,.2)}
+}
+@media(prefers-reduced-motion:reduce){.odz-pig,.odz-panel{animation:none}.odz-ptak{transition:none}}
