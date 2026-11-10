@@ -206,8 +206,9 @@
       clearTimeout(timerPigulki);
       pig.hidden = true;
       panel.hidden = false;
+      dopasuj();
       // w trakcie wysyłki i po niej zostaje ten sam formularz albo potwierdzenie (bez drugiego numeru w tle)
-      if (wysylka || wyslane) return;
+      if (wysylka || wyslane) { x.focus({ preventScroll: true }); return; }
       panel.classList.remove('odz-gotowe');
       f = formularz();
       f.tel.focus({ preventScroll: true });
@@ -216,9 +217,26 @@
       clearInterval(licznik);
       clearTimeout(timerPigulki);
       panel.hidden = true;
+      panel.style.bottom = panel.style.maxHeight = '';
       if (!TELEFON.matches) zapamietaj('zamkniete'); // komputer: pigułka wraca po 7 dniach
-      if (wywolujacy && wywolujacy.offsetParent !== null && typeof wywolujacy.focus === 'function') wywolujacy.focus({ preventScroll: true });
+      // fokus wraca tam, skąd otwarto; ukryta pigułka → telefon w nagłówku strony (najbliższy kontakt)
+      var cel = widoczny(wywolujacy) ? wywolujacy : [].slice.call(document.querySelectorAll('.nav-phone, .btn-nav')).filter(widoczny)[0];
+      if (cel) cel.focus({ preventScroll: true });
       else if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+    }
+    function widoczny(e) { return !!(e && typeof e.focus === 'function' && e.offsetParent !== null); }
+    // klawiatura ekranowa zmniejsza widoczny obszar, a `fixed` i dvh tego nie widzą: panel nad klawiaturą, w jej granicach
+    function dopasuj() {
+      var vv = window.visualViewport;
+      if (!vv || panel.hidden) return;
+      var odstep = TELEFON.matches ? 0 : 24;
+      var zaslonieteOdDolu = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+      panel.style.bottom = odstep + zaslonieteOdDolu + 'px';
+      panel.style.maxHeight = Math.max(200, vv.height - (TELEFON.matches ? 16 : 48)) + 'px';
+    }
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', dopasuj);
+      window.visualViewport.addEventListener('scroll', dopasuj);
     }
 
     x.addEventListener('click', zamknij);
