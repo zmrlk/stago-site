@@ -960,7 +960,7 @@ body.nav-open{overflow:hidden}
 
 /* ─── STAGE (etap 1-5) ─── */
 .stage-header{text-align:center;margin-bottom:48px}
-.stage-badge{display:inline-block;padding:6px 16px;background:var(--accent);color:var(--white);border-radius:24px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.stage-badge{display:inline-block;padding:6px 16px;background:#C03311;color:var(--white);border-radius:24px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
 .stage-h2{margin-top:8px}
 
 /* ─── PRODUKCJA — kroki ─── */
@@ -983,10 +983,10 @@ body.nav-open{overflow:hidden}
 
 /* ─── DZIAŁKA ─── */
 .dzialka-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;align-items:stretch}
-@media(max-width:980px){.dzialka-grid{grid-template-columns:1fr;max-width:680px;margin:48px auto 0}}
+@media(max-width:980px){.dzialka-grid{grid-template-columns:minmax(0,1fr);max-width:680px;margin:48px auto 0}}
 .dzialka-item{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:40px 32px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow);text-align:center;height:100%}
 .dzialka-icon{width:64px;height:64px;border-radius:50%;background:rgba(232,70,28,.08);display:flex;align-items:center;justify-content:center;color:var(--accent-text);margin:0 auto 8px}
-.dzialka-item h3{font-size:1.3rem;font-weight:800;color:var(--primary);margin:0;letter-spacing:-.02em;text-align:center}
+.dzialka-item h3{font-size:1.3rem;font-weight:800;color:var(--primary);margin:0;letter-spacing:-.02em;text-align:center;overflow-wrap:break-word;hyphens:auto}
 .dzialka-item>p{font-size:.95rem;color:var(--t2);line-height:1.6;margin:0;text-align:center;min-height:4.8em}
 .dzialka-list{list-style:none;padding:0;margin:8px 0;display:flex;flex-direction:column;gap:10px;text-align:left;align-self:stretch;min-height:11em}
 .dzialka-list li{font-size:.92rem;line-height:1.55;color:var(--text);padding-left:22px;position:relative}
@@ -994,7 +994,7 @@ body.nav-open{overflow:hidden}
 .dzialka-list strong{color:var(--primary)}
 .dzialka-note{font-size:.85rem!important;color:var(--text)!important;background:var(--bg-light);padding:14px 18px;border-radius:var(--r-sm);margin-top:auto!important;text-align:left;line-height:1.55}
 .dzialka-help-box{max-width:780px;margin:48px auto 0;background:var(--bg-dark);color:var(--white);border-radius:var(--r);padding:32px 40px;text-align:center;font-size:1rem;line-height:1.6}
-.dzialka-help-box strong{display:block;font-size:1.15rem;color:var(--accent-text);margin-bottom:10px}
+.dzialka-help-box strong{display:block;font-size:1.15rem;color:#FF6B3D;margin-bottom:10px}
 .dzialka-help-box a{color:var(--white);font-weight:800;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px}
 
 /* ─── PŁATNOŚCI ─── */
@@ -1466,3 +1466,67 @@ body.nav-open{overflow:hidden}
 /* strona modelu: ptaszek domyka prawy górny narożnik wybranego rzutu i jedzie razem z długością */
 .ptaszek-rzut{position:absolute;top:0;left:calc(var(--l) / 12 * 100%);transform:translateX(-100%);height:24px;transition:left .4s cubic-bezier(.2,.8,0,1)}
 @media(prefers-reduced-motion:reduce){.ptaszek-hover,.ptaszek-rzut{transition:none}}
+
+/* ─── Jak kupić: landing procesu (Karol 9.11; rada 4/4: dopracować, nie przebudować). Mapa 5 etapów (na komputerze
+   przyklejona, podświetla czytany etap), obraz w etapie, podetapy gęściej z tymi samymi konkretami (Czas · Ty · Dostajesz). */
+.jk-hero{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:48px;align-items:center;max-width:1200px;margin:0 auto;padding:80px 24px 48px}
+.jk-hero .eyebrow,.jk-hero .h1,.jk-hero .hub-sub{text-align:left;margin-left:0;margin-right:0}
+.jk-hero .h1{font-size:clamp(2.2rem,4.6vw,3.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.1;color:var(--primary);margin:8px 0 18px}
+.jk-hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.jk-hero-foto{margin:0;border-radius:var(--r);overflow:hidden;aspect-ratio:3/2;background:#f0f0f0}
+.jk-hero-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.jk-mapa{position:sticky;top:72px;z-index:90;background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.jk-mapa ol{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));max-width:1200px;margin:0 auto;padding:0 24px;list-style:none}
+.jk-mapa a{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:10px;align-items:center;min-height:60px;padding:8px 12px 6px;border-bottom:2px solid transparent;text-decoration:none;transition:border-color .15s}
+.jk-mapa-nr{grid-row:span 2;display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;border:1px solid var(--border);font-size:.82rem;font-weight:700;color:var(--primary);font-variant-numeric:tabular-nums;transition:background-color .15s,color .15s,border-color .15s}
+.jk-mapa-nazwa{font-size:.9rem;font-weight:700;line-height:1.25;color:var(--primary)}
+.jk-mapa-czas{font-size:.8rem;line-height:1.3;color:var(--t2);white-space:nowrap}
+.jk-mapa a:hover .jk-mapa-nazwa{color:var(--accent-text)}
+.jk-mapa a[aria-current="step"]{border-bottom-color:var(--accent)}
+.jk-mapa a[aria-current="step"] .jk-mapa-nr{background:var(--accent);border-color:var(--accent);color:#fff}
+.jk-etap{scroll-margin-top:140px}
+.jk-uklad{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:start;max-width:1200px;margin:0 auto}
+.jk-uklad-produkcja{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}
+.jk-kroki{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.jk-kroki-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.jk-krok{display:flex;gap:16px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:24px}
+.jk-nr{flex:none;min-width:36px;font-size:1.2rem;font-weight:800;line-height:1.3;color:var(--accent-text);font-variant-numeric:tabular-nums}
+.jk-tresc{min-width:0}
+.jk-tresc h3{margin:0 0 6px;font-size:1.08rem;font-weight:800;letter-spacing:-.01em;color:var(--primary)}
+.jk-tresc p{margin:0;font-size:.94rem;line-height:1.6;color:var(--t2)}
+.jk-tresc .jk-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.jk-meta span{padding:5px 10px;border-radius:8px;background:var(--bg-light);font-size:.8rem;line-height:1.4;color:var(--text)}
+.jk-meta b{font-weight:700;color:var(--primary)}
+.jk-obraz{margin:0;position:sticky;top:150px}
+.jk-obraz img{display:block;width:100%;height:auto;border-radius:var(--r)}
+.jk-obraz figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:12px;font-size:.85rem;line-height:1.5;color:var(--t2)}
+.jk-3d-pole{position:relative;aspect-ratio:10/9;border-radius:var(--r);overflow:hidden;background:#E9EAEA}
+.jk-3d-pole img{width:100%;height:100%;object-fit:cover;border-radius:0}
+[data-podglad-3d] [hidden]{display:none!important}
+.jk-3d-pole canvas{display:block;width:100%!important;height:100%!important;touch-action:pan-y}
+.jk-przekroj img{background:var(--white);border:1px solid var(--border)}
+.jk-wizyta{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:stretch;margin-top:48px;border-radius:var(--r);overflow:hidden;background:var(--bg-dark);color:var(--white)}
+.jk-wizyta img{display:block;width:100%;height:100%;min-height:240px;object-fit:cover}
+.jk-wizyta-tekst{align-self:center;padding:32px 40px}
+.jk-wizyta-tekst h3{margin:0 0 8px;font-size:1.4rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;color:var(--white)}
+.jk-wizyta-tekst p{margin:0 0 20px;line-height:1.6;color:var(--t-light2)}
+.jk-dalej{display:flex;align-items:center;justify-content:flex-end;gap:6px;min-height:44px;margin-top:32px;font-weight:700;color:var(--accent-text);text-decoration:none}
+.jk-dalej span{font-weight:500;color:var(--t2)}
+.jk-dalej:hover{color:var(--accent-h)}
+@media(max-width:1023px){
+  .jk-hero,.jk-uklad,.jk-uklad-produkcja,.jk-wizyta{grid-template-columns:minmax(0,1fr)}
+  .jk-hero{gap:32px;padding-top:56px}
+  .jk-obraz{position:static}
+  .jk-mapa{position:static}
+  .jk-mapa ol{grid-template-columns:minmax(0,1fr);padding:8px 24px}
+  .jk-mapa li+li a{border-top:1px solid var(--border)}
+  .jk-mapa a{min-height:52px;border-bottom:0}
+  .jk-etap{scroll-margin-top:88px}
+}
+@media(max-width:767px){
+  .jk-kroki-2{grid-template-columns:minmax(0,1fr)}
+  .jk-krok{padding:20px 16px;gap:12px}
+  .jk-wizyta-tekst{padding:24px}
+  .jk-dalej{justify-content:flex-start}
+}
+@media(prefers-reduced-motion:reduce){.jk-mapa a,.jk-mapa-nr{transition:none}}
