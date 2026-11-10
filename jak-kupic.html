@@ -18,11 +18,11 @@
   <meta name="theme-color" content="#1D1D1B">
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="style.css?v=84c727fa" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css?v=84c727fa"></noscript><style>
+  <link rel="preload" href="style.css?v=2fa3c426" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css?v=2fa3c426"></noscript><style>
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;background:#fff;margin:0;-webkit-font-smoothing:antialiased}</style>
-  <link rel="icon" type="image/png" href="assets/sygnet.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="icon" type="image/png" href="assets/sygnet.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://stago.com.pl/jak-kupic#webpage","url":"https://stago.com.pl/jak-kupic","name":"Jak kupić pawilon od producenta: proces krok po kroku | STAGO","description":"Jak kupić pawilon modułowy od producenta. Proces krok po kroku, dostawa w całej Polsce, pawilon gastronomiczny, biurowy, handlowy. Darmowa wizualizacja.","inLanguage":"pl","isPartOf":{"@type":"WebSite","url":"https://stago.com.pl/","name":"STAGO"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://stago.com.pl/"},{"@type":"ListItem","position":2,"name":"Jak kupić","item":"https://stago.com.pl/jak-kupic"}]}]}</script>
   <link rel="alternate" hreflang="pl" href="https://stago.com.pl/jak-kupic">
   <link rel="alternate" hreflang="de" href="https://stago.com.pl/de/jak-kupic">
@@ -70,11 +70,16 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
     <a href="index.html">Strona główna</a><span>/</span>Jak kupić
   </div>
 
-  <section class="container hub-hero">
-    <p class="eyebrow">Proces</p>
-    <h1 class="h1">Jak kupić pawilon? <span class="accent">Od telefonu do kluczy.</span></h1>
-    <p class="hub-sub">Cały proces zakupu pawilonu STAGO — krok po kroku, etap po etapie.</p>
+  <section class="container jk-hero">
+    <div class="jk-hero-tekst">
+      <p class="eyebrow">Proces</p>
+      <h1 class="h1">Jak kupić pawilon? <span class="accent">Od telefonu do kluczy.</span></h1>
+      <p class="hub-sub">Pięć etapów, od pierwszej rozmowy do odebrania kluczy. Wszystko robimy u siebie, w zakładzie pod Jędrzejowem.</p>
+      <div class="jk-hero-cta"><a href="tel:+48509508210" class="btn btn-primary">Zadzwoń: 509&nbsp;508&nbsp;210</a><a href="konfigurator.html" class="btn btn-outline-dark">Darmowa wycena</a></div>
+    </div>
+    <figure class="jk-hero-foto"><img src="assets/proces/pawilon-przy-hali-1.webp?v=953e21c9" width="1200" height="800" alt="Pawilon STAGO z drewnianą elewacją przy hali" fetchpriority="high"></figure>
   </section>
+  <nav class="jk-mapa" aria-label="Etapy zakupu"><ol><li><a href="#etap-1"><span class="jk-mapa-nr">1</span><span class="jk-mapa-nazwa">Kontakt i umowa</span><span class="jk-mapa-czas">24–48 h</span></a></li><li><a href="#etap-2"><span class="jk-mapa-nr">2</span><span class="jk-mapa-nazwa">Produkcja</span><span class="jk-mapa-czas">4–6 tygodni</span></a></li><li><a href="#etap-3"><span class="jk-mapa-nr">3</span><span class="jk-mapa-nazwa">Kontrola jakości</span><span class="jk-mapa-czas">1–2 dni</span></a></li><li><a href="#etap-4"><span class="jk-mapa-nr">4</span><span class="jk-mapa-nazwa">Transport</span><span class="jk-mapa-czas">1 dzień</span></a></li><li><a href="#etap-5"><span class="jk-mapa-nr">5</span><span class="jk-mapa-nazwa">Montaż i klucze</span><span class="jk-mapa-czas">kilka godzin</span></a></li></ol></nav>
 
   <!-- ZANIM ZADZWONISZ -->
   <section class="section">
@@ -112,122 +117,59 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
           <div class="prep-num">→</div>
           <h3>Nie wiesz jeszcze?</h3>
           <p>To żaden problem. Większość osób dzwoni właśnie z takim „mam pomysł, ale nie wiem, jak to rozpisać". Zadajemy konkretne pytania, Ty odpowiadasz — i w 10 minut mamy ramy projektu.</p>
-          <a href="tel:+48509508210" style="display:inline-block;margin-top:12px;color:var(--accent-text);font-weight:800">Zadzwoń: 509 508 210 &rarr;</a>
+          <a href="tel:+48509508210" style="display:inline-block;margin-top:12px;color:#FF6B3D;font-weight:800">Zadzwoń: 509&nbsp;508&nbsp;210 &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ETAP 1: KONTAKT + UMOWA -->
-  <section class="section section-light" id="etap-1">
+  <section class="section section-light jk-etap" id="etap-1">
     <div class="container">
       <div class="stage-header">
-        <span class="stage-badge">Etap 1</span>
+        <span class="stage-badge">Etap 1 z 5</span>
         <h2 class="h2 stage-h2">Kontakt i umowa <span class="accent">(24–48 godzin)</span></h2>
-        <p class="section-sub">Cały ten etap — od pierwszej rozmowy do podpisanej umowy — zwykle załatwiamy w jeden, dwa dni. Bez czekania tygodniami na kosztorys, bez ghostingu, bez „wrócimy do Pana z informacją".</p>
+        <p class="section-sub">Od pierwszej rozmowy do podpisanej umowy zwykle mija jeden, dwa dni. Bez czekania tygodniami na kosztorys.</p>
       </div>
-
-      <div class="production-steps">
-        <div class="production-step">
-          <div class="production-num">1.1</div>
-          <div class="production-content">
-            <h3>Pierwsza rozmowa</h3>
-            <p>Dzwonisz do nas — odbieramy. Zazwyczaj trafiasz na Łukasza albo Marcina, to oni prowadzą rozmowy z klientami. Słuchamy, o co Ci chodzi, zadajemy kilka konkretnych pytań i po 10 minutach mamy już ramy tego, co Ci zaproponujemy. Jeżeli wolisz zacząć od napisania — wejdź na formularz i napisz trochę więcej niż „proszę o wycenę", wtedy oddzwonimy z konkretami w ręku.</p>
-            <p class="production-detail"><strong>Czas:</strong> 10–30 minut rozmowy · <strong>Z Twojej strony:</strong> telefon lub formularz · <strong>Co dostajesz:</strong> kierunek, w którym idziemy</p>
-          </div>
-        </div>
-
-        <div class="production-step">
-          <div class="production-num">1.2</div>
-          <div class="production-content">
-            <h3>Wizualizacja 3D</h3>
-            <p>Zwykle jeszcze tego samego dnia rysujemy dla Ciebie wizualizację 3D. Widzisz, jak pawilon będzie wyglądał — Twój wymiar, układ okien i drzwi, kolor elewacji, wykończenia. Coś Ci nie pasuje? Mów śmiało, poprawiamy. Robimy tyle wersji, ile trzeba, żebyś mógł w spokoju powiedzieć „tak, to jest to". Nie ruszamy niczego dalej, dopóki nie klepniesz projektu.</p>
-            <p class="production-detail"><strong>Czas:</strong> kilka godzin, maksymalnie jeden dzień · <strong>Co dostajesz:</strong> wizualizację 3D i rysunek techniczny · <strong>Koszt:</strong> zero, bez zobowiązań</p>
-          </div>
-        </div>
-
-        <div class="production-step">
-          <div class="production-num">1.3</div>
-          <div class="production-content">
-            <h3>Umowa i zaliczka</h3>
-            <p>Jak akceptujesz wizualizację, wysyłamy Ci umowę. Cena w niej to cena finalna z VAT-em. Transport i montaż wyceniamy osobno, ale pełną kwotę poznasz przed podpisem. Żadnego „od", żadnego „około", żadnych niespodzianek na koniec. Termin dostawy też masz czarno na białym, nie ustnie. Przeczytaj spokojnie, zadzwoń jeśli coś Ci nie siedzi, i dopiero wtedy podpisuj. Po Twojej stronie zostaje zaliczka, po naszej — zamawianie materiałów i start produkcji.</p>
-            <p class="production-detail"><strong>Czas:</strong> jeden dzień · <strong>Dokumenty:</strong> umowa, harmonogram, specyfikacja · <strong>Zaliczka:</strong> ustalamy indywidualnie</p>
-          </div>
-        </div>
+      <div class="jk-uklad">
+        <ol class="jk-kroki">
+          <li class="jk-krok"><span class="jk-nr">1.1</span><div class="jk-tresc"><h3>Pierwsza rozmowa</h3><p>Dzwonisz, zwykle odbiera Łukasz albo Marcin. Po kilku pytaniach, w około 10 minut, mamy ramy projektu. Wolisz pisać? Opisz w formularzu, czego potrzebujesz, oddzwonimy z konkretami.</p><p class="jk-meta"><span><b>Czas</b> 10–30 minut</span><span><b>Ty</b> telefon albo formularz</span><span><b>Dostajesz</b> kierunek projektu</span></p></div></li>
+          <li class="jk-krok"><span class="jk-nr">1.2</span><div class="jk-tresc"><h3>Wizualizacja 3D</h3><p>Zwykle tego samego dnia rysujemy Twój pawilon w 3D: wymiar, okna, drzwi, elewacja. Poprawiamy, ile trzeba. Nic nie ruszy dalej, dopóki nie zaakceptujesz projektu.</p><p class="jk-meta"><span><b>Czas</b> kilka godzin, najdalej dzień</span><span><b>Ty</b> akceptujesz albo zgłaszasz poprawki</span><span><b>Dostajesz</b> wizualizację 3D i rysunek, bez opłat</span></p></div></li>
+          <li class="jk-krok"><span class="jk-nr">1.3</span><div class="jk-tresc"><h3>Umowa i zaliczka</h3><p>Po akceptacji wysyłamy umowę z ceną końcową z VAT i terminem dostawy. Transport i montaż wyceniamy osobno, pełną kwotę znasz przed podpisem. Po Twojej stronie zaliczka, po naszej zamówienie materiałów i start produkcji.</p><p class="jk-meta"><span><b>Czas</b> jeden dzień</span><span><b>Ty</b> czytasz, podpisujesz, wpłacasz zaliczkę</span><span><b>Dostajesz</b> umowę, harmonogram, specyfikację</span></p></div></li>
+        </ol>
+        <figure class="jk-obraz jk-3d" data-podglad-3d>
+          <div class="jk-3d-pole"><img src="assets/modele/nord.webp?v=3a3ef357" width="1000" height="900" alt="Wizualizacja pawilonu NORD" loading="lazy"></div>
+          <figcaption><button type="button" class="btn btn-outline-dark jk-3d-btn">Obróć pawilon w 3D</button><span>Przykładowy model. Swój projekt dostajesz po rozmowie.</span></figcaption>
+        </figure>
       </div>
+      <a class="jk-dalej" href="#etap-2">Dalej: Produkcja <span>(4–6 tygodni)</span> &rarr;</a>
     </div>
   </section>
 
   <!-- ETAP 2: PRODUKCJA -->
-  <section class="section" id="etap-2">
+  <section class="section jk-etap" id="etap-2">
     <div class="container">
       <div class="stage-header">
-        <span class="stage-badge">Etap 2</span>
+        <span class="stage-badge">Etap 2 z 5</span>
         <h2 class="h2 stage-h2">Produkcja u nas w zakładzie <span class="accent">(4–6 tygodni)</span></h2>
-        <p class="section-sub">Tutaj dzieje się najważniejsza robota. Od pustego placu do gotowego pawilonu — wszystko u nas w Jasionce pod Jędrzejowem, pod jednym dachem. Niczego nie podzlecamy, niczego nie rozrzucamy po podwykonawcach. I w każdej chwili możesz wpaść i zobaczyć, jak Twój pawilon powstaje.</p>
+        <p class="section-sub">Wszystko robimy u siebie w Jasionce pod Jędrzejowem. Niczego nie podzlecamy.</p>
       </div>
-
-      <div class="production-steps">
-
-        <div class="production-step">
-          <div class="production-num">2.1</div>
-          <div class="production-content">
-            <h3>Spawanie ramy stalowej</h3>
-            <p>Zaczynamy od ramy — podstawy, słupów i dachu. Tniemy profile stalowe na dokładnych szablonach i spawamy, spoinę po spoinie. Robią to nasi spawacze, którzy są z nami od lat — wiedzą, gdzie trzeba przysiąść, a gdzie można lżej. Rama to kręgosłup całego pawilonu — to ona później wytrzyma ciężar śniegu na dachu, napór wiatru i wszystko, co postawisz w środku.</p>
-            <p class="production-detail"><strong>Czas:</strong> 3–5 dni · <strong>Co pilnujemy:</strong> wymiary, prostopadłość, jakość spoin · <strong>Materiał:</strong> stalowe profile zamknięte, klasa konstrukcyjna</p>
-          </div>
-        </div>
-
-        <div class="production-step">
-          <div class="production-num">2.2</div>
-          <div class="production-content">
-            <h3>Ściany z PIR-u 100 mm</h3>
-            <p>Na ściany używamy płyty PIR o grubości 10 cm, na dach — 16 cm. To jedna z najlepszych izolacji dostępnych na rynku — ta sama, której używa się w domach energooszczędnych. Montujemy ją tak, żeby nigdzie nie było miejsca, przez które mogłoby uciekać ciepło. Dzięki temu zimą trzymasz ciepło jak w murowanym budynku, a latem pawilon nie nagrzewa się jak blaszak. Izolacja jest taka sama w każdym z 12 modeli.</p>
-            <p class="production-detail"><strong>Czas:</strong> 3–4 dni · <strong>Grubość:</strong> ściany 100 mm, dach 160 mm · <strong>Ognioodporność:</strong> certyfikat</p>
-          </div>
-        </div>
-
-        <div class="production-step">
-          <div class="production-num">2.3</div>
-          <div class="production-content">
-            <h3>Okna i drzwi</h3>
-            <p>Okna i drzwi z PVC lub aluminium — zależnie od zamówienia. Energooszczędne profile, szyby zespolone. Montujemy je zgodnie z projektem: drzwi przesuwne, witryny narożne, okno podawcze, drzwi techniczne — co tam ustaliliśmy. Każda stolarka ma certyfikat producenta. Otwierasz, zamykasz — i od razu czujesz, że to nie prowizorka tylko solidna robota.</p>
-            <p class="production-detail"><strong>Czas:</strong> 2–3 dni · <strong>Profil:</strong> PVC lub aluminium (wg zamówienia) · <strong>Szyby:</strong> zespolone, energooszczędne</p>
-          </div>
-        </div>
-
-        <div class="production-step">
-          <div class="production-num">2.4</div>
-          <div class="production-content">
-            <h3>Instalacje wewnątrz</h3>
-            <p>Ciągniemy elektrykę tak, żeby pasowała do tego, do czego będziesz używał pawilonu. Gniazdka pod biurka, oświetlenie LED, rozdzielnia, miejsce na router — wszystko w sensownych miejscach, nie byle jak. W pawilonach gastronomicznych, usługowych i mieszkalnych dokładamy też wodę, kanalizację i wentylację mechaniczną. Jak masz specyficzny sprzęt — ekspres, sterylizator, pralkę przemysłową — mówisz nam o tym i dobieramy obwody pod konkretne urządzenia. Instalacje to wyposażenie: wyceniamy je osobno, według zakresu, który ustalimy.</p>
-            <p class="production-detail"><strong>Czas:</strong> 3–5 dni · <strong>Standard:</strong> normy PN-EN · <strong>Opcje:</strong> klimatyzacja, ogrzewanie, monitoring</p>
-          </div>
-        </div>
-
-        <div class="production-step">
-          <div class="production-num">2.5</div>
-          <div class="production-content">
-            <h3>Wykończenie wnętrza</h3>
-            <p>Wnętrze szykujemy pod to, do czego pawilon będzie służył. Jak sprzedajesz — to witryny, oświetlenie ekspozycyjne i wygodne wejście dla klienta. Jak gastronomia — podłoga antypoślizgowa, wykończenia zgodne z wymaganiami sanepidu, miejsce pod sprzęt. Jak biuro — cicho, ciepło, gotowe do pracy od pierwszego dnia. Jak domek — łazienka, kuchnia, sypialnia, wszystko jak u siebie. Każdy detal ustawiamy pod to, co powiedziałeś nam na początku.</p>
-            <p class="production-detail"><strong>Czas:</strong> 4–7 dni · <strong>Wykończenia:</strong> HPL, blacha, drewno, panele · <strong>Wyposażenie:</strong> wg ustaleń z umowy</p>
-          </div>
-        </div>
-
-        <div class="production-step">
-          <div class="production-num">2.6</div>
-          <div class="production-content">
-            <h3>Elewacja zewnętrzna</h3>
-            <p>Na sam koniec robimy elewację — czyli to wszystko, co widać z zewnątrz. Drewno, blacha trapezowa, panele HPL, płyty kompozytowe, pionowe lamele — zależnie od tego, który model wybrałeś przy projektowaniu. I to jest ten moment, w którym pawilon zaczyna wyglądać dokładnie tak, jak na wizualizacji z pierwszego tygodnia. Wtedy zazwyczaj dzwonimy — bo warto przyjechać i zobaczyć na żywo.</p>
-            <p class="production-detail"><strong>Czas:</strong> 2–3 dni · <strong>Materiał:</strong> zależny od wybranego modelu · <strong>Trwałość:</strong> wieloletnia odporność na warunki atmosferyczne</p>
-          </div>
-        </div>
-
+      <div class="jk-uklad jk-uklad-produkcja">
+        <figure class="jk-obraz jk-przekroj"><img src="assets/konstrukcja/przekroj-pawilonu.webp?v=b804e375" width="882" height="900" alt="Schemat konstrukcji pawilonu: stalowa rama, ściany i dach z płyt PIR, podłoga" loading="lazy"><figcaption>Schemat konstrukcji</figcaption></figure>
+        <ol class="jk-kroki jk-kroki-2">
+          <li class="jk-krok"><span class="jk-nr">2.1</span><div class="jk-tresc"><h3>Rama stalowa</h3><p>Tniemy stalowe profile zamknięte na szablonach i spawamy ramę: podstawę, słupy i dach. To ona przenosi śnieg, wiatr i wszystko, co postawisz w środku.</p><p class="jk-meta"><span><b>Czas</b> 3–5 dni</span><span><b>Pilnujemy</b> wymiarów, kątów, spoin</span></p></div></li>
+          <li class="jk-krok"><span class="jk-nr">2.2</span><div class="jk-tresc"><h3>Ściany i dach z PIR</h3><p>Ściany z płyt PIR 100 mm, dach 160 mm, w każdym z 12 modeli. Zimą trzymasz ciepło, latem pawilon nie nagrzewa się jak blaszak.</p><p class="jk-meta"><span><b>Czas</b> 3–4 dni</span></p></div></li>
+          <li class="jk-krok"><span class="jk-nr">2.3</span><div class="jk-tresc"><h3>Okna i drzwi</h3><p>Stolarka z PVC albo aluminium, zgodnie z umową: drzwi przesuwne, witryny narożne, okno podawcze, drzwi techniczne.</p><p class="jk-meta"><span><b>Czas</b> 2–3 dni</span></p></div></li>
+          <li class="jk-krok"><span class="jk-nr">2.4</span><div class="jk-tresc"><h3>Instalacje</h3><p>Elektryka pod Twoje zajęcie: gniazda, oświetlenie, rozdzielnia. W gastronomii, usługach i domkach także woda, kanalizacja i wentylacja, według ustalonego zakresu.</p><p class="jk-meta"><span><b>Czas</b> 3–5 dni</span></p></div></li>
+          <li class="jk-krok"><span class="jk-nr">2.5</span><div class="jk-tresc"><h3>Wnętrze</h3><p>Pod przeznaczenie: witryny i oświetlenie w sklepie, podłoga antypoślizgowa w gastronomii, łazienka i kuchnia w domku.</p><p class="jk-meta"><span><b>Czas</b> 4–7 dni</span></p></div></li>
+          <li class="jk-krok"><span class="jk-nr">2.6</span><div class="jk-tresc"><h3>Elewacja</h3><p>Na koniec elewacja według modelu: drewno, lamele, panele HPL, blacha. Od tej chwili pawilon wygląda jak na wizualizacji.</p><p class="jk-meta"><span><b>Czas</b> 2–3 dni</span></p></div></li>
+        </ol>
       </div>
-
-      <div class="visit-cta">
-        <strong>Wpadnij do nas i zobacz swój pawilon w trakcie produkcji.</strong> Jesteśmy w Jasionce pod Jędrzejowem. Zobaczysz na żywo, z czego i jak powstaje. Zadzwoń dzień wcześniej, będziemy przygotowani na Twoją wizytę.
+      <div class="jk-wizyta">
+        <img src="assets/proces/pawilon-przy-hali-2.webp?v=c36d7c8f" width="800" height="533" alt="Pawilon STAGO przy hali" loading="lazy">
+        <div class="jk-wizyta-tekst"><h3>Przyjedź i zobacz swój pawilon w produkcji</h3><p>Zakład jest w Jasionce pod Jędrzejowem. Zadzwoń dzień wcześniej, przygotujemy się na Twoją wizytę.</p><a href="tel:+48509508210" class="btn btn-primary">Umów wizytę: 509&nbsp;508&nbsp;210</a></div>
       </div>
+      <a class="jk-dalej" href="#etap-3">Dalej: Kontrola jakości <span>(1–2 dni)</span> &rarr;</a>
     </div>
   </section>
 
@@ -235,7 +177,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <section class="section section-light" id="etap-3">
     <div class="container">
       <div class="stage-header">
-        <span class="stage-badge">Etap 3</span>
+        <span class="stage-badge">Etap 3 z 5</span>
         <h2 class="h2 stage-h2">Kontrola jakości i przygotowanie do transportu <span class="accent">(1–2 dni)</span></h2>
         <p class="section-sub">Zanim pawilon ruszy do Ciebie, sprawdzamy każdy detal. Wolimy złapać coś u siebie, w zakładzie, niż żebyś Ty znalazł to na działce i nerwowo dzwonił. Tak po prostu jest uczciwiej — i dla nas, i dla Ciebie.</p>
       </div>
@@ -284,7 +226,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <section class="section" id="etap-4">
     <div class="container">
       <div class="stage-header">
-        <span class="stage-badge">Etap 4</span>
+        <span class="stage-badge">Etap 4 z 5</span>
         <h2 class="h2 stage-h2">Transport do Ciebie <span class="accent">(jeden dzień)</span></h2>
         <p class="section-sub">Ten etap jest w całości po naszej stronie. Ty tylko pokazujesz miejsce, w którym ma stanąć pawilon — resztą zajmujemy się my. Dzień wcześniej dzwonimy, żeby ustalić, o której Cię odwiedzamy.</p>
       </div>
@@ -324,7 +266,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
   <section class="section section-light" id="etap-5">
     <div class="container">
       <div class="stage-header">
-        <span class="stage-badge">Etap 5</span>
+        <span class="stage-badge">Etap 5 z 5</span>
         <h2 class="h2 stage-h2">Montaż i wręczenie kluczy <span class="accent">(kilka godzin)</span></h2>
         <p class="section-sub">Ostatni etap. Rano przyjeżdża naczepa z HDS-em, po południu wchodzisz z kluczem do swojej przestrzeni. Wszystko w jeden dzień — od ustawienia pawilonu po podpisanie protokołu.</p>
       </div>
@@ -409,7 +351,7 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       </div>
 
       <div class="dzialka-help-box">
-        <strong>Nie wiesz, jak to ogarnąć?</strong> Spokojnie, większość klientów nie wie — i to normalne. Wyślij nam zdjęcie działki na WhatsApp albo po prostu zadzwoń. Powiemy od razu, co trzeba zrobić i ile to kosztuje, żebyś nie miał żadnych niespodzianek. <a href="tel:+48509508210">Zadzwoń: +48 509 508 210</a>
+        <strong>Nie wiesz, jak to ogarnąć?</strong> Spokojnie, większość klientów nie wie — i to normalne. Wyślij nam zdjęcie działki na WhatsApp albo po prostu zadzwoń. Powiemy od razu, co trzeba zrobić i ile to kosztuje, żebyś nie miał żadnych niespodzianek. <a href="tel:+48509508210">Zadzwoń: +48&nbsp;509&nbsp;508&nbsp;210</a>
       </div>
     </div>
   </section>
@@ -476,11 +418,13 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       <h2 class="h2">Zadzwoń. <span class="accent">Resztę ogarniemy razem.</span></h2>
       <p style="color:var(--t-light2);font-size:1.05rem;max-width:620px;margin:16px auto 32px">Jeden telefon i już coś się dzieje. Umowa w dobę albo dwie, produkcja zwykle 4–6 tygodni od akceptacji projektu, a Ty przez cały czas wiesz, na jakim jesteśmy etapie. Bez ściemy, bez ukrytych kosztów, bez odpuszczania — ani na materiałach, ani na robocie.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-        <a href="tel:+48509508210" class="btn btn-primary btn-lg">Zadzwoń: 509 508 210</a>
+        <a href="tel:+48509508210" class="btn btn-primary btn-lg">Zadzwoń: 509&nbsp;508&nbsp;210</a>
         <a href="konfigurator.html" class="btn btn-outline-light">Darmowa wycena online</a>
       </div>
     </div>
   </section>
+  <script src="assets/proces/jak-kupic.js" defer></script>
+
 
   <footer class="footer">
     <div class="container footer-inner">
