@@ -1307,7 +1307,8 @@ body.nav-open{overflow:hidden}
 .product-cena-max a{color:var(--accent-text);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .product-hero-cta{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .product-hero-cta .btn{width:100%;justify-content:center;text-align:center;padding-left:16px;padding-right:16px;white-space:nowrap}
-@media(max-width:1180px) and (min-width:901px),(max-width:480px){.product-hero-cta{grid-template-columns:1fr}}
+@media(max-width:1180px) and (min-width:901px),(max-width:480px){.product-hero-cta{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:360px){.product-hero-cta .btn{white-space:normal}} /* długie napisy (HU, DE) na 280 px: zawijanie zamiast wyjścia poza ekran */
 .product-fakty{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:48px 0 0;padding-top:32px;border-top:1px solid var(--border)}
 .product-fakty>div{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:4px}
 .product-fakty dd{margin:0;font-size:clamp(1.5rem,2.4vw,2rem);font-weight:800;letter-spacing:-.02em;line-height:1.15;color:var(--primary);font-variant-numeric:tabular-nums}

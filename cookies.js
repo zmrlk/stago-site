@@ -54,7 +54,106 @@
     moreInfoHref: 'polityka-cookies.html'
   };
 
-  var S = Object.assign({}, DEFAULT_STRINGS, window.STAGO_I18N_COOKIES || {});
+  // Teksty banera w językach strony (Karol 10.11: obce wersje pokazywały polski baner).
+  // Klucz = <html lang>, katalog strony obok (cs → cz). Brak języka = polski.
+  var STRINGS_LANG = {
+    "de": {
+      description: "Helfen Sie uns, Inhalte und Angebote anzupassen. Mit Ihrer Zustimmung messen wir, was nützlich ist, und die Wirksamkeit von Werbung. Eine Ablehnung schränkt die Seite nicht ein.",
+      acceptAll: "Alle akzeptieren",
+      onlyNecessary: "Nur notwendige",
+      settings: "Einstellungen",
+      savePreferences: "Auswahl speichern",
+      categoryNecessary: "Notwendig",
+      categoryNecessaryDesc: "Erforderlich für den Betrieb der Seite und der Formulare. Immer aktiv.",
+      categoryAnalytics: "Analyse",
+      categoryAnalyticsDesc: "Messung der Nutzung der Seite und des individuellen Angebots (Zeit und angesehene Abschnitte). KI kann Ihrem Ansprechpartner ein Gesprächsthema vorschlagen, trifft aber keine Entscheidungen für Sie.",
+      categoryMarketing: "Marketing",
+      categoryMarketingDesc: "Ermöglicht es, die Wirksamkeit von Werbung zu messen und die Kommunikation besser anzupassen.",
+      moreInfo: "Mehr in der",
+      moreInfoLink: "Cookie-Richtlinie"
+    },
+    "cs": {
+      description: "Pomozte nám přizpůsobit obsah a nabídky. S vaším souhlasem měříme, co je užitečné, a účinnost reklam. Odmítnutí neomezuje fungování webu.",
+      acceptAll: "Přijmout vše",
+      onlyNecessary: "Pouze nezbytné",
+      settings: "Nastavení",
+      savePreferences: "Uložit volbu",
+      categoryNecessary: "Nezbytné",
+      categoryNecessaryDesc: "Potřebné pro fungování webu a formulářů. Vždy aktivní.",
+      categoryAnalytics: "Analytické",
+      categoryAnalyticsDesc: "Měření používání webu a individuální nabídky (čas a prohlížené sekce). AI může vašemu poradci navrhnout téma hovoru, ale nerozhoduje za vás.",
+      categoryMarketing: "Marketingové",
+      categoryMarketingDesc: "Umožňuje měřit účinnost reklam a lépe přizpůsobit komunikaci.",
+      moreInfo: "Více v",
+      moreInfoLink: "Zásadách cookies"
+    },
+    "sk": {
+      description: "Pomôžte nám prispôsobiť obsah a ponuky. S vaším súhlasom meriame, čo je užitočné, a účinnosť reklám. Odmietnutie neobmedzuje fungovanie stránky.",
+      acceptAll: "Prijať všetky",
+      onlyNecessary: "Len nevyhnutné",
+      settings: "Nastavenia",
+      savePreferences: "Uložiť výber",
+      categoryNecessary: "Nevyhnutné",
+      categoryNecessaryDesc: "Potrebné na fungovanie stránky a formulárov. Vždy aktívne.",
+      categoryAnalytics: "Analytické",
+      categoryAnalyticsDesc: "Meranie používania stránky a individuálnej ponuky (čas a prezerané sekcie). AI môže vášmu poradcovi navrhnúť tému rozhovoru, ale nerozhoduje za vás.",
+      categoryMarketing: "Marketingové",
+      categoryMarketingDesc: "Umožňuje merať účinnosť reklám a lepšie prispôsobiť komunikáciu.",
+      moreInfo: "Viac v",
+      moreInfoLink: "Zásadách cookies"
+    },
+    "it": {
+      description: "Aiutaci ad adattare contenuti e offerte. Con il tuo consenso misuriamo ciò che è utile e l'efficacia degli annunci. Il rifiuto non limita il funzionamento del sito.",
+      acceptAll: "Accetta tutti",
+      onlyNecessary: "Solo necessari",
+      settings: "Impostazioni",
+      savePreferences: "Salva scelta",
+      categoryNecessary: "Necessari",
+      categoryNecessaryDesc: "Servono al funzionamento del sito e dei moduli. Sempre attivi.",
+      categoryAnalytics: "Analitici",
+      categoryAnalyticsDesc: "Misurazione dell'uso del sito e del preventivo personalizzato (tempo e sezioni visualizzate). L'IA può suggerire al tuo consulente l'argomento del contatto, ma non decide al posto tuo.",
+      categoryMarketing: "Marketing",
+      categoryMarketingDesc: "Permette di misurare l'efficacia degli annunci e di adattare meglio la comunicazione.",
+      moreInfo: "Maggiori informazioni nella",
+      moreInfoLink: "Cookie policy"
+    },
+    "es": {
+      description: "Ayúdanos a adaptar contenidos y ofertas. Con tu consentimiento medimos lo que resulta útil y la eficacia de los anuncios. Rechazarlo no limita el funcionamiento del sitio.",
+      acceptAll: "Aceptar todas",
+      onlyNecessary: "Solo necesarias",
+      settings: "Ajustes",
+      savePreferences: "Guardar selección",
+      categoryNecessary: "Necesarias",
+      categoryNecessaryDesc: "Necesarias para el funcionamiento del sitio y de los formularios. Siempre activas.",
+      categoryAnalytics: "Analíticas",
+      categoryAnalyticsDesc: "Medición del uso del sitio y del presupuesto personalizado (tiempo y secciones vistas). La IA puede sugerir a tu asesor el tema del contacto, pero no decide por ti.",
+      categoryMarketing: "Marketing",
+      categoryMarketingDesc: "Permite medir la eficacia de los anuncios y adaptar mejor la comunicación.",
+      moreInfo: "Más información en la",
+      moreInfoLink: "Política de cookies"
+    },
+    "hu": {
+      description: "Segítsen nekünk a tartalmak és ajánlatok testreszabásában. Hozzájárulásával mérjük, mi hasznos, és a hirdetések hatékonyságát. Az elutasítás nem korlátozza az oldal működését.",
+      acceptAll: "Összes elfogadása",
+      onlyNecessary: "Csak a szükségesek",
+      settings: "Beállítások",
+      savePreferences: "Választás mentése",
+      categoryNecessary: "Szükséges",
+      categoryNecessaryDesc: "Az oldal és az űrlapok működéséhez szükséges. Mindig aktív.",
+      categoryAnalytics: "Analitikai",
+      categoryAnalyticsDesc: "Az oldal és az egyedi árajánlat használatának mérése (idő és megtekintett részek). Az MI témát javasolhat a kapcsolattartójának, de nem dönt Ön helyett.",
+      categoryMarketing: "Marketing",
+      categoryMarketingDesc: "Lehetővé teszi a hirdetések hatékonyságának mérését és a kommunikáció jobb testreszabását.",
+      moreInfo: "Bővebben:",
+      moreInfoLink: "Cookie-szabályzat"
+    }
+  };
+  var LANG = (document.documentElement.lang || 'pl').slice(0, 2);
+  var KATALOG_LANG = { de: 'de/', cs: 'cz/', sk: 'sk/', it: 'it/', es: 'es/', hu: 'hu/' };
+  // Link do polityki od korzenia: względny 'polityka-cookies.html' na /modele/nord prowadził do 404.
+  var POLITYKA_HREF = '/' + (KATALOG_LANG[LANG] || '') + 'polityka-cookies.html';
+
+  var S = Object.assign({}, DEFAULT_STRINGS, STRINGS_LANG[LANG] || {}, { moreInfoHref: POLITYKA_HREF }, window.STAGO_I18N_COOKIES || {});
 
   // ─── CONSENT MODE v2 — defaults PRZED załadowaniem tagów ──────────
   // Neutralizuj legacy kill-switch (stare cache'owane HTML ustawiały go na true).
