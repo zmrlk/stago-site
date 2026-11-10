@@ -14,10 +14,10 @@
     "cities": "Entrega en toda España y Europa"
   },
   "hero": {
-    "badge": "Fabricante de pabellones modulares &middot; Entrega en España",
-    "h1": "Tu espacio.",
-    "h1accent": "Sin compromisos.",
-    "sub": "Diseñamos y construimos a su medida. Visualización gratuita, montaje en el lugar, 2 años de garantía."
+    "logo": true,
+    "h1": "Fabricante de",
+    "h1accent": "pabellones modulares.",
+    "sub": "Los soldamos nosotros mismos, en Jasionka, cerca de Jędrzejów. Ven a ver cómo se construye el tuyo."
   },
   "trust": [
     {

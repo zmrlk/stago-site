@@ -130,8 +130,8 @@ body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#1D1D1B;backgrou
       {{#specs.sub}}<p class="section-sub">{{{specs.sub}}}</p>{{/specs.sub}}
       <div class="konstrukcja-uklad">
         <figure class="konstrukcja-obraz">
-          <img src="{{{root}}}assets/konstrukcja/przekroj.svg" width="600" height="640" alt="Przekrój pionowy pawilonu STAGO w skali: dach z płyty PIR 160 mm, ściana z płyty PIR 100 mm, podłoga 120 mm, spawana rama stalowa" loading="lazy">
-          <figcaption>Przekrój w skali, wysokość ściany skrócona</figcaption>
+          <img src="{{{root}}}assets/konstrukcja/przekroj.svg" width="600" height="640" alt="{{ui.przekroj.alt}}" loading="lazy">
+          <figcaption>{{ui.przekroj.podpis}}</figcaption>
         </figure>
         <dl class="karta-dane">
           {{#specs.items}}<div class="karta-dane-row"><dt>{{h3}}</dt><dd>{{{text}}}</dd></div>{{/specs.items}}

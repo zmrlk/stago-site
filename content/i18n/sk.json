@@ -128,5 +128,9 @@
     "izolacjaOpis": "PIR panel: steny / strecha",
     "gwarancja": "2 roky",
     "gwarancjaOpis": "Záruka na konštrukciu"
+  },
+  "przekroj": {
+    "podpis": "Rez v mierke, výška steny skrátená",
+    "alt": "Zvislý rez pavilónom STAGO v mierke: strecha z PIR panela 160 mm, stena z PIR panela 100 mm, podlaha 120 mm, zváraný oceľový rám"
   }
 }

@@ -128,5 +128,9 @@
     "izolacjaOpis": "Panel PIR: paredes / techo",
     "gwarancja": "2 años",
     "gwarancjaOpis": "Garantía de la estructura"
+  },
+  "przekroj": {
+    "podpis": "Sección a escala, altura de la pared acortada",
+    "alt": "Sección vertical a escala de un pabellón STAGO: cubierta de panel PIR 160 mm, pared de panel PIR 100 mm, suelo 120 mm, estructura de acero soldada"
   }
 }

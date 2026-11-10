@@ -165,5 +165,9 @@
     "skonfigurujEyebrow": "Wymiary i ceny",
     "skonfigurujH2": "Poznaj i skonfiguruj",
     "skonfigurujIntro": "Wybierz wymiar i zobacz cenę netto. W konfiguratorze ułożysz okna i drzwi, a ofertę z transportem i montażem przygotujemy po zapytaniu."
+  },
+  "przekroj": {
+    "podpis": "Przekrój w skali, wysokość ściany skrócona",
+    "alt": "Przekrój pionowy pawilonu STAGO w skali: dach z płyty PIR 160 mm, ściana z płyty PIR 100 mm, podłoga 120 mm, spawana rama stalowa"
   }
 }

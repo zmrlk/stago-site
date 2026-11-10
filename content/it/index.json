@@ -14,10 +14,10 @@
     "cities": "Consegna in tutta Italia — Milano, Roma, Napoli, Torino, Bologna e oltre"
   },
   "hero": {
-    "badge": "Produttore di padiglioni modulari &middot; Consegna in Italia",
-    "h1": "Il tuo spazio.",
-    "h1accent": "Senza compromessi.",
-    "sub": "Progettiamo e costruiamo su misura per te. Visualizzazione gratuita, montaggio in loco, 2 anni di garanzia."
+    "logo": true,
+    "h1": "Produttore di",
+    "h1accent": "padiglioni modulari.",
+    "sub": "Li saldiamo noi, a Jasionka vicino a Jędrzejów. Vieni a vedere come nasce il tuo."
   },
   "trust": [
     {

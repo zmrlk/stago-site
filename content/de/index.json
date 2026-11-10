@@ -14,10 +14,10 @@
     "cities": "Lieferung nach Deutschland, Österreich und in die gesamte EU"
   },
   "hero": {
-    "badge": "Hersteller von Modulpavillons &middot; Lieferung nach Deutschland",
-    "h1": "Ihr Raum.",
-    "h1accent": "Ohne Kompromisse.",
-    "sub": "Wir entwerfen und bauen nach Ihren Wünschen. Kostenlose Visualisierung, Montage vor Ort, 2 Jahre Garantie."
+    "logo": true,
+    "h1": "Hersteller von",
+    "h1accent": "Modulpavillons.",
+    "sub": "Wir schweißen sie selbst, in Jasionka bei Jędrzejów. Kommen Sie vorbei und sehen Sie, wie Ihrer entsteht."
   },
   "trust": [
     {

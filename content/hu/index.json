@@ -14,10 +14,10 @@
     "cities": "Szállítás Magyarországra és egész Európába"
   },
   "hero": {
-    "badge": "Moduláris pavilonok gyártója &middot; Szállítás Magyarországra",
-    "h1": "Az Ön tere.",
-    "h1accent": "Kompromisszumok nélkül.",
-    "sub": "Az Ön igényei szerint tervezzük és építjük. Ingyenes látványterv, telepítés a helyszínen, 2 év garancia."
+    "logo": true,
+    "h1": "Moduláris pavilonok",
+    "h1accent": "gyártója.",
+    "sub": "Saját magunk hegesztjük őket, Jasionkában, Jędrzejów mellett. Jöjjön el, és nézze meg, hogyan készül az Öné."
   },
   "trust": [
     {

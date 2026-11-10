@@ -128,5 +128,9 @@
     "izolacjaOpis": "PIR panel: falak / tető",
     "gwarancja": "2 év",
     "gwarancjaOpis": "Garancia a szerkezetre"
+  },
+  "przekroj": {
+    "podpis": "Méretarányos metszet, a falmagasság rövidítve",
+    "alt": "Egy STAGO pavilon méretarányos függőleges metszete: tető 160 mm-es PIR panelből, fal 100 mm-es PIR panelből, padló 120 mm, hegesztett acélváz"
   }
 }

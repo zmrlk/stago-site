@@ -14,10 +14,10 @@
     "cities": "Dodávka na Slovensko — Bratislava, Košice, Žilina, Banská Bystrica a celé Slovensko"
   },
   "hero": {
-    "badge": "Výrobca modulárnych pavilónov &middot; Dodávka na Slovensko",
-    "h1": "Váš priestor.",
-    "h1accent": "Bez kompromisov.",
-    "sub": "Navrhujeme a staviame podľa Vás. Bezplatná vizualizácia, montáž na mieste, 2 roky záruky."
+    "logo": true,
+    "h1": "Výrobca",
+    "h1accent": "modulárnych pavilónov.",
+    "sub": "Zvárame ich sami, v Jasionke pri Jędrzejówe. Príďte sa pozrieť, ako vzniká ten váš."
   },
   "trust": [
     {

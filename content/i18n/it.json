@@ -128,5 +128,9 @@
     "izolacjaOpis": "Pannello PIR: pareti / tetto",
     "gwarancja": "2 anni",
     "gwarancjaOpis": "Garanzia sulla struttura"
+  },
+  "przekroj": {
+    "podpis": "Sezione in scala, altezza della parete accorciata",
+    "alt": "Sezione verticale in scala di un padiglione STAGO: tetto in pannello PIR 160 mm, parete in pannello PIR 100 mm, pavimento 120 mm, telaio in acciaio saldato"
   }
 }

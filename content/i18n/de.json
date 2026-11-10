@@ -128,5 +128,9 @@
     "izolacjaOpis": "PIR-Paneel: Wände / Dach",
     "gwarancja": "2 Jahre",
     "gwarancjaOpis": "Garantie auf die Konstruktion"
+  },
+  "przekroj": {
+    "podpis": "Schnitt im Maßstab, Wandhöhe verkürzt",
+    "alt": "Vertikalschnitt eines STAGO-Pavillons im Maßstab: Dach aus PIR-Platte 160 mm, Wand aus PIR-Platte 100 mm, Boden 120 mm, geschweißter Stahlrahmen"
   }
 }

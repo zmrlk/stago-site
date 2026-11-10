@@ -14,10 +14,10 @@
     "cities": "Dodávka do České republiky — Praha, Brno, Ostrava a celé ČR"
   },
   "hero": {
-    "badge": "Výrobce modulárních pavilonů &middot; Dodávka do České republiky",
-    "h1": "Váš prostor.",
-    "h1accent": "Bez kompromisů.",
-    "sub": "Navrhujeme a stavíme na míru. Bezplatná vizualizace, montáž na místě, 2 roky záruky."
+    "logo": true,
+    "h1": "Výrobce",
+    "h1accent": "modulárních pavilonů.",
+    "sub": "Svařujeme je sami, v Jasionce u Jędrzejówa. Přijeďte se podívat, jak vzniká ten váš."
   },
   "trust": [
     {
