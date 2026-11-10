@@ -143,7 +143,7 @@ const buildFaq = (code) => ({
     { q: `Czy muszę wybrać taką elewację jak na renderze?`, a: `Nie. Render pokazuje jeden z wariantów wykończenia. ${code} jako bryła przyjmuje dowolną elewację — drewno w kilku odcieniach, blachę trapezową, płyty HPL, panele kompozytowe. Mówisz, jak ma wyglądać, my proponujemy materiały i pokazujemy próbki.` },
     { q: `Mogę zmienić wymiar tej bryły?`, a: `Tak. Bryła jest elastyczna — od 3×2m do 12×4m. Można też łączyć moduły obok siebie dla większych powierzchni. Proporcje zachowujemy, żeby charakter ${code} był zachowany, ale wielkość dostosowujemy pod Twoją sytuację.` },
     { q: 'Ile to kosztuje?', a: 'Zależy od wielkości, materiału elewacji i wyposażenia. Najmniejsze moduły zaczynają się od ok. 18 000 zł netto, większe z pełnym wyposażeniem — 45-85 000 zł. Wycena darmowa: <strong><a href="tel:+48509508210">509 508 210</a></strong>.' },
-    { q: 'Jak długo czekam?', a: 'Standardowo 4-6 tygodni od akceptacji projektu do dostawy na działkę. Konkretną datę odbioru znasz zanim wpłacisz zaliczkę — w umowie, nie ustnie.' },
+    { q: 'Jak długo czekam?', a: 'Standardowo 4-6 tygodni od wpłaty zaliczki do dostawy na działkę. Konkretną datę odbioru znasz zanim wpłacisz zaliczkę — w umowie, nie ustnie.' },
   ],
 });
 
