@@ -1461,8 +1461,7 @@ body.nav-open{overflow:hidden}
   .faq-glowa .eyebrow,.faq-glowa .h2{text-align:left}
   .faq-uklad .faq-list{margin:0;max-width:none}
 }
-.faq-tel{margin-top:24px}
-@media(max-width:1023px){.faq-glowa{text-align:center}.faq-tel{display:none}}
+@media(max-width:1023px){.faq-glowa{text-align:center}}
 /* strona modelu: ptaszek domyka prawy górny narożnik wybranego rzutu i jedzie razem z długością */
 .ptaszek-rzut{position:absolute;top:0;left:calc(var(--l) / 12 * 100%);transform:translateX(-100%);height:24px;transition:left .4s cubic-bezier(.2,.8,0,1)}
 @media(prefers-reduced-motion:reduce){.ptaszek-hover,.ptaszek-rzut{transition:none}}
@@ -1486,9 +1485,8 @@ body.nav-open{overflow:hidden}
 .jk-mapa a[aria-current="step"] .jk-mapa-nr{background:var(--accent);border-color:var(--accent);color:#fff}
 .jk-etap{scroll-margin-top:140px}
 .jk-uklad{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:start;max-width:1200px;margin:0 auto}
-.jk-uklad-produkcja{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}
+.jk-uklad-produkcja{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
 .jk-kroki{list-style:none;margin:0;padding:0;display:grid;gap:16px}
-.jk-kroki-2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .jk-krok{display:flex;gap:16px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:24px}
 .jk-nr{flex:none;min-width:36px;font-size:1.2rem;font-weight:800;line-height:1.3;color:var(--accent-text);font-variant-numeric:tabular-nums}
 .jk-tresc{min-width:0}
@@ -1524,7 +1522,6 @@ body.nav-open{overflow:hidden}
   .jk-etap{scroll-margin-top:88px}
 }
 @media(max-width:767px){
-  .jk-kroki-2{grid-template-columns:minmax(0,1fr)}
   .jk-krok{padding:20px 16px;gap:12px}
   .jk-wizyta-tekst{padding:24px}
   .jk-dalej{justify-content:flex-start}
