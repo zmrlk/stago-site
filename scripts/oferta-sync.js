@@ -40,8 +40,8 @@ function patch(file, edit) {
  * Realizacje z ERP → galeria strony (Karol 10.09: ERP = jedno źródło, strona pobiera).
  *  - pliki: assets/gallery/realizacje/rz-<id8>.webp (bryła) / rw-<id8>.webp (wnętrze) + wariant -800 — prefiks rz/rw
  *    zostaje, bo build.js losuje z niego 3 zdjęcia na stronę główną (2 bryły + 1 wnętrze); pobieramy tylko brakujące,
- *  - treść: obie siatki w content/pages/realizacje.json (i wersjach językowych) przepisane z listy ERP; podpisy PL,
- *    w innych językach tylko alt (tłumaczeń podpisów nie ma w ERP).
+ *  - treść: obie siatki w content/pages/realizacje.json (i wersjach językowych) przepisane z listy ERP; same zdjęcia,
+ *    bez podpisów we wszystkich językach (Karol 16.11); podpis z ERP zostaje tylko jako alt (i w PDF oferty w ERP).
  *  Stare pliki zostają (linkowane z innych podstron, cache immutable) — nic nie kasujemy.
  */
 const GALERIA = path.join(__dirname, '..', 'assets', 'gallery', 'realizacje');
@@ -66,12 +66,11 @@ function publicLabel(label) {
 		.replace(/\s+/g, ' ').replace(/^[\s·,;|–—-]+|[\s·,;|–—-]+$/g, '').trim() || 'Realizacja STAGO';
 }
 
-function karta(r, nazwa, zPodpisem) {
+function karta(r, nazwa) {
 	const src = `assets/gallery/realizacje/${nazwa}-800.webp`,
 		full = `assets/gallery/realizacje/${nazwa}.webp`;
 	const alt = escapeHtml(publicLabel(r.label));
-	const podpis = zPodpisem && r.label ? `<div class="realizacja-label">${alt}</div>` : '';
-	return `<div class="realizacja-card"><img src="${src}" srcset="${src} 800w, ${full} 1400w" sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 380px" data-full="${full}" alt="${alt}" loading="lazy">${podpis}</div>`;
+	return `<div class="realizacja-card"><img src="${src}" srcset="${src} 800w, ${full} 1400w" sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 380px" data-full="${full}" alt="${alt}" loading="lazy"></div>`;
 }
 
 /** Podmienia zawartość siatek (1. bryły, 2. wnętrza) w body strony realizacji; zwraca nowy body albo null, gdy układ obcy. */
@@ -80,7 +79,7 @@ function przepiszSiatki(body, kartyZewn, kartyWewn) {
 	const otwarcia = [...body.matchAll(OPEN)];
 	if (otwarcia.length !== 2) return null;
 	const grupy = [kartyZewn, kartyWewn];
-	// Karta z podpisem lub bez (wersje językowe mają same alt-y) — koniec siatki = koniec ostatniej karty.
+	// Karta z podpisem (układ sprzed 16.11) lub bez — koniec siatki = koniec ostatniej karty.
 	const KARTA = /<div class="realizacja-card"><img [^>]*>(?:<div class="realizacja-label">[^<]*<\/div>)?<\/div>/g;
 	let wynik = '';
 	let pos = 0;
@@ -104,7 +103,7 @@ async function syncRealizacje(lista) {
 	const origin = new URL(URL_ERP).origin;
 	if (!DRY) fs.mkdirSync(GALERIA, { recursive: true });
 	let pliki = 0;
-	const karty = { zewnatrz: [], wnetrze: [], zewnatrzAlt: [], wnetrzeAlt: [] };
+	const karty = { zewnatrz: [], wnetrze: [] };
 	for (const r of lista) {
 		if (!r.id || !r.image_url) continue;
 		const rodzaj = r.kind === 'wnetrze' ? 'wnetrze' : 'zewnatrz';
@@ -118,8 +117,7 @@ async function syncRealizacje(lista) {
 			console.error(`  realizacja ${nazwa}: ${e.message} — pomijam to zdjęcie`);
 			continue;
 		}
-		karty[rodzaj].push(karta(r, nazwa, true));
-		karty[`${rodzaj}Alt`].push(karta(r, nazwa, false));
+		karty[rodzaj].push(karta(r, nazwa));
 	}
 	if (karty.zewnatrz.length + karty.wnetrze.length < 3) {
 		console.error('Realizacje: za mało pobranych zdjęć (<3) — nie ruszam galerii strony.');
@@ -128,14 +126,9 @@ async function syncRealizacje(lista) {
 	let zmienione = 0;
 	for (const lang of ['pl', ...LANGS]) {
 		const f = lang === 'pl' ? path.join(base, 'pages', 'realizacje.json') : path.join(base, lang, 'pages', 'realizacje.json');
-		const zPodpisem = lang === 'pl';
 		if (
 			patch(f, (d) => {
-				const nowy = przepiszSiatki(
-					d.body,
-					zPodpisem ? karty.zewnatrz : karty.zewnatrzAlt,
-					zPodpisem ? karty.wnetrze : karty.wnetrzeAlt
-				);
+				const nowy = przepiszSiatki(d.body, karty.zewnatrz, karty.wnetrze);
 				if (!nowy) console.error(`  ${lang}/realizacje: nieznany układ siatek — pomijam`);
 				else d.body = nowy;
 			})
