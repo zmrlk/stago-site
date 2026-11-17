@@ -9,7 +9,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const base = 'https://stago.com.pl/';
 // katalog wersji językowej → kod języka (cz/ to czeski: lang="cs")
 const locales = {de: 'de', cz: 'cs', sk: 'sk', hu: 'hu', it: 'it', es: 'es'};
-const skipDirs = new Set(['.git', '.github', 'node_modules', 'templates', 'content', 'scripts', 'assets', 'feeds']);
+const skipDirs = new Set(['.git', '.github', 'node_modules', 'templates', 'content', 'scripts', 'assets', 'feeds', 'dist']);
 const errors = [];
 const warnings = {};
 const warn = (kind, item) => (warnings[kind] ??= []).push(item);
